@@ -1,0 +1,764 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SymbolTableRecordEx
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SymbolTableRecordEx
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="IFoxCAD.Cad.SymbolTableRecordEx">
+
+
+
+  <h1 id="IFoxCAD_Cad_SymbolTableRecordEx" data-uid="IFoxCAD.Cad.SymbolTableRecordEx" class="text-break">
+    Class SymbolTableRecordEx
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="IFoxCAD.html">IFoxCAD</a>.<a class="xref" href="IFoxCAD.Cad.html">Cad</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>IFox.CAD.ACAD.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>符号表记录扩展类</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class SymbolTableRecordEx</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SymbolTableRecordEx</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="IFoxCAD_Cad_SymbolTableRecordEx_AddEntity_" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.AddEntity*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableRecordEx_AddEntity_Autodesk_AutoCAD_DatabaseServices_BlockTableRecord_Autodesk_AutoCAD_DatabaseServices_Entity_" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.AddEntity(Autodesk.AutoCAD.DatabaseServices.BlockTableRecord,Autodesk.AutoCAD.DatabaseServices.Entity)">
+  AddEntity(BlockTableRecord, Entity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>添加实体对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId AddEntity(this BlockTableRecord btr, Entity entity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>btr</code> <span class="xref">BlockTableRecord</span></dt>
+    <dd><p>块表记录</p>
+</dd>
+    <dt><code>entity</code> <span class="xref">Entity</span></dt>
+    <dd><p>实体</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ObjectId</span></dt>
+    <dd><p>对象 id</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableRecordEx_AddEntity_" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.AddEntity*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableRecordEx_AddEntity_Autodesk_AutoCAD_DatabaseServices_BlockTableRecord_Autodesk_AutoCAD_DatabaseServices_Entity___" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.AddEntity(Autodesk.AutoCAD.DatabaseServices.BlockTableRecord,Autodesk.AutoCAD.DatabaseServices.Entity[])">
+  AddEntity(BlockTableRecord, params Entity[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>添加多个实体</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ObjectId&gt; AddEntity(this BlockTableRecord btr, params Entity[] ents)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>btr</code> <span class="xref">BlockTableRecord</span></dt>
+    <dd><p>块表记录</p>
+</dd>
+    <dt><code>ents</code> <span class="xref">Entity</span>[]</dt>
+    <dd><p>实体集合</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ObjectId</span>&gt;</dt>
+    <dd><p>对象 id 列表</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableRecordEx_AddEntity_" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.AddEntity*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableRecordEx_AddEntity__1_Autodesk_AutoCAD_DatabaseServices_BlockTableRecord_System_Collections_Generic_IEnumerable___0__" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.AddEntity``1(Autodesk.AutoCAD.DatabaseServices.BlockTableRecord,System.Collections.Generic.IEnumerable{``0})">
+  AddEntity&lt;T&gt;(BlockTableRecord, IEnumerable&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>添加实体集合</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ObjectId&gt; AddEntity&lt;T&gt;(this BlockTableRecord btr, IEnumerable&lt;T&gt; ents) where T : Entity</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>btr</code> <span class="xref">BlockTableRecord</span></dt>
+    <dd><p>块表记录</p>
+</dd>
+    <dt><code>ents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd><p>实体集合</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ObjectId</span>&gt;</dt>
+    <dd><p>对象 id 列表</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>实体类型</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableRecordEx_DeepCloneEx_" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.DeepCloneEx*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableRecordEx_DeepCloneEx_Autodesk_AutoCAD_DatabaseServices_BlockTableRecord_Autodesk_AutoCAD_DatabaseServices_ObjectIdCollection_Autodesk_AutoCAD_DatabaseServices_IdMapping_" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.DeepCloneEx(Autodesk.AutoCAD.DatabaseServices.BlockTableRecord,Autodesk.AutoCAD.DatabaseServices.ObjectIdCollection,Autodesk.AutoCAD.DatabaseServices.IdMapping)">
+  DeepCloneEx(BlockTableRecord, ObjectIdCollection, IdMapping)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>深度克隆id到块表记录</p>
+<p>
+0x01 此方法不允许是未添加数据库的图元,因此它是id<br>
+0x02 若为未添加数据库图元,则利用entity.Clone();同时不需要考虑动态块属性,可以使用entity.GetTransformedCopy
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DeepCloneEx(this BlockTableRecord btr, ObjectIdCollection objIds, IdMapping maoOut)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>btr</code> <span class="xref">BlockTableRecord</span></dt>
+    <dd><p>
+克隆到当前块表记录,相当于原地克隆<br>
+克隆到目标块表记录内,相当于制作新块
+</p>
+</dd>
+    <dt><code>objIds</code> <span class="xref">ObjectIdCollection</span></dt>
+    <dd><p>图元id集合,注意所有成员都要在同一个空间中</p>
+</dd>
+    <dt><code>maoOut</code> <span class="xref">IdMapping</span></dt>
+    <dd><p>返回克隆后的id词典</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableRecordEx_ForEach_" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.ForEach*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableRecordEx_ForEach__1___0_System_Action_Autodesk_AutoCAD_DatabaseServices_ObjectId_IFoxCAD_Basal_LoopState_System_Int32__" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.ForEach``1(``0,System.Action{Autodesk.AutoCAD.DatabaseServices.ObjectId,IFoxCAD.Basal.LoopState,System.Int32})">
+  ForEach&lt;TRecord&gt;(TRecord, Action&lt;ObjectId, LoopState, int&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>遍历符号表记录,执行委托(允许循环中断,输出索引值)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ForEach&lt;TRecord&gt;(this TRecord record, Action&lt;ObjectId, LoopState, int&gt; task) where TRecord : SymbolTableRecord, IEnumerable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>record</code> <span class="xref">TRecord</span></dt>
+    <dd><p>符号表记录</p>
+</dd>
+    <dt><code>task</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-3">Action</a>&lt;<span class="xref">ObjectId</span>, <a class="xref" href="IFoxCAD.Basal.LoopState.html">LoopState</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd><p>要执行的委托</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TRecord</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableRecordEx_ForEach_" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.ForEach*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableRecordEx_ForEach__1___0_System_Action_Autodesk_AutoCAD_DatabaseServices_ObjectId_IFoxCAD_Basal_LoopState__" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.ForEach``1(``0,System.Action{Autodesk.AutoCAD.DatabaseServices.ObjectId,IFoxCAD.Basal.LoopState})">
+  ForEach&lt;TRecord&gt;(TRecord, Action&lt;ObjectId, LoopState&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>遍历符号表记录,执行委托(允许循环中断)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ForEach&lt;TRecord&gt;(this TRecord record, Action&lt;ObjectId, LoopState&gt; task) where TRecord : SymbolTableRecord, IEnumerable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>record</code> <span class="xref">TRecord</span></dt>
+    <dd><p>符号表记录</p>
+</dd>
+    <dt><code>task</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<span class="xref">ObjectId</span>, <a class="xref" href="IFoxCAD.Basal.LoopState.html">LoopState</a>&gt;</dt>
+    <dd><p>要执行的委托</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TRecord</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableRecordEx_ForEach_" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.ForEach*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableRecordEx_ForEach__1___0_System_Action_Autodesk_AutoCAD_DatabaseServices_ObjectId__" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.ForEach``1(``0,System.Action{Autodesk.AutoCAD.DatabaseServices.ObjectId})">
+  ForEach&lt;TRecord&gt;(TRecord, Action&lt;ObjectId&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>遍历符号表记录,执行委托</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ForEach&lt;TRecord&gt;(this TRecord record, Action&lt;ObjectId&gt; task) where TRecord : SymbolTableRecord, IEnumerable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>record</code> <span class="xref">TRecord</span></dt>
+    <dd><p>符号表记录</p>
+</dd>
+    <dt><code>task</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">ObjectId</span>&gt;</dt>
+    <dd><p>要运行的委托</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TRecord</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableRecordEx_GetDrawOrderTable_" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.GetDrawOrderTable*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableRecordEx_GetDrawOrderTable_Autodesk_AutoCAD_DatabaseServices_BlockTableRecord_Autodesk_AutoCAD_DatabaseServices_OpenMode_System_Boolean_System_Boolean_" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.GetDrawOrderTable(Autodesk.AutoCAD.DatabaseServices.BlockTableRecord,Autodesk.AutoCAD.DatabaseServices.OpenMode,System.Boolean,System.Boolean)">
+  GetDrawOrderTable(BlockTableRecord, OpenMode, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取绘制顺序表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DrawOrderTable GetDrawOrderTable(this BlockTableRecord btr, OpenMode openMode = 0, bool openErased = false, bool openLockedLayer = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>btr</code> <span class="xref">BlockTableRecord</span></dt>
+    <dd><p>块表</p>
+</dd>
+    <dt><code>openMode</code> <span class="xref">OpenMode</span></dt>
+    <dd><p>开启方式</p>
+</dd>
+    <dt><code>openErased</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否打开已删除对象,默认为不打开</p>
+</dd>
+    <dt><code>openLockedLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否打开锁定图层对象,默认为不打开</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DrawOrderTable</span></dt>
+    <dd><p>绘制顺序表</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableRecordEx_GetEntities_" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.GetEntities*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableRecordEx_GetEntities__1_Autodesk_AutoCAD_DatabaseServices_BlockTableRecord_Autodesk_AutoCAD_DatabaseServices_OpenMode_System_Boolean_System_Boolean_" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.GetEntities``1(Autodesk.AutoCAD.DatabaseServices.BlockTableRecord,Autodesk.AutoCAD.DatabaseServices.OpenMode,System.Boolean,System.Boolean)">
+  GetEntities&lt;T&gt;(BlockTableRecord, OpenMode, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取块表记录内的指定类型的实体
+(此处不会检查id.IsOk())</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;T&gt; GetEntities&lt;T&gt;(this BlockTableRecord btr, OpenMode openMode = 0, bool openErased = false, bool openLockedLayer = false) where T : Entity</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>btr</code> <span class="xref">BlockTableRecord</span></dt>
+    <dd><p>块表记录</p>
+</dd>
+    <dt><code>openMode</code> <span class="xref">OpenMode</span></dt>
+    <dd><p>打开模式</p>
+</dd>
+    <dt><code>openErased</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否打开已删除对象,默认为不打开</p>
+</dd>
+    <dt><code>openLockedLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否打开锁定图层对象,默认为不打开</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd><p>实体集合</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>实体类型</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableRecordEx_GetObjectIds_" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.GetObjectIds*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableRecordEx_GetObjectIds_Autodesk_AutoCAD_DatabaseServices_BlockTableRecord_" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.GetObjectIds(Autodesk.AutoCAD.DatabaseServices.BlockTableRecord)">
+  GetObjectIds(BlockTableRecord)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>按类型获取实体Id的分组</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;IGrouping&lt;string, ObjectId&gt;&gt; GetObjectIds(this BlockTableRecord btr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>btr</code> <span class="xref">BlockTableRecord</span></dt>
+    <dd><p>块表记录</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.igrouping-2">IGrouping</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <span class="xref">ObjectId</span>&gt;&gt;</dt>
+    <dd><p>实体Id分组</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableRecordEx_GetObjectIds_" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.GetObjectIds*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableRecordEx_GetObjectIds__1_Autodesk_AutoCAD_DatabaseServices_BlockTableRecord_" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.GetObjectIds``1(Autodesk.AutoCAD.DatabaseServices.BlockTableRecord)">
+  GetObjectIds&lt;T&gt;(BlockTableRecord)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>按类型获取实体Id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ObjectId&gt; GetObjectIds&lt;T&gt;(this BlockTableRecord btr) where T : Entity</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>btr</code> <span class="xref">BlockTableRecord</span></dt>
+    <dd><p>块表记录</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ObjectId</span>&gt;</dt>
+    <dd><p>实体Id集合</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>实体类型</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableRecordEx_InsertBlock_" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.InsertBlock*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableRecordEx_InsertBlock_Autodesk_AutoCAD_DatabaseServices_BlockTableRecord_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_DatabaseServices_ObjectId_Autodesk_AutoCAD_Geometry_Scale3d_System_Double_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.InsertBlock(Autodesk.AutoCAD.DatabaseServices.BlockTableRecord,Autodesk.AutoCAD.Geometry.Point3d,Autodesk.AutoCAD.DatabaseServices.ObjectId,Autodesk.AutoCAD.Geometry.Scale3d,System.Double,System.Collections.Generic.Dictionary{System.String,System.String})">
+  InsertBlock(BlockTableRecord, Point3d, ObjectId, Scale3d, double, Dictionary&lt;string, string&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>插入块参照</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId InsertBlock(this BlockTableRecord blockTableRecord, Point3d position, ObjectId blockId, Scale3d scale = null, double rotation = 0, Dictionary&lt;string, string&gt;? atts = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>blockTableRecord</code> <span class="xref">BlockTableRecord</span></dt>
+    <dd></dd>
+    <dt><code>position</code> <span class="xref">Point3d</span></dt>
+    <dd><p>插入点</p>
+</dd>
+    <dt><code>blockId</code> <span class="xref">ObjectId</span></dt>
+    <dd><p>块定义id</p>
+</dd>
+    <dt><code>scale</code> <span class="xref">Scale3d</span></dt>
+    <dd><p>块插入比例，默认为1</p>
+</dd>
+    <dt><code>rotation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>块插入旋转角(弧度)，默认为0</p>
+</dd>
+    <dt><code>atts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>属性字典{Tag,Value}，默认为null</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ObjectId</span></dt>
+    <dd><p>块参照对象id</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableRecordEx_InsertBlock_" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.InsertBlock*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableRecordEx_InsertBlock_Autodesk_AutoCAD_DatabaseServices_BlockTableRecord_Autodesk_AutoCAD_Geometry_Point3d_System_String_Autodesk_AutoCAD_Geometry_Scale3d_System_Double_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="IFoxCAD.Cad.SymbolTableRecordEx.InsertBlock(Autodesk.AutoCAD.DatabaseServices.BlockTableRecord,Autodesk.AutoCAD.Geometry.Point3d,System.String,Autodesk.AutoCAD.Geometry.Scale3d,System.Double,System.Collections.Generic.Dictionary{System.String,System.String})">
+  InsertBlock(BlockTableRecord, Point3d, string, Scale3d, double, Dictionary&lt;string, string&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>插入块参照</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId InsertBlock(this BlockTableRecord blockTableRecord, Point3d position, string blockName, Scale3d scale = null, double rotation = 0, Dictionary&lt;string, string&gt;? atts = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>blockTableRecord</code> <span class="xref">BlockTableRecord</span></dt>
+    <dd><p>块表记录</p>
+</dd>
+    <dt><code>position</code> <span class="xref">Point3d</span></dt>
+    <dd><p>插入点</p>
+</dd>
+    <dt><code>blockName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>块名</p>
+</dd>
+    <dt><code>scale</code> <span class="xref">Scale3d</span></dt>
+    <dd><p>块插入比例，默认为1</p>
+</dd>
+    <dt><code>rotation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>块插入旋转角(弧度)，默认为0</p>
+</dd>
+    <dt><code>atts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>属性字典{Tag,Value}，默认为null</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ObjectId</span></dt>
+    <dd><p>块参照对象id</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

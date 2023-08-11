@@ -1,0 +1,849 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Graph
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Graph
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="IFoxCAD.Cad.Graph">
+
+
+
+  <h1 id="IFoxCAD_Cad_Graph" data-uid="IFoxCAD.Cad.Graph" class="text-break">
+    Class Graph
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="IFoxCAD.html">IFoxCAD</a>.<a class="xref" href="IFoxCAD.Cad.html">Cad</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>IFox.CAD.ACAD.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>无权无向图实现
+IEnumerable 枚举所有顶点;</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Graph : IGraph, IEnumerable&lt;IGraphVertex&gt;, IEnumerable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Graph</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="IFoxCAD.Cad.IGraph.html">IGraph</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="IFoxCAD.Cad.IGraphVertex.html">IGraphVertex</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.CollectionEx.html#IFoxCAD_Cad_CollectionEx_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0_IFoxCAD_Basal_LoopState_System_Int32__">CollectionEx.ForEach&lt;T&gt;(IEnumerable&lt;T&gt;, Action&lt;T, LoopState, int&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.CollectionEx.html#IFoxCAD_Cad_CollectionEx_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0_IFoxCAD_Basal_LoopState__">CollectionEx.ForEach&lt;T&gt;(IEnumerable&lt;T&gt;, Action&lt;T, LoopState&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.CollectionEx.html#IFoxCAD_Cad_CollectionEx_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__">CollectionEx.ForEach&lt;T&gt;(IEnumerable&lt;T&gt;, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="IFoxCAD_Cad_Graph__ctor_" data-uid="IFoxCAD.Cad.Graph.#ctor*"></a>
+
+  <h3 id="IFoxCAD_Cad_Graph__ctor" data-uid="IFoxCAD.Cad.Graph.#ctor">
+  Graph()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Graph()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="IFoxCAD_Cad_Graph_VerticesAsEnumberable_" data-uid="IFoxCAD.Cad.Graph.VerticesAsEnumberable*"></a>
+
+  <h3 id="IFoxCAD_Cad_Graph_VerticesAsEnumberable" data-uid="IFoxCAD.Cad.Graph.VerticesAsEnumberable">
+  VerticesAsEnumberable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>节点迭代器</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IGraphVertex&gt; VerticesAsEnumberable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="IFoxCAD.Cad.IGraphVertex.html">IGraphVertex</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Graph_VerticesCount_" data-uid="IFoxCAD.Cad.Graph.VerticesCount*"></a>
+
+  <h3 id="IFoxCAD_Cad_Graph_VerticesCount" data-uid="IFoxCAD.Cad.Graph.VerticesCount">
+  VerticesCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>节点数量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int VerticesCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="IFoxCAD_Cad_Graph_AddEdge_" data-uid="IFoxCAD.Cad.Graph.AddEdge*"></a>
+
+  <h3 id="IFoxCAD_Cad_Graph_AddEdge_Autodesk_AutoCAD_Geometry_Curve3d_" data-uid="IFoxCAD.Cad.Graph.AddEdge(Autodesk.AutoCAD.Geometry.Curve3d)">
+  AddEdge(Curve3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>向该图添加一个边;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddEdge(Curve3d curve)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>curve</code> <span class="xref">Curve3d</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Graph_AddVertex_" data-uid="IFoxCAD.Cad.Graph.AddVertex*"></a>
+
+  <h3 id="IFoxCAD_Cad_Graph_AddVertex_Autodesk_AutoCAD_Geometry_Point3d_" data-uid="IFoxCAD.Cad.Graph.AddVertex(Autodesk.AutoCAD.Geometry.Point3d)">
+  AddVertex(Point3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>向该图添加一个新顶点,但是无边;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IGraphVertex AddVertex(Point3d pt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt</code> <span class="xref">Point3d</span></dt>
+    <dd><p>点</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IFoxCAD.Cad.IGraphVertex.html">IGraphVertex</a></dt>
+    <dd><p>创建的顶点</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Graph_Clone_" data-uid="IFoxCAD.Cad.Graph.Clone*"></a>
+
+  <h3 id="IFoxCAD_Cad_Graph_Clone" data-uid="IFoxCAD.Cad.Graph.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>克隆此图;目测是深克隆</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Graph Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IFoxCAD.Cad.Graph.html">Graph</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Graph_ContainsVertex_" data-uid="IFoxCAD.Cad.Graph.ContainsVertex*"></a>
+
+  <h3 id="IFoxCAD_Cad_Graph_ContainsVertex_IFoxCAD_Cad_IGraphVertex_" data-uid="IFoxCAD.Cad.Graph.ContainsVertex(IFoxCAD.Cad.IGraphVertex)">
+  ContainsVertex(IGraphVertex)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否存在顶点,此函数目前未发现有啥用</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsVertex(IGraphVertex value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="IFoxCAD.Cad.IGraphVertex.html">IGraphVertex</a></dt>
+    <dd><p>顶点</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>存在顶点返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>,反之返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Graph_GetAdjacencyEdge_" data-uid="IFoxCAD.Cad.Graph.GetAdjacencyEdge*"></a>
+
+  <h3 id="IFoxCAD_Cad_Graph_GetAdjacencyEdge_IFoxCAD_Cad_IGraphVertex_" data-uid="IFoxCAD.Cad.Graph.GetAdjacencyEdge(IFoxCAD.Cad.IGraphVertex)">
+  GetAdjacencyEdge(IGraphVertex)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取顶点的邻接边表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HashSet&lt;IEdge&gt; GetAdjacencyEdge(IGraphVertex vertex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vertex</code> <a class="xref" href="IFoxCAD.Cad.IGraphVertex.html">IGraphVertex</a></dt>
+    <dd><p>顶点</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a>&lt;<a class="xref" href="IFoxCAD.Cad.IEdge.html">IEdge</a>&gt;</dt>
+    <dd><p>邻接边表</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Graph_GetAdjacencyList_" data-uid="IFoxCAD.Cad.Graph.GetAdjacencyList*"></a>
+
+  <h3 id="IFoxCAD_Cad_Graph_GetAdjacencyList_IFoxCAD_Cad_IGraphVertex_" data-uid="IFoxCAD.Cad.Graph.GetAdjacencyList(IFoxCAD.Cad.IGraphVertex)">
+  GetAdjacencyList(IGraphVertex)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取顶点的邻接表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HashSet&lt;IGraphVertex&gt; GetAdjacencyList(IGraphVertex vertex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vertex</code> <a class="xref" href="IFoxCAD.Cad.IGraphVertex.html">IGraphVertex</a></dt>
+    <dd><p>顶点</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a>&lt;<a class="xref" href="IFoxCAD.Cad.IGraphVertex.html">IGraphVertex</a>&gt;</dt>
+    <dd><p>邻接表</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Graph_GetCurves_" data-uid="IFoxCAD.Cad.Graph.GetCurves*"></a>
+
+  <h3 id="IFoxCAD_Cad_Graph_GetCurves_System_Collections_Generic_List_IFoxCAD_Cad_IGraphVertex__" data-uid="IFoxCAD.Cad.Graph.GetCurves(System.Collections.Generic.List{IFoxCAD.Cad.IGraphVertex})">
+  GetCurves(List&lt;IGraphVertex&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据顶点表获取曲线集合</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Curve3d&gt; GetCurves(List&lt;IGraphVertex&gt; graphVertices)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>graphVertices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="IFoxCAD.Cad.IGraphVertex.html">IGraphVertex</a>&gt;</dt>
+    <dd><p>顶点表</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Curve3d</span>&gt;</dt>
+    <dd><p>曲线表</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Graph_GetEdge_" data-uid="IFoxCAD.Cad.Graph.GetEdge*"></a>
+
+  <h3 id="IFoxCAD_Cad_Graph_GetEdge_IFoxCAD_Cad_IGraphVertex_IFoxCAD_Cad_IGraphVertex_" data-uid="IFoxCAD.Cad.Graph.GetEdge(IFoxCAD.Cad.IGraphVertex,IFoxCAD.Cad.IGraphVertex)">
+  GetEdge(IGraphVertex, IGraphVertex)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取边</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEdge? GetEdge(IGraphVertex source, IGraphVertex dest)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="IFoxCAD.Cad.IGraphVertex.html">IGraphVertex</a></dt>
+    <dd><p>起点</p>
+</dd>
+    <dt><code>dest</code> <a class="xref" href="IFoxCAD.Cad.IGraphVertex.html">IGraphVertex</a></dt>
+    <dd><p>终点</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IFoxCAD.Cad.IEdge.html">IEdge</a></dt>
+    <dd><p>边</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>传入的点不在图中时抛出参数异常</p>
+</dd>
+  </dl>
+
+
+
+  <a id="IFoxCAD_Cad_Graph_GetEnumerator_" data-uid="IFoxCAD.Cad.Graph.GetEnumerator*"></a>
+
+  <h3 id="IFoxCAD_Cad_Graph_GetEnumerator" data-uid="IFoxCAD.Cad.Graph.GetEnumerator">
+  GetEnumerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>节点迭代器</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Graph_HasEdge_" data-uid="IFoxCAD.Cad.Graph.HasEdge*"></a>
+
+  <h3 id="IFoxCAD_Cad_Graph_HasEdge_IFoxCAD_Cad_IGraphVertex_IFoxCAD_Cad_IGraphVertex_" data-uid="IFoxCAD.Cad.Graph.HasEdge(IFoxCAD.Cad.IGraphVertex,IFoxCAD.Cad.IGraphVertex)">
+  HasEdge(IGraphVertex, IGraphVertex)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>我们在给定的来源和目的地之间是否有边？</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasEdge(IGraphVertex source, IGraphVertex dest)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="IFoxCAD.Cad.IGraphVertex.html">IGraphVertex</a></dt>
+    <dd><p>起点</p>
+</dd>
+    <dt><code>dest</code> <a class="xref" href="IFoxCAD.Cad.IGraphVertex.html">IGraphVertex</a></dt>
+    <dd><p>终点</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>有边返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>,反之返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Graph_RemoveEdge_" data-uid="IFoxCAD.Cad.Graph.RemoveEdge*"></a>
+
+  <h3 id="IFoxCAD_Cad_Graph_RemoveEdge_Autodesk_AutoCAD_Geometry_Curve3d_" data-uid="IFoxCAD.Cad.Graph.RemoveEdge(Autodesk.AutoCAD.Geometry.Curve3d)">
+  RemoveEdge(Curve3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>从此图中删除一条边;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveEdge(Curve3d curve)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>curve</code> <span class="xref">Curve3d</span></dt>
+    <dd><p>曲线</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Graph_RemoveVertex_" data-uid="IFoxCAD.Cad.Graph.RemoveVertex*"></a>
+
+  <h3 id="IFoxCAD_Cad_Graph_RemoveVertex_Autodesk_AutoCAD_Geometry_Point3d_" data-uid="IFoxCAD.Cad.Graph.RemoveVertex(Autodesk.AutoCAD.Geometry.Point3d)">
+  RemoveVertex(Point3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>从此图中删除现有顶点;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveVertex(Point3d pt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt</code> <span class="xref">Point3d</span></dt>
+    <dd><p>点</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Graph_ToReadable_" data-uid="IFoxCAD.Cad.Graph.ToReadable*"></a>
+
+  <h3 id="IFoxCAD_Cad_Graph_ToReadable" data-uid="IFoxCAD.Cad.Graph.ToReadable">
+  ToReadable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>输出点的邻接表的可读字符串</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToReadable()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

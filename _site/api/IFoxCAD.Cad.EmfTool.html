@@ -1,0 +1,1375 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class EmfTool
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class EmfTool
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="IFoxCAD.Cad.EmfTool">
+
+
+
+  <h1 id="IFoxCAD_Cad_EmfTool" data-uid="IFoxCAD.Cad.EmfTool" class="text-break">
+    Class EmfTool
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="IFoxCAD.html">IFoxCAD</a>.<a class="xref" href="IFoxCAD.Cad.html">Cad</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>IFox.CAD.ACAD.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class EmfTool</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">EmfTool</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="IFoxCAD_Cad_EmfTool_CloseEnhMetaFile_" data-uid="IFoxCAD.Cad.EmfTool.CloseEnhMetaFile*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_CloseEnhMetaFile_System_IntPtr_" data-uid="IFoxCAD.Cad.EmfTool.CloseEnhMetaFile(System.IntPtr)">
+  CloseEnhMetaFile(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>返回图元文件句柄</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern IntPtr CloseEnhMetaFile(IntPtr hdcRef)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hdcRef</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd><p>画布句柄</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_CopyEnhMetaFile_" data-uid="IFoxCAD.Cad.EmfTool.CopyEnhMetaFile*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_CopyEnhMetaFile_System_IntPtr_System_String_" data-uid="IFoxCAD.Cad.EmfTool.CopyEnhMetaFile(System.IntPtr,System.String)">
+  CopyEnhMetaFile(IntPtr, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>EMF保存到文件或者路径</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern IntPtr CopyEnhMetaFile(IntPtr hemfSrc, string? lpszFile)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hemfSrc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd><p>EMF要复制的增强型图元文件的句柄</p>
+</dd>
+    <dt><code>lpszFile</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>指向目标文件名称的指针,为NULL则将源图元文件复制到内存中</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_CreateEnhMetaFile_" data-uid="IFoxCAD.Cad.EmfTool.CreateEnhMetaFile*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_CreateEnhMetaFile_System_IntPtr_System_String_IFoxCAD_Basal_WindowsAPI_IntRect__System_String_" data-uid="IFoxCAD.Cad.EmfTool.CreateEnhMetaFile(System.IntPtr,System.String,IFoxCAD.Basal.WindowsAPI.IntRect@,System.String)">
+  CreateEnhMetaFile(IntPtr, string, ref IntRect, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建emf<br>
+<a href="https://www.cnblogs.com/5iedu/p/4706327.html">https://www.cnblogs.com/5iedu/p/4706327.html</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern IntPtr CreateEnhMetaFile(IntPtr hdcRef, string szFilename, ref WindowsAPI.IntRect lpRect, string lpDescription)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hdcRef</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd><p>参考设备环境,null以整个屏幕为参考</p>
+</dd>
+    <dt><code>szFilename</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>指定文件名时,创建磁盘文件(.EMF),为null时创建内存图元文件</p>
+</dd>
+    <dt><code>lpRect</code> <a class="xref" href="IFoxCAD.Basal.WindowsAPI.html">WindowsAPI</a>.<a class="xref" href="IFoxCAD.Basal.WindowsAPI.IntRect.html">IntRect</a></dt>
+    <dd><p>用于描述图元文件的大小和位置(以0.01mm为单位),可用它精确定义图元文件的物理尺寸</p>
+</dd>
+    <dt><code>lpDescription</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>对图元文件的一段说明.包括创建应用程序的名字、一个NULL字符、对图元文件的一段说明以及两个NULL字符.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd><p>返回画布句柄DC(图元文件句柄得调用 CloseEnhMetaFile 函数)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_CreatePen_" data-uid="IFoxCAD.Cad.EmfTool.CreatePen*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_CreatePen_System_Int32_System_Int32_System_Int32_" data-uid="IFoxCAD.Cad.EmfTool.CreatePen(System.Int32,System.Int32,System.Int32)">
+  CreatePen(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int CreatePen(int nPenStyle, int nWidth, int nColor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nPenStyle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>nWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>nColor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_DPtoLP_" data-uid="IFoxCAD.Cad.EmfTool.DPtoLP*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_DPtoLP_System_IntPtr_System_Drawing_Point___System_Int32_" data-uid="IFoxCAD.Cad.EmfTool.DPtoLP(System.IntPtr,System.Drawing.Point[],System.Int32)">
+  DPtoLP(IntPtr, Point[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool DPtoLP(IntPtr hdc, Point[] lpPoints, int nCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hdc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>lpPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.point">Point</a>[]</dt>
+    <dd></dd>
+    <dt><code>nCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_DeleteEnhMetaFile_" data-uid="IFoxCAD.Cad.EmfTool.DeleteEnhMetaFile*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_DeleteEnhMetaFile_System_IntPtr_" data-uid="IFoxCAD.Cad.EmfTool.DeleteEnhMetaFile(System.IntPtr)">
+  DeleteEnhMetaFile(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>删除矢量图</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool DeleteEnhMetaFile(IntPtr hemf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hemf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_DeleteObject_" data-uid="IFoxCAD.Cad.EmfTool.DeleteObject*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_DeleteObject_System_Int32_" data-uid="IFoxCAD.Cad.EmfTool.DeleteObject(System.Int32)">
+  DeleteObject(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int DeleteObject(int hBitmap)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hBitmap</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_DeleteObject_" data-uid="IFoxCAD.Cad.EmfTool.DeleteObject*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_DeleteObject_System_IntPtr_" data-uid="IFoxCAD.Cad.EmfTool.DeleteObject(System.IntPtr)">
+  DeleteObject(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool DeleteObject(IntPtr hdcRef)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hdcRef</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_EnumEnhMetaFile_" data-uid="IFoxCAD.Cad.EmfTool.EnumEnhMetaFile*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_EnumEnhMetaFile_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_IFoxCAD_Basal_WindowsAPI_IntRect__" data-uid="IFoxCAD.Cad.EmfTool.EnumEnhMetaFile(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,IFoxCAD.Basal.WindowsAPI.IntRect@)">
+  EnumEnhMetaFile(IntPtr, IntPtr, IntPtr, IntPtr, ref IntRect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>旧emf绘制新的hdcEMF中(即回放)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool EnumEnhMetaFile(IntPtr hdcRef, IntPtr hmf, IntPtr proc, IntPtr procParam, ref WindowsAPI.IntRect lpRect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hdcRef</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd><p>画布句柄</p>
+</dd>
+    <dt><code>hmf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd><p>图元文件句柄</p>
+</dd>
+    <dt><code>proc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd><p>回调函数</p>
+</dd>
+    <dt><code>procParam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd><p>传给回调函数的额外参数</p>
+</dd>
+    <dt><code>lpRect</code> <a class="xref" href="IFoxCAD.Basal.WindowsAPI.html">WindowsAPI</a>.<a class="xref" href="IFoxCAD.Basal.WindowsAPI.IntRect.html">IntRect</a></dt>
+    <dd><p>在指定的矩形区内显示图元文件</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_GetEnhMetaFile_" data-uid="IFoxCAD.Cad.EmfTool.GetEnhMetaFile*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_GetEnhMetaFile_System_String_" data-uid="IFoxCAD.Cad.EmfTool.GetEnhMetaFile(System.String)">
+  GetEnhMetaFile(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern IntPtr GetEnhMetaFile(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_GetEnhMetaFileBits_" data-uid="IFoxCAD.Cad.EmfTool.GetEnhMetaFileBits*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_GetEnhMetaFileBits_System_IntPtr_System_UInt32_System_Byte___" data-uid="IFoxCAD.Cad.EmfTool.GetEnhMetaFileBits(System.IntPtr,System.UInt32,System.Byte[])">
+  GetEnhMetaFileBits(IntPtr, uint, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取矢量图的byte</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern uint GetEnhMetaFileBits(IntPtr hemf, uint cbBuffer, byte[] lpbBuffer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hemf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>cbBuffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>lpbBuffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_GetEnhMetaFileDescriptionEx_" data-uid="IFoxCAD.Cad.EmfTool.GetEnhMetaFileDescriptionEx*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_GetEnhMetaFileDescriptionEx_System_IntPtr_" data-uid="IFoxCAD.Cad.EmfTool.GetEnhMetaFileDescriptionEx(System.IntPtr)">
+  GetEnhMetaFileDescriptionEx(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取emf描述</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string? GetEnhMetaFileDescriptionEx(IntPtr clipTypeData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clipTypeData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd><p>文件句柄</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>描述的内容</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_GetEnhMetaFileHeader_" data-uid="IFoxCAD.Cad.EmfTool.GetEnhMetaFileHeader*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_GetEnhMetaFileHeader_System_IntPtr_System_UInt32_System_IntPtr_" data-uid="IFoxCAD.Cad.EmfTool.GetEnhMetaFileHeader(System.IntPtr,System.UInt32,System.IntPtr)">
+  GetEnhMetaFileHeader(IntPtr, uint, IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern uint GetEnhMetaFileHeader(IntPtr hemf, uint cbBuffer, IntPtr lpemh)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hemf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>cbBuffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>lpemh</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_GetMetaFile_" data-uid="IFoxCAD.Cad.EmfTool.GetMetaFile*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_GetMetaFile_System_String_" data-uid="IFoxCAD.Cad.EmfTool.GetMetaFile(System.String)">
+  GetMetaFile(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern IntPtr GetMetaFile(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_GetStockObject_" data-uid="IFoxCAD.Cad.EmfTool.GetStockObject*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_GetStockObject_System_Int32_" data-uid="IFoxCAD.Cad.EmfTool.GetStockObject(System.Int32)">
+  GetStockObject(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int GetStockObject(int nStockBrush)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nStockBrush</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_LineTo_" data-uid="IFoxCAD.Cad.EmfTool.LineTo*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_LineTo_System_IntPtr_System_Int32_System_Int32_" data-uid="IFoxCAD.Cad.EmfTool.LineTo(System.IntPtr,System.Int32,System.Int32)">
+  LineTo(IntPtr, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int LineTo(IntPtr hDC, int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hDC</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_MoveToEx_" data-uid="IFoxCAD.Cad.EmfTool.MoveToEx*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_MoveToEx_System_IntPtr_System_Int32_System_Int32_System_Int32_" data-uid="IFoxCAD.Cad.EmfTool.MoveToEx(System.IntPtr,System.Int32,System.Int32,System.Int32)">
+  MoveToEx(IntPtr, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int MoveToEx(IntPtr hDC, int x, int y, int nPreviousPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hDC</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>nPreviousPoint</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_PlayEnhMetaFile_" data-uid="IFoxCAD.Cad.EmfTool.PlayEnhMetaFile*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_PlayEnhMetaFile_System_IntPtr_System_IntPtr_IFoxCAD_Basal_WindowsAPI_IntRect__" data-uid="IFoxCAD.Cad.EmfTool.PlayEnhMetaFile(System.IntPtr,System.IntPtr,IFoxCAD.Basal.WindowsAPI.IntRect@)">
+  PlayEnhMetaFile(IntPtr, IntPtr, ref IntRect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>在指定的设备场景中画一个增强型图元文件;<br>
+与标准图元文件不同,完成回放后,增强型图元文件会恢复设备场景以前的状态</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool PlayEnhMetaFile(IntPtr hdcRef, IntPtr hemf, ref WindowsAPI.IntRect lpRect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hdcRef</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd><p>画布句柄</p>
+</dd>
+    <dt><code>hemf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd><p>欲描绘的emf的图元文件句柄</p>
+</dd>
+    <dt><code>lpRect</code> <a class="xref" href="IFoxCAD.Basal.WindowsAPI.html">WindowsAPI</a>.<a class="xref" href="IFoxCAD.Basal.WindowsAPI.IntRect.html">IntRect</a></dt>
+    <dd><p>指定显示区域(逻辑单位)GDI会缩放图像以适应该矩形范围</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_Rectangle_" data-uid="IFoxCAD.Cad.EmfTool.Rectangle*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_Rectangle_System_IntPtr_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="IFoxCAD.Cad.EmfTool.Rectangle(System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32)">
+  Rectangle(IntPtr, int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Rectangle(IntPtr hDC, int nLeft, int nTop, int nRight, int nBottom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hDC</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>nLeft</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>nTop</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>nRight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>nBottom</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_Save_" data-uid="IFoxCAD.Cad.EmfTool.Save*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_Save_System_IntPtr_System_String_" data-uid="IFoxCAD.Cad.EmfTool.Save(System.IntPtr,System.String)">
+  Save(IntPtr, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>保存</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Save(IntPtr clipTypeData, string file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clipTypeData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd><p>GetEnhMetaFileBits 参数1的结构体首地址</p>
+</dd>
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>保存路径</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_SaveMetaFile_" data-uid="IFoxCAD.Cad.EmfTool.SaveMetaFile*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_SaveMetaFile_System_Drawing_Imaging_Metafile_System_String_" data-uid="IFoxCAD.Cad.EmfTool.SaveMetaFile(System.Drawing.Imaging.Metafile,System.String)">
+  SaveMetaFile(Metafile, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>矢量图保存</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SaveMetaFile(this Metafile file, string emfName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.imaging.metafile">Metafile</a></dt>
+    <dd></dd>
+    <dt><code>emfName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_SelectObject_" data-uid="IFoxCAD.Cad.EmfTool.SelectObject*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_SelectObject_System_IntPtr_System_Int32_" data-uid="IFoxCAD.Cad.EmfTool.SelectObject(System.IntPtr,System.Int32)">
+  SelectObject(IntPtr, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int SelectObject(IntPtr hDC, int hGdiObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hDC</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>hGdiObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_SetEnhMetaFileBits_" data-uid="IFoxCAD.Cad.EmfTool.SetEnhMetaFileBits*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_SetEnhMetaFileBits_System_UInt32_System_Byte___" data-uid="IFoxCAD.Cad.EmfTool.SetEnhMetaFileBits(System.UInt32,System.Byte[])">
+  SetEnhMetaFileBits(uint, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>byte转换矢量图</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern IntPtr SetEnhMetaFileBits(uint cbBuffer, byte[] lpBuffer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cbBuffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>lpBuffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_SetEnhMetaFileDescriptionEx_" data-uid="IFoxCAD.Cad.EmfTool.SetEnhMetaFileDescriptionEx*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_SetEnhMetaFileDescriptionEx_System_IntPtr__System_String_" data-uid="IFoxCAD.Cad.EmfTool.SetEnhMetaFileDescriptionEx(System.IntPtr@,System.String)">
+  SetEnhMetaFileDescriptionEx(ref IntPtr, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置emf描述</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetEnhMetaFileDescriptionEx(ref IntPtr hMetaFile, string desc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hMetaFile</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd><p>emf文件句柄</p>
+</dd>
+    <dt><code>desc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>设置描述</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_SetViewportExtEx_" data-uid="IFoxCAD.Cad.EmfTool.SetViewportExtEx*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_SetViewportExtEx_System_IntPtr_System_Int32_System_Int32_IFoxCAD_Basal_WindowsAPI_IntSize__" data-uid="IFoxCAD.Cad.EmfTool.SetViewportExtEx(System.IntPtr,System.Int32,System.Int32,IFoxCAD.Basal.WindowsAPI.IntSize@)">
+  SetViewportExtEx(IntPtr, int, int, ref IntSize)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>视口区域的定义
+{只能在 MM_ISOTROPIC 或 MM_ANISOTROPIC 模式下使用下面两个函数}</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool SetViewportExtEx(IntPtr hdcRef, int nHeight, int nWidth, ref WindowsAPI.IntSize lpSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hdcRef</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>nHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>nWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>lpSize</code> <a class="xref" href="IFoxCAD.Basal.WindowsAPI.html">WindowsAPI</a>.<a class="xref" href="IFoxCAD.Basal.WindowsAPI.IntSize.html">IntSize</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_SetWinMetaFileBits_" data-uid="IFoxCAD.Cad.EmfTool.SetWinMetaFileBits*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_SetWinMetaFileBits_System_UInt32_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="IFoxCAD.Cad.EmfTool.SetWinMetaFileBits(System.UInt32,System.IntPtr,System.IntPtr,System.IntPtr)">
+  SetWinMetaFileBits(uint, IntPtr, IntPtr, IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>将一个标准Windows图元文件转换成增强型图元文件</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern IntPtr SetWinMetaFileBits(uint nSize, IntPtr lpMeta16Data, IntPtr hdcRef, IntPtr lpMFP)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p><code class="paramref">lpMeta16Data</code>数组的长度</p>
+</dd>
+    <dt><code>lpMeta16Data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd><p>数组包含了标准图元文件数据.<br>
+常用 GetMetaFileBitsEx 或 GetWinMetaFileBits 函数获得</p>
+</dd>
+    <dt><code>hdcRef</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd><p>用于决定原始格式及图元文件分辨率的一个参考设备场景;<br>
+采用显示器分辨率为:<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr.zero">Zero</a></p>
+</dd>
+    <dt><code>lpMFP</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd><p>定义一个图元文件附加参考信息的结构<br>
+为null时,会假定使用当前显示器的 MM_ANISOTROPIC 映射模式</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd><p>错误: <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr.zero">Zero</a>;<br>
+成功: 返回一个增强型图元emf文件的指针(位于内存中)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_SetWindowExtEx_" data-uid="IFoxCAD.Cad.EmfTool.SetWindowExtEx*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_SetWindowExtEx_System_IntPtr_System_Int32_System_Int32_IFoxCAD_Basal_WindowsAPI_IntSize__" data-uid="IFoxCAD.Cad.EmfTool.SetWindowExtEx(System.IntPtr,System.Int32,System.Int32,IFoxCAD.Basal.WindowsAPI.IntSize@)">
+  SetWindowExtEx(IntPtr, int, int, ref IntSize)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>逻辑单位设置窗口单位
+{只能在 MM_ISOTROPIC 或 MM_ANISOTROPIC 模式下使用下面两个函数}</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool SetWindowExtEx(IntPtr hdcRef, int nHeight, int nWidth, ref WindowsAPI.IntSize lpSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hdcRef</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd><p>画布句柄</p>
+</dd>
+    <dt><code>nHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>以逻辑单位表示的新窗口区域的高度</p>
+</dd>
+    <dt><code>nWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>以逻辑单位表示的新窗口区域的宽度</p>
+</dd>
+    <dt><code>lpSize</code> <a class="xref" href="IFoxCAD.Basal.WindowsAPI.html">WindowsAPI</a>.<a class="xref" href="IFoxCAD.Basal.WindowsAPI.IntSize.html">IntSize</a></dt>
+    <dd><p>保存函数调用前窗口区域尺寸的SIZE结构地址,NULL则表示忽略调用前的尺寸</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_ToByteArray_" data-uid="IFoxCAD.Cad.EmfTool.ToByteArray*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_ToByteArray_System_Drawing_Image_" data-uid="IFoxCAD.Cad.EmfTool.ToByteArray(System.Drawing.Image)">
+  ToByteArray(Image)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>矢量图 转换 byte[]</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[]? ToByteArray(this Image image)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>image</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.image">Image</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_ToByteArray_" data-uid="IFoxCAD.Cad.EmfTool.ToByteArray*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_ToByteArray_System_Drawing_Imaging_Metafile_" data-uid="IFoxCAD.Cad.EmfTool.ToByteArray(System.Drawing.Imaging.Metafile)">
+  ToByteArray(Metafile)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>矢量图 转换 byte[]</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[]? ToByteArray(this Metafile mf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.imaging.metafile">Metafile</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EmfTool_ToMetafile_" data-uid="IFoxCAD.Cad.EmfTool.ToMetafile*"></a>
+
+  <h3 id="IFoxCAD_Cad_EmfTool_ToMetafile_System_Byte___System_Func_System_Drawing_Image_System_Boolean__" data-uid="IFoxCAD.Cad.EmfTool.ToMetafile(System.Byte[],System.Func{System.Drawing.Image,System.Boolean})">
+  ToMetafile(byte[], Func&lt;Image, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>byte[] 转换 矢量图</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ToMetafile(byte[] data, Func&lt;Image, bool&gt; task)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>task</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.image">Image</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>返回值true删除句柄</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

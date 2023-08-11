@@ -1,0 +1,1868 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DBTrans
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DBTrans
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="IFoxCAD.Cad.DBTrans">
+
+
+
+  <h1 id="IFoxCAD_Cad_DBTrans" data-uid="IFoxCAD.Cad.DBTrans" class="text-break">
+    Class DBTrans
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="IFoxCAD.html">IFoxCAD</a>.<a class="xref" href="IFoxCAD.Cad.html">Cad</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>IFox.CAD.ACAD.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>事务栈</p>
+<p>隐匿事务在数据库其中担任的角色</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class DBTrans : IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">DBTrans</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.DBTransEx.html#IFoxCAD_Cad_DBTransEx_Purge_IFoxCAD_Cad_DBTrans_IFoxCAD_Cad_SymModes_System_Boolean_">DBTransEx.Purge(DBTrans, SymModes, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.XrefEx.html#IFoxCAD_Cad_XrefEx_XrefFactory_IFoxCAD_Cad_DBTrans_IFoxCAD_Cad_XrefModes_System_Collections_Generic_HashSet_System_String__">XrefEx.XrefFactory(DBTrans, XrefModes, HashSet&lt;string&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="IFoxCAD_Cad_DBTrans__ctor_" data-uid="IFoxCAD.Cad.DBTrans.#ctor*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans__ctor_Autodesk_AutoCAD_ApplicationServices_Document_System_Boolean_System_Boolean_" data-uid="IFoxCAD.Cad.DBTrans.#ctor(Autodesk.AutoCAD.ApplicationServices.Document,System.Boolean,System.Boolean)">
+  DBTrans(Document?, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>事务栈</p>
+<p>默认构造函数,默认为打开当前文档,默认提交事务</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DBTrans(Document? doc = null, bool commit = true, bool doclock = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>要打开的文档</p>
+</dd>
+    <dt><code>commit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>事务是否提交</p>
+</dd>
+    <dt><code>doclock</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否锁文档</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans__ctor_" data-uid="IFoxCAD.Cad.DBTrans.#ctor*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans__ctor_Autodesk_AutoCAD_DatabaseServices_Database_System_Boolean_" data-uid="IFoxCAD.Cad.DBTrans.#ctor(Autodesk.AutoCAD.DatabaseServices.Database,System.Boolean)">
+  DBTrans(Database, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>事务栈</p>
+<p>打开数据库,默认提交事务</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DBTrans(Database database, bool commit = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>database</code> <span class="xref">Database</span></dt>
+    <dd><p>要打开的数据库</p>
+</dd>
+    <dt><code>commit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>事务是否提交</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans__ctor_" data-uid="IFoxCAD.Cad.DBTrans.#ctor*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans__ctor_System_String_System_Boolean_Autodesk_AutoCAD_DatabaseServices_FileOpenMode_System_String_System_Boolean_" data-uid="IFoxCAD.Cad.DBTrans.#ctor(System.String,System.Boolean,Autodesk.AutoCAD.DatabaseServices.FileOpenMode,System.String,System.Boolean)">
+  DBTrans(string, bool, FileOpenMode, string?, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>事务栈</p>
+<p>打开文件,默认提交事务</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DBTrans(string fileName, bool commit = true, FileOpenMode fileOpenMode = 2, string? password = null, bool activeOpen = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>要打开的文件名</p>
+</dd>
+    <dt><code>commit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>事务是否提交</p>
+</dd>
+    <dt><code>fileOpenMode</code> <span class="xref">FileOpenMode</span></dt>
+    <dd><p>开图模式</p>
+</dd>
+    <dt><code>password</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>密码</p>
+</dd>
+    <dt><code>activeOpen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>后台打开false;前台打开true(必须设置CommandFlags.Session)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="IFoxCAD_Cad_DBTrans_BlockTable_" data-uid="IFoxCAD.Cad.DBTrans.BlockTable*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_BlockTable" data-uid="IFoxCAD.Cad.DBTrans.BlockTable">
+  BlockTable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>块表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolTable&lt;BlockTable, BlockTableRecord&gt; BlockTable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<span class="xref">BlockTable</span>, <span class="xref">BlockTableRecord</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_ColorDict_" data-uid="IFoxCAD.Cad.DBTrans.ColorDict*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_ColorDict" data-uid="IFoxCAD.Cad.DBTrans.ColorDict">
+  ColorDict
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>颜色字典</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DBDictionary ColorDict { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DBDictionary</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_CurrentSpace_" data-uid="IFoxCAD.Cad.DBTrans.CurrentSpace*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_CurrentSpace" data-uid="IFoxCAD.Cad.DBTrans.CurrentSpace">
+  CurrentSpace
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>当前绘图空间</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlockTableRecord CurrentSpace { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">BlockTableRecord</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_DataLinkDict_" data-uid="IFoxCAD.Cad.DBTrans.DataLinkDict*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_DataLinkDict" data-uid="IFoxCAD.Cad.DBTrans.DataLinkDict">
+  DataLinkDict
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>数据链接字典</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DBDictionary DataLinkDict { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DBDictionary</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_Database_" data-uid="IFoxCAD.Cad.DBTrans.Database*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_Database" data-uid="IFoxCAD.Cad.DBTrans.Database">
+  Database
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>数据库</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Database Database { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Database</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_DetailViewStyleDict_" data-uid="IFoxCAD.Cad.DBTrans.DetailViewStyleDict*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_DetailViewStyleDict" data-uid="IFoxCAD.Cad.DBTrans.DetailViewStyleDict">
+  DetailViewStyleDict
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>详细视图样式字典</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DBDictionary DetailViewStyleDict { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DBDictionary</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_DimStyleTable_" data-uid="IFoxCAD.Cad.DBTrans.DimStyleTable*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_DimStyleTable" data-uid="IFoxCAD.Cad.DBTrans.DimStyleTable">
+  DimStyleTable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>标注样式表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolTable&lt;DimStyleTable, DimStyleTableRecord&gt; DimStyleTable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<span class="xref">DimStyleTable</span>, <span class="xref">DimStyleTableRecord</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_Document_" data-uid="IFoxCAD.Cad.DBTrans.Document*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_Document" data-uid="IFoxCAD.Cad.DBTrans.Document">
+  Document
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>文档</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Document? Document { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Document</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_Editor_" data-uid="IFoxCAD.Cad.DBTrans.Editor*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_Editor" data-uid="IFoxCAD.Cad.DBTrans.Editor">
+  Editor
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>命令行</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Editor? Editor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Editor</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_GroupDict_" data-uid="IFoxCAD.Cad.DBTrans.GroupDict*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_GroupDict" data-uid="IFoxCAD.Cad.DBTrans.GroupDict">
+  GroupDict
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>组字典</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DBDictionary GroupDict { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DBDictionary</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_IsDisposed_" data-uid="IFoxCAD.Cad.DBTrans.IsDisposed*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_IsDisposed" data-uid="IFoxCAD.Cad.DBTrans.IsDisposed">
+  IsDisposed
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否释放事务</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDisposed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_LayerTable_" data-uid="IFoxCAD.Cad.DBTrans.LayerTable*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_LayerTable" data-uid="IFoxCAD.Cad.DBTrans.LayerTable">
+  LayerTable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>层表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolTable&lt;LayerTable, LayerTableRecord&gt; LayerTable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<span class="xref">LayerTable</span>, <span class="xref">LayerTableRecord</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_LayoutDict_" data-uid="IFoxCAD.Cad.DBTrans.LayoutDict*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_LayoutDict" data-uid="IFoxCAD.Cad.DBTrans.LayoutDict">
+  LayoutDict
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>布局字典</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DBDictionary LayoutDict { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DBDictionary</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_LinetypeTable_" data-uid="IFoxCAD.Cad.DBTrans.LinetypeTable*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_LinetypeTable" data-uid="IFoxCAD.Cad.DBTrans.LinetypeTable">
+  LinetypeTable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>线型表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolTable&lt;LinetypeTable, LinetypeTableRecord&gt; LinetypeTable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<span class="xref">LinetypeTable</span>, <span class="xref">LinetypeTableRecord</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_MLStyleDict_" data-uid="IFoxCAD.Cad.DBTrans.MLStyleDict*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_MLStyleDict" data-uid="IFoxCAD.Cad.DBTrans.MLStyleDict">
+  MLStyleDict
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>多线样式字典</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DBDictionary MLStyleDict { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DBDictionary</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_MLeaderStyleDict_" data-uid="IFoxCAD.Cad.DBTrans.MLeaderStyleDict*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_MLeaderStyleDict" data-uid="IFoxCAD.Cad.DBTrans.MLeaderStyleDict">
+  MLeaderStyleDict
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>多重引线样式字典</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DBDictionary MLeaderStyleDict { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DBDictionary</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_MaterialDict_" data-uid="IFoxCAD.Cad.DBTrans.MaterialDict*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_MaterialDict" data-uid="IFoxCAD.Cad.DBTrans.MaterialDict">
+  MaterialDict
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>材质字典</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DBDictionary MaterialDict { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DBDictionary</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_ModelSpace_" data-uid="IFoxCAD.Cad.DBTrans.ModelSpace*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_ModelSpace" data-uid="IFoxCAD.Cad.DBTrans.ModelSpace">
+  ModelSpace
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>模型空间</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlockTableRecord ModelSpace { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">BlockTableRecord</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_NamedObjectsDict_" data-uid="IFoxCAD.Cad.DBTrans.NamedObjectsDict*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_NamedObjectsDict" data-uid="IFoxCAD.Cad.DBTrans.NamedObjectsDict">
+  NamedObjectsDict
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>命名对象字典</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DBDictionary NamedObjectsDict { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DBDictionary</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_PaperSpace_" data-uid="IFoxCAD.Cad.DBTrans.PaperSpace*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_PaperSpace" data-uid="IFoxCAD.Cad.DBTrans.PaperSpace">
+  PaperSpace
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>图纸空间</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlockTableRecord PaperSpace { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">BlockTableRecord</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_PlotSettingsDict_" data-uid="IFoxCAD.Cad.DBTrans.PlotSettingsDict*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_PlotSettingsDict" data-uid="IFoxCAD.Cad.DBTrans.PlotSettingsDict">
+  PlotSettingsDict
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>打印设置字典</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DBDictionary PlotSettingsDict { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DBDictionary</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_PlotStyleNameDict_" data-uid="IFoxCAD.Cad.DBTrans.PlotStyleNameDict*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_PlotStyleNameDict" data-uid="IFoxCAD.Cad.DBTrans.PlotStyleNameDict">
+  PlotStyleNameDict
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>打印样式表名字典</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DBDictionary PlotStyleNameDict { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DBDictionary</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_RegAppTable_" data-uid="IFoxCAD.Cad.DBTrans.RegAppTable*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_RegAppTable" data-uid="IFoxCAD.Cad.DBTrans.RegAppTable">
+  RegAppTable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>注册应用程序表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolTable&lt;RegAppTable, RegAppTableRecord&gt; RegAppTable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<span class="xref">RegAppTable</span>, <span class="xref">RegAppTableRecord</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_SectionViewStyleDict_" data-uid="IFoxCAD.Cad.DBTrans.SectionViewStyleDict*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_SectionViewStyleDict" data-uid="IFoxCAD.Cad.DBTrans.SectionViewStyleDict">
+  SectionViewStyleDict
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>剖面视图样式字典</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DBDictionary SectionViewStyleDict { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DBDictionary</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_TableStyleDict_" data-uid="IFoxCAD.Cad.DBTrans.TableStyleDict*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_TableStyleDict" data-uid="IFoxCAD.Cad.DBTrans.TableStyleDict">
+  TableStyleDict
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>表格样式字典</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DBDictionary TableStyleDict { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DBDictionary</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_TextStyleTable_" data-uid="IFoxCAD.Cad.DBTrans.TextStyleTable*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_TextStyleTable" data-uid="IFoxCAD.Cad.DBTrans.TextStyleTable">
+  TextStyleTable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>文字样式表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolTable&lt;TextStyleTable, TextStyleTableRecord&gt; TextStyleTable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<span class="xref">TextStyleTable</span>, <span class="xref">TextStyleTableRecord</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_Top_" data-uid="IFoxCAD.Cad.DBTrans.Top*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_Top" data-uid="IFoxCAD.Cad.DBTrans.Top">
+  Top
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>返回当前事务</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DBTrans Top { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IFoxCAD.Cad.DBTrans.html">DBTrans</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_Transaction_" data-uid="IFoxCAD.Cad.DBTrans.Transaction*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_Transaction" data-uid="IFoxCAD.Cad.DBTrans.Transaction">
+  Transaction
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>事务管理器</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transaction Transaction { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transaction</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_UcsTable_" data-uid="IFoxCAD.Cad.DBTrans.UcsTable*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_UcsTable" data-uid="IFoxCAD.Cad.DBTrans.UcsTable">
+  UcsTable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>用户坐标系表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolTable&lt;UcsTable, UcsTableRecord&gt; UcsTable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<span class="xref">UcsTable</span>, <span class="xref">UcsTableRecord</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_ViewTable_" data-uid="IFoxCAD.Cad.DBTrans.ViewTable*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_ViewTable" data-uid="IFoxCAD.Cad.DBTrans.ViewTable">
+  ViewTable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>视图表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolTable&lt;ViewTable, ViewTableRecord&gt; ViewTable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<span class="xref">ViewTable</span>, <span class="xref">ViewTableRecord</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_ViewportTable_" data-uid="IFoxCAD.Cad.DBTrans.ViewportTable*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_ViewportTable" data-uid="IFoxCAD.Cad.DBTrans.ViewportTable">
+  ViewportTable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>视口表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolTable&lt;ViewportTable, ViewportTableRecord&gt; ViewportTable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<span class="xref">ViewportTable</span>, <span class="xref">ViewportTableRecord</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_VisualStyleDict_" data-uid="IFoxCAD.Cad.DBTrans.VisualStyleDict*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_VisualStyleDict" data-uid="IFoxCAD.Cad.DBTrans.VisualStyleDict">
+  VisualStyleDict
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>视觉样式字典</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DBDictionary VisualStyleDict { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DBDictionary</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="IFoxCAD_Cad_DBTrans_Abort_" data-uid="IFoxCAD.Cad.DBTrans.Abort*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_Abort" data-uid="IFoxCAD.Cad.DBTrans.Abort">
+  Abort()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>取消事务</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Abort()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_Commit_" data-uid="IFoxCAD.Cad.DBTrans.Commit*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_Commit" data-uid="IFoxCAD.Cad.DBTrans.Commit">
+  Commit()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>提交事务</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Commit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_Dispose_" data-uid="IFoxCAD.Cad.DBTrans.Dispose*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_Dispose" data-uid="IFoxCAD.Cad.DBTrans.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>手动调用释放</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_Finalize_" data-uid="IFoxCAD.Cad.DBTrans.Finalize*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_Finalize" data-uid="IFoxCAD.Cad.DBTrans.Finalize">
+  ~DBTrans()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>析构函数调用释放</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ~DBTrans()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_GetObject_" data-uid="IFoxCAD.Cad.DBTrans.GetObject*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_GetObject_Autodesk_AutoCAD_DatabaseServices_ObjectId_Autodesk_AutoCAD_DatabaseServices_OpenMode_System_Boolean_System_Boolean_" data-uid="IFoxCAD.Cad.DBTrans.GetObject(Autodesk.AutoCAD.DatabaseServices.ObjectId,Autodesk.AutoCAD.DatabaseServices.OpenMode,System.Boolean,System.Boolean)">
+  GetObject(ObjectId, OpenMode, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据对象id获取对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DBObject GetObject(ObjectId id, OpenMode openMode = 0, bool openErased = false, bool openLockedLayer = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <span class="xref">ObjectId</span></dt>
+    <dd><p>对象id</p>
+</dd>
+    <dt><code>openMode</code> <span class="xref">OpenMode</span></dt>
+    <dd><p>打开模式,默认为只读</p>
+</dd>
+    <dt><code>openErased</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否打开已删除对象,默认为不打开</p>
+</dd>
+    <dt><code>openLockedLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否打开锁定图层对象,默认为不打开</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DBObject</span></dt>
+    <dd><p>数据库DBObject对象</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_GetObjectId_" data-uid="IFoxCAD.Cad.DBTrans.GetObjectId*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_GetObjectId_System_String_" data-uid="IFoxCAD.Cad.DBTrans.GetObjectId(System.String)">
+  GetObjectId(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据对象句柄字符串获取对象Id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId GetObjectId(string handleString)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handleString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>句柄字符串</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ObjectId</span></dt>
+    <dd><p>对象id</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_GetObject_" data-uid="IFoxCAD.Cad.DBTrans.GetObject*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_GetObject__1_Autodesk_AutoCAD_DatabaseServices_ObjectId_Autodesk_AutoCAD_DatabaseServices_OpenMode_System_Boolean_System_Boolean_" data-uid="IFoxCAD.Cad.DBTrans.GetObject``1(Autodesk.AutoCAD.DatabaseServices.ObjectId,Autodesk.AutoCAD.DatabaseServices.OpenMode,System.Boolean,System.Boolean)">
+  GetObject&lt;T&gt;(ObjectId, OpenMode, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据对象id获取图元对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T? GetObject&lt;T&gt;(ObjectId id, OpenMode openMode = 0, bool openErased = false, bool openLockedLayer = false) where T : DBObject</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <span class="xref">ObjectId</span></dt>
+    <dd><p>对象id</p>
+</dd>
+    <dt><code>openMode</code> <span class="xref">OpenMode</span></dt>
+    <dd><p>打开模式,默认为只读</p>
+</dd>
+    <dt><code>openErased</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否打开已删除对象,默认为不打开</p>
+</dd>
+    <dt><code>openLockedLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否打开锁定图层对象,默认为不打开</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>图元对象</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>要获取的图元对象的类型</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_GetTop_" data-uid="IFoxCAD.Cad.DBTrans.GetTop*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_GetTop_Autodesk_AutoCAD_DatabaseServices_Database_" data-uid="IFoxCAD.Cad.DBTrans.GetTop(Autodesk.AutoCAD.DatabaseServices.Database)">
+  GetTop(Database)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取给定数据库的顶层 DBTrans 事务</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DBTrans GetTop(Database database)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>database</code> <span class="xref">Database</span></dt>
+    <dd><p>数据库</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IFoxCAD.Cad.DBTrans.html">DBTrans</a></dt>
+    <dd><p>DBTrans 事务</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_GetTopTransaction_" data-uid="IFoxCAD.Cad.DBTrans.GetTopTransaction*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_GetTopTransaction_Autodesk_AutoCAD_DatabaseServices_Database_" data-uid="IFoxCAD.Cad.DBTrans.GetTopTransaction(Autodesk.AutoCAD.DatabaseServices.Database)">
+  GetTopTransaction(Database)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取顶层事务</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Transaction GetTopTransaction(Database database)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>database</code> <span class="xref">Database</span></dt>
+    <dd><p>数据库</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transaction</span></dt>
+    <dd><p>事务对象</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_Task_" data-uid="IFoxCAD.Cad.DBTrans.Task*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_Task_System_Action_System_Boolean_" data-uid="IFoxCAD.Cad.DBTrans.Task(System.Action,System.Boolean)">
+  Task(Action, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>前台后台任务分别处理</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Task(Action action, bool handlingDBTextDeviation = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd><p>委托</p>
+</dd>
+    <dt><code>handlingDBTextDeviation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>开启单行文字偏移处理</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="IFoxCAD_Cad_DBTrans_Task_System_Action_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>备注:<br>
+0x01 文字偏移问题主要出现线性引擎函数<span class="xref">Autodesk.AutoCAD.DatabaseServices.Database.ResolveXrefs(System.Boolean,System.Boolean)</span>上面,<br>
+在 参照绑定/深度克隆 的底层共用此函数导致<br>
+0x02 后台是利用前台当前数据库进行处理的<br>
+0x03 跨进程通讯暂无测试(可能存在bug)<br></p>
+</div>
+
+
+
+
+  <a id="IFoxCAD_Cad_DBTrans_ToString_" data-uid="IFoxCAD.Cad.DBTrans.ToString*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_ToString" data-uid="IFoxCAD.Cad.DBTrans.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="IFoxCAD_Cad_DBTrans_op_Implicit_" data-uid="IFoxCAD.Cad.DBTrans.op_Implicit*"></a>
+
+  <h3 id="IFoxCAD_Cad_DBTrans_op_Implicit_IFoxCAD_Cad_DBTrans__Autodesk_AutoCAD_DatabaseServices_Transaction" data-uid="IFoxCAD.Cad.DBTrans.op_Implicit(IFoxCAD.Cad.DBTrans)~Autodesk.AutoCAD.DatabaseServices.Transaction">
+  implicit operator Transaction(DBTrans)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>隐式转换为Transaction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Transaction(DBTrans tr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tr</code> <a class="xref" href="IFoxCAD.Cad.DBTrans.html">DBTrans</a></dt>
+    <dd><p>事务管理器</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transaction</span></dt>
+    <dd><p>事务管理器</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
