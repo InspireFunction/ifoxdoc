@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>事务管理器用法 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="事务管理器用法 ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/InspireFunction/ifoxdoc/blob/master/articles/DBTrans.md/#L1">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="事务管理器用法">事务管理器用法</h1>
+
+<h2 id="事务管理器介绍">事务管理器介绍</h2>
+<p>事务管理器是cad .net二次开发过程绕不过去的一个部分，只要是涉及到读写cad数据的地方几乎都推荐在事务里完成。利用事务管理器可以自动的在退出事务的时候执行释放对象等操作，防止程序员不能释放对象，造成cad崩溃。</p>
+<p>但是，在日常的使用中，会发现每次开启事务，然后完成的都是差不多的任务，然后每次都要调用commit()函数，每次都要获取到符号表，每次要写模式，读模式等提权降级操作，但是这些操作其实都可以自动完成的，因此 ifoxcad 内裤提供事务管理器类来完成本来需要手工完成的工作，让用户可以更方便的处理事务内的程序。</p>
+<p>用事务管理器类可以完成：</p>
+<ul>
+<li>原生cad提供的事务管理器的全部操作</li>
+<li>方便的符号表操作</li>
+<li>方便的基础属性操作</li>
+<li>方便的对象获取操作</li>
+<li>方便的字典操作</li>
+</ul>
+<p>事务管理器类的类名为：DBTrans。开启默认的事务管理器写法为：</p>
+<pre><code class="lang-csharp">using (DBTrans tr = new DBTrans())
+{
+  ....
+}
+</code></pre>
+<h2 id="原生的事务管理器操作">原生的事务管理器操作</h2>
+<p>关于cad提供的原生事务管理器的操作不是本文档的重点，因为那操作起来麻烦，不够集中的将需要在事务内的操作做统一管理。</p>
+<h2 id="符号表操作">符号表操作</h2>
+<p>Ifoxcad 类库的符号表其实是一个符号表的泛型类，直接将符号表和符号表记录包装为一个整体。不用担心，在实际使用的过程中，你几乎不会关心符号表的构成原理。</p>
+<p>Ifoxcad 类库里采用如下的符号来表示9大符号表。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">符号表名</th>
+<th style="text-align: center;">符号表含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">BlockTable</td>
+<td style="text-align: center;">块表</td>
+</tr>
+<tr>
+<td style="text-align: center;">LayerTable</td>
+<td style="text-align: center;">图层表</td>
+</tr>
+<tr>
+<td style="text-align: center;">DimStyleTable</td>
+<td style="text-align: center;">标注样式表</td>
+</tr>
+<tr>
+<td style="text-align: center;">LinetypeTable</td>
+<td style="text-align: center;">线型表</td>
+</tr>
+<tr>
+<td style="text-align: center;">RegAppTable</td>
+<td style="text-align: center;">应用程序表</td>
+</tr>
+<tr>
+<td style="text-align: center;">TextStyleTable</td>
+<td style="text-align: center;">字体样式表</td>
+</tr>
+<tr>
+<td style="text-align: center;">UcsTable</td>
+<td style="text-align: center;">坐标系表</td>
+</tr>
+<tr>
+<td style="text-align: center;">ViewportTable</td>
+<td style="text-align: center;">视口表</td>
+</tr>
+<tr>
+<td style="text-align: center;">ViewTable</td>
+<td style="text-align: center;">视图表</td>
+</tr>
+</tbody>
+</table>
+<p><strong>然后怎么使用呢？使用符号表一共分几步呢？</strong></p>
+<pre><code class="lang-csharp">using (DBTrans tr = new DBTrans()) // 第一步，开启事务
+{ 
+  var layerTable = tr.LayerTable;// 第二步，获取图层表  
+} // 事务结束并自动提交
+</code></pre>
+<p>上面是一个获取层表的例子，其他的符号表都是一样的写法，因为这些符号表都是事务管理器的属性。那么获取到符号表之后能做些什么？</p>
+<ul>
+<li><p><strong>向符号表里添加元素</strong></p>
+<pre><code class="lang-csharp">using (DBTrans tr = new DBTrans()) 
+{ // 第一步，开启事务
+     var layerTable = tr.LayerTable;
+// 第二步，获取图层表
+     layerTable.Add(&quot;1&quot;);// 返回值为ObjectId
+// 第三步，向层表里添加一个元素，也就是新建一个图层。
+} // 事务结束并自动提交
+</code></pre>
+<p>每个符号表都有Add函数，而且提供了不止一个重载函数。</p>
+</li>
+<li><p><strong>添加和获取符号表里的元素</strong></p>
+<p>想要添加和获取符号表内的某个元素非常的简单：</p>
+<pre><code class="lang-csharp">using (DBTrans tr = new DBTrans()) // 第一步，开启事务
+{ 
+var layerTable = tr.LayerTable; // 第二步，获取图层表
+layerTable.Add(&quot;1&quot;); // 第三步，添加名为“1”的图层，即新建图层
+ObjectId id = layerTable[&quot;1&quot;]; // 第四步，获取图层“1”的id。   
+} // 事务结束并自动提交
+</code></pre>
+<p>每个符号表都提供了索引形式的获取元素id的写法。</p>
+</li>
+<li><p><strong>线型表</strong></p>
+<pre><code class="lang-csharp">// 两种方式
+// 第一种，直接调用tr.LinetypeTable.Add(&quot;hah&quot;)函数，然后对返回值ObjectId做具体的操作。
+// 第二种，直接在Action委托里把相关的操作完成。
+tr.LinetypeTable.Add(
+                   &quot;hah&quot;,
+                   ltt =&gt; 
+                   {
+                       ltt.AsciiDescription = &quot;虚线&quot;;
+                       ltt.PatternLength = 0.95; //线型的总长度
+                       ltt.NumDashes = 4; //组成线型的笔画数目
+                       ltt.SetDashLengthAt(0, 0.5); //0.5个单位的划线
+                       ltt.SetDashLengthAt(1, -0.25); //0.25个单位的空格
+                       ltt.SetDashLengthAt(2, 0); // 一个点
+                       ltt.SetDashLengthAt(3, -0.25); //0.25个单位的空格
+                   });
+// 这段代码同时演示了 ifoxcad 类库关于符号表的public ObjectId Add(string name, Action&lt;TRecord&gt; action)这个函数的用法。
+// 或者直接调用：
+tr.LinetypeTable.Add(&quot;hah&quot;, &quot;虚线&quot;,0.95,new double[]{0.5,-0.25,0,-0.25});
+// 获取线型表
+tr.LinetypeTable[&quot;hah&quot;];
+</code></pre>
+<p><strong>其他符号表的操作类同。如果类库没有提供的Add函数的重载，那么Action委托可以完成你想完成的所有事情。</strong></p>
+</li>
+</ul>
+<h2 id="基础属性操作">基础属性操作</h2>
+<p>事务管理器类提供了<code>Document</code>、 <code>Editor</code> 、<code>Database</code>三个属性来在事务内部处理相关事项。</p>
+<p>同时还提供了关于字典的相关属性。</p>
+<h2 id="对象获取操作">对象获取操作</h2>
+<p>提供了1个泛型 <code>GetObject&lt;T&gt;</code>函数的重载来根据ObjectId来获取到对象。</p>
+<h2 id="字典操作未完待续">字典操作(未完待续)</h2>
+<ul>
+<li><p>扩展字典</p>
+<p><code>SetXRecord</code> 保存扩展数据到字典</p>
+<p><code>GetXRecord </code> 获取扩展数据</p>
+</li>
+<li><p>对象字典</p>
+<p><code>SetToDictionary</code> 保存数据到字典</p>
+<p><code>GetFromDictionary</code> 从字典获取数据</p>
+<p><code>GetSubDictionary</code> 获取子对象字典</p>
+</li>
+</ul>
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/InspireFunction/ifoxdoc/blob/master/articles/DBTrans.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

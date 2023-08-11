@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Enum GetWindowCmd
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Enum GetWindowCmd
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="IFoxCAD.Basal.GetWindowCmd">
+
+
+
+
+  <h1 id="IFoxCAD_Basal_GetWindowCmd" data-uid="IFoxCAD.Basal.GetWindowCmd" class="text-break">
+    Enum GetWindowCmd
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="IFoxCAD.html">IFoxCAD</a>.<a class="xref" href="IFoxCAD.Basal.html">Basal</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>IFox.Basal.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum GetWindowCmd : uint</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.EnumEx.html#IFoxCAD_Basal_EnumEx_GetAttribute__1_System_Enum_System_Boolean_">EnumEx.GetAttribute&lt;T&gt;(Enum, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.EnumEx.html#IFoxCAD_Basal_EnumEx_GetDesc_System_Enum_">EnumEx.GetDesc(Enum)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.EnumEx.html#IFoxCAD_Basal_EnumEx_PrintNote_System_Enum_System_Boolean_">EnumEx.PrintNote(Enum, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  </dd></dl>
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="IFoxCAD_Basal_GetWindowCmd_GW_CHILD"><code>GW_CHILD = 5</code></dt>
+    <dd><p>如果指定窗口是父窗口,则获得的是在Tab序顶端的子窗口的句柄,否则为NULL。
+函数仅检查指定父窗口的子窗口,不检查继承窗口。</p>
+</dd>
+    <dt id="IFoxCAD_Basal_GetWindowCmd_GW_ENABLEDPOPUP"><code>GW_ENABLEDPOPUP = 6</code></dt>
+    <dd><p>（WindowsNT 5.0）返回的句柄标识了属于指定窗口的处于使能状态弹出式窗口（检索使用第一个由GW_HWNDNEXT 查找到的满足前述条件的窗口）；
+如果无使能窗口,则获得的句柄与指定窗口相同。</p>
+</dd>
+    <dt id="IFoxCAD_Basal_GetWindowCmd_GW_HWNDFIRST"><code>GW_HWNDFIRST = 0</code></dt>
+    <dd><p>返回的句柄标识了在Z序最高端的相同类型的窗口。
+如果指定窗口是最高端窗口,则该句柄标识了在Z序最高端的最高端窗口；
+如果指定窗口是顶层窗口,则该句柄标识了在z序最高端的顶层窗口：
+如果指定窗口是子窗口,则句柄标识了在Z序最高端的同属窗口。</p>
+</dd>
+    <dt id="IFoxCAD_Basal_GetWindowCmd_GW_HWNDLAST"><code>GW_HWNDLAST = 1</code></dt>
+    <dd><p>返回的句柄标识了在z序最低端的相同类型的窗口。
+如果指定窗口是最高端窗口,则该柄标识了在z序最低端的最高端窗口：
+如果指定窗口是顶层窗口,则该句柄标识了在z序最低端的顶层窗口；
+如果指定窗口是子窗口,则句柄标识了在Z序最低端的同属窗口。</p>
+</dd>
+    <dt id="IFoxCAD_Basal_GetWindowCmd_GW_HWNDNEXT"><code>GW_HWNDNEXT = 2</code></dt>
+    <dd><p>返回的句柄标识了在Z序中指定窗口下的相同类型的窗口。
+如果指定窗口是最高端窗口,则该句柄标识了在指定窗口下的最高端窗口：
+如果指定窗口是顶层窗口,则该句柄标识了在指定窗口下的顶层窗口；
+如果指定窗口是子窗口,则句柄标识了在指定窗口下的同属窗口。</p>
+</dd>
+    <dt id="IFoxCAD_Basal_GetWindowCmd_GW_HWNDPREV"><code>GW_HWNDPREV = 3</code></dt>
+    <dd><p>返回的句柄标识了在Z序中指定窗口上的相同类型的窗口。
+如果指定窗口是最高端窗口,则该句柄标识了在指定窗口上的最高端窗口；
+如果指定窗口是顶层窗口,则该句柄标识了在指定窗口上的顶层窗口；
+如果指定窗口是子窗口,则句柄标识了在指定窗口上的同属窗口。</p>
+</dd>
+    <dt id="IFoxCAD_Basal_GetWindowCmd_GW_OWNER"><code>GW_OWNER = 4</code></dt>
+    <dd><p>返回的句柄标识了指定窗口的所有者窗口（如果存在）。
+GW_OWNER与GW_CHILD不是相对的参数,没有父窗口的含义,如果想得到父窗口请使用GetParent()。
+例如：例如有时对话框的控件的GW_OWNER,是不存在的。</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

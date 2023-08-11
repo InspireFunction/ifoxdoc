@@ -1,0 +1,972 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Curve3dEx
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Curve3dEx
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="IFoxCAD.Cad.Curve3dEx">
+
+
+
+  <h1 id="IFoxCAD_Cad_Curve3dEx" data-uid="IFoxCAD.Cad.Curve3dEx" class="text-break">
+    Class Curve3dEx
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="IFoxCAD.html">IFoxCAD</a>.<a class="xref" href="IFoxCAD.Cad.html">Cad</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>IFox.CAD.ACAD.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>三维解析类曲线转换为三维实体曲线扩展类</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Curve3dEx</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Curve3dEx</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="IFoxCAD_Cad_Curve3dEx_GetParamsAtIntersectionPoints_" data-uid="IFoxCAD.Cad.Curve3dEx.GetParamsAtIntersectionPoints*"></a>
+
+  <h3 id="IFoxCAD_Cad_Curve3dEx_GetParamsAtIntersectionPoints_Autodesk_AutoCAD_Geometry_Curve3d_System_Boolean_" data-uid="IFoxCAD.Cad.Curve3dEx.GetParamsAtIntersectionPoints(Autodesk.AutoCAD.Geometry.Curve3d,System.Boolean)">
+  GetParamsAtIntersectionPoints(Curve3d, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取三维解析类曲线(自交曲线)的交点参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;double&gt; GetParamsAtIntersectionPoints(this Curve3d c3d, bool sort = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c3d</code> <span class="xref">Curve3d</span></dt>
+    <dd><p>三维解析类曲线</p>
+</dd>
+    <dt><code>sort</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>曲线参数的列表</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Curve3dEx_GetSplitCurves_" data-uid="IFoxCAD.Cad.Curve3dEx.GetSplitCurves*"></a>
+
+  <h3 id="IFoxCAD_Cad_Curve3dEx_GetSplitCurves_Autodesk_AutoCAD_Geometry_CompositeCurve3d_System_Collections_Generic_List_System_Double__" data-uid="IFoxCAD.Cad.Curve3dEx.GetSplitCurves(Autodesk.AutoCAD.Geometry.CompositeCurve3d,System.Collections.Generic.List{System.Double})">
+  GetSplitCurves(CompositeCurve3d, List&lt;double&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>将三维复合曲线按曲线参数分割</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;CompositeCurve3d&gt;? GetSplitCurves(this CompositeCurve3d c3d, List&lt;double&gt; pars)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c3d</code> <span class="xref">CompositeCurve3d</span></dt>
+    <dd><p>三维复合曲线</p>
+</dd>
+    <dt><code>pars</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>曲线参数列表</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">CompositeCurve3d</span>&gt;</dt>
+    <dd><p>三维复合曲线列表</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Curve3dEx_GetSubCurve_" data-uid="IFoxCAD.Cad.Curve3dEx.GetSubCurve*"></a>
+
+  <h3 id="IFoxCAD_Cad_Curve3dEx_GetSubCurve_Autodesk_AutoCAD_Geometry_Curve3d_System_Double_System_Double_" data-uid="IFoxCAD.Cad.Curve3dEx.GetSubCurve(Autodesk.AutoCAD.Geometry.Curve3d,System.Double,System.Double)">
+  GetSubCurve(Curve3d, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取三维解析类子曲线</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Curve3d GetSubCurve(this Curve3d curve, double from, double to)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>curve</code> <span class="xref">Curve3d</span></dt>
+    <dd><p>三维解析类曲线</p>
+</dd>
+    <dt><code>from</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>子段曲线起点参数</p>
+</dd>
+    <dt><code>to</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>子段曲线终点参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Curve3d</span></dt>
+    <dd><p>三维解析类曲线</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Curve3dEx_IsCircular_" data-uid="IFoxCAD.Cad.Curve3dEx.IsCircular*"></a>
+
+  <h3 id="IFoxCAD_Cad_Curve3dEx_IsCircular_Autodesk_AutoCAD_Geometry_Curve3d_" data-uid="IFoxCAD.Cad.Curve3dEx.IsCircular(Autodesk.AutoCAD.Geometry.Curve3d)">
+  IsCircular(Curve3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>判断是否为圆和椭圆</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsCircular(this Curve3d curve)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>curve</code> <span class="xref">Curve3d</span></dt>
+    <dd><p>三维解析类曲线</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>完整圆及完整的椭圆返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>,反之返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Curve3dEx_IsEqualPoint_" data-uid="IFoxCAD.Cad.Curve3dEx.IsEqualPoint*"></a>
+
+  <h3 id="IFoxCAD_Cad_Curve3dEx_IsEqualPoint_Autodesk_AutoCAD_Geometry_Tolerance_System_Double_System_Double_" data-uid="IFoxCAD.Cad.Curve3dEx.IsEqualPoint(Autodesk.AutoCAD.Geometry.Tolerance,System.Double,System.Double)">
+  IsEqualPoint(Tolerance, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>判断两个浮点数是否相等</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEqualPoint(this Tolerance tol, double d1, double d2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tol</code> <span class="xref">Tolerance</span></dt>
+    <dd><p>容差</p>
+</dd>
+    <dt><code>d1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>第一个数</p>
+</dd>
+    <dt><code>d2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>第二个数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>两个数的差值的绝对值小于容差返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>,反之返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Curve3dEx_ToArc_" data-uid="IFoxCAD.Cad.Curve3dEx.ToArc*"></a>
+
+  <h3 id="IFoxCAD_Cad_Curve3dEx_ToArc_Autodesk_AutoCAD_Geometry_CircularArc3d_" data-uid="IFoxCAD.Cad.Curve3dEx.ToArc(Autodesk.AutoCAD.Geometry.CircularArc3d)">
+  ToArc(CircularArc3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>将三维解析类圆/弧转换为实体圆弧</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Arc ToArc(this CircularArc3d ca3d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ca3d</code> <span class="xref">CircularArc3d</span></dt>
+    <dd><p>三维解析类圆/弧</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Arc</span></dt>
+    <dd><p>实体圆弧</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Curve3dEx_ToCircle_" data-uid="IFoxCAD.Cad.Curve3dEx.ToCircle*"></a>
+
+  <h3 id="IFoxCAD_Cad_Curve3dEx_ToCircle_Autodesk_AutoCAD_Geometry_CircularArc3d_" data-uid="IFoxCAD.Cad.Curve3dEx.ToCircle(Autodesk.AutoCAD.Geometry.CircularArc3d)">
+  ToCircle(CircularArc3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>将三维解析类圆/弧转换为实体圆</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Circle ToCircle(this CircularArc3d ca3d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ca3d</code> <span class="xref">CircularArc3d</span></dt>
+    <dd><p>三维解析类圆/弧</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Circle</span></dt>
+    <dd><p>实体圆</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Curve3dEx_ToCurve_" data-uid="IFoxCAD.Cad.Curve3dEx.ToCurve*"></a>
+
+  <h3 id="IFoxCAD_Cad_Curve3dEx_ToCurve_Autodesk_AutoCAD_Geometry_CircularArc3d_" data-uid="IFoxCAD.Cad.Curve3dEx.ToCurve(Autodesk.AutoCAD.Geometry.CircularArc3d)">
+  ToCurve(CircularArc3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>将三维解析类圆/弧转换为实体圆/弧</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Curve ToCurve(this CircularArc3d ca3d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ca3d</code> <span class="xref">CircularArc3d</span></dt>
+    <dd><p>三维解析类圆/弧</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Curve</span></dt>
+    <dd><p>实体圆/弧</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Curve3dEx_ToCurve_" data-uid="IFoxCAD.Cad.Curve3dEx.ToCurve*"></a>
+
+  <h3 id="IFoxCAD_Cad_Curve3dEx_ToCurve_Autodesk_AutoCAD_Geometry_CompositeCurve3d_" data-uid="IFoxCAD.Cad.Curve3dEx.ToCurve(Autodesk.AutoCAD.Geometry.CompositeCurve3d)">
+  ToCurve(CompositeCurve3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>将复合曲线转换为实体类曲线</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Curve? ToCurve(this CompositeCurve3d curve)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>curve</code> <span class="xref">CompositeCurve3d</span></dt>
+    <dd><p>三维复合曲线</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Curve</span></dt>
+    <dd><p>实体曲线</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Curve3dEx_ToCurve_" data-uid="IFoxCAD.Cad.Curve3dEx.ToCurve*"></a>
+
+  <h3 id="IFoxCAD_Cad_Curve3dEx_ToCurve_Autodesk_AutoCAD_Geometry_Curve3d_" data-uid="IFoxCAD.Cad.Curve3dEx.ToCurve(Autodesk.AutoCAD.Geometry.Curve3d)">
+  ToCurve(Curve3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>将三维解析类曲线转换为三维实体类曲线</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Curve? ToCurve(this Curve3d curve)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>curve</code> <span class="xref">Curve3d</span></dt>
+    <dd><p>三维解析类曲线</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Curve</span></dt>
+    <dd><p>三维实体类曲线</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Curve3dEx_ToCurve_" data-uid="IFoxCAD.Cad.Curve3dEx.ToCurve*"></a>
+
+  <h3 id="IFoxCAD_Cad_Curve3dEx_ToCurve_Autodesk_AutoCAD_Geometry_EllipticalArc3d_" data-uid="IFoxCAD.Cad.Curve3dEx.ToCurve(Autodesk.AutoCAD.Geometry.EllipticalArc3d)">
+  ToCurve(EllipticalArc3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>将三维解析类椭圆弧转换为实体类椭圆弧</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Ellipse ToCurve(this EllipticalArc3d ea3d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ea3d</code> <span class="xref">EllipticalArc3d</span></dt>
+    <dd><p>三维解析类椭圆弧</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Ellipse</span></dt>
+    <dd><p>实体类椭圆弧</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Curve3dEx_ToCurve_" data-uid="IFoxCAD.Cad.Curve3dEx.ToCurve*"></a>
+
+  <h3 id="IFoxCAD_Cad_Curve3dEx_ToCurve_Autodesk_AutoCAD_Geometry_Line3d_" data-uid="IFoxCAD.Cad.Curve3dEx.ToCurve(Autodesk.AutoCAD.Geometry.Line3d)">
+  ToCurve(Line3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>将解析类三维构造线转换为实体类构造线</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Xline ToCurve(this Line3d line3d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>line3d</code> <span class="xref">Line3d</span></dt>
+    <dd><p>解析类三维构造线</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Xline</span></dt>
+    <dd><p>实体类构造线</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Curve3dEx_ToCurve_" data-uid="IFoxCAD.Cad.Curve3dEx.ToCurve*"></a>
+
+  <h3 id="IFoxCAD_Cad_Curve3dEx_ToCurve_Autodesk_AutoCAD_Geometry_LineSegment3d_" data-uid="IFoxCAD.Cad.Curve3dEx.ToCurve(Autodesk.AutoCAD.Geometry.LineSegment3d)">
+  ToCurve(LineSegment3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>将三维解析类线段转换为实体类直线</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Line ToCurve(this LineSegment3d lineSeg3d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lineSeg3d</code> <span class="xref">LineSegment3d</span></dt>
+    <dd><p>三维解析类线段</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Line</span></dt>
+    <dd><p>实体类直线</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Curve3dEx_ToCurve_" data-uid="IFoxCAD.Cad.Curve3dEx.ToCurve*"></a>
+
+  <h3 id="IFoxCAD_Cad_Curve3dEx_ToCurve_Autodesk_AutoCAD_Geometry_NurbCurve3d_" data-uid="IFoxCAD.Cad.Curve3dEx.ToCurve(Autodesk.AutoCAD.Geometry.NurbCurve3d)">
+  ToCurve(NurbCurve3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>将三维解析类Nurb曲线转换为实体类样条曲线</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Spline ToCurve(this NurbCurve3d nc3d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nc3d</code> <span class="xref">NurbCurve3d</span></dt>
+    <dd><p>三维解析类Nurb曲线</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Spline</span></dt>
+    <dd><p>实体类样条曲线</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Curve3dEx_ToCurve_" data-uid="IFoxCAD.Cad.Curve3dEx.ToCurve*"></a>
+
+  <h3 id="IFoxCAD_Cad_Curve3dEx_ToCurve_Autodesk_AutoCAD_Geometry_PolylineCurve3d_" data-uid="IFoxCAD.Cad.Curve3dEx.ToCurve(Autodesk.AutoCAD.Geometry.PolylineCurve3d)">
+  ToCurve(PolylineCurve3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>将三维解析类多段线转换为实体类三维多段线</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Polyline3d ToCurve(this PolylineCurve3d pl3d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pl3d</code> <span class="xref">PolylineCurve3d</span></dt>
+    <dd><p>三维解析类多段线</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Polyline3d</span></dt>
+    <dd><p>实体类三维多段线</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Curve3dEx_ToEllipticalArc3d_" data-uid="IFoxCAD.Cad.Curve3dEx.ToEllipticalArc3d*"></a>
+
+  <h3 id="IFoxCAD_Cad_Curve3dEx_ToEllipticalArc3d_Autodesk_AutoCAD_Geometry_CircularArc3d_" data-uid="IFoxCAD.Cad.Curve3dEx.ToEllipticalArc3d(Autodesk.AutoCAD.Geometry.CircularArc3d)">
+  ToEllipticalArc3d(CircularArc3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>将三维解析类圆/弧转换为三维解析类椭圆弧</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EllipticalArc3d ToEllipticalArc3d(this CircularArc3d ca3d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ca3d</code> <span class="xref">CircularArc3d</span></dt>
+    <dd><p>三维解析类圆/弧</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">EllipticalArc3d</span></dt>
+    <dd><p>三维解析类椭圆弧</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Curve3dEx_ToLineSegment3d_" data-uid="IFoxCAD.Cad.Curve3dEx.ToLineSegment3d*"></a>
+
+  <h3 id="IFoxCAD_Cad_Curve3dEx_ToLineSegment3d_Autodesk_AutoCAD_Geometry_Line3d_System_Double_System_Double_" data-uid="IFoxCAD.Cad.Curve3dEx.ToLineSegment3d(Autodesk.AutoCAD.Geometry.Line3d,System.Double,System.Double)">
+  ToLineSegment3d(Line3d, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>将三维解析类构造线转换为三维解析类线段</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LineSegment3d ToLineSegment3d(this Line3d line3d, double fromParameter, double toParameter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>line3d</code> <span class="xref">Line3d</span></dt>
+    <dd><p>三维解析类构造线</p>
+</dd>
+    <dt><code>fromParameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>起点参数</p>
+</dd>
+    <dt><code>toParameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>终点参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">LineSegment3d</span></dt>
+    <dd><p>三维解析类线段</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Curve3dEx_ToNurbCurve3d_" data-uid="IFoxCAD.Cad.Curve3dEx.ToNurbCurve3d*"></a>
+
+  <h3 id="IFoxCAD_Cad_Curve3dEx_ToNurbCurve3d_Autodesk_AutoCAD_Geometry_CircularArc3d_" data-uid="IFoxCAD.Cad.Curve3dEx.ToNurbCurve3d(Autodesk.AutoCAD.Geometry.CircularArc3d)">
+  ToNurbCurve3d(CircularArc3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>将三维解析类圆/弧转换为三维解析类Nurb曲线</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NurbCurve3d ToNurbCurve3d(this CircularArc3d ca3d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ca3d</code> <span class="xref">CircularArc3d</span></dt>
+    <dd><p>三维解析类圆/弧</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">NurbCurve3d</span></dt>
+    <dd><p>三维解析类Nurb曲线</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Curve3dEx_ToNurbCurve3d_" data-uid="IFoxCAD.Cad.Curve3dEx.ToNurbCurve3d*"></a>
+
+  <h3 id="IFoxCAD_Cad_Curve3dEx_ToNurbCurve3d_Autodesk_AutoCAD_Geometry_Curve3d_" data-uid="IFoxCAD.Cad.Curve3dEx.ToNurbCurve3d(Autodesk.AutoCAD.Geometry.Curve3d)">
+  ToNurbCurve3d(Curve3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>将三维解析类曲线转换为三维解析类Nurb曲线</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NurbCurve3d? ToNurbCurve3d(this Curve3d curve)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>curve</code> <span class="xref">Curve3d</span></dt>
+    <dd><p>三维解析类曲线</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">NurbCurve3d</span></dt>
+    <dd><p>三维解析类Nurb曲线</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Curve3dEx_ToPolyline_" data-uid="IFoxCAD.Cad.Curve3dEx.ToPolyline*"></a>
+
+  <h3 id="IFoxCAD_Cad_Curve3dEx_ToPolyline_Autodesk_AutoCAD_Geometry_CompositeCurve3d_" data-uid="IFoxCAD.Cad.Curve3dEx.ToPolyline(Autodesk.AutoCAD.Geometry.CompositeCurve3d)">
+  ToPolyline(CompositeCurve3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>将三维复合曲线转换为实体类多段线</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Polyline ToPolyline(this CompositeCurve3d cc3d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cc3d</code> <span class="xref">CompositeCurve3d</span></dt>
+    <dd><p>三维复合曲线</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Polyline</span></dt>
+    <dd><p>实体类多段线</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
