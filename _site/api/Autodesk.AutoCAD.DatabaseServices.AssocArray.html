@@ -1,0 +1,829 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AssocArray
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AssocArray
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray">
+
+
+
+  <h1 id="Autodesk_AutoCAD_DatabaseServices_AssocArray" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray" class="text-break">
+    Class AssocArray
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Autodesk.html">Autodesk</a>.<a class="xref" href="Autodesk.AutoCAD.html">AutoCAD</a>.<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.html">DatabaseServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Acdbmgd.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class AssocArray</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">AssocArray</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocArray_EntityId_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.EntityId*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocArray_EntityId" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.EntityId">
+  EntityId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId EntityId { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocArray_SourceEntities_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.SourceEntities*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocArray_SourceEntities" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.SourceEntities">
+  SourceEntities
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectIdCollection SourceEntities { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectIdCollection.html">ObjectIdCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocArray_AddSourceEntity_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.AddSourceEntity*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocArray_AddSourceEntity_Autodesk_AutoCAD_DatabaseServices_ObjectId_Autodesk_AutoCAD_Geometry_Point3d_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.AddSourceEntity(Autodesk.AutoCAD.DatabaseServices.ObjectId,Autodesk.AutoCAD.Geometry.Point3d)">
+  AddSourceEntity(ObjectId, Point3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSourceEntity(ObjectId sourceEntity, Point3d basePoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourceEntity</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+    <dt><code>basePoint</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocArray_CreateArray_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.CreateArray*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocArray_CreateArray_Autodesk_AutoCAD_DatabaseServices_ObjectIdCollection_Autodesk_AutoCAD_DatabaseServices_VertexRef_Autodesk_AutoCAD_DatabaseServices_AssocArrayParameters_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.CreateArray(Autodesk.AutoCAD.DatabaseServices.ObjectIdCollection,Autodesk.AutoCAD.DatabaseServices.VertexRef,Autodesk.AutoCAD.DatabaseServices.AssocArrayParameters)">
+  CreateArray(ObjectIdCollection, VertexRef, AssocArrayParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AssocArray CreateArray(ObjectIdCollection sourceEntities, VertexRef basePoint, AssocArrayParameters parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourceEntities</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectIdCollection.html">ObjectIdCollection</a></dt>
+    <dd></dd>
+    <dt><code>basePoint</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.VertexRef.html">VertexRef</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocArrayParameters.html">AssocArrayParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocArray.html">AssocArray</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocArray_DeleteItem_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.DeleteItem*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocArray_DeleteItem_Autodesk_AutoCAD_DatabaseServices_ItemLocator_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.DeleteItem(Autodesk.AutoCAD.DatabaseServices.ItemLocator,System.Boolean)">
+  DeleteItem(ItemLocator, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteItem(ItemLocator index, bool bErase)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ItemLocator.html">ItemLocator</a></dt>
+    <dd></dd>
+    <dt><code>bErase</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocArray_Explode_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.Explode*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocArray_Explode_Autodesk_AutoCAD_DatabaseServices_ObjectId_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.Explode(Autodesk.AutoCAD.DatabaseServices.ObjectId)">
+  Explode(ObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectIdCollection Explode(ObjectId entity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectIdCollection.html">ObjectIdCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocArray_GetAssociativeArray_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.GetAssociativeArray*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocArray_GetAssociativeArray_Autodesk_AutoCAD_DatabaseServices_ObjectId_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.GetAssociativeArray(Autodesk.AutoCAD.DatabaseServices.ObjectId)">
+  GetAssociativeArray(ObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AssocArray GetAssociativeArray(ObjectId entity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocArray.html">AssocArray</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocArray_GetItemTransform_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.GetItemTransform*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocArray_GetItemTransform_Autodesk_AutoCAD_DatabaseServices_ItemLocator_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.GetItemTransform(Autodesk.AutoCAD.DatabaseServices.ItemLocator)">
+  GetItemTransform(ItemLocator)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix3d GetItemTransform(ItemLocator index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ItemLocator.html">ItemLocator</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocArray_GetParameters_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.GetParameters*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocArray_GetParameters" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.GetParameters">
+  GetParameters()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssocArrayParameters GetParameters()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocArrayParameters.html">AssocArrayParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocArray_IsAssociativeArray_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.IsAssociativeArray*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocArray_IsAssociativeArray_Autodesk_AutoCAD_DatabaseServices_ObjectId_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.IsAssociativeArray(Autodesk.AutoCAD.DatabaseServices.ObjectId)">
+  IsAssociativeArray(ObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsAssociativeArray(ObjectId entity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocArray_IsErased_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.IsErased*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocArray_IsErased_Autodesk_AutoCAD_DatabaseServices_ItemLocator_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.IsErased(Autodesk.AutoCAD.DatabaseServices.ItemLocator)">
+  IsErased(ItemLocator)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsErased(ItemLocator index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ItemLocator.html">ItemLocator</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocArray_RemoveSourceEntity_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.RemoveSourceEntity*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocArray_RemoveSourceEntity_Autodesk_AutoCAD_DatabaseServices_ObjectId_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.RemoveSourceEntity(Autodesk.AutoCAD.DatabaseServices.ObjectId)">
+  RemoveSourceEntity(ObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveSourceEntity(ObjectId sourceEntity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourceEntity</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocArray_ReplaceItems_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.ReplaceItems*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocArray_ReplaceItems_Autodesk_AutoCAD_DatabaseServices_ItemLocator___Autodesk_AutoCAD_DatabaseServices_ObjectIdCollection_Autodesk_AutoCAD_DatabaseServices_VertexRef_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.ReplaceItems(Autodesk.AutoCAD.DatabaseServices.ItemLocator[],Autodesk.AutoCAD.DatabaseServices.ObjectIdCollection,Autodesk.AutoCAD.DatabaseServices.VertexRef)">
+  ReplaceItems(ItemLocator[], ObjectIdCollection, VertexRef)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReplaceItems(ItemLocator[] indices, ObjectIdCollection substEntities, VertexRef basePoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>indices</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ItemLocator.html">ItemLocator</a>[]</dt>
+    <dd></dd>
+    <dt><code>substEntities</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectIdCollection.html">ObjectIdCollection</a></dt>
+    <dd></dd>
+    <dt><code>basePoint</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.VertexRef.html">VertexRef</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocArray_ResetItems_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.ResetItems*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocArray_ResetItems" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.ResetItems">
+  ResetItems()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetItems()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocArray_TransformItemBy_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.TransformItemBy*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocArray_TransformItemBy_Autodesk_AutoCAD_DatabaseServices_ItemLocator_Autodesk_AutoCAD_Geometry_Matrix3d_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.TransformItemBy(Autodesk.AutoCAD.DatabaseServices.ItemLocator,Autodesk.AutoCAD.Geometry.Matrix3d)">
+  TransformItemBy(ItemLocator, Matrix3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TransformItemBy(ItemLocator index, Matrix3d transform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ItemLocator.html">ItemLocator</a></dt>
+    <dd></dd>
+    <dt><code>transform</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocArray_getItemLocators_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.getItemLocators*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocArray_getItemLocators_Autodesk_AutoCAD_DatabaseServices_FullSubentityPath___" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.getItemLocators(Autodesk.AutoCAD.DatabaseServices.FullSubentityPath[])">
+  getItemLocators(FullSubentityPath[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ItemLocator[] getItemLocators(FullSubentityPath[] subPaths)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>subPaths</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.FullSubentityPath.html">FullSubentityPath</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ItemLocator.html">ItemLocator</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocArray_getItems_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.getItems*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocArray_getItems_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocArray.getItems(System.Boolean)">
+  getItems(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ItemLocator[] getItems(bool skipErased)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skipErased</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ItemLocator.html">ItemLocator</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

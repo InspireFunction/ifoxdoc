@@ -1,0 +1,1695 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct Matrix3d
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct Matrix3d
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GrxCAD.Geometry.Matrix3d">
+
+
+
+  <h1 id="GrxCAD_Geometry_Matrix3d" data-uid="GrxCAD.Geometry.Matrix3d" class="text-break">
+    Struct Matrix3d
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GrxCAD.html">GrxCAD</a>.<a class="xref" href="GrxCAD.Geometry.html">Geometry</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>gmdb.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;OdGeMatrix3d&quot;)]
+public struct Matrix3d : IFormattable</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformattable">IFormattable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GrxCAD_Geometry_Matrix3d__ctor_" data-uid="GrxCAD.Geometry.Matrix3d.#ctor*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d__ctor_System_Double___" data-uid="GrxCAD.Geometry.Matrix3d.#ctor(System.Double[])">
+  Matrix3d(double[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix3d(double[] data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_CoordinateSystem3d_" data-uid="GrxCAD.Geometry.Matrix3d.CoordinateSystem3d*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_CoordinateSystem3d" data-uid="GrxCAD.Geometry.Matrix3d.CoordinateSystem3d">
+  CoordinateSystem3d
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoordinateSystem3d CoordinateSystem3d { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.CoordinateSystem3d.html">CoordinateSystem3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_ElementAt_" data-uid="GrxCAD.Geometry.Matrix3d.ElementAt*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_ElementAt_System_Int32_System_Int32_" data-uid="GrxCAD.Geometry.Matrix3d.ElementAt(System.Int32,System.Int32)">
+  this[int, int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double this[int i, int j] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>j</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_Identity_" data-uid="GrxCAD.Geometry.Matrix3d.Identity*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_Identity" data-uid="GrxCAD.Geometry.Matrix3d.Identity">
+  Identity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix3d Identity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_Normal_" data-uid="GrxCAD.Geometry.Matrix3d.Normal*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_Normal" data-uid="GrxCAD.Geometry.Matrix3d.Normal">
+  Normal
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Normal { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_Translation_" data-uid="GrxCAD.Geometry.Matrix3d.Translation*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_Translation" data-uid="GrxCAD.Geometry.Matrix3d.Translation">
+  Translation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3d Translation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_AlignCoordinateSystem_" data-uid="GrxCAD.Geometry.Matrix3d.AlignCoordinateSystem*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_AlignCoordinateSystem_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Vector3d_GrxCAD_Geometry_Vector3d_GrxCAD_Geometry_Vector3d_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Vector3d_GrxCAD_Geometry_Vector3d_GrxCAD_Geometry_Vector3d_" data-uid="GrxCAD.Geometry.Matrix3d.AlignCoordinateSystem(GrxCAD.Geometry.Point3d,GrxCAD.Geometry.Vector3d,GrxCAD.Geometry.Vector3d,GrxCAD.Geometry.Vector3d,GrxCAD.Geometry.Point3d,GrxCAD.Geometry.Vector3d,GrxCAD.Geometry.Vector3d,GrxCAD.Geometry.Vector3d)">
+  AlignCoordinateSystem(Point3d, Vector3d, Vector3d, Vector3d, Point3d, Vector3d, Vector3d, Vector3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix3d AlignCoordinateSystem(Point3d fromOrigin, Vector3d fromXAxis, Vector3d fromYAxis, Vector3d fromZAxis, Point3d toOrigin, Vector3d toXAxis, Vector3d toYAxis, Vector3d toZAxis)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fromOrigin</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>fromXAxis</code> <a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+    <dt><code>fromYAxis</code> <a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+    <dt><code>fromZAxis</code> <a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+    <dt><code>toOrigin</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>toXAxis</code> <a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+    <dt><code>toYAxis</code> <a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+    <dt><code>toZAxis</code> <a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_Displacement_" data-uid="GrxCAD.Geometry.Matrix3d.Displacement*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_Displacement_GrxCAD_Geometry_Vector3d_" data-uid="GrxCAD.Geometry.Matrix3d.Displacement(GrxCAD.Geometry.Vector3d)">
+  Displacement(Vector3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix3d Displacement(Vector3d vector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector</code> <a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_Equals_" data-uid="GrxCAD.Geometry.Matrix3d.Equals*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_Equals_System_Object_" data-uid="GrxCAD.Geometry.Matrix3d.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_GetDeterminant_" data-uid="GrxCAD.Geometry.Matrix3d.GetDeterminant*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_GetDeterminant" data-uid="GrxCAD.Geometry.Matrix3d.GetDeterminant">
+  GetDeterminant()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetDeterminant()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_GetHashCode_" data-uid="GrxCAD.Geometry.Matrix3d.GetHashCode*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_GetHashCode" data-uid="GrxCAD.Geometry.Matrix3d.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_GetScale_" data-uid="GrxCAD.Geometry.Matrix3d.GetScale*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_GetScale" data-uid="GrxCAD.Geometry.Matrix3d.GetScale">
+  GetScale()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetScale()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_Inverse_" data-uid="GrxCAD.Geometry.Matrix3d.Inverse*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_Inverse" data-uid="GrxCAD.Geometry.Matrix3d.Inverse">
+  Inverse()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix3d Inverse()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_IsEqualTo_" data-uid="GrxCAD.Geometry.Matrix3d.IsEqualTo*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_IsEqualTo_GrxCAD_Geometry_Matrix3d_" data-uid="GrxCAD.Geometry.Matrix3d.IsEqualTo(GrxCAD.Geometry.Matrix3d)">
+  IsEqualTo(Matrix3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEqualTo(Matrix3d mat)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mat</code> <a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_IsEqualTo_" data-uid="GrxCAD.Geometry.Matrix3d.IsEqualTo*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_IsEqualTo_GrxCAD_Geometry_Matrix3d_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Matrix3d.IsEqualTo(GrxCAD.Geometry.Matrix3d,GrxCAD.Geometry.Tolerance)">
+  IsEqualTo(Matrix3d, Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEqualTo(Matrix3d mat, Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mat</code> <a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_IsInverse_" data-uid="GrxCAD.Geometry.Matrix3d.IsInverse*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_IsInverse_GrxCAD_Geometry_Matrix3d_" data-uid="GrxCAD.Geometry.Matrix3d.IsInverse(GrxCAD.Geometry.Matrix3d)">
+  IsInverse(Matrix3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInverse(Matrix3d inv)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inv</code> <a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_IsInverse_" data-uid="GrxCAD.Geometry.Matrix3d.IsInverse*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_IsInverse_GrxCAD_Geometry_Matrix3d_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Matrix3d.IsInverse(GrxCAD.Geometry.Matrix3d,GrxCAD.Geometry.Tolerance)">
+  IsInverse(Matrix3d, Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInverse(Matrix3d inv, Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inv</code> <a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_IsScaledOrtho_" data-uid="GrxCAD.Geometry.Matrix3d.IsScaledOrtho*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_IsScaledOrtho" data-uid="GrxCAD.Geometry.Matrix3d.IsScaledOrtho">
+  IsScaledOrtho()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsScaledOrtho()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_IsScaledOrtho_" data-uid="GrxCAD.Geometry.Matrix3d.IsScaledOrtho*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_IsScaledOrtho_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Matrix3d.IsScaledOrtho(GrxCAD.Geometry.Tolerance)">
+  IsScaledOrtho(Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsScaledOrtho(Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_IsSingular_" data-uid="GrxCAD.Geometry.Matrix3d.IsSingular*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_IsSingular" data-uid="GrxCAD.Geometry.Matrix3d.IsSingular">
+  IsSingular()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSingular()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_IsSingular_" data-uid="GrxCAD.Geometry.Matrix3d.IsSingular*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_IsSingular_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Matrix3d.IsSingular(GrxCAD.Geometry.Tolerance)">
+  IsSingular(Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSingular(Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_IsUniscaledOrtho_" data-uid="GrxCAD.Geometry.Matrix3d.IsUniscaledOrtho*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_IsUniscaledOrtho" data-uid="GrxCAD.Geometry.Matrix3d.IsUniscaledOrtho">
+  IsUniscaledOrtho()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUniscaledOrtho()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_IsUniscaledOrtho_" data-uid="GrxCAD.Geometry.Matrix3d.IsUniscaledOrtho*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_IsUniscaledOrtho_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Matrix3d.IsUniscaledOrtho(GrxCAD.Geometry.Tolerance)">
+  IsUniscaledOrtho(Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUniscaledOrtho(Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_Mirroring_" data-uid="GrxCAD.Geometry.Matrix3d.Mirroring*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_Mirroring_GrxCAD_Geometry_Line3d_" data-uid="GrxCAD.Geometry.Matrix3d.Mirroring(GrxCAD.Geometry.Line3d)">
+  Mirroring(Line3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix3d Mirroring(Line3d line)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>line</code> <a class="xref" href="GrxCAD.Geometry.Line3d.html">Line3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_Mirroring_" data-uid="GrxCAD.Geometry.Matrix3d.Mirroring*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_Mirroring_GrxCAD_Geometry_Plane_" data-uid="GrxCAD.Geometry.Matrix3d.Mirroring(GrxCAD.Geometry.Plane)">
+  Mirroring(Plane)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix3d Mirroring(Plane plane)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>plane</code> <a class="xref" href="GrxCAD.Geometry.Plane.html">Plane</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_Mirroring_" data-uid="GrxCAD.Geometry.Matrix3d.Mirroring*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_Mirroring_GrxCAD_Geometry_Point3d_" data-uid="GrxCAD.Geometry.Matrix3d.Mirroring(GrxCAD.Geometry.Point3d)">
+  Mirroring(Point3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix3d Mirroring(Point3d pointValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pointValue</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_PlaneToWorld_" data-uid="GrxCAD.Geometry.Matrix3d.PlaneToWorld*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_PlaneToWorld_GrxCAD_Geometry_Plane_" data-uid="GrxCAD.Geometry.Matrix3d.PlaneToWorld(GrxCAD.Geometry.Plane)">
+  PlaneToWorld(Plane)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix3d PlaneToWorld(Plane plane)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>plane</code> <a class="xref" href="GrxCAD.Geometry.Plane.html">Plane</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_PlaneToWorld_" data-uid="GrxCAD.Geometry.Matrix3d.PlaneToWorld*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_PlaneToWorld_GrxCAD_Geometry_Vector3d_" data-uid="GrxCAD.Geometry.Matrix3d.PlaneToWorld(GrxCAD.Geometry.Vector3d)">
+  PlaneToWorld(Vector3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix3d PlaneToWorld(Vector3d normal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>normal</code> <a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_PostMultiplyBy_" data-uid="GrxCAD.Geometry.Matrix3d.PostMultiplyBy*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_PostMultiplyBy_GrxCAD_Geometry_Matrix3d_" data-uid="GrxCAD.Geometry.Matrix3d.PostMultiplyBy(GrxCAD.Geometry.Matrix3d)">
+  PostMultiplyBy(Matrix3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix3d PostMultiplyBy(Matrix3d rightSide)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rightSide</code> <a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_PreMultiplyBy_" data-uid="GrxCAD.Geometry.Matrix3d.PreMultiplyBy*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_PreMultiplyBy_GrxCAD_Geometry_Matrix3d_" data-uid="GrxCAD.Geometry.Matrix3d.PreMultiplyBy(GrxCAD.Geometry.Matrix3d)">
+  PreMultiplyBy(Matrix3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix3d PreMultiplyBy(Matrix3d leftSide)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>leftSide</code> <a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_Projection_" data-uid="GrxCAD.Geometry.Matrix3d.Projection*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_Projection_GrxCAD_Geometry_Plane_GrxCAD_Geometry_Vector3d_" data-uid="GrxCAD.Geometry.Matrix3d.Projection(GrxCAD.Geometry.Plane,GrxCAD.Geometry.Vector3d)">
+  Projection(Plane, Vector3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix3d Projection(Plane projectionPlane, Vector3d projectDir)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>projectionPlane</code> <a class="xref" href="GrxCAD.Geometry.Plane.html">Plane</a></dt>
+    <dd></dd>
+    <dt><code>projectDir</code> <a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_Rotation_" data-uid="GrxCAD.Geometry.Matrix3d.Rotation*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_Rotation_System_Double_GrxCAD_Geometry_Vector3d_GrxCAD_Geometry_Point3d_" data-uid="GrxCAD.Geometry.Matrix3d.Rotation(System.Double,GrxCAD.Geometry.Vector3d,GrxCAD.Geometry.Point3d)">
+  Rotation(double, Vector3d, Point3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix3d Rotation(double angle, Vector3d axis, Point3d center)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>angle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>axis</code> <a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+    <dt><code>center</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_Scaling_" data-uid="GrxCAD.Geometry.Matrix3d.Scaling*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_Scaling_System_Double_GrxCAD_Geometry_Point3d_" data-uid="GrxCAD.Geometry.Matrix3d.Scaling(System.Double,GrxCAD.Geometry.Point3d)">
+  Scaling(double, Point3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix3d Scaling(double scaleAll, Point3d center)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scaleAll</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>center</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_ToArray_" data-uid="GrxCAD.Geometry.Matrix3d.ToArray*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_ToArray" data-uid="GrxCAD.Geometry.Matrix3d.ToArray">
+  ToArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double[] ToArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_ToString_" data-uid="GrxCAD.Geometry.Matrix3d.ToString*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_ToString" data-uid="GrxCAD.Geometry.Matrix3d.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_ToString_" data-uid="GrxCAD.Geometry.Matrix3d.ToString*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_ToString_System_IFormatProvider_" data-uid="GrxCAD.Geometry.Matrix3d.ToString(System.IFormatProvider)">
+  ToString(IFormatProvider)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(IFormatProvider provider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_ToString_" data-uid="GrxCAD.Geometry.Matrix3d.ToString*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_ToString_System_String_System_IFormatProvider_" data-uid="GrxCAD.Geometry.Matrix3d.ToString(System.String,System.IFormatProvider)">
+  ToString(string, IFormatProvider)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(string format, IFormatProvider provider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_Transpose_" data-uid="GrxCAD.Geometry.Matrix3d.Transpose*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_Transpose" data-uid="GrxCAD.Geometry.Matrix3d.Transpose">
+  Transpose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix3d Transpose()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_WorldToPlane_" data-uid="GrxCAD.Geometry.Matrix3d.WorldToPlane*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_WorldToPlane_GrxCAD_Geometry_Plane_" data-uid="GrxCAD.Geometry.Matrix3d.WorldToPlane(GrxCAD.Geometry.Plane)">
+  WorldToPlane(Plane)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix3d WorldToPlane(Plane plane)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>plane</code> <a class="xref" href="GrxCAD.Geometry.Plane.html">Plane</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_WorldToPlane_" data-uid="GrxCAD.Geometry.Matrix3d.WorldToPlane*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_WorldToPlane_GrxCAD_Geometry_Vector3d_" data-uid="GrxCAD.Geometry.Matrix3d.WorldToPlane(GrxCAD.Geometry.Vector3d)">
+  WorldToPlane(Vector3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix3d WorldToPlane(Vector3d normal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>normal</code> <a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_op_Equality_" data-uid="GrxCAD.Geometry.Matrix3d.op_Equality*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_op_Equality_GrxCAD_Geometry_Matrix3d_GrxCAD_Geometry_Matrix3d_" data-uid="GrxCAD.Geometry.Matrix3d.op_Equality(GrxCAD.Geometry.Matrix3d,GrxCAD.Geometry.Matrix3d)">
+  operator ==(Matrix3d, Matrix3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Matrix3d a, Matrix3d b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_op_Inequality_" data-uid="GrxCAD.Geometry.Matrix3d.op_Inequality*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_op_Inequality_GrxCAD_Geometry_Matrix3d_GrxCAD_Geometry_Matrix3d_" data-uid="GrxCAD.Geometry.Matrix3d.op_Inequality(GrxCAD.Geometry.Matrix3d,GrxCAD.Geometry.Matrix3d)">
+  operator !=(Matrix3d, Matrix3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Matrix3d a, Matrix3d b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Matrix3d_op_Multiply_" data-uid="GrxCAD.Geometry.Matrix3d.op_Multiply*"></a>
+
+  <h3 id="GrxCAD_Geometry_Matrix3d_op_Multiply_GrxCAD_Geometry_Matrix3d_GrxCAD_Geometry_Matrix3d_" data-uid="GrxCAD.Geometry.Matrix3d.op_Multiply(GrxCAD.Geometry.Matrix3d,GrxCAD.Geometry.Matrix3d)">
+  operator *(Matrix3d, Matrix3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix3d operator *(Matrix3d a, Matrix3d b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

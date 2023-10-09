@@ -1,0 +1,1796 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SymbolUtilityServices
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SymbolUtilityServices
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices">
+
+
+
+  <h1 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices" class="text-break">
+    Class SymbolUtilityServices
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Autodesk.html">Autodesk</a>.<a class="xref" href="Autodesk.AutoCAD.html">AutoCAD</a>.<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.html">DatabaseServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Acdbmgd.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;AcDbSymUtilServices&quot;)]
+public sealed class SymbolUtilityServices</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SymbolUtilityServices</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices__ctor_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.#ctor*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices__ctor" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.#ctor">
+  SymbolUtilityServices()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolUtilityServices()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_BlockModelSpaceName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.BlockModelSpaceName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_BlockModelSpaceName" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.BlockModelSpaceName">
+  BlockModelSpaceName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string BlockModelSpaceName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_BlockPaperSpaceName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.BlockPaperSpaceName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_BlockPaperSpaceName" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.BlockPaperSpaceName">
+  BlockPaperSpaceName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string BlockPaperSpaceName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_LayerDefpointsName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.LayerDefpointsName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_LayerDefpointsName" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.LayerDefpointsName">
+  LayerDefpointsName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string LayerDefpointsName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_LayerZeroName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.LayerZeroName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_LayerZeroName" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.LayerZeroName">
+  LayerZeroName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string LayerZeroName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_LinetypeByBlockName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.LinetypeByBlockName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_LinetypeByBlockName" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.LinetypeByBlockName">
+  LinetypeByBlockName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string LinetypeByBlockName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_LinetypeByLayerName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.LinetypeByLayerName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_LinetypeByLayerName" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.LinetypeByLayerName">
+  LinetypeByLayerName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string LinetypeByLayerName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_LinetypeContinuousName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.LinetypeContinuousName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_LinetypeContinuousName" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.LinetypeContinuousName">
+  LinetypeContinuousName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string LinetypeContinuousName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_RegAppAcadName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.RegAppAcadName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_RegAppAcadName" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.RegAppAcadName">
+  RegAppAcadName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RegAppAcadName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_TextStyleStandardName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.TextStyleStandardName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_TextStyleStandardName" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.TextStyleStandardName">
+  TextStyleStandardName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TextStyleStandardName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_ViewportActiveName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.ViewportActiveName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_ViewportActiveName" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.ViewportActiveName">
+  ViewportActiveName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ViewportActiveName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetBlockModelSpaceId_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetBlockModelSpaceId*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetBlockModelSpaceId_Autodesk_AutoCAD_DatabaseServices_Database_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetBlockModelSpaceId(Autodesk.AutoCAD.DatabaseServices.Database)">
+  GetBlockModelSpaceId(Database)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId GetBlockModelSpaceId(Database databasePointer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>databasePointer</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Database.html">Database</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetBlockNameFromInsertPathName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetBlockNameFromInsertPathName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetBlockNameFromInsertPathName_System_String_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetBlockNameFromInsertPathName(System.String)">
+  GetBlockNameFromInsertPathName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetBlockNameFromInsertPathName(string pathName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pathName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetBlockPaperSpaceId_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetBlockPaperSpaceId*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetBlockPaperSpaceId_Autodesk_AutoCAD_DatabaseServices_Database_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetBlockPaperSpaceId(Autodesk.AutoCAD.DatabaseServices.Database)">
+  GetBlockPaperSpaceId(Database)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId GetBlockPaperSpaceId(Database databasePointer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>databasePointer</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Database.html">Database</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetInsertPathNameFromBlockName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetInsertPathNameFromBlockName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetInsertPathNameFromBlockName_System_String_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetInsertPathNameFromBlockName(System.String)">
+  GetInsertPathNameFromBlockName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetInsertPathNameFromBlockName(string blockName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>blockName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetLayerDefpointsId_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetLayerDefpointsId*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetLayerDefpointsId_Autodesk_AutoCAD_DatabaseServices_Database_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetLayerDefpointsId(Autodesk.AutoCAD.DatabaseServices.Database)">
+  GetLayerDefpointsId(Database)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId GetLayerDefpointsId(Database database)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>database</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Database.html">Database</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetLayerZeroId_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetLayerZeroId*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetLayerZeroId_Autodesk_AutoCAD_DatabaseServices_Database_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetLayerZeroId(Autodesk.AutoCAD.DatabaseServices.Database)">
+  GetLayerZeroId(Database)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId GetLayerZeroId(Database database)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>database</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Database.html">Database</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetLinetypeByBlockId_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetLinetypeByBlockId*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetLinetypeByBlockId_Autodesk_AutoCAD_DatabaseServices_Database_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetLinetypeByBlockId(Autodesk.AutoCAD.DatabaseServices.Database)">
+  GetLinetypeByBlockId(Database)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId GetLinetypeByBlockId(Database databasePointer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>databasePointer</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Database.html">Database</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetLinetypeByLayerId_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetLinetypeByLayerId*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetLinetypeByLayerId_Autodesk_AutoCAD_DatabaseServices_Database_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetLinetypeByLayerId(Autodesk.AutoCAD.DatabaseServices.Database)">
+  GetLinetypeByLayerId(Database)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId GetLinetypeByLayerId(Database databasePointer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>databasePointer</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Database.html">Database</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetLinetypeContinuousId_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetLinetypeContinuousId*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetLinetypeContinuousId_Autodesk_AutoCAD_DatabaseServices_Database_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetLinetypeContinuousId(Autodesk.AutoCAD.DatabaseServices.Database)">
+  GetLinetypeContinuousId(Database)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId GetLinetypeContinuousId(Database databasePointer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>databasePointer</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Database.html">Database</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetMaxSymbolNameLength_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetMaxSymbolNameLength*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetMaxSymbolNameLength_System_Boolean_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetMaxSymbolNameLength(System.Boolean,System.Boolean)">
+  GetMaxSymbolNameLength(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetMaxSymbolNameLength(bool isNewName, bool compatibilityMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isNewName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>compatibilityMode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetPathNameFromSymbolName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetPathNameFromSymbolName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetPathNameFromSymbolName_System_String_System_String_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetPathNameFromSymbolName(System.String,System.String)">
+  GetPathNameFromSymbolName(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetPathNameFromSymbolName(string symbolName, string extensions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbolName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>extensions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetRegAppAcadId_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetRegAppAcadId*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetRegAppAcadId_Autodesk_AutoCAD_DatabaseServices_Database_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetRegAppAcadId(Autodesk.AutoCAD.DatabaseServices.Database)">
+  GetRegAppAcadId(Database)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId GetRegAppAcadId(Database databasePointer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>databasePointer</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Database.html">Database</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetSymbolNameFromPathName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetSymbolNameFromPathName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetSymbolNameFromPathName_System_String_System_String_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetSymbolNameFromPathName(System.String,System.String)">
+  GetSymbolNameFromPathName(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetSymbolNameFromPathName(string pathName, string extensions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pathName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>extensions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetTextStyleStandardId_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetTextStyleStandardId*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_GetTextStyleStandardId_Autodesk_AutoCAD_DatabaseServices_Database_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.GetTextStyleStandardId(Autodesk.AutoCAD.DatabaseServices.Database)">
+  GetTextStyleStandardId(Database)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId GetTextStyleStandardId(Database databasePointer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>databasePointer</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Database.html">Database</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsBlockLayoutName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsBlockLayoutName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsBlockLayoutName_System_String_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsBlockLayoutName(System.String)">
+  IsBlockLayoutName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsBlockLayoutName(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsBlockModelSpaceName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsBlockModelSpaceName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsBlockModelSpaceName_System_String_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsBlockModelSpaceName(System.String)">
+  IsBlockModelSpaceName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsBlockModelSpaceName(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsBlockPaperSpaceName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsBlockPaperSpaceName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsBlockPaperSpaceName_System_String_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsBlockPaperSpaceName(System.String)">
+  IsBlockPaperSpaceName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsBlockPaperSpaceName(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsCompatibilityMode_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsCompatibilityMode*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsCompatibilityMode_Autodesk_AutoCAD_DatabaseServices_Database_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsCompatibilityMode(Autodesk.AutoCAD.DatabaseServices.Database)">
+  IsCompatibilityMode(Database)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsCompatibilityMode(Database database)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>database</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Database.html">Database</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsLayerDefpointsName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsLayerDefpointsName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsLayerDefpointsName_System_String_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsLayerDefpointsName(System.String)">
+  IsLayerDefpointsName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsLayerDefpointsName(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsLayerZeroName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsLayerZeroName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsLayerZeroName_System_String_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsLayerZeroName(System.String)">
+  IsLayerZeroName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsLayerZeroName(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsLinetypeByBlockName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsLinetypeByBlockName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsLinetypeByBlockName_System_String_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsLinetypeByBlockName(System.String)">
+  IsLinetypeByBlockName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsLinetypeByBlockName(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsLinetypeByLayerName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsLinetypeByLayerName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsLinetypeByLayerName_System_String_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsLinetypeByLayerName(System.String)">
+  IsLinetypeByLayerName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsLinetypeByLayerName(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsLinetypeContinuousName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsLinetypeContinuousName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsLinetypeContinuousName_System_String_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsLinetypeContinuousName(System.String)">
+  IsLinetypeContinuousName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsLinetypeContinuousName(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsRegAppAcadName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsRegAppAcadName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsRegAppAcadName_System_String_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsRegAppAcadName(System.String)">
+  IsRegAppAcadName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsRegAppAcadName(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsTextStyleStandardName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsTextStyleStandardName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsTextStyleStandardName_System_String_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsTextStyleStandardName(System.String)">
+  IsTextStyleStandardName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsTextStyleStandardName(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsViewportActiveName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsViewportActiveName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_IsViewportActiveName_System_String_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.IsViewportActiveName(System.String)">
+  IsViewportActiveName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsViewportActiveName(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_MakeDependentName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.MakeDependentName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_MakeDependentName_System_String_System_String_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.MakeDependentName(System.String,System.String)">
+  MakeDependentName(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string MakeDependentName(string dwgName, string symbolName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dwgName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>symbolName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_PreValidateSymbolName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.PreValidateSymbolName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_PreValidateSymbolName_System_String_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.PreValidateSymbolName(System.String,System.Boolean)">
+  PreValidateSymbolName(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PreValidateSymbolName(string symbolName, bool preserveCase)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbolName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>preserveCase</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_RepairPreExtendedSymbolName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.RepairPreExtendedSymbolName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_RepairPreExtendedSymbolName_System_String_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.RepairPreExtendedSymbolName(System.String,System.Boolean)">
+  RepairPreExtendedSymbolName(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RepairPreExtendedSymbolName(string oldName, bool allowVerticalBar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>allowVerticalBar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_RepairSymbolName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.RepairSymbolName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_RepairSymbolName_System_String_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.RepairSymbolName(System.String,System.Boolean)">
+  RepairSymbolName(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RepairSymbolName(string oldName, bool allowVerticalBar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>allowVerticalBar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_ValidateCompatibleSymbolName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.ValidateCompatibleSymbolName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_ValidateCompatibleSymbolName_System_String_System_Boolean_System_Boolean_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.ValidateCompatibleSymbolName(System.String,System.Boolean,System.Boolean,System.Boolean)">
+  ValidateCompatibleSymbolName(string, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ErrorStatus ValidateCompatibleSymbolName(string name, bool isNewName, bool allowVerticalBar, bool compatibilityMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>isNewName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>allowVerticalBar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>compatibilityMode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Runtime.ErrorStatus.html">ErrorStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_ValidatePreExtendedSymbolName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.ValidatePreExtendedSymbolName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_ValidatePreExtendedSymbolName_System_String_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.ValidatePreExtendedSymbolName(System.String,System.Boolean)">
+  ValidatePreExtendedSymbolName(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ValidatePreExtendedSymbolName(string name, bool allowVerticalBar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>allowVerticalBar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_ValidateSymbolName_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.ValidateSymbolName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_SymbolUtilityServices_ValidateSymbolName_System_String_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices.ValidateSymbolName(System.String,System.Boolean)">
+  ValidateSymbolName(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ValidateSymbolName(string name, bool allowVerticalBar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>allowVerticalBar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

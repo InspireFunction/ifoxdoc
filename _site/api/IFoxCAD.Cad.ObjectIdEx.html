@@ -1,0 +1,579 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ObjectIdEx
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ObjectIdEx
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="IFoxCAD.Cad.ObjectIdEx">
+
+
+
+  <h1 id="IFoxCAD_Cad_ObjectIdEx" data-uid="IFoxCAD.Cad.ObjectIdEx" class="text-break">
+    Class ObjectIdEx
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="IFoxCAD.html">IFoxCAD</a>.<a class="xref" href="IFoxCAD.Cad.html">Cad</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>IFox.CAD.ACAD.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>对象id扩展类</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ObjectIdEx</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ObjectIdEx</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="IFoxCAD_Cad_ObjectIdEx_ConvertToHandle_" data-uid="IFoxCAD.Cad.ObjectIdEx.ConvertToHandle*"></a>
+
+  <h3 id="IFoxCAD_Cad_ObjectIdEx_ConvertToHandle_System_String_" data-uid="IFoxCAD.Cad.ObjectIdEx.ConvertToHandle(System.String)">
+  ConvertToHandle(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>句柄字符串转句柄</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Handle? ConvertToHandle(this string handleString)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handleString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>句柄字符串</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Handle.html">Handle</a>?</dt>
+    <dd><p>句柄</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_ObjectIdEx_Erase_" data-uid="IFoxCAD.Cad.ObjectIdEx.Erase*"></a>
+
+  <h3 id="IFoxCAD_Cad_ObjectIdEx_Erase_Autodesk_AutoCAD_DatabaseServices_ObjectId_" data-uid="IFoxCAD.Cad.ObjectIdEx.Erase(Autodesk.AutoCAD.DatabaseServices.ObjectId)">
+  Erase(ObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>删除id代表的对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Erase(this ObjectId id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>对象id</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_ObjectIdEx_GetObjectId_" data-uid="IFoxCAD.Cad.ObjectIdEx.GetObjectId*"></a>
+
+  <h3 id="IFoxCAD_Cad_ObjectIdEx_GetObjectId_Autodesk_AutoCAD_DatabaseServices_Database_System_Nullable_Autodesk_AutoCAD_DatabaseServices_Handle__" data-uid="IFoxCAD.Cad.ObjectIdEx.GetObjectId(Autodesk.AutoCAD.DatabaseServices.Database,System.Nullable{Autodesk.AutoCAD.DatabaseServices.Handle})">
+  GetObjectId(Database, Handle?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据对象句柄获取对象ObjectId</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId GetObjectId(this Database db, Handle? handle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>db</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Database.html">Database</a></dt>
+    <dd><p>数据库</p>
+</dd>
+    <dt><code>handle</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Handle.html">Handle</a>?</dt>
+    <dd><p>句柄</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>对象的ObjectId</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_ObjectIdEx_GetObjectId_" data-uid="IFoxCAD.Cad.ObjectIdEx.GetObjectId*"></a>
+
+  <h3 id="IFoxCAD_Cad_ObjectIdEx_GetObjectId_Autodesk_AutoCAD_DatabaseServices_Database_System_String_" data-uid="IFoxCAD.Cad.ObjectIdEx.GetObjectId(Autodesk.AutoCAD.DatabaseServices.Database,System.String)">
+  GetObjectId(Database, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据对象句柄字符串获取对象Id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId GetObjectId(this Database db, string handleString)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>db</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Database.html">Database</a></dt>
+    <dd><p>数据库</p>
+</dd>
+    <dt><code>handleString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>句柄字符串</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>对象的ObjectId</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_ObjectIdEx_GetObject_" data-uid="IFoxCAD.Cad.ObjectIdEx.GetObject*"></a>
+
+  <h3 id="IFoxCAD_Cad_ObjectIdEx_GetObject__1_Autodesk_AutoCAD_DatabaseServices_ObjectId_Autodesk_AutoCAD_DatabaseServices_OpenMode_System_Boolean_System_Boolean_" data-uid="IFoxCAD.Cad.ObjectIdEx.GetObject``1(Autodesk.AutoCAD.DatabaseServices.ObjectId,Autodesk.AutoCAD.DatabaseServices.OpenMode,System.Boolean,System.Boolean)">
+  GetObject&lt;T&gt;(ObjectId, OpenMode, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取指定类型对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T? GetObject&lt;T&gt;(this ObjectId id, OpenMode openMode = 0, bool openErased = false, bool openLockedLayer = false) where T : DBObject</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>对象id</p>
+</dd>
+    <dt><code>openMode</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.OpenMode.html">OpenMode</a></dt>
+    <dd><p>打开模式</p>
+</dd>
+    <dt><code>openErased</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否打开已删除对象,默认为不打开</p>
+</dd>
+    <dt><code>openLockedLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否打开锁定图层对象,默认为不打开</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>指定类型对象</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>指定的泛型</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_ObjectIdEx_GetObject_" data-uid="IFoxCAD.Cad.ObjectIdEx.GetObject*"></a>
+
+  <h3 id="IFoxCAD_Cad_ObjectIdEx_GetObject__1_Autodesk_AutoCAD_DatabaseServices_ObjectIdCollection_Autodesk_AutoCAD_DatabaseServices_OpenMode_System_Boolean_System_Boolean_" data-uid="IFoxCAD.Cad.ObjectIdEx.GetObject``1(Autodesk.AutoCAD.DatabaseServices.ObjectIdCollection,Autodesk.AutoCAD.DatabaseServices.OpenMode,System.Boolean,System.Boolean)">
+  GetObject&lt;T&gt;(ObjectIdCollection, OpenMode, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取指定类型对象集合</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;T&gt; GetObject&lt;T&gt;(this ObjectIdCollection ids, OpenMode openMode = 0, bool openErased = false, bool openLockedLayer = false) where T : DBObject</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ids</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectIdCollection.html">ObjectIdCollection</a></dt>
+    <dd><p>对象id集合</p>
+</dd>
+    <dt><code>openMode</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.OpenMode.html">OpenMode</a></dt>
+    <dd><p>打开模式</p>
+</dd>
+    <dt><code>openErased</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否打开已删除对象,默认为不打开</p>
+</dd>
+    <dt><code>openLockedLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否打开锁定图层对象,默认为不打开</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd><p>指定类型对象集合</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>指定的泛型</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_ObjectIdEx_GetObject_" data-uid="IFoxCAD.Cad.ObjectIdEx.GetObject*"></a>
+
+  <h3 id="IFoxCAD_Cad_ObjectIdEx_GetObject__1_System_Collections_Generic_IEnumerable_Autodesk_AutoCAD_DatabaseServices_ObjectId__Autodesk_AutoCAD_DatabaseServices_OpenMode_System_Boolean_System_Boolean_" data-uid="IFoxCAD.Cad.ObjectIdEx.GetObject``1(System.Collections.Generic.IEnumerable{Autodesk.AutoCAD.DatabaseServices.ObjectId},Autodesk.AutoCAD.DatabaseServices.OpenMode,System.Boolean,System.Boolean)">
+  GetObject&lt;T&gt;(IEnumerable&lt;ObjectId&gt;, OpenMode, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取指定类型对象集合</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;T&gt; GetObject&lt;T&gt;(this IEnumerable&lt;ObjectId&gt; ids, OpenMode openMode = 0, bool openErased = false, bool openLockedLayer = false) where T : DBObject</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ids</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a>&gt;</dt>
+    <dd><p>对象id集合</p>
+</dd>
+    <dt><code>openMode</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.OpenMode.html">OpenMode</a></dt>
+    <dd><p>打开模式</p>
+</dd>
+    <dt><code>openErased</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否打开已删除对象,默认为不打开</p>
+</dd>
+    <dt><code>openLockedLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否打开锁定图层对象,默认为不打开</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd><p>指定类型对象集合</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>指定的泛型</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_ObjectIdEx_IsOk_" data-uid="IFoxCAD.Cad.ObjectIdEx.IsOk*"></a>
+
+  <h3 id="IFoxCAD_Cad_ObjectIdEx_IsOk_Autodesk_AutoCAD_DatabaseServices_ObjectId_" data-uid="IFoxCAD.Cad.ObjectIdEx.IsOk(Autodesk.AutoCAD.DatabaseServices.ObjectId)">
+  IsOk(ObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>id是否有效,未被删除</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsOk(this ObjectId id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>对象id</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>id有效返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>，反之返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_ObjectIdEx_OfType_" data-uid="IFoxCAD.Cad.ObjectIdEx.OfType*"></a>
+
+  <h3 id="IFoxCAD_Cad_ObjectIdEx_OfType__1_System_Collections_Generic_IEnumerable_Autodesk_AutoCAD_DatabaseServices_ObjectId__System_Boolean_" data-uid="IFoxCAD.Cad.ObjectIdEx.OfType``1(System.Collections.Generic.IEnumerable{Autodesk.AutoCAD.DatabaseServices.ObjectId},System.Boolean)">
+  OfType&lt;T&gt;(IEnumerable&lt;ObjectId&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>返回符合类型的对象id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ObjectId&gt; OfType&lt;T&gt;(this IEnumerable&lt;ObjectId&gt; ids, bool exactMatch = false) where T : DBObject</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ids</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a>&gt;</dt>
+    <dd><p>对象id集合</p>
+</dd>
+    <dt><code>exactMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>精确匹配</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a>&gt;</dt>
+    <dd><p>对象id集合</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>对象类型</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

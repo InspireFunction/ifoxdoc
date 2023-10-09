@@ -1,0 +1,640 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class GeometryOverrule
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GeometryOverrule
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GrxCAD.DatabaseServices.GeometryOverrule">
+
+
+
+  <h1 id="GrxCAD_DatabaseServices_GeometryOverrule" data-uid="GrxCAD.DatabaseServices.GeometryOverrule" class="text-break">
+    Class GeometryOverrule
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GrxCAD.html">GrxCAD</a>.<a class="xref" href="GrxCAD.DatabaseServices.html">DatabaseServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>gmdb.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;OdDbGeometryOverrule&quot;)]
+public abstract class GeometryOverrule : Overrule, IDisposable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html">DisposableWrapper</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.RXObject.html">RXObject</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.Overrule.html">Overrule</a></div>
+      <div><span class="xref">GeometryOverrule</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.Overrule.html#GrxCAD_Runtime_Overrule_AddOverrule_GrxCAD_Runtime_RXClass_GrxCAD_Runtime_Overrule_System_Boolean_">Overrule.AddOverrule(RXClass, Overrule, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.Overrule.html#GrxCAD_Runtime_Overrule_HasOverrule_GrxCAD_Runtime_RXObject_GrxCAD_Runtime_RXClass_">Overrule.HasOverrule(RXObject, RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.Overrule.html#GrxCAD_Runtime_Overrule_RemoveOverrule_GrxCAD_Runtime_RXClass_GrxCAD_Runtime_Overrule_">Overrule.RemoveOverrule(RXClass, Overrule)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.Overrule.html#GrxCAD_Runtime_Overrule_IsApplicable_GrxCAD_Runtime_RXObject_">Overrule.IsApplicable(RXObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.Overrule.html#GrxCAD_Runtime_Overrule_Overruling">Overrule.Overruling</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_Create_System_IntPtr_System_Boolean_">RXObject.Create(IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_GetRXClass">RXObject.GetRXClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_DeleteUnmanagedObject">RXObject.DeleteUnmanagedObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_Clone">RXObject.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_CompareTo_System_Object_">RXObject.CompareTo(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_CopyFrom_GrxCAD_Runtime_RXObject_">RXObject.CopyFrom(RXObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_GetClass_System_Type_">RXObject.GetClass(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_QueryX_GrxCAD_Runtime_RXClass_">RXObject.QueryX(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_X_GrxCAD_Runtime_RXClass_">RXObject.X(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_m_bAutoDelete">DisposableWrapper.m_bAutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_m_imp">DisposableWrapper.m_imp</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Detach">DisposableWrapper.Detach()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Create_System_Type_System_IntPtr_System_Boolean_">DisposableWrapper.Create(Type, IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Equals_System_Object_">DisposableWrapper.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_GetHashCode">DisposableWrapper.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Dispose_System_Boolean_">DisposableWrapper.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Dispose">DisposableWrapper.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_UnmanagedObject">DisposableWrapper.UnmanagedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_IsDisposed">DisposableWrapper.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_AutoDelete">DisposableWrapper.AutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone">MarshalByRefObject.MemberwiseClone(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref">MarshalByRefObject.CreateObjRef(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GrxCAD_DatabaseServices_GeometryOverrule__ctor_" data-uid="GrxCAD.DatabaseServices.GeometryOverrule.#ctor*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GeometryOverrule__ctor" data-uid="GrxCAD.DatabaseServices.GeometryOverrule.#ctor">
+  GeometryOverrule()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GeometryOverrule()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GrxCAD_DatabaseServices_GeometryOverrule_GetGeomExtents_" data-uid="GrxCAD.DatabaseServices.GeometryOverrule.GetGeomExtents*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GeometryOverrule_GetGeomExtents_GrxCAD_DatabaseServices_Entity_" data-uid="GrxCAD.DatabaseServices.GeometryOverrule.GetGeomExtents(GrxCAD.DatabaseServices.Entity)">
+  GetGeomExtents(Entity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Extents3d GetGeomExtents(Entity entity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="GrxCAD.DatabaseServices.Entity.html">Entity</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.Extents3d.html">Extents3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GeometryOverrule_IntersectWith_" data-uid="GrxCAD.DatabaseServices.GeometryOverrule.IntersectWith*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GeometryOverrule_IntersectWith_GrxCAD_DatabaseServices_Entity_GrxCAD_DatabaseServices_Entity_GrxCAD_DatabaseServices_Intersect_GrxCAD_Geometry_Plane_GrxCAD_Geometry_Point3dCollection_System_IntPtr_System_IntPtr_" data-uid="GrxCAD.DatabaseServices.GeometryOverrule.IntersectWith(GrxCAD.DatabaseServices.Entity,GrxCAD.DatabaseServices.Entity,GrxCAD.DatabaseServices.Intersect,GrxCAD.Geometry.Plane,GrxCAD.Geometry.Point3dCollection,System.IntPtr,System.IntPtr)">
+  IntersectWith(Entity, Entity, Intersect, Plane, Point3dCollection, IntPtr, IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void IntersectWith(Entity entity, Entity ent, Intersect intType, Plane projPlane, Point3dCollection points, IntPtr thisGsMarker, IntPtr otherGsMarker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="GrxCAD.DatabaseServices.Entity.html">Entity</a></dt>
+    <dd></dd>
+    <dt><code>ent</code> <a class="xref" href="GrxCAD.DatabaseServices.Entity.html">Entity</a></dt>
+    <dd></dd>
+    <dt><code>intType</code> <a class="xref" href="GrxCAD.DatabaseServices.Intersect.html">Intersect</a></dt>
+    <dd></dd>
+    <dt><code>projPlane</code> <a class="xref" href="GrxCAD.Geometry.Plane.html">Plane</a></dt>
+    <dd></dd>
+    <dt><code>points</code> <a class="xref" href="GrxCAD.Geometry.Point3dCollection.html">Point3dCollection</a></dt>
+    <dd></dd>
+    <dt><code>thisGsMarker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>otherGsMarker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GeometryOverrule_IntersectWith_" data-uid="GrxCAD.DatabaseServices.GeometryOverrule.IntersectWith*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GeometryOverrule_IntersectWith_GrxCAD_DatabaseServices_Entity_GrxCAD_DatabaseServices_Entity_GrxCAD_DatabaseServices_Intersect_GrxCAD_Geometry_Point3dCollection_System_IntPtr_System_IntPtr_" data-uid="GrxCAD.DatabaseServices.GeometryOverrule.IntersectWith(GrxCAD.DatabaseServices.Entity,GrxCAD.DatabaseServices.Entity,GrxCAD.DatabaseServices.Intersect,GrxCAD.Geometry.Point3dCollection,System.IntPtr,System.IntPtr)">
+  IntersectWith(Entity, Entity, Intersect, Point3dCollection, IntPtr, IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void IntersectWith(Entity entity, Entity ent, Intersect intType, Point3dCollection points, IntPtr thisGsMarker, IntPtr otherGsMarker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="GrxCAD.DatabaseServices.Entity.html">Entity</a></dt>
+    <dd></dd>
+    <dt><code>ent</code> <a class="xref" href="GrxCAD.DatabaseServices.Entity.html">Entity</a></dt>
+    <dd></dd>
+    <dt><code>intType</code> <a class="xref" href="GrxCAD.DatabaseServices.Intersect.html">Intersect</a></dt>
+    <dd></dd>
+    <dt><code>points</code> <a class="xref" href="GrxCAD.Geometry.Point3dCollection.html">Point3dCollection</a></dt>
+    <dd></dd>
+    <dt><code>thisGsMarker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>otherGsMarker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GeometryOverrule_SetCustomFilter_" data-uid="GrxCAD.DatabaseServices.GeometryOverrule.SetCustomFilter*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GeometryOverrule_SetCustomFilter" data-uid="GrxCAD.DatabaseServices.GeometryOverrule.SetCustomFilter">
+  SetCustomFilter()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed void SetCustomFilter()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GeometryOverrule_SetExtensionDictionaryEntryFilter_" data-uid="GrxCAD.DatabaseServices.GeometryOverrule.SetExtensionDictionaryEntryFilter*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GeometryOverrule_SetExtensionDictionaryEntryFilter_System_String_" data-uid="GrxCAD.DatabaseServices.GeometryOverrule.SetExtensionDictionaryEntryFilter(System.String)">
+  SetExtensionDictionaryEntryFilter(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed void SetExtensionDictionaryEntryFilter(string entryName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entryName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GeometryOverrule_SetIdFilter_" data-uid="GrxCAD.DatabaseServices.GeometryOverrule.SetIdFilter*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GeometryOverrule_SetIdFilter_GrxCAD_DatabaseServices_ObjectId___" data-uid="GrxCAD.DatabaseServices.GeometryOverrule.SetIdFilter(GrxCAD.DatabaseServices.ObjectId[])">
+  SetIdFilter(ObjectId[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed void SetIdFilter(ObjectId[] ids)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ids</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GeometryOverrule_SetNoFilter_" data-uid="GrxCAD.DatabaseServices.GeometryOverrule.SetNoFilter*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GeometryOverrule_SetNoFilter" data-uid="GrxCAD.DatabaseServices.GeometryOverrule.SetNoFilter">
+  SetNoFilter()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed void SetNoFilter()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GeometryOverrule_SetXDataFilter_" data-uid="GrxCAD.DatabaseServices.GeometryOverrule.SetXDataFilter*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GeometryOverrule_SetXDataFilter_System_String_" data-uid="GrxCAD.DatabaseServices.GeometryOverrule.SetXDataFilter(System.String)">
+  SetXDataFilter(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed void SetXDataFilter(string registeredApplicationName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>registeredApplicationName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

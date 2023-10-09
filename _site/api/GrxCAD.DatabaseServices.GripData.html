@@ -1,0 +1,1072 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class GripData
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GripData
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GrxCAD.DatabaseServices.GripData">
+
+
+
+  <h1 id="GrxCAD_DatabaseServices_GripData" data-uid="GrxCAD.DatabaseServices.GripData" class="text-break">
+    Class GripData
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GrxCAD.html">GrxCAD</a>.<a class="xref" href="GrxCAD.DatabaseServices.html">DatabaseServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>gmdb.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;OdDbGripData&quot;)]
+public class GripData : DisposableWrapper, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html">DisposableWrapper</a></div>
+      <div><span class="xref">GripData</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_m_bAutoDelete">DisposableWrapper.m_bAutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_m_imp">DisposableWrapper.m_imp</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Detach">DisposableWrapper.Detach()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Create_System_Type_System_IntPtr_System_Boolean_">DisposableWrapper.Create(Type, IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Equals_System_Object_">DisposableWrapper.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_GetHashCode">DisposableWrapper.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Dispose_System_Boolean_">DisposableWrapper.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Dispose">DisposableWrapper.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_UnmanagedObject">DisposableWrapper.UnmanagedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_IsDisposed">DisposableWrapper.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_AutoDelete">DisposableWrapper.AutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone">MarshalByRefObject.MemberwiseClone(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref">MarshalByRefObject.CreateObjRef(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GrxCAD_DatabaseServices_GripData__ctor_" data-uid="GrxCAD.DatabaseServices.GripData.#ctor*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GripData__ctor" data-uid="GrxCAD.DatabaseServices.GripData.#ctor">
+  GripData()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GripData()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GrxCAD_DatabaseServices_GripData_AlternateBasePoint_" data-uid="GrxCAD.DatabaseServices.GripData.AlternateBasePoint*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GripData_AlternateBasePoint" data-uid="GrxCAD.DatabaseServices.GripData.AlternateBasePoint">
+  AlternateBasePoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point3d? AlternateBasePoint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GripData_AppData_" data-uid="GrxCAD.DatabaseServices.GripData.AppData*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GripData_AppData" data-uid="GrxCAD.DatabaseServices.GripData.AppData">
+  AppData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntPtr AppData { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GripData_DrawAtDragImageGripPoint_" data-uid="GrxCAD.DatabaseServices.GripData.DrawAtDragImageGripPoint*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GripData_DrawAtDragImageGripPoint" data-uid="GrxCAD.DatabaseServices.GripData.DrawAtDragImageGripPoint">
+  DrawAtDragImageGripPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DrawAtDragImageGripPoint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GripData_ForcedPickOn_" data-uid="GrxCAD.DatabaseServices.GripData.ForcedPickOn*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GripData_ForcedPickOn" data-uid="GrxCAD.DatabaseServices.GripData.ForcedPickOn">
+  ForcedPickOn
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ForcedPickOn { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GripData_GizmosEnabled_" data-uid="GrxCAD.DatabaseServices.GripData.GizmosEnabled*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GripData_GizmosEnabled" data-uid="GrxCAD.DatabaseServices.GripData.GizmosEnabled">
+  GizmosEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GizmosEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GripData_GripPoint_" data-uid="GrxCAD.DatabaseServices.GripData.GripPoint*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GripData_GripPoint" data-uid="GrxCAD.DatabaseServices.GripData.GripPoint">
+  GripPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point3d GripPoint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GripData_HotGripInvokesRightClick_" data-uid="GrxCAD.DatabaseServices.GripData.HotGripInvokesRightClick*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GripData_HotGripInvokesRightClick" data-uid="GrxCAD.DatabaseServices.GripData.HotGripInvokesRightClick">
+  HotGripInvokesRightClick
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HotGripInvokesRightClick { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GripData_IsPerViewport_" data-uid="GrxCAD.DatabaseServices.GripData.IsPerViewport*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GripData_IsPerViewport" data-uid="GrxCAD.DatabaseServices.GripData.IsPerViewport">
+  IsPerViewport
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPerViewport { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GripData_ModeKeywordsDisabled_" data-uid="GrxCAD.DatabaseServices.GripData.ModeKeywordsDisabled*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GripData_ModeKeywordsDisabled" data-uid="GrxCAD.DatabaseServices.GripData.ModeKeywordsDisabled">
+  ModeKeywordsDisabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ModeKeywordsDisabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GripData_RubberBandLineDisabled_" data-uid="GrxCAD.DatabaseServices.GripData.RubberBandLineDisabled*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GripData_RubberBandLineDisabled" data-uid="GrxCAD.DatabaseServices.GripData.RubberBandLineDisabled">
+  RubberBandLineDisabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RubberBandLineDisabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GripData_SkipWhenShared_" data-uid="GrxCAD.DatabaseServices.GripData.SkipWhenShared*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GripData_SkipWhenShared" data-uid="GrxCAD.DatabaseServices.GripData.SkipWhenShared">
+  SkipWhenShared
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SkipWhenShared { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GripData_TriggerGrip_" data-uid="GrxCAD.DatabaseServices.GripData.TriggerGrip*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GripData_TriggerGrip" data-uid="GrxCAD.DatabaseServices.GripData.TriggerGrip">
+  TriggerGrip
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TriggerGrip { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GrxCAD_DatabaseServices_GripData_DeleteUnmanagedObject_" data-uid="GrxCAD.DatabaseServices.GripData.DeleteUnmanagedObject*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GripData_DeleteUnmanagedObject" data-uid="GrxCAD.DatabaseServices.GripData.DeleteUnmanagedObject">
+  DeleteUnmanagedObject()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DeleteUnmanagedObject()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GripData_GetHotGripDimensionData_" data-uid="GrxCAD.DatabaseServices.GripData.GetHotGripDimensionData*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GripData_GetHotGripDimensionData_System_Double_" data-uid="GrxCAD.DatabaseServices.GripData.GetHotGripDimensionData(System.Double)">
+  GetHotGripDimensionData(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DynamicDimensionDataCollection GetHotGripDimensionData(double dimScale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dimScale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.DynamicDimensionDataCollection.html">DynamicDimensionDataCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GripData_GetHoverDimensionData_" data-uid="GrxCAD.DatabaseServices.GripData.GetHoverDimensionData*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GripData_GetHoverDimensionData_System_Double_" data-uid="GrxCAD.DatabaseServices.GripData.GetHoverDimensionData(System.Double)">
+  GetHoverDimensionData(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DynamicDimensionDataCollection GetHoverDimensionData(double dimScale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dimScale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.DynamicDimensionDataCollection.html">DynamicDimensionDataCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GripData_GetTooltip_" data-uid="GrxCAD.DatabaseServices.GripData.GetTooltip*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GripData_GetTooltip" data-uid="GrxCAD.DatabaseServices.GripData.GetTooltip">
+  GetTooltip()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetTooltip()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GripData_OnGripStatusChanged_" data-uid="GrxCAD.DatabaseServices.GripData.OnGripStatusChanged*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GripData_OnGripStatusChanged_GrxCAD_DatabaseServices_ObjectId_GrxCAD_DatabaseServices_GripData_Status_" data-uid="GrxCAD.DatabaseServices.GripData.OnGripStatusChanged(GrxCAD.DatabaseServices.ObjectId,GrxCAD.DatabaseServices.GripData.Status)">
+  OnGripStatusChanged(ObjectId, Status)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnGripStatusChanged(ObjectId entityId, GripData.Status newStatus)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entityId</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+    <dt><code>newStatus</code> <a class="xref" href="GrxCAD.DatabaseServices.GripData.html">GripData</a>.<a class="xref" href="GrxCAD.DatabaseServices.GripData.Status.html">Status</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GripData_OnHotGrip_" data-uid="GrxCAD.DatabaseServices.GripData.OnHotGrip*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GripData_OnHotGrip_GrxCAD_DatabaseServices_ObjectId_GrxCAD_DatabaseServices_GripData_Context_" data-uid="GrxCAD.DatabaseServices.GripData.OnHotGrip(GrxCAD.DatabaseServices.ObjectId,GrxCAD.DatabaseServices.GripData.Context)">
+  OnHotGrip(ObjectId, Context)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual GripData.ReturnValue OnHotGrip(ObjectId entityId, GripData.Context contextFlags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entityId</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+    <dt><code>contextFlags</code> <a class="xref" href="GrxCAD.DatabaseServices.GripData.html">GripData</a>.<a class="xref" href="GrxCAD.DatabaseServices.GripData.Context.html">Context</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.GripData.html">GripData</a>.<a class="xref" href="GrxCAD.DatabaseServices.GripData.ReturnValue.html">ReturnValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GripData_OnHover_" data-uid="GrxCAD.DatabaseServices.GripData.OnHover*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GripData_OnHover_GrxCAD_DatabaseServices_ObjectId_GrxCAD_DatabaseServices_GripData_Context_" data-uid="GrxCAD.DatabaseServices.GripData.OnHover(GrxCAD.DatabaseServices.ObjectId,GrxCAD.DatabaseServices.GripData.Context)">
+  OnHover(ObjectId, Context)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual GripData.ReturnValue OnHover(ObjectId entityId, GripData.Context contextFlags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entityId</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+    <dt><code>contextFlags</code> <a class="xref" href="GrxCAD.DatabaseServices.GripData.html">GripData</a>.<a class="xref" href="GrxCAD.DatabaseServices.GripData.Context.html">Context</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.GripData.html">GripData</a>.<a class="xref" href="GrxCAD.DatabaseServices.GripData.ReturnValue.html">ReturnValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GripData_OnRightClick_" data-uid="GrxCAD.DatabaseServices.GripData.OnRightClick*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GripData_OnRightClick_GrxCAD_DatabaseServices_GripDataCollection_GrxCAD_DatabaseServices_ObjectIdCollection_System_Object_" data-uid="GrxCAD.DatabaseServices.GripData.OnRightClick(GrxCAD.DatabaseServices.GripDataCollection,GrxCAD.DatabaseServices.ObjectIdCollection,System.Object)">
+  OnRightClick(GripDataCollection, ObjectIdCollection, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual GripData.ReturnValue OnRightClick(GripDataCollection hotGrips, ObjectIdCollection entities, object menu)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotGrips</code> <a class="xref" href="GrxCAD.DatabaseServices.GripDataCollection.html">GripDataCollection</a></dt>
+    <dd></dd>
+    <dt><code>entities</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectIdCollection.html">ObjectIdCollection</a></dt>
+    <dd></dd>
+    <dt><code>menu</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.GripData.html">GripData</a>.<a class="xref" href="GrxCAD.DatabaseServices.GripData.ReturnValue.html">ReturnValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GripData_ViewportDraw_" data-uid="GrxCAD.DatabaseServices.GripData.ViewportDraw*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GripData_ViewportDraw_GrxCAD_GraphicsInterface_ViewportDraw_GrxCAD_DatabaseServices_ObjectId_GrxCAD_DatabaseServices_GripData_DrawType_System_Nullable_GrxCAD_Geometry_Point3d__System_Int32_" data-uid="GrxCAD.DatabaseServices.GripData.ViewportDraw(GrxCAD.GraphicsInterface.ViewportDraw,GrxCAD.DatabaseServices.ObjectId,GrxCAD.DatabaseServices.GripData.DrawType,System.Nullable{GrxCAD.Geometry.Point3d},System.Int32)">
+  ViewportDraw(ViewportDraw, ObjectId, DrawType, Point3d?, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool ViewportDraw(ViewportDraw worldDraw, ObjectId entityId, GripData.DrawType t, Point3d? imageGripPoint, int gripSizeInPixels)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldDraw</code> <a class="xref" href="GrxCAD.GraphicsInterface.ViewportDraw.html">ViewportDraw</a></dt>
+    <dd></dd>
+    <dt><code>entityId</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+    <dt><code>t</code> <a class="xref" href="GrxCAD.DatabaseServices.GripData.html">GripData</a>.<a class="xref" href="GrxCAD.DatabaseServices.GripData.DrawType.html">DrawType</a></dt>
+    <dd></dd>
+    <dt><code>imageGripPoint</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a>?</dt>
+    <dd></dd>
+    <dt><code>gripSizeInPixels</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_GripData_WorldDraw_" data-uid="GrxCAD.DatabaseServices.GripData.WorldDraw*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_GripData_WorldDraw_GrxCAD_GraphicsInterface_WorldDraw_GrxCAD_DatabaseServices_ObjectId_GrxCAD_DatabaseServices_GripData_DrawType_System_Nullable_GrxCAD_Geometry_Point3d__System_Double_" data-uid="GrxCAD.DatabaseServices.GripData.WorldDraw(GrxCAD.GraphicsInterface.WorldDraw,GrxCAD.DatabaseServices.ObjectId,GrxCAD.DatabaseServices.GripData.DrawType,System.Nullable{GrxCAD.Geometry.Point3d},System.Double)">
+  WorldDraw(WorldDraw, ObjectId, DrawType, Point3d?, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool WorldDraw(WorldDraw worldDraw, ObjectId entityId, GripData.DrawType t, Point3d? imageGripPoint, double dGripSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldDraw</code> <a class="xref" href="GrxCAD.GraphicsInterface.WorldDraw.html">WorldDraw</a></dt>
+    <dd></dd>
+    <dt><code>entityId</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+    <dt><code>t</code> <a class="xref" href="GrxCAD.DatabaseServices.GripData.html">GripData</a>.<a class="xref" href="GrxCAD.DatabaseServices.GripData.DrawType.html">DrawType</a></dt>
+    <dd></dd>
+    <dt><code>imageGripPoint</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a>?</dt>
+    <dd></dd>
+    <dt><code>dGripSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

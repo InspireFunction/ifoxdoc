@@ -1,0 +1,868 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SymbolTableEx
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SymbolTableEx
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="IFoxCAD.Cad.SymbolTableEx">
+
+
+
+  <h1 id="IFoxCAD_Cad_SymbolTableEx" data-uid="IFoxCAD.Cad.SymbolTableEx" class="text-break">
+    Class SymbolTableEx
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="IFoxCAD.html">IFoxCAD</a>.<a class="xref" href="IFoxCAD.Cad.html">Cad</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>IFox.CAD.ACAD.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>符号表类扩展函数</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class SymbolTableEx</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SymbolTableEx</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="IFoxCAD_Cad_SymbolTableEx_Add_" data-uid="IFoxCAD.Cad.SymbolTableEx.Add*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableEx_Add_IFoxCAD_Cad_SymbolTable_Autodesk_AutoCAD_DatabaseServices_BlockTable_Autodesk_AutoCAD_DatabaseServices_BlockTableRecord__System_String_Autodesk_AutoCAD_DatabaseServices_Entity___" data-uid="IFoxCAD.Cad.SymbolTableEx.Add(IFoxCAD.Cad.SymbolTable{Autodesk.AutoCAD.DatabaseServices.BlockTable,Autodesk.AutoCAD.DatabaseServices.BlockTableRecord},System.String,Autodesk.AutoCAD.DatabaseServices.Entity[])">
+  Add(SymbolTable&lt;BlockTable, BlockTableRecord&gt;, string, params Entity[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>添加块定义</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId Add(this SymbolTable&lt;BlockTable, BlockTableRecord&gt; table, string name, params Entity[] ents)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.BlockTable.html">BlockTable</a>, <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.BlockTableRecord.html">BlockTableRecord</a>&gt;</dt>
+    <dd><p>块表</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>块名</p>
+</dd>
+    <dt><code>ents</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html">Entity</a>[]</dt>
+    <dd><p>图元(包括属性)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableEx_Add_" data-uid="IFoxCAD.Cad.SymbolTableEx.Add*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableEx_Add_IFoxCAD_Cad_SymbolTable_Autodesk_AutoCAD_DatabaseServices_BlockTable_Autodesk_AutoCAD_DatabaseServices_BlockTableRecord__System_String_System_Action_Autodesk_AutoCAD_DatabaseServices_BlockTableRecord__System_Func_System_Collections_Generic_IEnumerable_Autodesk_AutoCAD_DatabaseServices_Entity___System_Func_System_Collections_Generic_IEnumerable_Autodesk_AutoCAD_DatabaseServices_AttributeDefinition___" data-uid="IFoxCAD.Cad.SymbolTableEx.Add(IFoxCAD.Cad.SymbolTable{Autodesk.AutoCAD.DatabaseServices.BlockTable,Autodesk.AutoCAD.DatabaseServices.BlockTableRecord},System.String,System.Action{Autodesk.AutoCAD.DatabaseServices.BlockTableRecord},System.Func{System.Collections.Generic.IEnumerable{Autodesk.AutoCAD.DatabaseServices.Entity}},System.Func{System.Collections.Generic.IEnumerable{Autodesk.AutoCAD.DatabaseServices.AttributeDefinition}})">
+  Add(SymbolTable&lt;BlockTable, BlockTableRecord&gt;, string, Action&lt;BlockTableRecord&gt;?, Func&lt;IEnumerable&lt;Entity&gt;&gt;?, Func&lt;IEnumerable&lt;AttributeDefinition&gt;&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>添加块定义</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId Add(this SymbolTable&lt;BlockTable, BlockTableRecord&gt; table, string name, Action&lt;BlockTableRecord&gt;? action = null, Func&lt;IEnumerable&lt;Entity&gt;&gt;? ents = null, Func&lt;IEnumerable&lt;AttributeDefinition&gt;&gt;? attdef = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.BlockTable.html">BlockTable</a>, <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.BlockTableRecord.html">BlockTableRecord</a>&gt;</dt>
+    <dd><p>块表</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>块名</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.BlockTableRecord.html">BlockTableRecord</a>&gt;</dt>
+    <dd><p>对所添加块表的委托n</p>
+</dd>
+    <dt><code>ents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html">Entity</a>&gt;&gt;</dt>
+    <dd><p>添加图元的委托</p>
+</dd>
+    <dt><code>attdef</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AttributeDefinition.html">AttributeDefinition</a>&gt;&gt;</dt>
+    <dd><p>添加属性定义的委托</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>块定义id</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableEx_Add_" data-uid="IFoxCAD.Cad.SymbolTableEx.Add*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableEx_Add_IFoxCAD_Cad_SymbolTable_Autodesk_AutoCAD_DatabaseServices_BlockTable_Autodesk_AutoCAD_DatabaseServices_BlockTableRecord__System_String_System_Collections_Generic_IEnumerable_Autodesk_AutoCAD_DatabaseServices_Entity__System_Collections_Generic_IEnumerable_Autodesk_AutoCAD_DatabaseServices_AttributeDefinition__" data-uid="IFoxCAD.Cad.SymbolTableEx.Add(IFoxCAD.Cad.SymbolTable{Autodesk.AutoCAD.DatabaseServices.BlockTable,Autodesk.AutoCAD.DatabaseServices.BlockTableRecord},System.String,System.Collections.Generic.IEnumerable{Autodesk.AutoCAD.DatabaseServices.Entity},System.Collections.Generic.IEnumerable{Autodesk.AutoCAD.DatabaseServices.AttributeDefinition})">
+  Add(SymbolTable&lt;BlockTable, BlockTableRecord&gt;, string, IEnumerable&lt;Entity&gt;?, IEnumerable&lt;AttributeDefinition&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>添加块定义</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId Add(this SymbolTable&lt;BlockTable, BlockTableRecord&gt; table, string name, IEnumerable&lt;Entity&gt;? ents = null, IEnumerable&lt;AttributeDefinition&gt;? attdef = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.BlockTable.html">BlockTable</a>, <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.BlockTableRecord.html">BlockTableRecord</a>&gt;</dt>
+    <dd><p>块表</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>块名</p>
+</dd>
+    <dt><code>ents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html">Entity</a>&gt;</dt>
+    <dd><p>图元</p>
+</dd>
+    <dt><code>attdef</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AttributeDefinition.html">AttributeDefinition</a>&gt;</dt>
+    <dd><p>属性定义</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableEx_Add_" data-uid="IFoxCAD.Cad.SymbolTableEx.Add*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableEx_Add_IFoxCAD_Cad_SymbolTable_Autodesk_AutoCAD_DatabaseServices_LayerTable_Autodesk_AutoCAD_DatabaseServices_LayerTableRecord__System_String_Autodesk_AutoCAD_Colors_Color_" data-uid="IFoxCAD.Cad.SymbolTableEx.Add(IFoxCAD.Cad.SymbolTable{Autodesk.AutoCAD.DatabaseServices.LayerTable,Autodesk.AutoCAD.DatabaseServices.LayerTableRecord},System.String,Autodesk.AutoCAD.Colors.Color)">
+  Add(SymbolTable&lt;LayerTable, LayerTableRecord&gt;, string, Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>添加图层</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId Add(this SymbolTable&lt;LayerTable, LayerTableRecord&gt; table, string name, Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LayerTable.html">LayerTable</a>, <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LayerTableRecord.html">LayerTableRecord</a>&gt;</dt>
+    <dd><p>图层符号表</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>图层名</p>
+</dd>
+    <dt><code>color</code> <a class="xref" href="Autodesk.AutoCAD.Colors.Color.html">Color</a></dt>
+    <dd><p>图层颜色</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>图层id</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableEx_Add_" data-uid="IFoxCAD.Cad.SymbolTableEx.Add*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableEx_Add_IFoxCAD_Cad_SymbolTable_Autodesk_AutoCAD_DatabaseServices_LayerTable_Autodesk_AutoCAD_DatabaseServices_LayerTableRecord__System_String_System_Int32_" data-uid="IFoxCAD.Cad.SymbolTableEx.Add(IFoxCAD.Cad.SymbolTable{Autodesk.AutoCAD.DatabaseServices.LayerTable,Autodesk.AutoCAD.DatabaseServices.LayerTableRecord},System.String,System.Int32)">
+  Add(SymbolTable&lt;LayerTable, LayerTableRecord&gt;, string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>添加图层</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId Add(this SymbolTable&lt;LayerTable, LayerTableRecord&gt; table, string name, int colorIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LayerTable.html">LayerTable</a>, <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LayerTableRecord.html">LayerTableRecord</a>&gt;</dt>
+    <dd><p>图层符号表</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>图层名</p>
+</dd>
+    <dt><code>colorIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>图层颜色索引值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>图层id</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableEx_Add_" data-uid="IFoxCAD.Cad.SymbolTableEx.Add*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableEx_Add_IFoxCAD_Cad_SymbolTable_Autodesk_AutoCAD_DatabaseServices_LinetypeTable_Autodesk_AutoCAD_DatabaseServices_LinetypeTableRecord__System_String_System_String_System_Double_System_Double___" data-uid="IFoxCAD.Cad.SymbolTableEx.Add(IFoxCAD.Cad.SymbolTable{Autodesk.AutoCAD.DatabaseServices.LinetypeTable,Autodesk.AutoCAD.DatabaseServices.LinetypeTableRecord},System.String,System.String,System.Double,System.Double[])">
+  Add(SymbolTable&lt;LinetypeTable, LinetypeTableRecord&gt;, string, string, double, double[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>添加线型</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId Add(this SymbolTable&lt;LinetypeTable, LinetypeTableRecord&gt; table, string name, string description, double length, double[] dash)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinetypeTable.html">LinetypeTable</a>, <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinetypeTableRecord.html">LinetypeTableRecord</a>&gt;</dt>
+    <dd><p>线型表</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>线型名</p>
+</dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>线型说明</p>
+</dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>线型长度</p>
+</dd>
+    <dt><code>dash</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>笔画长度数组</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>线型id</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableEx_Add_" data-uid="IFoxCAD.Cad.SymbolTableEx.Add*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableEx_Add_IFoxCAD_Cad_SymbolTable_Autodesk_AutoCAD_DatabaseServices_TextStyleTable_Autodesk_AutoCAD_DatabaseServices_TextStyleTableRecord__System_String_IFoxCAD_Cad_FontTTF_System_Double_" data-uid="IFoxCAD.Cad.SymbolTableEx.Add(IFoxCAD.Cad.SymbolTable{Autodesk.AutoCAD.DatabaseServices.TextStyleTable,Autodesk.AutoCAD.DatabaseServices.TextStyleTableRecord},System.String,IFoxCAD.Cad.FontTTF,System.Double)">
+  Add(SymbolTable&lt;TextStyleTable, TextStyleTableRecord&gt;, string, FontTTF, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>添加文字样式记录</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId Add(this SymbolTable&lt;TextStyleTable, TextStyleTableRecord&gt; table, string textStyleName, FontTTF fontTTF, double xscale = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextStyleTable.html">TextStyleTable</a>, <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextStyleTableRecord.html">TextStyleTableRecord</a>&gt;</dt>
+    <dd><p>文字样式表</p>
+</dd>
+    <dt><code>textStyleName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>文字样式名</p>
+</dd>
+    <dt><code>fontTTF</code> <a class="xref" href="IFoxCAD.Cad.FontTTF.html">FontTTF</a></dt>
+    <dd><p>字体名枚举</p>
+</dd>
+    <dt><code>xscale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>宽度比例</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>文字样式Id</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableEx_Add_" data-uid="IFoxCAD.Cad.SymbolTableEx.Add*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableEx_Add_IFoxCAD_Cad_SymbolTable_Autodesk_AutoCAD_DatabaseServices_TextStyleTable_Autodesk_AutoCAD_DatabaseServices_TextStyleTableRecord__System_String_System_String_System_Double_" data-uid="IFoxCAD.Cad.SymbolTableEx.Add(IFoxCAD.Cad.SymbolTable{Autodesk.AutoCAD.DatabaseServices.TextStyleTable,Autodesk.AutoCAD.DatabaseServices.TextStyleTableRecord},System.String,System.String,System.Double)">
+  Add(SymbolTable&lt;TextStyleTable, TextStyleTableRecord&gt;, string, string, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>添加文字样式记录</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId Add(this SymbolTable&lt;TextStyleTable, TextStyleTableRecord&gt; table, string textStyleName, string font, double xscale = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextStyleTable.html">TextStyleTable</a>, <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextStyleTableRecord.html">TextStyleTableRecord</a>&gt;</dt>
+    <dd><p>文字样式表</p>
+</dd>
+    <dt><code>textStyleName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>文字样式名</p>
+</dd>
+    <dt><code>font</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字体名</p>
+</dd>
+    <dt><code>xscale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>宽度比例</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>文字样式Id</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableEx_AddAttsToBlocks_" data-uid="IFoxCAD.Cad.SymbolTableEx.AddAttsToBlocks*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableEx_AddAttsToBlocks_IFoxCAD_Cad_SymbolTable_Autodesk_AutoCAD_DatabaseServices_BlockTable_Autodesk_AutoCAD_DatabaseServices_BlockTableRecord__Autodesk_AutoCAD_DatabaseServices_ObjectId_System_Collections_Generic_List_Autodesk_AutoCAD_DatabaseServices_AttributeDefinition__" data-uid="IFoxCAD.Cad.SymbolTableEx.AddAttsToBlocks(IFoxCAD.Cad.SymbolTable{Autodesk.AutoCAD.DatabaseServices.BlockTable,Autodesk.AutoCAD.DatabaseServices.BlockTableRecord},Autodesk.AutoCAD.DatabaseServices.ObjectId,System.Collections.Generic.List{Autodesk.AutoCAD.DatabaseServices.AttributeDefinition})">
+  AddAttsToBlocks(SymbolTable&lt;BlockTable, BlockTableRecord&gt;, ObjectId, List&lt;AttributeDefinition&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>添加属性到块定义</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddAttsToBlocks(this SymbolTable&lt;BlockTable, BlockTableRecord&gt; table, ObjectId id, List&lt;AttributeDefinition&gt; atts)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.BlockTable.html">BlockTable</a>, <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.BlockTableRecord.html">BlockTableRecord</a>&gt;</dt>
+    <dd><p>块表</p>
+</dd>
+    <dt><code>id</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>块定义id</p>
+</dd>
+    <dt><code>atts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AttributeDefinition.html">AttributeDefinition</a>&gt;</dt>
+    <dd><p>属性列表</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableEx_AddAttsToBlocks_" data-uid="IFoxCAD.Cad.SymbolTableEx.AddAttsToBlocks*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableEx_AddAttsToBlocks_IFoxCAD_Cad_SymbolTable_Autodesk_AutoCAD_DatabaseServices_BlockTable_Autodesk_AutoCAD_DatabaseServices_BlockTableRecord__System_String_System_Collections_Generic_List_Autodesk_AutoCAD_DatabaseServices_AttributeDefinition__" data-uid="IFoxCAD.Cad.SymbolTableEx.AddAttsToBlocks(IFoxCAD.Cad.SymbolTable{Autodesk.AutoCAD.DatabaseServices.BlockTable,Autodesk.AutoCAD.DatabaseServices.BlockTableRecord},System.String,System.Collections.Generic.List{Autodesk.AutoCAD.DatabaseServices.AttributeDefinition})">
+  AddAttsToBlocks(SymbolTable&lt;BlockTable, BlockTableRecord&gt;, string, List&lt;AttributeDefinition&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>添加属性到块定义</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddAttsToBlocks(this SymbolTable&lt;BlockTable, BlockTableRecord&gt; table, string name, List&lt;AttributeDefinition&gt; atts)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.BlockTable.html">BlockTable</a>, <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.BlockTableRecord.html">BlockTableRecord</a>&gt;</dt>
+    <dd><p>块表</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>块定义名字</p>
+</dd>
+    <dt><code>atts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AttributeDefinition.html">AttributeDefinition</a>&gt;</dt>
+    <dd><p>属性列表</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableEx_AddWithChange_" data-uid="IFoxCAD.Cad.SymbolTableEx.AddWithChange*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableEx_AddWithChange_IFoxCAD_Cad_SymbolTable_Autodesk_AutoCAD_DatabaseServices_TextStyleTable_Autodesk_AutoCAD_DatabaseServices_TextStyleTableRecord__System_String_System_String_System_String_System_Double_System_Double_System_Boolean_" data-uid="IFoxCAD.Cad.SymbolTableEx.AddWithChange(IFoxCAD.Cad.SymbolTable{Autodesk.AutoCAD.DatabaseServices.TextStyleTable,Autodesk.AutoCAD.DatabaseServices.TextStyleTableRecord},System.String,System.String,System.String,System.Double,System.Double,System.Boolean)">
+  AddWithChange(SymbolTable&lt;TextStyleTable, TextStyleTableRecord&gt;, string, string, string, double, double, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>添加文字样式记录,如果存在就默认强制替换</p>
+<p>此函数为了 <code>二惊</code> 和 <code>edata</code> 而设</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId AddWithChange(this SymbolTable&lt;TextStyleTable, TextStyleTableRecord&gt; table, string textStyleName, string smallFont, string bigFont = &quot;&quot;, double xScale = 1, double height = 0, bool forceChange = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextStyleTable.html">TextStyleTable</a>, <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextStyleTableRecord.html">TextStyleTableRecord</a>&gt;</dt>
+    <dd><p>文字样式表</p>
+</dd>
+    <dt><code>textStyleName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>文字样式名</p>
+</dd>
+    <dt><code>smallFont</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字体名</p>
+</dd>
+    <dt><code>bigFont</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>大字体名</p>
+</dd>
+    <dt><code>xScale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>宽度比例</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>高度</p>
+</dd>
+    <dt><code>forceChange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否强制替换</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>文字样式Id</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableEx_Delete_" data-uid="IFoxCAD.Cad.SymbolTableEx.Delete*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableEx_Delete_IFoxCAD_Cad_SymbolTable_Autodesk_AutoCAD_DatabaseServices_LayerTable_Autodesk_AutoCAD_DatabaseServices_LayerTableRecord__System_String_" data-uid="IFoxCAD.Cad.SymbolTableEx.Delete(IFoxCAD.Cad.SymbolTable{Autodesk.AutoCAD.DatabaseServices.LayerTable,Autodesk.AutoCAD.DatabaseServices.LayerTableRecord},System.String)">
+  Delete(SymbolTable&lt;LayerTable, LayerTableRecord&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>删除图层</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Delete(this SymbolTable&lt;LayerTable, LayerTableRecord&gt; table, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LayerTable.html">LayerTable</a>, <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LayerTableRecord.html">LayerTableRecord</a>&gt;</dt>
+    <dd><p>层表</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>图层名</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>，失败返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableEx_GetBlockFrom_" data-uid="IFoxCAD.Cad.SymbolTableEx.GetBlockFrom*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableEx_GetBlockFrom_IFoxCAD_Cad_SymbolTable_Autodesk_AutoCAD_DatabaseServices_BlockTable_Autodesk_AutoCAD_DatabaseServices_BlockTableRecord__System_String_System_Boolean_" data-uid="IFoxCAD.Cad.SymbolTableEx.GetBlockFrom(IFoxCAD.Cad.SymbolTable{Autodesk.AutoCAD.DatabaseServices.BlockTable,Autodesk.AutoCAD.DatabaseServices.BlockTableRecord},System.String,System.Boolean)">
+  GetBlockFrom(SymbolTable&lt;BlockTable, BlockTableRecord&gt;, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>从文件中获取块定义</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId GetBlockFrom(this SymbolTable&lt;BlockTable, BlockTableRecord&gt; table, string fileName, bool over)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.BlockTable.html">BlockTable</a>, <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.BlockTableRecord.html">BlockTableRecord</a>&gt;</dt>
+    <dd><p>块表</p>
+</dd>
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>文件名</p>
+</dd>
+    <dt><code>over</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否覆盖</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>块定义Id</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableEx_GetBlockFrom_" data-uid="IFoxCAD.Cad.SymbolTableEx.GetBlockFrom*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableEx_GetBlockFrom_IFoxCAD_Cad_SymbolTable_Autodesk_AutoCAD_DatabaseServices_BlockTable_Autodesk_AutoCAD_DatabaseServices_BlockTableRecord__System_String_System_String_System_Boolean_" data-uid="IFoxCAD.Cad.SymbolTableEx.GetBlockFrom(IFoxCAD.Cad.SymbolTable{Autodesk.AutoCAD.DatabaseServices.BlockTable,Autodesk.AutoCAD.DatabaseServices.BlockTableRecord},System.String,System.String,System.Boolean)">
+  GetBlockFrom(SymbolTable&lt;BlockTable, BlockTableRecord&gt;, string, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>从文件中获取块定义</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId GetBlockFrom(this SymbolTable&lt;BlockTable, BlockTableRecord&gt; table, string fileName, string blockName, bool over)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.BlockTable.html">BlockTable</a>, <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.BlockTableRecord.html">BlockTableRecord</a>&gt;</dt>
+    <dd><p>块表</p>
+</dd>
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>文件名</p>
+</dd>
+    <dt><code>blockName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>块定义名</p>
+</dd>
+    <dt><code>over</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否覆盖</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd><p>块定义Id</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_SymbolTableEx_Rename_" data-uid="IFoxCAD.Cad.SymbolTableEx.Rename*"></a>
+
+  <h3 id="IFoxCAD_Cad_SymbolTableEx_Rename_IFoxCAD_Cad_SymbolTable_Autodesk_AutoCAD_DatabaseServices_LayerTable_Autodesk_AutoCAD_DatabaseServices_LayerTableRecord__System_String_System_String_" data-uid="IFoxCAD.Cad.SymbolTableEx.Rename(IFoxCAD.Cad.SymbolTable{Autodesk.AutoCAD.DatabaseServices.LayerTable,Autodesk.AutoCAD.DatabaseServices.LayerTableRecord},System.String,System.String)">
+  Rename(SymbolTable&lt;LayerTable, LayerTableRecord&gt;, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>更改图层名</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId Rename(this SymbolTable&lt;LayerTable, LayerTableRecord&gt; table, string Oldname, string NewName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LayerTable.html">LayerTable</a>, <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LayerTableRecord.html">LayerTableRecord</a>&gt;</dt>
+    <dd><p>图层符号表</p>
+</dd>
+    <dt><code>Oldname</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>旧图层名</p>
+</dd>
+    <dt><code>NewName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>新图层名</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

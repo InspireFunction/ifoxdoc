@@ -1,0 +1,1193 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Image
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Image
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="NFox.Geometry.Image">
+
+
+
+  <h1 id="NFox_Geometry_Image" data-uid="NFox.Geometry.Image" class="text-break">
+    Class Image
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="NFox.html">NFox</a>.<a class="xref" href="NFox.Geometry.html">Geometry</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>NFox.Expression.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Image</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Image</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="NFox_Geometry_Image__ctor_" data-uid="NFox.Geometry.Image.#ctor*"></a>
+
+  <h3 id="NFox_Geometry_Image__ctor" data-uid="NFox.Geometry.Image.#ctor">
+  Image()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="NFox_Geometry_Image_clayer_" data-uid="NFox.Geometry.Image.clayer*"></a>
+
+  <h3 id="NFox_Geometry_Image_clayer" data-uid="NFox.Geometry.Image.clayer">
+  clayer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string clayer { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="NFox_Geometry_Image_add_" data-uid="NFox.Geometry.Image.add*"></a>
+
+  <h3 id="NFox_Geometry_Image_add_NFox_Geometry_Entity2D_System_String_" data-uid="NFox.Geometry.Image.add(NFox.Geometry.Entity2D,System.String)">
+  add(Entity2D, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity2D add(Entity2D ent, string layer = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ent</code> <a class="xref" href="NFox.Geometry.Entity2D.html">Entity2D</a></dt>
+    <dd></dd>
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Entity2D.html">Entity2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Image_add_" data-uid="NFox.Geometry.Image.add*"></a>
+
+  <h3 id="NFox_Geometry_Image_add_System_Collections_Generic_IEnumerable_NFox_Geometry_Entity2D__" data-uid="NFox.Geometry.Image.add(System.Collections.Generic.IEnumerable{NFox.Geometry.Entity2D})">
+  add(IEnumerable&lt;Entity2D&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void add(IEnumerable&lt;Entity2D&gt; ents)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="NFox.Geometry.Entity2D.html">Entity2D</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Image_addarc_" data-uid="NFox.Geometry.Image.addarc*"></a>
+
+  <h3 id="NFox_Geometry_Image_addarc_NFox_Geometry_Point2D_NFox_Geometry_Point2D_NFox_Geometry_Point2D_System_String_" data-uid="NFox.Geometry.Image.addarc(NFox.Geometry.Point2D,NFox.Geometry.Point2D,NFox.Geometry.Point2D,System.String)">
+  addarc(Point2D, Point2D, Point2D, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity2D addarc(Point2D pt1, Point2D pt2, Point2D pt3, string layer = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt1</code> <a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a></dt>
+    <dd></dd>
+    <dt><code>pt2</code> <a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a></dt>
+    <dd></dd>
+    <dt><code>pt3</code> <a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a></dt>
+    <dd></dd>
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Entity2D.html">Entity2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Image_addarc_" data-uid="NFox.Geometry.Image.addarc*"></a>
+
+  <h3 id="NFox_Geometry_Image_addarc_NFox_Geometry_Point2D_NFox_Geometry_Point2D_System_Double_System_String_" data-uid="NFox.Geometry.Image.addarc(NFox.Geometry.Point2D,NFox.Geometry.Point2D,System.Double,System.String)">
+  addarc(Point2D, Point2D, double, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity2D addarc(Point2D start, Point2D end, double bulge, string layer = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>start</code> <a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a></dt>
+    <dd></dd>
+    <dt><code>end</code> <a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a></dt>
+    <dd></dd>
+    <dt><code>bulge</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Entity2D.html">Entity2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Image_addarc_" data-uid="NFox.Geometry.Image.addarc*"></a>
+
+  <h3 id="NFox_Geometry_Image_addarc_NFox_Geometry_Point2D_System_Double_NFox_Geometry_Angle_NFox_Geometry_Angle_System_String_" data-uid="NFox.Geometry.Image.addarc(NFox.Geometry.Point2D,System.Double,NFox.Geometry.Angle,NFox.Geometry.Angle,System.String)">
+  addarc(Point2D, double, Angle, Angle, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity2D addarc(Point2D center, double radius, Angle startAngle, Angle endAngle, string layer = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center</code> <a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>startAngle</code> <a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+    <dt><code>endAngle</code> <a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Entity2D.html">Entity2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Image_addcircle_" data-uid="NFox.Geometry.Image.addcircle*"></a>
+
+  <h3 id="NFox_Geometry_Image_addcircle_NFox_Geometry_Point2D_NFox_Geometry_Point2D_NFox_Geometry_Point2D_System_String_" data-uid="NFox.Geometry.Image.addcircle(NFox.Geometry.Point2D,NFox.Geometry.Point2D,NFox.Geometry.Point2D,System.String)">
+  addcircle(Point2D, Point2D, Point2D, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity2D addcircle(Point2D pt1, Point2D pt2, Point2D pt3, string layer = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt1</code> <a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a></dt>
+    <dd></dd>
+    <dt><code>pt2</code> <a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a></dt>
+    <dd></dd>
+    <dt><code>pt3</code> <a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a></dt>
+    <dd></dd>
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Entity2D.html">Entity2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Image_addcircle_" data-uid="NFox.Geometry.Image.addcircle*"></a>
+
+  <h3 id="NFox_Geometry_Image_addcircle_NFox_Geometry_Point2D_System_Double_System_String_" data-uid="NFox.Geometry.Image.addcircle(NFox.Geometry.Point2D,System.Double,System.String)">
+  addcircle(Point2D, double, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity2D addcircle(Point2D center, double radius, string layer = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center</code> <a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Entity2D.html">Entity2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Image_addellipse_" data-uid="NFox.Geometry.Image.addellipse*"></a>
+
+  <h3 id="NFox_Geometry_Image_addellipse_NFox_Geometry_Point2D_System_Double_System_Double_NFox_Geometry_Angle_NFox_Geometry_Angle_NFox_Geometry_Angle_System_String_" data-uid="NFox.Geometry.Image.addellipse(NFox.Geometry.Point2D,System.Double,System.Double,NFox.Geometry.Angle,NFox.Geometry.Angle,NFox.Geometry.Angle,System.String)">
+  addellipse(Point2D, double, double, Angle, Angle, Angle, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity2D addellipse(Point2D center, double major, double minor, Angle rotation, Angle startAngle, Angle endAngle, string layer = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center</code> <a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a></dt>
+    <dd></dd>
+    <dt><code>major</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>minor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+    <dt><code>startAngle</code> <a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+    <dt><code>endAngle</code> <a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Entity2D.html">Entity2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Image_addellipse_" data-uid="NFox.Geometry.Image.addellipse*"></a>
+
+  <h3 id="NFox_Geometry_Image_addellipse_NFox_Geometry_Point2D_System_Double_System_Double_NFox_Geometry_Angle_System_String_" data-uid="NFox.Geometry.Image.addellipse(NFox.Geometry.Point2D,System.Double,System.Double,NFox.Geometry.Angle,System.String)">
+  addellipse(Point2D, double, double, Angle, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity2D addellipse(Point2D center, double major, double minor, Angle rotation, string layer = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center</code> <a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a></dt>
+    <dd></dd>
+    <dt><code>major</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>minor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Entity2D.html">Entity2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Image_addline_" data-uid="NFox.Geometry.Image.addline*"></a>
+
+  <h3 id="NFox_Geometry_Image_addline_NFox_Geometry_Point2D_NFox_Geometry_Angle_System_Double_System_Double_System_String_" data-uid="NFox.Geometry.Image.addline(NFox.Geometry.Point2D,NFox.Geometry.Angle,System.Double,System.Double,System.String)">
+  addline(Point2D, Angle, double, double, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity2D addline(Point2D start, Angle angle, double minlength, double maxlength, string layer = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>start</code> <a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a></dt>
+    <dd></dd>
+    <dt><code>angle</code> <a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+    <dt><code>minlength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>maxlength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Entity2D.html">Entity2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Image_addline_" data-uid="NFox.Geometry.Image.addline*"></a>
+
+  <h3 id="NFox_Geometry_Image_addline_NFox_Geometry_Point2D_NFox_Geometry_Angle_System_Double_System_String_" data-uid="NFox.Geometry.Image.addline(NFox.Geometry.Point2D,NFox.Geometry.Angle,System.Double,System.String)">
+  addline(Point2D, Angle, double, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity2D addline(Point2D start, Angle angle, double length, string layer = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>start</code> <a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a></dt>
+    <dd></dd>
+    <dt><code>angle</code> <a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Entity2D.html">Entity2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Image_addline_" data-uid="NFox.Geometry.Image.addline*"></a>
+
+  <h3 id="NFox_Geometry_Image_addline_NFox_Geometry_Point2D_NFox_Geometry_Point2D_System_String_" data-uid="NFox.Geometry.Image.addline(NFox.Geometry.Point2D,NFox.Geometry.Point2D,System.String)">
+  addline(Point2D, Point2D, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity2D addline(Point2D start, Point2D end, string layer = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>start</code> <a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a></dt>
+    <dd></dd>
+    <dt><code>end</code> <a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a></dt>
+    <dd></dd>
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Entity2D.html">Entity2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Image_addpolyline_" data-uid="NFox.Geometry.Image.addpolyline*"></a>
+
+  <h3 id="NFox_Geometry_Image_addpolyline_System_Boolean_NFox_Geometry_BulgeVertex2D___System_String_" data-uid="NFox.Geometry.Image.addpolyline(System.Boolean,NFox.Geometry.BulgeVertex2D[],System.String)">
+  addpolyline(bool, BulgeVertex2D[], string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity2D addpolyline(bool closed, BulgeVertex2D[] vertexs, string layer = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>closed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>vertexs</code> <a class="xref" href="NFox.Geometry.BulgeVertex2D.html">BulgeVertex2D</a>[]</dt>
+    <dd></dd>
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Entity2D.html">Entity2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Image_addpolyline_" data-uid="NFox.Geometry.Image.addpolyline*"></a>
+
+  <h3 id="NFox_Geometry_Image_addpolyline_System_String_" data-uid="NFox.Geometry.Image.addpolyline(System.String)">
+  addpolyline(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity2D addpolyline(string layer = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Entity2D.html">Entity2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Image_addspline_" data-uid="NFox.Geometry.Image.addspline*"></a>
+
+  <h3 id="NFox_Geometry_Image_addspline_System_Boolean_System_Boolean_System_Collections_Generic_List_NFox_Geometry_Point2D__System_Double___System_String_" data-uid="NFox.Geometry.Image.addspline(System.Boolean,System.Boolean,System.Collections.Generic.List{NFox.Geometry.Point2D},System.Double[],System.String)">
+  addspline(bool, bool, List&lt;Point2D&gt;, double[], string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity2D addspline(bool closed, bool periodic, List&lt;Point2D&gt; controlPoints, double[] knots, string layer = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>closed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>periodic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>controlPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>knots</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Entity2D.html">Entity2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Image_addspline_" data-uid="NFox.Geometry.Image.addspline*"></a>
+
+  <h3 id="NFox_Geometry_Image_addspline_System_Boolean_System_Collections_Generic_IEnumerable_NFox_Geometry_Point2D__System_String_" data-uid="NFox.Geometry.Image.addspline(System.Boolean,System.Collections.Generic.IEnumerable{NFox.Geometry.Point2D},System.String)">
+  addspline(bool, IEnumerable&lt;Point2D&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity2D addspline(bool closed, IEnumerable&lt;Point2D&gt; fitPoints, string layer = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>closed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>fitPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Entity2D.html">Entity2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Image_addtext_" data-uid="NFox.Geometry.Image.addtext*"></a>
+
+  <h3 id="NFox_Geometry_Image_addtext_NFox_Geometry_Point2D_System_String_System_Double_System_String_" data-uid="NFox.Geometry.Image.addtext(NFox.Geometry.Point2D,System.String,System.Double,System.String)">
+  addtext(Point2D, string, double, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity2D addtext(Point2D position, string content, double height, string layer = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a></dt>
+    <dd></dd>
+    <dt><code>content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Entity2D.html">Entity2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Image_addvexto_" data-uid="NFox.Geometry.Image.addvexto*"></a>
+
+  <h3 id="NFox_Geometry_Image_addvexto_NFox_Geometry_PolyLine2D_NFox_Geometry_Point2D_" data-uid="NFox.Geometry.Image.addvexto(NFox.Geometry.PolyLine2D,NFox.Geometry.Point2D)">
+  addvexto(PolyLine2D, Point2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void addvexto(PolyLine2D pl, Point2D vertex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pl</code> <a class="xref" href="NFox.Geometry.PolyLine2D.html">PolyLine2D</a></dt>
+    <dd></dd>
+    <dt><code>vertex</code> <a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Image_addvexto_" data-uid="NFox.Geometry.Image.addvexto*"></a>
+
+  <h3 id="NFox_Geometry_Image_addvexto_NFox_Geometry_PolyLine2D_NFox_Geometry_Point2D_System_Double_" data-uid="NFox.Geometry.Image.addvexto(NFox.Geometry.PolyLine2D,NFox.Geometry.Point2D,System.Double)">
+  addvexto(PolyLine2D, Point2D, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void addvexto(PolyLine2D pl, Point2D vertex, double bulge)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pl</code> <a class="xref" href="NFox.Geometry.PolyLine2D.html">PolyLine2D</a></dt>
+    <dd></dd>
+    <dt><code>vertex</code> <a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a></dt>
+    <dd></dd>
+    <dt><code>bulge</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Image_addvexto_" data-uid="NFox.Geometry.Image.addvexto*"></a>
+
+  <h3 id="NFox_Geometry_Image_addvexto_NFox_Geometry_PolyLine2D_NFox_Geometry_Point2D_System_Double_System_Double_System_Double_" data-uid="NFox.Geometry.Image.addvexto(NFox.Geometry.PolyLine2D,NFox.Geometry.Point2D,System.Double,System.Double,System.Double)">
+  addvexto(PolyLine2D, Point2D, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void addvexto(PolyLine2D pl, Point2D vertex, double bulge, double startWidth, double endWidth)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pl</code> <a class="xref" href="NFox.Geometry.PolyLine2D.html">PolyLine2D</a></dt>
+    <dd></dd>
+    <dt><code>vertex</code> <a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a></dt>
+    <dd></dd>
+    <dt><code>bulge</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>startWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>endWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Image_setfitdata_" data-uid="NFox.Geometry.Image.setfitdata*"></a>
+
+  <h3 id="NFox_Geometry_Image_setfitdata_NFox_Geometry_Spline2D_System_Collections_Generic_IEnumerable_NFox_Geometry_Point2D__" data-uid="NFox.Geometry.Image.setfitdata(NFox.Geometry.Spline2D,System.Collections.Generic.IEnumerable{NFox.Geometry.Point2D})">
+  setfitdata(Spline2D, IEnumerable&lt;Point2D&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setfitdata(Spline2D spl, IEnumerable&lt;Point2D&gt; fitPoints)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>spl</code> <a class="xref" href="NFox.Geometry.Spline2D.html">Spline2D</a></dt>
+    <dd></dd>
+    <dt><code>fitPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Image_setfitdata_" data-uid="NFox.Geometry.Image.setfitdata*"></a>
+
+  <h3 id="NFox_Geometry_Image_setfitdata_NFox_Geometry_Spline2D_System_Collections_Generic_IEnumerable_NFox_Geometry_Point2D__NFox_Geometry_Vector2D_NFox_Geometry_Vector2D_" data-uid="NFox.Geometry.Image.setfitdata(NFox.Geometry.Spline2D,System.Collections.Generic.IEnumerable{NFox.Geometry.Point2D},NFox.Geometry.Vector2D,NFox.Geometry.Vector2D)">
+  setfitdata(Spline2D, IEnumerable&lt;Point2D&gt;, Vector2D, Vector2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setfitdata(Spline2D spl, IEnumerable&lt;Point2D&gt; fitPoints, Vector2D startTangent, Vector2D endTangent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>spl</code> <a class="xref" href="NFox.Geometry.Spline2D.html">Spline2D</a></dt>
+    <dd></dd>
+    <dt><code>fitPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="NFox.Geometry.Point2D.html">Point2D</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>startTangent</code> <a class="xref" href="NFox.Geometry.Vector2D.html">Vector2D</a></dt>
+    <dd></dd>
+    <dt><code>endTangent</code> <a class="xref" href="NFox.Geometry.Vector2D.html">Vector2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+需要pdf就把下列代码复制到docfx.json文件里和build同级
+   "pdf": {
+		"content": [
+			{
+        "files": [
+          "api/**.yml",
+          "api/index.md"
+        ]
+      },
+      {
+        "files": [
+          "articles/**.md",
+          "articles/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ]
+      },
+       {
+        "files": [ "pdf/toc.yml" ]
+      }
+		],
+		"wkhtmltopdf": {
+			"filePath": "C:/Program Files/wkhtmltopdf/bin/wkhtmltopdf.exe",
+			"additionalArguments": "--enable-local-file-access"
+		},
+		"output": "_site_pdf"
+	},

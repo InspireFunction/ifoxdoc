@@ -1,0 +1,2422 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class LinkedTableData
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LinkedTableData
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GrxCAD.DatabaseServices.LinkedTableData">
+
+
+
+  <h1 id="GrxCAD_DatabaseServices_LinkedTableData" data-uid="GrxCAD.DatabaseServices.LinkedTableData" class="text-break">
+    Class LinkedTableData
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GrxCAD.html">GrxCAD</a>.<a class="xref" href="GrxCAD.DatabaseServices.html">DatabaseServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>gmdb.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;OdDbLinkedTableData&quot;)]
+public class LinkedTableData : LinkedData, IDisposable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html">DisposableWrapper</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.RXObject.html">RXObject</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html">Drawable</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.DBObject.html">DBObject</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.LinkedData.html">LinkedData</a></div>
+      <div><span class="xref">LinkedTableData</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.FormattedTableData.html">FormattedTableData</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.LinkedData.html#GrxCAD_DatabaseServices_LinkedData_Clear">LinkedData.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.LinkedData.html#GrxCAD_DatabaseServices_LinkedData_Name">LinkedData.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.LinkedData.html#GrxCAD_DatabaseServices_LinkedData_IsEmpty">LinkedData.IsEmpty</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_ApplyPaperOrientationTransform_GrxCAD_DatabaseServices_Viewport_">DBObject.ApplyPaperOrientationTransform(Viewport)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_ApplyPartialUndo_GrxCAD_DatabaseServices_DwgFiler_GrxCAD_Runtime_RXClass_">DBObject.ApplyPartialUndo(DwgFiler, RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Clone">DBObject.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_CopyFrom_GrxCAD_Runtime_RXObject_">DBObject.CopyFrom(RXObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_AssertNotifyEnabled">DBObject.AssertNotifyEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_AssertReadEnabled">DBObject.AssertReadEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_AssertWriteEnabled_System_Boolean_System_Boolean_">DBObject.AssertWriteEnabled(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Audit_GrxCAD_DatabaseServices_AuditInfo_">DBObject.Audit(AuditInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Cancel">DBObject.Cancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Close">DBObject.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_CloseAndPage_System_Boolean_">DBObject.CloseAndPage(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_CreateExtensionDictionary">DBObject.CreateExtensionDictionary()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DecomposeForSave_GrxCAD_DatabaseServices_DwgVersion_">DBObject.DecomposeForSave(DwgVersion)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DeepClone_GrxCAD_DatabaseServices_DBObject_GrxCAD_DatabaseServices_IdMapping_System_Boolean_">DBObject.DeepClone(DBObject, IdMapping, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DeleteUnmanagedObject">DBObject.DeleteUnmanagedObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DisableUndoRecording_System_Boolean_">DBObject.DisableUndoRecording(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DowngradeOpen">DBObject.DowngradeOpen()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DowngradeToNotify_System_Boolean_">DBObject.DowngradeToNotify(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DwgIn_GrxCAD_DatabaseServices_DwgFiler_">DBObject.DwgIn(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DwgOut_GrxCAD_DatabaseServices_DwgFiler_">DBObject.DwgOut(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DxfIn_GrxCAD_DatabaseServices_DxfFiler_">DBObject.DxfIn(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DxfOut_GrxCAD_DatabaseServices_DxfFiler_">DBObject.DxfOut(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DwgInFields_GrxCAD_DatabaseServices_DwgFiler_">DBObject.DwgInFields(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DwgOutFields_GrxCAD_DatabaseServices_DwgFiler_">DBObject.DwgOutFields(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DxfInFields_GrxCAD_DatabaseServices_DxfFiler_">DBObject.DxfInFields(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DxfOutFields_GrxCAD_DatabaseServices_DxfFiler_">DBObject.DxfOutFields(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Erase_System_Boolean_">DBObject.Erase(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Erase">DBObject.Erase()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_FromAcadObject_System_Object_">DBObject.FromAcadObject(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_GetField_System_String_">DBObject.GetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_GetField">DBObject.GetField()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_GetObjectSaveVersion_GrxCAD_DatabaseServices_DxfFiler_">DBObject.GetObjectSaveVersion(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_GetObjectSaveVersion_GrxCAD_DatabaseServices_DwgFiler_">DBObject.GetObjectSaveVersion(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_GetPersistentReactorIds">DBObject.GetPersistentReactorIds()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_AddPersistentReactor_GrxCAD_DatabaseServices_ObjectId_">DBObject.AddPersistentReactor(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_RemovePersistentReactor_GrxCAD_DatabaseServices_ObjectId_">DBObject.RemovePersistentReactor(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_GetReactors">DBObject.GetReactors()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_GetTransientReactors">DBObject.GetTransientReactors()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_GetXDataForApplication_System_String_">DBObject.GetXDataForApplication(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_HandOverTo_GrxCAD_DatabaseServices_DBObject_System_Boolean_System_Boolean_">DBObject.HandOverTo(DBObject, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_HasPersistentReactor_GrxCAD_DatabaseServices_ObjectId_">DBObject.HasPersistentReactor(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsCustomObject_GrxCAD_DatabaseServices_ObjectId_">DBObject.IsCustomObject(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_ReleaseExtensionDictionary">DBObject.ReleaseExtensionDictionary()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_AddContext_GrxCAD_DatabaseServices_ObjectContext_">DBObject.AddContext(ObjectContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_RemoveContext_GrxCAD_DatabaseServices_ObjectContext_">DBObject.RemoveContext(ObjectContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_HasContext_GrxCAD_DatabaseServices_ObjectContext_">DBObject.HasContext(ObjectContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_RemoveField_System_String_">DBObject.RemoveField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_RemoveField_GrxCAD_DatabaseServices_ObjectId_">DBObject.RemoveField(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_RemoveField">DBObject.RemoveField()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_ResetScaleDependentProperties">DBObject.ResetScaleDependentProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SetField_System_String_GrxCAD_DatabaseServices_Field_">DBObject.SetField(string, Field)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SetField_GrxCAD_DatabaseServices_Field_">DBObject.SetField(Field)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SetFromStyle">DBObject.SetFromStyle()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SetObjectIdsInFlux">DBObject.SetObjectIdsInFlux()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SetPaperOrientation_System_Boolean_">DBObject.SetPaperOrientation(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SupportsCollection_System_String_">DBObject.SupportsCollection(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SwapIdWith_GrxCAD_DatabaseServices_ObjectId_System_Boolean_System_Boolean_">DBObject.SwapIdWith(ObjectId, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SwapReferences_GrxCAD_DatabaseServices_IdMapping_">DBObject.SwapReferences(IdMapping)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_UpgradeFromNotify">DBObject.UpgradeFromNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_UpgradeOpen">DBObject.UpgradeOpen()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_WblockClone_GrxCAD_Runtime_RXObject_GrxCAD_DatabaseServices_IdMapping_System_Boolean_">DBObject.WblockClone(RXObject, IdMapping, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SubSetAttributes_GrxCAD_GraphicsInterface_DrawableTraits_">DBObject.SubSetAttributes(DrawableTraits)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SubViewportDraw_GrxCAD_GraphicsInterface_ViewportDraw_">DBObject.SubViewportDraw(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SubViewportDrawLogicalFlags_GrxCAD_GraphicsInterface_ViewportDraw_">DBObject.SubViewportDrawLogicalFlags(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SubWorldDraw_GrxCAD_GraphicsInterface_WorldDraw_">DBObject.SubWorldDraw(WorldDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_XDataTransformBy_GrxCAD_Geometry_Matrix3d_">DBObject.XDataTransformBy(Matrix3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_GetEventExtender_System_Boolean_">DBObject.GetEventExtender(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Dispose_System_Boolean_">DBObject.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_XData">DBObject.XData</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_UndoFiler">DBObject.UndoFiler</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_PaperOrientation">DBObject.PaperOrientation</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_ObjectBirthVersion">DBObject.ObjectBirthVersion</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_MergeStyle">DBObject.MergeStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsWriteEnabled">DBObject.IsWriteEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsUndoing">DBObject.IsUndoing</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsTransactionResident">DBObject.IsTransactionResident</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsReallyClosing">DBObject.IsReallyClosing</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsReadEnabled">DBObject.IsReadEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsPersistent">DBObject.IsPersistent</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsObjectIdsInFlux">DBObject.IsObjectIdsInFlux</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsNotifying">DBObject.IsNotifying</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsNotifyEnabled">DBObject.IsNotifyEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsNewObject">DBObject.IsNewObject</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsModifiedXData">DBObject.IsModifiedXData</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsModifiedGraphics">DBObject.IsModifiedGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsModified">DBObject.IsModified</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsEraseStatusToggled">DBObject.IsEraseStatusToggled</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsErased">DBObject.IsErased</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsCancelling">DBObject.IsCancelling</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsAProxy">DBObject.IsAProxy</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_OwnerId">DBObject.OwnerId</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_ObjectId">DBObject.ObjectId</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Id">DBObject.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_HasSaveVersionOverride">DBObject.HasSaveVersionOverride</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_HasFields">DBObject.HasFields</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Handle">DBObject.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_ExtensionDictionary">DBObject.ExtensionDictionary</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Drawable">DBObject.Drawable</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Database">DBObject.Database</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_ClassID">DBObject.ClassID</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Annotative">DBObject.Annotative</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_AcadObject">DBObject.AcadObject</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Unappended">DBObject.Unappended</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SubObjectModified">DBObject.SubObjectModified</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Reappended">DBObject.Reappended</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_OpenedForModify">DBObject.OpenedForModify</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_ObjectClosed">DBObject.ObjectClosed</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_ModifyUndone">DBObject.ModifyUndone</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_ModifiedXData">DBObject.ModifiedXData</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Modified">DBObject.Modified</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Goodbye">DBObject.Goodbye</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Erased">DBObject.Erased</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Copied">DBObject.Copied</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Cancelled">DBObject.Cancelled</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html#GrxCAD_GraphicsInterface_Drawable_SetAttributes_GrxCAD_GraphicsInterface_DrawableTraits_">Drawable.SetAttributes(DrawableTraits)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html#GrxCAD_GraphicsInterface_Drawable_ViewportDraw_GrxCAD_GraphicsInterface_ViewportDraw_">Drawable.ViewportDraw(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html#GrxCAD_GraphicsInterface_Drawable_ViewportDrawLogicalFlags_GrxCAD_GraphicsInterface_ViewportDraw_">Drawable.ViewportDrawLogicalFlags(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html#GrxCAD_GraphicsInterface_Drawable_WorldDraw_GrxCAD_GraphicsInterface_WorldDraw_">Drawable.WorldDraw(WorldDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html#GrxCAD_GraphicsInterface_Drawable_drawableType">Drawable.drawableType</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html#GrxCAD_GraphicsInterface_Drawable_Bounds">Drawable.Bounds</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_GetRXClass">RXObject.GetRXClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_CompareTo_System_Object_">RXObject.CompareTo(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_GetClass_System_Type_">RXObject.GetClass(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_QueryX_GrxCAD_Runtime_RXClass_">RXObject.QueryX(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_X_GrxCAD_Runtime_RXClass_">RXObject.X(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_m_bAutoDelete">DisposableWrapper.m_bAutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_m_imp">DisposableWrapper.m_imp</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Detach">DisposableWrapper.Detach()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Create_System_Type_System_IntPtr_System_Boolean_">DisposableWrapper.Create(Type, IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Equals_System_Object_">DisposableWrapper.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_GetHashCode">DisposableWrapper.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Dispose">DisposableWrapper.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_UnmanagedObject">DisposableWrapper.UnmanagedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_IsDisposed">DisposableWrapper.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_AutoDelete">DisposableWrapper.AutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone">MarshalByRefObject.MemberwiseClone(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref">MarshalByRefObject.CreateObjRef(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData__ctor_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.#ctor*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData__ctor" data-uid="GrxCAD.DatabaseServices.LinkedTableData.#ctor">
+  LinkedTableData()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinkedTableData()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData__ctor_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.#ctor*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData__ctor_System_IntPtr_System_Boolean_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.#ctor(System.IntPtr,System.Boolean)">
+  LinkedTableData(IntPtr, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected LinkedTableData(IntPtr unmanagedObjPtr, bool autoDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unmanagedObjPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_NumberOfColumns_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.NumberOfColumns*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_NumberOfColumns" data-uid="GrxCAD.DatabaseServices.LinkedTableData.NumberOfColumns">
+  NumberOfColumns
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int NumberOfColumns { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_NumberOfRows_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.NumberOfRows*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_NumberOfRows" data-uid="GrxCAD.DatabaseServices.LinkedTableData.NumberOfRows">
+  NumberOfRows
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int NumberOfRows { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_AppendColumn_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.AppendColumn*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_AppendColumn_System_Int32_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.AppendColumn(System.Int32)">
+  AppendColumn(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int AppendColumn(int columnsNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>columnsNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_AppendRow_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.AppendRow*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_AppendRow_System_Int32_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.AppendRow(System.Int32)">
+  AppendRow(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int AppendRow(int rowsNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rowsNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_Create_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.Create*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_Create_System_IntPtr_System_Boolean_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.Create(System.IntPtr,System.Boolean)">
+  Create(IntPtr, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static LinkedTableData Create(IntPtr unmanagedPointer, bool autoDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unmanagedPointer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.LinkedTableData.html">LinkedTableData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_DataType_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.DataType*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_DataType_System_Int32_System_Int32_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.DataType(System.Int32,System.Int32)">
+  DataType(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DataType DataType(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.DataType.html">DataType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_DeleteColumn_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.DeleteColumn*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_DeleteColumn_System_Int32_System_Int32_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.DeleteColumn(System.Int32,System.Int32)">
+  DeleteColumn(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void DeleteColumn(int index, int columnsNumberToDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>columnsNumberToDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_DeleteContent_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.DeleteContent*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_DeleteContent_System_Int32_System_Int32_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.DeleteContent(System.Int32,System.Int32)">
+  DeleteContent(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void DeleteContent(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_DeleteRow_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.DeleteRow*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_DeleteRow_System_Int32_System_Int32_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.DeleteRow(System.Int32,System.Int32)">
+  DeleteRow(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void DeleteRow(int index, int rowsNumberToDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>rowsNumberToDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_GetBlockAttributeValue_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetBlockAttributeValue*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_GetBlockAttributeValue_System_Int32_System_Int32_GrxCAD_DatabaseServices_ObjectId_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetBlockAttributeValue(System.Int32,System.Int32,GrxCAD.DatabaseServices.ObjectId)">
+  GetBlockAttributeValue(int, int, ObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetBlockAttributeValue(int row, int column, ObjectId attributeDefinitionId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>attributeDefinitionId</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_GetBlockTableRecordId_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetBlockTableRecordId*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_GetBlockTableRecordId_System_Int32_System_Int32_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetBlockTableRecordId(System.Int32,System.Int32)">
+  GetBlockTableRecordId(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ObjectId GetBlockTableRecordId(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_GetCellState_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetCellState*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_GetCellState_System_Int32_System_Int32_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetCellState(System.Int32,System.Int32)">
+  GetCellState(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual CellStates GetCellState(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.CellStates.html">CellStates</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_GetColumnName_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetColumnName*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_GetColumnName_System_Int32_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetColumnName(System.Int32)">
+  GetColumnName(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetColumnName(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_GetContentTypes_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetContentTypes*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_GetContentTypes_System_Int32_System_Int32_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetContentTypes(System.Int32,System.Int32)">
+  GetContentTypes(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual CellContentTypes GetContentTypes(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.CellContentTypes.html">CellContentTypes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_GetCustomData_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetCustomData*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_GetCustomData_System_Int32_System_Int32_System_String_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetCustomData(System.Int32,System.Int32,System.String)">
+  GetCustomData(int, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object GetCustomData(int row, int column, string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_GetDataFormat_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetDataFormat*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_GetDataFormat_System_Int32_System_Int32_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetDataFormat(System.Int32,System.Int32)">
+  GetDataFormat(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetDataFormat(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_GetDataLink_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetDataLink*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_GetDataLink" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetDataLink">
+  GetDataLink()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ObjectIdCollection GetDataLink()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectIdCollection.html">ObjectIdCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_GetDataLink_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetDataLink*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_GetDataLink_GrxCAD_DatabaseServices_CellRange_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetDataLink(GrxCAD.DatabaseServices.CellRange)">
+  GetDataLink(CellRange)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ObjectIdCollection GetDataLink(CellRange range)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>range</code> <a class="xref" href="GrxCAD.DatabaseServices.CellRange.html">CellRange</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectIdCollection.html">ObjectIdCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_GetDataLink_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetDataLink*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_GetDataLink_System_Int32_System_Int32_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetDataLink(System.Int32,System.Int32)">
+  GetDataLink(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ObjectId GetDataLink(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_GetEnumerator_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetEnumerator*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_GetEnumerator" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetEnumerator">
+  GetEnumerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TableEnumerator GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.TableEnumerator.html">TableEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_GetEnumerator_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetEnumerator*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_GetEnumerator_GrxCAD_DatabaseServices_TableEnumeratorOption_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetEnumerator(GrxCAD.DatabaseServices.TableEnumeratorOption)">
+  GetEnumerator(TableEnumeratorOption)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TableEnumerator GetEnumerator(TableEnumeratorOption option)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>option</code> <a class="xref" href="GrxCAD.DatabaseServices.TableEnumeratorOption.html">TableEnumeratorOption</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.TableEnumerator.html">TableEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_GetFieldId_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetFieldId*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_GetFieldId_System_Int32_System_Int32_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetFieldId(System.Int32,System.Int32)">
+  GetFieldId(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ObjectId GetFieldId(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_GetToolTip_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetToolTip*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_GetToolTip_System_Int32_System_Int32_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetToolTip(System.Int32,System.Int32)">
+  GetToolTip(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetToolTip(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_GetValue_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetValue*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_GetValue_System_Int32_System_Int32_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetValue(System.Int32,System.Int32)">
+  GetValue(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object GetValue(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_GetValue_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetValue*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_GetValue_System_Int32_System_Int32_System_Int32_GrxCAD_DatabaseServices_FormatOption_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.GetValue(System.Int32,System.Int32,System.Int32,GrxCAD.DatabaseServices.FormatOption)">
+  GetValue(int, int, int, FormatOption)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object GetValue(int row, int column, int content, FormatOption formatOption)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>formatOption</code> <a class="xref" href="GrxCAD.DatabaseServices.FormatOption.html">FormatOption</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_InsertColumn_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.InsertColumn*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_InsertColumn_System_Int32_System_Int32_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.InsertColumn(System.Int32,System.Int32)">
+  InsertColumn(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int InsertColumn(int index, int columnsNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>columnsNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_InsertRow_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.InsertRow*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_InsertRow_System_Int32_System_Int32_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.InsertRow(System.Int32,System.Int32)">
+  InsertRow(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int InsertRow(int index, int rowsNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>rowsNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_IsContentEditable_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.IsContentEditable*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_IsContentEditable_System_Int32_System_Int32_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.IsContentEditable(System.Int32,System.Int32)">
+  IsContentEditable(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsContentEditable(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_IsLinked_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.IsLinked*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_IsLinked_System_Int32_System_Int32_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.IsLinked(System.Int32,System.Int32)">
+  IsLinked(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsLinked(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_SetBlockAttributeValue_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetBlockAttributeValue*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_SetBlockAttributeValue_System_Int32_System_Int32_GrxCAD_DatabaseServices_ObjectId_System_String_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetBlockAttributeValue(System.Int32,System.Int32,GrxCAD.DatabaseServices.ObjectId,System.String)">
+  SetBlockAttributeValue(int, int, ObjectId, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetBlockAttributeValue(int row, int column, ObjectId attributeDefinitionId, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>attributeDefinitionId</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_SetBlockTableRecordId_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetBlockTableRecordId*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_SetBlockTableRecordId_System_Int32_System_Int32_GrxCAD_DatabaseServices_ObjectId_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetBlockTableRecordId(System.Int32,System.Int32,GrxCAD.DatabaseServices.ObjectId)">
+  SetBlockTableRecordId(int, int, ObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetBlockTableRecordId(int row, int column, ObjectId value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_SetCellState_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetCellState*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_SetCellState_System_Int32_System_Int32_GrxCAD_DatabaseServices_CellStates_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetCellState(System.Int32,System.Int32,GrxCAD.DatabaseServices.CellStates)">
+  SetCellState(int, int, CellStates)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetCellState(int row, int column, CellStates value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="GrxCAD.DatabaseServices.CellStates.html">CellStates</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_SetColumnName_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetColumnName*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_SetColumnName_System_Int32_System_String_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetColumnName(System.Int32,System.String)">
+  SetColumnName(int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetColumnName(int index, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_SetCustomData_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetCustomData*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_SetCustomData_System_Int32_System_Int32_System_String_System_Object_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetCustomData(System.Int32,System.Int32,System.String,System.Object)">
+  SetCustomData(int, int, string, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetCustomData(int row, int column, string key, object value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_SetDataFormat_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetDataFormat*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_SetDataFormat_System_Int32_System_Int32_System_String_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetDataFormat(System.Int32,System.Int32,System.String)">
+  SetDataFormat(int, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetDataFormat(int row, int column, string format)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_SetDataLink_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetDataLink*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_SetDataLink_GrxCAD_DatabaseServices_CellRange_GrxCAD_DatabaseServices_ObjectId_System_Boolean_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetDataLink(GrxCAD.DatabaseServices.CellRange,GrxCAD.DatabaseServices.ObjectId,System.Boolean)">
+  SetDataLink(CellRange, ObjectId, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetDataLink(CellRange range, ObjectId dataLinkId, bool bUpdate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>range</code> <a class="xref" href="GrxCAD.DatabaseServices.CellRange.html">CellRange</a></dt>
+    <dd></dd>
+    <dt><code>dataLinkId</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+    <dt><code>bUpdate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_SetDataLink_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetDataLink*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_SetDataLink_System_Int32_System_Int32_GrxCAD_DatabaseServices_ObjectId_System_Boolean_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetDataLink(System.Int32,System.Int32,GrxCAD.DatabaseServices.ObjectId,System.Boolean)">
+  SetDataLink(int, int, ObjectId, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetDataLink(int row, int column, ObjectId dataLinkId, bool bUpdate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>dataLinkId</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+    <dt><code>bUpdate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_SetDataType_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetDataType*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_SetDataType_System_Int32_System_Int32_GrxCAD_DatabaseServices_DataType_GrxCAD_DatabaseServices_UnitType_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetDataType(System.Int32,System.Int32,GrxCAD.DatabaseServices.DataType,GrxCAD.DatabaseServices.UnitType)">
+  SetDataType(int, int, DataType, UnitType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetDataType(int row, int column, DataType dataType, UnitType unitType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>dataType</code> <a class="xref" href="GrxCAD.DatabaseServices.DataType.html">DataType</a></dt>
+    <dd></dd>
+    <dt><code>unitType</code> <a class="xref" href="GrxCAD.DatabaseServices.UnitType.html">UnitType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_SetFieldId_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetFieldId*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_SetFieldId_System_Int32_System_Int32_GrxCAD_DatabaseServices_ObjectId_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetFieldId(System.Int32,System.Int32,GrxCAD.DatabaseServices.ObjectId)">
+  SetFieldId(int, int, ObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetFieldId(int row, int column, ObjectId value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_SetSize_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetSize*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_SetSize_System_Int32_System_Int32_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetSize(System.Int32,System.Int32)">
+  SetSize(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetSize(int numRows, int numCols)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>numRows</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>numCols</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_SetToolTip_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetToolTip*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_SetToolTip_System_Int32_System_Int32_System_String_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetToolTip(System.Int32,System.Int32,System.String)">
+  SetToolTip(int, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetToolTip(int row, int column, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_SetValue_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetValue*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_SetValue_System_Int32_System_Int32_System_Int32_System_Object_GrxCAD_DatabaseServices_ParseOption_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetValue(System.Int32,System.Int32,System.Int32,System.Object,GrxCAD.DatabaseServices.ParseOption)">
+  SetValue(int, int, int, object, ParseOption)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetValue(int row, int column, int content, object value, ParseOption parseOption)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>parseOption</code> <a class="xref" href="GrxCAD.DatabaseServices.ParseOption.html">ParseOption</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_SetValue_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetValue*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_SetValue_System_Int32_System_Int32_System_Object_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.SetValue(System.Int32,System.Int32,System.Object)">
+  SetValue(int, int, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetValue(int row, int column, object value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_UnitType_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.UnitType*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_UnitType_System_Int32_System_Int32_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.UnitType(System.Int32,System.Int32)">
+  UnitType(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual UnitType UnitType(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.UnitType.html">UnitType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_UpdateDataLink_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.UpdateDataLink*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_UpdateDataLink_GrxCAD_DatabaseServices_UpdateDirection_GrxCAD_DatabaseServices_UpdateOption_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.UpdateDataLink(GrxCAD.DatabaseServices.UpdateDirection,GrxCAD.DatabaseServices.UpdateOption)">
+  UpdateDataLink(UpdateDirection, UpdateOption)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void UpdateDataLink(UpdateDirection dir, UpdateOption option)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dir</code> <a class="xref" href="GrxCAD.DatabaseServices.UpdateDirection.html">UpdateDirection</a></dt>
+    <dd></dd>
+    <dt><code>option</code> <a class="xref" href="GrxCAD.DatabaseServices.UpdateOption.html">UpdateOption</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_LinkedTableData_UpdateDataLink_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.UpdateDataLink*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_LinkedTableData_UpdateDataLink_System_Int32_System_Int32_GrxCAD_DatabaseServices_UpdateDirection_GrxCAD_DatabaseServices_UpdateOption_" data-uid="GrxCAD.DatabaseServices.LinkedTableData.UpdateDataLink(System.Int32,System.Int32,GrxCAD.DatabaseServices.UpdateDirection,GrxCAD.DatabaseServices.UpdateOption)">
+  UpdateDataLink(int, int, UpdateDirection, UpdateOption)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void UpdateDataLink(int row, int column, UpdateDirection dir, UpdateOption option)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>dir</code> <a class="xref" href="GrxCAD.DatabaseServices.UpdateDirection.html">UpdateDirection</a></dt>
+    <dd></dd>
+    <dt><code>option</code> <a class="xref" href="GrxCAD.DatabaseServices.UpdateOption.html">UpdateOption</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

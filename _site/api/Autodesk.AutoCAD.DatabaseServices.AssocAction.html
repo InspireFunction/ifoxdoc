@@ -1,0 +1,2025 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AssocAction
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AssocAction
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction">
+
+
+
+  <h1 id="Autodesk_AutoCAD_DatabaseServices_AssocAction" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction" class="text-break">
+    Class AssocAction
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Autodesk.html">Autodesk</a>.<a class="xref" href="Autodesk.AutoCAD.html">AutoCAD</a>.<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.html">DatabaseServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Acdbmgd.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;AcDbAssocAction&quot;)]
+public class AssocAction : DBObject, IDisposable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html">DisposableWrapper</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html">RXObject</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html">Drawable</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html">DBObject</a></div>
+      <div><span class="xref">AssocAction</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Assoc2dConstraintGroup.html">Assoc2dConstraintGroup</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocNetwork.html">AssocNetwork</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocVariable.html">AssocVariable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubSetAttributes_Autodesk_AutoCAD_GraphicsInterface_DrawableTraits_">DBObject.SubSetAttributes(DrawableTraits)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubWorldDraw_Autodesk_AutoCAD_GraphicsInterface_WorldDraw_">DBObject.SubWorldDraw(WorldDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubViewportDraw_Autodesk_AutoCAD_GraphicsInterface_ViewportDraw_">DBObject.SubViewportDraw(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubViewportDrawLogicalFlags_Autodesk_AutoCAD_GraphicsInterface_ViewportDraw_">DBObject.SubViewportDrawLogicalFlags(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DeleteUnmanagedObject">DBObject.DeleteUnmanagedObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DeepClone_Autodesk_AutoCAD_DatabaseServices_DBObject_Autodesk_AutoCAD_DatabaseServices_IdMapping_System_Boolean_">DBObject.DeepClone(DBObject, IdMapping, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_WblockClone_Autodesk_AutoCAD_Runtime_RXObject_Autodesk_AutoCAD_DatabaseServices_IdMapping_System_Boolean_">DBObject.WblockClone(RXObject, IdMapping, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DecomposeForSave_Autodesk_AutoCAD_DatabaseServices_DwgVersion_">DBObject.DecomposeForSave(DwgVersion)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_CreateExtensionDictionary">DBObject.CreateExtensionDictionary()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ReleaseExtensionDictionary">DBObject.ReleaseExtensionDictionary()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_UpgradeOpen">DBObject.UpgradeOpen()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_UpgradeFromNotify">DBObject.UpgradeFromNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DowngradeOpen">DBObject.DowngradeOpen()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DowngradeToNotify_System_Boolean_">DBObject.DowngradeToNotify(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Cancel">DBObject.Cancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Close">DBObject.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_CloseAndPage_System_Boolean_">DBObject.CloseAndPage(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Erase">DBObject.Erase()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Erase_System_Boolean_">DBObject.Erase(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HandOverTo_Autodesk_AutoCAD_DatabaseServices_DBObject_System_Boolean_System_Boolean_">DBObject.HandOverTo(DBObject, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SwapIdWith_Autodesk_AutoCAD_DatabaseServices_ObjectId_System_Boolean_System_Boolean_">DBObject.SwapIdWith(ObjectId, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SwapReferences_Autodesk_AutoCAD_DatabaseServices_IdMapping_">DBObject.SwapReferences(IdMapping)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Audit_Autodesk_AutoCAD_DatabaseServices_AuditInfo_">DBObject.Audit(AuditInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DwgIn_Autodesk_AutoCAD_DatabaseServices_DwgFiler_">DBObject.DwgIn(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DwgOut_Autodesk_AutoCAD_DatabaseServices_DwgFiler_">DBObject.DwgOut(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DxfIn_Autodesk_AutoCAD_DatabaseServices_DxfFiler_">DBObject.DxfIn(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DxfOut_Autodesk_AutoCAD_DatabaseServices_DxfFiler_">DBObject.DxfOut(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_XDataTransformBy_Autodesk_AutoCAD_Geometry_Matrix3d_">DBObject.XDataTransformBy(Matrix3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetXDataForApplication_System_String_">DBObject.GetXDataForApplication(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DisableUndoRecording_System_Boolean_">DBObject.DisableUndoRecording(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ApplyPartialUndo_Autodesk_AutoCAD_DatabaseServices_DwgFiler_Autodesk_AutoCAD_Runtime_RXClass_">DBObject.ApplyPartialUndo(DwgFiler, RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HasPersistentReactor_Autodesk_AutoCAD_DatabaseServices_ObjectId_">DBObject.HasPersistentReactor(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetReactors">DBObject.GetReactors()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetTransientReactors">DBObject.GetTransientReactors()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetPersistentReactorIds">DBObject.GetPersistentReactorIds()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetObjectIdsInFlux">DBObject.SetObjectIdsInFlux()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetObjectSaveVersion_Autodesk_AutoCAD_DatabaseServices_DxfFiler_">DBObject.GetObjectSaveVersion(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetObjectSaveVersion_Autodesk_AutoCAD_DatabaseServices_DwgFiler_">DBObject.GetObjectSaveVersion(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_FromAcadObject_System_Object_">DBObject.FromAcadObject(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsCustomObject_Autodesk_AutoCAD_DatabaseServices_ObjectId_">DBObject.IsCustomObject(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetField_System_String_">DBObject.GetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetField">DBObject.GetField()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetField_System_String_Autodesk_AutoCAD_DatabaseServices_Field_">DBObject.SetField(string, Field)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetField_Autodesk_AutoCAD_DatabaseServices_Field_">DBObject.SetField(Field)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_RemoveField_Autodesk_AutoCAD_DatabaseServices_ObjectId_">DBObject.RemoveField(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_RemoveField_System_String_">DBObject.RemoveField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_RemoveField">DBObject.RemoveField()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetFromStyle">DBObject.SetFromStyle()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ResetScaleDependentProperties">DBObject.ResetScaleDependentProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetPaperOrientation_System_Boolean_">DBObject.SetPaperOrientation(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ApplyPaperOrientationTransform_Autodesk_AutoCAD_DatabaseServices_Viewport_">DBObject.ApplyPaperOrientationTransform(Viewport)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SupportsCollection_System_String_">DBObject.SupportsCollection(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HasContext_Autodesk_AutoCAD_DatabaseServices_ObjectContext_">DBObject.HasContext(ObjectContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_AddContext_Autodesk_AutoCAD_DatabaseServices_ObjectContext_">DBObject.AddContext(ObjectContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_RemoveContext_Autodesk_AutoCAD_DatabaseServices_ObjectContext_">DBObject.RemoveContext(ObjectContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetEventExtender_System_Boolean_">DBObject.GetEventExtender(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetParameterInterface_System_String_System_Boolean_">DBObject.GetParameterInterface(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Dispose_System_Boolean_">DBObject.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_PaperOrientation">DBObject.PaperOrientation</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Annotative">DBObject.Annotative</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HasFields">DBObject.HasFields</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_AcadObject">DBObject.AcadObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ClassID">DBObject.ClassID</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ObjectBirthVersion">DBObject.ObjectBirthVersion</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HasSaveVersionOverride">DBObject.HasSaveVersionOverride</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsObjectIdsInFlux">DBObject.IsObjectIdsInFlux</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_UndoFiler">DBObject.UndoFiler</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsAProxy">DBObject.IsAProxy</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsTransactionResident">DBObject.IsTransactionResident</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsReallyClosing">DBObject.IsReallyClosing</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsCancelling">DBObject.IsCancelling</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsUndoing">DBObject.IsUndoing</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsNotifying">DBObject.IsNotifying</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsNewObject">DBObject.IsNewObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsModifiedGraphics">DBObject.IsModifiedGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsModifiedXData">DBObject.IsModifiedXData</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsModified">DBObject.IsModified</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsNotifyEnabled">DBObject.IsNotifyEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsWriteEnabled">DBObject.IsWriteEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsReadEnabled">DBObject.IsReadEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsErased">DBObject.IsErased</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsEraseStatusToggled">DBObject.IsEraseStatusToggled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_XData">DBObject.XData</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_MergeStyle">DBObject.MergeStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ExtensionDictionary">DBObject.ExtensionDictionary</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Drawable">DBObject.Drawable</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Database">DBObject.Database</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Handle">DBObject.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_OwnerId">DBObject.OwnerId</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ObjectId">DBObject.ObjectId</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Id">DBObject.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsPersistent">DBObject.IsPersistent</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ObjectClosed">DBObject.ObjectClosed</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Reappended">DBObject.Reappended</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Unappended">DBObject.Unappended</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ModifiedXData">DBObject.ModifiedXData</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ModifyUndone">DBObject.ModifyUndone</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubObjectModified">DBObject.SubObjectModified</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Modified">DBObject.Modified</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_OpenedForModify">DBObject.OpenedForModify</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Goodbye">DBObject.Goodbye</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Erased">DBObject.Erased</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Copied">DBObject.Copied</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Cancelled">DBObject.Cancelled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_SetAttributes_Autodesk_AutoCAD_GraphicsInterface_DrawableTraits_">Drawable.SetAttributes(DrawableTraits)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_WorldDraw_Autodesk_AutoCAD_GraphicsInterface_WorldDraw_">Drawable.WorldDraw(WorldDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_ViewportDraw_Autodesk_AutoCAD_GraphicsInterface_ViewportDraw_">Drawable.ViewportDraw(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_ViewportDrawLogicalFlags_Autodesk_AutoCAD_GraphicsInterface_ViewportDraw_">Drawable.ViewportDrawLogicalFlags(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_DrawStream">Drawable.DrawStream</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_Bounds">Drawable.Bounds</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_DrawableType">Drawable.DrawableType</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_Create_System_IntPtr_System_Boolean_">RXObject.Create(IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_GetClass_System_Type_">RXObject.GetClass(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_X_Autodesk_AutoCAD_Runtime_RXClass_">RXObject.X(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_QueryX_Autodesk_AutoCAD_Runtime_RXClass_">RXObject.QueryX(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_GetRXClass">RXObject.GetRXClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_CompareTo_System_Object_">RXObject.CompareTo(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_Clone">RXObject.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_CopyFrom_Autodesk_AutoCAD_Runtime_RXObject_">RXObject.CopyFrom(RXObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Create_System_Type_System_IntPtr_System_Boolean_">DisposableWrapper.Create(Type, IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Equals_System_Object_">DisposableWrapper.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_GetHashCode">DisposableWrapper.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Dispose">DisposableWrapper.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_AutoDelete">DisposableWrapper.AutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_IsDisposed">DisposableWrapper.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_UnmanagedObject">DisposableWrapper.UnmanagedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone">MarshalByRefObject.MemberwiseClone(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref">MarshalByRefObject.CreateObjRef(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction__ctor_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.#ctor*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction__ctor" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.#ctor">
+  AssocAction()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssocAction()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction__ctor_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.#ctor*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction__ctor_System_IntPtr_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.#ctor(System.IntPtr,System.Boolean)">
+  AssocAction(IntPtr, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AssocAction(IntPtr unmanagedObjPtr, bool autoDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unmanagedObjPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_ActionBody_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.ActionBody*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_ActionBody" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.ActionBody">
+  ActionBody
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId ActionBody { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_CurrentEvaluationCallback_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.CurrentEvaluationCallback*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_CurrentEvaluationCallback" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.CurrentEvaluationCallback">
+  CurrentEvaluationCallback
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssocEvaluationCallback CurrentEvaluationCallback { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocEvaluationCallback.html">AssocEvaluationCallback</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_IsActionBodyAProxy_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.IsActionBodyAProxy*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_IsActionBodyAProxy" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.IsActionBodyAProxy">
+  IsActionBodyAProxy
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsActionBodyAProxy { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_IsActionEvaluationInProgress_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.IsActionEvaluationInProgress*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_IsActionEvaluationInProgress" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.IsActionEvaluationInProgress">
+  IsActionEvaluationInProgress
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsActionEvaluationInProgress { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_OwningNetwork_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.OwningNetwork*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_OwningNetwork" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.OwningNetwork">
+  OwningNetwork
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId OwningNetwork { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_Status_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.Status*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_Status" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.Status">
+  Status
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssocStatus Status { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocStatus.html">AssocStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_AddDependency_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.AddDependency*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_AddDependency_Autodesk_AutoCAD_DatabaseServices_ObjectId_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.AddDependency(Autodesk.AutoCAD.DatabaseServices.ObjectId,System.Boolean)">
+  AddDependency(ObjectId, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddDependency(ObjectId dependencyId, bool setThisActionAsOwningAction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dependencyId</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+    <dt><code>setThisActionAsOwningAction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_AddMoreObjectsToDeepClone_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.AddMoreObjectsToDeepClone*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_AddMoreObjectsToDeepClone_Autodesk_AutoCAD_DatabaseServices_IdMapping_Autodesk_AutoCAD_DatabaseServices_ObjectIdCollection_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.AddMoreObjectsToDeepClone(Autodesk.AutoCAD.DatabaseServices.IdMapping,Autodesk.AutoCAD.DatabaseServices.ObjectIdCollection)">
+  AddMoreObjectsToDeepClone(IdMapping, ObjectIdCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMoreObjectsToDeepClone(IdMapping idMap, ObjectIdCollection additionalObjectsToClone)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idMap</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.IdMapping.html">IdMapping</a></dt>
+    <dd></dd>
+    <dt><code>additionalObjectsToClone</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectIdCollection.html">ObjectIdCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_AreDependenciesEqual_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.AreDependenciesEqual*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_AreDependenciesEqual_Autodesk_AutoCAD_DatabaseServices_AssocDependency_Autodesk_AutoCAD_DatabaseServices_AssocDependency_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.AreDependenciesEqual(Autodesk.AutoCAD.DatabaseServices.AssocDependency,Autodesk.AutoCAD.DatabaseServices.AssocDependency)">
+  AreDependenciesEqual(AssocDependency, AssocDependency)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AreDependenciesEqual(AssocDependency dependency1, AssocDependency dependency2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dependency1</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocDependency.html">AssocDependency</a></dt>
+    <dd></dd>
+    <dt><code>dependency2</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocDependency.html">AssocDependency</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_AreDependenciesOnTheSameThing_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.AreDependenciesOnTheSameThing*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_AreDependenciesOnTheSameThing_Autodesk_AutoCAD_DatabaseServices_AssocDependency_Autodesk_AutoCAD_DatabaseServices_AssocDependency_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.AreDependenciesOnTheSameThing(Autodesk.AutoCAD.DatabaseServices.AssocDependency,Autodesk.AutoCAD.DatabaseServices.AssocDependency)">
+  AreDependenciesOnTheSameThing(AssocDependency, AssocDependency)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AreDependenciesOnTheSameThing(AssocDependency dependency1, AssocDependency dependency2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dependency1</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocDependency.html">AssocDependency</a></dt>
+    <dd></dd>
+    <dt><code>dependency2</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocDependency.html">AssocDependency</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_DependentObjectCloned_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.DependentObjectCloned*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_DependentObjectCloned_Autodesk_AutoCAD_DatabaseServices_AssocDependency_Autodesk_AutoCAD_DatabaseServices_DBObject_Autodesk_AutoCAD_DatabaseServices_DBObject_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.DependentObjectCloned(Autodesk.AutoCAD.DatabaseServices.AssocDependency,Autodesk.AutoCAD.DatabaseServices.DBObject,Autodesk.AutoCAD.DatabaseServices.DBObject)">
+  DependentObjectCloned(AssocDependency, DBObject, DBObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DependentObjectCloned(AssocDependency dependency, DBObject dbObj, DBObject newObj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dependency</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocDependency.html">AssocDependency</a></dt>
+    <dd></dd>
+    <dt><code>dbObj</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html">DBObject</a></dt>
+    <dd></dd>
+    <dt><code>newObj</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html">DBObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_DragStatus_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.DragStatus*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_DragStatus_Autodesk_AutoCAD_DatabaseServices_DragStatus_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.DragStatus(Autodesk.AutoCAD.DatabaseServices.DragStatus)">
+  DragStatus(DragStatus)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DragStatus(DragStatus status)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>status</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DragStatus.html">DragStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_Evaluate_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.Evaluate*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_Evaluate_Autodesk_AutoCAD_DatabaseServices_AssocEvaluationCallback_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.Evaluate(Autodesk.AutoCAD.DatabaseServices.AssocEvaluationCallback)">
+  Evaluate(AssocEvaluationCallback)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Evaluate(AssocEvaluationCallback evaluationCallback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>evaluationCallback</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocEvaluationCallback.html">AssocEvaluationCallback</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_EvaluateDependencies_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.EvaluateDependencies*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_EvaluateDependencies" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.EvaluateDependencies">
+  EvaluateDependencies()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EvaluateDependencies()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_EvaluateDependency_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.EvaluateDependency*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_EvaluateDependency_Autodesk_AutoCAD_DatabaseServices_AssocDependency_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.EvaluateDependency(Autodesk.AutoCAD.DatabaseServices.AssocDependency)">
+  EvaluateDependency(AssocDependency)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EvaluateDependency(AssocDependency dependency)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dependency</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocDependency.html">AssocDependency</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_EvaluationPriority_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.EvaluationPriority*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_EvaluationPriority" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.EvaluationPriority">
+  EvaluationPriority()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssocEvaluationPriority EvaluationPriority()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocEvaluationPriority.html">AssocEvaluationPriority</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_GetActionBody_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.GetActionBody*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_GetActionBody_Autodesk_AutoCAD_DatabaseServices_ObjectId_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.GetActionBody(Autodesk.AutoCAD.DatabaseServices.ObjectId)">
+  GetActionBody(ObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId GetActionBody(ObjectId actionId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actionId</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_GetActionsDependentOnObject_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.GetActionsDependentOnObject*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_GetActionsDependentOnObject_Autodesk_AutoCAD_DatabaseServices_DBObject_System_Boolean_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.GetActionsDependentOnObject(Autodesk.AutoCAD.DatabaseServices.DBObject,System.Boolean,System.Boolean)">
+  GetActionsDependentOnObject(DBObject, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectIdCollection GetActionsDependentOnObject(DBObject dbObj, bool readDependenciesWanted, bool writeDependenciesWanted)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dbObj</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html">DBObject</a></dt>
+    <dd></dd>
+    <dt><code>readDependenciesWanted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>writeDependenciesWanted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectIdCollection.html">ObjectIdCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_GetActionsDependentOnObject_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.GetActionsDependentOnObject*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_GetActionsDependentOnObject_Autodesk_AutoCAD_DatabaseServices_DBObject_System_Boolean_System_Boolean_Autodesk_AutoCAD_DatabaseServices_ObjectIdCollection_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.GetActionsDependentOnObject(Autodesk.AutoCAD.DatabaseServices.DBObject,System.Boolean,System.Boolean,Autodesk.AutoCAD.DatabaseServices.ObjectIdCollection)">
+  GetActionsDependentOnObject(DBObject, bool, bool, ObjectIdCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetActionsDependentOnObject(DBObject dbObj, bool readDependenciesWanted, bool writeDependenciesWanted, ObjectIdCollection actionIds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dbObj</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html">DBObject</a></dt>
+    <dd></dd>
+    <dt><code>readDependenciesWanted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>writeDependenciesWanted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>actionIds</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectIdCollection.html">ObjectIdCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_GetDependencies_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.GetDependencies*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_GetDependencies_System_Boolean_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.GetDependencies(System.Boolean,System.Boolean)">
+  GetDependencies(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectIdCollection GetDependencies(bool readDependenciesWanted, bool writeDependenciesWanted)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>readDependenciesWanted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>writeDependenciesWanted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectIdCollection.html">ObjectIdCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_GetDependentActionsToEvaluate_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.GetDependentActionsToEvaluate*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_GetDependentActionsToEvaluate_Autodesk_AutoCAD_DatabaseServices_ActionsToEvaluateCallback_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.GetDependentActionsToEvaluate(Autodesk.AutoCAD.DatabaseServices.ActionsToEvaluateCallback)">
+  GetDependentActionsToEvaluate(ActionsToEvaluateCallback)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetDependentActionsToEvaluate(ActionsToEvaluateCallback actionsToEvaluateCallback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actionsToEvaluateCallback</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ActionsToEvaluateCallback.html">ActionsToEvaluateCallback</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_GetDependentObjects_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.GetDependentObjects*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_GetDependentObjects_System_Boolean_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.GetDependentObjects(System.Boolean,System.Boolean)">
+  GetDependentObjects(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectIdCollection GetDependentObjects(bool readDependenciesWanted, bool writeDependenciesWanted)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>readDependenciesWanted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>writeDependenciesWanted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectIdCollection.html">ObjectIdCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_HasDependencyCachedValue_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.HasDependencyCachedValue*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_HasDependencyCachedValue_Autodesk_AutoCAD_DatabaseServices_AssocDependency_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.HasDependencyCachedValue(Autodesk.AutoCAD.DatabaseServices.AssocDependency)">
+  HasDependencyCachedValue(AssocDependency)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasDependencyCachedValue(AssocDependency dependency)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dependency</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocDependency.html">AssocDependency</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_IsEqualTo_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.IsEqualTo*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_IsEqualTo_Autodesk_AutoCAD_DatabaseServices_AssocAction_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.IsEqualTo(Autodesk.AutoCAD.DatabaseServices.AssocAction)">
+  IsEqualTo(AssocAction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEqualTo(AssocAction otherAction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherAction</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocAction.html">AssocAction</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_IsExternalDependency_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.IsExternalDependency*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_IsExternalDependency_Autodesk_AutoCAD_DatabaseServices_AssocDependency_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.IsExternalDependency(Autodesk.AutoCAD.DatabaseServices.AssocDependency)">
+  IsExternalDependency(AssocDependency)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsExternalDependency(AssocDependency dependency)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dependency</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocDependency.html">AssocDependency</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_IsOwnedDependency_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.IsOwnedDependency*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_IsOwnedDependency_Autodesk_AutoCAD_DatabaseServices_AssocDependency_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.IsOwnedDependency(Autodesk.AutoCAD.DatabaseServices.AssocDependency)">
+  IsOwnedDependency(AssocDependency)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOwnedDependency(AssocDependency dependency)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dependency</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocDependency.html">AssocDependency</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_IsRelevantDependencyChange_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.IsRelevantDependencyChange*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_IsRelevantDependencyChange_Autodesk_AutoCAD_DatabaseServices_AssocDependency_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.IsRelevantDependencyChange(Autodesk.AutoCAD.DatabaseServices.AssocDependency)">
+  IsRelevantDependencyChange(AssocDependency)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRelevantDependencyChange(AssocDependency dependency)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dependency</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocDependency.html">AssocDependency</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_ObjectThatOwnsNetworkInstance_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.ObjectThatOwnsNetworkInstance*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_ObjectThatOwnsNetworkInstance" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.ObjectThatOwnsNetworkInstance">
+  ObjectThatOwnsNetworkInstance()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId ObjectThatOwnsNetworkInstance()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_OwnedDependencyStatusChanged_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.OwnedDependencyStatusChanged*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_OwnedDependencyStatusChanged_Autodesk_AutoCAD_DatabaseServices_AssocDependency_Autodesk_AutoCAD_DatabaseServices_AssocStatus_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.OwnedDependencyStatusChanged(Autodesk.AutoCAD.DatabaseServices.AssocDependency,Autodesk.AutoCAD.DatabaseServices.AssocStatus)">
+  OwnedDependencyStatusChanged(AssocDependency, AssocStatus)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OwnedDependencyStatusChanged(AssocDependency ownedDependency, AssocStatus previousStatus)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ownedDependency</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocDependency.html">AssocDependency</a></dt>
+    <dd></dd>
+    <dt><code>previousStatus</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocStatus.html">AssocStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_PostProcessAfterDeepClone_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.PostProcessAfterDeepClone*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_PostProcessAfterDeepClone_Autodesk_AutoCAD_DatabaseServices_IdMapping_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.PostProcessAfterDeepClone(Autodesk.AutoCAD.DatabaseServices.IdMapping)">
+  PostProcessAfterDeepClone(IdMapping)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PostProcessAfterDeepClone(IdMapping idMap)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idMap</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.IdMapping.html">IdMapping</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_PostProcessAfterDeepCloneCancel_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.PostProcessAfterDeepCloneCancel*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_PostProcessAfterDeepCloneCancel_Autodesk_AutoCAD_DatabaseServices_IdMapping_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.PostProcessAfterDeepCloneCancel(Autodesk.AutoCAD.DatabaseServices.IdMapping)">
+  PostProcessAfterDeepCloneCancel(IdMapping)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PostProcessAfterDeepCloneCancel(IdMapping idMap)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idMap</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.IdMapping.html">IdMapping</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_RemoveActionsControllingObject_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.RemoveActionsControllingObject*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_RemoveActionsControllingObject_Autodesk_AutoCAD_DatabaseServices_ObjectId_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.RemoveActionsControllingObject(Autodesk.AutoCAD.DatabaseServices.ObjectId)">
+  RemoveActionsControllingObject(ObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveActionsControllingObject(ObjectId objID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objID</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_RemoveActionsControllingObject_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.RemoveActionsControllingObject*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_RemoveActionsControllingObject_Autodesk_AutoCAD_DatabaseServices_ObjectId_System_Int32_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.RemoveActionsControllingObject(Autodesk.AutoCAD.DatabaseServices.ObjectId,System.Int32)">
+  RemoveActionsControllingObject(ObjectId, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveActionsControllingObject(ObjectId objID, int readOnlyDependencyHandling)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objID</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+    <dt><code>readOnlyDependencyHandling</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_RemoveActionsControllingObject_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.RemoveActionsControllingObject*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_RemoveActionsControllingObject_Autodesk_AutoCAD_DatabaseServices_ObjectId_System_Int32_Autodesk_AutoCAD_DatabaseServices_ObjectId_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.RemoveActionsControllingObject(Autodesk.AutoCAD.DatabaseServices.ObjectId,System.Int32,Autodesk.AutoCAD.DatabaseServices.ObjectId)">
+  RemoveActionsControllingObject(ObjectId, int, ObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveActionsControllingObject(ObjectId objID, int readOnlyDependencyHandling, ObjectId objectToRedirectReadOnlyDependenciesTo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objID</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+    <dt><code>readOnlyDependencyHandling</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>objectToRedirectReadOnlyDependenciesTo</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_RemoveAllDependencies_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.RemoveAllDependencies*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_RemoveAllDependencies_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.RemoveAllDependencies(System.Boolean)">
+  RemoveAllDependencies(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAllDependencies(bool alsoEraseThem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>alsoEraseThem</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_RemoveDependency_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.RemoveDependency*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_RemoveDependency_Autodesk_AutoCAD_DatabaseServices_ObjectId_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.RemoveDependency(Autodesk.AutoCAD.DatabaseServices.ObjectId,System.Boolean)">
+  RemoveDependency(ObjectId, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveDependency(ObjectId dependencyId, bool alsoEraseIt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dependencyId</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+    <dt><code>alsoEraseIt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_SetOwningNetwork_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.SetOwningNetwork*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_SetOwningNetwork_Autodesk_AutoCAD_DatabaseServices_ObjectId_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.SetOwningNetwork(Autodesk.AutoCAD.DatabaseServices.ObjectId,System.Boolean)">
+  SetOwningNetwork(ObjectId, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOwningNetwork(ObjectId networkId, bool alsoSetAsDatabaseOwner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>networkId</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+    <dt><code>alsoSetAsDatabaseOwner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_SetStatus_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.SetStatus*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_SetStatus_Autodesk_AutoCAD_DatabaseServices_AssocStatus_System_Boolean_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.SetStatus(Autodesk.AutoCAD.DatabaseServices.AssocStatus,System.Boolean,System.Boolean)">
+  SetStatus(AssocStatus, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStatus(AssocStatus newStatus, bool notifyOwningNetwork, bool setInOwnedActions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newStatus</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.AssocStatus.html">AssocStatus</a></dt>
+    <dd></dd>
+    <dt><code>notifyOwningNetwork</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>setInOwnedActions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AssocAction_TransformActionBy_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.TransformActionBy*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AssocAction_TransformActionBy_Autodesk_AutoCAD_Geometry_Matrix3d_" data-uid="Autodesk.AutoCAD.DatabaseServices.AssocAction.TransformActionBy(Autodesk.AutoCAD.Geometry.Matrix3d)">
+  TransformActionBy(Matrix3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TransformActionBy(Matrix3d transform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transform</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

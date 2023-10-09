@@ -1,0 +1,6743 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class OpCodes
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class OpCodes
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Mono.Cecil.Cil.OpCodes">
+
+
+
+  <h1 id="Mono_Cecil_Cil_OpCodes" data-uid="Mono.Cecil.Cil.OpCodes" class="text-break">
+    Class OpCodes
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Mono.html">Mono</a>.<a class="xref" href="Mono.Cecil.html">Cecil</a>.<a class="xref" href="Mono.Cecil.Cil.html">Cil</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>NFox.Pycad.Runtime.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class OpCodes</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">OpCodes</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Add" data-uid="Mono.Cecil.Cil.OpCodes.Add">
+  Add
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Add</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Add_Ovf" data-uid="Mono.Cecil.Cil.OpCodes.Add_Ovf">
+  Add_Ovf
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Add_Ovf</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Add_Ovf_Un" data-uid="Mono.Cecil.Cil.OpCodes.Add_Ovf_Un">
+  Add_Ovf_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Add_Ovf_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_And" data-uid="Mono.Cecil.Cil.OpCodes.And">
+  And
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode And</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Arglist" data-uid="Mono.Cecil.Cil.OpCodes.Arglist">
+  Arglist
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Arglist</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Beq" data-uid="Mono.Cecil.Cil.OpCodes.Beq">
+  Beq
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Beq</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Beq_S" data-uid="Mono.Cecil.Cil.OpCodes.Beq_S">
+  Beq_S
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Beq_S</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Bge" data-uid="Mono.Cecil.Cil.OpCodes.Bge">
+  Bge
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Bge</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Bge_S" data-uid="Mono.Cecil.Cil.OpCodes.Bge_S">
+  Bge_S
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Bge_S</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Bge_Un" data-uid="Mono.Cecil.Cil.OpCodes.Bge_Un">
+  Bge_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Bge_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Bge_Un_S" data-uid="Mono.Cecil.Cil.OpCodes.Bge_Un_S">
+  Bge_Un_S
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Bge_Un_S</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Bgt" data-uid="Mono.Cecil.Cil.OpCodes.Bgt">
+  Bgt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Bgt</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Bgt_S" data-uid="Mono.Cecil.Cil.OpCodes.Bgt_S">
+  Bgt_S
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Bgt_S</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Bgt_Un" data-uid="Mono.Cecil.Cil.OpCodes.Bgt_Un">
+  Bgt_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Bgt_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Bgt_Un_S" data-uid="Mono.Cecil.Cil.OpCodes.Bgt_Un_S">
+  Bgt_Un_S
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Bgt_Un_S</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ble" data-uid="Mono.Cecil.Cil.OpCodes.Ble">
+  Ble
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ble</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ble_S" data-uid="Mono.Cecil.Cil.OpCodes.Ble_S">
+  Ble_S
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ble_S</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ble_Un" data-uid="Mono.Cecil.Cil.OpCodes.Ble_Un">
+  Ble_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ble_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ble_Un_S" data-uid="Mono.Cecil.Cil.OpCodes.Ble_Un_S">
+  Ble_Un_S
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ble_Un_S</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Blt" data-uid="Mono.Cecil.Cil.OpCodes.Blt">
+  Blt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Blt</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Blt_S" data-uid="Mono.Cecil.Cil.OpCodes.Blt_S">
+  Blt_S
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Blt_S</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Blt_Un" data-uid="Mono.Cecil.Cil.OpCodes.Blt_Un">
+  Blt_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Blt_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Blt_Un_S" data-uid="Mono.Cecil.Cil.OpCodes.Blt_Un_S">
+  Blt_Un_S
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Blt_Un_S</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Bne_Un" data-uid="Mono.Cecil.Cil.OpCodes.Bne_Un">
+  Bne_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Bne_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Bne_Un_S" data-uid="Mono.Cecil.Cil.OpCodes.Bne_Un_S">
+  Bne_Un_S
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Bne_Un_S</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Box" data-uid="Mono.Cecil.Cil.OpCodes.Box">
+  Box
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Box</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Br" data-uid="Mono.Cecil.Cil.OpCodes.Br">
+  Br
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Br</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Br_S" data-uid="Mono.Cecil.Cil.OpCodes.Br_S">
+  Br_S
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Br_S</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Break" data-uid="Mono.Cecil.Cil.OpCodes.Break">
+  Break
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Break</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Brfalse" data-uid="Mono.Cecil.Cil.OpCodes.Brfalse">
+  Brfalse
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Brfalse</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Brfalse_S" data-uid="Mono.Cecil.Cil.OpCodes.Brfalse_S">
+  Brfalse_S
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Brfalse_S</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Brtrue" data-uid="Mono.Cecil.Cil.OpCodes.Brtrue">
+  Brtrue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Brtrue</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Brtrue_S" data-uid="Mono.Cecil.Cil.OpCodes.Brtrue_S">
+  Brtrue_S
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Brtrue_S</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Call" data-uid="Mono.Cecil.Cil.OpCodes.Call">
+  Call
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Call</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Calli" data-uid="Mono.Cecil.Cil.OpCodes.Calli">
+  Calli
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Calli</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Callvirt" data-uid="Mono.Cecil.Cil.OpCodes.Callvirt">
+  Callvirt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Callvirt</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Castclass" data-uid="Mono.Cecil.Cil.OpCodes.Castclass">
+  Castclass
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Castclass</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ceq" data-uid="Mono.Cecil.Cil.OpCodes.Ceq">
+  Ceq
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ceq</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Cgt" data-uid="Mono.Cecil.Cil.OpCodes.Cgt">
+  Cgt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Cgt</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Cgt_Un" data-uid="Mono.Cecil.Cil.OpCodes.Cgt_Un">
+  Cgt_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Cgt_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ckfinite" data-uid="Mono.Cecil.Cil.OpCodes.Ckfinite">
+  Ckfinite
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ckfinite</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Clt" data-uid="Mono.Cecil.Cil.OpCodes.Clt">
+  Clt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Clt</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Clt_Un" data-uid="Mono.Cecil.Cil.OpCodes.Clt_Un">
+  Clt_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Clt_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Constrained" data-uid="Mono.Cecil.Cil.OpCodes.Constrained">
+  Constrained
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Constrained</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_I" data-uid="Mono.Cecil.Cil.OpCodes.Conv_I">
+  Conv_I
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_I</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_I1" data-uid="Mono.Cecil.Cil.OpCodes.Conv_I1">
+  Conv_I1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_I1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_I2" data-uid="Mono.Cecil.Cil.OpCodes.Conv_I2">
+  Conv_I2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_I2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_I4" data-uid="Mono.Cecil.Cil.OpCodes.Conv_I4">
+  Conv_I4
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_I4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_I8" data-uid="Mono.Cecil.Cil.OpCodes.Conv_I8">
+  Conv_I8
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_I8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_Ovf_I" data-uid="Mono.Cecil.Cil.OpCodes.Conv_Ovf_I">
+  Conv_Ovf_I
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_Ovf_I</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_Ovf_I1" data-uid="Mono.Cecil.Cil.OpCodes.Conv_Ovf_I1">
+  Conv_Ovf_I1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_Ovf_I1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_Ovf_I1_Un" data-uid="Mono.Cecil.Cil.OpCodes.Conv_Ovf_I1_Un">
+  Conv_Ovf_I1_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_Ovf_I1_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_Ovf_I2" data-uid="Mono.Cecil.Cil.OpCodes.Conv_Ovf_I2">
+  Conv_Ovf_I2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_Ovf_I2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_Ovf_I2_Un" data-uid="Mono.Cecil.Cil.OpCodes.Conv_Ovf_I2_Un">
+  Conv_Ovf_I2_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_Ovf_I2_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_Ovf_I4" data-uid="Mono.Cecil.Cil.OpCodes.Conv_Ovf_I4">
+  Conv_Ovf_I4
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_Ovf_I4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_Ovf_I4_Un" data-uid="Mono.Cecil.Cil.OpCodes.Conv_Ovf_I4_Un">
+  Conv_Ovf_I4_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_Ovf_I4_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_Ovf_I8" data-uid="Mono.Cecil.Cil.OpCodes.Conv_Ovf_I8">
+  Conv_Ovf_I8
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_Ovf_I8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_Ovf_I8_Un" data-uid="Mono.Cecil.Cil.OpCodes.Conv_Ovf_I8_Un">
+  Conv_Ovf_I8_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_Ovf_I8_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_Ovf_I_Un" data-uid="Mono.Cecil.Cil.OpCodes.Conv_Ovf_I_Un">
+  Conv_Ovf_I_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_Ovf_I_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_Ovf_U" data-uid="Mono.Cecil.Cil.OpCodes.Conv_Ovf_U">
+  Conv_Ovf_U
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_Ovf_U</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_Ovf_U1" data-uid="Mono.Cecil.Cil.OpCodes.Conv_Ovf_U1">
+  Conv_Ovf_U1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_Ovf_U1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_Ovf_U1_Un" data-uid="Mono.Cecil.Cil.OpCodes.Conv_Ovf_U1_Un">
+  Conv_Ovf_U1_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_Ovf_U1_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_Ovf_U2" data-uid="Mono.Cecil.Cil.OpCodes.Conv_Ovf_U2">
+  Conv_Ovf_U2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_Ovf_U2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_Ovf_U2_Un" data-uid="Mono.Cecil.Cil.OpCodes.Conv_Ovf_U2_Un">
+  Conv_Ovf_U2_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_Ovf_U2_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_Ovf_U4" data-uid="Mono.Cecil.Cil.OpCodes.Conv_Ovf_U4">
+  Conv_Ovf_U4
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_Ovf_U4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_Ovf_U4_Un" data-uid="Mono.Cecil.Cil.OpCodes.Conv_Ovf_U4_Un">
+  Conv_Ovf_U4_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_Ovf_U4_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_Ovf_U8" data-uid="Mono.Cecil.Cil.OpCodes.Conv_Ovf_U8">
+  Conv_Ovf_U8
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_Ovf_U8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_Ovf_U8_Un" data-uid="Mono.Cecil.Cil.OpCodes.Conv_Ovf_U8_Un">
+  Conv_Ovf_U8_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_Ovf_U8_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_Ovf_U_Un" data-uid="Mono.Cecil.Cil.OpCodes.Conv_Ovf_U_Un">
+  Conv_Ovf_U_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_Ovf_U_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_R4" data-uid="Mono.Cecil.Cil.OpCodes.Conv_R4">
+  Conv_R4
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_R4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_R8" data-uid="Mono.Cecil.Cil.OpCodes.Conv_R8">
+  Conv_R8
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_R8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_R_Un" data-uid="Mono.Cecil.Cil.OpCodes.Conv_R_Un">
+  Conv_R_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_R_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_U" data-uid="Mono.Cecil.Cil.OpCodes.Conv_U">
+  Conv_U
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_U</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_U1" data-uid="Mono.Cecil.Cil.OpCodes.Conv_U1">
+  Conv_U1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_U1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_U2" data-uid="Mono.Cecil.Cil.OpCodes.Conv_U2">
+  Conv_U2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_U2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_U4" data-uid="Mono.Cecil.Cil.OpCodes.Conv_U4">
+  Conv_U4
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_U4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Conv_U8" data-uid="Mono.Cecil.Cil.OpCodes.Conv_U8">
+  Conv_U8
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Conv_U8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Cpblk" data-uid="Mono.Cecil.Cil.OpCodes.Cpblk">
+  Cpblk
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Cpblk</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Cpobj" data-uid="Mono.Cecil.Cil.OpCodes.Cpobj">
+  Cpobj
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Cpobj</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Div" data-uid="Mono.Cecil.Cil.OpCodes.Div">
+  Div
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Div</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Div_Un" data-uid="Mono.Cecil.Cil.OpCodes.Div_Un">
+  Div_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Div_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Dup" data-uid="Mono.Cecil.Cil.OpCodes.Dup">
+  Dup
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Dup</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Endfilter" data-uid="Mono.Cecil.Cil.OpCodes.Endfilter">
+  Endfilter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Endfilter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Endfinally" data-uid="Mono.Cecil.Cil.OpCodes.Endfinally">
+  Endfinally
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Endfinally</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Initblk" data-uid="Mono.Cecil.Cil.OpCodes.Initblk">
+  Initblk
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Initblk</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Initobj" data-uid="Mono.Cecil.Cil.OpCodes.Initobj">
+  Initobj
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Initobj</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Isinst" data-uid="Mono.Cecil.Cil.OpCodes.Isinst">
+  Isinst
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Isinst</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Jmp" data-uid="Mono.Cecil.Cil.OpCodes.Jmp">
+  Jmp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Jmp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldarg" data-uid="Mono.Cecil.Cil.OpCodes.Ldarg">
+  Ldarg
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldarg</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldarg_0" data-uid="Mono.Cecil.Cil.OpCodes.Ldarg_0">
+  Ldarg_0
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldarg_0</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldarg_1" data-uid="Mono.Cecil.Cil.OpCodes.Ldarg_1">
+  Ldarg_1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldarg_1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldarg_2" data-uid="Mono.Cecil.Cil.OpCodes.Ldarg_2">
+  Ldarg_2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldarg_2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldarg_3" data-uid="Mono.Cecil.Cil.OpCodes.Ldarg_3">
+  Ldarg_3
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldarg_3</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldarg_S" data-uid="Mono.Cecil.Cil.OpCodes.Ldarg_S">
+  Ldarg_S
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldarg_S</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldarga" data-uid="Mono.Cecil.Cil.OpCodes.Ldarga">
+  Ldarga
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldarga</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldarga_S" data-uid="Mono.Cecil.Cil.OpCodes.Ldarga_S">
+  Ldarga_S
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldarga_S</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldc_I4" data-uid="Mono.Cecil.Cil.OpCodes.Ldc_I4">
+  Ldc_I4
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldc_I4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldc_I4_0" data-uid="Mono.Cecil.Cil.OpCodes.Ldc_I4_0">
+  Ldc_I4_0
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldc_I4_0</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldc_I4_1" data-uid="Mono.Cecil.Cil.OpCodes.Ldc_I4_1">
+  Ldc_I4_1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldc_I4_1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldc_I4_2" data-uid="Mono.Cecil.Cil.OpCodes.Ldc_I4_2">
+  Ldc_I4_2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldc_I4_2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldc_I4_3" data-uid="Mono.Cecil.Cil.OpCodes.Ldc_I4_3">
+  Ldc_I4_3
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldc_I4_3</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldc_I4_4" data-uid="Mono.Cecil.Cil.OpCodes.Ldc_I4_4">
+  Ldc_I4_4
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldc_I4_4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldc_I4_5" data-uid="Mono.Cecil.Cil.OpCodes.Ldc_I4_5">
+  Ldc_I4_5
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldc_I4_5</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldc_I4_6" data-uid="Mono.Cecil.Cil.OpCodes.Ldc_I4_6">
+  Ldc_I4_6
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldc_I4_6</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldc_I4_7" data-uid="Mono.Cecil.Cil.OpCodes.Ldc_I4_7">
+  Ldc_I4_7
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldc_I4_7</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldc_I4_8" data-uid="Mono.Cecil.Cil.OpCodes.Ldc_I4_8">
+  Ldc_I4_8
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldc_I4_8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldc_I4_M1" data-uid="Mono.Cecil.Cil.OpCodes.Ldc_I4_M1">
+  Ldc_I4_M1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldc_I4_M1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldc_I4_S" data-uid="Mono.Cecil.Cil.OpCodes.Ldc_I4_S">
+  Ldc_I4_S
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldc_I4_S</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldc_I8" data-uid="Mono.Cecil.Cil.OpCodes.Ldc_I8">
+  Ldc_I8
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldc_I8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldc_R4" data-uid="Mono.Cecil.Cil.OpCodes.Ldc_R4">
+  Ldc_R4
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldc_R4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldc_R8" data-uid="Mono.Cecil.Cil.OpCodes.Ldc_R8">
+  Ldc_R8
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldc_R8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldelem_Any" data-uid="Mono.Cecil.Cil.OpCodes.Ldelem_Any">
+  Ldelem_Any
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldelem_Any</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldelem_I" data-uid="Mono.Cecil.Cil.OpCodes.Ldelem_I">
+  Ldelem_I
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldelem_I</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldelem_I1" data-uid="Mono.Cecil.Cil.OpCodes.Ldelem_I1">
+  Ldelem_I1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldelem_I1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldelem_I2" data-uid="Mono.Cecil.Cil.OpCodes.Ldelem_I2">
+  Ldelem_I2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldelem_I2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldelem_I4" data-uid="Mono.Cecil.Cil.OpCodes.Ldelem_I4">
+  Ldelem_I4
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldelem_I4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldelem_I8" data-uid="Mono.Cecil.Cil.OpCodes.Ldelem_I8">
+  Ldelem_I8
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldelem_I8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldelem_R4" data-uid="Mono.Cecil.Cil.OpCodes.Ldelem_R4">
+  Ldelem_R4
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldelem_R4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldelem_R8" data-uid="Mono.Cecil.Cil.OpCodes.Ldelem_R8">
+  Ldelem_R8
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldelem_R8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldelem_Ref" data-uid="Mono.Cecil.Cil.OpCodes.Ldelem_Ref">
+  Ldelem_Ref
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldelem_Ref</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldelem_U1" data-uid="Mono.Cecil.Cil.OpCodes.Ldelem_U1">
+  Ldelem_U1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldelem_U1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldelem_U2" data-uid="Mono.Cecil.Cil.OpCodes.Ldelem_U2">
+  Ldelem_U2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldelem_U2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldelem_U4" data-uid="Mono.Cecil.Cil.OpCodes.Ldelem_U4">
+  Ldelem_U4
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldelem_U4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldelema" data-uid="Mono.Cecil.Cil.OpCodes.Ldelema">
+  Ldelema
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldelema</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldfld" data-uid="Mono.Cecil.Cil.OpCodes.Ldfld">
+  Ldfld
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldfld</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldflda" data-uid="Mono.Cecil.Cil.OpCodes.Ldflda">
+  Ldflda
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldflda</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldftn" data-uid="Mono.Cecil.Cil.OpCodes.Ldftn">
+  Ldftn
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldftn</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldind_I" data-uid="Mono.Cecil.Cil.OpCodes.Ldind_I">
+  Ldind_I
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldind_I</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldind_I1" data-uid="Mono.Cecil.Cil.OpCodes.Ldind_I1">
+  Ldind_I1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldind_I1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldind_I2" data-uid="Mono.Cecil.Cil.OpCodes.Ldind_I2">
+  Ldind_I2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldind_I2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldind_I4" data-uid="Mono.Cecil.Cil.OpCodes.Ldind_I4">
+  Ldind_I4
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldind_I4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldind_I8" data-uid="Mono.Cecil.Cil.OpCodes.Ldind_I8">
+  Ldind_I8
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldind_I8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldind_R4" data-uid="Mono.Cecil.Cil.OpCodes.Ldind_R4">
+  Ldind_R4
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldind_R4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldind_R8" data-uid="Mono.Cecil.Cil.OpCodes.Ldind_R8">
+  Ldind_R8
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldind_R8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldind_Ref" data-uid="Mono.Cecil.Cil.OpCodes.Ldind_Ref">
+  Ldind_Ref
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldind_Ref</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldind_U1" data-uid="Mono.Cecil.Cil.OpCodes.Ldind_U1">
+  Ldind_U1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldind_U1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldind_U2" data-uid="Mono.Cecil.Cil.OpCodes.Ldind_U2">
+  Ldind_U2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldind_U2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldind_U4" data-uid="Mono.Cecil.Cil.OpCodes.Ldind_U4">
+  Ldind_U4
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldind_U4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldlen" data-uid="Mono.Cecil.Cil.OpCodes.Ldlen">
+  Ldlen
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldlen</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldloc" data-uid="Mono.Cecil.Cil.OpCodes.Ldloc">
+  Ldloc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldloc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldloc_0" data-uid="Mono.Cecil.Cil.OpCodes.Ldloc_0">
+  Ldloc_0
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldloc_0</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldloc_1" data-uid="Mono.Cecil.Cil.OpCodes.Ldloc_1">
+  Ldloc_1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldloc_1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldloc_2" data-uid="Mono.Cecil.Cil.OpCodes.Ldloc_2">
+  Ldloc_2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldloc_2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldloc_3" data-uid="Mono.Cecil.Cil.OpCodes.Ldloc_3">
+  Ldloc_3
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldloc_3</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldloc_S" data-uid="Mono.Cecil.Cil.OpCodes.Ldloc_S">
+  Ldloc_S
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldloc_S</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldloca" data-uid="Mono.Cecil.Cil.OpCodes.Ldloca">
+  Ldloca
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldloca</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldloca_S" data-uid="Mono.Cecil.Cil.OpCodes.Ldloca_S">
+  Ldloca_S
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldloca_S</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldnull" data-uid="Mono.Cecil.Cil.OpCodes.Ldnull">
+  Ldnull
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldnull</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldobj" data-uid="Mono.Cecil.Cil.OpCodes.Ldobj">
+  Ldobj
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldobj</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldsfld" data-uid="Mono.Cecil.Cil.OpCodes.Ldsfld">
+  Ldsfld
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldsfld</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldsflda" data-uid="Mono.Cecil.Cil.OpCodes.Ldsflda">
+  Ldsflda
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldsflda</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldstr" data-uid="Mono.Cecil.Cil.OpCodes.Ldstr">
+  Ldstr
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldstr</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldtoken" data-uid="Mono.Cecil.Cil.OpCodes.Ldtoken">
+  Ldtoken
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldtoken</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ldvirtftn" data-uid="Mono.Cecil.Cil.OpCodes.Ldvirtftn">
+  Ldvirtftn
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ldvirtftn</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Leave" data-uid="Mono.Cecil.Cil.OpCodes.Leave">
+  Leave
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Leave</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Leave_S" data-uid="Mono.Cecil.Cil.OpCodes.Leave_S">
+  Leave_S
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Leave_S</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Localloc" data-uid="Mono.Cecil.Cil.OpCodes.Localloc">
+  Localloc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Localloc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Mkrefany" data-uid="Mono.Cecil.Cil.OpCodes.Mkrefany">
+  Mkrefany
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Mkrefany</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Mul" data-uid="Mono.Cecil.Cil.OpCodes.Mul">
+  Mul
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Mul</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Mul_Ovf" data-uid="Mono.Cecil.Cil.OpCodes.Mul_Ovf">
+  Mul_Ovf
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Mul_Ovf</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Mul_Ovf_Un" data-uid="Mono.Cecil.Cil.OpCodes.Mul_Ovf_Un">
+  Mul_Ovf_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Mul_Ovf_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Neg" data-uid="Mono.Cecil.Cil.OpCodes.Neg">
+  Neg
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Neg</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Newarr" data-uid="Mono.Cecil.Cil.OpCodes.Newarr">
+  Newarr
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Newarr</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Newobj" data-uid="Mono.Cecil.Cil.OpCodes.Newobj">
+  Newobj
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Newobj</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_No" data-uid="Mono.Cecil.Cil.OpCodes.No">
+  No
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode No</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Nop" data-uid="Mono.Cecil.Cil.OpCodes.Nop">
+  Nop
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Nop</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Not" data-uid="Mono.Cecil.Cil.OpCodes.Not">
+  Not
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Not</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Or" data-uid="Mono.Cecil.Cil.OpCodes.Or">
+  Or
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Or</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Pop" data-uid="Mono.Cecil.Cil.OpCodes.Pop">
+  Pop
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Pop</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Readonly" data-uid="Mono.Cecil.Cil.OpCodes.Readonly">
+  Readonly
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Readonly</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Refanytype" data-uid="Mono.Cecil.Cil.OpCodes.Refanytype">
+  Refanytype
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Refanytype</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Refanyval" data-uid="Mono.Cecil.Cil.OpCodes.Refanyval">
+  Refanyval
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Refanyval</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Rem" data-uid="Mono.Cecil.Cil.OpCodes.Rem">
+  Rem
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Rem</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Rem_Un" data-uid="Mono.Cecil.Cil.OpCodes.Rem_Un">
+  Rem_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Rem_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Ret" data-uid="Mono.Cecil.Cil.OpCodes.Ret">
+  Ret
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Ret</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Rethrow" data-uid="Mono.Cecil.Cil.OpCodes.Rethrow">
+  Rethrow
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Rethrow</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Shl" data-uid="Mono.Cecil.Cil.OpCodes.Shl">
+  Shl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Shl</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Shr" data-uid="Mono.Cecil.Cil.OpCodes.Shr">
+  Shr
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Shr</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Shr_Un" data-uid="Mono.Cecil.Cil.OpCodes.Shr_Un">
+  Shr_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Shr_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Sizeof" data-uid="Mono.Cecil.Cil.OpCodes.Sizeof">
+  Sizeof
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Sizeof</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Starg" data-uid="Mono.Cecil.Cil.OpCodes.Starg">
+  Starg
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Starg</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Starg_S" data-uid="Mono.Cecil.Cil.OpCodes.Starg_S">
+  Starg_S
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Starg_S</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stelem_Any" data-uid="Mono.Cecil.Cil.OpCodes.Stelem_Any">
+  Stelem_Any
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stelem_Any</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stelem_I" data-uid="Mono.Cecil.Cil.OpCodes.Stelem_I">
+  Stelem_I
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stelem_I</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stelem_I1" data-uid="Mono.Cecil.Cil.OpCodes.Stelem_I1">
+  Stelem_I1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stelem_I1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stelem_I2" data-uid="Mono.Cecil.Cil.OpCodes.Stelem_I2">
+  Stelem_I2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stelem_I2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stelem_I4" data-uid="Mono.Cecil.Cil.OpCodes.Stelem_I4">
+  Stelem_I4
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stelem_I4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stelem_I8" data-uid="Mono.Cecil.Cil.OpCodes.Stelem_I8">
+  Stelem_I8
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stelem_I8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stelem_R4" data-uid="Mono.Cecil.Cil.OpCodes.Stelem_R4">
+  Stelem_R4
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stelem_R4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stelem_R8" data-uid="Mono.Cecil.Cil.OpCodes.Stelem_R8">
+  Stelem_R8
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stelem_R8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stelem_Ref" data-uid="Mono.Cecil.Cil.OpCodes.Stelem_Ref">
+  Stelem_Ref
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stelem_Ref</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stfld" data-uid="Mono.Cecil.Cil.OpCodes.Stfld">
+  Stfld
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stfld</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stind_I" data-uid="Mono.Cecil.Cil.OpCodes.Stind_I">
+  Stind_I
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stind_I</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stind_I1" data-uid="Mono.Cecil.Cil.OpCodes.Stind_I1">
+  Stind_I1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stind_I1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stind_I2" data-uid="Mono.Cecil.Cil.OpCodes.Stind_I2">
+  Stind_I2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stind_I2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stind_I4" data-uid="Mono.Cecil.Cil.OpCodes.Stind_I4">
+  Stind_I4
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stind_I4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stind_I8" data-uid="Mono.Cecil.Cil.OpCodes.Stind_I8">
+  Stind_I8
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stind_I8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stind_R4" data-uid="Mono.Cecil.Cil.OpCodes.Stind_R4">
+  Stind_R4
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stind_R4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stind_R8" data-uid="Mono.Cecil.Cil.OpCodes.Stind_R8">
+  Stind_R8
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stind_R8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stind_Ref" data-uid="Mono.Cecil.Cil.OpCodes.Stind_Ref">
+  Stind_Ref
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stind_Ref</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stloc" data-uid="Mono.Cecil.Cil.OpCodes.Stloc">
+  Stloc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stloc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stloc_0" data-uid="Mono.Cecil.Cil.OpCodes.Stloc_0">
+  Stloc_0
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stloc_0</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stloc_1" data-uid="Mono.Cecil.Cil.OpCodes.Stloc_1">
+  Stloc_1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stloc_1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stloc_2" data-uid="Mono.Cecil.Cil.OpCodes.Stloc_2">
+  Stloc_2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stloc_2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stloc_3" data-uid="Mono.Cecil.Cil.OpCodes.Stloc_3">
+  Stloc_3
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stloc_3</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stloc_S" data-uid="Mono.Cecil.Cil.OpCodes.Stloc_S">
+  Stloc_S
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stloc_S</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stobj" data-uid="Mono.Cecil.Cil.OpCodes.Stobj">
+  Stobj
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stobj</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Stsfld" data-uid="Mono.Cecil.Cil.OpCodes.Stsfld">
+  Stsfld
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Stsfld</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Sub" data-uid="Mono.Cecil.Cil.OpCodes.Sub">
+  Sub
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Sub</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Sub_Ovf" data-uid="Mono.Cecil.Cil.OpCodes.Sub_Ovf">
+  Sub_Ovf
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Sub_Ovf</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Sub_Ovf_Un" data-uid="Mono.Cecil.Cil.OpCodes.Sub_Ovf_Un">
+  Sub_Ovf_Un
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Sub_Ovf_Un</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Switch" data-uid="Mono.Cecil.Cil.OpCodes.Switch">
+  Switch
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Switch</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Tail" data-uid="Mono.Cecil.Cil.OpCodes.Tail">
+  Tail
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Tail</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Throw" data-uid="Mono.Cecil.Cil.OpCodes.Throw">
+  Throw
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Throw</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Unaligned" data-uid="Mono.Cecil.Cil.OpCodes.Unaligned">
+  Unaligned
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Unaligned</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Unbox" data-uid="Mono.Cecil.Cil.OpCodes.Unbox">
+  Unbox
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Unbox</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Unbox_Any" data-uid="Mono.Cecil.Cil.OpCodes.Unbox_Any">
+  Unbox_Any
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Unbox_Any</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Volatile" data-uid="Mono.Cecil.Cil.OpCodes.Volatile">
+  Volatile
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Volatile</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Mono_Cecil_Cil_OpCodes_Xor" data-uid="Mono.Cecil.Cil.OpCodes.Xor">
+  Xor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly OpCode Xor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.OpCode.html">OpCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

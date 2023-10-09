@@ -1,0 +1,1416 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class GIRasterImage
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GIRasterImage
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GrxCAD.GraphicsInterface.GIRasterImage">
+
+
+
+  <h1 id="GrxCAD_GraphicsInterface_GIRasterImage" data-uid="GrxCAD.GraphicsInterface.GIRasterImage" class="text-break">
+    Class GIRasterImage
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GrxCAD.html">GrxCAD</a>.<a class="xref" href="GrxCAD.GraphicsInterface.html">GraphicsInterface</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>gmdb.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;OdGiRasterImage&quot;)]
+public class GIRasterImage : RXObject, IDisposable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html">DisposableWrapper</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.RXObject.html">RXObject</a></div>
+      <div><span class="xref">GIRasterImage</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.GIRasterImageDesc.html">GIRasterImageDesc</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_Create_System_IntPtr_System_Boolean_">RXObject.Create(IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_GetRXClass">RXObject.GetRXClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_Clone">RXObject.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_CompareTo_System_Object_">RXObject.CompareTo(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_CopyFrom_GrxCAD_Runtime_RXObject_">RXObject.CopyFrom(RXObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_GetClass_System_Type_">RXObject.GetClass(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_QueryX_GrxCAD_Runtime_RXClass_">RXObject.QueryX(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_X_GrxCAD_Runtime_RXClass_">RXObject.X(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_m_bAutoDelete">DisposableWrapper.m_bAutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_m_imp">DisposableWrapper.m_imp</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Detach">DisposableWrapper.Detach()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Create_System_Type_System_IntPtr_System_Boolean_">DisposableWrapper.Create(Type, IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Equals_System_Object_">DisposableWrapper.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_GetHashCode">DisposableWrapper.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Dispose_System_Boolean_">DisposableWrapper.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Dispose">DisposableWrapper.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_UnmanagedObject">DisposableWrapper.UnmanagedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_IsDisposed">DisposableWrapper.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_AutoDelete">DisposableWrapper.AutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone">MarshalByRefObject.MemberwiseClone(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref">MarshalByRefObject.CreateObjRef(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage__ctor_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.#ctor*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage__ctor_System_IntPtr_System_Boolean_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.#ctor(System.IntPtr,System.Boolean)">
+  GIRasterImage(IntPtr, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GIRasterImage(IntPtr unmanagedPointer, bool autoDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unmanagedPointer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_ColorDepth_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.ColorDepth*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_ColorDepth" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.ColorDepth">
+  ColorDepth
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint ColorDepth { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_ImgTransparencyMode_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.ImgTransparencyMode*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_ImgTransparencyMode" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.ImgTransparencyMode">
+  ImgTransparencyMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TransparencyMode ImgTransparencyMode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.TransparencyMode.html">TransparencyMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_NumColors_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.NumColors*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_NumColors" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.NumColors">
+  NumColors
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint NumColors { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_PaletteDataSize_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.PaletteDataSize*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_PaletteDataSize" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.PaletteDataSize">
+  PaletteDataSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PaletteDataSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_PixelHeight_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.PixelHeight*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_PixelHeight" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.PixelHeight">
+  PixelHeight
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint PixelHeight { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_PixelWidth_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.PixelWidth*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_PixelWidth" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.PixelWidth">
+  PixelWidth
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint PixelWidth { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_ScanLineSize_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.ScanLineSize*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_ScanLineSize" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.ScanLineSize">
+  ScanLineSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint ScanLineSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_ScanLinesAlignment_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.ScanLinesAlignment*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_ScanLinesAlignment" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.ScanLinesAlignment">
+  ScanLinesAlignment
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint ScanLinesAlignment { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_TransparentColor_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.TransparentColor*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_TransparentColor" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.TransparentColor">
+  TransparentColor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TransparentColor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_imageSource_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.imageSource*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_imageSource" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.imageSource">
+  imageSource
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RasterImageSource imageSource { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.RasterImageSource.html">RasterImageSource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_CalcBMPScanLineSize_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.CalcBMPScanLineSize*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_CalcBMPScanLineSize_System_UInt32_System_UInt32_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.CalcBMPScanLineSize(System.UInt32,System.UInt32)">
+  CalcBMPScanLineSize(uint, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CalcBMPScanLineSize(uint pixelWidth, uint colorDepth)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pixelWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>colorDepth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_ChangeImageSource_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.ChangeImageSource*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_ChangeImageSource_GrxCAD_GraphicsInterface_RasterImageSource_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.ChangeImageSource(GrxCAD.GraphicsInterface.RasterImageSource)">
+  ChangeImageSource(RasterImageSource)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GIRasterImage ChangeImageSource(RasterImageSource source)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="GrxCAD.GraphicsInterface.RasterImageSource.html">RasterImageSource</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.GIRasterImage.html">GIRasterImage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_ChangeTransparencyMode_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.ChangeTransparencyMode*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_ChangeTransparencyMode_GrxCAD_GraphicsInterface_TransparencyMode_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.ChangeTransparencyMode(GrxCAD.GraphicsInterface.TransparencyMode)">
+  ChangeTransparencyMode(TransparencyMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GIRasterImage ChangeTransparencyMode(TransparencyMode mode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mode</code> <a class="xref" href="GrxCAD.GraphicsInterface.TransparencyMode.html">TransparencyMode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.GIRasterImage.html">GIRasterImage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_Convert_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.Convert*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_Convert_System_Boolean_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.Convert(System.Boolean)">
+  Convert(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GIRasterImage Convert(bool convertPaletteToRGB)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>convertPaletteToRGB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.GIRasterImage.html">GIRasterImage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_Convert_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.Convert*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_Convert_System_Boolean_System_Double_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.Convert(System.Boolean,System.Double)">
+  Convert(bool, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GIRasterImage Convert(bool convertPaletteToRGB, double brightness)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>convertPaletteToRGB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>brightness</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.GIRasterImage.html">GIRasterImage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_Convert_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.Convert*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_Convert_System_Boolean_System_Double_System_Double_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.Convert(System.Boolean,System.Double,System.Double)">
+  Convert(bool, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GIRasterImage Convert(bool convertPaletteToRGB, double brightness, double contrast)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>convertPaletteToRGB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>brightness</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>contrast</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.GIRasterImage.html">GIRasterImage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_Convert_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.Convert*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_Convert_System_Boolean_System_Double_System_Double_System_Double_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.Convert(System.Boolean,System.Double,System.Double,System.Double)">
+  Convert(bool, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GIRasterImage Convert(bool convertPaletteToRGB, double brightness, double contrast, double fade)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>convertPaletteToRGB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>brightness</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>contrast</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>fade</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.GIRasterImage.html">GIRasterImage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_Convert_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.Convert*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_Convert_System_Boolean_System_Double_System_Double_System_Double_System_Drawing_Color_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.Convert(System.Boolean,System.Double,System.Double,System.Double,System.Drawing.Color)">
+  Convert(bool, double, double, double, Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GIRasterImage Convert(bool convertPaletteToRGB, double brightness, double contrast, double fade, Color backgroundColor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>convertPaletteToRGB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>brightness</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>contrast</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>fade</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>backgroundColor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.GIRasterImage.html">GIRasterImage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_Convert_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.Convert*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_Convert_System_Boolean_System_Double_System_Double_System_Double_System_Drawing_Color_System_Boolean_System_Boolean_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.Convert(System.Boolean,System.Double,System.Double,System.Double,System.Drawing.Color,System.Boolean,System.Boolean)">
+  Convert(bool, double, double, double, Color, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GIRasterImage Convert(bool convertPaletteToRGB, double brightness, double contrast, double fade, Color backgroundColor, bool flipX, bool flipY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>convertPaletteToRGB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>brightness</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>contrast</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>fade</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>backgroundColor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a></dt>
+    <dd></dd>
+    <dt><code>flipX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>flipY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.GIRasterImage.html">GIRasterImage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_Convert_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.Convert*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_Convert_System_Boolean_System_Double_System_Double_System_Double_System_Drawing_Color_System_Boolean_System_Boolean_System_Boolean_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.Convert(System.Boolean,System.Double,System.Double,System.Double,System.Drawing.Color,System.Boolean,System.Boolean,System.Boolean)">
+  Convert(bool, double, double, double, Color, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GIRasterImage Convert(bool convertPaletteToRGB, double brightness, double contrast, double fade, Color backgroundColor, bool flipX, bool flipY, bool rotate90)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>convertPaletteToRGB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>brightness</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>contrast</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>fade</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>backgroundColor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a></dt>
+    <dd></dd>
+    <dt><code>flipX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>flipY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>rotate90</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.GIRasterImage.html">GIRasterImage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_Convert_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.Convert*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_Convert_System_Boolean_System_Double_System_Double_System_Double_System_Drawing_Color_System_Boolean_System_Boolean_System_Boolean_GrxCAD_GraphicsInterface_GIRasterImage_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.Convert(System.Boolean,System.Double,System.Double,System.Double,System.Drawing.Color,System.Boolean,System.Boolean,System.Boolean,GrxCAD.GraphicsInterface.GIRasterImage)">
+  Convert(bool, double, double, double, Color, bool, bool, bool, GIRasterImage)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GIRasterImage Convert(bool convertPaletteToRGB, double brightness, double contrast, double fade, Color backgroundColor, bool flipX, bool flipY, bool rotate90, GIRasterImage image)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>convertPaletteToRGB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>brightness</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>contrast</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>fade</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>backgroundColor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a></dt>
+    <dd></dd>
+    <dt><code>flipX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>flipY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>rotate90</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>image</code> <a class="xref" href="GrxCAD.GraphicsInterface.GIRasterImage.html">GIRasterImage</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.GIRasterImage.html">GIRasterImage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_Crop_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.Crop*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_Crop_System_UInt32_System_UInt32_System_UInt32_System_UInt32_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.Crop(System.UInt32,System.UInt32,System.UInt32,System.UInt32)">
+  Crop(uint, uint, uint, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GIRasterImage Crop(uint x, uint y, uint width, uint height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.GIRasterImage.html">GIRasterImage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_DefaultResolution_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.DefaultResolution*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_DefaultResolution_System_Double_System_Double_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.DefaultResolution(System.Double,System.Double)">
+  DefaultResolution(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Units DefaultResolution(double xPelsPerUnit, double yPelsPerUnit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>xPelsPerUnit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>yPelsPerUnit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.Units.html">Units</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_DeleteUnmanagedObject_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.DeleteUnmanagedObject*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_DeleteUnmanagedObject" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.DeleteUnmanagedObject">
+  DeleteUnmanagedObject()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DeleteUnmanagedObject()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_PaletteData_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.PaletteData*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_PaletteData" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.PaletteData">
+  PaletteData()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] PaletteData()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_ScanLines_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.ScanLines*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_ScanLines" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.ScanLines">
+  ScanLines()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] ScanLines()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_ScanLines_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.ScanLines*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_ScanLines_System_Int32_System_Int32_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.ScanLines(System.Int32,System.Int32)">
+  ScanLines(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] ScanLines(int firstScanline, int numLines)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>firstScanline</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>numLines</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_getColor_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.getColor*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_getColor_System_UInt32_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.getColor(System.UInt32)">
+  getColor(uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color getColor(uint colorIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>colorIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_GIRasterImage_pixelFormat_" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.pixelFormat*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_GIRasterImage_pixelFormat" data-uid="GrxCAD.GraphicsInterface.GIRasterImage.pixelFormat">
+  pixelFormat()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PixelFormatInfo pixelFormat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.PixelFormatInfo.html">PixelFormatInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

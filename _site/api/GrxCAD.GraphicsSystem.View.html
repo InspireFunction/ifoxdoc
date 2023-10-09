@@ -1,0 +1,3160 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class View
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class View
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GrxCAD.GraphicsSystem.View">
+
+
+
+  <h1 id="GrxCAD_GraphicsSystem_View" data-uid="GrxCAD.GraphicsSystem.View" class="text-break">
+    Class View
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GrxCAD.html">GrxCAD</a>.<a class="xref" href="GrxCAD.GraphicsSystem.html">GraphicsSystem</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>gmdb.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;OdGsView&quot;)]
+public class View : RXObject, IDisposable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html">DisposableWrapper</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.RXObject.html">RXObject</a></div>
+      <div><span class="xref">View</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_Create_System_IntPtr_System_Boolean_">RXObject.Create(IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_GetRXClass">RXObject.GetRXClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_Clone">RXObject.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_CompareTo_System_Object_">RXObject.CompareTo(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_CopyFrom_GrxCAD_Runtime_RXObject_">RXObject.CopyFrom(RXObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_GetClass_System_Type_">RXObject.GetClass(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_QueryX_GrxCAD_Runtime_RXClass_">RXObject.QueryX(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_X_GrxCAD_Runtime_RXClass_">RXObject.X(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_m_bAutoDelete">DisposableWrapper.m_bAutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_m_imp">DisposableWrapper.m_imp</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Detach">DisposableWrapper.Detach()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Create_System_Type_System_IntPtr_System_Boolean_">DisposableWrapper.Create(Type, IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Equals_System_Object_">DisposableWrapper.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_GetHashCode">DisposableWrapper.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Dispose_System_Boolean_">DisposableWrapper.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Dispose">DisposableWrapper.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_UnmanagedObject">DisposableWrapper.UnmanagedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_IsDisposed">DisposableWrapper.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_AutoDelete">DisposableWrapper.AutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone">MarshalByRefObject.MemberwiseClone(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref">MarshalByRefObject.CreateObjRef(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GrxCAD_GraphicsSystem_View__ctor_" data-uid="GrxCAD.GraphicsSystem.View.#ctor*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View__ctor" data-uid="GrxCAD.GraphicsSystem.View.#ctor">
+  View()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public View()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View__ctor_" data-uid="GrxCAD.GraphicsSystem.View.#ctor*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View__ctor_GrxCAD_GraphicsSystem_ClientViewInfo_System_Boolean_" data-uid="GrxCAD.GraphicsSystem.View.#ctor(GrxCAD.GraphicsSystem.ClientViewInfo,System.Boolean)">
+  View(ClientViewInfo, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public View(ClientViewInfo clientViewInfo, bool enableLayerVisibilityPerView)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clientViewInfo</code> <a class="xref" href="GrxCAD.GraphicsSystem.ClientViewInfo.html">ClientViewInfo</a></dt>
+    <dd></dd>
+    <dt><code>enableLayerVisibilityPerView</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View__ctor_" data-uid="GrxCAD.GraphicsSystem.View.#ctor*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View__ctor_System_IntPtr_System_Boolean_" data-uid="GrxCAD.GraphicsSystem.View.#ctor(System.IntPtr,System.Boolean)">
+  View(IntPtr, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected View(IntPtr unmanagedPointer, bool autoDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unmanagedPointer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View__ctor_" data-uid="GrxCAD.GraphicsSystem.View.#ctor*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View__ctor_System_IntPtr_System_Boolean_System_Boolean_" data-uid="GrxCAD.GraphicsSystem.View.#ctor(System.IntPtr,System.Boolean,System.Boolean)">
+  View(IntPtr, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public View(IntPtr unmanagedPointer, bool autoDelete, bool autoCADView)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unmanagedPointer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>autoCADView</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GrxCAD_GraphicsSystem_View_BackClip_" data-uid="GrxCAD.GraphicsSystem.View.BackClip*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_BackClip" data-uid="GrxCAD.GraphicsSystem.View.BackClip">
+  BackClip
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double BackClip { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_BackgroundId_" data-uid="GrxCAD.GraphicsSystem.View.BackgroundId*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_BackgroundId" data-uid="GrxCAD.GraphicsSystem.View.BackgroundId">
+  BackgroundId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId BackgroundId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_ClearColor_" data-uid="GrxCAD.GraphicsSystem.View.ClearColor*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_ClearColor" data-uid="GrxCAD.GraphicsSystem.View.ClearColor">
+  ClearColor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ClearColor ClearColor { set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsSystem.ClearColor.html">ClearColor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_ClientViewInfo_" data-uid="GrxCAD.GraphicsSystem.View.ClientViewInfo*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_ClientViewInfo" data-uid="GrxCAD.GraphicsSystem.View.ClientViewInfo">
+  ClientViewInfo
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ClientViewInfo ClientViewInfo { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsSystem.ClientViewInfo.html">ClientViewInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_Device_" data-uid="GrxCAD.GraphicsSystem.View.Device*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_Device" data-uid="GrxCAD.GraphicsSystem.View.Device">
+  Device
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Device Device { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsSystem.Device.html">Device</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_EnableBackClip_" data-uid="GrxCAD.GraphicsSystem.View.EnableBackClip*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_EnableBackClip" data-uid="GrxCAD.GraphicsSystem.View.EnableBackClip">
+  EnableBackClip
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool EnableBackClip { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_EnableFrontClip_" data-uid="GrxCAD.GraphicsSystem.View.EnableFrontClip*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_EnableFrontClip" data-uid="GrxCAD.GraphicsSystem.View.EnableFrontClip">
+  EnableFrontClip
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool EnableFrontClip { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_EnableStereo_" data-uid="GrxCAD.GraphicsSystem.View.EnableStereo*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_EnableStereo" data-uid="GrxCAD.GraphicsSystem.View.EnableStereo">
+  EnableStereo
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool EnableStereo { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_ExceededBounds_" data-uid="GrxCAD.GraphicsSystem.View.ExceededBounds*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_ExceededBounds" data-uid="GrxCAD.GraphicsSystem.View.ExceededBounds">
+  ExceededBounds
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool ExceededBounds { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_FieldHeight_" data-uid="GrxCAD.GraphicsSystem.View.FieldHeight*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_FieldHeight" data-uid="GrxCAD.GraphicsSystem.View.FieldHeight">
+  FieldHeight
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double FieldHeight { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_FieldWidth_" data-uid="GrxCAD.GraphicsSystem.View.FieldWidth*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_FieldWidth" data-uid="GrxCAD.GraphicsSystem.View.FieldWidth">
+  FieldWidth
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double FieldWidth { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_FrontClip_" data-uid="GrxCAD.GraphicsSystem.View.FrontClip*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_FrontClip" data-uid="GrxCAD.GraphicsSystem.View.FrontClip">
+  FrontClip
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double FrontClip { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_IsInteractive_" data-uid="GrxCAD.GraphicsSystem.View.IsInteractive*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_IsInteractive" data-uid="GrxCAD.GraphicsSystem.View.IsInteractive">
+  IsInteractive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInteractive { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_IsPerspective_" data-uid="GrxCAD.GraphicsSystem.View.IsPerspective*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_IsPerspective" data-uid="GrxCAD.GraphicsSystem.View.IsPerspective">
+  IsPerspective
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsPerspective { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_IsValid_" data-uid="GrxCAD.GraphicsSystem.View.IsValid*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_IsValid" data-uid="GrxCAD.GraphicsSystem.View.IsValid">
+  IsValid
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsValid { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_IsVisible_" data-uid="GrxCAD.GraphicsSystem.View.IsVisible*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_IsVisible" data-uid="GrxCAD.GraphicsSystem.View.IsVisible">
+  IsVisible
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsVisible { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_LensLength_" data-uid="GrxCAD.GraphicsSystem.View.LensLength*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_LensLength" data-uid="GrxCAD.GraphicsSystem.View.LensLength">
+  LensLength
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double LensLength { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_LinetypeScaleMultiplier_" data-uid="GrxCAD.GraphicsSystem.View.LinetypeScaleMultiplier*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_LinetypeScaleMultiplier" data-uid="GrxCAD.GraphicsSystem.View.LinetypeScaleMultiplier">
+  LinetypeScaleMultiplier
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double LinetypeScaleMultiplier { set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_LineweightToDcScale_" data-uid="GrxCAD.GraphicsSystem.View.LineweightToDcScale*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_LineweightToDcScale" data-uid="GrxCAD.GraphicsSystem.View.LineweightToDcScale">
+  LineweightToDcScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double LineweightToDcScale { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_Mode_" data-uid="GrxCAD.GraphicsSystem.View.Mode*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_Mode" data-uid="GrxCAD.GraphicsSystem.View.Mode">
+  Mode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RenderMode Mode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsSystem.RenderMode.html">RenderMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_ObjectToDeviceMatrix_" data-uid="GrxCAD.GraphicsSystem.View.ObjectToDeviceMatrix*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_ObjectToDeviceMatrix" data-uid="GrxCAD.GraphicsSystem.View.ObjectToDeviceMatrix">
+  ObjectToDeviceMatrix
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Matrix3d ObjectToDeviceMatrix { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_Position_" data-uid="GrxCAD.GraphicsSystem.View.Position*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_Position" data-uid="GrxCAD.GraphicsSystem.View.Position">
+  Position
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Point3d Position { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_ProjectionMatrix_" data-uid="GrxCAD.GraphicsSystem.View.ProjectionMatrix*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_ProjectionMatrix" data-uid="GrxCAD.GraphicsSystem.View.ProjectionMatrix">
+  ProjectionMatrix
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Matrix3d ProjectionMatrix { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_ScreenMatrix_" data-uid="GrxCAD.GraphicsSystem.View.ScreenMatrix*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_ScreenMatrix" data-uid="GrxCAD.GraphicsSystem.View.ScreenMatrix">
+  ScreenMatrix
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Matrix3d ScreenMatrix { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_StereoParameters_" data-uid="GrxCAD.GraphicsSystem.View.StereoParameters*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_StereoParameters" data-uid="GrxCAD.GraphicsSystem.View.StereoParameters">
+  StereoParameters
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual StereoParameters StereoParameters { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsSystem.StereoParameters.html">StereoParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_Target_" data-uid="GrxCAD.GraphicsSystem.View.Target*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_Target" data-uid="GrxCAD.GraphicsSystem.View.Target">
+  Target
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Point3d Target { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_UpVector_" data-uid="GrxCAD.GraphicsSystem.View.UpVector*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_UpVector" data-uid="GrxCAD.GraphicsSystem.View.UpVector">
+  UpVector
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Vector3d UpVector { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_UserGiContext_" data-uid="GrxCAD.GraphicsSystem.View.UserGiContext*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_UserGiContext" data-uid="GrxCAD.GraphicsSystem.View.UserGiContext">
+  UserGiContext
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Context UserGiContext { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.Context.html">Context</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_ViewingMatrix_" data-uid="GrxCAD.GraphicsSystem.View.ViewingMatrix*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_ViewingMatrix" data-uid="GrxCAD.GraphicsSystem.View.ViewingMatrix">
+  ViewingMatrix
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Matrix3d ViewingMatrix { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_Viewport_" data-uid="GrxCAD.GraphicsSystem.View.Viewport*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_Viewport" data-uid="GrxCAD.GraphicsSystem.View.Viewport">
+  Viewport
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rectangle Viewport { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectangle">Rectangle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_ViewportBorderProperties_" data-uid="GrxCAD.GraphicsSystem.View.ViewportBorderProperties*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_ViewportBorderProperties" data-uid="GrxCAD.GraphicsSystem.View.ViewportBorderProperties">
+  ViewportBorderProperties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ViewportBorderProperties ViewportBorderProperties { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsSystem.ViewportBorderProperties.html">ViewportBorderProperties</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_ViewportBorderVisibility_" data-uid="GrxCAD.GraphicsSystem.View.ViewportBorderVisibility*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_ViewportBorderVisibility" data-uid="GrxCAD.GraphicsSystem.View.ViewportBorderVisibility">
+  ViewportBorderVisibility
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool ViewportBorderVisibility { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_ViewportClipRegion_" data-uid="GrxCAD.GraphicsSystem.View.ViewportClipRegion*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_ViewportClipRegion" data-uid="GrxCAD.GraphicsSystem.View.ViewportClipRegion">
+  ViewportClipRegion
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Point2dCollection[] ViewportClipRegion { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Point2dCollection.html">Point2dCollection</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_ViewportD_" data-uid="GrxCAD.GraphicsSystem.View.ViewportD*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_ViewportD" data-uid="GrxCAD.GraphicsSystem.View.ViewportD">
+  ViewportD
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Extents2d ViewportD { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.Extents2d.html">Extents2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_VisualStyle_" data-uid="GrxCAD.GraphicsSystem.View.VisualStyle*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_VisualStyle" data-uid="GrxCAD.GraphicsSystem.View.VisualStyle">
+  VisualStyle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VisualStyle VisualStyle { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.VisualStyle.html">VisualStyle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_VisualStyleId_" data-uid="GrxCAD.GraphicsSystem.View.VisualStyleId*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_VisualStyleId" data-uid="GrxCAD.GraphicsSystem.View.VisualStyleId">
+  VisualStyleId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId VisualStyleId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_WorldToDeviceMatrix_" data-uid="GrxCAD.GraphicsSystem.View.WorldToDeviceMatrix*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_WorldToDeviceMatrix" data-uid="GrxCAD.GraphicsSystem.View.WorldToDeviceMatrix">
+  WorldToDeviceMatrix
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Matrix3d WorldToDeviceMatrix { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GrxCAD_GraphicsSystem_View_Add_" data-uid="GrxCAD.GraphicsSystem.View.Add*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_Add_GrxCAD_GraphicsInterface_Drawable_" data-uid="GrxCAD.GraphicsSystem.View.Add(GrxCAD.GraphicsInterface.Drawable)">
+  Add(Drawable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Add(Drawable drawable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>drawable</code> <a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html">Drawable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_Add_" data-uid="GrxCAD.GraphicsSystem.View.Add*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_Add_GrxCAD_GraphicsInterface_Drawable_GrxCAD_GraphicsSystem_Model_" data-uid="GrxCAD.GraphicsSystem.View.Add(GrxCAD.GraphicsInterface.Drawable,GrxCAD.GraphicsSystem.Model)">
+  Add(Drawable, Model)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Add(Drawable drawable, Model model)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>drawable</code> <a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html">Drawable</a></dt>
+    <dd></dd>
+    <dt><code>model</code> <a class="xref" href="GrxCAD.GraphicsSystem.Model.html">Model</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_BeginInteractivity_" data-uid="GrxCAD.GraphicsSystem.View.BeginInteractivity*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_BeginInteractivity_System_Double_" data-uid="GrxCAD.GraphicsSystem.View.BeginInteractivity(System.Double)">
+  BeginInteractivity(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void BeginInteractivity(double frameRateInHz)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frameRateInHz</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_ClearFrozenLayers_" data-uid="GrxCAD.GraphicsSystem.View.ClearFrozenLayers*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_ClearFrozenLayers" data-uid="GrxCAD.GraphicsSystem.View.ClearFrozenLayers">
+  ClearFrozenLayers()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ClearFrozenLayers()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_CloneView_" data-uid="GrxCAD.GraphicsSystem.View.CloneView*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_CloneView" data-uid="GrxCAD.GraphicsSystem.View.CloneView">
+  CloneView()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public View CloneView()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsSystem.View.html">View</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_CloneView_" data-uid="GrxCAD.GraphicsSystem.View.CloneView*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_CloneView_System_Boolean_" data-uid="GrxCAD.GraphicsSystem.View.CloneView(System.Boolean)">
+  CloneView(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public View CloneView(bool cloneViewParameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cloneViewParameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsSystem.View.html">View</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_CloneView_" data-uid="GrxCAD.GraphicsSystem.View.CloneView*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_CloneView_System_Boolean_System_Boolean_" data-uid="GrxCAD.GraphicsSystem.View.CloneView(System.Boolean,System.Boolean)">
+  CloneView(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public View CloneView(bool cloneViewParameters, bool cloneGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cloneViewParameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>cloneGeometry</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsSystem.View.html">View</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_Create_" data-uid="GrxCAD.GraphicsSystem.View.Create*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_Create_System_IntPtr_System_Boolean_System_Boolean_" data-uid="GrxCAD.GraphicsSystem.View.Create(System.IntPtr,System.Boolean,System.Boolean)">
+  Create(IntPtr, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static View Create(IntPtr unmanagedPointer, bool autoDelete, bool autoCADView)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unmanagedPointer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>autoCADView</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsSystem.View.html">View</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_DeleteUnmanagedObject_" data-uid="GrxCAD.GraphicsSystem.View.DeleteUnmanagedObject*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_DeleteUnmanagedObject" data-uid="GrxCAD.GraphicsSystem.View.DeleteUnmanagedObject">
+  DeleteUnmanagedObject()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DeleteUnmanagedObject()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_Dolly_" data-uid="GrxCAD.GraphicsSystem.View.Dolly*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_Dolly_GrxCAD_Geometry_Vector3d_" data-uid="GrxCAD.GraphicsSystem.View.Dolly(GrxCAD.Geometry.Vector3d)">
+  Dolly(Vector3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Dolly(Vector3d dollyVector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dollyVector</code> <a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_Dolly_" data-uid="GrxCAD.GraphicsSystem.View.Dolly*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_Dolly_System_Double_System_Double_System_Double_" data-uid="GrxCAD.GraphicsSystem.View.Dolly(System.Double,System.Double,System.Double)">
+  Dolly(double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Dolly(double xDolly, double yDolly, double zDolly)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>xDolly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>yDolly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>zDolly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_EnableDefaultLighting_" data-uid="GrxCAD.GraphicsSystem.View.EnableDefaultLighting*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_EnableDefaultLighting_System_Boolean_" data-uid="GrxCAD.GraphicsSystem.View.EnableDefaultLighting(System.Boolean)">
+  EnableDefaultLighting(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableDefaultLighting(bool bEnable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bEnable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_EnableDefaultLighting_" data-uid="GrxCAD.GraphicsSystem.View.EnableDefaultLighting*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_EnableDefaultLighting_System_Boolean_GrxCAD_GraphicsInterface_DefaultLightingType_" data-uid="GrxCAD.GraphicsSystem.View.EnableDefaultLighting(System.Boolean,GrxCAD.GraphicsInterface.DefaultLightingType)">
+  EnableDefaultLighting(bool, DefaultLightingType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableDefaultLighting(bool bEnable, DefaultLightingType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bEnable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="GrxCAD.GraphicsInterface.DefaultLightingType.html">DefaultLightingType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_EndInteractivity_" data-uid="GrxCAD.GraphicsSystem.View.EndInteractivity*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_EndInteractivity" data-uid="GrxCAD.GraphicsSystem.View.EndInteractivity">
+  EndInteractivity()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void EndInteractivity()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_Erase_" data-uid="GrxCAD.GraphicsSystem.View.Erase*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_Erase_GrxCAD_GraphicsInterface_Drawable_" data-uid="GrxCAD.GraphicsSystem.View.Erase(GrxCAD.GraphicsInterface.Drawable)">
+  Erase(Drawable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Erase(Drawable sceneGraph)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sceneGraph</code> <a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html">Drawable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_EraseAll_" data-uid="GrxCAD.GraphicsSystem.View.EraseAll*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_EraseAll" data-uid="GrxCAD.GraphicsSystem.View.EraseAll">
+  EraseAll()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void EraseAll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_ExtentsInView_" data-uid="GrxCAD.GraphicsSystem.View.ExtentsInView*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_ExtentsInView_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Point3d_" data-uid="GrxCAD.GraphicsSystem.View.ExtentsInView(GrxCAD.Geometry.Point3d,GrxCAD.Geometry.Point3d)">
+  ExtentsInView(Point3d, Point3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ExtentsInView(Point3d minPoint, Point3d maxPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minPoint</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>maxPoint</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_Flush_" data-uid="GrxCAD.GraphicsSystem.View.Flush*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_Flush" data-uid="GrxCAD.GraphicsSystem.View.Flush">
+  Flush()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Flush()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_FreezeLayer_" data-uid="GrxCAD.GraphicsSystem.View.FreezeLayer*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_FreezeLayer_System_IntPtr_" data-uid="GrxCAD.GraphicsSystem.View.FreezeLayer(System.IntPtr)">
+  FreezeLayer(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void FreezeLayer(IntPtr layerID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layerID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_GetNumPixelsInUnitSquare_" data-uid="GrxCAD.GraphicsSystem.View.GetNumPixelsInUnitSquare*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_GetNumPixelsInUnitSquare_GrxCAD_Geometry_Point3d_" data-uid="GrxCAD.GraphicsSystem.View.GetNumPixelsInUnitSquare(GrxCAD.Geometry.Point3d)">
+  GetNumPixelsInUnitSquare(Point3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d GetNumPixelsInUnitSquare(Point3d givenWorldpt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>givenWorldpt</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_GetNumPixelsInUnitSquare_" data-uid="GrxCAD.GraphicsSystem.View.GetNumPixelsInUnitSquare*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_GetNumPixelsInUnitSquare_GrxCAD_Geometry_Point3d_System_Boolean_" data-uid="GrxCAD.GraphicsSystem.View.GetNumPixelsInUnitSquare(GrxCAD.Geometry.Point3d,System.Boolean)">
+  GetNumPixelsInUnitSquare(Point3d, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d GetNumPixelsInUnitSquare(Point3d givenWorldpt, bool includePerspective)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>givenWorldpt</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>includePerspective</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_GetSnapshot_" data-uid="GrxCAD.GraphicsSystem.View.GetSnapshot*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_GetSnapshot_System_Drawing_Rectangle_" data-uid="GrxCAD.GraphicsSystem.View.GetSnapshot(System.Drawing.Rectangle)">
+  GetSnapshot(Rectangle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bitmap GetSnapshot(Rectangle rectangle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rectangle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectangle">Rectangle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.bitmap">Bitmap</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_Hide_" data-uid="GrxCAD.GraphicsSystem.View.Hide*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_Hide" data-uid="GrxCAD.GraphicsSystem.View.Hide">
+  Hide()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Hide()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_InitLights_" data-uid="GrxCAD.GraphicsSystem.View.InitLights*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_InitLights_System_Collections_IEnumerator_" data-uid="GrxCAD.GraphicsSystem.View.InitLights(System.Collections.IEnumerator)">
+  InitLights(IEnumerator)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void InitLights(IEnumerator pLightsIterator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pLightsIterator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_Invalidate_" data-uid="GrxCAD.GraphicsSystem.View.Invalidate*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_Invalidate" data-uid="GrxCAD.GraphicsSystem.View.Invalidate">
+  Invalidate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Invalidate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_Invalidate_" data-uid="GrxCAD.GraphicsSystem.View.Invalidate*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_Invalidate_System_Drawing_Rectangle_" data-uid="GrxCAD.GraphicsSystem.View.Invalidate(System.Drawing.Rectangle)">
+  Invalidate(Rectangle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Invalidate(Rectangle screenRect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>screenRect</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectangle">Rectangle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_InvalidateCachedViewportGeometry_" data-uid="GrxCAD.GraphicsSystem.View.InvalidateCachedViewportGeometry*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_InvalidateCachedViewportGeometry" data-uid="GrxCAD.GraphicsSystem.View.InvalidateCachedViewportGeometry">
+  InvalidateCachedViewportGeometry()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void InvalidateCachedViewportGeometry()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_Orbit_" data-uid="GrxCAD.GraphicsSystem.View.Orbit*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_Orbit_System_Double_System_Double_" data-uid="GrxCAD.GraphicsSystem.View.Orbit(System.Double,System.Double)">
+  Orbit(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Orbit(double xOrbit, double yOrbit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>xOrbit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>yOrbit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_Pan_" data-uid="GrxCAD.GraphicsSystem.View.Pan*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_Pan_System_Double_System_Double_" data-uid="GrxCAD.GraphicsSystem.View.Pan(System.Double,System.Double)">
+  Pan(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Pan(double xPan, double yPan)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>xPan</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>yPan</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_PointInView_" data-uid="GrxCAD.GraphicsSystem.View.PointInView*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_PointInView_GrxCAD_Geometry_Point3d_" data-uid="GrxCAD.GraphicsSystem.View.PointInView(GrxCAD.Geometry.Point3d)">
+  PointInView(Point3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PointInView(Point3d point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_PointInViewport_" data-uid="GrxCAD.GraphicsSystem.View.PointInViewport*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_PointInViewport_GrxCAD_Geometry_Point2d_" data-uid="GrxCAD.GraphicsSystem.View.PointInViewport(GrxCAD.Geometry.Point2d)">
+  PointInViewport(Point2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool PointInViewport(Point2d screenPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>screenPoint</code> <a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_RemoveViewportClipRegion_" data-uid="GrxCAD.GraphicsSystem.View.RemoveViewportClipRegion*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_RemoveViewportClipRegion" data-uid="GrxCAD.GraphicsSystem.View.RemoveViewportClipRegion">
+  RemoveViewportClipRegion()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RemoveViewportClipRegion()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_RenderToImage_" data-uid="GrxCAD.GraphicsSystem.View.RenderToImage*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_RenderToImage" data-uid="GrxCAD.GraphicsSystem.View.RenderToImage">
+  RenderToImage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bitmap RenderToImage()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.bitmap">Bitmap</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_RenderToImage_" data-uid="GrxCAD.GraphicsSystem.View.RenderToImage*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_RenderToImage_GrxCAD_GraphicsInterface_Drawable_System_Drawing_Rectangle_" data-uid="GrxCAD.GraphicsSystem.View.RenderToImage(GrxCAD.GraphicsInterface.Drawable,System.Drawing.Rectangle)">
+  RenderToImage(Drawable, Rectangle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bitmap RenderToImage(Drawable settings, Rectangle rectScreen)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settings</code> <a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html">Drawable</a></dt>
+    <dd></dd>
+    <dt><code>rectScreen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectangle">Rectangle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.bitmap">Bitmap</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_Roll_" data-uid="GrxCAD.GraphicsSystem.View.Roll*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_Roll_System_Double_" data-uid="GrxCAD.GraphicsSystem.View.Roll(System.Double)">
+  Roll(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Roll(double rollAngle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rollAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_Select_" data-uid="GrxCAD.GraphicsSystem.View.Select*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_Select_GrxCAD_Geometry_Point2dCollection_GrxCAD_GraphicsSystem_SelectionReactor_GrxCAD_GraphicsSystem_SelectionMode_" data-uid="GrxCAD.GraphicsSystem.View.Select(GrxCAD.Geometry.Point2dCollection,GrxCAD.GraphicsSystem.SelectionReactor,GrxCAD.GraphicsSystem.SelectionMode)">
+  Select(Point2dCollection, SelectionReactor, SelectionMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Select(Point2dCollection pts, SelectionReactor pReactor, SelectionMode mode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pts</code> <a class="xref" href="GrxCAD.Geometry.Point2dCollection.html">Point2dCollection</a></dt>
+    <dd></dd>
+    <dt><code>pReactor</code> <a class="xref" href="GrxCAD.GraphicsSystem.SelectionReactor.html">SelectionReactor</a></dt>
+    <dd></dd>
+    <dt><code>mode</code> <a class="xref" href="GrxCAD.GraphicsSystem.SelectionMode.html">SelectionMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_SetLineweights_" data-uid="GrxCAD.GraphicsSystem.View.SetLineweights*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_SetLineweights_System_Byte___" data-uid="GrxCAD.GraphicsSystem.View.SetLineweights(System.Byte[])">
+  SetLineweights(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetLineweights(byte[] lineweights)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lineweights</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_SetView_" data-uid="GrxCAD.GraphicsSystem.View.SetView*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_SetView_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Vector3d_System_Double_System_Double_" data-uid="GrxCAD.GraphicsSystem.View.SetView(GrxCAD.Geometry.Point3d,GrxCAD.Geometry.Point3d,GrxCAD.Geometry.Vector3d,System.Double,System.Double)">
+  SetView(Point3d, Point3d, Vector3d, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetView(Point3d position, Point3d target, Vector3d upVector, double fieldWidth, double fieldHeight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>target</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>upVector</code> <a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+    <dt><code>fieldWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>fieldHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_SetView_" data-uid="GrxCAD.GraphicsSystem.View.SetView*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_SetView_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Vector3d_System_Double_System_Double_GrxCAD_GraphicsSystem_Projection_" data-uid="GrxCAD.GraphicsSystem.View.SetView(GrxCAD.Geometry.Point3d,GrxCAD.Geometry.Point3d,GrxCAD.Geometry.Vector3d,System.Double,System.Double,GrxCAD.GraphicsSystem.Projection)">
+  SetView(Point3d, Point3d, Vector3d, double, double, Projection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetView(Point3d position, Point3d target, Vector3d upVector, double fieldWidth, double fieldHeight, Projection projection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>target</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>upVector</code> <a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+    <dt><code>fieldWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>fieldHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>projection</code> <a class="xref" href="GrxCAD.GraphicsSystem.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_SetViewportClipRegion_" data-uid="GrxCAD.GraphicsSystem.View.SetViewportClipRegion*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_SetViewportClipRegion_System_Int32_System_Int32___GrxCAD_Geometry_Point2dCollection___" data-uid="GrxCAD.GraphicsSystem.View.SetViewportClipRegion(System.Int32,System.Int32[],GrxCAD.Geometry.Point2dCollection[])">
+  SetViewportClipRegion(int, int[], Point2dCollection[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetViewportClipRegion(int contours, int[] counts, Point2dCollection[] points)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>contours</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>counts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+    <dt><code>points</code> <a class="xref" href="GrxCAD.Geometry.Point2dCollection.html">Point2dCollection</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_Show_" data-uid="GrxCAD.GraphicsSystem.View.Show*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_Show" data-uid="GrxCAD.GraphicsSystem.View.Show">
+  Show()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Show()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_ThawLayer_" data-uid="GrxCAD.GraphicsSystem.View.ThawLayer*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_ThawLayer_System_Int32_" data-uid="GrxCAD.GraphicsSystem.View.ThawLayer(System.Int32)">
+  ThawLayer(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ThawLayer(int layerID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layerID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_ThawLayer_" data-uid="GrxCAD.GraphicsSystem.View.ThawLayer*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_ThawLayer_System_IntPtr_" data-uid="GrxCAD.GraphicsSystem.View.ThawLayer(System.IntPtr)">
+  ThawLayer(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ThawLayer(IntPtr layerID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layerID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_Update_" data-uid="GrxCAD.GraphicsSystem.View.Update*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_Update" data-uid="GrxCAD.GraphicsSystem.View.Update">
+  Update()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_ViewParameters_" data-uid="GrxCAD.GraphicsSystem.View.ViewParameters*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_ViewParameters_GrxCAD_GraphicsSystem_View_" data-uid="GrxCAD.GraphicsSystem.View.ViewParameters(GrxCAD.GraphicsSystem.View)">
+  ViewParameters(View)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ViewParameters(View pView)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pView</code> <a class="xref" href="GrxCAD.GraphicsSystem.View.html">View</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_Zoom_" data-uid="GrxCAD.GraphicsSystem.View.Zoom*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_Zoom_System_Double_" data-uid="GrxCAD.GraphicsSystem.View.Zoom(System.Double)">
+  Zoom(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Zoom(double zoomFactor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>zoomFactor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_ZoomExtents_" data-uid="GrxCAD.GraphicsSystem.View.ZoomExtents*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_ZoomExtents_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Point3d_" data-uid="GrxCAD.GraphicsSystem.View.ZoomExtents(GrxCAD.Geometry.Point3d,GrxCAD.Geometry.Point3d)">
+  ZoomExtents(Point3d, Point3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ZoomExtents(Point3d minPoint, Point3d maxPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minPoint</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>maxPoint</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsSystem_View_ZoomWindow_" data-uid="GrxCAD.GraphicsSystem.View.ZoomWindow*"></a>
+
+  <h3 id="GrxCAD_GraphicsSystem_View_ZoomWindow_GrxCAD_Geometry_Point2d_GrxCAD_Geometry_Point2d_" data-uid="GrxCAD.GraphicsSystem.View.ZoomWindow(GrxCAD.Geometry.Point2d,GrxCAD.Geometry.Point2d)">
+  ZoomWindow(Point2d, Point2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ZoomWindow(Point2d lowerLeft, Point2d upperRight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lowerLeft</code> <a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+    <dt><code>upperRight</code> <a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

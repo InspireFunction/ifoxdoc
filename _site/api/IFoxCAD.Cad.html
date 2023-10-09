@@ -1,0 +1,855 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Namespace IFoxCAD.Cad
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace IFoxCAD.Cad
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="IFoxCAD.Cad">
+
+  <h1 id="IFoxCAD_Cad" data-uid="IFoxCAD.Cad" class="text-break">Namespace IFoxCAD.Cad
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.AcadPeInfo.html">AcadPeInfo</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.AcadVersion.html">AcadVersion</a></dt>
+      <dd><p>cad版本号类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.ArcEx.html">ArcEx</a></dt>
+      <dd><p>圆弧扩展类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.AttachmentPointHelper.html">AttachmentPointHelper</a></dt>
+      <dd><p>文字对齐点帮助类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.AutoLoad.html">AutoLoad</a></dt>
+      <dd><p>自动加载和初始化抽象类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.AutoReflection.html">AutoReflection</a></dt>
+      <dd><p>此类作为加载后cad自动运行接口的一部分,用于反射特性和接口</p>
+<p>
+启动cad后的执行顺序为:<br>
+1:<a class="xref" href="IFoxCAD.Cad.IFoxInitialize.html">IFoxInitialize</a>特性..(多个)<br>
+2:<a class="xref" href="IFoxCAD.Cad.IFoxAutoGo.html">IFoxAutoGo</a>接口..(多个)
+</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.AutoReg.html">AutoReg</a></dt>
+      <dd><p>自动加载辅助类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.AutoRegAssem.html">AutoRegAssem</a></dt>
+      <dd><p>注册中心</p>
+<p>
+初始化程序集信息写入注册表并反射<a class="xref" href="IFoxCAD.Cad.IFoxInitialize.html">IFoxInitialize</a>特性和<a class="xref" href="IFoxCAD.Cad.IFoxAutoGo.html">IFoxAutoGo</a>接口<br>
+启动cad后的执行顺序为:<br>
+1:<a class="xref" href="IFoxCAD.Cad.AutoRegAssem.html">AutoRegAssem</a>程序集配置中心构造函数<br>
+2:<a class="xref" href="IFoxCAD.Cad.IFoxInitialize.html">IFoxInitialize</a>特性..(多个)<br>
+3:<a class="xref" href="IFoxCAD.Cad.IFoxAutoGo.html">IFoxAutoGo</a>接口..(多个)<br>
+</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.BitmapTool.html">BitmapTool</a></dt>
+      <dd><p>bitmap工具类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.BlockReferenceEx.html">BlockReferenceEx</a></dt>
+      <dd><p>块参照扩展类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.BulgeVertexWidth.html">BulgeVertexWidth</a></dt>
+      <dd><p>多段线的顶点,凸度,头宽,尾宽</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.CadVersion.html">CadVersion</a></dt>
+      <dd><p>CAD版本</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.CheckFactory.html">CheckFactory</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.CircleEx.html">CircleEx</a></dt>
+      <dd><p>圆扩展类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.ClipTool.html">ClipTool</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.ClipboardEnv.html">ClipboardEnv</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.CollectionEx.html">CollectionEx</a></dt>
+      <dd><p>集合扩展类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.Curve2dEx.html">Curve2dEx</a></dt>
+      <dd><p>二维解析类曲线转换为二维实体曲线扩展类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.Curve3dEx.html">Curve3dEx</a></dt>
+      <dd><p>三维解析类曲线转换为三维实体曲线扩展类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.CurveEx.html">CurveEx</a></dt>
+      <dd><p>实体类曲线扩展类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.DBDictionaryEx.html">DBDictionaryEx</a></dt>
+      <dd><p>字典扩展类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.DBObjectEx.html">DBObjectEx</a></dt>
+      <dd><p>实体对象扩展类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.DBObjectEx.UpgradeOpenManager.html">DBObjectEx.UpgradeOpenManager</a></dt>
+      <dd><p>提权类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.DBTextEx.html">DBTextEx</a></dt>
+      <dd><p>单行文字扩展类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.DBTrans.html">DBTrans</a></dt>
+      <dd><p>事务栈</p>
+<p>隐匿事务在数据库其中担任的角色</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.DBTransEx.html">DBTransEx</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.DBmodEx.html">DBmodEx</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.DatabaseEx.html">DatabaseEx</a></dt>
+      <dd><p>数据库扩展函数</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.DepthFirst.html">DepthFirst</a></dt>
+      <dd><p>深度优先搜索;</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.DosHeader.html">DosHeader</a></dt>
+      <dd><p>DOS文件都MS开始</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.DosStub.html">DosStub</a></dt>
+      <dd><p>DOS程序 提示</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.DwgMark.html">DwgMark</a></dt>
+      <dd><p>为dwg文件添加标记</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.EditorEx.html">EditorEx</a></dt>
+      <dd><p>命令行扩展类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.Emf.html">Emf</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.EmfTool.html">EmfTool</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.EntityBoundingInfo.html">EntityBoundingInfo</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.EntityEx.html">EntityEx</a></dt>
+      <dd><p>实体图元扩展类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.Env.html">Env</a></dt>
+      <dd><p>系统管理类</p>
+<p>
+封装了一些系统 osmode;cmdecho;dimblk 系统变量<br>
+封装了常用的 文档 编辑器 数据库等对象为静态变量<br>
+封装了配置页面的注册表信息获取函数
+</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.ErrorInfoEx.html">ErrorInfoEx</a></dt>
+      <dd><p>CAD错误大全</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.ExportDirectory.html">ExportDirectory</a></dt>
+      <dd><p>输出表</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.GeometryEx.html">GeometryEx</a></dt>
+      <dd><p>图形扩展类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.GetPeMethodException.html">GetPeMethodException</a></dt>
+      <dd><p>错误信息</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.Graph.html">Graph</a></dt>
+      <dd><p>无权无向图实现
+IEnumerable 枚举所有顶点;</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.GraphEdge.html">GraphEdge</a></dt>
+      <dd><p>无向图中边的定义</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.GraphVertex.html">GraphVertex</a></dt>
+      <dd><p>邻接表图实现的顶点;
+IEnumerable 枚举所有邻接点;</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.HatchConverter.html">HatchConverter</a></dt>
+      <dd><p>填充边界转换器</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.HatchEx.html">HatchEx</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.HatchInfo.html">HatchInfo</a></dt>
+      <dd><p>图案填充</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.IFoxInitialize.html">IFoxInitialize</a></dt>
+      <dd><p>加载时自动执行特性</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.IdleAction.html">IdleAction</a></dt>
+      <dd><p>空闲执行
+by DYH
+20230114</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.ImportDirectory.html">ImportDirectory</a></dt>
+      <dd><p>输入表</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.ImportDirectory.ImportDate.html">ImportDirectory.ImportDate</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.ImportDirectory.ImportDate.FunctionList.html">ImportDirectory.ImportDate.FunctionList</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.JigEx.html">JigEx</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.JigExTransient.html">JigExTransient</a></dt>
+      <dd><p>瞬态容器</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.LispDottedPair.html">LispDottedPair</a></dt>
+      <dd><p>lisp点对表的数据封装类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.LispList.html">LispList</a></dt>
+      <dd><p>lisp数据封装类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.MTextEx.html">MTextEx</a></dt>
+      <dd><p>多行文字扩展类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.ObjEx.html">ObjEx</a></dt>
+      <dd><p>对象扩展类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.ObjectIdEx.html">ObjectIdEx</a></dt>
+      <dd><p>对象id扩展类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.OpAnd.html">OpAnd</a></dt>
+      <dd><p>逻辑与类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.OpComp.html">OpComp</a></dt>
+      <dd><p>比较运算符类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.OpEqual.html">OpEqual</a></dt>
+      <dd><p>相等运算符类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.OpFilter.html">OpFilter</a></dt>
+      <dd><p>选择集过滤器抽象类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.OpFilter.Op.html">OpFilter.Op</a></dt>
+      <dd><p>过滤器操作符类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.OpList.html">OpList</a></dt>
+      <dd><p>逻辑操作符的列表抽象类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.OpLogi.html">OpLogi</a></dt>
+      <dd><p>过滤器逻辑运算符抽象类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.OpNot.html">OpNot</a></dt>
+      <dd><p>逻辑非类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.OpOr.html">OpOr</a></dt>
+      <dd><p>逻辑或类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.OpXor.html">OpXor</a></dt>
+      <dd><p>逻辑异或类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.OptionalDirAttrib.html">OptionalDirAttrib</a></dt>
+      <dd><p>目录结构</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.OptionalDirAttrib.DirAttrib.html">OptionalDirAttrib.DirAttrib</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.OptionalHeader.html">OptionalHeader</a></dt>
+      <dd><p>PE头扩展</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.PEHeader.html">PEHeader</a></dt>
+      <dd><p>PE文件头</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.PeFunction.html">PeFunction</a></dt>
+      <dd><p>通过名字查找exe/dll内所有名字</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.PeInfo.html">PeInfo</a></dt>
+      <dd><p>微软软件结构PE信息</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.PlaneEx.html">PlaneEx</a></dt>
+      <dd><p>平面</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.PointEx.html">PointEx</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.PolylineEx.html">PolylineEx</a></dt>
+      <dd><p>多段线扩展类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.PostCmd.html">PostCmd</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.QuadEntity.html">QuadEntity</a></dt>
+      <dd><p>四叉树图元</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.QuadTreeEvn.html">QuadTreeEvn</a></dt>
+      <dd><p>四叉树环境变量</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.QuadTreeNode-1.html">QuadTreeNode&lt;TEntity&gt;</a></dt>
+      <dd><p>子节点</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.QuadTree-1.html">QuadTree&lt;TEntity&gt;</a></dt>
+      <dd><p>根节点控制器</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.Rect.html">Rect</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.RedrawEx.html">RedrawEx</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.ResourceDirectory.html">ResourceDirectory</a></dt>
+      <dd><p>资源表</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.ResourceDirectory.DirectoryEntry.html">ResourceDirectory.DirectoryEntry</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.ResourceDirectory.DirectoryEntry.DataEntry.html">ResourceDirectory.DirectoryEntry.DataEntry</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.SectionTable.html">SectionTable</a></dt>
+      <dd><p>节表</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.SectionTable.SectionData.html">SectionTable.SectionData</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.SelectionSetEx.html">SelectionSetEx</a></dt>
+      <dd><p>选择集扩展类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.SingleKeyWordHook.html">SingleKeyWordHook</a></dt>
+      <dd><p>关键字不需要空格钩子
+By DYH 20230508</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.SwitchDatabase.html">SwitchDatabase</a></dt>
+      <dd><p>自动切换活动数据库</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.SymbolTableEx.html">SymbolTableEx</a></dt>
+      <dd><p>符号表类扩展函数</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.SymbolTableRecordEx.html">SymbolTableRecordEx</a></dt>
+      <dd><p>符号表记录扩展类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.SymbolTable-2.html">SymbolTable&lt;TTable, TRecord&gt;</a></dt>
+      <dd><p>符号表管理类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.TolerancePoint2d.html">TolerancePoint2d</a></dt>
+      <dd><p>Linq Distinct 消重比较两点在容差范围内就去除</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.Tools.html">Tools</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.TransactionEx.html">TransactionEx</a></dt>
+      <dd><p>cad的事务的扩展类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.TypedValueList.html">TypedValueList</a></dt>
+      <dd><p>用于集中管理扩展数据/扩展字典/resultbuffer的类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.VectorEx.html">VectorEx</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.XDataList.html">XDataList</a></dt>
+      <dd><p>扩展数据封装类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.XRecordDataList.html">XRecordDataList</a></dt>
+      <dd><p>扩展字典数据封装类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.XrefEx.html">XrefEx</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.XrefFactory.html">XrefFactory</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.XrefPath.html">XrefPath</a></dt>
+      <dd><p>获取外部参照的路径</p>
+</dd>
+    </dl>
+    <h3 id="structs">
+Structs
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.AssemInfo.html">AssemInfo</a></dt>
+      <dd><p>程序集信息</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.BoundingInfo.html">BoundingInfo</a></dt>
+      <dd><p>AABB和OBB信息</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.EnhMetaHeader.html">EnhMetaHeader</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.MetaFilePict.html">MetaFilePict</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.PlaceableMetaHeader.html">PlaceableMetaHeader</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.StandardMetaRecord.html">StandardMetaRecord</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.TagClipboardInfo.html">TagClipboardInfo</a></dt>
+      <dd><p>ARX剪贴板结构</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.WindowsMetaHeader.html">WindowsMetaHeader</a></dt>
+      <dd></dd>
+    </dl>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.IEdge.html">IEdge</a></dt>
+      <dd><p>无向图边</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.IFoxAutoGo.html">IFoxAutoGo</a></dt>
+      <dd><p>加载时自动执行接口</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.IGraph.html">IGraph</a></dt>
+      <dd><p>无向图</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.IGraphVertex.html">IGraphVertex</a></dt>
+      <dd><p>无向图顶点</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.IXrefBindModes.html">IXrefBindModes</a></dt>
+      <dd></dd>
+    </dl>
+    <h3 id="enums">
+Enums
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.AcadPeEnum.html">AcadPeEnum</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.AssemLoadType.html">AssemLoadType</a></dt>
+      <dd><p>程序集加载类型</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.AutoRegConfig.html">AutoRegConfig</a></dt>
+      <dd><p>注册中心配置信息</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.BitmapTool.TernaryRasterOperations.html">BitmapTool.TernaryRasterOperations</a></dt>
+      <dd><p>A raster-operation code enum</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.BrightEditor.html">BrightEditor</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.BrightEntity.html">BrightEntity</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.ClipboardFormat.html">ClipboardFormat</a></dt>
+      <dd><p>剪贴板的CF,也就是它的key</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.CollectionEx.KeywordName.html">CollectionEx.KeywordName</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.CoordinateSystemCode.html">CoordinateSystemCode</a></dt>
+      <dd><p>坐标系类型枚举</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.DBmod.html">DBmod</a></dt>
+      <dd><p>获取数据库修改状态
+<a href="https://knowledge.autodesk.com/support/autocad/learn-explore/caas/CloudHelp/cloudhelp/2020/ENU/AutoCAD-Core/files/GUID-E255E808-2D48-4BDE-A760-FFEA28E5A86F-htm.html">
+相关链接</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.EditorEx.RunLispFlag.html">EditorEx.RunLispFlag</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.EmfTool.DeviceCap.html">EmfTool.DeviceCap</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.Env.DimblkType.html">Env.DimblkType</a></dt>
+      <dd><p>标注箭头类型</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.Env.OSModeType.html">Env.OSModeType</a></dt>
+      <dd><p>捕捉模式系统变量类型</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.FontTTF.html">FontTTF</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.GetMethodErrorNum.html">GetMethodErrorNum</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.HatchInfo.GradientName.html">HatchInfo.GradientName</a></dt>
+      <dd><p>渐变色填充的图案名称</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.MappingModes.html">MappingModes</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.OrientationType.html">OrientationType</a></dt>
+      <dd><p>方向的枚举</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.PathConverterModes.html">PathConverterModes</a></dt>
+      <dd><p>参照路径转换</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.PointOnRegionType.html">PointOnRegionType</a></dt>
+      <dd><p>点与多边形的关系类型枚举</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.PostCmd.RunCmdFlag.html">PostCmd.RunCmdFlag</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.QuadTreeFindMode.html">QuadTreeFindMode</a></dt>
+      <dd><p>四叉树查找方向</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.QuadTreeSelectMode.html">QuadTreeSelectMode</a></dt>
+      <dd><p>四叉树选择模式</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.Sequence.html">Sequence</a></dt>
+      <dd><p>加载时优先级</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.SymModes.html">SymModes</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.XrefModes.html">XrefModes</a></dt>
+      <dd><p>参照绑定</p>
+</dd>
+    </dl>
+    <h3 id="delegates">
+Delegates
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.QuadTree-1.QTAction.html">QuadTree&lt;TEntity&gt;.QTAction</a></dt>
+      <dd><p>委托:四叉树节点上执行一个操作</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="IFoxCAD.Cad.WorldDrawEvent.html">WorldDrawEvent</a></dt>
+      <dd></dd>
+    </dl>
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

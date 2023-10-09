@@ -1,0 +1,3087 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DimStyleTableRecord
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DimStyleTableRecord
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord">
+
+
+
+  <h1 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord" class="text-break">
+    Class DimStyleTableRecord
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Autodesk.html">Autodesk</a>.<a class="xref" href="Autodesk.AutoCAD.html">AutoCAD</a>.<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.html">DatabaseServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Acdbmgd.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;AcDbDimStyleTableRecord&quot;)]
+public class DimStyleTableRecord : SymbolTableRecord, IDisposable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html">DisposableWrapper</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html">RXObject</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html">Drawable</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html">DBObject</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.SymbolTableRecord.html">SymbolTableRecord</a></div>
+      <div><span class="xref">DimStyleTableRecord</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.SymbolTableRecord.html#Autodesk_AutoCAD_DatabaseServices_SymbolTableRecord_IsResolved">SymbolTableRecord.IsResolved</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.SymbolTableRecord.html#Autodesk_AutoCAD_DatabaseServices_SymbolTableRecord_IsDependent">SymbolTableRecord.IsDependent</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.SymbolTableRecord.html#Autodesk_AutoCAD_DatabaseServices_SymbolTableRecord_Name">SymbolTableRecord.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubSetAttributes_Autodesk_AutoCAD_GraphicsInterface_DrawableTraits_">DBObject.SubSetAttributes(DrawableTraits)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubWorldDraw_Autodesk_AutoCAD_GraphicsInterface_WorldDraw_">DBObject.SubWorldDraw(WorldDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubViewportDraw_Autodesk_AutoCAD_GraphicsInterface_ViewportDraw_">DBObject.SubViewportDraw(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubViewportDrawLogicalFlags_Autodesk_AutoCAD_GraphicsInterface_ViewportDraw_">DBObject.SubViewportDrawLogicalFlags(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DeleteUnmanagedObject">DBObject.DeleteUnmanagedObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DeepClone_Autodesk_AutoCAD_DatabaseServices_DBObject_Autodesk_AutoCAD_DatabaseServices_IdMapping_System_Boolean_">DBObject.DeepClone(DBObject, IdMapping, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_WblockClone_Autodesk_AutoCAD_Runtime_RXObject_Autodesk_AutoCAD_DatabaseServices_IdMapping_System_Boolean_">DBObject.WblockClone(RXObject, IdMapping, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DecomposeForSave_Autodesk_AutoCAD_DatabaseServices_DwgVersion_">DBObject.DecomposeForSave(DwgVersion)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_CreateExtensionDictionary">DBObject.CreateExtensionDictionary()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ReleaseExtensionDictionary">DBObject.ReleaseExtensionDictionary()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_UpgradeOpen">DBObject.UpgradeOpen()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_UpgradeFromNotify">DBObject.UpgradeFromNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DowngradeOpen">DBObject.DowngradeOpen()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DowngradeToNotify_System_Boolean_">DBObject.DowngradeToNotify(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Cancel">DBObject.Cancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Close">DBObject.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_CloseAndPage_System_Boolean_">DBObject.CloseAndPage(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Erase">DBObject.Erase()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Erase_System_Boolean_">DBObject.Erase(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HandOverTo_Autodesk_AutoCAD_DatabaseServices_DBObject_System_Boolean_System_Boolean_">DBObject.HandOverTo(DBObject, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SwapIdWith_Autodesk_AutoCAD_DatabaseServices_ObjectId_System_Boolean_System_Boolean_">DBObject.SwapIdWith(ObjectId, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SwapReferences_Autodesk_AutoCAD_DatabaseServices_IdMapping_">DBObject.SwapReferences(IdMapping)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Audit_Autodesk_AutoCAD_DatabaseServices_AuditInfo_">DBObject.Audit(AuditInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DwgIn_Autodesk_AutoCAD_DatabaseServices_DwgFiler_">DBObject.DwgIn(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DwgOut_Autodesk_AutoCAD_DatabaseServices_DwgFiler_">DBObject.DwgOut(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DxfIn_Autodesk_AutoCAD_DatabaseServices_DxfFiler_">DBObject.DxfIn(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DxfOut_Autodesk_AutoCAD_DatabaseServices_DxfFiler_">DBObject.DxfOut(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_XDataTransformBy_Autodesk_AutoCAD_Geometry_Matrix3d_">DBObject.XDataTransformBy(Matrix3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetXDataForApplication_System_String_">DBObject.GetXDataForApplication(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DisableUndoRecording_System_Boolean_">DBObject.DisableUndoRecording(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ApplyPartialUndo_Autodesk_AutoCAD_DatabaseServices_DwgFiler_Autodesk_AutoCAD_Runtime_RXClass_">DBObject.ApplyPartialUndo(DwgFiler, RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HasPersistentReactor_Autodesk_AutoCAD_DatabaseServices_ObjectId_">DBObject.HasPersistentReactor(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetReactors">DBObject.GetReactors()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetTransientReactors">DBObject.GetTransientReactors()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetPersistentReactorIds">DBObject.GetPersistentReactorIds()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetObjectIdsInFlux">DBObject.SetObjectIdsInFlux()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetObjectSaveVersion_Autodesk_AutoCAD_DatabaseServices_DxfFiler_">DBObject.GetObjectSaveVersion(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetObjectSaveVersion_Autodesk_AutoCAD_DatabaseServices_DwgFiler_">DBObject.GetObjectSaveVersion(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_FromAcadObject_System_Object_">DBObject.FromAcadObject(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsCustomObject_Autodesk_AutoCAD_DatabaseServices_ObjectId_">DBObject.IsCustomObject(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetField_System_String_">DBObject.GetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetField">DBObject.GetField()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetField_System_String_Autodesk_AutoCAD_DatabaseServices_Field_">DBObject.SetField(string, Field)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetField_Autodesk_AutoCAD_DatabaseServices_Field_">DBObject.SetField(Field)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_RemoveField_Autodesk_AutoCAD_DatabaseServices_ObjectId_">DBObject.RemoveField(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_RemoveField_System_String_">DBObject.RemoveField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_RemoveField">DBObject.RemoveField()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetFromStyle">DBObject.SetFromStyle()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ResetScaleDependentProperties">DBObject.ResetScaleDependentProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetPaperOrientation_System_Boolean_">DBObject.SetPaperOrientation(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ApplyPaperOrientationTransform_Autodesk_AutoCAD_DatabaseServices_Viewport_">DBObject.ApplyPaperOrientationTransform(Viewport)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SupportsCollection_System_String_">DBObject.SupportsCollection(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HasContext_Autodesk_AutoCAD_DatabaseServices_ObjectContext_">DBObject.HasContext(ObjectContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_AddContext_Autodesk_AutoCAD_DatabaseServices_ObjectContext_">DBObject.AddContext(ObjectContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_RemoveContext_Autodesk_AutoCAD_DatabaseServices_ObjectContext_">DBObject.RemoveContext(ObjectContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetEventExtender_System_Boolean_">DBObject.GetEventExtender(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetParameterInterface_System_String_System_Boolean_">DBObject.GetParameterInterface(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Dispose_System_Boolean_">DBObject.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_PaperOrientation">DBObject.PaperOrientation</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Annotative">DBObject.Annotative</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HasFields">DBObject.HasFields</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_AcadObject">DBObject.AcadObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ClassID">DBObject.ClassID</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ObjectBirthVersion">DBObject.ObjectBirthVersion</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HasSaveVersionOverride">DBObject.HasSaveVersionOverride</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsObjectIdsInFlux">DBObject.IsObjectIdsInFlux</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_UndoFiler">DBObject.UndoFiler</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsAProxy">DBObject.IsAProxy</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsTransactionResident">DBObject.IsTransactionResident</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsReallyClosing">DBObject.IsReallyClosing</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsCancelling">DBObject.IsCancelling</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsUndoing">DBObject.IsUndoing</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsNotifying">DBObject.IsNotifying</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsNewObject">DBObject.IsNewObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsModifiedGraphics">DBObject.IsModifiedGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsModifiedXData">DBObject.IsModifiedXData</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsModified">DBObject.IsModified</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsNotifyEnabled">DBObject.IsNotifyEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsWriteEnabled">DBObject.IsWriteEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsReadEnabled">DBObject.IsReadEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsErased">DBObject.IsErased</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsEraseStatusToggled">DBObject.IsEraseStatusToggled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_XData">DBObject.XData</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_MergeStyle">DBObject.MergeStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ExtensionDictionary">DBObject.ExtensionDictionary</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Drawable">DBObject.Drawable</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Database">DBObject.Database</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Handle">DBObject.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_OwnerId">DBObject.OwnerId</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ObjectId">DBObject.ObjectId</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Id">DBObject.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsPersistent">DBObject.IsPersistent</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ObjectClosed">DBObject.ObjectClosed</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Reappended">DBObject.Reappended</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Unappended">DBObject.Unappended</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ModifiedXData">DBObject.ModifiedXData</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ModifyUndone">DBObject.ModifyUndone</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubObjectModified">DBObject.SubObjectModified</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Modified">DBObject.Modified</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_OpenedForModify">DBObject.OpenedForModify</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Goodbye">DBObject.Goodbye</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Erased">DBObject.Erased</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Copied">DBObject.Copied</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Cancelled">DBObject.Cancelled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_SetAttributes_Autodesk_AutoCAD_GraphicsInterface_DrawableTraits_">Drawable.SetAttributes(DrawableTraits)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_WorldDraw_Autodesk_AutoCAD_GraphicsInterface_WorldDraw_">Drawable.WorldDraw(WorldDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_ViewportDraw_Autodesk_AutoCAD_GraphicsInterface_ViewportDraw_">Drawable.ViewportDraw(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_ViewportDrawLogicalFlags_Autodesk_AutoCAD_GraphicsInterface_ViewportDraw_">Drawable.ViewportDrawLogicalFlags(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_DrawStream">Drawable.DrawStream</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_Bounds">Drawable.Bounds</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_DrawableType">Drawable.DrawableType</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_Create_System_IntPtr_System_Boolean_">RXObject.Create(IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_GetClass_System_Type_">RXObject.GetClass(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_X_Autodesk_AutoCAD_Runtime_RXClass_">RXObject.X(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_QueryX_Autodesk_AutoCAD_Runtime_RXClass_">RXObject.QueryX(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_GetRXClass">RXObject.GetRXClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_CompareTo_System_Object_">RXObject.CompareTo(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_Clone">RXObject.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_CopyFrom_Autodesk_AutoCAD_Runtime_RXObject_">RXObject.CopyFrom(RXObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Create_System_Type_System_IntPtr_System_Boolean_">DisposableWrapper.Create(Type, IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Equals_System_Object_">DisposableWrapper.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_GetHashCode">DisposableWrapper.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Dispose">DisposableWrapper.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_AutoDelete">DisposableWrapper.AutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_IsDisposed">DisposableWrapper.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_UnmanagedObject">DisposableWrapper.UnmanagedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone">MarshalByRefObject.MemberwiseClone(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref">MarshalByRefObject.CreateObjRef(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord__ctor_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.#ctor*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord__ctor" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.#ctor">
+  DimStyleTableRecord()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DimStyleTableRecord()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord__ctor_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.#ctor*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord__ctor_System_IntPtr_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.#ctor(System.IntPtr,System.Boolean)">
+  DimStyleTableRecord(IntPtr, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DimStyleTableRecord(IntPtr obj, bool autoDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimadec_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimadec*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimadec" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimadec">
+  Dimadec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Dimadec { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimalt_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimalt*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimalt" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimalt">
+  Dimalt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Dimalt { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimaltd_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimaltd*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimaltd" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimaltd">
+  Dimaltd
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Dimaltd { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimaltf_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimaltf*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimaltf" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimaltf">
+  Dimaltf
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Dimaltf { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimaltrnd_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimaltrnd*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimaltrnd" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimaltrnd">
+  Dimaltrnd
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Dimaltrnd { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimalttd_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimalttd*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimalttd" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimalttd">
+  Dimalttd
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Dimalttd { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimalttz_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimalttz*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimalttz" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimalttz">
+  Dimalttz
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Dimalttz { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimaltu_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimaltu*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimaltu" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimaltu">
+  Dimaltu
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Dimaltu { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimaltz_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimaltz*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimaltz" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimaltz">
+  Dimaltz
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Dimaltz { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimapost_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimapost*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimapost" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimapost">
+  Dimapost
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Dimapost { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimarcsym_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimarcsym*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimarcsym" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimarcsym">
+  Dimarcsym
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Dimarcsym { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimasz_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimasz*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimasz" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimasz">
+  Dimasz
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Dimasz { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimatfit_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimatfit*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimatfit" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimatfit">
+  Dimatfit
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Dimatfit { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimaunit_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimaunit*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimaunit" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimaunit">
+  Dimaunit
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Dimaunit { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimazin_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimazin*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimazin" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimazin">
+  Dimazin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Dimazin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimblk_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimblk*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimblk" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimblk">
+  Dimblk
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ObjectId Dimblk { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimblk1_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimblk1*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimblk1" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimblk1">
+  Dimblk1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ObjectId Dimblk1 { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimblk2_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimblk2*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimblk2" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimblk2">
+  Dimblk2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ObjectId Dimblk2 { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimcen_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimcen*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimcen" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimcen">
+  Dimcen
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Dimcen { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimclrd_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimclrd*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimclrd" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimclrd">
+  Dimclrd
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Color Dimclrd { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Colors.Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimclre_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimclre*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimclre" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimclre">
+  Dimclre
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Color Dimclre { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Colors.Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimclrt_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimclrt*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimclrt" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimclrt">
+  Dimclrt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Color Dimclrt { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Colors.Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimdec_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimdec*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimdec" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimdec">
+  Dimdec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Dimdec { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimdle_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimdle*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimdle" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimdle">
+  Dimdle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Dimdle { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimdli_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimdli*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimdli" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimdli">
+  Dimdli
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Dimdli { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimdsep_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimdsep*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimdsep" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimdsep">
+  Dimdsep
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual char Dimdsep { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimexe_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimexe*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimexe" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimexe">
+  Dimexe
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Dimexe { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimexo_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimexo*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimexo" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimexo">
+  Dimexo
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Dimexo { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimfrac_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimfrac*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimfrac" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimfrac">
+  Dimfrac
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Dimfrac { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimfxlen_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimfxlen*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimfxlen" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimfxlen">
+  Dimfxlen
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Dimfxlen { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_DimfxlenOn_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.DimfxlenOn*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_DimfxlenOn" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.DimfxlenOn">
+  DimfxlenOn
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool DimfxlenOn { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimgap_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimgap*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimgap" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimgap">
+  Dimgap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Dimgap { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimjogang_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimjogang*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimjogang" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimjogang">
+  Dimjogang
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Dimjogang { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimjust_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimjust*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimjust" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimjust">
+  Dimjust
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Dimjust { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimldrblk_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimldrblk*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimldrblk" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimldrblk">
+  Dimldrblk
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ObjectId Dimldrblk { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimlfac_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimlfac*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimlfac" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimlfac">
+  Dimlfac
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Dimlfac { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimlim_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimlim*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimlim" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimlim">
+  Dimlim
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Dimlim { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimltex1_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimltex1*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimltex1" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimltex1">
+  Dimltex1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ObjectId Dimltex1 { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimltex2_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimltex2*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimltex2" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimltex2">
+  Dimltex2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ObjectId Dimltex2 { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimltype_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimltype*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimltype" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimltype">
+  Dimltype
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ObjectId Dimltype { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimlunit_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimlunit*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimlunit" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimlunit">
+  Dimlunit
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Dimlunit { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimlwd_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimlwd*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimlwd" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimlwd">
+  Dimlwd
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual LineWeight Dimlwd { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LineWeight.html">LineWeight</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimlwe_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimlwe*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimlwe" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimlwe">
+  Dimlwe
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual LineWeight Dimlwe { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LineWeight.html">LineWeight</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimpost_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimpost*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimpost" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimpost">
+  Dimpost
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Dimpost { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimrnd_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimrnd*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimrnd" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimrnd">
+  Dimrnd
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Dimrnd { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimsah_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimsah*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimsah" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimsah">
+  Dimsah
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Dimsah { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimscale_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimscale*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimscale" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimscale">
+  Dimscale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Dimscale { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimsd1_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimsd1*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimsd1" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimsd1">
+  Dimsd1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Dimsd1 { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimsd2_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimsd2*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimsd2" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimsd2">
+  Dimsd2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Dimsd2 { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimse1_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimse1*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimse1" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimse1">
+  Dimse1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Dimse1 { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimse2_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimse2*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimse2" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimse2">
+  Dimse2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Dimse2 { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimsoxd_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimsoxd*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimsoxd" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimsoxd">
+  Dimsoxd
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Dimsoxd { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtad_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtad*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtad" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtad">
+  Dimtad
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Dimtad { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtdec_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtdec*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtdec" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtdec">
+  Dimtdec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Dimtdec { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtfac_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtfac*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtfac" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtfac">
+  Dimtfac
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Dimtfac { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtfill_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtfill*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtfill" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtfill">
+  Dimtfill
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Dimtfill { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtfillclr_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtfillclr*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtfillclr" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtfillclr">
+  Dimtfillclr
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Color Dimtfillclr { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Colors.Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtih_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtih*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtih" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtih">
+  Dimtih
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Dimtih { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtix_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtix*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtix" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtix">
+  Dimtix
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Dimtix { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtm_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtm*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtm" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtm">
+  Dimtm
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Dimtm { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtmove_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtmove*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtmove" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtmove">
+  Dimtmove
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Dimtmove { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtofl_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtofl*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtofl" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtofl">
+  Dimtofl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Dimtofl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtoh_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtoh*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtoh" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtoh">
+  Dimtoh
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Dimtoh { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtol_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtol*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtol" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtol">
+  Dimtol
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Dimtol { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtolj_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtolj*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtolj" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtolj">
+  Dimtolj
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Dimtolj { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtp_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtp*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtp" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtp">
+  Dimtp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Dimtp { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtsz_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtsz*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtsz" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtsz">
+  Dimtsz
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Dimtsz { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtvp_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtvp*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtvp" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtvp">
+  Dimtvp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Dimtvp { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtxsty_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtxsty*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtxsty" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtxsty">
+  Dimtxsty
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ObjectId Dimtxsty { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtxt_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtxt*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtxt" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtxt">
+  Dimtxt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Dimtxt { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtxtdirection_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtxtdirection*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtxtdirection" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtxtdirection">
+  Dimtxtdirection
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Dimtxtdirection { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtzin_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtzin*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimtzin" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimtzin">
+  Dimtzin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Dimtzin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimupt_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimupt*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimupt" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimupt">
+  Dimupt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Dimupt { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimzin_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimzin*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_Dimzin" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.Dimzin">
+  Dimzin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Dimzin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_IsModifiedForRecompute_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.IsModifiedForRecompute*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_IsModifiedForRecompute" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.IsModifiedForRecompute">
+  IsModifiedForRecompute
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsModifiedForRecompute { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_GetArrowId_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.GetArrowId*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DimStyleTableRecord_GetArrowId_Autodesk_AutoCAD_DatabaseServices_DimArrowFlag_" data-uid="Autodesk.AutoCAD.DatabaseServices.DimStyleTableRecord.GetArrowId(Autodesk.AutoCAD.DatabaseServices.DimArrowFlag)">
+  GetArrowId(DimArrowFlag)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId GetArrowId(DimArrowFlag whichArrow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>whichArrow</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DimArrowFlag.html">DimArrowFlag</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

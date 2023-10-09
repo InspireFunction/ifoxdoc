@@ -1,0 +1,957 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Publisher
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Publisher
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GrxCAD.Publishing.Publisher">
+
+
+
+  <h1 id="GrxCAD_Publishing_Publisher" data-uid="GrxCAD.Publishing.Publisher" class="text-break">
+    Class Publisher
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GrxCAD.html">GrxCAD</a>.<a class="xref" href="GrxCAD.Publishing.html">Publishing</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>gmap.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Publisher : MarshalByRefObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><span class="xref">Publisher</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref">MarshalByRefObject.CreateObjRef(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GrxCAD_Publishing_Publisher_CurrentPublishedSheetSetPath_" data-uid="GrxCAD.Publishing.Publisher.CurrentPublishedSheetSetPath*"></a>
+
+  <h3 id="GrxCAD_Publishing_Publisher_CurrentPublishedSheetSetPath" data-uid="GrxCAD.Publishing.Publisher.CurrentPublishedSheetSetPath">
+  CurrentPublishedSheetSetPath
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CurrentPublishedSheetSetPath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GrxCAD_Publishing_Publisher_FireBeginEntity_" data-uid="GrxCAD.Publishing.Publisher.FireBeginEntity*"></a>
+
+  <h3 id="GrxCAD_Publishing_Publisher_FireBeginEntity_GrxCAD_Publishing_PublishEntityEventArgs_" data-uid="GrxCAD.Publishing.Publisher.FireBeginEntity(GrxCAD.Publishing.PublishEntityEventArgs)">
+  FireBeginEntity(PublishEntityEventArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FireBeginEntity(PublishEntityEventArgs e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="GrxCAD.Publishing.PublishEntityEventArgs.html">PublishEntityEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Publishing_Publisher_FireBeginSheet_" data-uid="GrxCAD.Publishing.Publisher.FireBeginSheet*"></a>
+
+  <h3 id="GrxCAD_Publishing_Publisher_FireBeginSheet_GrxCAD_Publishing_PublishSheetEventArgs_" data-uid="GrxCAD.Publishing.Publisher.FireBeginSheet(GrxCAD.Publishing.PublishSheetEventArgs)">
+  FireBeginSheet(PublishSheetEventArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FireBeginSheet(PublishSheetEventArgs e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="GrxCAD.Publishing.PublishSheetEventArgs.html">PublishSheetEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Publishing_Publisher_FireEndEntity_" data-uid="GrxCAD.Publishing.Publisher.FireEndEntity*"></a>
+
+  <h3 id="GrxCAD_Publishing_Publisher_FireEndEntity_GrxCAD_Publishing_PublishEntityEventArgs_" data-uid="GrxCAD.Publishing.Publisher.FireEndEntity(GrxCAD.Publishing.PublishEntityEventArgs)">
+  FireEndEntity(PublishEntityEventArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FireEndEntity(PublishEntityEventArgs e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="GrxCAD.Publishing.PublishEntityEventArgs.html">PublishEntityEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Publishing_Publisher_FireEndSheet_" data-uid="GrxCAD.Publishing.Publisher.FireEndSheet*"></a>
+
+  <h3 id="GrxCAD_Publishing_Publisher_FireEndSheet_GrxCAD_Publishing_PublishSheetEventArgs_" data-uid="GrxCAD.Publishing.Publisher.FireEndSheet(GrxCAD.Publishing.PublishSheetEventArgs)">
+  FireEndSheet(PublishSheetEventArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FireEndSheet(PublishSheetEventArgs e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="GrxCAD.Publishing.PublishSheetEventArgs.html">PublishSheetEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Publishing_Publisher_PublishExecute_" data-uid="GrxCAD.Publishing.Publisher.PublishExecute*"></a>
+
+  <h3 id="GrxCAD_Publishing_Publisher_PublishExecute_GrxCAD_PlottingServices_DsdData_GrxCAD_PlottingServices_PlotConfig_" data-uid="GrxCAD.Publishing.Publisher.PublishExecute(GrxCAD.PlottingServices.DsdData,GrxCAD.PlottingServices.PlotConfig)">
+  PublishExecute(DsdData, PlotConfig)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PublishExecute(DsdData dsdData, PlotConfig plotConfig)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dsdData</code> <a class="xref" href="GrxCAD.PlottingServices.DsdData.html">DsdData</a></dt>
+    <dd></dd>
+    <dt><code>plotConfig</code> <a class="xref" href="GrxCAD.PlottingServices.PlotConfig.html">PlotConfig</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Publishing_Publisher_PublishSelectedLayouts_" data-uid="GrxCAD.Publishing.Publisher.PublishSelectedLayouts*"></a>
+
+  <h3 id="GrxCAD_Publishing_Publisher_PublishSelectedLayouts_System_Boolean_" data-uid="GrxCAD.Publishing.Publisher.PublishSelectedLayouts(System.Boolean)">
+  PublishSelectedLayouts(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PublishSelectedLayouts(bool bOverride)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bOverride</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Publishing_Publisher_ShowDwfOptionsDialog_" data-uid="GrxCAD.Publishing.Publisher.ShowDwfOptionsDialog*"></a>
+
+  <h3 id="GrxCAD_Publishing_Publisher_ShowDwfOptionsDialog_GrxCAD_PlottingServices_DsdData_GrxCAD_PlottingServices_PlotConfig_System_String_" data-uid="GrxCAD.Publishing.Publisher.ShowDwfOptionsDialog(GrxCAD.PlottingServices.DsdData,GrxCAD.PlottingServices.PlotConfig,System.String)">
+  ShowDwfOptionsDialog(DsdData, PlotConfig, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptionsDialogResult ShowDwfOptionsDialog(DsdData dsdData, PlotConfig plotConfig, string optionsDialogTitle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dsdData</code> <a class="xref" href="GrxCAD.PlottingServices.DsdData.html">DsdData</a></dt>
+    <dd></dd>
+    <dt><code>plotConfig</code> <a class="xref" href="GrxCAD.PlottingServices.PlotConfig.html">PlotConfig</a></dt>
+    <dd></dd>
+    <dt><code>optionsDialogTitle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Publishing.OptionsDialogResult.html">OptionsDialogResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Publishing_Publisher_ShowPublishDialog_" data-uid="GrxCAD.Publishing.Publisher.ShowPublishDialog*"></a>
+
+  <h3 id="GrxCAD_Publishing_Publisher_ShowPublishDialog_GrxCAD_PlottingServices_DsdData_GrxCAD_PlottingServices_PlotConfig_System_Collections_Specialized_StringCollection_System_Collections_Specialized_StringCollection_System_String_System_String_" data-uid="GrxCAD.Publishing.Publisher.ShowPublishDialog(GrxCAD.PlottingServices.DsdData,GrxCAD.PlottingServices.PlotConfig,System.Collections.Specialized.StringCollection,System.Collections.Specialized.StringCollection,System.String,System.String)">
+  ShowPublishDialog(DsdData, PlotConfig, StringCollection, StringCollection, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowPublishDialog(DsdData dsdData, PlotConfig plotConfig, StringCollection namePageSetups, StringCollection namePageSetupPaths, string optionsDialogTitle, string optionsButtonText)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dsdData</code> <a class="xref" href="GrxCAD.PlottingServices.DsdData.html">DsdData</a></dt>
+    <dd></dd>
+    <dt><code>plotConfig</code> <a class="xref" href="GrxCAD.PlottingServices.PlotConfig.html">PlotConfig</a></dt>
+    <dd></dd>
+    <dt><code>namePageSetups</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.specialized.stringcollection">StringCollection</a></dt>
+    <dd></dd>
+    <dt><code>namePageSetupPaths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.specialized.stringcollection">StringCollection</a></dt>
+    <dd></dd>
+    <dt><code>optionsDialogTitle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>optionsButtonText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="GrxCAD_Publishing_Publisher_AboutToBeginBackgroundPublishing" data-uid="GrxCAD.Publishing.Publisher.AboutToBeginBackgroundPublishing">
+  AboutToBeginBackgroundPublishing
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AboutToBeginBackgroundPublishingEventHandler AboutToBeginBackgroundPublishing</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Publishing.AboutToBeginBackgroundPublishingEventHandler.html">AboutToBeginBackgroundPublishingEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_Publishing_Publisher_AboutToBeginPublishing" data-uid="GrxCAD.Publishing.Publisher.AboutToBeginPublishing">
+  AboutToBeginPublishing
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AboutToBeginPublishingEventHandler AboutToBeginPublishing</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Publishing.AboutToBeginPublishingEventHandler.html">AboutToBeginPublishingEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_Publishing_Publisher_AboutToEndPublishing" data-uid="GrxCAD.Publishing.Publisher.AboutToEndPublishing">
+  AboutToEndPublishing
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AboutToEndPublishingEventHandler AboutToEndPublishing</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Publishing.AboutToEndPublishingEventHandler.html">AboutToEndPublishingEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_Publishing_Publisher_AboutToMoveFile" data-uid="GrxCAD.Publishing.Publisher.AboutToMoveFile">
+  AboutToMoveFile
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AboutToMoveFileEventHandler AboutToMoveFile</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Publishing.AboutToMoveFileEventHandler.html">AboutToMoveFileEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_Publishing_Publisher_BeginAggregation" data-uid="GrxCAD.Publishing.Publisher.BeginAggregation">
+  BeginAggregation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event BeginAggregationEventHandler BeginAggregation</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Publishing.BeginAggregationEventHandler.html">BeginAggregationEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_Publishing_Publisher_BeginEntity" data-uid="GrxCAD.Publishing.Publisher.BeginEntity">
+  BeginEntity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event BeginEntityEventHandler BeginEntity</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Publishing.BeginEntityEventHandler.html">BeginEntityEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_Publishing_Publisher_BeginPublishingSheet" data-uid="GrxCAD.Publishing.Publisher.BeginPublishingSheet">
+  BeginPublishingSheet
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event BeginPublishingSheetEventHandler BeginPublishingSheet</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Publishing.BeginPublishingSheetEventHandler.html">BeginPublishingSheetEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_Publishing_Publisher_BeginSheet" data-uid="GrxCAD.Publishing.Publisher.BeginSheet">
+  BeginSheet
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event BeginSheetEventHandler BeginSheet</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Publishing.BeginSheetEventHandler.html">BeginSheetEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_Publishing_Publisher_CancelledOrFailedPublishing" data-uid="GrxCAD.Publishing.Publisher.CancelledOrFailedPublishing">
+  CancelledOrFailedPublishing
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event CancelledOrFailedPublishingEventHandler CancelledOrFailedPublishing</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Publishing.CancelledOrFailedPublishingEventHandler.html">CancelledOrFailedPublishingEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_Publishing_Publisher_EndEntity" data-uid="GrxCAD.Publishing.Publisher.EndEntity">
+  EndEntity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EndEntityEventHandler EndEntity</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Publishing.EndEntityEventHandler.html">EndEntityEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_Publishing_Publisher_EndPublish" data-uid="GrxCAD.Publishing.Publisher.EndPublish">
+  EndPublish
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EndPublishEventHandler EndPublish</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Publishing.EndPublishEventHandler.html">EndPublishEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_Publishing_Publisher_EndSheet" data-uid="GrxCAD.Publishing.Publisher.EndSheet">
+  EndSheet
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EndSheetEventHandler EndSheet</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Publishing.EndSheetEventHandler.html">EndSheetEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_Publishing_Publisher_InitPublishOptionsDialog" data-uid="GrxCAD.Publishing.Publisher.InitPublishOptionsDialog">
+  InitPublishOptionsDialog
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event InitPublishOptionsDialogEventHandler InitPublishOptionsDialog</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Publishing.InitPublishOptionsDialogEventHandler.html">InitPublishOptionsDialogEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

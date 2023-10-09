@@ -1,0 +1,4003 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DBObject
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DBObject
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GrxCAD.DatabaseServices.DBObject">
+
+
+
+  <h1 id="GrxCAD_DatabaseServices_DBObject" data-uid="GrxCAD.DatabaseServices.DBObject" class="text-break">
+    Class DBObject
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GrxCAD.html">GrxCAD</a>.<a class="xref" href="GrxCAD.DatabaseServices.html">DatabaseServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>gmdb.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;AcDbObject&quot;)]
+public abstract class DBObject : Drawable, IDisposable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html">DisposableWrapper</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.RXObject.html">RXObject</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html">Drawable</a></div>
+      <div><span class="xref">DBObject</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.Background.html">Background</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.DBDictionary.html">DBDictionary</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.DBVisualStyle.html">DBVisualStyle</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.DataLink.html">DataLink</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.DataTable.html">DataTable</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.DimAssoc.html">DimAssoc</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.DrawOrderTable.html">DrawOrderTable</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.Entity.html">Entity</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.Field.html">Field</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.Filters.Filter.html">Filter</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.Filters.Index.html">Index</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.GeoLocationData.html">GeoLocationData</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.Group.html">Group</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.LinkedData.html">LinkedData</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.MLeaderStyle.html">MLeaderStyle</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.Material.html">Material</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.MlineStyle.html">MlineStyle</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.PlaceHolder.html">PlaceHolder</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.PlotSettings.html">PlotSettings</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.ProxyObject.html">ProxyObject</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.RasterImageDef.html">RasterImageDef</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.RasterVariables.html">RasterVariables</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.RenderEnvironment.html">RenderEnvironment</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.RenderGlobal.html">RenderGlobal</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.RenderSettings.html">RenderSettings</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.SectionManager.html">SectionManager</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.SectionSettings.html">SectionSettings</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.Sun.html">Sun</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.SymbolTable.html">SymbolTable</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.SymbolTableRecord.html">SymbolTableRecord</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.TableStyle.html">TableStyle</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.UnderlayDefinition.html">UnderlayDefinition</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.Xrecord.html">Xrecord</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html#GrxCAD_GraphicsInterface_Drawable_SetAttributes_GrxCAD_GraphicsInterface_DrawableTraits_">Drawable.SetAttributes(DrawableTraits)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html#GrxCAD_GraphicsInterface_Drawable_ViewportDraw_GrxCAD_GraphicsInterface_ViewportDraw_">Drawable.ViewportDraw(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html#GrxCAD_GraphicsInterface_Drawable_ViewportDrawLogicalFlags_GrxCAD_GraphicsInterface_ViewportDraw_">Drawable.ViewportDrawLogicalFlags(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html#GrxCAD_GraphicsInterface_Drawable_WorldDraw_GrxCAD_GraphicsInterface_WorldDraw_">Drawable.WorldDraw(WorldDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html#GrxCAD_GraphicsInterface_Drawable_drawableType">Drawable.drawableType</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html#GrxCAD_GraphicsInterface_Drawable_Bounds">Drawable.Bounds</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_Create_System_IntPtr_System_Boolean_">RXObject.Create(IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_GetRXClass">RXObject.GetRXClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_CompareTo_System_Object_">RXObject.CompareTo(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_GetClass_System_Type_">RXObject.GetClass(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_QueryX_GrxCAD_Runtime_RXClass_">RXObject.QueryX(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_X_GrxCAD_Runtime_RXClass_">RXObject.X(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_m_bAutoDelete">DisposableWrapper.m_bAutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_m_imp">DisposableWrapper.m_imp</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Detach">DisposableWrapper.Detach()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Create_System_Type_System_IntPtr_System_Boolean_">DisposableWrapper.Create(Type, IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Equals_System_Object_">DisposableWrapper.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_GetHashCode">DisposableWrapper.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Dispose">DisposableWrapper.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_UnmanagedObject">DisposableWrapper.UnmanagedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_IsDisposed">DisposableWrapper.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_AutoDelete">DisposableWrapper.AutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone">MarshalByRefObject.MemberwiseClone(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref">MarshalByRefObject.CreateObjRef(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject__ctor_" data-uid="GrxCAD.DatabaseServices.DBObject.#ctor*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject__ctor_System_IntPtr_System_Boolean_" data-uid="GrxCAD.DatabaseServices.DBObject.#ctor(System.IntPtr,System.Boolean)">
+  DBObject(IntPtr, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DBObject(IntPtr unmanagedObjPtr, bool autoDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unmanagedObjPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_AcadObject_" data-uid="GrxCAD.DatabaseServices.DBObject.AcadObject*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_AcadObject" data-uid="GrxCAD.DatabaseServices.DBObject.AcadObject">
+  AcadObject
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object AcadObject { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_Annotative_" data-uid="GrxCAD.DatabaseServices.DBObject.Annotative*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_Annotative" data-uid="GrxCAD.DatabaseServices.DBObject.Annotative">
+  Annotative
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnnotativeStates Annotative { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.AnnotativeStates.html">AnnotativeStates</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_ClassID_" data-uid="GrxCAD.DatabaseServices.DBObject.ClassID*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_ClassID" data-uid="GrxCAD.DatabaseServices.DBObject.ClassID">
+  ClassID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Guid ClassID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_Database_" data-uid="GrxCAD.DatabaseServices.DBObject.Database*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_Database" data-uid="GrxCAD.DatabaseServices.DBObject.Database">
+  Database
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Database Database { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.Database.html">Database</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_Drawable_" data-uid="GrxCAD.DatabaseServices.DBObject.Drawable*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_Drawable" data-uid="GrxCAD.DatabaseServices.DBObject.Drawable">
+  Drawable
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Drawable Drawable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html">Drawable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_ExtensionDictionary_" data-uid="GrxCAD.DatabaseServices.DBObject.ExtensionDictionary*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_ExtensionDictionary" data-uid="GrxCAD.DatabaseServices.DBObject.ExtensionDictionary">
+  ExtensionDictionary
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId ExtensionDictionary { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_Handle_" data-uid="GrxCAD.DatabaseServices.DBObject.Handle*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_Handle" data-uid="GrxCAD.DatabaseServices.DBObject.Handle">
+  Handle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Handle Handle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.Handle.html">Handle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_HasFields_" data-uid="GrxCAD.DatabaseServices.DBObject.HasFields*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_HasFields" data-uid="GrxCAD.DatabaseServices.DBObject.HasFields">
+  HasFields
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasFields { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_HasSaveVersionOverride_" data-uid="GrxCAD.DatabaseServices.DBObject.HasSaveVersionOverride*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_HasSaveVersionOverride" data-uid="GrxCAD.DatabaseServices.DBObject.HasSaveVersionOverride">
+  HasSaveVersionOverride
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasSaveVersionOverride { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_Id_" data-uid="GrxCAD.DatabaseServices.DBObject.Id*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_Id" data-uid="GrxCAD.DatabaseServices.DBObject.Id">
+  Id
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ObjectId Id { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_IsAProxy_" data-uid="GrxCAD.DatabaseServices.DBObject.IsAProxy*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_IsAProxy" data-uid="GrxCAD.DatabaseServices.DBObject.IsAProxy">
+  IsAProxy
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAProxy { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_IsCancelling_" data-uid="GrxCAD.DatabaseServices.DBObject.IsCancelling*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_IsCancelling" data-uid="GrxCAD.DatabaseServices.DBObject.IsCancelling">
+  IsCancelling
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCancelling { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_IsEraseStatusToggled_" data-uid="GrxCAD.DatabaseServices.DBObject.IsEraseStatusToggled*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_IsEraseStatusToggled" data-uid="GrxCAD.DatabaseServices.DBObject.IsEraseStatusToggled">
+  IsEraseStatusToggled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEraseStatusToggled { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_IsErased_" data-uid="GrxCAD.DatabaseServices.DBObject.IsErased*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_IsErased" data-uid="GrxCAD.DatabaseServices.DBObject.IsErased">
+  IsErased
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsErased { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_IsModified_" data-uid="GrxCAD.DatabaseServices.DBObject.IsModified*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_IsModified" data-uid="GrxCAD.DatabaseServices.DBObject.IsModified">
+  IsModified
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsModified { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_IsModifiedGraphics_" data-uid="GrxCAD.DatabaseServices.DBObject.IsModifiedGraphics*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_IsModifiedGraphics" data-uid="GrxCAD.DatabaseServices.DBObject.IsModifiedGraphics">
+  IsModifiedGraphics
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsModifiedGraphics { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_IsModifiedXData_" data-uid="GrxCAD.DatabaseServices.DBObject.IsModifiedXData*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_IsModifiedXData" data-uid="GrxCAD.DatabaseServices.DBObject.IsModifiedXData">
+  IsModifiedXData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsModifiedXData { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_IsNewObject_" data-uid="GrxCAD.DatabaseServices.DBObject.IsNewObject*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_IsNewObject" data-uid="GrxCAD.DatabaseServices.DBObject.IsNewObject">
+  IsNewObject
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNewObject { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_IsNotifyEnabled_" data-uid="GrxCAD.DatabaseServices.DBObject.IsNotifyEnabled*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_IsNotifyEnabled" data-uid="GrxCAD.DatabaseServices.DBObject.IsNotifyEnabled">
+  IsNotifyEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNotifyEnabled { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_IsNotifying_" data-uid="GrxCAD.DatabaseServices.DBObject.IsNotifying*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_IsNotifying" data-uid="GrxCAD.DatabaseServices.DBObject.IsNotifying">
+  IsNotifying
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNotifying { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_IsObjectIdsInFlux_" data-uid="GrxCAD.DatabaseServices.DBObject.IsObjectIdsInFlux*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_IsObjectIdsInFlux" data-uid="GrxCAD.DatabaseServices.DBObject.IsObjectIdsInFlux">
+  IsObjectIdsInFlux
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsObjectIdsInFlux { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_IsPersistent_" data-uid="GrxCAD.DatabaseServices.DBObject.IsPersistent*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_IsPersistent" data-uid="GrxCAD.DatabaseServices.DBObject.IsPersistent">
+  IsPersistent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsPersistent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_IsReadEnabled_" data-uid="GrxCAD.DatabaseServices.DBObject.IsReadEnabled*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_IsReadEnabled" data-uid="GrxCAD.DatabaseServices.DBObject.IsReadEnabled">
+  IsReadEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadEnabled { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_IsReallyClosing_" data-uid="GrxCAD.DatabaseServices.DBObject.IsReallyClosing*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_IsReallyClosing" data-uid="GrxCAD.DatabaseServices.DBObject.IsReallyClosing">
+  IsReallyClosing
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReallyClosing { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_IsTransactionResident_" data-uid="GrxCAD.DatabaseServices.DBObject.IsTransactionResident*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_IsTransactionResident" data-uid="GrxCAD.DatabaseServices.DBObject.IsTransactionResident">
+  IsTransactionResident
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTransactionResident { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_IsUndoing_" data-uid="GrxCAD.DatabaseServices.DBObject.IsUndoing*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_IsUndoing" data-uid="GrxCAD.DatabaseServices.DBObject.IsUndoing">
+  IsUndoing
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUndoing { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_IsWriteEnabled_" data-uid="GrxCAD.DatabaseServices.DBObject.IsWriteEnabled*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_IsWriteEnabled" data-uid="GrxCAD.DatabaseServices.DBObject.IsWriteEnabled">
+  IsWriteEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsWriteEnabled { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_MergeStyle_" data-uid="GrxCAD.DatabaseServices.DBObject.MergeStyle*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_MergeStyle" data-uid="GrxCAD.DatabaseServices.DBObject.MergeStyle">
+  MergeStyle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DuplicateRecordCloning MergeStyle { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.DuplicateRecordCloning.html">DuplicateRecordCloning</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_ObjectBirthVersion_" data-uid="GrxCAD.DatabaseServices.DBObject.ObjectBirthVersion*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_ObjectBirthVersion" data-uid="GrxCAD.DatabaseServices.DBObject.ObjectBirthVersion">
+  ObjectBirthVersion
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual FullDwgVersion ObjectBirthVersion { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.FullDwgVersion.html">FullDwgVersion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_ObjectId_" data-uid="GrxCAD.DatabaseServices.DBObject.ObjectId*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_ObjectId" data-uid="GrxCAD.DatabaseServices.DBObject.ObjectId">
+  ObjectId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId ObjectId { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_OwnerId_" data-uid="GrxCAD.DatabaseServices.DBObject.OwnerId*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_OwnerId" data-uid="GrxCAD.DatabaseServices.DBObject.OwnerId">
+  OwnerId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ObjectId OwnerId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_PaperOrientation_" data-uid="GrxCAD.DatabaseServices.DBObject.PaperOrientation*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_PaperOrientation" data-uid="GrxCAD.DatabaseServices.DBObject.PaperOrientation">
+  PaperOrientation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PaperOrientationStates PaperOrientation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.PaperOrientationStates.html">PaperOrientationStates</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_UndoFiler_" data-uid="GrxCAD.DatabaseServices.DBObject.UndoFiler*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_UndoFiler" data-uid="GrxCAD.DatabaseServices.DBObject.UndoFiler">
+  UndoFiler
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DwgFiler UndoFiler { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.DwgFiler.html">DwgFiler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_XData_" data-uid="GrxCAD.DatabaseServices.DBObject.XData*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_XData" data-uid="GrxCAD.DatabaseServices.DBObject.XData">
+  XData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ResultBuffer XData { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ResultBuffer.html">ResultBuffer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_AddContext_" data-uid="GrxCAD.DatabaseServices.DBObject.AddContext*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_AddContext_GrxCAD_DatabaseServices_ObjectContext_" data-uid="GrxCAD.DatabaseServices.DBObject.AddContext(GrxCAD.DatabaseServices.ObjectContext)">
+  AddContext(ObjectContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddContext(ObjectContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectContext.html">ObjectContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_AddPersistentReactor_" data-uid="GrxCAD.DatabaseServices.DBObject.AddPersistentReactor*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_AddPersistentReactor_GrxCAD_DatabaseServices_ObjectId_" data-uid="GrxCAD.DatabaseServices.DBObject.AddPersistentReactor(GrxCAD.DatabaseServices.ObjectId)">
+  AddPersistentReactor(ObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddPersistentReactor(ObjectId objId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objId</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_ApplyPaperOrientationTransform_" data-uid="GrxCAD.DatabaseServices.DBObject.ApplyPaperOrientationTransform*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_ApplyPaperOrientationTransform_GrxCAD_DatabaseServices_Viewport_" data-uid="GrxCAD.DatabaseServices.DBObject.ApplyPaperOrientationTransform(GrxCAD.DatabaseServices.Viewport)">
+  ApplyPaperOrientationTransform(Viewport)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyPaperOrientationTransform(Viewport viewport)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>viewport</code> <a class="xref" href="GrxCAD.DatabaseServices.Viewport.html">Viewport</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_ApplyPartialUndo_" data-uid="GrxCAD.DatabaseServices.DBObject.ApplyPartialUndo*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_ApplyPartialUndo_GrxCAD_DatabaseServices_DwgFiler_GrxCAD_Runtime_RXClass_" data-uid="GrxCAD.DatabaseServices.DBObject.ApplyPartialUndo(GrxCAD.DatabaseServices.DwgFiler,GrxCAD.Runtime.RXClass)">
+  ApplyPartialUndo(DwgFiler, RXClass)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ApplyPartialUndo(DwgFiler undoFiler, RXClass classObj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>undoFiler</code> <a class="xref" href="GrxCAD.DatabaseServices.DwgFiler.html">DwgFiler</a></dt>
+    <dd></dd>
+    <dt><code>classObj</code> <a class="xref" href="GrxCAD.Runtime.RXClass.html">RXClass</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_AssertNotifyEnabled_" data-uid="GrxCAD.DatabaseServices.DBObject.AssertNotifyEnabled*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_AssertNotifyEnabled" data-uid="GrxCAD.DatabaseServices.DBObject.AssertNotifyEnabled">
+  AssertNotifyEnabled()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AssertNotifyEnabled()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_AssertReadEnabled_" data-uid="GrxCAD.DatabaseServices.DBObject.AssertReadEnabled*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_AssertReadEnabled" data-uid="GrxCAD.DatabaseServices.DBObject.AssertReadEnabled">
+  AssertReadEnabled()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AssertReadEnabled()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_AssertWriteEnabled_" data-uid="GrxCAD.DatabaseServices.DBObject.AssertWriteEnabled*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_AssertWriteEnabled_System_Boolean_System_Boolean_" data-uid="GrxCAD.DatabaseServices.DBObject.AssertWriteEnabled(System.Boolean,System.Boolean)">
+  AssertWriteEnabled(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AssertWriteEnabled(bool autoUndo, bool recordModified)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>autoUndo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>recordModified</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_Audit_" data-uid="GrxCAD.DatabaseServices.DBObject.Audit*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_Audit_GrxCAD_DatabaseServices_AuditInfo_" data-uid="GrxCAD.DatabaseServices.DBObject.Audit(GrxCAD.DatabaseServices.AuditInfo)">
+  Audit(AuditInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Audit(AuditInfo auditInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>auditInfo</code> <a class="xref" href="GrxCAD.DatabaseServices.AuditInfo.html">AuditInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_Cancel_" data-uid="GrxCAD.DatabaseServices.DBObject.Cancel*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_Cancel" data-uid="GrxCAD.DatabaseServices.DBObject.Cancel">
+  Cancel()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use Transaction instead&quot;)]
+public void Cancel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_Clone_" data-uid="GrxCAD.DatabaseServices.DBObject.Clone*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_Clone" data-uid="GrxCAD.DatabaseServices.DBObject.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_Close_" data-uid="GrxCAD.DatabaseServices.DBObject.Close*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_Close" data-uid="GrxCAD.DatabaseServices.DBObject.Close">
+  Close()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use Transaction instead&quot;)]
+public void Close()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_CloseAndPage_" data-uid="GrxCAD.DatabaseServices.DBObject.CloseAndPage*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_CloseAndPage_System_Boolean_" data-uid="GrxCAD.DatabaseServices.DBObject.CloseAndPage(System.Boolean)">
+  CloseAndPage(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use Transaction instead&quot;)]
+public void CloseAndPage(bool onlyWhenClean)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>onlyWhenClean</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_CopyFrom_" data-uid="GrxCAD.DatabaseServices.DBObject.CopyFrom*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_CopyFrom_GrxCAD_Runtime_RXObject_" data-uid="GrxCAD.DatabaseServices.DBObject.CopyFrom(GrxCAD.Runtime.RXObject)">
+  CopyFrom(RXObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void CopyFrom(RXObject source)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="GrxCAD.Runtime.RXObject.html">RXObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_CreateExtensionDictionary_" data-uid="GrxCAD.DatabaseServices.DBObject.CreateExtensionDictionary*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_CreateExtensionDictionary" data-uid="GrxCAD.DatabaseServices.DBObject.CreateExtensionDictionary">
+  CreateExtensionDictionary()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateExtensionDictionary()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_DecomposeForSave_" data-uid="GrxCAD.DatabaseServices.DBObject.DecomposeForSave*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_DecomposeForSave_GrxCAD_DatabaseServices_DwgVersion_" data-uid="GrxCAD.DatabaseServices.DBObject.DecomposeForSave(GrxCAD.DatabaseServices.DwgVersion)">
+  DecomposeForSave(DwgVersion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DecomposeForSaveReplacementRecord DecomposeForSave(DwgVersion version)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>version</code> <a class="xref" href="GrxCAD.DatabaseServices.DwgVersion.html">DwgVersion</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.DecomposeForSaveReplacementRecord.html">DecomposeForSaveReplacementRecord</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_DeepClone_" data-uid="GrxCAD.DatabaseServices.DBObject.DeepClone*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_DeepClone_GrxCAD_DatabaseServices_DBObject_GrxCAD_DatabaseServices_IdMapping_System_Boolean_" data-uid="GrxCAD.DatabaseServices.DBObject.DeepClone(GrxCAD.DatabaseServices.DBObject,GrxCAD.DatabaseServices.IdMapping,System.Boolean)">
+  DeepClone(DBObject, IdMapping, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DBObject DeepClone(DBObject ownerPointer, IdMapping idMap, bool isPrimary)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ownerPointer</code> <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html">DBObject</a></dt>
+    <dd></dd>
+    <dt><code>idMap</code> <a class="xref" href="GrxCAD.DatabaseServices.IdMapping.html">IdMapping</a></dt>
+    <dd></dd>
+    <dt><code>isPrimary</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.DBObject.html">DBObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_DeleteUnmanagedObject_" data-uid="GrxCAD.DatabaseServices.DBObject.DeleteUnmanagedObject*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_DeleteUnmanagedObject" data-uid="GrxCAD.DatabaseServices.DBObject.DeleteUnmanagedObject">
+  DeleteUnmanagedObject()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DeleteUnmanagedObject()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_DisableUndoRecording_" data-uid="GrxCAD.DatabaseServices.DBObject.DisableUndoRecording*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_DisableUndoRecording_System_Boolean_" data-uid="GrxCAD.DatabaseServices.DBObject.DisableUndoRecording(System.Boolean)">
+  DisableUndoRecording(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisableUndoRecording(bool disable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_Dispose_" data-uid="GrxCAD.DatabaseServices.DBObject.Dispose*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_Dispose_System_Boolean_" data-uid="GrxCAD.DatabaseServices.DBObject.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HandleProcessCorruptedStateExceptions]
+protected override void Dispose(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_DowngradeOpen_" data-uid="GrxCAD.DatabaseServices.DBObject.DowngradeOpen*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_DowngradeOpen" data-uid="GrxCAD.DatabaseServices.DBObject.DowngradeOpen">
+  DowngradeOpen()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DowngradeOpen()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_DowngradeToNotify_" data-uid="GrxCAD.DatabaseServices.DBObject.DowngradeToNotify*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_DowngradeToNotify_System_Boolean_" data-uid="GrxCAD.DatabaseServices.DBObject.DowngradeToNotify(System.Boolean)">
+  DowngradeToNotify(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DowngradeToNotify(bool wasWritable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wasWritable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_DwgIn_" data-uid="GrxCAD.DatabaseServices.DBObject.DwgIn*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_DwgIn_GrxCAD_DatabaseServices_DwgFiler_" data-uid="GrxCAD.DatabaseServices.DBObject.DwgIn(GrxCAD.DatabaseServices.DwgFiler)">
+  DwgIn(DwgFiler)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DwgIn(DwgFiler filer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filer</code> <a class="xref" href="GrxCAD.DatabaseServices.DwgFiler.html">DwgFiler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_DwgInFields_" data-uid="GrxCAD.DatabaseServices.DBObject.DwgInFields*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_DwgInFields_GrxCAD_DatabaseServices_DwgFiler_" data-uid="GrxCAD.DatabaseServices.DBObject.DwgInFields(GrxCAD.DatabaseServices.DwgFiler)">
+  DwgInFields(DwgFiler)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DwgInFields(DwgFiler filer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filer</code> <a class="xref" href="GrxCAD.DatabaseServices.DwgFiler.html">DwgFiler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_DwgOut_" data-uid="GrxCAD.DatabaseServices.DBObject.DwgOut*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_DwgOut_GrxCAD_DatabaseServices_DwgFiler_" data-uid="GrxCAD.DatabaseServices.DBObject.DwgOut(GrxCAD.DatabaseServices.DwgFiler)">
+  DwgOut(DwgFiler)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DwgOut(DwgFiler filer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filer</code> <a class="xref" href="GrxCAD.DatabaseServices.DwgFiler.html">DwgFiler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_DwgOutFields_" data-uid="GrxCAD.DatabaseServices.DBObject.DwgOutFields*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_DwgOutFields_GrxCAD_DatabaseServices_DwgFiler_" data-uid="GrxCAD.DatabaseServices.DBObject.DwgOutFields(GrxCAD.DatabaseServices.DwgFiler)">
+  DwgOutFields(DwgFiler)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DwgOutFields(DwgFiler filer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filer</code> <a class="xref" href="GrxCAD.DatabaseServices.DwgFiler.html">DwgFiler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_DxfIn_" data-uid="GrxCAD.DatabaseServices.DBObject.DxfIn*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_DxfIn_GrxCAD_DatabaseServices_DxfFiler_" data-uid="GrxCAD.DatabaseServices.DBObject.DxfIn(GrxCAD.DatabaseServices.DxfFiler)">
+  DxfIn(DxfFiler)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DxfIn(DxfFiler filer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filer</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfFiler.html">DxfFiler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_DxfInFields_" data-uid="GrxCAD.DatabaseServices.DBObject.DxfInFields*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_DxfInFields_GrxCAD_DatabaseServices_DxfFiler_" data-uid="GrxCAD.DatabaseServices.DBObject.DxfInFields(GrxCAD.DatabaseServices.DxfFiler)">
+  DxfInFields(DxfFiler)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DxfInFields(DxfFiler filer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filer</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfFiler.html">DxfFiler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_DxfOut_" data-uid="GrxCAD.DatabaseServices.DBObject.DxfOut*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_DxfOut_GrxCAD_DatabaseServices_DxfFiler_" data-uid="GrxCAD.DatabaseServices.DBObject.DxfOut(GrxCAD.DatabaseServices.DxfFiler)">
+  DxfOut(DxfFiler)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DxfOut(DxfFiler filer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filer</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfFiler.html">DxfFiler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_DxfOutFields_" data-uid="GrxCAD.DatabaseServices.DBObject.DxfOutFields*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_DxfOutFields_GrxCAD_DatabaseServices_DxfFiler_" data-uid="GrxCAD.DatabaseServices.DBObject.DxfOutFields(GrxCAD.DatabaseServices.DxfFiler)">
+  DxfOutFields(DxfFiler)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DxfOutFields(DxfFiler filer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filer</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfFiler.html">DxfFiler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_Erase_" data-uid="GrxCAD.DatabaseServices.DBObject.Erase*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_Erase" data-uid="GrxCAD.DatabaseServices.DBObject.Erase">
+  Erase()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Erase()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_Erase_" data-uid="GrxCAD.DatabaseServices.DBObject.Erase*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_Erase_System_Boolean_" data-uid="GrxCAD.DatabaseServices.DBObject.Erase(System.Boolean)">
+  Erase(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Erase(bool erasing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>erasing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_FromAcadObject_" data-uid="GrxCAD.DatabaseServices.DBObject.FromAcadObject*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_FromAcadObject_System_Object_" data-uid="GrxCAD.DatabaseServices.DBObject.FromAcadObject(System.Object)">
+  FromAcadObject(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectId FromAcadObject(object acadObj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>acadObj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_GetEventExtender_" data-uid="GrxCAD.DatabaseServices.DBObject.GetEventExtender*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_GetEventExtender_System_Boolean_" data-uid="GrxCAD.DatabaseServices.DBObject.GetEventExtender(System.Boolean)">
+  GetEventExtender(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DBObjectEventExtender GetEventExtender(bool create)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>create</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.DBObjectEventExtender.html">DBObjectEventExtender</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_GetField_" data-uid="GrxCAD.DatabaseServices.DBObject.GetField*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_GetField" data-uid="GrxCAD.DatabaseServices.DBObject.GetField">
+  GetField()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId GetField()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_GetField_" data-uid="GrxCAD.DatabaseServices.DBObject.GetField*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_GetField_System_String_" data-uid="GrxCAD.DatabaseServices.DBObject.GetField(System.String)">
+  GetField(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId GetField(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_GetObjectSaveVersion_" data-uid="GrxCAD.DatabaseServices.DBObject.GetObjectSaveVersion*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_GetObjectSaveVersion_GrxCAD_DatabaseServices_DwgFiler_" data-uid="GrxCAD.DatabaseServices.DBObject.GetObjectSaveVersion(GrxCAD.DatabaseServices.DwgFiler)">
+  GetObjectSaveVersion(DwgFiler)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual FullDwgVersion GetObjectSaveVersion(DwgFiler filer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filer</code> <a class="xref" href="GrxCAD.DatabaseServices.DwgFiler.html">DwgFiler</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.FullDwgVersion.html">FullDwgVersion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_GetObjectSaveVersion_" data-uid="GrxCAD.DatabaseServices.DBObject.GetObjectSaveVersion*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_GetObjectSaveVersion_GrxCAD_DatabaseServices_DxfFiler_" data-uid="GrxCAD.DatabaseServices.DBObject.GetObjectSaveVersion(GrxCAD.DatabaseServices.DxfFiler)">
+  GetObjectSaveVersion(DxfFiler)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual FullDwgVersion GetObjectSaveVersion(DxfFiler filer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filer</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfFiler.html">DxfFiler</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.FullDwgVersion.html">FullDwgVersion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_GetPersistentReactorIds_" data-uid="GrxCAD.DatabaseServices.DBObject.GetPersistentReactorIds*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_GetPersistentReactorIds" data-uid="GrxCAD.DatabaseServices.DBObject.GetPersistentReactorIds">
+  GetPersistentReactorIds()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectIdCollection GetPersistentReactorIds()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectIdCollection.html">ObjectIdCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_GetReactors_" data-uid="GrxCAD.DatabaseServices.DBObject.GetReactors*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_GetReactors" data-uid="GrxCAD.DatabaseServices.DBObject.GetReactors">
+  GetReactors()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use GetTransientReactors() instead.&quot;)]
+public List&lt;RXObject&gt; GetReactors()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="GrxCAD.Runtime.RXObject.html">RXObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_GetTransientReactors_" data-uid="GrxCAD.DatabaseServices.DBObject.GetTransientReactors*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_GetTransientReactors" data-uid="GrxCAD.DatabaseServices.DBObject.GetTransientReactors">
+  GetTransientReactors()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;RXObject&gt; GetTransientReactors()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="GrxCAD.Runtime.RXObject.html">RXObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_GetXDataForApplication_" data-uid="GrxCAD.DatabaseServices.DBObject.GetXDataForApplication*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_GetXDataForApplication_System_String_" data-uid="GrxCAD.DatabaseServices.DBObject.GetXDataForApplication(System.String)">
+  GetXDataForApplication(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResultBuffer GetXDataForApplication(string applicationName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>applicationName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ResultBuffer.html">ResultBuffer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_HandOverTo_" data-uid="GrxCAD.DatabaseServices.DBObject.HandOverTo*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_HandOverTo_GrxCAD_DatabaseServices_DBObject_System_Boolean_System_Boolean_" data-uid="GrxCAD.DatabaseServices.DBObject.HandOverTo(GrxCAD.DatabaseServices.DBObject,System.Boolean,System.Boolean)">
+  HandOverTo(DBObject, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HandOverTo(DBObject newPointer, bool keepXData, bool keepExtensionDictionary)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newPointer</code> <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html">DBObject</a></dt>
+    <dd></dd>
+    <dt><code>keepXData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>keepExtensionDictionary</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_HasContext_" data-uid="GrxCAD.DatabaseServices.DBObject.HasContext*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_HasContext_GrxCAD_DatabaseServices_ObjectContext_" data-uid="GrxCAD.DatabaseServices.DBObject.HasContext(GrxCAD.DatabaseServices.ObjectContext)">
+  HasContext(ObjectContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasContext(ObjectContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectContext.html">ObjectContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_HasPersistentReactor_" data-uid="GrxCAD.DatabaseServices.DBObject.HasPersistentReactor*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_HasPersistentReactor_GrxCAD_DatabaseServices_ObjectId_" data-uid="GrxCAD.DatabaseServices.DBObject.HasPersistentReactor(GrxCAD.DatabaseServices.ObjectId)">
+  HasPersistentReactor(ObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasPersistentReactor(ObjectId objId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objId</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_IsCustomObject_" data-uid="GrxCAD.DatabaseServices.DBObject.IsCustomObject*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_IsCustomObject_GrxCAD_DatabaseServices_ObjectId_" data-uid="GrxCAD.DatabaseServices.DBObject.IsCustomObject(GrxCAD.DatabaseServices.ObjectId)">
+  IsCustomObject(ObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsCustomObject(ObjectId id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_ReleaseExtensionDictionary_" data-uid="GrxCAD.DatabaseServices.DBObject.ReleaseExtensionDictionary*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_ReleaseExtensionDictionary" data-uid="GrxCAD.DatabaseServices.DBObject.ReleaseExtensionDictionary">
+  ReleaseExtensionDictionary()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReleaseExtensionDictionary()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_RemoveContext_" data-uid="GrxCAD.DatabaseServices.DBObject.RemoveContext*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_RemoveContext_GrxCAD_DatabaseServices_ObjectContext_" data-uid="GrxCAD.DatabaseServices.DBObject.RemoveContext(GrxCAD.DatabaseServices.ObjectContext)">
+  RemoveContext(ObjectContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveContext(ObjectContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectContext.html">ObjectContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_RemoveField_" data-uid="GrxCAD.DatabaseServices.DBObject.RemoveField*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_RemoveField" data-uid="GrxCAD.DatabaseServices.DBObject.RemoveField">
+  RemoveField()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId RemoveField()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_RemoveField_" data-uid="GrxCAD.DatabaseServices.DBObject.RemoveField*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_RemoveField_GrxCAD_DatabaseServices_ObjectId_" data-uid="GrxCAD.DatabaseServices.DBObject.RemoveField(GrxCAD.DatabaseServices.ObjectId)">
+  RemoveField(ObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveField(ObjectId id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_RemoveField_" data-uid="GrxCAD.DatabaseServices.DBObject.RemoveField*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_RemoveField_System_String_" data-uid="GrxCAD.DatabaseServices.DBObject.RemoveField(System.String)">
+  RemoveField(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId RemoveField(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_RemovePersistentReactor_" data-uid="GrxCAD.DatabaseServices.DBObject.RemovePersistentReactor*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_RemovePersistentReactor_GrxCAD_DatabaseServices_ObjectId_" data-uid="GrxCAD.DatabaseServices.DBObject.RemovePersistentReactor(GrxCAD.DatabaseServices.ObjectId)">
+  RemovePersistentReactor(ObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemovePersistentReactor(ObjectId objId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objId</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_ResetScaleDependentProperties_" data-uid="GrxCAD.DatabaseServices.DBObject.ResetScaleDependentProperties*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_ResetScaleDependentProperties" data-uid="GrxCAD.DatabaseServices.DBObject.ResetScaleDependentProperties">
+  ResetScaleDependentProperties()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetScaleDependentProperties()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_SetField_" data-uid="GrxCAD.DatabaseServices.DBObject.SetField*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_SetField_GrxCAD_DatabaseServices_Field_" data-uid="GrxCAD.DatabaseServices.DBObject.SetField(GrxCAD.DatabaseServices.Field)">
+  SetField(Field)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId SetField(Field field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="GrxCAD.DatabaseServices.Field.html">Field</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_SetField_" data-uid="GrxCAD.DatabaseServices.DBObject.SetField*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_SetField_System_String_GrxCAD_DatabaseServices_Field_" data-uid="GrxCAD.DatabaseServices.DBObject.SetField(System.String,GrxCAD.DatabaseServices.Field)">
+  SetField(string, Field)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId SetField(string propertyName, Field field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>field</code> <a class="xref" href="GrxCAD.DatabaseServices.Field.html">Field</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_SetFromStyle_" data-uid="GrxCAD.DatabaseServices.DBObject.SetFromStyle*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_SetFromStyle" data-uid="GrxCAD.DatabaseServices.DBObject.SetFromStyle">
+  SetFromStyle()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetFromStyle()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_SetObjectIdsInFlux_" data-uid="GrxCAD.DatabaseServices.DBObject.SetObjectIdsInFlux*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_SetObjectIdsInFlux" data-uid="GrxCAD.DatabaseServices.DBObject.SetObjectIdsInFlux">
+  SetObjectIdsInFlux()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetObjectIdsInFlux()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_SetPaperOrientation_" data-uid="GrxCAD.DatabaseServices.DBObject.SetPaperOrientation*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_SetPaperOrientation_System_Boolean_" data-uid="GrxCAD.DatabaseServices.DBObject.SetPaperOrientation(System.Boolean)">
+  SetPaperOrientation(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPaperOrientation(bool bPaperOrientation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bPaperOrientation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_SubSetAttributes_" data-uid="GrxCAD.DatabaseServices.DBObject.SubSetAttributes*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_SubSetAttributes_GrxCAD_GraphicsInterface_DrawableTraits_" data-uid="GrxCAD.DatabaseServices.DBObject.SubSetAttributes(GrxCAD.GraphicsInterface.DrawableTraits)">
+  SubSetAttributes(DrawableTraits)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int SubSetAttributes(DrawableTraits traits)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>traits</code> <a class="xref" href="GrxCAD.GraphicsInterface.DrawableTraits.html">DrawableTraits</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_SubViewportDraw_" data-uid="GrxCAD.DatabaseServices.DBObject.SubViewportDraw*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_SubViewportDraw_GrxCAD_GraphicsInterface_ViewportDraw_" data-uid="GrxCAD.DatabaseServices.DBObject.SubViewportDraw(GrxCAD.GraphicsInterface.ViewportDraw)">
+  SubViewportDraw(ViewportDraw)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void SubViewportDraw(ViewportDraw vd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vd</code> <a class="xref" href="GrxCAD.GraphicsInterface.ViewportDraw.html">ViewportDraw</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_SubViewportDrawLogicalFlags_" data-uid="GrxCAD.DatabaseServices.DBObject.SubViewportDrawLogicalFlags*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_SubViewportDrawLogicalFlags_GrxCAD_GraphicsInterface_ViewportDraw_" data-uid="GrxCAD.DatabaseServices.DBObject.SubViewportDrawLogicalFlags(GrxCAD.GraphicsInterface.ViewportDraw)">
+  SubViewportDrawLogicalFlags(ViewportDraw)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int SubViewportDrawLogicalFlags(ViewportDraw vd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vd</code> <a class="xref" href="GrxCAD.GraphicsInterface.ViewportDraw.html">ViewportDraw</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_SubWorldDraw_" data-uid="GrxCAD.DatabaseServices.DBObject.SubWorldDraw*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_SubWorldDraw_GrxCAD_GraphicsInterface_WorldDraw_" data-uid="GrxCAD.DatabaseServices.DBObject.SubWorldDraw(GrxCAD.GraphicsInterface.WorldDraw)">
+  SubWorldDraw(WorldDraw)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool SubWorldDraw(WorldDraw wd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wd</code> <a class="xref" href="GrxCAD.GraphicsInterface.WorldDraw.html">WorldDraw</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_SupportsCollection_" data-uid="GrxCAD.DatabaseServices.DBObject.SupportsCollection*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_SupportsCollection_System_String_" data-uid="GrxCAD.DatabaseServices.DBObject.SupportsCollection(System.String)">
+  SupportsCollection(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SupportsCollection(string collectionName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collectionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_SwapIdWith_" data-uid="GrxCAD.DatabaseServices.DBObject.SwapIdWith*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_SwapIdWith_GrxCAD_DatabaseServices_ObjectId_System_Boolean_System_Boolean_" data-uid="GrxCAD.DatabaseServices.DBObject.SwapIdWith(GrxCAD.DatabaseServices.ObjectId,System.Boolean,System.Boolean)">
+  SwapIdWith(ObjectId, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwapIdWith(ObjectId otherId, bool swapExtendedData, bool swapExtensionDictionary)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherId</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+    <dt><code>swapExtendedData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>swapExtensionDictionary</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_SwapReferences_" data-uid="GrxCAD.DatabaseServices.DBObject.SwapReferences*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_SwapReferences_GrxCAD_DatabaseServices_IdMapping_" data-uid="GrxCAD.DatabaseServices.DBObject.SwapReferences(GrxCAD.DatabaseServices.IdMapping)">
+  SwapReferences(IdMapping)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SwapReferences(IdMapping idMap)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idMap</code> <a class="xref" href="GrxCAD.DatabaseServices.IdMapping.html">IdMapping</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_UpgradeFromNotify_" data-uid="GrxCAD.DatabaseServices.DBObject.UpgradeFromNotify*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_UpgradeFromNotify" data-uid="GrxCAD.DatabaseServices.DBObject.UpgradeFromNotify">
+  UpgradeFromNotify()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpgradeFromNotify()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_UpgradeOpen_" data-uid="GrxCAD.DatabaseServices.DBObject.UpgradeOpen*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_UpgradeOpen" data-uid="GrxCAD.DatabaseServices.DBObject.UpgradeOpen">
+  UpgradeOpen()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpgradeOpen()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_WblockClone_" data-uid="GrxCAD.DatabaseServices.DBObject.WblockClone*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_WblockClone_GrxCAD_Runtime_RXObject_GrxCAD_DatabaseServices_IdMapping_System_Boolean_" data-uid="GrxCAD.DatabaseServices.DBObject.WblockClone(GrxCAD.Runtime.RXObject,GrxCAD.DatabaseServices.IdMapping,System.Boolean)">
+  WblockClone(RXObject, IdMapping, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DBObject WblockClone(RXObject ownerPointer, IdMapping idMap, bool isPrimary)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ownerPointer</code> <a class="xref" href="GrxCAD.Runtime.RXObject.html">RXObject</a></dt>
+    <dd></dd>
+    <dt><code>idMap</code> <a class="xref" href="GrxCAD.DatabaseServices.IdMapping.html">IdMapping</a></dt>
+    <dd></dd>
+    <dt><code>isPrimary</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.DBObject.html">DBObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DBObject_XDataTransformBy_" data-uid="GrxCAD.DatabaseServices.DBObject.XDataTransformBy*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_XDataTransformBy_GrxCAD_Geometry_Matrix3d_" data-uid="GrxCAD.DatabaseServices.DBObject.XDataTransformBy(GrxCAD.Geometry.Matrix3d)">
+  XDataTransformBy(Matrix3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void XDataTransformBy(Matrix3d transform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transform</code> <a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_Cancelled" data-uid="GrxCAD.DatabaseServices.DBObject.Cancelled">
+  Cancelled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler Cancelled</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_Copied" data-uid="GrxCAD.DatabaseServices.DBObject.Copied">
+  Copied
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ObjectEventHandler Copied</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectEventHandler.html">ObjectEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_Erased" data-uid="GrxCAD.DatabaseServices.DBObject.Erased">
+  Erased
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ObjectErasedEventHandler Erased</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectErasedEventHandler.html">ObjectErasedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_Goodbye" data-uid="GrxCAD.DatabaseServices.DBObject.Goodbye">
+  Goodbye
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler Goodbye</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_Modified" data-uid="GrxCAD.DatabaseServices.DBObject.Modified">
+  Modified
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler Modified</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_ModifiedXData" data-uid="GrxCAD.DatabaseServices.DBObject.ModifiedXData">
+  ModifiedXData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler ModifiedXData</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_ModifyUndone" data-uid="GrxCAD.DatabaseServices.DBObject.ModifyUndone">
+  ModifyUndone
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler ModifyUndone</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_ObjectClosed" data-uid="GrxCAD.DatabaseServices.DBObject.ObjectClosed">
+  ObjectClosed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ObjectClosedEventHandler ObjectClosed</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectClosedEventHandler.html">ObjectClosedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_OpenedForModify" data-uid="GrxCAD.DatabaseServices.DBObject.OpenedForModify">
+  OpenedForModify
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler OpenedForModify</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_Reappended" data-uid="GrxCAD.DatabaseServices.DBObject.Reappended">
+  Reappended
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler Reappended</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_SubObjectModified" data-uid="GrxCAD.DatabaseServices.DBObject.SubObjectModified">
+  SubObjectModified
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ObjectEventHandler SubObjectModified</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectEventHandler.html">ObjectEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_DatabaseServices_DBObject_Unappended" data-uid="GrxCAD.DatabaseServices.DBObject.Unappended">
+  Unappended
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler Unappended</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

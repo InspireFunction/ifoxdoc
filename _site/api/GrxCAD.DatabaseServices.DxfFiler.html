@@ -1,0 +1,2519 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DxfFiler
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DxfFiler
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GrxCAD.DatabaseServices.DxfFiler">
+
+
+
+  <h1 id="GrxCAD_DatabaseServices_DxfFiler" data-uid="GrxCAD.DatabaseServices.DxfFiler" class="text-break">
+    Class DxfFiler
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GrxCAD.html">GrxCAD</a>.<a class="xref" href="GrxCAD.DatabaseServices.html">DatabaseServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>gmdb.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;OdDbDxfFiler&quot;)]
+public abstract class DxfFiler : RXObject, IDisposable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html">DisposableWrapper</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.RXObject.html">RXObject</a></div>
+      <div><span class="xref">DxfFiler</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_Create_System_IntPtr_System_Boolean_">RXObject.Create(IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_GetRXClass">RXObject.GetRXClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_DeleteUnmanagedObject">RXObject.DeleteUnmanagedObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_Clone">RXObject.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_CompareTo_System_Object_">RXObject.CompareTo(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_CopyFrom_GrxCAD_Runtime_RXObject_">RXObject.CopyFrom(RXObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_GetClass_System_Type_">RXObject.GetClass(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_QueryX_GrxCAD_Runtime_RXClass_">RXObject.QueryX(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_X_GrxCAD_Runtime_RXClass_">RXObject.X(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_m_bAutoDelete">DisposableWrapper.m_bAutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_m_imp">DisposableWrapper.m_imp</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Detach">DisposableWrapper.Detach()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Create_System_Type_System_IntPtr_System_Boolean_">DisposableWrapper.Create(Type, IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Equals_System_Object_">DisposableWrapper.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_GetHashCode">DisposableWrapper.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Dispose_System_Boolean_">DisposableWrapper.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Dispose">DisposableWrapper.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_UnmanagedObject">DisposableWrapper.UnmanagedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_IsDisposed">DisposableWrapper.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_AutoDelete">DisposableWrapper.AutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone">MarshalByRefObject.MemberwiseClone(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref">MarshalByRefObject.CreateObjRef(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler__ctor_" data-uid="GrxCAD.DatabaseServices.DxfFiler.#ctor*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler__ctor" data-uid="GrxCAD.DatabaseServices.DxfFiler.#ctor">
+  DxfFiler()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DxfFiler()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler__ctor_" data-uid="GrxCAD.DatabaseServices.DxfFiler.#ctor*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler__ctor_System_IntPtr_System_Boolean_" data-uid="GrxCAD.DatabaseServices.DxfFiler.#ctor(System.IntPtr,System.Boolean)">
+  DxfFiler(IntPtr, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DxfFiler(IntPtr unmanagedPointer, bool autoDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unmanagedPointer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_AtEmbeddedObjectStart_" data-uid="GrxCAD.DatabaseServices.DxfFiler.AtEmbeddedObjectStart*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_AtEmbeddedObjectStart" data-uid="GrxCAD.DatabaseServices.DxfFiler.AtEmbeddedObjectStart">
+  AtEmbeddedObjectStart
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AtEmbeddedObjectStart { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_AtEndOfFile_" data-uid="GrxCAD.DatabaseServices.DxfFiler.AtEndOfFile*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_AtEndOfFile" data-uid="GrxCAD.DatabaseServices.DxfFiler.AtEndOfFile">
+  AtEndOfFile
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool AtEndOfFile { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_AtEndOfObject_" data-uid="GrxCAD.DatabaseServices.DxfFiler.AtEndOfObject*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_AtEndOfObject" data-uid="GrxCAD.DatabaseServices.DxfFiler.AtEndOfObject">
+  AtEndOfObject
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool AtEndOfObject { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_AtExtendedData_" data-uid="GrxCAD.DatabaseServices.DxfFiler.AtExtendedData*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_AtExtendedData" data-uid="GrxCAD.DatabaseServices.DxfFiler.AtExtendedData">
+  AtExtendedData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool AtExtendedData { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_Database_" data-uid="GrxCAD.DatabaseServices.DxfFiler.Database*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_Database" data-uid="GrxCAD.DatabaseServices.DxfFiler.Database">
+  Database
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Database Database { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.Database.html">Database</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_DwgVersion_" data-uid="GrxCAD.DatabaseServices.DxfFiler.DwgVersion*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_DwgVersion" data-uid="GrxCAD.DatabaseServices.DxfFiler.DwgVersion">
+  DwgVersion
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FullDwgVersion DwgVersion { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.FullDwgVersion.html">FullDwgVersion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_Elevation_" data-uid="GrxCAD.DatabaseServices.DxfFiler.Elevation*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_Elevation" data-uid="GrxCAD.DatabaseServices.DxfFiler.Elevation">
+  Elevation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[UnitType(UnitType.Distance)]
+public virtual double Elevation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_ErrorMessage_" data-uid="GrxCAD.DatabaseServices.DxfFiler.ErrorMessage*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_ErrorMessage" data-uid="GrxCAD.DatabaseServices.DxfFiler.ErrorMessage">
+  ErrorMessage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ErrorMessage { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_FilerType_" data-uid="GrxCAD.DatabaseServices.DxfFiler.FilerType*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_FilerType" data-uid="GrxCAD.DatabaseServices.DxfFiler.FilerType">
+  FilerType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract FilerType FilerType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.FilerType.html">FilerType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_IncludesDefaultValues_" data-uid="GrxCAD.DatabaseServices.DxfFiler.IncludesDefaultValues*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_IncludesDefaultValues" data-uid="GrxCAD.DatabaseServices.DxfFiler.IncludesDefaultValues">
+  IncludesDefaultValues
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IncludesDefaultValues { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_IsModifyingExistingObject_" data-uid="GrxCAD.DatabaseServices.DxfFiler.IsModifyingExistingObject*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_IsModifyingExistingObject" data-uid="GrxCAD.DatabaseServices.DxfFiler.IsModifyingExistingObject">
+  IsModifyingExistingObject
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsModifyingExistingObject { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_Position_" data-uid="GrxCAD.DatabaseServices.DxfFiler.Position*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_Position" data-uid="GrxCAD.DatabaseServices.DxfFiler.Position">
+  Position
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract long Position { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_Precision_" data-uid="GrxCAD.DatabaseServices.DxfFiler.Precision*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_Precision" data-uid="GrxCAD.DatabaseServices.DxfFiler.Precision">
+  Precision
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int Precision { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_Thickness_" data-uid="GrxCAD.DatabaseServices.DxfFiler.Thickness*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_Thickness" data-uid="GrxCAD.DatabaseServices.DxfFiler.Thickness">
+  Thickness
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[UnitType(UnitType.Distance)]
+public virtual double Thickness { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_AtSubclassData_" data-uid="GrxCAD.DatabaseServices.DxfFiler.AtSubclassData*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_AtSubclassData_System_String_" data-uid="GrxCAD.DatabaseServices.DxfFiler.AtSubclassData(System.String)">
+  AtSubclassData(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool AtSubclassData(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_FilerStatus_" data-uid="GrxCAD.DatabaseServices.DxfFiler.FilerStatus*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_FilerStatus" data-uid="GrxCAD.DatabaseServices.DxfFiler.FilerStatus">
+  FilerStatus()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void FilerStatus()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_HaltAtClassBoundaries_" data-uid="GrxCAD.DatabaseServices.DxfFiler.HaltAtClassBoundaries*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_HaltAtClassBoundaries_System_Boolean_" data-uid="GrxCAD.DatabaseServices.DxfFiler.HaltAtClassBoundaries(System.Boolean)">
+  HaltAtClassBoundaries(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void HaltAtClassBoundaries(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_PushBackItem_" data-uid="GrxCAD.DatabaseServices.DxfFiler.PushBackItem*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_PushBackItem" data-uid="GrxCAD.DatabaseServices.DxfFiler.PushBackItem">
+  PushBackItem()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void PushBackItem()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_ReadAngle_" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadAngle*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_ReadAngle" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadAngle">
+  ReadAngle()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract double ReadAngle()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_ReadBoolean_" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadBoolean*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_ReadBoolean" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadBoolean">
+  ReadBoolean()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool ReadBoolean()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_ReadByte_" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadByte*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_ReadByte" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadByte">
+  ReadByte()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract byte ReadByte()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_ReadBytes_" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadBytes*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_ReadBytes_System_Byte___" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadBytes(System.Byte[])">
+  ReadBytes(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void ReadBytes(byte[] value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_ReadDouble_" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadDouble*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_ReadDouble" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadDouble">
+  ReadDouble()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract double ReadDouble()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_ReadHandle_" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadHandle*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_ReadHandle" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadHandle">
+  ReadHandle()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Handle ReadHandle()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.Handle.html">Handle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_ReadInt16_" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadInt16*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_ReadInt16" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadInt16">
+  ReadInt16()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract short ReadInt16()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_ReadInt32_" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadInt32*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_ReadInt32" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadInt32">
+  ReadInt32()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int ReadInt32()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_ReadInt64_" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadInt64*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_ReadInt64" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadInt64">
+  ReadInt64()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract long ReadInt64()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_ReadObjectId_" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadObjectId*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_ReadObjectId" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadObjectId">
+  ReadObjectId()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ObjectId ReadObjectId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_ReadPoint2d_" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadPoint2d*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_ReadPoint2d" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadPoint2d">
+  ReadPoint2d()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Point2d ReadPoint2d()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_ReadPoint3d_" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadPoint3d*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_ReadPoint3d" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadPoint3d">
+  ReadPoint3d()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Point3d ReadPoint3d()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_ReadResultBuffer_" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadResultBuffer*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_ReadResultBuffer" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadResultBuffer">
+  ReadResultBuffer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ResultBuffer ReadResultBuffer()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ResultBuffer.html">ResultBuffer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_ReadScale3d_" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadScale3d*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_ReadScale3d" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadScale3d">
+  ReadScale3d()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Scale3d ReadScale3d()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Scale3d.html">Scale3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_ReadString_" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadString*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_ReadString" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadString">
+  ReadString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract string ReadString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_ReadUInt16_" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadUInt16*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_ReadUInt16" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadUInt16">
+  ReadUInt16()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ushort ReadUInt16()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_ReadUInt32_" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadUInt32*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_ReadUInt32" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadUInt32">
+  ReadUInt32()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract uint ReadUInt32()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_ReadUInt64_" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadUInt64*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_ReadUInt64" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadUInt64">
+  ReadUInt64()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ulong ReadUInt64()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_ReadVector2d_" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadVector2d*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_ReadVector2d" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadVector2d">
+  ReadVector2d()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Vector2d ReadVector2d()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_ReadVector3d_" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadVector3d*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_ReadVector3d" data-uid="GrxCAD.DatabaseServices.DxfFiler.ReadVector3d">
+  ReadVector3d()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Vector3d ReadVector3d()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_ResetFilerStatus_" data-uid="GrxCAD.DatabaseServices.DxfFiler.ResetFilerStatus*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_ResetFilerStatus" data-uid="GrxCAD.DatabaseServices.DxfFiler.ResetFilerStatus">
+  ResetFilerStatus()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void ResetFilerStatus()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_RewindFiler_" data-uid="GrxCAD.DatabaseServices.DxfFiler.RewindFiler*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_RewindFiler" data-uid="GrxCAD.DatabaseServices.DxfFiler.RewindFiler">
+  RewindFiler()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int RewindFiler()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_Seek_" data-uid="GrxCAD.DatabaseServices.DxfFiler.Seek*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_Seek_System_Int64_System_Int32_" data-uid="GrxCAD.DatabaseServices.DxfFiler.Seek(System.Int64,System.Int32)">
+  Seek(long, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Seek(long offset, int method)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_SetError_" data-uid="GrxCAD.DatabaseServices.DxfFiler.SetError*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_SetError_GrxCAD_Runtime_ErrorStatus_System_String_System_String___" data-uid="GrxCAD.DatabaseServices.DxfFiler.SetError(GrxCAD.Runtime.ErrorStatus,System.String,System.String[])">
+  SetError(ErrorStatus, string, string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetError(ErrorStatus value, string format, string[] values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="GrxCAD.Runtime.ErrorStatus.html">ErrorStatus</a></dt>
+    <dd></dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_SetError_" data-uid="GrxCAD.DatabaseServices.DxfFiler.SetError*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_SetError_System_String_System_String___" data-uid="GrxCAD.DatabaseServices.DxfFiler.SetError(System.String,System.String[])">
+  SetError(string, string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetError(string format, string[] values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WriteAngle_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteAngle*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WriteAngle_GrxCAD_DatabaseServices_DxfCode_System_Double_System_Int32_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteAngle(GrxCAD.DatabaseServices.DxfCode,System.Double,System.Int32)">
+  WriteAngle(DxfCode, double, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WriteAngle(DxfCode opCode, double value, int precision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>precision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WriteBool_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteBool*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WriteBool_GrxCAD_DatabaseServices_DxfCode_System_Boolean_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteBool(GrxCAD.DatabaseServices.DxfCode,System.Boolean)">
+  WriteBool(DxfCode, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WriteBool(DxfCode opCode, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WriteBoolean_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteBoolean*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WriteBoolean_GrxCAD_DatabaseServices_DxfCode_System_Boolean_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteBoolean(GrxCAD.DatabaseServices.DxfCode,System.Boolean)">
+  WriteBoolean(DxfCode, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WriteBoolean(DxfCode opCode, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WriteByte_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteByte*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WriteByte_GrxCAD_DatabaseServices_DxfCode_System_Byte_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteByte(GrxCAD.DatabaseServices.DxfCode,System.Byte)">
+  WriteByte(DxfCode, byte)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WriteByte(DxfCode opCode, byte value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WriteBytes_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteBytes*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WriteBytes_GrxCAD_DatabaseServices_DxfCode_System_Byte___" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteBytes(GrxCAD.DatabaseServices.DxfCode,System.Byte[])">
+  WriteBytes(DxfCode, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WriteBytes(DxfCode opCode, byte[] chunk)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>chunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WriteDouble_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteDouble*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WriteDouble_GrxCAD_DatabaseServices_DxfCode_System_Double_System_Int32_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteDouble(GrxCAD.DatabaseServices.DxfCode,System.Double,System.Int32)">
+  WriteDouble(DxfCode, double, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WriteDouble(DxfCode opCode, double value, int precision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>precision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WriteEmbeddedObjectStart_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteEmbeddedObjectStart*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WriteEmbeddedObjectStart" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteEmbeddedObjectStart">
+  WriteEmbeddedObjectStart()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteEmbeddedObjectStart()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WriteHandle_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteHandle*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WriteHandle_GrxCAD_DatabaseServices_DxfCode_GrxCAD_DatabaseServices_Handle_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteHandle(GrxCAD.DatabaseServices.DxfCode,GrxCAD.DatabaseServices.Handle)">
+  WriteHandle(DxfCode, Handle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WriteHandle(DxfCode opCode, Handle value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="GrxCAD.DatabaseServices.Handle.html">Handle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WriteInt16_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteInt16*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WriteInt16_GrxCAD_DatabaseServices_DxfCode_System_Int16_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteInt16(GrxCAD.DatabaseServices.DxfCode,System.Int16)">
+  WriteInt16(DxfCode, short)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WriteInt16(DxfCode opCode, short value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WriteInt32_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteInt32*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WriteInt32_GrxCAD_DatabaseServices_DxfCode_System_Int32_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteInt32(GrxCAD.DatabaseServices.DxfCode,System.Int32)">
+  WriteInt32(DxfCode, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WriteInt32(DxfCode opCode, int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WriteInt64_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteInt64*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WriteInt64_GrxCAD_DatabaseServices_DxfCode_System_Int64_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteInt64(GrxCAD.DatabaseServices.DxfCode,System.Int64)">
+  WriteInt64(DxfCode, long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WriteInt64(DxfCode opCode, long value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WriteName_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteName*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WriteName_GrxCAD_DatabaseServices_DxfCode_System_String_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteName(GrxCAD.DatabaseServices.DxfCode,System.String)">
+  WriteName(DxfCode, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WriteName(DxfCode opCode, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WriteObjectId_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteObjectId*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WriteObjectId_GrxCAD_DatabaseServices_DxfCode_GrxCAD_DatabaseServices_ObjectId_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteObjectId(GrxCAD.DatabaseServices.DxfCode,GrxCAD.DatabaseServices.ObjectId)">
+  WriteObjectId(DxfCode, ObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WriteObjectId(DxfCode opCode, ObjectId value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WritePoint2d_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WritePoint2d*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WritePoint2d_GrxCAD_DatabaseServices_DxfCode_GrxCAD_Geometry_Point2d_System_Int32_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WritePoint2d(GrxCAD.DatabaseServices.DxfCode,GrxCAD.Geometry.Point2d,System.Int32)">
+  WritePoint2d(DxfCode, Point2d, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WritePoint2d(DxfCode opCode, Point2d value, int precision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+    <dt><code>precision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WritePoint3d_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WritePoint3d*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WritePoint3d_GrxCAD_DatabaseServices_DxfCode_GrxCAD_Geometry_Point3d_System_Int32_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WritePoint3d(GrxCAD.DatabaseServices.DxfCode,GrxCAD.Geometry.Point3d,System.Int32)">
+  WritePoint3d(DxfCode, Point3d, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WritePoint3d(DxfCode opCode, Point3d value, int precision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>precision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WriteResultBuffer_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteResultBuffer*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WriteResultBuffer_GrxCAD_DatabaseServices_ResultBuffer_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteResultBuffer(GrxCAD.DatabaseServices.ResultBuffer)">
+  WriteResultBuffer(ResultBuffer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WriteResultBuffer(ResultBuffer buffer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buffer</code> <a class="xref" href="GrxCAD.DatabaseServices.ResultBuffer.html">ResultBuffer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WriteScale3d_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteScale3d*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WriteScale3d_GrxCAD_DatabaseServices_DxfCode_GrxCAD_Geometry_Scale3d_System_Int32_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteScale3d(GrxCAD.DatabaseServices.DxfCode,GrxCAD.Geometry.Scale3d,System.Int32)">
+  WriteScale3d(DxfCode, Scale3d, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WriteScale3d(DxfCode opCode, Scale3d value, int precision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="GrxCAD.Geometry.Scale3d.html">Scale3d</a></dt>
+    <dd></dd>
+    <dt><code>precision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WriteString_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteString*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WriteString_GrxCAD_DatabaseServices_DxfCode_System_String_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteString(GrxCAD.DatabaseServices.DxfCode,System.String)">
+  WriteString(DxfCode, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WriteString(DxfCode opCode, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WriteUInt16_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteUInt16*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WriteUInt16_GrxCAD_DatabaseServices_DxfCode_System_UInt16_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteUInt16(GrxCAD.DatabaseServices.DxfCode,System.UInt16)">
+  WriteUInt16(DxfCode, ushort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WriteUInt16(DxfCode opCode, ushort value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WriteUInt32_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteUInt32*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WriteUInt32_GrxCAD_DatabaseServices_DxfCode_System_UInt32_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteUInt32(GrxCAD.DatabaseServices.DxfCode,System.UInt32)">
+  WriteUInt32(DxfCode, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WriteUInt32(DxfCode opCode, uint value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WriteUInt64_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteUInt64*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WriteUInt64_GrxCAD_DatabaseServices_DxfCode_System_UInt64_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteUInt64(GrxCAD.DatabaseServices.DxfCode,System.UInt64)">
+  WriteUInt64(DxfCode, ulong)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WriteUInt64(DxfCode opCode, ulong value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WriteVector2d_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteVector2d*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WriteVector2d_GrxCAD_DatabaseServices_DxfCode_GrxCAD_Geometry_Vector2d_System_Int32_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteVector2d(GrxCAD.DatabaseServices.DxfCode,GrxCAD.Geometry.Vector2d,System.Int32)">
+  WriteVector2d(DxfCode, Vector2d, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WriteVector2d(DxfCode opCode, Vector2d value, int precision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+    <dt><code>precision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WriteVector3d_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteVector3d*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WriteVector3d_GrxCAD_DatabaseServices_DxfCode_GrxCAD_Geometry_Vector3d_System_Int32_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteVector3d(GrxCAD.DatabaseServices.DxfCode,GrxCAD.Geometry.Vector3d,System.Int32)">
+  WriteVector3d(DxfCode, Vector3d, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WriteVector3d(DxfCode opCode, Vector3d value, int precision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="GrxCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+    <dt><code>precision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_DxfFiler_WriteXDataStart_" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteXDataStart*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_DxfFiler_WriteXDataStart" data-uid="GrxCAD.DatabaseServices.DxfFiler.WriteXDataStart">
+  WriteXDataStart()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WriteXDataStart()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

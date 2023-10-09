@@ -1,0 +1,367 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>选择集过滤器用法 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="选择集过滤器用法 ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="选择集过滤器用法">选择集过滤器用法</h1>
+
+<h2 id="选择集过滤器简介">选择集过滤器简介</h2>
+<p>桌子提供了选择集过滤器是为了更精确的选择对象。可以通过使用选择过滤器来限制哪些对象被选中并添加到选择集，选择过滤器列表通过属性或类型过滤所选对象。</p>
+<p>在桌子的 .net api 中：选择过滤器由一对 TypedValue 参数构成。TypedValue 的第一个参数表明过滤器的类型（例如对象），第二个参数为要过滤的值（例如圆）。过滤器类型是一个 DXF 组码，用来指定使用哪种过滤器。</p>
+<p>默认的使用桌子api来创建选择集（带过滤器）分三步：</p>
+<ol>
+<li><p>创建一个TypedValue数组来定义过滤器条件</p>
+<pre><code class="lang-csharp">TypedValue[] acTypValAr = new TypedValue[1]; // 创建数组
+acTypValAr.SetValue(new TypedValue((int)DxfCode.Start, &quot;CIRCLE&quot;), 0); 
+// 添加一个过滤条件，例如选择圆
+
+// 如果要创建多个过滤条件怎么办？
+TypedValue[] acTypValAr = new TypedValue[3];
+acTypValAr.SetValue(new TypedValue((int)DxfCode.Color, 5), 0);
+acTypValAr.SetValue(new TypedValue((int)DxfCode.Start, &quot;CIRCLE&quot;), 1);
+acTypValAr.SetValue(new TypedValue((int)DxfCode.LayerName, &quot;0&quot;), 2);
+// 实际上只要不停的往数组里添加条件就可以了
+</code></pre>
+</li>
+<li><p>创建SelectionFilter对象</p>
+<pre><code class="lang-csharp">// 将过滤器条件赋值给 SelectionFilter 对象
+SelectionFilter acSelFtr = new SelectionFilter(acTypValAr);
+</code></pre>
+</li>
+<li><p>创建选择集</p>
+<pre><code class="lang-csharp">// 请求用户在图形区域选择对象
+PromptSelectionResult acSSPrompt;
+acSSPrompt = acDocEd.GetSelection(acSelFtr);
+</code></pre>
+</li>
+</ol>
+<p>看起来很是简单对不对，单个条件和多个条件的过滤非常简单。当指定多个选择条件时，AutoCAD 假设所选对象必须满足每个条件。我们还可以用另外一种方式定义过滤条件。对于数值项，可以使用关系运算（比如，圆的半径必须大于等于 5.0）。对于所有项，可以使用逻辑运算（比如单行文字或多行文字）。使用 DXF 组码-4 或常量 DxfCode.Operator 表示选择过滤器中的关系预算符类型。运算符本身用字符串表示。</p>
+<p>比如：</p>
+<ol>
+<li><p>过滤半径大于等于5.0的圆</p>
+<pre><code class="lang-csharp">TypedValue[] acTypValAr = {
+      new TypedValue((int)DxfCode.Start, &quot;CIRCLE&quot;),
+      new TypedValue((int)DxfCode.Operator, &quot;&gt;=&quot;), 
+      new TypedValue(40, 5)
+};
+</code></pre>
+</li>
+<li><p>过滤单行文本或者多行文本</p>
+<pre><code class="lang-csharp">TypedValue[] acTypValAr = {
+      new TypedValue((int)DxfCode.Operator, &quot;&lt;or&quot;),
+      new TypedValue((int)DxfCode.Start, &quot;TEXT&quot;),
+      new TypedValue((int)DxfCode.Start, &quot;MTEXT&quot;),
+      new TypedValue((int)DxfCode.Operator, &quot;or&gt;&quot;)
+};
+</code></pre>
+</li>
+<li><p>更复杂的过滤条件呢？比如选择的对象为不是位于0图层的直线，或者位于2图层的组码10的x坐标&gt;10,y坐标&gt;10的非圆图元。</p>
+<p>对应的lisp代码如下：</p>
+<pre><code class="lang-lisp">'((-4 . &quot;&lt;or&quot;)
+      (-4 . &quot;&lt;not&quot;)
+          (-4 . &quot;&lt;and&quot;)
+              (0 . &quot;line&quot;)
+        (8 . &quot;0&quot;)
+      (-4 . &quot;and&gt;&quot;)
+      (-4 . &quot;not&gt;&quot;)
+      (-4 . &quot;&lt;and&quot;)
+              (-4 . &quot;&lt;not&quot;)(0 . &quot;circle&quot;)(-4 . &quot;not&gt;&quot;)
+        (8 . &quot;2&quot;)
+              (-4 . &quot;&gt;,&gt;,*&quot;)(10 10 10 0)
+    (-4 . &quot;and&gt;&quot;)
+(-4 . &quot;or&gt;&quot;))
+</code></pre>
+<p>对应的c#代码：</p>
+<pre><code class="lang-csharp">TypedValue[] acTypValAr = {
+      new TypedValue((int)DxfCode.Operator, &quot;&lt;or&quot;),
+              new TypedValue((int)DxfCode.Operator, &quot;&lt;not&quot;),
+                  new TypedValue((int)DxfCode.Operator, &quot;&lt;and&quot;),
+                      new TypedValue((int)DxfCode.Start, &quot;LINE&quot;),
+                      new TypedValue((int)DxfCode.LayerName, &quot;0&quot;),
+                  new TypedValue((int)DxfCode.Operator, &quot;and&gt;&quot;),
+              new TypedValue((int)DxfCode.Operator, &quot;not&gt;&quot;),
+              new TypedValue((int)DxfCode.Operator, &quot;&lt;and&quot;),
+                  new TypedValue((int)DxfCode.Operator, &quot;&lt;not&quot;),
+                      new TypedValue((int)DxfCode.Start, &quot;CIRCLE&quot;),
+                  new TypedValue((int)DxfCode.Operator, &quot;not&gt;&quot;),
+                  new TypedValue((int)DxfCode.LayerName, &quot;2&quot;),
+                  new TypedValue((int)DxfCode.Operator, &quot;&gt;,&gt;,*&quot;),
+                  new TypedValue(10, new Point3d(10,10,0)),
+              new TypedValue((int)DxfCode.Operator, &quot;and&gt;&quot;),
+      new TypedValue((int)DxfCode.Operator, &quot;or&gt;&quot;)
+};
+</code></pre>
+<p>这个过滤器是不是看起来很乱，一眼看去根本不知道是要过滤什么，写起来也很麻烦。所以说，虽然桌子提供了api，但是简单的过滤条件很好用，但是复杂的过滤条件就很复杂了。</p>
+<p>因此IFox内裤提供了关于选择集过滤器的辅助类来帮助用户用更简单的方式来创建选择集的过滤器。</p>
+</li>
+</ol>
+<h2 id="内裤过滤器对象与cad过滤器对应关系">内裤过滤器对象与cad过滤器对应关系</h2>
+<p>IFoxCad内裤对于DxfCode.Operator枚举构建了一些辅助函数来表达关系运算和逻辑运算；提供了dxf函数来表达组码。其对应的关系如下表：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">内裤过滤器对象、函数</th>
+<th style="text-align: center;">cad .net api 过滤器对象、函数、枚举</th>
+<th style="text-align: center;">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">OpFilter</td>
+<td style="text-align: center;">SelectionFilter</td>
+<td style="text-align: center;">隐式转换</td>
+</tr>
+<tr>
+<td style="text-align: center;">OpOr</td>
+<td style="text-align: center;">&quot;&lt;OR&quot; ... &quot;OR&gt;&quot;</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">Op.Or</td>
+<td style="text-align: center;">&quot;&lt;OR&quot; ... &quot;OR&gt;&quot;</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">OpAnd</td>
+<td style="text-align: center;">&quot;&lt;AND&quot;...&quot;AND&gt;&quot;</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">Op.And</td>
+<td style="text-align: center;">&quot;&lt;AND&quot;...&quot;AND&gt;&quot;</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">OpNot</td>
+<td style="text-align: center;">&quot;&lt;NOT&quot; ... &quot;NOT&gt;&quot;</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">OpXor</td>
+<td style="text-align: center;">&quot;&lt;XOR&quot; ... &quot;XOR&gt;&quot;</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">OpEqual</td>
+<td style="text-align: center;">相等运算</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">OpComp</td>
+<td style="text-align: center;">比较运算符</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">Dxf()</td>
+<td style="text-align: center;">组码函数</td>
+<td style="text-align: center;">仅用于过滤器中，不是组码操作函数</td>
+</tr>
+<tr>
+<td style="text-align: center;">!</td>
+<td style="text-align: center;">&quot;&lt;NOT&quot; ... &quot;NOT&gt;&quot;</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">==</td>
+<td style="text-align: center;">&quot;=&quot;</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">!=</td>
+<td style="text-align: center;">&quot;!=&quot;</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">&gt;</td>
+<td style="text-align: center;">&quot;&gt;&quot;</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">&lt;</td>
+<td style="text-align: center;">&quot;&lt;&quot;</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">&gt;=</td>
+<td style="text-align: center;">&quot;&gt;=&quot; 或 &quot;&gt;,&gt;,*&quot;</td>
+<td style="text-align: center;">&quot;&gt;,&gt;,*&quot;用于跟point3d比较</td>
+</tr>
+<tr>
+<td style="text-align: center;">&lt;=</td>
+<td style="text-align: center;">&quot;&lt;=&quot; 或 &quot;&lt;,&lt;,*&quot;</td>
+<td style="text-align: center;">&quot;&lt;,&lt;,*&quot;用于跟point3d比较</td>
+</tr>
+<tr>
+<td style="text-align: center;">&amp;</td>
+<td style="text-align: center;">&quot;&lt;AND&quot;...&quot;AND&gt;&quot;</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">^</td>
+<td style="text-align: center;">&quot;&lt;XOR&quot; ... &quot;XOR&gt;&quot;</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">|</td>
+<td style="text-align: center;">&quot;&lt;OR&quot; ... &quot;OR&gt;&quot;</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="具体用法">具体用法</h2>
+<p>IFoxCad内裤提供了三种方式来构建过滤器，其实大同小异，就是写法不一样，用户可以根据自己的喜好来选择。</p>
+<ul>
+<li><p>第一种</p>
+<pre><code class="lang-csharp">var fd =
+    new OpOr    //定义一个 (-4 . &quot;&lt;or&quot;)(...)(-4 . &quot;or&gt;&quot;)
+    {
+        !new OpAnd //定义(-4 . &quot;&lt;not&quot;)(-4 . &quot;&lt;and&quot;)(...)(-4 . &quot;and&gt;&quot;)(-4 . &quot;not&gt;&quot;)
+        {
+            { 0, &quot;line&quot; }, //{组码，组码值}
+            { 8, &quot;0&quot; }, //{组码，组码值}
+        },
+        new OpAnd //定义(-4 . &quot;&lt;and&quot;)(...)(-4 . &quot;and&gt;&quot;)
+        {
+            !new OpEqual(0, &quot;circle&quot;), //定义(-4 . &quot;&lt;not&quot;)(...)(-4 . &quot;not&gt;&quot;)
+            { 8, &quot;2&quot; }, //{组码，组码值}
+            { 10, new Point3d(10,10,0), &quot;&gt;,&gt;,*&quot; }  //(-4 . &quot;&gt;,&gt;,*&quot;)(10 10 10 0)
+        },
+    };
+editor.SelectAll(fd); //这里直接传入fd就可以了
+</code></pre>
+<p>以上代码的含义为：选择的对象为不是位于0图层的直线，或者位于2图层的组码10的x坐标&gt;10,y坐标&gt;10的非圆图元。其同含义的lisp代码如下：</p>
+<pre><code class="lang-lisp">'((-4 . &quot;&lt;or&quot;)
+      (-4 . &quot;&lt;not&quot;)
+          (-4 . &quot;&lt;and&quot;)
+              (0 . &quot;line&quot;)
+        (8 . &quot;0&quot;)
+      (-4 . &quot;and&gt;&quot;)
+      (-4 . &quot;not&gt;&quot;)
+      (-4 . &quot;&lt;and&quot;)
+              (-4 . &quot;&lt;not&quot;)(0 . &quot;circle&quot;)(-4 . &quot;not&gt;&quot;)
+        (8 . &quot;2&quot;)
+              (-4 . &quot;&gt;,&gt;,*&quot;)(10 10 10 0)
+    (-4 . &quot;and&gt;&quot;)
+  (-4 . &quot;or&gt;&quot;))
+</code></pre>
+</li>
+<li><p>第二种</p>
+<pre><code class="lang-csharp">var p = new Point3d(10, 10, 0);
+var f = OpFilter.Bulid(e =&gt; 
+            !(e.Dxf(0) == &quot;line&quot; &amp; e.Dxf(8) == &quot;0&quot;) 
+            | e.Dxf(0) != &quot;circle&quot; 
+            &amp; e.Dxf(8) == &quot;2&quot; 
+            &amp; e.Dxf(10) &gt;= p);
+editor.SelectAll(f); //这里直接传入f就可以了
+</code></pre>
+<p>代码含义如第一种。</p>
+</li>
+<li><p>第三种</p>
+<pre><code class="lang-csharp">var f2 = OpFilter.Bulid(
+  e =&gt;e.Or(
+    !e.And(e.Dxf(0) == &quot;line&quot;, e.Dxf(8) == &quot;0&quot;),
+    e.And(e.Dxf(0) != &quot;circle&quot;, e.Dxf(8) == &quot;2&quot;, e.Dxf(10) &gt;= new Point3d(10, 10, 0)))
+);
+editor.SelectAll(f2); //这里直接传入f2就可以了
+</code></pre>
+<p>代码含义如第一种，第三种和第二种的写法非常像，区别就是关于 and 、or 、not 等运算符，一个是采用c#的语法，一个是采用定义的函数。and 与&amp;等价，or与|等价，not 与！等价。</p>
+</li>
+</ul>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,726 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PromptEditorOptions
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PromptEditorOptions
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GrxCAD.EditorInput.PromptEditorOptions">
+
+
+
+  <h1 id="GrxCAD_EditorInput_PromptEditorOptions" data-uid="GrxCAD.EditorInput.PromptEditorOptions" class="text-break">
+    Class PromptEditorOptions
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GrxCAD.html">GrxCAD</a>.<a class="xref" href="GrxCAD.EditorInput.html">EditorInput</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>gmap.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class PromptEditorOptions : PromptOptions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="GrxCAD.EditorInput.PromptOptions.html">PromptOptions</a></div>
+      <div><span class="xref">PromptEditorOptions</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="GrxCAD.EditorInput.PromptAngleOptions.html">PromptAngleOptions</a></div>
+      <div><a class="xref" href="GrxCAD.EditorInput.PromptCornerOptions.html">PromptCornerOptions</a></div>
+      <div><a class="xref" href="GrxCAD.EditorInput.PromptDragOptions.html">PromptDragOptions</a></div>
+      <div><a class="xref" href="GrxCAD.EditorInput.PromptEntityOptions.html">PromptEntityOptions</a></div>
+      <div><a class="xref" href="GrxCAD.EditorInput.PromptKeywordOptions.html">PromptKeywordOptions</a></div>
+      <div><a class="xref" href="GrxCAD.EditorInput.PromptNestedEntityOptions.html">PromptNestedEntityOptions</a></div>
+      <div><a class="xref" href="GrxCAD.EditorInput.PromptNumericalOptions.html">PromptNumericalOptions</a></div>
+      <div><a class="xref" href="GrxCAD.EditorInput.PromptStringOptions.html">PromptStringOptions</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GrxCAD.EditorInput.PromptOptions.html#GrxCAD_EditorInput_PromptOptions_FormatPrompt">PromptOptions.FormatPrompt()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.EditorInput.PromptOptions.html#GrxCAD_EditorInput_PromptOptions_GetDefaultValueString">PromptOptions.GetDefaultValueString()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.EditorInput.PromptOptions.html#GrxCAD_EditorInput_PromptOptions_DoIt">PromptOptions.DoIt()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.EditorInput.PromptOptions.html#GrxCAD_EditorInput_PromptOptions_SetMessageAndKeywords_System_String_System_String_">PromptOptions.SetMessageAndKeywords(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.EditorInput.PromptOptions.html#GrxCAD_EditorInput_PromptOptions_throwIfReadOnly">PromptOptions.throwIfReadOnly()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.EditorInput.PromptOptions.html#GrxCAD_EditorInput_PromptOptions_DefaultValueWorker">PromptOptions.DefaultValueWorker</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.EditorInput.PromptOptions.html#GrxCAD_EditorInput_PromptOptions_HasDefaultKeyword">PromptOptions.HasDefaultKeyword</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.EditorInput.PromptOptions.html#GrxCAD_EditorInput_PromptOptions_UseDefaultValue">PromptOptions.UseDefaultValue</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.EditorInput.PromptOptions.html#GrxCAD_EditorInput_PromptOptions_Message">PromptOptions.Message</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.EditorInput.PromptOptions.html#GrxCAD_EditorInput_PromptOptions_AppendKeywordsToMessage">PromptOptions.AppendKeywordsToMessage</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.EditorInput.PromptOptions.html#GrxCAD_EditorInput_PromptOptions_Keywords">PromptOptions.Keywords</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.EditorInput.PromptOptions.html#GrxCAD_EditorInput_PromptOptions_IsReadOnly">PromptOptions.IsReadOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GrxCAD_EditorInput_PromptEditorOptions__ctor_" data-uid="GrxCAD.EditorInput.PromptEditorOptions.#ctor*"></a>
+
+  <h3 id="GrxCAD_EditorInput_PromptEditorOptions__ctor_System_String_" data-uid="GrxCAD.EditorInput.PromptEditorOptions.#ctor(System.String)">
+  PromptEditorOptions(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PromptEditorOptions(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_PromptEditorOptions__ctor_" data-uid="GrxCAD.EditorInput.PromptEditorOptions.#ctor*"></a>
+
+  <h3 id="GrxCAD_EditorInput_PromptEditorOptions__ctor_System_String_System_String_" data-uid="GrxCAD.EditorInput.PromptEditorOptions.#ctor(System.String,System.String)">
+  PromptEditorOptions(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PromptEditorOptions(string messageAndKeywords, string globalKeywords)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>messageAndKeywords</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>globalKeywords</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GrxCAD_EditorInput_PromptEditorOptions_AllowArbitraryInput_" data-uid="GrxCAD.EditorInput.PromptEditorOptions.AllowArbitraryInput*"></a>
+
+  <h3 id="GrxCAD_EditorInput_PromptEditorOptions_AllowArbitraryInput" data-uid="GrxCAD.EditorInput.PromptEditorOptions.AllowArbitraryInput">
+  AllowArbitraryInput
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool AllowArbitraryInput { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_PromptEditorOptions_AllowNegative_" data-uid="GrxCAD.EditorInput.PromptEditorOptions.AllowNegative*"></a>
+
+  <h3 id="GrxCAD_EditorInput_PromptEditorOptions_AllowNegative" data-uid="GrxCAD.EditorInput.PromptEditorOptions.AllowNegative">
+  AllowNegative
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool AllowNegative { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_PromptEditorOptions_AllowNone_" data-uid="GrxCAD.EditorInput.PromptEditorOptions.AllowNone*"></a>
+
+  <h3 id="GrxCAD_EditorInput_PromptEditorOptions_AllowNone" data-uid="GrxCAD.EditorInput.PromptEditorOptions.AllowNone">
+  AllowNone
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool AllowNone { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_PromptEditorOptions_AllowZero_" data-uid="GrxCAD.EditorInput.PromptEditorOptions.AllowZero*"></a>
+
+  <h3 id="GrxCAD_EditorInput_PromptEditorOptions_AllowZero" data-uid="GrxCAD.EditorInput.PromptEditorOptions.AllowZero">
+  AllowZero
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool AllowZero { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_PromptEditorOptions_LimitsChecked_" data-uid="GrxCAD.EditorInput.PromptEditorOptions.LimitsChecked*"></a>
+
+  <h3 id="GrxCAD_EditorInput_PromptEditorOptions_LimitsChecked" data-uid="GrxCAD.EditorInput.PromptEditorOptions.LimitsChecked">
+  LimitsChecked
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool LimitsChecked { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_PromptEditorOptions_Only2d_" data-uid="GrxCAD.EditorInput.PromptEditorOptions.Only2d*"></a>
+
+  <h3 id="GrxCAD_EditorInput_PromptEditorOptions_Only2d" data-uid="GrxCAD.EditorInput.PromptEditorOptions.Only2d">
+  Only2d
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool Only2d { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_PromptEditorOptions_UseDashedLine_" data-uid="GrxCAD.EditorInput.PromptEditorOptions.UseDashedLine*"></a>
+
+  <h3 id="GrxCAD_EditorInput_PromptEditorOptions_UseDashedLine" data-uid="GrxCAD.EditorInput.PromptEditorOptions.UseDashedLine">
+  UseDashedLine
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool UseDashedLine { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GrxCAD_EditorInput_PromptEditorOptions_ApplyDefaults_" data-uid="GrxCAD.EditorInput.PromptEditorOptions.ApplyDefaults*"></a>
+
+  <h3 id="GrxCAD_EditorInput_PromptEditorOptions_ApplyDefaults_System_Int32__System_String_" data-uid="GrxCAD.EditorInput.PromptEditorOptions.ApplyDefaults(System.Int32*,System.String)">
+  ApplyDefaults(int*, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ApplyDefaults(int* retcode, string stringResult)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>retcode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*</dt>
+    <dd></dd>
+    <dt><code>stringResult</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_PromptEditorOptions_ApplyDefaults_" data-uid="GrxCAD.EditorInput.PromptEditorOptions.ApplyDefaults*"></a>
+
+  <h3 id="GrxCAD_EditorInput_PromptEditorOptions_ApplyDefaults_System_Int32__System_String_System_Object_" data-uid="GrxCAD.EditorInput.PromptEditorOptions.ApplyDefaults(System.Int32*,System.String,System.Object)">
+  ApplyDefaults(int*, string, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected object ApplyDefaults(int* retcode, string stringResult, object value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>retcode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*</dt>
+    <dd></dd>
+    <dt><code>stringResult</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_PromptEditorOptions_InitGet_" data-uid="GrxCAD.EditorInput.PromptEditorOptions.InitGet*"></a>
+
+  <h3 id="GrxCAD_EditorInput_PromptEditorOptions_InitGet" data-uid="GrxCAD.EditorInput.PromptEditorOptions.InitGet">
+  InitGet()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void InitGet()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_PromptEditorOptions_ProcessForNoneOrEmptySel_" data-uid="GrxCAD.EditorInput.PromptEditorOptions.ProcessForNoneOrEmptySel*"></a>
+
+  <h3 id="GrxCAD_EditorInput_PromptEditorOptions_ProcessForNoneOrEmptySel_System_Int32_" data-uid="GrxCAD.EditorInput.PromptEditorOptions.ProcessForNoneOrEmptySel(System.Int32)">
+  ProcessForNoneOrEmptySel(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int ProcessForNoneOrEmptySel(int retcode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>retcode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

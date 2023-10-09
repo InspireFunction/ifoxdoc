@@ -1,0 +1,1027 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Marshaler
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Marshaler
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Autodesk.AutoCAD.Runtime.Marshaler">
+
+
+
+  <h1 id="Autodesk_AutoCAD_Runtime_Marshaler" data-uid="Autodesk.AutoCAD.Runtime.Marshaler" class="text-break">
+    Class Marshaler
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Autodesk.html">Autodesk</a>.<a class="xref" href="Autodesk.AutoCAD.html">AutoCAD</a>.<a class="xref" href="Autodesk.AutoCAD.Runtime.html">Runtime</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Acdbmgd.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Marshaler</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Marshaler</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_Runtime_Marshaler_AcValueToObject_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.AcValueToObject*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Runtime_Marshaler_AcValueToObject_System_IntPtr_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.AcValueToObject(System.IntPtr)">
+  AcValueToObject(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object AcValueToObject(IntPtr acValueObj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>acValueObj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Runtime_Marshaler_BitmapInfoToBitmap_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.BitmapInfoToBitmap*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Runtime_Marshaler_BitmapInfoToBitmap_System_IntPtr_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.BitmapInfoToBitmap(System.IntPtr)">
+  BitmapInfoToBitmap(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Bitmap BitmapInfoToBitmap(IntPtr bitmapInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bitmapInfo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.bitmap">Bitmap</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Runtime_Marshaler_BitmapToBitmapInfo_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.BitmapToBitmapInfo*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Runtime_Marshaler_BitmapToBitmapInfo_System_Drawing_Bitmap_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.BitmapToBitmapInfo(System.Drawing.Bitmap)">
+  BitmapToBitmapInfo(Bitmap)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr BitmapToBitmapInfo(Bitmap bitmap)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bitmap</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.bitmap">Bitmap</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Runtime_Marshaler_CopyToManagedFullSubentityPath_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.CopyToManagedFullSubentityPath*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Runtime_Marshaler_CopyToManagedFullSubentityPath_System_IntPtr_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.CopyToManagedFullSubentityPath(System.IntPtr)">
+  CopyToManagedFullSubentityPath(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FullSubentityPath CopyToManagedFullSubentityPath(IntPtr path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.FullSubentityPath.html">FullSubentityPath</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Runtime_Marshaler_CopyToUnmanagedFullSubentityPath_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.CopyToUnmanagedFullSubentityPath*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Runtime_Marshaler_CopyToUnmanagedFullSubentityPath_Autodesk_AutoCAD_DatabaseServices_FullSubentityPath_System_IntPtr_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.CopyToUnmanagedFullSubentityPath(Autodesk.AutoCAD.DatabaseServices.FullSubentityPath,System.IntPtr)">
+  CopyToUnmanagedFullSubentityPath(FullSubentityPath, IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CopyToUnmanagedFullSubentityPath(FullSubentityPath path, IntPtr newPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.FullSubentityPath.html">FullSubentityPath</a></dt>
+    <dd></dd>
+    <dt><code>newPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Runtime_Marshaler_GetInternalArray_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.GetInternalArray*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Runtime_Marshaler_GetInternalArray_Autodesk_AutoCAD_Geometry_DoubleCollection_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.GetInternalArray(Autodesk.AutoCAD.Geometry.DoubleCollection)">
+  GetInternalArray(DoubleCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double[] GetInternalArray(DoubleCollection col)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.DoubleCollection.html">DoubleCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Runtime_Marshaler_GetInternalArray_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.GetInternalArray*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Runtime_Marshaler_GetInternalArray_Autodesk_AutoCAD_Geometry_IntegerCollection_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.GetInternalArray(Autodesk.AutoCAD.Geometry.IntegerCollection)">
+  GetInternalArray(IntegerCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int[] GetInternalArray(IntegerCollection col)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.IntegerCollection.html">IntegerCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Runtime_Marshaler_GetInternalArray_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.GetInternalArray*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Runtime_Marshaler_GetInternalArray_Autodesk_AutoCAD_Geometry_Point2dCollection_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.GetInternalArray(Autodesk.AutoCAD.Geometry.Point2dCollection)">
+  GetInternalArray(Point2dCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Point2d[] GetInternalArray(Point2dCollection col)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point2dCollection.html">Point2dCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Runtime_Marshaler_GetInternalArray_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.GetInternalArray*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Runtime_Marshaler_GetInternalArray_Autodesk_AutoCAD_Geometry_Vector2dCollection_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.GetInternalArray(Autodesk.AutoCAD.Geometry.Vector2dCollection)">
+  GetInternalArray(Vector2dCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2d[] GetInternalArray(Vector2dCollection col)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Vector2dCollection.html">Vector2dCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Vector2d.html">Vector2d</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Runtime_Marshaler_GetInternalArray_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.GetInternalArray*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Runtime_Marshaler_GetInternalArray_Autodesk_AutoCAD_Geometry_Vector3dCollection_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.GetInternalArray(Autodesk.AutoCAD.Geometry.Vector3dCollection)">
+  GetInternalArray(Vector3dCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3d[] GetInternalArray(Vector3dCollection col)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Vector3dCollection.html">Vector3dCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Vector3d.html">Vector3d</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Runtime_Marshaler_ObjectToAcValue_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.ObjectToAcValue*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Runtime_Marshaler_ObjectToAcValue_System_Object_System_IntPtr_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.ObjectToAcValue(System.Object,System.IntPtr)">
+  ObjectToAcValue(object, IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ObjectToAcValue(object obj, IntPtr acValueObj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>acValueObj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Runtime_Marshaler_ObjectToResbuf_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.ObjectToResbuf*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Runtime_Marshaler_ObjectToResbuf_System_Object_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.ObjectToResbuf(System.Object)">
+  ObjectToResbuf(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr ObjectToResbuf(object o)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Runtime_Marshaler_ObjectToResbuf_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.ObjectToResbuf*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Runtime_Marshaler_ObjectToResbuf_System_Object_System_IntPtr_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.ObjectToResbuf(System.Object,System.IntPtr)">
+  ObjectToResbuf(object, IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ObjectToResbuf(object o, IntPtr rb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>rb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Runtime_Marshaler_ObjectsToResbuf_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.ObjectsToResbuf*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Runtime_Marshaler_ObjectsToResbuf_System_Object___" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.ObjectsToResbuf(System.Object[])">
+  ObjectsToResbuf(params object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr ObjectsToResbuf(params object[] objects)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Runtime_Marshaler_ResbufToObject_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.ResbufToObject*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Runtime_Marshaler_ResbufToObject_System_IntPtr_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.ResbufToObject(System.IntPtr)">
+  ResbufToObject(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object ResbufToObject(IntPtr rb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Runtime_Marshaler_ResbufToTypedValues_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.ResbufToTypedValues*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Runtime_Marshaler_ResbufToTypedValues_System_IntPtr_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.ResbufToTypedValues(System.IntPtr)">
+  ResbufToTypedValues(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TypedValue[] ResbufToTypedValues(IntPtr resbuf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resbuf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TypedValue.html">TypedValue</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Runtime_Marshaler_SetInternalArray_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.SetInternalArray*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Runtime_Marshaler_SetInternalArray_Autodesk_AutoCAD_Geometry_DoubleCollection_System_Double___System_Int32_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.SetInternalArray(Autodesk.AutoCAD.Geometry.DoubleCollection,System.Double[],System.Int32)">
+  SetInternalArray(DoubleCollection, double[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetInternalArray(DoubleCollection col, double[] newArray, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.DoubleCollection.html">DoubleCollection</a></dt>
+    <dd></dd>
+    <dt><code>newArray</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Runtime_Marshaler_SetInternalArray_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.SetInternalArray*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Runtime_Marshaler_SetInternalArray_Autodesk_AutoCAD_Geometry_IntegerCollection_System_Int32___System_Int32_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.SetInternalArray(Autodesk.AutoCAD.Geometry.IntegerCollection,System.Int32[],System.Int32)">
+  SetInternalArray(IntegerCollection, int[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetInternalArray(IntegerCollection col, int[] newArray, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.IntegerCollection.html">IntegerCollection</a></dt>
+    <dd></dd>
+    <dt><code>newArray</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Runtime_Marshaler_SetInternalArray_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.SetInternalArray*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Runtime_Marshaler_SetInternalArray_Autodesk_AutoCAD_Geometry_Point2dCollection_Autodesk_AutoCAD_Geometry_Point2d___System_Int32_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.SetInternalArray(Autodesk.AutoCAD.Geometry.Point2dCollection,Autodesk.AutoCAD.Geometry.Point2d[],System.Int32)">
+  SetInternalArray(Point2dCollection, Point2d[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetInternalArray(Point2dCollection col, Point2d[] newArray, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point2dCollection.html">Point2dCollection</a></dt>
+    <dd></dd>
+    <dt><code>newArray</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a>[]</dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Runtime_Marshaler_SetInternalArray_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.SetInternalArray*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Runtime_Marshaler_SetInternalArray_Autodesk_AutoCAD_Geometry_Vector2dCollection_Autodesk_AutoCAD_Geometry_Vector2d___System_Int32_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.SetInternalArray(Autodesk.AutoCAD.Geometry.Vector2dCollection,Autodesk.AutoCAD.Geometry.Vector2d[],System.Int32)">
+  SetInternalArray(Vector2dCollection, Vector2d[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetInternalArray(Vector2dCollection col, Vector2d[] newArray, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Vector2dCollection.html">Vector2dCollection</a></dt>
+    <dd></dd>
+    <dt><code>newArray</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Vector2d.html">Vector2d</a>[]</dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Runtime_Marshaler_SetInternalArray_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.SetInternalArray*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Runtime_Marshaler_SetInternalArray_Autodesk_AutoCAD_Geometry_Vector3dCollection_Autodesk_AutoCAD_Geometry_Vector3d___System_Int32_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.SetInternalArray(Autodesk.AutoCAD.Geometry.Vector3dCollection,Autodesk.AutoCAD.Geometry.Vector3d[],System.Int32)">
+  SetInternalArray(Vector3dCollection, Vector3d[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetInternalArray(Vector3dCollection col, Vector3d[] newArray, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Vector3dCollection.html">Vector3dCollection</a></dt>
+    <dd></dd>
+    <dt><code>newArray</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Vector3d.html">Vector3d</a>[]</dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Runtime_Marshaler_TypedValuesToResbuf_" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.TypedValuesToResbuf*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Runtime_Marshaler_TypedValuesToResbuf_Autodesk_AutoCAD_DatabaseServices_TypedValue___" data-uid="Autodesk.AutoCAD.Runtime.Marshaler.TypedValuesToResbuf(Autodesk.AutoCAD.DatabaseServices.TypedValue[])">
+  TypedValuesToResbuf(params TypedValue[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr TypedValuesToResbuf(params TypedValue[] values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>values</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TypedValue.html">TypedValue</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,3266 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Application
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Application
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GrxCAD.ApplicationServices.Application">
+
+
+
+  <h1 id="GrxCAD_ApplicationServices_Application" data-uid="GrxCAD.ApplicationServices.Application" class="text-break">
+    Class Application
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GrxCAD.html">GrxCAD</a>.<a class="xref" href="GrxCAD.ApplicationServices.html">ApplicationServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>gmap.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Application</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Application</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GrxCAD_ApplicationServices_Application_AcadApplication_" data-uid="GrxCAD.ApplicationServices.Application.AcadApplication*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_AcadApplication" data-uid="GrxCAD.ApplicationServices.Application.AcadApplication">
+  AcadApplication
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object AcadApplication { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_DisplayTextScreen_" data-uid="GrxCAD.ApplicationServices.Application.DisplayTextScreen*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_DisplayTextScreen" data-uid="GrxCAD.ApplicationServices.Application.DisplayTextScreen">
+  DisplayTextScreen
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DisplayTextScreen { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_DocumentManager_" data-uid="GrxCAD.ApplicationServices.Application.DocumentManager*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_DocumentManager" data-uid="GrxCAD.ApplicationServices.Application.DocumentManager">
+  DocumentManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DocumentCollection DocumentManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.ApplicationServices.DocumentCollection.html">DocumentCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_DocumentWindowCollection_" data-uid="GrxCAD.ApplicationServices.Application.DocumentWindowCollection*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_DocumentWindowCollection" data-uid="GrxCAD.ApplicationServices.Application.DocumentWindowCollection">
+  DocumentWindowCollection
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DocumentWindowCollection DocumentWindowCollection { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.ApplicationServices.DocumentWindowCollection.html">DocumentWindowCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_IsInBackgroundMode_" data-uid="GrxCAD.ApplicationServices.Application.IsInBackgroundMode*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_IsInBackgroundMode" data-uid="GrxCAD.ApplicationServices.Application.IsInBackgroundMode">
+  IsInBackgroundMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsInBackgroundMode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_IsInCustomizationMode_" data-uid="GrxCAD.ApplicationServices.Application.IsInCustomizationMode*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_IsInCustomizationMode" data-uid="GrxCAD.ApplicationServices.Application.IsInCustomizationMode">
+  IsInCustomizationMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsInCustomizationMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_IsInPlaceServer_" data-uid="GrxCAD.ApplicationServices.Application.IsInPlaceServer*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_IsInPlaceServer" data-uid="GrxCAD.ApplicationServices.Application.IsInPlaceServer">
+  IsInPlaceServer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsInPlaceServer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_IsQuiescent_" data-uid="GrxCAD.ApplicationServices.Application.IsQuiescent*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_IsQuiescent" data-uid="GrxCAD.ApplicationServices.Application.IsQuiescent">
+  IsQuiescent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsQuiescent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_MainWindow_" data-uid="GrxCAD.ApplicationServices.Application.MainWindow*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_MainWindow" data-uid="GrxCAD.ApplicationServices.Application.MainWindow">
+  MainWindow
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Window MainWindow { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Windows.Window.html">Window</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_MenuBar_" data-uid="GrxCAD.ApplicationServices.Application.MenuBar*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_MenuBar" data-uid="GrxCAD.ApplicationServices.Application.MenuBar">
+  MenuBar
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object MenuBar { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_MenuGroups_" data-uid="GrxCAD.ApplicationServices.Application.MenuGroups*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_MenuGroups" data-uid="GrxCAD.ApplicationServices.Application.MenuGroups">
+  MenuGroups
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object MenuGroups { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_NonInPlaceMainWindow_" data-uid="GrxCAD.ApplicationServices.Application.NonInPlaceMainWindow*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_NonInPlaceMainWindow" data-uid="GrxCAD.ApplicationServices.Application.NonInPlaceMainWindow">
+  NonInPlaceMainWindow
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Window NonInPlaceMainWindow { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Windows.Window.html">Window</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_Preferences_" data-uid="GrxCAD.ApplicationServices.Application.Preferences*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_Preferences" data-uid="GrxCAD.ApplicationServices.Application.Preferences">
+  Preferences
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object Preferences { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_Publisher_" data-uid="GrxCAD.ApplicationServices.Application.Publisher*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_Publisher" data-uid="GrxCAD.ApplicationServices.Application.Publisher">
+  Publisher
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Publisher Publisher { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Publishing.Publisher.html">Publisher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_StatusBar_" data-uid="GrxCAD.ApplicationServices.Application.StatusBar*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_StatusBar" data-uid="GrxCAD.ApplicationServices.Application.StatusBar">
+  StatusBar
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StatusBar StatusBar { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Windows.StatusBar.html">StatusBar</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_UserConfigurationManager_" data-uid="GrxCAD.ApplicationServices.Application.UserConfigurationManager*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_UserConfigurationManager" data-uid="GrxCAD.ApplicationServices.Application.UserConfigurationManager">
+  UserConfigurationManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UserConfigurationManager UserConfigurationManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.ApplicationServices.UserConfigurationManager.html">UserConfigurationManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_Version_" data-uid="GrxCAD.ApplicationServices.Application.Version*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_Version" data-uid="GrxCAD.ApplicationServices.Application.Version">
+  Version
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Version Version { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.version">Version</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GrxCAD_ApplicationServices_Application_AddDefaultContextMenuExtension_" data-uid="GrxCAD.ApplicationServices.Application.AddDefaultContextMenuExtension*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_AddDefaultContextMenuExtension_GrxCAD_Windows_ContextMenuExtension_" data-uid="GrxCAD.ApplicationServices.Application.AddDefaultContextMenuExtension(GrxCAD.Windows.ContextMenuExtension)">
+  AddDefaultContextMenuExtension(ContextMenuExtension)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddDefaultContextMenuExtension(ContextMenuExtension menuExtension)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuExtension</code> <a class="xref" href="GrxCAD.Windows.ContextMenuExtension.html">ContextMenuExtension</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_AddObjectContextMenuExtension_" data-uid="GrxCAD.ApplicationServices.Application.AddObjectContextMenuExtension*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_AddObjectContextMenuExtension_GrxCAD_Runtime_RXClass_GrxCAD_Windows_ContextMenuExtension_" data-uid="GrxCAD.ApplicationServices.Application.AddObjectContextMenuExtension(GrxCAD.Runtime.RXClass,GrxCAD.Windows.ContextMenuExtension)">
+  AddObjectContextMenuExtension(RXClass, ContextMenuExtension)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddObjectContextMenuExtension(RXClass runtimeClass, ContextMenuExtension menuExtension)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>runtimeClass</code> <a class="xref" href="GrxCAD.Runtime.RXClass.html">RXClass</a></dt>
+    <dd></dd>
+    <dt><code>menuExtension</code> <a class="xref" href="GrxCAD.Windows.ContextMenuExtension.html">ContextMenuExtension</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_DoDragDrop_" data-uid="GrxCAD.ApplicationServices.Application.DoDragDrop*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_DoDragDrop_System_Windows_DependencyObject_System_Object_System_Windows_DragDropEffects_GrxCAD_Windows_DropTarget_" data-uid="GrxCAD.ApplicationServices.Application.DoDragDrop(System.Windows.DependencyObject,System.Object,System.Windows.DragDropEffects,GrxCAD.Windows.DropTarget)">
+  DoDragDrop(DependencyObject, object, DragDropEffects, DropTarget)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DoDragDrop(DependencyObject dragSource, object data, DragDropEffects allowedEffects, DropTarget target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dragSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>allowedEffects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dragdropeffects">DragDropEffects</a></dt>
+    <dd></dd>
+    <dt><code>target</code> <a class="xref" href="GrxCAD.Windows.DropTarget.html">DropTarget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_DoDragDrop_" data-uid="GrxCAD.ApplicationServices.Application.DoDragDrop*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_DoDragDrop_System_Windows_Forms_Control_System_Object_System_Windows_Forms_DragDropEffects_GrxCAD_Windows_DropTarget_" data-uid="GrxCAD.ApplicationServices.Application.DoDragDrop(System.Windows.Forms.Control,System.Object,System.Windows.Forms.DragDropEffects,GrxCAD.Windows.DropTarget)">
+  DoDragDrop(Control, object, DragDropEffects, DropTarget)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DoDragDrop(Control control, object data, DragDropEffects allowedEffects, DropTarget target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>control</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control">Control</a></dt>
+    <dd></dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>allowedEffects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.dragdropeffects">DragDropEffects</a></dt>
+    <dd></dd>
+    <dt><code>target</code> <a class="xref" href="GrxCAD.Windows.DropTarget.html">DropTarget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_EvaluateDiesel_" data-uid="GrxCAD.ApplicationServices.Application.EvaluateDiesel*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_EvaluateDiesel_System_String_" data-uid="GrxCAD.ApplicationServices.Application.EvaluateDiesel(System.String)">
+  EvaluateDiesel(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string EvaluateDiesel(string dieselCmd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dieselCmd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_GetSystemVariable_" data-uid="GrxCAD.ApplicationServices.Application.GetSystemVariable*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_GetSystemVariable_System_String_" data-uid="GrxCAD.ApplicationServices.Application.GetSystemVariable(System.String)">
+  GetSystemVariable(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object GetSystemVariable(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_GetWhoHasInfo_" data-uid="GrxCAD.ApplicationServices.Application.GetWhoHasInfo*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_GetWhoHasInfo_System_String_" data-uid="GrxCAD.ApplicationServices.Application.GetWhoHasInfo(System.String)">
+  GetWhoHasInfo(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WhoHasInfo GetWhoHasInfo(string pathname)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pathname</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.ApplicationServices.WhoHasInfo.html">WhoHasInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_InvokeContextHelp_" data-uid="GrxCAD.ApplicationServices.Application.InvokeContextHelp*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_InvokeContextHelp_System_IntPtr_System_Int32_" data-uid="GrxCAD.ApplicationServices.Application.InvokeContextHelp(System.IntPtr,System.Int32)">
+  InvokeContextHelp(IntPtr, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeContextHelp(IntPtr window, int contextId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>window</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>contextId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_InvokeContextHelp_" data-uid="GrxCAD.ApplicationServices.Application.InvokeContextHelp*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_InvokeContextHelp_System_IntPtr_System_Int32_System_String_" data-uid="GrxCAD.ApplicationServices.Application.InvokeContextHelp(System.IntPtr,System.Int32,System.String)">
+  InvokeContextHelp(IntPtr, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeContextHelp(IntPtr window, int contextId, string helpPrefix)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>window</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>contextId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>helpPrefix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_InvokeContextHelp_" data-uid="GrxCAD.ApplicationServices.Application.InvokeContextHelp*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_InvokeContextHelp_System_IntPtr_System_Int32_System_String_System_Windows_Forms_HelpEventArgs_" data-uid="GrxCAD.ApplicationServices.Application.InvokeContextHelp(System.IntPtr,System.Int32,System.String,System.Windows.Forms.HelpEventArgs)">
+  InvokeContextHelp(IntPtr, int, string, HelpEventArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeContextHelp(IntPtr window, int contextId, string helpPrefix, HelpEventArgs hlpevent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>window</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>contextId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>helpPrefix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>hlpevent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.helpeventargs">HelpEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_InvokeHelp_" data-uid="GrxCAD.ApplicationServices.Application.InvokeHelp*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_InvokeHelp_System_String_System_String_" data-uid="GrxCAD.ApplicationServices.Application.InvokeHelp(System.String,System.String)">
+  InvokeHelp(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeHelp(string fileName, string topic)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>topic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_InvokeHelpForExternal_" data-uid="GrxCAD.ApplicationServices.Application.InvokeHelpForExternal*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_InvokeHelpForExternal_System_String_" data-uid="GrxCAD.ApplicationServices.Application.InvokeHelpForExternal(System.String)">
+  InvokeHelpForExternal(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool InvokeHelpForExternal(string functionName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>functionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_IsFileLocked_" data-uid="GrxCAD.ApplicationServices.Application.IsFileLocked*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_IsFileLocked_System_String_" data-uid="GrxCAD.ApplicationServices.Application.IsFileLocked(System.String)">
+  IsFileLocked(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsFileLocked(string pathname)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pathname</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_LoadPartialMenu_" data-uid="GrxCAD.ApplicationServices.Application.LoadPartialMenu*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_LoadPartialMenu_System_String_" data-uid="GrxCAD.ApplicationServices.Application.LoadPartialMenu(System.String)">
+  LoadPartialMenu(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool LoadPartialMenu(string filename)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filename</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_Quit_" data-uid="GrxCAD.ApplicationServices.Application.Quit*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_Quit" data-uid="GrxCAD.ApplicationServices.Application.Quit">
+  Quit()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Quit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_RemoveDefaultContextMenuExtension_" data-uid="GrxCAD.ApplicationServices.Application.RemoveDefaultContextMenuExtension*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_RemoveDefaultContextMenuExtension_GrxCAD_Windows_ContextMenuExtension_" data-uid="GrxCAD.ApplicationServices.Application.RemoveDefaultContextMenuExtension(GrxCAD.Windows.ContextMenuExtension)">
+  RemoveDefaultContextMenuExtension(ContextMenuExtension)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveDefaultContextMenuExtension(ContextMenuExtension menuExtension)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuExtension</code> <a class="xref" href="GrxCAD.Windows.ContextMenuExtension.html">ContextMenuExtension</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_RemoveObjectContextMenuExtension_" data-uid="GrxCAD.ApplicationServices.Application.RemoveObjectContextMenuExtension*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_RemoveObjectContextMenuExtension_GrxCAD_Runtime_RXClass_GrxCAD_Windows_ContextMenuExtension_" data-uid="GrxCAD.ApplicationServices.Application.RemoveObjectContextMenuExtension(GrxCAD.Runtime.RXClass,GrxCAD.Windows.ContextMenuExtension)">
+  RemoveObjectContextMenuExtension(RXClass, ContextMenuExtension)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveObjectContextMenuExtension(RXClass runtimeClass, ContextMenuExtension menuExtension)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>runtimeClass</code> <a class="xref" href="GrxCAD.Runtime.RXClass.html">RXClass</a></dt>
+    <dd></dd>
+    <dt><code>menuExtension</code> <a class="xref" href="GrxCAD.Windows.ContextMenuExtension.html">ContextMenuExtension</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_SetSystemVariable_" data-uid="GrxCAD.ApplicationServices.Application.SetSystemVariable*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_SetSystemVariable_System_String_System_Object_" data-uid="GrxCAD.ApplicationServices.Application.SetSystemVariable(System.String,System.Object)">
+  SetSystemVariable(string, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetSystemVariable(string name, object value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ShowAlertDialog_" data-uid="GrxCAD.ApplicationServices.Application.ShowAlertDialog*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ShowAlertDialog_System_String_" data-uid="GrxCAD.ApplicationServices.Application.ShowAlertDialog(System.String)">
+  ShowAlertDialog(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ShowAlertDialog(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ShowModalDialog_" data-uid="GrxCAD.ApplicationServices.Application.ShowModalDialog*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ShowModalDialog_System_IntPtr_System_Windows_Forms_Form_" data-uid="GrxCAD.ApplicationServices.Application.ShowModalDialog(System.IntPtr,System.Windows.Forms.Form)">
+  ShowModalDialog(IntPtr, Form)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DialogResult ShowModalDialog(IntPtr owner, Form formToShow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>formToShow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.form">Form</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.dialogresult">DialogResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ShowModalDialog_" data-uid="GrxCAD.ApplicationServices.Application.ShowModalDialog*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ShowModalDialog_System_IntPtr_System_Windows_Forms_Form_System_Boolean_" data-uid="GrxCAD.ApplicationServices.Application.ShowModalDialog(System.IntPtr,System.Windows.Forms.Form,System.Boolean)">
+  ShowModalDialog(IntPtr, Form, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DialogResult ShowModalDialog(IntPtr owner, Form formToShow, bool persistSizeAndPosition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>formToShow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.form">Form</a></dt>
+    <dd></dd>
+    <dt><code>persistSizeAndPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.dialogresult">DialogResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ShowModalDialog_" data-uid="GrxCAD.ApplicationServices.Application.ShowModalDialog*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ShowModalDialog_System_Windows_Forms_Form_" data-uid="GrxCAD.ApplicationServices.Application.ShowModalDialog(System.Windows.Forms.Form)">
+  ShowModalDialog(Form)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DialogResult ShowModalDialog(Form formToShow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>formToShow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.form">Form</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.dialogresult">DialogResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ShowModalDialog_" data-uid="GrxCAD.ApplicationServices.Application.ShowModalDialog*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ShowModalDialog_System_Windows_Forms_IWin32Window_System_Windows_Forms_Form_" data-uid="GrxCAD.ApplicationServices.Application.ShowModalDialog(System.Windows.Forms.IWin32Window,System.Windows.Forms.Form)">
+  ShowModalDialog(IWin32Window, Form)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DialogResult ShowModalDialog(IWin32Window owner, Form formToShow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.iwin32window">IWin32Window</a></dt>
+    <dd></dd>
+    <dt><code>formToShow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.form">Form</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.dialogresult">DialogResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ShowModalDialog_" data-uid="GrxCAD.ApplicationServices.Application.ShowModalDialog*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ShowModalDialog_System_Windows_Forms_IWin32Window_System_Windows_Forms_Form_System_Boolean_" data-uid="GrxCAD.ApplicationServices.Application.ShowModalDialog(System.Windows.Forms.IWin32Window,System.Windows.Forms.Form,System.Boolean)">
+  ShowModalDialog(IWin32Window, Form, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DialogResult ShowModalDialog(IWin32Window owner, Form formToShow, bool persistSizeAndPosition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.iwin32window">IWin32Window</a></dt>
+    <dd></dd>
+    <dt><code>formToShow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.form">Form</a></dt>
+    <dd></dd>
+    <dt><code>persistSizeAndPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.dialogresult">DialogResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ShowModalWindow_" data-uid="GrxCAD.ApplicationServices.Application.ShowModalWindow*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ShowModalWindow_System_IntPtr_System_Windows_Window_" data-uid="GrxCAD.ApplicationServices.Application.ShowModalWindow(System.IntPtr,System.Windows.Window)">
+  ShowModalWindow(IntPtr, Window)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool? ShowModalWindow(IntPtr owner, Window formToShow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>formToShow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.window">Window</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ShowModalWindow_" data-uid="GrxCAD.ApplicationServices.Application.ShowModalWindow*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ShowModalWindow_System_IntPtr_System_Windows_Window_System_Boolean_" data-uid="GrxCAD.ApplicationServices.Application.ShowModalWindow(System.IntPtr,System.Windows.Window,System.Boolean)">
+  ShowModalWindow(IntPtr, Window, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool? ShowModalWindow(IntPtr owner, Window formToShow, bool persistSizeAndPosition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>formToShow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.window">Window</a></dt>
+    <dd></dd>
+    <dt><code>persistSizeAndPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ShowModalWindow_" data-uid="GrxCAD.ApplicationServices.Application.ShowModalWindow*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ShowModalWindow_System_Windows_Window_" data-uid="GrxCAD.ApplicationServices.Application.ShowModalWindow(System.Windows.Window)">
+  ShowModalWindow(Window)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool? ShowModalWindow(Window formToShow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>formToShow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.window">Window</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ShowModalWindow_" data-uid="GrxCAD.ApplicationServices.Application.ShowModalWindow*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ShowModalWindow_System_Windows_Window_System_Windows_Window_" data-uid="GrxCAD.ApplicationServices.Application.ShowModalWindow(System.Windows.Window,System.Windows.Window)">
+  ShowModalWindow(Window, Window)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool? ShowModalWindow(Window owner, Window formToShow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.window">Window</a></dt>
+    <dd></dd>
+    <dt><code>formToShow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.window">Window</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ShowModalWindow_" data-uid="GrxCAD.ApplicationServices.Application.ShowModalWindow*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ShowModalWindow_System_Windows_Window_System_Windows_Window_System_Boolean_" data-uid="GrxCAD.ApplicationServices.Application.ShowModalWindow(System.Windows.Window,System.Windows.Window,System.Boolean)">
+  ShowModalWindow(Window, Window, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool? ShowModalWindow(Window owner, Window formToShow, bool persistSizeAndPosition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.window">Window</a></dt>
+    <dd></dd>
+    <dt><code>formToShow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.window">Window</a></dt>
+    <dd></dd>
+    <dt><code>persistSizeAndPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ShowModelessDialog_" data-uid="GrxCAD.ApplicationServices.Application.ShowModelessDialog*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ShowModelessDialog_System_IntPtr_System_Windows_Forms_Form_" data-uid="GrxCAD.ApplicationServices.Application.ShowModelessDialog(System.IntPtr,System.Windows.Forms.Form)">
+  ShowModelessDialog(IntPtr, Form)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ShowModelessDialog(IntPtr owner, Form formToShow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>formToShow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.form">Form</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ShowModelessDialog_" data-uid="GrxCAD.ApplicationServices.Application.ShowModelessDialog*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ShowModelessDialog_System_IntPtr_System_Windows_Forms_Form_System_Boolean_" data-uid="GrxCAD.ApplicationServices.Application.ShowModelessDialog(System.IntPtr,System.Windows.Forms.Form,System.Boolean)">
+  ShowModelessDialog(IntPtr, Form, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ShowModelessDialog(IntPtr owner, Form formToShow, bool persistSizeAndPosition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>formToShow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.form">Form</a></dt>
+    <dd></dd>
+    <dt><code>persistSizeAndPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ShowModelessDialog_" data-uid="GrxCAD.ApplicationServices.Application.ShowModelessDialog*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ShowModelessDialog_System_Windows_Forms_Form_" data-uid="GrxCAD.ApplicationServices.Application.ShowModelessDialog(System.Windows.Forms.Form)">
+  ShowModelessDialog(Form)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ShowModelessDialog(Form formToShow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>formToShow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.form">Form</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ShowModelessDialog_" data-uid="GrxCAD.ApplicationServices.Application.ShowModelessDialog*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ShowModelessDialog_System_Windows_Forms_IWin32Window_System_Windows_Forms_Form_" data-uid="GrxCAD.ApplicationServices.Application.ShowModelessDialog(System.Windows.Forms.IWin32Window,System.Windows.Forms.Form)">
+  ShowModelessDialog(IWin32Window, Form)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ShowModelessDialog(IWin32Window owner, Form formToShow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.iwin32window">IWin32Window</a></dt>
+    <dd></dd>
+    <dt><code>formToShow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.form">Form</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ShowModelessDialog_" data-uid="GrxCAD.ApplicationServices.Application.ShowModelessDialog*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ShowModelessDialog_System_Windows_Forms_IWin32Window_System_Windows_Forms_Form_System_Boolean_" data-uid="GrxCAD.ApplicationServices.Application.ShowModelessDialog(System.Windows.Forms.IWin32Window,System.Windows.Forms.Form,System.Boolean)">
+  ShowModelessDialog(IWin32Window, Form, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ShowModelessDialog(IWin32Window owner, Form formToShow, bool persistSizeAndPosition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.iwin32window">IWin32Window</a></dt>
+    <dd></dd>
+    <dt><code>formToShow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.form">Form</a></dt>
+    <dd></dd>
+    <dt><code>persistSizeAndPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ShowModelessWindow_" data-uid="GrxCAD.ApplicationServices.Application.ShowModelessWindow*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ShowModelessWindow_System_IntPtr_System_Windows_Window_" data-uid="GrxCAD.ApplicationServices.Application.ShowModelessWindow(System.IntPtr,System.Windows.Window)">
+  ShowModelessWindow(IntPtr, Window)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ShowModelessWindow(IntPtr owner, Window formToShow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>formToShow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.window">Window</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ShowModelessWindow_" data-uid="GrxCAD.ApplicationServices.Application.ShowModelessWindow*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ShowModelessWindow_System_IntPtr_System_Windows_Window_System_Boolean_" data-uid="GrxCAD.ApplicationServices.Application.ShowModelessWindow(System.IntPtr,System.Windows.Window,System.Boolean)">
+  ShowModelessWindow(IntPtr, Window, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ShowModelessWindow(IntPtr owner, Window formToShow, bool persistSizeAndPosition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>formToShow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.window">Window</a></dt>
+    <dd></dd>
+    <dt><code>persistSizeAndPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ShowModelessWindow_" data-uid="GrxCAD.ApplicationServices.Application.ShowModelessWindow*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ShowModelessWindow_System_Windows_Window_" data-uid="GrxCAD.ApplicationServices.Application.ShowModelessWindow(System.Windows.Window)">
+  ShowModelessWindow(Window)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ShowModelessWindow(Window formToShow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>formToShow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.window">Window</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ShowModelessWindow_" data-uid="GrxCAD.ApplicationServices.Application.ShowModelessWindow*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ShowModelessWindow_System_Windows_Window_System_Windows_Window_" data-uid="GrxCAD.ApplicationServices.Application.ShowModelessWindow(System.Windows.Window,System.Windows.Window)">
+  ShowModelessWindow(Window, Window)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ShowModelessWindow(Window owner, Window formToShow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.window">Window</a></dt>
+    <dd></dd>
+    <dt><code>formToShow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.window">Window</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ShowModelessWindow_" data-uid="GrxCAD.ApplicationServices.Application.ShowModelessWindow*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ShowModelessWindow_System_Windows_Window_System_Windows_Window_System_Boolean_" data-uid="GrxCAD.ApplicationServices.Application.ShowModelessWindow(System.Windows.Window,System.Windows.Window,System.Boolean)">
+  ShowModelessWindow(Window, Window, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ShowModelessWindow(Window owner, Window formToShow, bool persistSizeAndPosition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.window">Window</a></dt>
+    <dd></dd>
+    <dt><code>formToShow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.window">Window</a></dt>
+    <dd></dd>
+    <dt><code>persistSizeAndPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ToSystemDrawingPoint_" data-uid="GrxCAD.ApplicationServices.Application.ToSystemDrawingPoint*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ToSystemDrawingPoint_System_Windows_Point_" data-uid="GrxCAD.ApplicationServices.Application.ToSystemDrawingPoint(System.Windows.Point)">
+  ToSystemDrawingPoint(Point)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Point ToSystemDrawingPoint(Point point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.point">Point</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.point">Point</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ToSystemDrawingSize_" data-uid="GrxCAD.ApplicationServices.Application.ToSystemDrawingSize*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ToSystemDrawingSize_System_Windows_Size_" data-uid="GrxCAD.ApplicationServices.Application.ToSystemDrawingSize(System.Windows.Size)">
+  ToSystemDrawingSize(Size)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Size ToSystemDrawingSize(Size point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.size">Size</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.size">Size</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ToSystemWindowsPoint_" data-uid="GrxCAD.ApplicationServices.Application.ToSystemWindowsPoint*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ToSystemWindowsPoint_System_Drawing_Point_" data-uid="GrxCAD.ApplicationServices.Application.ToSystemWindowsPoint(System.Drawing.Point)">
+  ToSystemWindowsPoint(Point)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Point ToSystemWindowsPoint(Point point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.point">Point</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.point">Point</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_ToSystemWindowsSize_" data-uid="GrxCAD.ApplicationServices.Application.ToSystemWindowsSize*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_ToSystemWindowsSize_System_Drawing_Size_" data-uid="GrxCAD.ApplicationServices.Application.ToSystemWindowsSize(System.Drawing.Size)">
+  ToSystemWindowsSize(Size)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Size ToSystemWindowsSize(Size point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.size">Size</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.size">Size</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_UnloadPartialMenu_" data-uid="GrxCAD.ApplicationServices.Application.UnloadPartialMenu*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_UnloadPartialMenu_System_String_" data-uid="GrxCAD.ApplicationServices.Application.UnloadPartialMenu(System.String)">
+  UnloadPartialMenu(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool UnloadPartialMenu(string filename)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filename</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_UpdateScreen_" data-uid="GrxCAD.ApplicationServices.Application.UpdateScreen*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_UpdateScreen" data-uid="GrxCAD.ApplicationServices.Application.UpdateScreen">
+  UpdateScreen()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UpdateScreen()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_raise_BeginCustomizationMode_" data-uid="GrxCAD.ApplicationServices.Application.raise_BeginCustomizationMode*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_raise_BeginCustomizationMode_System_Object_System_EventArgs_" data-uid="GrxCAD.ApplicationServices.Application.raise_BeginCustomizationMode(System.Object,System.EventArgs)">
+  raise_BeginCustomizationMode(object, EventArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void raise_BeginCustomizationMode(object sender, EventArgs value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventargs">EventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_raise_BeginDoubleClick_" data-uid="GrxCAD.ApplicationServices.Application.raise_BeginDoubleClick*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_raise_BeginDoubleClick_System_Object_GrxCAD_ApplicationServices_BeginDoubleClickEventArgs_" data-uid="GrxCAD.ApplicationServices.Application.raise_BeginDoubleClick(System.Object,GrxCAD.ApplicationServices.BeginDoubleClickEventArgs)">
+  raise_BeginDoubleClick(object, BeginDoubleClickEventArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void raise_BeginDoubleClick(object sender, BeginDoubleClickEventArgs value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="GrxCAD.ApplicationServices.BeginDoubleClickEventArgs.html">BeginDoubleClickEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_raise_BeginQuit_" data-uid="GrxCAD.ApplicationServices.Application.raise_BeginQuit*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_raise_BeginQuit_System_Object_System_EventArgs_" data-uid="GrxCAD.ApplicationServices.Application.raise_BeginQuit(System.Object,System.EventArgs)">
+  raise_BeginQuit(object, EventArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void raise_BeginQuit(object sender, EventArgs value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventargs">EventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_raise_DisplayingCustomizeDialog_" data-uid="GrxCAD.ApplicationServices.Application.raise_DisplayingCustomizeDialog*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_raise_DisplayingCustomizeDialog_System_Object_GrxCAD_ApplicationServices_TabbedDialogEventArgs_" data-uid="GrxCAD.ApplicationServices.Application.raise_DisplayingCustomizeDialog(System.Object,GrxCAD.ApplicationServices.TabbedDialogEventArgs)">
+  raise_DisplayingCustomizeDialog(object, TabbedDialogEventArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void raise_DisplayingCustomizeDialog(object sender, TabbedDialogEventArgs value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="GrxCAD.ApplicationServices.TabbedDialogEventArgs.html">TabbedDialogEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_raise_DisplayingDraftingSettingsDialog_" data-uid="GrxCAD.ApplicationServices.Application.raise_DisplayingDraftingSettingsDialog*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_raise_DisplayingDraftingSettingsDialog_System_Object_GrxCAD_ApplicationServices_TabbedDialogEventArgs_" data-uid="GrxCAD.ApplicationServices.Application.raise_DisplayingDraftingSettingsDialog(System.Object,GrxCAD.ApplicationServices.TabbedDialogEventArgs)">
+  raise_DisplayingDraftingSettingsDialog(object, TabbedDialogEventArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void raise_DisplayingDraftingSettingsDialog(object sender, TabbedDialogEventArgs value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="GrxCAD.ApplicationServices.TabbedDialogEventArgs.html">TabbedDialogEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_raise_DisplayingOptionDialog_" data-uid="GrxCAD.ApplicationServices.Application.raise_DisplayingOptionDialog*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_raise_DisplayingOptionDialog_System_Object_GrxCAD_ApplicationServices_TabbedDialogEventArgs_" data-uid="GrxCAD.ApplicationServices.Application.raise_DisplayingOptionDialog(System.Object,GrxCAD.ApplicationServices.TabbedDialogEventArgs)">
+  raise_DisplayingOptionDialog(object, TabbedDialogEventArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void raise_DisplayingOptionDialog(object sender, TabbedDialogEventArgs value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="GrxCAD.ApplicationServices.TabbedDialogEventArgs.html">TabbedDialogEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_raise_EndCustomizationMode_" data-uid="GrxCAD.ApplicationServices.Application.raise_EndCustomizationMode*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_raise_EndCustomizationMode_System_Object_System_EventArgs_" data-uid="GrxCAD.ApplicationServices.Application.raise_EndCustomizationMode(System.Object,System.EventArgs)">
+  raise_EndCustomizationMode(object, EventArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void raise_EndCustomizationMode(object sender, EventArgs value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventargs">EventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_raise_EnterModal_" data-uid="GrxCAD.ApplicationServices.Application.raise_EnterModal*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_raise_EnterModal_System_Object_System_EventArgs_" data-uid="GrxCAD.ApplicationServices.Application.raise_EnterModal(System.Object,System.EventArgs)">
+  raise_EnterModal(object, EventArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void raise_EnterModal(object sender, EventArgs value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventargs">EventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_raise_Idle_" data-uid="GrxCAD.ApplicationServices.Application.raise_Idle*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_raise_Idle_System_Object_System_EventArgs_" data-uid="GrxCAD.ApplicationServices.Application.raise_Idle(System.Object,System.EventArgs)">
+  raise_Idle(object, EventArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void raise_Idle(object sender, EventArgs value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventargs">EventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_raise_LeaveModal_" data-uid="GrxCAD.ApplicationServices.Application.raise_LeaveModal*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_raise_LeaveModal_System_Object_System_EventArgs_" data-uid="GrxCAD.ApplicationServices.Application.raise_LeaveModal(System.Object,System.EventArgs)">
+  raise_LeaveModal(object, EventArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void raise_LeaveModal(object sender, EventArgs value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventargs">EventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_raise_QuitAborted_" data-uid="GrxCAD.ApplicationServices.Application.raise_QuitAborted*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_raise_QuitAborted_System_Object_System_EventArgs_" data-uid="GrxCAD.ApplicationServices.Application.raise_QuitAborted(System.Object,System.EventArgs)">
+  raise_QuitAborted(object, EventArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void raise_QuitAborted(object sender, EventArgs value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventargs">EventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_raise_QuitWillStart_" data-uid="GrxCAD.ApplicationServices.Application.raise_QuitWillStart*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_raise_QuitWillStart_System_Object_System_EventArgs_" data-uid="GrxCAD.ApplicationServices.Application.raise_QuitWillStart(System.Object,System.EventArgs)">
+  raise_QuitWillStart(object, EventArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void raise_QuitWillStart(object sender, EventArgs value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventargs">EventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_raise_SystemVariableChanged_" data-uid="GrxCAD.ApplicationServices.Application.raise_SystemVariableChanged*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_raise_SystemVariableChanged_System_Object_GrxCAD_ApplicationServices_SystemVariableChangedEventArgs_" data-uid="GrxCAD.ApplicationServices.Application.raise_SystemVariableChanged(System.Object,GrxCAD.ApplicationServices.SystemVariableChangedEventArgs)">
+  raise_SystemVariableChanged(object, SystemVariableChangedEventArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void raise_SystemVariableChanged(object sender, SystemVariableChangedEventArgs value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="GrxCAD.ApplicationServices.SystemVariableChangedEventArgs.html">SystemVariableChangedEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_ApplicationServices_Application_raise_SystemVariableChanging_" data-uid="GrxCAD.ApplicationServices.Application.raise_SystemVariableChanging*"></a>
+
+  <h3 id="GrxCAD_ApplicationServices_Application_raise_SystemVariableChanging_System_Object_GrxCAD_ApplicationServices_SystemVariableChangingEventArgs_" data-uid="GrxCAD.ApplicationServices.Application.raise_SystemVariableChanging(System.Object,GrxCAD.ApplicationServices.SystemVariableChangingEventArgs)">
+  raise_SystemVariableChanging(object, SystemVariableChangingEventArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void raise_SystemVariableChanging(object sender, SystemVariableChangingEventArgs value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="GrxCAD.ApplicationServices.SystemVariableChangingEventArgs.html">SystemVariableChangingEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="GrxCAD_ApplicationServices_Application_BeginCustomizationMode" data-uid="GrxCAD.ApplicationServices.Application.BeginCustomizationMode">
+  BeginCustomizationMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event EventHandler BeginCustomizationMode</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_ApplicationServices_Application_BeginDoubleClick" data-uid="GrxCAD.ApplicationServices.Application.BeginDoubleClick">
+  BeginDoubleClick
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event BeginDoubleClickEventHandler BeginDoubleClick</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.ApplicationServices.BeginDoubleClickEventHandler.html">BeginDoubleClickEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_ApplicationServices_Application_BeginQuit" data-uid="GrxCAD.ApplicationServices.Application.BeginQuit">
+  BeginQuit
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event EventHandler BeginQuit</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_ApplicationServices_Application_DisplayingCustomizeDialog" data-uid="GrxCAD.ApplicationServices.Application.DisplayingCustomizeDialog">
+  DisplayingCustomizeDialog
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event TabbedDialogEventHandler DisplayingCustomizeDialog</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.ApplicationServices.TabbedDialogEventHandler.html">TabbedDialogEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_ApplicationServices_Application_DisplayingDraftingSettingsDialog" data-uid="GrxCAD.ApplicationServices.Application.DisplayingDraftingSettingsDialog">
+  DisplayingDraftingSettingsDialog
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event TabbedDialogEventHandler DisplayingDraftingSettingsDialog</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.ApplicationServices.TabbedDialogEventHandler.html">TabbedDialogEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_ApplicationServices_Application_DisplayingOptionDialog" data-uid="GrxCAD.ApplicationServices.Application.DisplayingOptionDialog">
+  DisplayingOptionDialog
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event TabbedDialogEventHandler DisplayingOptionDialog</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.ApplicationServices.TabbedDialogEventHandler.html">TabbedDialogEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_ApplicationServices_Application_EndCustomizationMode" data-uid="GrxCAD.ApplicationServices.Application.EndCustomizationMode">
+  EndCustomizationMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event EventHandler EndCustomizationMode</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_ApplicationServices_Application_EnterModal" data-uid="GrxCAD.ApplicationServices.Application.EnterModal">
+  EnterModal
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event EventHandler EnterModal</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_ApplicationServices_Application_Idle" data-uid="GrxCAD.ApplicationServices.Application.Idle">
+  Idle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event EventHandler Idle</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_ApplicationServices_Application_LeaveModal" data-uid="GrxCAD.ApplicationServices.Application.LeaveModal">
+  LeaveModal
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event EventHandler LeaveModal</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_ApplicationServices_Application_PreTranslateMessage" data-uid="GrxCAD.ApplicationServices.Application.PreTranslateMessage">
+  PreTranslateMessage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event PreTranslateMessageEventHandler PreTranslateMessage</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.ApplicationServices.PreTranslateMessageEventHandler.html">PreTranslateMessageEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_ApplicationServices_Application_QuitAborted" data-uid="GrxCAD.ApplicationServices.Application.QuitAborted">
+  QuitAborted
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event EventHandler QuitAborted</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_ApplicationServices_Application_QuitWillStart" data-uid="GrxCAD.ApplicationServices.Application.QuitWillStart">
+  QuitWillStart
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event EventHandler QuitWillStart</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_ApplicationServices_Application_SystemVariableChanged" data-uid="GrxCAD.ApplicationServices.Application.SystemVariableChanged">
+  SystemVariableChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event SystemVariableChangedEventHandler SystemVariableChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.ApplicationServices.SystemVariableChangedEventHandler.html">SystemVariableChangedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_ApplicationServices_Application_SystemVariableChanging" data-uid="GrxCAD.ApplicationServices.Application.SystemVariableChanging">
+  SystemVariableChanging
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event SystemVariableChangingEventHandler SystemVariableChanging</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.ApplicationServices.SystemVariableChangingEventHandler.html">SystemVariableChangingEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,2080 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Rect
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Rect
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="IFoxCAD.Cad.Rect">
+
+
+
+  <h1 id="IFoxCAD_Cad_Rect" data-uid="IFoxCAD.Cad.Rect" class="text-break">
+    Class Rect
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="IFoxCAD.html">IFoxCAD</a>.<a class="xref" href="IFoxCAD.Cad.html">Cad</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>IFox.CAD.ACAD.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Rect : IEquatable&lt;Rect&gt;, IComparable&lt;Rect&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Rect</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="IFoxCAD.Cad.Rect.html">Rect</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="IFoxCAD.Cad.Rect.html">Rect</a>&gt;</div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="IFoxCAD.Cad.QuadEntity.html">QuadEntity</a></div>
+      <div><a class="xref" href="IFoxCAD.Cad.QuadTreeNode-1.html">QuadTreeNode&lt;TEntity&gt;</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="IFoxCAD_Cad_Rect__ctor_" data-uid="IFoxCAD.Cad.Rect.#ctor*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect__ctor" data-uid="IFoxCAD.Cad.Rect.#ctor">
+  Rect()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect__ctor_" data-uid="IFoxCAD.Cad.Rect.#ctor*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect__ctor_Autodesk_AutoCAD_Geometry_Point2d_Autodesk_AutoCAD_Geometry_Point2d_System_Boolean_" data-uid="IFoxCAD.Cad.Rect.#ctor(Autodesk.AutoCAD.Geometry.Point2d,Autodesk.AutoCAD.Geometry.Point2d,System.Boolean)">
+  Rect(Point2d, Point2d, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>构造矩形类</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect(Point2d p1, Point2d p3, bool check = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p1</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+    <dt><code>p3</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+    <dt><code>check</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否检查大小</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect__ctor_" data-uid="IFoxCAD.Cad.Rect.#ctor*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect__ctor_System_Double_System_Double_System_Double_System_Double_" data-uid="IFoxCAD.Cad.Rect.#ctor(System.Double,System.Double,System.Double,System.Double)">
+  Rect(double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>矩形类</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect(double left, double bottom, double right, double top)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>左</p>
+</dd>
+    <dt><code>bottom</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>下</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>右</p>
+</dd>
+    <dt><code>top</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>上</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="IFoxCAD_Cad_Rect_CadTolerance" data-uid="IFoxCAD.Cad.Rect.CadTolerance">
+  CadTolerance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Tolerance CadTolerance</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="IFoxCAD_Cad_Rect_RectTolerance" data-uid="IFoxCAD.Cad.Rect.RectTolerance">
+  RectTolerance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TolerancePoint2d RectTolerance</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IFoxCAD.Cad.TolerancePoint2d.html">TolerancePoint2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="IFoxCAD_Cad_Rect_Area_" data-uid="IFoxCAD.Cad.Rect.Area*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_Area" data-uid="IFoxCAD.Cad.Rect.Area">
+  Area
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Area { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_Bottom_" data-uid="IFoxCAD.Cad.Rect.Bottom*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_Bottom" data-uid="IFoxCAD.Cad.Rect.Bottom">
+  Bottom
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Bottom { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_CenterPoint_" data-uid="IFoxCAD.Cad.Rect.CenterPoint*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_CenterPoint" data-uid="IFoxCAD.Cad.Rect.CenterPoint">
+  CenterPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d CenterPoint { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_Height_" data-uid="IFoxCAD.Cad.Rect.Height*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_Height" data-uid="IFoxCAD.Cad.Rect.Height">
+  Height
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Height { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_IsPoint_" data-uid="IFoxCAD.Cad.Rect.IsPoint*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_IsPoint" data-uid="IFoxCAD.Cad.Rect.IsPoint">
+  IsPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>是一个点
+水平或垂直直线包围盒是面积是0,所以面积是0不一定是点</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPoint { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_Left_" data-uid="IFoxCAD.Cad.Rect.Left*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_Left" data-uid="IFoxCAD.Cad.Rect.Left">
+  Left
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Left { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_LeftLower_" data-uid="IFoxCAD.Cad.Rect.LeftLower*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_LeftLower" data-uid="IFoxCAD.Cad.Rect.LeftLower">
+  LeftLower
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>左下Min</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d LeftLower { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_LeftMidst_" data-uid="IFoxCAD.Cad.Rect.LeftMidst*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_LeftMidst" data-uid="IFoxCAD.Cad.Rect.LeftMidst">
+  LeftMidst
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>左中</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d LeftMidst { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_LeftUpper_" data-uid="IFoxCAD.Cad.Rect.LeftUpper*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_LeftUpper" data-uid="IFoxCAD.Cad.Rect.LeftUpper">
+  LeftUpper
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>左上</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d LeftUpper { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_MaxPoint_" data-uid="IFoxCAD.Cad.Rect.MaxPoint*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_MaxPoint" data-uid="IFoxCAD.Cad.Rect.MaxPoint">
+  MaxPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d MaxPoint { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_Midst_" data-uid="IFoxCAD.Cad.Rect.Midst*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_Midst" data-uid="IFoxCAD.Cad.Rect.Midst">
+  Midst
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>中间</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d Midst { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_MidstBottom_" data-uid="IFoxCAD.Cad.Rect.MidstBottom*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_MidstBottom" data-uid="IFoxCAD.Cad.Rect.MidstBottom">
+  MidstBottom
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>中下</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d MidstBottom { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_MidstUpper_" data-uid="IFoxCAD.Cad.Rect.MidstUpper*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_MidstUpper" data-uid="IFoxCAD.Cad.Rect.MidstUpper">
+  MidstUpper
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>中上</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d MidstUpper { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_MinPoint_" data-uid="IFoxCAD.Cad.Rect.MinPoint*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_MinPoint" data-uid="IFoxCAD.Cad.Rect.MinPoint">
+  MinPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d MinPoint { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_Right_" data-uid="IFoxCAD.Cad.Rect.Right*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_Right" data-uid="IFoxCAD.Cad.Rect.Right">
+  Right
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Right { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_RightBottom_" data-uid="IFoxCAD.Cad.Rect.RightBottom*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_RightBottom" data-uid="IFoxCAD.Cad.Rect.RightBottom">
+  RightBottom
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>右下</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d RightBottom { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_RightMidst_" data-uid="IFoxCAD.Cad.Rect.RightMidst*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_RightMidst" data-uid="IFoxCAD.Cad.Rect.RightMidst">
+  RightMidst
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>右中</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d RightMidst { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_RightUpper_" data-uid="IFoxCAD.Cad.Rect.RightUpper*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_RightUpper" data-uid="IFoxCAD.Cad.Rect.RightUpper">
+  RightUpper
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>右上Max</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d RightUpper { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_Top_" data-uid="IFoxCAD.Cad.Rect.Top*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_Top" data-uid="IFoxCAD.Cad.Rect.Top">
+  Top
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Top { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_Width_" data-uid="IFoxCAD.Cad.Rect.Width*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_Width" data-uid="IFoxCAD.Cad.Rect.Width">
+  Width
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Width { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_X_" data-uid="IFoxCAD.Cad.Rect.X*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_X" data-uid="IFoxCAD.Cad.Rect.X">
+  X
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double X { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_Y_" data-uid="IFoxCAD.Cad.Rect.Y*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_Y" data-uid="IFoxCAD.Cad.Rect.Y">
+  Y
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Y { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="IFoxCAD_Cad_Rect_CompareTo_" data-uid="IFoxCAD.Cad.Rect.CompareTo*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_CompareTo_IFoxCAD_Cad_Rect_" data-uid="IFoxCAD.Cad.Rect.CompareTo(IFoxCAD.Cad.Rect)">
+  CompareTo(Rect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(Rect rect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <a class="xref" href="IFoxCAD.Cad.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_Contains_" data-uid="IFoxCAD.Cad.Rect.Contains*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_Contains_Autodesk_AutoCAD_Geometry_Point2d_" data-uid="IFoxCAD.Cad.Rect.Contains(Autodesk.AutoCAD.Geometry.Point2d)">
+  Contains(Point2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(Point2d Point2d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Point2d</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_Contains_" data-uid="IFoxCAD.Cad.Rect.Contains*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_Contains_IFoxCAD_Cad_Rect_" data-uid="IFoxCAD.Cad.Rect.Contains(IFoxCAD.Cad.Rect)">
+  Contains(Rect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>四个点都在内部就是包含</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(Rect rect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <a class="xref" href="IFoxCAD.Cad.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_Contains_" data-uid="IFoxCAD.Cad.Rect.Contains*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_Contains_System_Double_System_Double_" data-uid="IFoxCAD.Cad.Rect.Contains(System.Double,System.Double)">
+  Contains(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_Equals_" data-uid="IFoxCAD.Cad.Rect.Equals*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_Equals_IFoxCAD_Cad_Rect_" data-uid="IFoxCAD.Cad.Rect.Equals(IFoxCAD.Cad.Rect)">
+  Equals(Rect?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Rect? b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="IFoxCAD.Cad.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_Equals_" data-uid="IFoxCAD.Cad.Rect.Equals*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_Equals_IFoxCAD_Cad_Rect_System_Double_" data-uid="IFoxCAD.Cad.Rect.Equals(IFoxCAD.Cad.Rect,System.Double)">
+  Equals(Rect?, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>比较核心</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Rect? b, double tolerance = 1E-06)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="IFoxCAD.Cad.Rect.html">Rect</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_Equals_" data-uid="IFoxCAD.Cad.Rect.Equals*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_Equals_System_Object_" data-uid="IFoxCAD.Cad.Rect.Equals(System.Object)">
+  Equals(object?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object? obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_Expand_" data-uid="IFoxCAD.Cad.Rect.Expand*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_Expand_System_Double_" data-uid="IFoxCAD.Cad.Rect.Expand(System.Double)">
+  Expand(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>四周膨胀</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect Expand(double d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IFoxCAD.Cad.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_GetCommonPoint_" data-uid="IFoxCAD.Cad.Rect.GetCommonPoint*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_GetCommonPoint_IFoxCAD_Cad_Rect_" data-uid="IFoxCAD.Cad.Rect.GetCommonPoint(IFoxCAD.Cad.Rect)">
+  GetCommonPoint(Rect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取共点</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d[] GetCommonPoint(Rect other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="IFoxCAD.Cad.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_GetHashCode_" data-uid="IFoxCAD.Cad.Rect.GetHashCode*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_GetHashCode" data-uid="IFoxCAD.Cad.Rect.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_GetMinMax_" data-uid="IFoxCAD.Cad.Rect.GetMinMax*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_GetMinMax_System_Collections_Generic_IEnumerable_Autodesk_AutoCAD_Geometry_Point2d__" data-uid="IFoxCAD.Cad.Rect.GetMinMax(System.Collections.Generic.IEnumerable{Autodesk.AutoCAD.Geometry.Point2d})">
+  GetMinMax(IEnumerable&lt;Point2d&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取点集的包围盒的最小点和最大点(无角度)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (Point2d boxMin, Point2d boxMax) GetMinMax(IEnumerable&lt;Point2d&gt; pts)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-autodesk.autocad.geometry.point2d,autodesk.autocad.geometry.point2d-.boxmin">boxMin</a>, <a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-autodesk.autocad.geometry.point2d,autodesk.autocad.geometry.point2d-.boxmax">boxMax</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_IntersectsWith_" data-uid="IFoxCAD.Cad.Rect.IntersectsWith*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_IntersectsWith_IFoxCAD_Cad_Rect_" data-uid="IFoxCAD.Cad.Rect.IntersectsWith(IFoxCAD.Cad.Rect)">
+  IntersectsWith(Rect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>一个点在内部就是碰撞</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IntersectsWith(Rect rect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <a class="xref" href="IFoxCAD.Cad.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true内部</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_IsRect_" data-uid="IFoxCAD.Cad.Rect.IsRect*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_IsRect_System_Collections_Generic_List_Autodesk_AutoCAD_Geometry_Point2d__System_Double_" data-uid="IFoxCAD.Cad.Rect.IsRect(System.Collections.Generic.List{Autodesk.AutoCAD.Geometry.Point2d},System.Double)">
+  IsRect(List&lt;Point2d?&gt;?, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否轴向矩形(无角度)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsRect(List&lt;Point2d?&gt;? ptList, double tolerance = 1E-10)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ptList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_IsRectAngle_" data-uid="IFoxCAD.Cad.Rect.IsRectAngle*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_IsRectAngle_System_Collections_Generic_List_Autodesk_AutoCAD_Geometry_Point2d__System_Double_" data-uid="IFoxCAD.Cad.Rect.IsRectAngle(System.Collections.Generic.List{Autodesk.AutoCAD.Geometry.Point2d},System.Double)">
+  IsRectAngle(List&lt;Point2d?&gt;?, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否矩形(带角度)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsRectAngle(List&lt;Point2d?&gt;? ptList, double tolerance = 1E-08)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ptList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_RectAnglePointOrder_" data-uid="IFoxCAD.Cad.Rect.RectAnglePointOrder*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_RectAnglePointOrder_System_Collections_Generic_List_Autodesk_AutoCAD_Geometry_Point2d__" data-uid="IFoxCAD.Cad.Rect.RectAnglePointOrder(System.Collections.Generic.List{Autodesk.AutoCAD.Geometry.Point2d})">
+  RectAnglePointOrder(List&lt;Point2d?&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>矩形点序逆时针排列,将min点[0],max点是<a href="%E5%B8%A6%E8%A7%92%E5%BA%A6">3</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool RectAnglePointOrder(List&lt;Point2d?&gt;? pts)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_ToPoints_" data-uid="IFoxCAD.Cad.Rect.ToPoints*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_ToPoints" data-uid="IFoxCAD.Cad.Rect.ToPoints">
+  ToPoints()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d[] ToPoints()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_ToPoints4_" data-uid="IFoxCAD.Cad.Rect.ToPoints4*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_ToPoints4" data-uid="IFoxCAD.Cad.Rect.ToPoints4">
+  ToPoints4()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (Point2d boxMin, Point2d boxRigthDown, Point2d boxMax, Point2d boxLeftUp) ToPoints4()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-autodesk.autocad.geometry.point2d,autodesk.autocad.geometry.point2d,autodesk.autocad.geometry.point2d,autodesk.autocad.geometry.point2d-.boxmin">boxMin</a>, <a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-autodesk.autocad.geometry.point2d,autodesk.autocad.geometry.point2d,autodesk.autocad.geometry.point2d,autodesk.autocad.geometry.point2d-.boxrigthdown">boxRigthDown</a>, <a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-autodesk.autocad.geometry.point2d,autodesk.autocad.geometry.point2d,autodesk.autocad.geometry.point2d,autodesk.autocad.geometry.point2d-.boxmax">boxMax</a>, <a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-autodesk.autocad.geometry.point2d,autodesk.autocad.geometry.point2d,autodesk.autocad.geometry.point2d,autodesk.autocad.geometry.point2d-.boxleftup">boxLeftUp</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_ToPolyLine_" data-uid="IFoxCAD.Cad.Rect.ToPolyLine*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_ToPolyLine" data-uid="IFoxCAD.Cad.Rect.ToPolyLine">
+  ToPolyLine()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建矩形范围多段线</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity ToPolyLine()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html">Entity</a></dt>
+    <dd><p>多段线对象</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_ToString_" data-uid="IFoxCAD.Cad.Rect.ToString*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_ToString" data-uid="IFoxCAD.Cad.Rect.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_ToString_" data-uid="IFoxCAD.Cad.Rect.ToString*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_ToString_System_IFormatProvider_" data-uid="IFoxCAD.Cad.Rect.ToString(System.IFormatProvider)">
+  ToString(IFormatProvider?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(IFormatProvider? provider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_ToString_" data-uid="IFoxCAD.Cad.Rect.ToString*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_ToString_System_String_System_IFormatProvider_" data-uid="IFoxCAD.Cad.Rect.ToString(System.String,System.IFormatProvider)">
+  ToString(string?, IFormatProvider?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(string? format = null, IFormatProvider? formatProvider = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>formatProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_XCollision_" data-uid="IFoxCAD.Cad.Rect.XCollision*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_XCollision__1_System_Collections_Generic_List___0__System_Func___0_System_Boolean__System_Func___0___0_System_Boolean__System_Action___0__" data-uid="IFoxCAD.Cad.Rect.XCollision``1(System.Collections.Generic.List{``0},System.Func{``0,System.Boolean},System.Func{``0,``0,System.Boolean},System.Action{``0})">
+  XCollision&lt;T&gt;(List&lt;T&gt;, Func&lt;T, bool&gt;, Func&lt;T, T, bool&gt;, Action&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>列扫碰撞检测(碰撞算法)
+比四叉树还快哦~</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void XCollision&lt;T&gt;(List&lt;T&gt; box, Func&lt;T, bool&gt; firstProcessing, Func&lt;T, T, bool&gt; collisionProcessing, Action&lt;T&gt; lastProcessing) where T : Rect</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>box</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</dt>
+    <dd><p>继承Rect的集合</p>
+</dd>
+    <dt><code>firstProcessing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>先处理集合每一个成员;返回true就跳过后续委托</p>
+</dd>
+    <dt><code>collisionProcessing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;T, T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>碰撞,返回两个碰撞的成员;返回true就跳过后续委托</p>
+</dd>
+    <dt><code>lastProcessing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
+    <dd><p>后处理集合每一个成员</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="IFoxCAD_Cad_Rect_op_Equality_" data-uid="IFoxCAD.Cad.Rect.op_Equality*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_op_Equality_IFoxCAD_Cad_Rect_IFoxCAD_Cad_Rect_" data-uid="IFoxCAD.Cad.Rect.op_Equality(IFoxCAD.Cad.Rect,IFoxCAD.Cad.Rect)">
+  operator ==(Rect?, Rect?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Rect? a, Rect? b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="IFoxCAD.Cad.Rect.html">Rect</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="IFoxCAD.Cad.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_op_Implicit_" data-uid="IFoxCAD.Cad.Rect.op_Implicit*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_op_Implicit_System_Drawing_Rectangle__IFoxCAD_Cad_Rect" data-uid="IFoxCAD.Cad.Rect.op_Implicit(System.Drawing.Rectangle)~IFoxCAD.Cad.Rect">
+  implicit operator Rect(Rectangle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Rect(Rectangle rect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectangle">Rectangle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IFoxCAD.Cad.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_op_Implicit_" data-uid="IFoxCAD.Cad.Rect.op_Implicit*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_op_Implicit_System_Drawing_RectangleF__IFoxCAD_Cad_Rect" data-uid="IFoxCAD.Cad.Rect.op_Implicit(System.Drawing.RectangleF)~IFoxCAD.Cad.Rect">
+  implicit operator Rect(RectangleF)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Rect(RectangleF rect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IFoxCAD.Cad.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_Rect_op_Inequality_" data-uid="IFoxCAD.Cad.Rect.op_Inequality*"></a>
+
+  <h3 id="IFoxCAD_Cad_Rect_op_Inequality_IFoxCAD_Cad_Rect_IFoxCAD_Cad_Rect_" data-uid="IFoxCAD.Cad.Rect.op_Inequality(IFoxCAD.Cad.Rect,IFoxCAD.Cad.Rect)">
+  operator !=(Rect?, Rect?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Rect? a, Rect? b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="IFoxCAD.Cad.Rect.html">Rect</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="IFoxCAD.Cad.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

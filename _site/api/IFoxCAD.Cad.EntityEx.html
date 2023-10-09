@@ -1,0 +1,596 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class EntityEx
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class EntityEx
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="IFoxCAD.Cad.EntityEx">
+
+
+
+  <h1 id="IFoxCAD_Cad_EntityEx" data-uid="IFoxCAD.Cad.EntityEx" class="text-break">
+    Class EntityEx
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="IFoxCAD.html">IFoxCAD</a>.<a class="xref" href="IFoxCAD.Cad.html">Cad</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>IFox.CAD.ACAD.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>实体图元扩展类</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class EntityEx</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">EntityEx</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="IFoxCAD_Cad_EntityEx_GetBoundingBoxEx_" data-uid="IFoxCAD.Cad.EntityEx.GetBoundingBoxEx*"></a>
+
+  <h3 id="IFoxCAD_Cad_EntityEx_GetBoundingBoxEx_Autodesk_AutoCAD_DatabaseServices_Entity_" data-uid="IFoxCAD.Cad.EntityEx.GetBoundingBoxEx(Autodesk.AutoCAD.DatabaseServices.Entity)">
+  GetBoundingBoxEx(Entity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取图元包围盒</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BoundingInfo GetBoundingBoxEx(this Entity ent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ent</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html">Entity</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IFoxCAD.Cad.BoundingInfo.html">BoundingInfo</a></dt>
+    <dd><p>包围盒信息</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EntityEx_GetExtents_" data-uid="IFoxCAD.Cad.EntityEx.GetExtents*"></a>
+
+  <h3 id="IFoxCAD_Cad_EntityEx_GetExtents_System_Collections_Generic_IEnumerable_Autodesk_AutoCAD_DatabaseServices_Entity__" data-uid="IFoxCAD.Cad.EntityEx.GetExtents(System.Collections.Generic.IEnumerable{Autodesk.AutoCAD.DatabaseServices.Entity})">
+  GetExtents(IEnumerable&lt;Entity&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取实体集合的范围</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Extents3d GetExtents(this IEnumerable&lt;Entity&gt; ents)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html">Entity</a>&gt;</dt>
+    <dd><p>实体迭代器</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Extents3d.html">Extents3d</a></dt>
+    <dd><p>实体集合的范围</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EntityEx_GetStretchPoints_" data-uid="IFoxCAD.Cad.EntityEx.GetStretchPoints*"></a>
+
+  <h3 id="IFoxCAD_Cad_EntityEx_GetStretchPoints_Autodesk_AutoCAD_DatabaseServices_Entity_" data-uid="IFoxCAD.Cad.EntityEx.GetStretchPoints(Autodesk.AutoCAD.DatabaseServices.Entity)">
+  GetStretchPoints(Entity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取拉伸点</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Point3d&gt; GetStretchPoints(this Entity ent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ent</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html">Entity</a></dt>
+    <dd><p>实体</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.Geometry.Point3d.html">Point3d</a>&gt;</dt>
+    <dd><p>点集</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EntityEx_Mirror_" data-uid="IFoxCAD.Cad.EntityEx.Mirror*"></a>
+
+  <h3 id="IFoxCAD_Cad_EntityEx_Mirror_Autodesk_AutoCAD_DatabaseServices_Entity_Autodesk_AutoCAD_Geometry_Plane_" data-uid="IFoxCAD.Cad.EntityEx.Mirror(Autodesk.AutoCAD.DatabaseServices.Entity,Autodesk.AutoCAD.Geometry.Plane)">
+  Mirror(Entity, Plane)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>按对称面镜像实体</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Mirror(this Entity ent, Plane plane)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ent</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html">Entity</a></dt>
+    <dd><p>实体</p>
+</dd>
+    <dt><code>plane</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Plane.html">Plane</a></dt>
+    <dd><p>对称平面</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EntityEx_Mirror_" data-uid="IFoxCAD.Cad.EntityEx.Mirror*"></a>
+
+  <h3 id="IFoxCAD_Cad_EntityEx_Mirror_Autodesk_AutoCAD_DatabaseServices_Entity_Autodesk_AutoCAD_Geometry_Point3d_" data-uid="IFoxCAD.Cad.EntityEx.Mirror(Autodesk.AutoCAD.DatabaseServices.Entity,Autodesk.AutoCAD.Geometry.Point3d)">
+  Mirror(Entity, Point3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>按对称点镜像实体</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Mirror(this Entity ent, Point3d basePoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ent</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html">Entity</a></dt>
+    <dd><p>实体</p>
+</dd>
+    <dt><code>basePoint</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd><p>对称点</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EntityEx_Mirror_" data-uid="IFoxCAD.Cad.EntityEx.Mirror*"></a>
+
+  <h3 id="IFoxCAD_Cad_EntityEx_Mirror_Autodesk_AutoCAD_DatabaseServices_Entity_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_Geometry_Point3d_" data-uid="IFoxCAD.Cad.EntityEx.Mirror(Autodesk.AutoCAD.DatabaseServices.Entity,Autodesk.AutoCAD.Geometry.Point3d,Autodesk.AutoCAD.Geometry.Point3d)">
+  Mirror(Entity, Point3d, Point3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>按对称轴镜像实体</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Mirror(this Entity ent, Point3d startPoint, Point3d endPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ent</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html">Entity</a></dt>
+    <dd><p>实体</p>
+</dd>
+    <dt><code>startPoint</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd><p>对称轴起点</p>
+</dd>
+    <dt><code>endPoint</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd><p>对称轴终点</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EntityEx_Move_" data-uid="IFoxCAD.Cad.EntityEx.Move*"></a>
+
+  <h3 id="IFoxCAD_Cad_EntityEx_Move_Autodesk_AutoCAD_DatabaseServices_Entity_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_Geometry_Point3d_" data-uid="IFoxCAD.Cad.EntityEx.Move(Autodesk.AutoCAD.DatabaseServices.Entity,Autodesk.AutoCAD.Geometry.Point3d,Autodesk.AutoCAD.Geometry.Point3d)">
+  Move(Entity, Point3d, Point3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>移动实体</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Move(this Entity ent, Point3d from, Point3d to)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ent</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html">Entity</a></dt>
+    <dd><p>实体</p>
+</dd>
+    <dt><code>from</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd><p>基点</p>
+</dd>
+    <dt><code>to</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd><p>目标点</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EntityEx_Move_" data-uid="IFoxCAD.Cad.EntityEx.Move*"></a>
+
+  <h3 id="IFoxCAD_Cad_EntityEx_Move_Autodesk_AutoCAD_DatabaseServices_Entity_Autodesk_AutoCAD_Geometry_Vector3d_" data-uid="IFoxCAD.Cad.EntityEx.Move(Autodesk.AutoCAD.DatabaseServices.Entity,Autodesk.AutoCAD.Geometry.Vector3d)">
+  Move(Entity, Vector3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>移动实体</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Move(this Entity ent, Vector3d vector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ent</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html">Entity</a></dt>
+    <dd><p>实体</p>
+</dd>
+    <dt><code>vector</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd><p>向量</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EntityEx_Rotation_" data-uid="IFoxCAD.Cad.EntityEx.Rotation*"></a>
+
+  <h3 id="IFoxCAD_Cad_EntityEx_Rotation_Autodesk_AutoCAD_DatabaseServices_Entity_Autodesk_AutoCAD_Geometry_Point3d_System_Double_" data-uid="IFoxCAD.Cad.EntityEx.Rotation(Autodesk.AutoCAD.DatabaseServices.Entity,Autodesk.AutoCAD.Geometry.Point3d,System.Double)">
+  Rotation(Entity, Point3d, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>在XY平面内旋转实体</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Rotation(this Entity ent, Point3d center, double angle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ent</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html">Entity</a></dt>
+    <dd><p>实体</p>
+</dd>
+    <dt><code>center</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd><p>旋转中心</p>
+</dd>
+    <dt><code>angle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>转角，弧度制，正数为顺时针</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EntityEx_Rotation_" data-uid="IFoxCAD.Cad.EntityEx.Rotation*"></a>
+
+  <h3 id="IFoxCAD_Cad_EntityEx_Rotation_Autodesk_AutoCAD_DatabaseServices_Entity_Autodesk_AutoCAD_Geometry_Point3d_System_Double_Autodesk_AutoCAD_Geometry_Vector3d_" data-uid="IFoxCAD.Cad.EntityEx.Rotation(Autodesk.AutoCAD.DatabaseServices.Entity,Autodesk.AutoCAD.Geometry.Point3d,System.Double,Autodesk.AutoCAD.Geometry.Vector3d)">
+  Rotation(Entity, Point3d, double, Vector3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>旋转实体</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Rotation(this Entity ent, Point3d center, double angle, Vector3d normal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ent</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html">Entity</a></dt>
+    <dd><p>实体</p>
+</dd>
+    <dt><code>center</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd><p>旋转中心</p>
+</dd>
+    <dt><code>angle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>转角，弧度制，正数为顺时针</p>
+</dd>
+    <dt><code>normal</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd><p>旋转平面的法向矢量</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EntityEx_Scale_" data-uid="IFoxCAD.Cad.EntityEx.Scale*"></a>
+
+  <h3 id="IFoxCAD_Cad_EntityEx_Scale_Autodesk_AutoCAD_DatabaseServices_Entity_Autodesk_AutoCAD_Geometry_Point3d_System_Double_" data-uid="IFoxCAD.Cad.EntityEx.Scale(Autodesk.AutoCAD.DatabaseServices.Entity,Autodesk.AutoCAD.Geometry.Point3d,System.Double)">
+  Scale(Entity, Point3d, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>缩放实体</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Scale(this Entity ent, Point3d center, double scaleValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ent</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html">Entity</a></dt>
+    <dd><p>实体</p>
+</dd>
+    <dt><code>center</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd><p>缩放基点坐标</p>
+</dd>
+    <dt><code>scaleValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>缩放比例</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1015 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TextEditorSelection
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TextEditorSelection
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection">
+
+
+
+  <h1 id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection" class="text-break">
+    Class TextEditorSelection
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Autodesk.html">Autodesk</a>.<a class="xref" href="Autodesk.AutoCAD.html">AutoCAD</a>.<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.html">DatabaseServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Acdbmgd.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;AcDbTextEditorSelection&quot;)]
+public class TextEditorSelection : TextEditorSelectionbase, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html">DisposableWrapper</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html">TextEditorSelectionbase</a></div>
+      <div><span class="xref">TextEditorSelection</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_InsertSymbol_System_Char_System_Int32_">TextEditorSelectionbase.InsertSymbol(char, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_InsertString_System_String_">TextEditorSelectionbase.InsertString(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_InsertImportedText_Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_InsertTextType_System_Byte___">TextEditorSelectionbase.InsertImportedText(TextEditorSelectionbase.InsertTextType, byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_InputSpecialChar_System_Char_">TextEditorSelectionbase.InputSpecialChar(char)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_InsertColumnBreak">TextEditorSelectionbase.InsertColumnBreak()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_MaxWidthScale">TextEditorSelectionbase.MaxWidthScale</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_MinWidthScale">TextEditorSelectionbase.MinWidthScale</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_MaxTrackingFactor">TextEditorSelectionbase.MaxTrackingFactor</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_MinTrackingFactor">TextEditorSelectionbase.MinTrackingFactor</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_MaxObliqueAngle">TextEditorSelectionbase.MaxObliqueAngle</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_MinObliqueAngle">TextEditorSelectionbase.MinObliqueAngle</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_FlowAlignment">TextEditorSelectionbase.FlowAlignment</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_WidthScale">TextEditorSelectionbase.WidthScale</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_TrackingFactor">TextEditorSelectionbase.TrackingFactor</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_ObliqueAngle">TextEditorSelectionbase.ObliqueAngle</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_Strikethrough">TextEditorSelectionbase.Strikethrough</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_Overline">TextEditorSelectionbase.Overline</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_Underline">TextEditorSelectionbase.Underline</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_Color">TextEditorSelectionbase.Color</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_Height">TextEditorSelectionbase.Height</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_Italic">TextEditorSelectionbase.Italic</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_Bold">TextEditorSelectionbase.Bold</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_Font">TextEditorSelectionbase.Font</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorSelectionbase.html#Autodesk_AutoCAD_DatabaseServices_TextEditorSelectionbase_Language">TextEditorSelectionbase.Language</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Create_System_Type_System_IntPtr_System_Boolean_">DisposableWrapper.Create(Type, IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Equals_System_Object_">DisposableWrapper.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_GetHashCode">DisposableWrapper.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Dispose_System_Boolean_">DisposableWrapper.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Dispose">DisposableWrapper.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_AutoDelete">DisposableWrapper.AutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_IsDisposed">DisposableWrapper.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_UnmanagedObject">DisposableWrapper.UnmanagedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone">MarshalByRefObject.MemberwiseClone(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref">MarshalByRefObject.CreateObjRef(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_CanChangeCase_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.CanChangeCase*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_CanChangeCase" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.CanChangeCase">
+  CanChangeCase
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanChangeCase { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_CanStack_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.CanStack*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_CanStack" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.CanStack">
+  CanStack
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanStack { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_CanUnStack_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.CanUnStack*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_CanUnStack" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.CanUnStack">
+  CanUnStack
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanUnStack { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_FieldObject_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.FieldObject*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_FieldObject" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.FieldObject">
+  FieldObject
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Field FieldObject { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Field.html">Field</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_Paragraphs_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.Paragraphs*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_Paragraphs" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.Paragraphs">
+  Paragraphs
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextEditorParagraph[] Paragraphs { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorParagraph.html">TextEditorParagraph</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_SelectionString_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.SelectionString*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_SelectionString" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.SelectionString">
+  SelectionString
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SelectionString { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_SingleFieldSelected_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.SingleFieldSelected*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_SingleFieldSelected" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.SingleFieldSelected">
+  SingleFieldSelected
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SingleFieldSelected { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_SingleStackSelected_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.SingleStackSelected*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_SingleStackSelected" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.SingleStackSelected">
+  SingleStackSelected
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SingleStackSelected { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_StackSettings_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.StackSettings*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_StackSettings" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.StackSettings">
+  StackSettings
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextEditorStack StackSettings { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TextEditorStack.html">TextEditorStack</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_CanSupportFont_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.CanSupportFont*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_CanSupportFont_Autodesk_AutoCAD_DatabaseServices_Font_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.CanSupportFont(Autodesk.AutoCAD.DatabaseServices.Font)">
+  CanSupportFont(Font)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanSupportFont(Font font)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>font</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Font.html">Font</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_CanSupportLanguage_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.CanSupportLanguage*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_CanSupportLanguage_System_Int32_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.CanSupportLanguage(System.Int32)">
+  CanSupportLanguage(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanSupportLanguage(int charset)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>charset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_ChangeToLowercase_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.ChangeToLowercase*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_ChangeToLowercase" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.ChangeToLowercase">
+  ChangeToLowercase()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ChangeToLowercase()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_ChangeToUppercase_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.ChangeToUppercase*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_ChangeToUppercase" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.ChangeToUppercase">
+  ChangeToUppercase()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ChangeToUppercase()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_CombineParagraphs_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.CombineParagraphs*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_CombineParagraphs" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.CombineParagraphs">
+  CombineParagraphs()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CombineParagraphs()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_ConvertToPlainText_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.ConvertToPlainText*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_ConvertToPlainText" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.ConvertToPlainText">
+  ConvertToPlainText()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConvertToPlainText()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_DeleteUnmanagedObject_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.DeleteUnmanagedObject*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_DeleteUnmanagedObject" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.DeleteUnmanagedObject">
+  DeleteUnmanagedObject()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DeleteUnmanagedObject()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_RemoveAllFormatting_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.RemoveAllFormatting*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_RemoveAllFormatting" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.RemoveAllFormatting">
+  RemoveAllFormatting()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAllFormatting()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_RemoveCharacterFormatting_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.RemoveCharacterFormatting*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_RemoveCharacterFormatting" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.RemoveCharacterFormatting">
+  RemoveCharacterFormatting()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveCharacterFormatting()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_RemoveParagraphFormatting_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.RemoveParagraphFormatting*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_RemoveParagraphFormatting" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.RemoveParagraphFormatting">
+  RemoveParagraphFormatting()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveParagraphFormatting()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_Stack_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.Stack*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_Stack" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.Stack">
+  Stack()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stack()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_UnStack_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.UnStack*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_UnStack" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.UnStack">
+  UnStack()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnStack()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_UpdateField_" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.UpdateField*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_TextEditorSelection_UpdateField" data-uid="Autodesk.AutoCAD.DatabaseServices.TextEditorSelection.UpdateField">
+  UpdateField()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateField()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

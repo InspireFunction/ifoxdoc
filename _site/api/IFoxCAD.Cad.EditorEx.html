@@ -1,0 +1,1835 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class EditorEx
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class EditorEx
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="IFoxCAD.Cad.EditorEx">
+
+
+
+  <h1 id="IFoxCAD_Cad_EditorEx" data-uid="IFoxCAD.Cad.EditorEx" class="text-break">
+    Class EditorEx
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="IFoxCAD.html">IFoxCAD</a>.<a class="xref" href="IFoxCAD.Cad.html">Cad</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>IFox.CAD.ACAD.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>命令行扩展类</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class EditorEx</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">EditorEx</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="IFoxCAD_Cad_EditorEx_Acceptable_" data-uid="IFoxCAD.Cad.EditorEx.Acceptable*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_Acceptable" data-uid="IFoxCAD.Cad.EditorEx.Acceptable">
+  Acceptable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>判断是否可以打印字符串</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Acceptable()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>可以打印,<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>不可以打印</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_ComExportWMF_" data-uid="IFoxCAD.Cad.EditorEx.ComExportWMF*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_ComExportWMF_Autodesk_AutoCAD_EditorInput_Editor_System_String_Autodesk_AutoCAD_DatabaseServices_ObjectId___System_Boolean_" data-uid="IFoxCAD.Cad.EditorEx.ComExportWMF(Autodesk.AutoCAD.EditorInput.Editor,System.String,Autodesk.AutoCAD.DatabaseServices.ObjectId[],System.Boolean)">
+  ComExportWMF(Editor, string, ObjectId?[]?, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>输出WMF<br>
+此函数不适用于后台</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ComExportWMF(this Editor editor, string saveFile, ObjectId?[]? ids = null, bool wmfSetDel = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>editor</code> <span class="xref">Editor</span></dt>
+    <dd><p>命令行对象</p>
+</dd>
+    <dt><code>saveFile</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>保存文件</p>
+</dd>
+    <dt><code>ids</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a>[]</dt>
+    <dd><p>选择集的对象,为null时候手选</p>
+</dd>
+    <dt><code>wmfSetDel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否清空选择集</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_DrawCircle_" data-uid="IFoxCAD.Cad.EditorEx.DrawCircle*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_DrawCircle_Autodesk_AutoCAD_EditorInput_Editor_Autodesk_AutoCAD_Geometry_Point2d_System_Int16_System_Double_System_Int32_" data-uid="IFoxCAD.Cad.EditorEx.DrawCircle(Autodesk.AutoCAD.EditorInput.Editor,Autodesk.AutoCAD.Geometry.Point2d,System.Int16,System.Double,System.Int32)">
+  DrawCircle(Editor, Point2d, short, double, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>用矢量线画近似圆（正多边形）</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawCircle(this Editor editor, Point2d pnt, short colorIndex, double radius, int numEdges)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>editor</code> <span class="xref">Editor</span></dt>
+    <dd><p>编辑器对象</p>
+</dd>
+    <dt><code>pnt</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd><p>点</p>
+</dd>
+    <dt><code>colorIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>颜色码</p>
+</dd>
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>半径</p>
+</dd>
+    <dt><code>numEdges</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>多边形边的个数</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_DrawCircles_" data-uid="IFoxCAD.Cad.EditorEx.DrawCircles*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_DrawCircles_Autodesk_AutoCAD_EditorInput_Editor_System_Collections_Generic_IEnumerable_Autodesk_AutoCAD_Geometry_Point2d__System_Int16_System_Double_System_Int32_" data-uid="IFoxCAD.Cad.EditorEx.DrawCircles(Autodesk.AutoCAD.EditorInput.Editor,System.Collections.Generic.IEnumerable{Autodesk.AutoCAD.Geometry.Point2d},System.Int16,System.Double,System.Int32)">
+  DrawCircles(Editor, IEnumerable&lt;Point2d&gt;, short, double, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>用矢量线画近似圆（正多边形）</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawCircles(this Editor editor, IEnumerable&lt;Point2d&gt; pnts, short colorIndex, double radius, int numEdges)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>editor</code> <span class="xref">Editor</span></dt>
+    <dd><p>编辑器对象</p>
+</dd>
+    <dt><code>pnts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a>&gt;</dt>
+    <dd><p>点表</p>
+</dd>
+    <dt><code>colorIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>颜色码</p>
+</dd>
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>半径</p>
+</dd>
+    <dt><code>numEdges</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>多边形边的个数</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_DrawVectors_" data-uid="IFoxCAD.Cad.EditorEx.DrawVectors*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_DrawVectors_Autodesk_AutoCAD_EditorInput_Editor_System_Collections_Generic_IEnumerable_Autodesk_AutoCAD_Geometry_Point2d__System_Int16_" data-uid="IFoxCAD.Cad.EditorEx.DrawVectors(Autodesk.AutoCAD.EditorInput.Editor,System.Collections.Generic.IEnumerable{Autodesk.AutoCAD.Geometry.Point2d},System.Int16)">
+  DrawVectors(Editor, IEnumerable&lt;Point2d&gt;, short)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>画矢量线</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawVectors(this Editor editor, IEnumerable&lt;Point2d&gt; pnts, short colorIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>editor</code> <span class="xref">Editor</span></dt>
+    <dd><p>编辑器对象</p>
+</dd>
+    <dt><code>pnts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a>&gt;</dt>
+    <dd><p>点表</p>
+</dd>
+    <dt><code>colorIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>颜色码</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_DrawVectors_" data-uid="IFoxCAD.Cad.EditorEx.DrawVectors*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_DrawVectors_Autodesk_AutoCAD_EditorInput_Editor_System_Collections_Generic_IEnumerable_Autodesk_AutoCAD_Geometry_Point2d__System_Int16_System_Boolean_" data-uid="IFoxCAD.Cad.EditorEx.DrawVectors(Autodesk.AutoCAD.EditorInput.Editor,System.Collections.Generic.IEnumerable{Autodesk.AutoCAD.Geometry.Point2d},System.Int16,System.Boolean)">
+  DrawVectors(Editor, IEnumerable&lt;Point2d&gt;, short, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>画矢量线</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawVectors(this Editor editor, IEnumerable&lt;Point2d&gt; pnts, short colorIndex, bool isClosed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>editor</code> <span class="xref">Editor</span></dt>
+    <dd><p>编辑器对象</p>
+</dd>
+    <dt><code>pnts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a>&gt;</dt>
+    <dd><p>点表</p>
+</dd>
+    <dt><code>colorIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>颜色码</p>
+</dd>
+    <dt><code>isClosed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否闭合,<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> 为闭合,<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> 为不闭合</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_GetCurrentMouthPoint_" data-uid="IFoxCAD.Cad.EditorEx.GetCurrentMouthPoint*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_GetCurrentMouthPoint_Autodesk_AutoCAD_EditorInput_Editor_" data-uid="IFoxCAD.Cad.EditorEx.GetCurrentMouthPoint(Autodesk.AutoCAD.EditorInput.Editor)">
+  GetCurrentMouthPoint(Editor)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取CAD鼠标当前位置坐标</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Point3d? GetCurrentMouthPoint(this Editor ed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ed</code> <span class="xref">Editor</span></dt>
+    <dd><p>命令栏</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Point3d.html">Point3d</a>?</dt>
+    <dd><p>坐标(可能为null)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_GetDouble_" data-uid="IFoxCAD.Cad.EditorEx.GetDouble*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_GetDouble_Autodesk_AutoCAD_EditorInput_Editor_System_String_System_Double_" data-uid="IFoxCAD.Cad.EditorEx.GetDouble(Autodesk.AutoCAD.EditorInput.Editor,System.String,System.Double)">
+  GetDouble(Editor, string, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取double值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PromptDoubleResult GetDouble(this Editor ed, string Message, double DefaultValue = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ed</code> <span class="xref">Editor</span></dt>
+    <dd><p>命令行对象</p>
+</dd>
+    <dt><code>Message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>提示信息</p>
+</dd>
+    <dt><code>DefaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>double默认值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">PromptDoubleResult</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_GetInteger_" data-uid="IFoxCAD.Cad.EditorEx.GetInteger*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_GetInteger_Autodesk_AutoCAD_EditorInput_Editor_System_String_System_Int32_" data-uid="IFoxCAD.Cad.EditorEx.GetInteger(Autodesk.AutoCAD.EditorInput.Editor,System.String,System.Int32)">
+  GetInteger(Editor, string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取int值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PromptIntegerResult GetInteger(this Editor ed, string Message, int DefaultValue = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ed</code> <span class="xref">Editor</span></dt>
+    <dd><p>命令行对象</p>
+</dd>
+    <dt><code>Message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>提示信息</p>
+</dd>
+    <dt><code>DefaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>double默认值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">PromptIntegerResult</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_GetLines_" data-uid="IFoxCAD.Cad.EditorEx.GetLines*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_GetLines_System_Collections_Generic_IEnumerable_Autodesk_AutoCAD_Geometry_Point2d__System_Boolean_" data-uid="IFoxCAD.Cad.EditorEx.GetLines(System.Collections.Generic.IEnumerable{Autodesk.AutoCAD.Geometry.Point2d},System.Boolean)">
+  GetLines(IEnumerable&lt;Point2d&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据点表返回矢量线的列表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TypedValue&gt; GetLines(IEnumerable&lt;Point2d&gt; pnts, bool isClosed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pnts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a>&gt;</dt>
+    <dd><p>点表</p>
+</dd>
+    <dt><code>isClosed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否闭合,<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> 为闭合,<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> 为不闭合</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TypedValue.html">TypedValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_GetMatrix_" data-uid="IFoxCAD.Cad.EditorEx.GetMatrix*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_GetMatrix_Autodesk_AutoCAD_EditorInput_Editor_IFoxCAD_Cad_CoordinateSystemCode_IFoxCAD_Cad_CoordinateSystemCode_" data-uid="IFoxCAD.Cad.EditorEx.GetMatrix(Autodesk.AutoCAD.EditorInput.Editor,IFoxCAD.Cad.CoordinateSystemCode,IFoxCAD.Cad.CoordinateSystemCode)">
+  GetMatrix(Editor, CoordinateSystemCode, CoordinateSystemCode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取变换矩阵</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix3d GetMatrix(this Editor editor, CoordinateSystemCode from, CoordinateSystemCode to)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>editor</code> <span class="xref">Editor</span></dt>
+    <dd><p>命令行对象</p>
+</dd>
+    <dt><code>from</code> <a class="xref" href="IFoxCAD.Cad.CoordinateSystemCode.html">CoordinateSystemCode</a></dt>
+    <dd><p>源坐标系</p>
+</dd>
+    <dt><code>to</code> <a class="xref" href="IFoxCAD.Cad.CoordinateSystemCode.html">CoordinateSystemCode</a></dt>
+    <dd><p>目标坐标系</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd><p>变换矩阵</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_GetMatrixFromMDcsToPDcs_" data-uid="IFoxCAD.Cad.EditorEx.GetMatrixFromMDcsToPDcs*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_GetMatrixFromMDcsToPDcs_Autodesk_AutoCAD_EditorInput_Editor_" data-uid="IFoxCAD.Cad.EditorEx.GetMatrixFromMDcsToPDcs(Autodesk.AutoCAD.EditorInput.Editor)">
+  GetMatrixFromMDcsToPDcs(Editor)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取MDCS(模型空间)到PDCS(图纸空间)的矩阵</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix3d GetMatrixFromMDcsToPDcs(this Editor editor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>editor</code> <span class="xref">Editor</span></dt>
+    <dd><p>命令行对象</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd><p>变换矩阵</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_GetMatrixFromMDcsToWcs_" data-uid="IFoxCAD.Cad.EditorEx.GetMatrixFromMDcsToWcs*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_GetMatrixFromMDcsToWcs_Autodesk_AutoCAD_EditorInput_Editor_" data-uid="IFoxCAD.Cad.EditorEx.GetMatrixFromMDcsToWcs(Autodesk.AutoCAD.EditorInput.Editor)">
+  GetMatrixFromMDcsToWcs(Editor)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取MDCS(模型空间)到WCS的矩阵</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix3d GetMatrixFromMDcsToWcs(this Editor editor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>editor</code> <span class="xref">Editor</span></dt>
+    <dd><p>命令行对象</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd><p>变换矩阵</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_GetMatrixFromPDcsToMDcs_" data-uid="IFoxCAD.Cad.EditorEx.GetMatrixFromPDcsToMDcs*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_GetMatrixFromPDcsToMDcs_Autodesk_AutoCAD_EditorInput_Editor_" data-uid="IFoxCAD.Cad.EditorEx.GetMatrixFromPDcsToMDcs(Autodesk.AutoCAD.EditorInput.Editor)">
+  GetMatrixFromPDcsToMDcs(Editor)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取PDCS(图纸空间)到MDCS(模型空间)的矩阵</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix3d GetMatrixFromPDcsToMDcs(this Editor editor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>editor</code> <span class="xref">Editor</span></dt>
+    <dd><p>命令行对象</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd><p>变换矩阵</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_GetMatrixFromUcsToWcs_" data-uid="IFoxCAD.Cad.EditorEx.GetMatrixFromUcsToWcs*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_GetMatrixFromUcsToWcs_Autodesk_AutoCAD_EditorInput_Editor_" data-uid="IFoxCAD.Cad.EditorEx.GetMatrixFromUcsToWcs(Autodesk.AutoCAD.EditorInput.Editor)">
+  GetMatrixFromUcsToWcs(Editor)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取UCS到WCS的矩阵</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix3d GetMatrixFromUcsToWcs(this Editor editor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>editor</code> <span class="xref">Editor</span></dt>
+    <dd><p>命令行对象</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd><p>变换矩阵</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_GetMatrixFromWcsToMDcs_" data-uid="IFoxCAD.Cad.EditorEx.GetMatrixFromWcsToMDcs*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_GetMatrixFromWcsToMDcs_Autodesk_AutoCAD_EditorInput_Editor_" data-uid="IFoxCAD.Cad.EditorEx.GetMatrixFromWcsToMDcs(Autodesk.AutoCAD.EditorInput.Editor)">
+  GetMatrixFromWcsToMDcs(Editor)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取WCS到MDCS(模型空间)的矩阵</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix3d GetMatrixFromWcsToMDcs(this Editor editor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>editor</code> <span class="xref">Editor</span></dt>
+    <dd><p>命令行对象</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd><p>变换矩阵</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_GetMatrixFromWcsToUcs_" data-uid="IFoxCAD.Cad.EditorEx.GetMatrixFromWcsToUcs*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_GetMatrixFromWcsToUcs_Autodesk_AutoCAD_EditorInput_Editor_" data-uid="IFoxCAD.Cad.EditorEx.GetMatrixFromWcsToUcs(Autodesk.AutoCAD.EditorInput.Editor)">
+  GetMatrixFromWcsToUcs(Editor)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取WCS到UCS的矩阵</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix3d GetMatrixFromWcsToUcs(this Editor editor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>editor</code> <span class="xref">Editor</span></dt>
+    <dd><p>命令行对象</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd><p>变换矩阵</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_GetPoint_" data-uid="IFoxCAD.Cad.EditorEx.GetPoint*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_GetPoint_Autodesk_AutoCAD_EditorInput_Editor_System_String_Autodesk_AutoCAD_Geometry_Point3d_" data-uid="IFoxCAD.Cad.EditorEx.GetPoint(Autodesk.AutoCAD.EditorInput.Editor,System.String,Autodesk.AutoCAD.Geometry.Point3d)">
+  GetPoint(Editor, string, Point3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取Point</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PromptPointResult GetPoint(this Editor ed, string Message, Point3d BasePoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ed</code> <span class="xref">Editor</span></dt>
+    <dd><p>命令行对象</p>
+</dd>
+    <dt><code>Message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>提示信息</p>
+</dd>
+    <dt><code>BasePoint</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd><p>提示使用的基点</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">PromptPointResult</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_GetString_" data-uid="IFoxCAD.Cad.EditorEx.GetString*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_GetString_Autodesk_AutoCAD_EditorInput_Editor_System_String_System_String_" data-uid="IFoxCAD.Cad.EditorEx.GetString(Autodesk.AutoCAD.EditorInput.Editor,System.String,System.String)">
+  GetString(Editor, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取string值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PromptResult GetString(this Editor ed, string Message, string DefaultValue = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ed</code> <span class="xref">Editor</span></dt>
+    <dd><p>命令行对象</p>
+</dd>
+    <dt><code>Message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>提示信息</p>
+</dd>
+    <dt><code>DefaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>string默认值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">PromptResult</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_GetValidExtents3d_" data-uid="IFoxCAD.Cad.EditorEx.GetValidExtents3d*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_GetValidExtents3d_Autodesk_AutoCAD_DatabaseServices_Database_System_Double_" data-uid="IFoxCAD.Cad.EditorEx.GetValidExtents3d(Autodesk.AutoCAD.DatabaseServices.Database,System.Double)">
+  GetValidExtents3d(Database, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取有效的数据库范围</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Extents3d? GetValidExtents3d(this Database db, double extention = 1E-06)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>db</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Database.html">Database</a></dt>
+    <dd><p>数据库</p>
+</dd>
+    <dt><code>extention</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>容差值:图元包围盒会超过数据库边界,用此参数扩大边界</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Extents3d.html">Extents3d</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_HasEditor_" data-uid="IFoxCAD.Cad.EditorEx.HasEditor*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_HasEditor" data-uid="IFoxCAD.Cad.EditorEx.HasEditor">
+  HasEditor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>判断是否有活动的编辑器对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasEditor()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>有,<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>没有</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_InfoMessageBox_" data-uid="IFoxCAD.Cad.EditorEx.InfoMessageBox*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_InfoMessageBox_System_String_" data-uid="IFoxCAD.Cad.EditorEx.InfoMessageBox(System.String)">
+  InfoMessageBox(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>提示信息对话框,默认标题为NFox.Cad</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InfoMessageBox(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>对话框文本</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_InfoMessageBox_" data-uid="IFoxCAD.Cad.EditorEx.InfoMessageBox*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_InfoMessageBox_System_String_System_Object___" data-uid="IFoxCAD.Cad.EditorEx.InfoMessageBox(System.String,System.Object[])">
+  InfoMessageBox(string, params object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>提示信息对话框</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InfoMessageBox(string format, params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>带格式化项的对话框文本</p>
+</dd>
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>指定格式化的对象数组</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_InfoMessageBox_" data-uid="IFoxCAD.Cad.EditorEx.InfoMessageBox*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_InfoMessageBox_System_String_System_String_" data-uid="IFoxCAD.Cad.EditorEx.InfoMessageBox(System.String,System.String)">
+  InfoMessageBox(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>提示信息对话框</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InfoMessageBox(string caption, string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>caption</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>对话框的标题</p>
+</dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>对话框文本</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_InfoMessageBox_" data-uid="IFoxCAD.Cad.EditorEx.InfoMessageBox*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_InfoMessageBox_System_String_System_String_System_Object___" data-uid="IFoxCAD.Cad.EditorEx.InfoMessageBox(System.String,System.String,System.Object[])">
+  InfoMessageBox(string, string, params object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>提示信息对话框</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InfoMessageBox(string caption, string format, params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>caption</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>对话框的标题</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>带格式化项的对话框文本</p>
+</dd>
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>指定格式化的对象数组</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_Message_" data-uid="IFoxCAD.Cad.EditorEx.Message*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_Message_System_Exception_" data-uid="IFoxCAD.Cad.EditorEx.Message(System.Exception)">
+  Message(Exception)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>异常信息对话框</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Message(Exception ex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>异常</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_PrepareForJig_" data-uid="IFoxCAD.Cad.EditorEx.PrepareForJig*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_PrepareForJig_Autodesk_AutoCAD_EditorInput_Editor_Autodesk_AutoCAD_DatabaseServices_Entity___" data-uid="IFoxCAD.Cad.EditorEx.PrepareForJig(Autodesk.AutoCAD.EditorInput.Editor,Autodesk.AutoCAD.DatabaseServices.Entity[])">
+  PrepareForJig(Editor, params Entity[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>jig前的准备工作，使图元暗显</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PrepareForJig(this Editor ed, params Entity[] ents)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ed</code> <span class="xref">Editor</span></dt>
+    <dd><p>命令栏</p>
+</dd>
+    <dt><code>ents</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html">Entity</a>[]</dt>
+    <dd><p>实体（已存在数据库中）</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_PrepareForJig_" data-uid="IFoxCAD.Cad.EditorEx.PrepareForJig*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_PrepareForJig_Autodesk_AutoCAD_EditorInput_Editor_System_Collections_Generic_IEnumerable_Autodesk_AutoCAD_DatabaseServices_Entity__" data-uid="IFoxCAD.Cad.EditorEx.PrepareForJig(Autodesk.AutoCAD.EditorInput.Editor,System.Collections.Generic.IEnumerable{Autodesk.AutoCAD.DatabaseServices.Entity})">
+  PrepareForJig(Editor, IEnumerable&lt;Entity&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>jig前的准备工作，使图元暗显</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PrepareForJig(this Editor ed, IEnumerable&lt;Entity&gt; ents)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ed</code> <span class="xref">Editor</span></dt>
+    <dd><p>命令栏</p>
+</dd>
+    <dt><code>ents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html">Entity</a>&gt;</dt>
+    <dd><p>实体（已存在数据库中）</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_RunLisp_" data-uid="IFoxCAD.Cad.EditorEx.RunLisp*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_RunLisp_Autodesk_AutoCAD_EditorInput_Editor_System_String_IFoxCAD_Cad_EditorEx_RunLispFlag_" data-uid="IFoxCAD.Cad.EditorEx.RunLisp(Autodesk.AutoCAD.EditorInput.Editor,System.String,IFoxCAD.Cad.EditorEx.RunLispFlag)">
+  RunLisp(Editor, string, RunLispFlag)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>发送lisp语句字符串到cad执行</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultBuffer? RunLisp(this Editor ed, string lispCode, EditorEx.RunLispFlag flag = RunLispFlag.AdsQueueexpr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ed</code> <span class="xref">Editor</span></dt>
+    <dd><p>编辑器对象</p>
+</dd>
+    <dt><code>lispCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>lisp语句</p>
+</dd>
+    <dt><code>flag</code> <a class="xref" href="IFoxCAD.Cad.EditorEx.html">EditorEx</a>.<a class="xref" href="IFoxCAD.Cad.EditorEx.RunLispFlag.html">RunLispFlag</a></dt>
+    <dd><p>运行方式</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ResultBuffer.html">ResultBuffer</a></dt>
+    <dd><p>缓冲结果,返回值</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_SSGet_" data-uid="IFoxCAD.Cad.EditorEx.SSGet*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_SSGet_Autodesk_AutoCAD_EditorInput_Editor_System_String_Autodesk_AutoCAD_EditorInput_SelectionFilter_System_Nullable_System_ValueTuple_System_String_System_String___System_Collections_Generic_Dictionary_System_String_System_Action__" data-uid="IFoxCAD.Cad.EditorEx.SSGet(Autodesk.AutoCAD.EditorInput.Editor,System.String,Autodesk.AutoCAD.EditorInput.SelectionFilter,System.Nullable{System.ValueTuple{System.String,System.String}},System.Collections.Generic.Dictionary{System.String,System.Action})">
+  SSGet(Editor, string?, SelectionFilter?, (string add, string remove)?, Dictionary&lt;string, Action&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>选择集</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PromptSelectionResult SSGet(this Editor editor, string? mode = null, SelectionFilter? filter = null, (string add, string remove)? messages = null, Dictionary&lt;string, Action&gt;? keywords = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>editor</code> <span class="xref">Editor</span></dt>
+    <dd><p>命令行对象</p>
+</dd>
+    <dt><code>mode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>模式</p>
+</dd>
+    <dt><code>filter</code> <span class="xref">SelectionFilter</span></dt>
+    <dd><p>过滤器</p>
+</dd>
+    <dt><code>messages</code> (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.add">add</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.remove">remove</a>)?</dt>
+    <dd><p>消息</p>
+</dd>
+    <dt><code>keywords</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a>&gt;</dt>
+    <dd><p>关键字和回调函数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">PromptSelectionResult</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_SelectAtPoint_" data-uid="IFoxCAD.Cad.EditorEx.SelectAtPoint*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_SelectAtPoint_Autodesk_AutoCAD_EditorInput_Editor_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_EditorInput_SelectionFilter_" data-uid="IFoxCAD.Cad.EditorEx.SelectAtPoint(Autodesk.AutoCAD.EditorInput.Editor,Autodesk.AutoCAD.Geometry.Point3d,Autodesk.AutoCAD.EditorInput.SelectionFilter)">
+  SelectAtPoint(Editor, Point3d, SelectionFilter?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>选择穿过一个点的对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PromptSelectionResult SelectAtPoint(this Editor editor, Point3d point, SelectionFilter? filter = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>editor</code> <span class="xref">Editor</span></dt>
+    <dd><p>命令行对象</p>
+</dd>
+    <dt><code>point</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd><p>点</p>
+</dd>
+    <dt><code>filter</code> <span class="xref">SelectionFilter</span></dt>
+    <dd><p>过滤器</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">PromptSelectionResult</span></dt>
+    <dd><p>选择集结果类</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_SelectByLineWeight_" data-uid="IFoxCAD.Cad.EditorEx.SelectByLineWeight*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_SelectByLineWeight_Autodesk_AutoCAD_EditorInput_Editor_Autodesk_AutoCAD_DatabaseServices_LineWeight_" data-uid="IFoxCAD.Cad.EditorEx.SelectByLineWeight(Autodesk.AutoCAD.EditorInput.Editor,Autodesk.AutoCAD.DatabaseServices.LineWeight)">
+  SelectByLineWeight(Editor, LineWeight)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据线宽创建图层选择集</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SelectionSet SelectByLineWeight(this Editor editor, LineWeight lineWeight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>editor</code> <span class="xref">Editor</span></dt>
+    <dd><p>命令行对象</p>
+</dd>
+    <dt><code>lineWeight</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LineWeight.html">LineWeight</a></dt>
+    <dd><p>线宽</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SelectionSet</span></dt>
+    <dd><p>图层选择集</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_SsgetAddKeys_" data-uid="IFoxCAD.Cad.EditorEx.SsgetAddKeys*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_SsgetAddKeys_Autodesk_AutoCAD_EditorInput_PromptSelectionOptions_System_Collections_Generic_Dictionary_System_String_System_Action__" data-uid="IFoxCAD.Cad.EditorEx.SsgetAddKeys(Autodesk.AutoCAD.EditorInput.PromptSelectionOptions,System.Collections.Generic.Dictionary{System.String,System.Action})">
+  SsgetAddKeys(PromptSelectionOptions, Dictionary&lt;string, Action&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>添加选择集关键字和回调</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SsgetAddKeys(this PromptSelectionOptions pso, Dictionary&lt;string, Action&gt; dicActions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pso</code> <span class="xref">PromptSelectionOptions</span></dt>
+    <dd><p>选择集配置</p>
+</dd>
+    <dt><code>dicActions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a>&gt;</dt>
+    <dd><p>关键字,回调委托</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_StreamMessage_" data-uid="IFoxCAD.Cad.EditorEx.StreamMessage*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_StreamMessage_System_String_" data-uid="IFoxCAD.Cad.EditorEx.StreamMessage(System.String)">
+  StreamMessage(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>带错误提示对话框的打印信息函数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StreamMessage(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>打印信息</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_StreamMessage_" data-uid="IFoxCAD.Cad.EditorEx.StreamMessage*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_StreamMessage_System_String_System_Object___" data-uid="IFoxCAD.Cad.EditorEx.StreamMessage(System.String,System.Object[])">
+  StreamMessage(string, params object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>带错误提示对话框的打印信息函数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StreamMessage(string format, params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>带格式项的字符串</p>
+</dd>
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>指定格式化的对象数组</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_WriteMessage_" data-uid="IFoxCAD.Cad.EditorEx.WriteMessage*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_WriteMessage_System_String_" data-uid="IFoxCAD.Cad.EditorEx.WriteMessage(System.String)">
+  WriteMessage(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>命令行打印字符串</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteMessage(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字符串</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_WriteMessage_" data-uid="IFoxCAD.Cad.EditorEx.WriteMessage*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_WriteMessage_System_String_System_Object___" data-uid="IFoxCAD.Cad.EditorEx.WriteMessage(System.String,System.Object[])">
+  WriteMessage(string, params object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>命令行打印字符串</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteMessage(string format, params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>带格式化项的文本</p>
+</dd>
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>指定格式化的对象数组</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_Zoom_" data-uid="IFoxCAD.Cad.EditorEx.Zoom*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_Zoom_Autodesk_AutoCAD_EditorInput_Editor_Autodesk_AutoCAD_Geometry_Point3d_System_Double_System_Double_" data-uid="IFoxCAD.Cad.EditorEx.Zoom(Autodesk.AutoCAD.EditorInput.Editor,Autodesk.AutoCAD.Geometry.Point3d,System.Double,System.Double)">
+  Zoom(Editor, Point3d, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>按范围缩放</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Zoom(this Editor ed, Point3d CenPt, double width, double height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ed</code> <span class="xref">Editor</span></dt>
+    <dd><p>命令行对象</p>
+</dd>
+    <dt><code>CenPt</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd><p>中心点</p>
+</dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>窗口宽</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>窗口高</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_ZoomExtents_" data-uid="IFoxCAD.Cad.EditorEx.ZoomExtents*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_ZoomExtents_Autodesk_AutoCAD_EditorInput_Editor_System_Double_" data-uid="IFoxCAD.Cad.EditorEx.ZoomExtents(Autodesk.AutoCAD.EditorInput.Editor,System.Double)">
+  ZoomExtents(Editor, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>动态缩放</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ZoomExtents(this Editor ed, double offsetDist = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ed</code> <span class="xref">Editor</span></dt>
+    <dd><p>命令行对象</p>
+</dd>
+    <dt><code>offsetDist</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>偏移距离</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_ZoomObject_" data-uid="IFoxCAD.Cad.EditorEx.ZoomObject*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_ZoomObject_Autodesk_AutoCAD_EditorInput_Editor_Autodesk_AutoCAD_DatabaseServices_Entity_System_Double_" data-uid="IFoxCAD.Cad.EditorEx.ZoomObject(Autodesk.AutoCAD.EditorInput.Editor,Autodesk.AutoCAD.DatabaseServices.Entity,System.Double)">
+  ZoomObject(Editor, Entity, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据实体对象的范围显示视图</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ZoomObject(this Editor ed, Entity ent, double offsetDist = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ed</code> <span class="xref">Editor</span></dt>
+    <dd><p>命令行对象</p>
+</dd>
+    <dt><code>ent</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html">Entity</a></dt>
+    <dd><p>Entity对象</p>
+</dd>
+    <dt><code>offsetDist</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>偏移距离</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_ZoomWindow_" data-uid="IFoxCAD.Cad.EditorEx.ZoomWindow*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_ZoomWindow_Autodesk_AutoCAD_EditorInput_Editor_Autodesk_AutoCAD_DatabaseServices_Extents3d_" data-uid="IFoxCAD.Cad.EditorEx.ZoomWindow(Autodesk.AutoCAD.EditorInput.Editor,Autodesk.AutoCAD.DatabaseServices.Extents3d)">
+  ZoomWindow(Editor, Extents3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>缩放窗口范围</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ZoomWindow(this Editor ed, Extents3d ext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ed</code> <span class="xref">Editor</span></dt>
+    <dd><p>命令行对象</p>
+</dd>
+    <dt><code>ext</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Extents3d.html">Extents3d</a></dt>
+    <dd><p>窗口范围点</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IFoxCAD_Cad_EditorEx_ZoomWindow_" data-uid="IFoxCAD.Cad.EditorEx.ZoomWindow*"></a>
+
+  <h3 id="IFoxCAD_Cad_EditorEx_ZoomWindow_Autodesk_AutoCAD_EditorInput_Editor_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_Geometry_Point3d_System_Double_" data-uid="IFoxCAD.Cad.EditorEx.ZoomWindow(Autodesk.AutoCAD.EditorInput.Editor,Autodesk.AutoCAD.Geometry.Point3d,Autodesk.AutoCAD.Geometry.Point3d,System.Double)">
+  ZoomWindow(Editor, Point3d, Point3d, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>缩放窗口范围</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ZoomWindow(this Editor ed, Point3d lpt, Point3d rpt, double offsetDist = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ed</code> <span class="xref">Editor</span></dt>
+    <dd><p>命令行对象</p>
+</dd>
+    <dt><code>lpt</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd><p>第一点</p>
+</dd>
+    <dt><code>rpt</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd><p>对角点</p>
+</dd>
+    <dt><code>offsetDist</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>偏移距离</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

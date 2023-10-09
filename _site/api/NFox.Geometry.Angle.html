@@ -1,0 +1,1289 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct Angle
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct Angle
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="NFox.Geometry.Angle">
+
+
+
+  <h1 id="NFox_Geometry_Angle" data-uid="NFox.Geometry.Angle" class="text-break">
+    Struct Angle
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="NFox.html">NFox</a>.<a class="xref" href="NFox.Geometry.html">Geometry</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>NFox.Expression.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct Angle : IEqualityComparer&lt;Angle&gt;, IComparable&lt;Angle&gt;</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;<a class="xref" href="NFox.Geometry.Angle.html">Angle</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="NFox.Geometry.Angle.html">Angle</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="NFox_Geometry_Angle__ctor_" data-uid="NFox.Geometry.Angle.#ctor*"></a>
+
+  <h3 id="NFox_Geometry_Angle__ctor_System_Double_" data-uid="NFox.Geometry.Angle.#ctor(System.Double)">
+  Angle(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Angle(double radian)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>radian</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle__ctor_" data-uid="NFox.Geometry.Angle.#ctor*"></a>
+
+  <h3 id="NFox_Geometry_Angle__ctor_System_Double_System_Boolean_" data-uid="NFox.Geometry.Angle.#ctor(System.Double,System.Boolean)">
+  Angle(double, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Angle(double radian, bool format)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>radian</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="NFox_Geometry_Angle_Coangle_" data-uid="NFox.Geometry.Angle.Coangle*"></a>
+
+  <h3 id="NFox_Geometry_Angle_Coangle" data-uid="NFox.Geometry.Angle.Coangle">
+  Coangle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Angle Coangle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_Degree_" data-uid="NFox.Geometry.Angle.Degree*"></a>
+
+  <h3 id="NFox_Geometry_Angle_Degree" data-uid="NFox.Geometry.Angle.Degree">
+  Degree
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Degree { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_Degree120_" data-uid="NFox.Geometry.Angle.Degree120*"></a>
+
+  <h3 id="NFox_Geometry_Angle_Degree120" data-uid="NFox.Geometry.Angle.Degree120">
+  Degree120
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Angle Degree120 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_Degree135_" data-uid="NFox.Geometry.Angle.Degree135*"></a>
+
+  <h3 id="NFox_Geometry_Angle_Degree135" data-uid="NFox.Geometry.Angle.Degree135">
+  Degree135
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Angle Degree135 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_Degree180_" data-uid="NFox.Geometry.Angle.Degree180*"></a>
+
+  <h3 id="NFox_Geometry_Angle_Degree180" data-uid="NFox.Geometry.Angle.Degree180">
+  Degree180
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Angle Degree180 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_Degree270_" data-uid="NFox.Geometry.Angle.Degree270*"></a>
+
+  <h3 id="NFox_Geometry_Angle_Degree270" data-uid="NFox.Geometry.Angle.Degree270">
+  Degree270
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Angle Degree270 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_Degree30_" data-uid="NFox.Geometry.Angle.Degree30*"></a>
+
+  <h3 id="NFox_Geometry_Angle_Degree30" data-uid="NFox.Geometry.Angle.Degree30">
+  Degree30
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Angle Degree30 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_Degree360_" data-uid="NFox.Geometry.Angle.Degree360*"></a>
+
+  <h3 id="NFox_Geometry_Angle_Degree360" data-uid="NFox.Geometry.Angle.Degree360">
+  Degree360
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Angle Degree360 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_Degree45_" data-uid="NFox.Geometry.Angle.Degree45*"></a>
+
+  <h3 id="NFox_Geometry_Angle_Degree45" data-uid="NFox.Geometry.Angle.Degree45">
+  Degree45
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Angle Degree45 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_Degree60_" data-uid="NFox.Geometry.Angle.Degree60*"></a>
+
+  <h3 id="NFox_Geometry_Angle_Degree60" data-uid="NFox.Geometry.Angle.Degree60">
+  Degree60
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Angle Degree60 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_Degree90_" data-uid="NFox.Geometry.Angle.Degree90*"></a>
+
+  <h3 id="NFox_Geometry_Angle_Degree90" data-uid="NFox.Geometry.Angle.Degree90">
+  Degree90
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Angle Degree90 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_DegreeF_" data-uid="NFox.Geometry.Angle.DegreeF*"></a>
+
+  <h3 id="NFox_Geometry_Angle_DegreeF" data-uid="NFox.Geometry.Angle.DegreeF">
+  DegreeF
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DegreeF { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_Radian_" data-uid="NFox.Geometry.Angle.Radian*"></a>
+
+  <h3 id="NFox_Geometry_Angle_Radian" data-uid="NFox.Geometry.Angle.Radian">
+  Radian
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Radian { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_RadianF_" data-uid="NFox.Geometry.Angle.RadianF*"></a>
+
+  <h3 id="NFox_Geometry_Angle_RadianF" data-uid="NFox.Geometry.Angle.RadianF">
+  RadianF
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RadianF { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_Supplementary_" data-uid="NFox.Geometry.Angle.Supplementary*"></a>
+
+  <h3 id="NFox_Geometry_Angle_Supplementary" data-uid="NFox.Geometry.Angle.Supplementary">
+  Supplementary
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Angle Supplementary { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_Zero_" data-uid="NFox.Geometry.Angle.Zero*"></a>
+
+  <h3 id="NFox_Geometry_Angle_Zero" data-uid="NFox.Geometry.Angle.Zero">
+  Zero
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Angle Zero { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="NFox_Geometry_Angle_CompareTo_" data-uid="NFox.Geometry.Angle.CompareTo*"></a>
+
+  <h3 id="NFox_Geometry_Angle_CompareTo_NFox_Geometry_Angle_" data-uid="NFox.Geometry.Angle.CompareTo(NFox.Geometry.Angle)">
+  CompareTo(Angle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(Angle other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_Equals_" data-uid="NFox.Geometry.Angle.Equals*"></a>
+
+  <h3 id="NFox_Geometry_Angle_Equals_NFox_Geometry_Angle_NFox_Geometry_Angle_" data-uid="NFox.Geometry.Angle.Equals(NFox.Geometry.Angle,NFox.Geometry.Angle)">
+  Equals(Angle, Angle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Angle x, Angle y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_FormDegree_" data-uid="NFox.Geometry.Angle.FormDegree*"></a>
+
+  <h3 id="NFox_Geometry_Angle_FormDegree_System_Double_" data-uid="NFox.Geometry.Angle.FormDegree(System.Double)">
+  FormDegree(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Angle FormDegree(double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_FormDegree_" data-uid="NFox.Geometry.Angle.FormDegree*"></a>
+
+  <h3 id="NFox_Geometry_Angle_FormDegree_System_Double_System_Boolean_" data-uid="NFox.Geometry.Angle.FormDegree(System.Double,System.Boolean)">
+  FormDegree(double, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Angle FormDegree(double value, bool format)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_GetHashCode_" data-uid="NFox.Geometry.Angle.GetHashCode*"></a>
+
+  <h3 id="NFox_Geometry_Angle_GetHashCode_NFox_Geometry_Angle_" data-uid="NFox.Geometry.Angle.GetHashCode(NFox.Geometry.Angle)">
+  GetHashCode(Angle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetHashCode(Angle obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_IsWholeCircle_" data-uid="NFox.Geometry.Angle.IsWholeCircle*"></a>
+
+  <h3 id="NFox_Geometry_Angle_IsWholeCircle" data-uid="NFox.Geometry.Angle.IsWholeCircle">
+  IsWholeCircle()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsWholeCircle()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_IsZero_" data-uid="NFox.Geometry.Angle.IsZero*"></a>
+
+  <h3 id="NFox_Geometry_Angle_IsZero" data-uid="NFox.Geometry.Angle.IsZero">
+  IsZero()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsZero()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_ToString_" data-uid="NFox.Geometry.Angle.ToString*"></a>
+
+  <h3 id="NFox_Geometry_Angle_ToString" data-uid="NFox.Geometry.Angle.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="NFox_Geometry_Angle_op_Addition_" data-uid="NFox.Geometry.Angle.op_Addition*"></a>
+
+  <h3 id="NFox_Geometry_Angle_op_Addition_NFox_Geometry_Angle_NFox_Geometry_Angle_" data-uid="NFox.Geometry.Angle.op_Addition(NFox.Geometry.Angle,NFox.Geometry.Angle)">
+  operator +(Angle, Angle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Angle operator +(Angle angle1, Angle angle2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>angle1</code> <a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+    <dt><code>angle2</code> <a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_op_Division_" data-uid="NFox.Geometry.Angle.op_Division*"></a>
+
+  <h3 id="NFox_Geometry_Angle_op_Division_NFox_Geometry_Angle_System_Double_" data-uid="NFox.Geometry.Angle.op_Division(NFox.Geometry.Angle,System.Double)">
+  operator /(Angle, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Angle operator /(Angle angle1, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>angle1</code> <a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_op_Implicit_" data-uid="NFox.Geometry.Angle.op_Implicit*"></a>
+
+  <h3 id="NFox_Geometry_Angle_op_Implicit_NFox_Geometry_Angle__System_Double" data-uid="NFox.Geometry.Angle.op_Implicit(NFox.Geometry.Angle)~System.Double">
+  implicit operator double(Angle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator double(Angle angle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>angle</code> <a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_op_Implicit_" data-uid="NFox.Geometry.Angle.op_Implicit*"></a>
+
+  <h3 id="NFox_Geometry_Angle_op_Implicit_NFox_Geometry_Angle__System_Single" data-uid="NFox.Geometry.Angle.op_Implicit(NFox.Geometry.Angle)~System.Single">
+  implicit operator float(Angle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator float(Angle angle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>angle</code> <a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_op_Multiply_" data-uid="NFox.Geometry.Angle.op_Multiply*"></a>
+
+  <h3 id="NFox_Geometry_Angle_op_Multiply_NFox_Geometry_Angle_System_Double_" data-uid="NFox.Geometry.Angle.op_Multiply(NFox.Geometry.Angle,System.Double)">
+  operator *(Angle, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Angle operator *(Angle angle1, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>angle1</code> <a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_op_Subtraction_" data-uid="NFox.Geometry.Angle.op_Subtraction*"></a>
+
+  <h3 id="NFox_Geometry_Angle_op_Subtraction_NFox_Geometry_Angle_NFox_Geometry_Angle_" data-uid="NFox.Geometry.Angle.op_Subtraction(NFox.Geometry.Angle,NFox.Geometry.Angle)">
+  operator -(Angle, Angle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Angle operator -(Angle angle1, Angle angle2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>angle1</code> <a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+    <dt><code>angle2</code> <a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NFox_Geometry_Angle_op_UnaryNegation_" data-uid="NFox.Geometry.Angle.op_UnaryNegation*"></a>
+
+  <h3 id="NFox_Geometry_Angle_op_UnaryNegation_NFox_Geometry_Angle_" data-uid="NFox.Geometry.Angle.op_UnaryNegation(NFox.Geometry.Angle)">
+  operator -(Angle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Angle operator -(Angle angle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>angle</code> <a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NFox.Geometry.Angle.html">Angle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

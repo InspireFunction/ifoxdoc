@@ -1,0 +1,1391 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ExtrudedSurface
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ExtrudedSurface
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Autodesk.AutoCAD.DatabaseServices.ExtrudedSurface">
+
+
+
+  <h1 id="Autodesk_AutoCAD_DatabaseServices_ExtrudedSurface" data-uid="Autodesk.AutoCAD.DatabaseServices.ExtrudedSurface" class="text-break">
+    Class ExtrudedSurface
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Autodesk.html">Autodesk</a>.<a class="xref" href="Autodesk.AutoCAD.html">AutoCAD</a>.<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.html">DatabaseServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Acdbmgd.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;AcDbExtrudedSurface&quot;)]
+public class ExtrudedSurface : Surface, IDisposable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html">DisposableWrapper</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html">RXObject</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html">Drawable</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html">DBObject</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html">Entity</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html">Surface</a></div>
+      <div><span class="xref">ExtrudedSurface</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreateFrom_Autodesk_AutoCAD_DatabaseServices_Entity_">Surface.CreateFrom(Entity)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_ConvertToRegion">Surface.ConvertToRegion()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_Thicken_System_Double_System_Boolean_">Surface.Thicken(double, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_GetArea">Surface.GetArea()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreateInterferenceObjects_Autodesk_AutoCAD_DatabaseServices_Entity_System_Int32_">Surface.CreateInterferenceObjects(Entity, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_BooleanUnion_Autodesk_AutoCAD_DatabaseServices_Surface_">Surface.BooleanUnion(Surface)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_BooleanSubtract_Autodesk_AutoCAD_DatabaseServices_Solid3d_">Surface.BooleanSubtract(Solid3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_BooleanSubtract_Autodesk_AutoCAD_DatabaseServices_Surface_">Surface.BooleanSubtract(Surface)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_BooleanIntersect_Autodesk_AutoCAD_DatabaseServices_Solid3d_">Surface.BooleanIntersect(Solid3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_BooleanIntersect_Autodesk_AutoCAD_DatabaseServices_Surface_">Surface.BooleanIntersect(Surface)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_ImprintEntity_Autodesk_AutoCAD_DatabaseServices_Entity_">Surface.ImprintEntity(Entity)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreateSectionObjects_Autodesk_AutoCAD_Geometry_Plane_">Surface.CreateSectionObjects(Plane)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_SliceByPlane_Autodesk_AutoCAD_Geometry_Plane_">Surface.SliceByPlane(Plane)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_SliceBySurface_Autodesk_AutoCAD_DatabaseServices_Surface_">Surface.SliceBySurface(Surface)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_ChamferEdges_Autodesk_AutoCAD_DatabaseServices_SubentityId___Autodesk_AutoCAD_DatabaseServices_SubentityId_System_Double_System_Double_System_Boolean_">Surface.ChamferEdges(SubentityId[], SubentityId, double, double, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_ChamferEdges_Autodesk_AutoCAD_DatabaseServices_SubentityId___Autodesk_AutoCAD_DatabaseServices_SubentityId_System_Double_System_Double_">Surface.ChamferEdges(SubentityId[], SubentityId, double, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_FilletEdges_Autodesk_AutoCAD_DatabaseServices_SubentityId___System_Double_System_Boolean_">Surface.FilletEdges(SubentityId[], double, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_FilletEdges_Autodesk_AutoCAD_DatabaseServices_SubentityId___Autodesk_AutoCAD_Geometry_DoubleCollection_Autodesk_AutoCAD_Geometry_DoubleCollection_Autodesk_AutoCAD_Geometry_DoubleCollection_">Surface.FilletEdges(SubentityId[], DoubleCollection, DoubleCollection, DoubleCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_SetSubentityColor_Autodesk_AutoCAD_DatabaseServices_SubentityId_Autodesk_AutoCAD_Colors_Color_">Surface.SetSubentityColor(SubentityId, Color)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_GetSubentityColor_Autodesk_AutoCAD_DatabaseServices_SubentityId_">Surface.GetSubentityColor(SubentityId)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_SetSubentityMaterial_Autodesk_AutoCAD_DatabaseServices_SubentityId_Autodesk_AutoCAD_DatabaseServices_ObjectId_">Surface.SetSubentityMaterial(SubentityId, ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_GetSubentityMaterial_Autodesk_AutoCAD_DatabaseServices_SubentityId_">Surface.GetSubentityMaterial(SubentityId)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_SetSubentityMaterialMapper_Autodesk_AutoCAD_DatabaseServices_SubentityId_Autodesk_AutoCAD_GraphicsInterface_Mapper_">Surface.SetSubentityMaterialMapper(SubentityId, Mapper)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_GetSubentityMaterialMapper_Autodesk_AutoCAD_DatabaseServices_SubentityId_">Surface.GetSubentityMaterialMapper(SubentityId)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_ProjectOnToSurface_Autodesk_AutoCAD_DatabaseServices_Entity_Autodesk_AutoCAD_Geometry_Vector3d_">Surface.ProjectOnToSurface(Entity, Vector3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_RayTest_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_Geometry_Vector3d_System_Double_Autodesk_AutoCAD_DatabaseServices_SubentityId____Autodesk_AutoCAD_Geometry_DoubleCollection__">Surface.RayTest(Point3d, Vector3d, double, out SubentityId[], out DoubleCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_ConvertToNurbSurface">Surface.ConvertToNurbSurface()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_ExtendEdges_Autodesk_AutoCAD_DatabaseServices_FullSubentityPath___System_Double_Autodesk_AutoCAD_DatabaseServices_Surface_EdgeExtensionType_System_Boolean_">Surface.ExtendEdges(FullSubentityPath[], double, Surface.EdgeExtensionType, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreateExtendSurface_Autodesk_AutoCAD_DatabaseServices_ObjectId_Autodesk_AutoCAD_DatabaseServices_SubentityId___System_Double_Autodesk_AutoCAD_DatabaseServices_Surface_EdgeExtensionType_System_Boolean_">Surface.CreateExtendSurface(ObjectId, SubentityId[], double, Surface.EdgeExtensionType, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreateExtrudedSurface_Autodesk_AutoCAD_DatabaseServices_Profile3d_Autodesk_AutoCAD_Geometry_Vector3d_Autodesk_AutoCAD_DatabaseServices_SweepOptions_">Surface.CreateExtrudedSurface(Profile3d, Vector3d, SweepOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreateExtrudedSurface_Autodesk_AutoCAD_DatabaseServices_Profile3d_Autodesk_AutoCAD_Geometry_Vector3d_Autodesk_AutoCAD_DatabaseServices_SweepOptions_System_Boolean_">Surface.CreateExtrudedSurface(Profile3d, Vector3d, SweepOptions, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreateRevolvedSurface_Autodesk_AutoCAD_DatabaseServices_Profile3d_Autodesk_AutoCAD_DatabaseServices_Profile3d_System_Boolean_System_Double_System_Double_Autodesk_AutoCAD_DatabaseServices_RevolveOptions_">Surface.CreateRevolvedSurface(Profile3d, Profile3d, bool, double, double, RevolveOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreateRevolvedSurface_Autodesk_AutoCAD_DatabaseServices_Profile3d_Autodesk_AutoCAD_DatabaseServices_Profile3d_System_Boolean_System_Double_System_Double_Autodesk_AutoCAD_DatabaseServices_RevolveOptions_System_Boolean_">Surface.CreateRevolvedSurface(Profile3d, Profile3d, bool, double, double, RevolveOptions, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreateRevolvedSurface_Autodesk_AutoCAD_DatabaseServices_Profile3d_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_Geometry_Vector3d_System_Double_System_Double_Autodesk_AutoCAD_DatabaseServices_RevolveOptions_">Surface.CreateRevolvedSurface(Profile3d, Point3d, Vector3d, double, double, RevolveOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreateRevolvedSurface_Autodesk_AutoCAD_DatabaseServices_Profile3d_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_Geometry_Vector3d_System_Double_System_Double_Autodesk_AutoCAD_DatabaseServices_RevolveOptions_System_Boolean_">Surface.CreateRevolvedSurface(Profile3d, Point3d, Vector3d, double, double, RevolveOptions, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreateSweptSurface_Autodesk_AutoCAD_DatabaseServices_Profile3d_Autodesk_AutoCAD_DatabaseServices_Profile3d_Autodesk_AutoCAD_DatabaseServices_SweepOptions_">Surface.CreateSweptSurface(Profile3d, Profile3d, SweepOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreateSweptSurface_Autodesk_AutoCAD_DatabaseServices_Profile3d_Autodesk_AutoCAD_DatabaseServices_Profile3d_Autodesk_AutoCAD_DatabaseServices_SweepOptions_System_Boolean_">Surface.CreateSweptSurface(Profile3d, Profile3d, SweepOptions, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreateLoftedSurface_Autodesk_AutoCAD_DatabaseServices_LoftProfile___Autodesk_AutoCAD_DatabaseServices_LoftProfile___Autodesk_AutoCAD_DatabaseServices_LoftProfile_Autodesk_AutoCAD_DatabaseServices_LoftOptions_">Surface.CreateLoftedSurface(LoftProfile[], LoftProfile[], LoftProfile, LoftOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreateLoftedSurface_Autodesk_AutoCAD_DatabaseServices_LoftProfile___Autodesk_AutoCAD_DatabaseServices_LoftProfile___Autodesk_AutoCAD_DatabaseServices_LoftProfile_Autodesk_AutoCAD_DatabaseServices_LoftOptions_System_Boolean_">Surface.CreateLoftedSurface(LoftProfile[], LoftProfile[], LoftProfile, LoftOptions, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreateNetworkSurface_Autodesk_AutoCAD_DatabaseServices_Profile3d___Autodesk_AutoCAD_DatabaseServices_Profile3d___">Surface.CreateNetworkSurface(Profile3d[], Profile3d[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreateNetworkSurface_Autodesk_AutoCAD_DatabaseServices_Profile3d___Autodesk_AutoCAD_DatabaseServices_Profile3d___System_Boolean_">Surface.CreateNetworkSurface(Profile3d[], Profile3d[], bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreatePatchSurface_Autodesk_AutoCAD_DatabaseServices_PathRef_Autodesk_AutoCAD_DatabaseServices_ObjectIdCollection_System_Int32_System_Double_">Surface.CreatePatchSurface(PathRef, ObjectIdCollection, int, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreatePatchSurface_Autodesk_AutoCAD_DatabaseServices_PathRef_Autodesk_AutoCAD_DatabaseServices_ObjectIdCollection_System_Int32_System_Double_System_Boolean_">Surface.CreatePatchSurface(PathRef, ObjectIdCollection, int, double, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreateBlendSurface_Autodesk_AutoCAD_DatabaseServices_LoftProfile_Autodesk_AutoCAD_DatabaseServices_LoftProfile_Autodesk_AutoCAD_DatabaseServices_BlendOptions_">Surface.CreateBlendSurface(LoftProfile, LoftProfile, BlendOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreateBlendSurface_Autodesk_AutoCAD_DatabaseServices_LoftProfile_Autodesk_AutoCAD_DatabaseServices_LoftProfile_Autodesk_AutoCAD_DatabaseServices_BlendOptions_System_Boolean_">Surface.CreateBlendSurface(LoftProfile, LoftProfile, BlendOptions, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreateFilletSurface_Autodesk_AutoCAD_DatabaseServices_ObjectId_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_DatabaseServices_ObjectId_Autodesk_AutoCAD_Geometry_Point3d_System_Double_Autodesk_AutoCAD_DatabaseServices_FilletTrimMode_Autodesk_AutoCAD_Geometry_Vector3d_">Surface.CreateFilletSurface(ObjectId, Point3d, ObjectId, Point3d, double, FilletTrimMode, Vector3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreateFilletSurface_Autodesk_AutoCAD_DatabaseServices_ObjectId_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_DatabaseServices_ObjectId_Autodesk_AutoCAD_Geometry_Point3d_System_Double_Autodesk_AutoCAD_DatabaseServices_FilletTrimMode_Autodesk_AutoCAD_Geometry_Vector3d_System_Boolean_">Surface.CreateFilletSurface(ObjectId, Point3d, ObjectId, Point3d, double, FilletTrimMode, Vector3d, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreateOffsetSurface_Autodesk_AutoCAD_DatabaseServices_Entity_System_Double_">Surface.CreateOffsetSurface(Entity, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreateOffsetSurface_Autodesk_AutoCAD_DatabaseServices_Entity_System_Double_System_Boolean_">Surface.CreateOffsetSurface(Entity, double, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_TrimSurface_Autodesk_AutoCAD_DatabaseServices_ObjectId_Autodesk_AutoCAD_DatabaseServices_ObjectIdCollection_Autodesk_AutoCAD_DatabaseServices_ObjectIdCollection_Autodesk_AutoCAD_Geometry_Vector3dCollection_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_Geometry_Vector3d_System_Boolean_System_Boolean_">Surface.TrimSurface(ObjectId, ObjectIdCollection, ObjectIdCollection, Vector3dCollection, Point3d, Vector3d, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_UsesGraphicsCache">Surface.UsesGraphicsCache</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_Perimeter">Surface.Perimeter</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_WireframeType">Surface.WireframeType</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_VIsoLineDensity">Surface.VIsoLineDensity</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_UIsoLineDensity">Surface.UIsoLineDensity</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_ModificationActionBodyIds">Surface.ModificationActionBodyIds</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Surface.html#Autodesk_AutoCAD_DatabaseServices_Surface_CreationActionBodyId">Surface.CreationActionBodyId</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_SetLayerId_Autodesk_AutoCAD_DatabaseServices_ObjectId_System_Boolean_">Entity.SetLayerId(ObjectId, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_SetPropertiesFrom_Autodesk_AutoCAD_DatabaseServices_Entity_">Entity.SetPropertiesFrom(Entity)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_GetPlane">Entity.GetPlane()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_AddSubentityPaths_Autodesk_AutoCAD_DatabaseServices_FullSubentityPath___">Entity.AddSubentityPaths(FullSubentityPath[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_DeleteSubentityPaths_Autodesk_AutoCAD_DatabaseServices_FullSubentityPath___">Entity.DeleteSubentityPaths(FullSubentityPath[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_TransformSubentityPathsBy_Autodesk_AutoCAD_DatabaseServices_FullSubentityPath___Autodesk_AutoCAD_Geometry_Matrix3d_">Entity.TransformSubentityPathsBy(FullSubentityPath[], Matrix3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_GetGripPointsAtSubentityPath_Autodesk_AutoCAD_DatabaseServices_FullSubentityPath_Autodesk_AutoCAD_DatabaseServices_GripDataCollection_System_Double_System_Int32_Autodesk_AutoCAD_Geometry_Vector3d_Autodesk_AutoCAD_DatabaseServices_GetGripPointsFlags_">Entity.GetGripPointsAtSubentityPath(FullSubentityPath, GripDataCollection, double, int, Vector3d, GetGripPointsFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_MoveGripPointsAtSubentityPaths_Autodesk_AutoCAD_DatabaseServices_FullSubentityPath___System_IntPtr___Autodesk_AutoCAD_Geometry_Vector3d_Autodesk_AutoCAD_DatabaseServices_MoveGripPointsFlags_">Entity.MoveGripPointsAtSubentityPaths(FullSubentityPath[], IntPtr[], Vector3d, MoveGripPointsFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_GetSubentityGeometricExtents_Autodesk_AutoCAD_DatabaseServices_FullSubentityPath_">Entity.GetSubentityGeometricExtents(FullSubentityPath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_GetSubentityPathsAtGraphicsMarker_Autodesk_AutoCAD_DatabaseServices_SubentityType_System_IntPtr_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_Geometry_Matrix3d_Autodesk_AutoCAD_DatabaseServices_ObjectId___">Entity.GetSubentityPathsAtGraphicsMarker(SubentityType, IntPtr, Point3d, Matrix3d, ObjectId[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_GetSubentityPathsAtGraphicsMarker_Autodesk_AutoCAD_DatabaseServices_SubentityType_System_Int64_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_Geometry_Matrix3d_System_Int32_Autodesk_AutoCAD_DatabaseServices_ObjectId___">Entity.GetSubentityPathsAtGraphicsMarker(SubentityType, long, Point3d, Matrix3d, int, ObjectId[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_GetGraphicsMarkersAtSubentityPathIntPtr_Autodesk_AutoCAD_DatabaseServices_FullSubentityPath_">Entity.GetGraphicsMarkersAtSubentityPathIntPtr(FullSubentityPath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_Highlight_Autodesk_AutoCAD_DatabaseServices_FullSubentityPath_System_Boolean_">Entity.Highlight(FullSubentityPath, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_Highlight">Entity.Highlight()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_Unhighlight_Autodesk_AutoCAD_DatabaseServices_FullSubentityPath_System_Boolean_">Entity.Unhighlight(FullSubentityPath, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_Unhighlight">Entity.Unhighlight()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_PushHighlight_Autodesk_AutoCAD_DatabaseServices_FullSubentityPath_Autodesk_AutoCAD_GraphicsInterface_HighlightStyle_">Entity.PushHighlight(FullSubentityPath, HighlightStyle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_PopHighlight_Autodesk_AutoCAD_DatabaseServices_FullSubentityPath_">Entity.PopHighlight(FullSubentityPath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_HighlightState_Autodesk_AutoCAD_DatabaseServices_FullSubentityPath_">Entity.HighlightState(FullSubentityPath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_GetObjectSnapPoints_Autodesk_AutoCAD_DatabaseServices_ObjectSnapModes_System_Int32_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_Geometry_Matrix3d_Autodesk_AutoCAD_Geometry_Point3dCollection_Autodesk_AutoCAD_Geometry_IntegerCollection_Autodesk_AutoCAD_Geometry_Matrix3d_">Entity.GetObjectSnapPoints(ObjectSnapModes, int, Point3d, Point3d, Matrix3d, Point3dCollection, IntegerCollection, Matrix3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_GetObjectSnapPoints_Autodesk_AutoCAD_DatabaseServices_ObjectSnapModes_System_Int32_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_Geometry_Matrix3d_Autodesk_AutoCAD_Geometry_Point3dCollection_Autodesk_AutoCAD_Geometry_IntegerCollection_">Entity.GetObjectSnapPoints(ObjectSnapModes, int, Point3d, Point3d, Matrix3d, Point3dCollection, IntegerCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_IsContentSnappable">Entity.IsContentSnappable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_GetGripPoints_Autodesk_AutoCAD_DatabaseServices_GripDataCollection_System_Double_System_Int32_Autodesk_AutoCAD_Geometry_Vector3d_Autodesk_AutoCAD_DatabaseServices_GetGripPointsFlags_">Entity.GetGripPoints(GripDataCollection, double, int, Vector3d, GetGripPointsFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_GetGripPoints_Autodesk_AutoCAD_Geometry_Point3dCollection_Autodesk_AutoCAD_Geometry_IntegerCollection_Autodesk_AutoCAD_Geometry_IntegerCollection_">Entity.GetGripPoints(Point3dCollection, IntegerCollection, IntegerCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_MoveGripPointsAt_Autodesk_AutoCAD_DatabaseServices_GripDataCollection_Autodesk_AutoCAD_Geometry_Vector3d_Autodesk_AutoCAD_DatabaseServices_MoveGripPointsFlags_">Entity.MoveGripPointsAt(GripDataCollection, Vector3d, MoveGripPointsFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_MoveGripPointsAt_Autodesk_AutoCAD_Geometry_IntegerCollection_Autodesk_AutoCAD_Geometry_Vector3d_">Entity.MoveGripPointsAt(IntegerCollection, Vector3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_GetStretchPoints_Autodesk_AutoCAD_Geometry_Point3dCollection_">Entity.GetStretchPoints(Point3dCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_MoveStretchPointsAt_Autodesk_AutoCAD_Geometry_IntegerCollection_Autodesk_AutoCAD_Geometry_Vector3d_">Entity.MoveStretchPointsAt(IntegerCollection, Vector3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_IntersectWith_Autodesk_AutoCAD_DatabaseServices_Entity_Autodesk_AutoCAD_DatabaseServices_Intersect_Autodesk_AutoCAD_Geometry_Plane_Autodesk_AutoCAD_Geometry_Point3dCollection_System_IntPtr_System_IntPtr_">Entity.IntersectWith(Entity, Intersect, Plane, Point3dCollection, IntPtr, IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_IntersectWith_Autodesk_AutoCAD_DatabaseServices_Entity_Autodesk_AutoCAD_DatabaseServices_Intersect_Autodesk_AutoCAD_Geometry_Point3dCollection_System_IntPtr_System_IntPtr_">Entity.IntersectWith(Entity, Intersect, Point3dCollection, IntPtr, IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_IntersectWith_Autodesk_AutoCAD_DatabaseServices_Entity_Autodesk_AutoCAD_DatabaseServices_Intersect_Autodesk_AutoCAD_Geometry_Plane_Autodesk_AutoCAD_Geometry_Point3dCollection_System_Int64_System_Int64_">Entity.IntersectWith(Entity, Intersect, Plane, Point3dCollection, long, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_IntersectWith_Autodesk_AutoCAD_DatabaseServices_Entity_Autodesk_AutoCAD_DatabaseServices_Intersect_Autodesk_AutoCAD_Geometry_Point3dCollection_System_Int64_System_Int64_">Entity.IntersectWith(Entity, Intersect, Point3dCollection, long, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_BoundingBoxIntersectWith_Autodesk_AutoCAD_DatabaseServices_Entity_Autodesk_AutoCAD_DatabaseServices_Intersect_Autodesk_AutoCAD_Geometry_Point3dCollection_System_IntPtr_System_IntPtr_">Entity.BoundingBoxIntersectWith(Entity, Intersect, Point3dCollection, IntPtr, IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_BoundingBoxIntersectWith_Autodesk_AutoCAD_DatabaseServices_Entity_Autodesk_AutoCAD_DatabaseServices_Intersect_Autodesk_AutoCAD_Geometry_Plane_Autodesk_AutoCAD_Geometry_Point3dCollection_System_IntPtr_System_IntPtr_">Entity.BoundingBoxIntersectWith(Entity, Intersect, Plane, Point3dCollection, IntPtr, IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_BoundingBoxIntersectWith_Autodesk_AutoCAD_DatabaseServices_Entity_Autodesk_AutoCAD_DatabaseServices_Intersect_Autodesk_AutoCAD_Geometry_Point3dCollection_System_Int64_System_Int64_">Entity.BoundingBoxIntersectWith(Entity, Intersect, Point3dCollection, long, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_BoundingBoxIntersectWith_Autodesk_AutoCAD_DatabaseServices_Entity_Autodesk_AutoCAD_DatabaseServices_Intersect_Autodesk_AutoCAD_Geometry_Plane_Autodesk_AutoCAD_Geometry_Point3dCollection_System_Int64_System_Int64_">Entity.BoundingBoxIntersectWith(Entity, Intersect, Plane, Point3dCollection, long, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_List">Entity.List()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_TransformBy_Autodesk_AutoCAD_Geometry_Matrix3d_">Entity.TransformBy(Matrix3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_GetTransformedCopy_Autodesk_AutoCAD_Geometry_Matrix3d_">Entity.GetTransformedCopy(Matrix3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_GetSubentity_Autodesk_AutoCAD_DatabaseServices_FullSubentityPath_">Entity.GetSubentity(FullSubentityPath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_Explode_Autodesk_AutoCAD_DatabaseServices_DBObjectCollection_">Entity.Explode(DBObjectCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_RecordGraphicsModified_System_Boolean_">Entity.RecordGraphicsModified(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_Draw">Entity.Draw()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_SaveAs_Autodesk_AutoCAD_GraphicsInterface_WorldDraw_Autodesk_AutoCAD_DatabaseServices_SaveType_">Entity.SaveAs(WorldDraw, SaveType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_SetDatabaseDefaults_Autodesk_AutoCAD_DatabaseServices_Database_">Entity.SetDatabaseDefaults(Database)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_SetDatabaseDefaults">Entity.SetDatabaseDefaults()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_SetDragStatus_Autodesk_AutoCAD_DatabaseServices_DragStatus_">Entity.SetDragStatus(DragStatus)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_SetGripStatus_Autodesk_AutoCAD_DatabaseServices_GripStatus_">Entity.SetGripStatus(GripStatus)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_SetSubentityGripStatus_Autodesk_AutoCAD_DatabaseServices_GripStatus_Autodesk_AutoCAD_DatabaseServices_FullSubentityPath_">Entity.SetSubentityGripStatus(GripStatus, FullSubentityPath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_JoinEntity_Autodesk_AutoCAD_DatabaseServices_Entity_">Entity.JoinEntity(Entity)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_JoinEntities_Autodesk_AutoCAD_DatabaseServices_Entity___">Entity.JoinEntities(Entity[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_EdgeStyleId">Entity.EdgeStyleId</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_FaceStyleId">Entity.FaceStyleId</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_VisualStyleId">Entity.VisualStyleId</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_ForceAnnoAllVisible">Entity.ForceAnnoAllVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_BlockName">Entity.BlockName</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_MaterialMapper">Entity.MaterialMapper</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_MaterialId">Entity.MaterialId</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_Material">Entity.Material</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_ReceiveShadows">Entity.ReceiveShadows</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_CastShadows">Entity.CastShadows</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_Hyperlinks">Entity.Hyperlinks</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_CloneMeForDragging">Entity.CloneMeForDragging</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_CompoundObjectTransform">Entity.CompoundObjectTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_GeometricExtents">Entity.GeometricExtents</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_Ecs">Entity.Ecs</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_IsPlanar">Entity.IsPlanar</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_CollisionType">Entity.CollisionType</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_LineWeight">Entity.LineWeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_Visible">Entity.Visible</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_LinetypeScale">Entity.LinetypeScale</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_LinetypeId">Entity.LinetypeId</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_Linetype">Entity.Linetype</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_LayerId">Entity.LayerId</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_Layer">Entity.Layer</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_PlotStyleNameId">Entity.PlotStyleNameId</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_PlotStyleName">Entity.PlotStyleName</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_Transparency">Entity.Transparency</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_EntityColor">Entity.EntityColor</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_ColorIndex">Entity.ColorIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_Color">Entity.Color</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html#Autodesk_AutoCAD_DatabaseServices_Entity_BlockId">Entity.BlockId</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubSetAttributes_Autodesk_AutoCAD_GraphicsInterface_DrawableTraits_">DBObject.SubSetAttributes(DrawableTraits)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubWorldDraw_Autodesk_AutoCAD_GraphicsInterface_WorldDraw_">DBObject.SubWorldDraw(WorldDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubViewportDraw_Autodesk_AutoCAD_GraphicsInterface_ViewportDraw_">DBObject.SubViewportDraw(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubViewportDrawLogicalFlags_Autodesk_AutoCAD_GraphicsInterface_ViewportDraw_">DBObject.SubViewportDrawLogicalFlags(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DeleteUnmanagedObject">DBObject.DeleteUnmanagedObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DeepClone_Autodesk_AutoCAD_DatabaseServices_DBObject_Autodesk_AutoCAD_DatabaseServices_IdMapping_System_Boolean_">DBObject.DeepClone(DBObject, IdMapping, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_WblockClone_Autodesk_AutoCAD_Runtime_RXObject_Autodesk_AutoCAD_DatabaseServices_IdMapping_System_Boolean_">DBObject.WblockClone(RXObject, IdMapping, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DecomposeForSave_Autodesk_AutoCAD_DatabaseServices_DwgVersion_">DBObject.DecomposeForSave(DwgVersion)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_CreateExtensionDictionary">DBObject.CreateExtensionDictionary()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ReleaseExtensionDictionary">DBObject.ReleaseExtensionDictionary()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_UpgradeOpen">DBObject.UpgradeOpen()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_UpgradeFromNotify">DBObject.UpgradeFromNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DowngradeOpen">DBObject.DowngradeOpen()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DowngradeToNotify_System_Boolean_">DBObject.DowngradeToNotify(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Cancel">DBObject.Cancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Close">DBObject.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_CloseAndPage_System_Boolean_">DBObject.CloseAndPage(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Erase">DBObject.Erase()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Erase_System_Boolean_">DBObject.Erase(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HandOverTo_Autodesk_AutoCAD_DatabaseServices_DBObject_System_Boolean_System_Boolean_">DBObject.HandOverTo(DBObject, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SwapIdWith_Autodesk_AutoCAD_DatabaseServices_ObjectId_System_Boolean_System_Boolean_">DBObject.SwapIdWith(ObjectId, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SwapReferences_Autodesk_AutoCAD_DatabaseServices_IdMapping_">DBObject.SwapReferences(IdMapping)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Audit_Autodesk_AutoCAD_DatabaseServices_AuditInfo_">DBObject.Audit(AuditInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DwgIn_Autodesk_AutoCAD_DatabaseServices_DwgFiler_">DBObject.DwgIn(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DwgOut_Autodesk_AutoCAD_DatabaseServices_DwgFiler_">DBObject.DwgOut(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DxfIn_Autodesk_AutoCAD_DatabaseServices_DxfFiler_">DBObject.DxfIn(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DxfOut_Autodesk_AutoCAD_DatabaseServices_DxfFiler_">DBObject.DxfOut(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_XDataTransformBy_Autodesk_AutoCAD_Geometry_Matrix3d_">DBObject.XDataTransformBy(Matrix3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetXDataForApplication_System_String_">DBObject.GetXDataForApplication(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DisableUndoRecording_System_Boolean_">DBObject.DisableUndoRecording(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ApplyPartialUndo_Autodesk_AutoCAD_DatabaseServices_DwgFiler_Autodesk_AutoCAD_Runtime_RXClass_">DBObject.ApplyPartialUndo(DwgFiler, RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HasPersistentReactor_Autodesk_AutoCAD_DatabaseServices_ObjectId_">DBObject.HasPersistentReactor(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetReactors">DBObject.GetReactors()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetTransientReactors">DBObject.GetTransientReactors()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetPersistentReactorIds">DBObject.GetPersistentReactorIds()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetObjectIdsInFlux">DBObject.SetObjectIdsInFlux()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetObjectSaveVersion_Autodesk_AutoCAD_DatabaseServices_DxfFiler_">DBObject.GetObjectSaveVersion(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetObjectSaveVersion_Autodesk_AutoCAD_DatabaseServices_DwgFiler_">DBObject.GetObjectSaveVersion(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_FromAcadObject_System_Object_">DBObject.FromAcadObject(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsCustomObject_Autodesk_AutoCAD_DatabaseServices_ObjectId_">DBObject.IsCustomObject(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetField_System_String_">DBObject.GetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetField">DBObject.GetField()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetField_System_String_Autodesk_AutoCAD_DatabaseServices_Field_">DBObject.SetField(string, Field)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetField_Autodesk_AutoCAD_DatabaseServices_Field_">DBObject.SetField(Field)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_RemoveField_Autodesk_AutoCAD_DatabaseServices_ObjectId_">DBObject.RemoveField(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_RemoveField_System_String_">DBObject.RemoveField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_RemoveField">DBObject.RemoveField()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetFromStyle">DBObject.SetFromStyle()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ResetScaleDependentProperties">DBObject.ResetScaleDependentProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetPaperOrientation_System_Boolean_">DBObject.SetPaperOrientation(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ApplyPaperOrientationTransform_Autodesk_AutoCAD_DatabaseServices_Viewport_">DBObject.ApplyPaperOrientationTransform(Viewport)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SupportsCollection_System_String_">DBObject.SupportsCollection(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HasContext_Autodesk_AutoCAD_DatabaseServices_ObjectContext_">DBObject.HasContext(ObjectContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_AddContext_Autodesk_AutoCAD_DatabaseServices_ObjectContext_">DBObject.AddContext(ObjectContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_RemoveContext_Autodesk_AutoCAD_DatabaseServices_ObjectContext_">DBObject.RemoveContext(ObjectContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetEventExtender_System_Boolean_">DBObject.GetEventExtender(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetParameterInterface_System_String_System_Boolean_">DBObject.GetParameterInterface(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Dispose_System_Boolean_">DBObject.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_PaperOrientation">DBObject.PaperOrientation</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Annotative">DBObject.Annotative</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HasFields">DBObject.HasFields</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_AcadObject">DBObject.AcadObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ClassID">DBObject.ClassID</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ObjectBirthVersion">DBObject.ObjectBirthVersion</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HasSaveVersionOverride">DBObject.HasSaveVersionOverride</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsObjectIdsInFlux">DBObject.IsObjectIdsInFlux</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_UndoFiler">DBObject.UndoFiler</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsAProxy">DBObject.IsAProxy</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsTransactionResident">DBObject.IsTransactionResident</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsReallyClosing">DBObject.IsReallyClosing</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsCancelling">DBObject.IsCancelling</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsUndoing">DBObject.IsUndoing</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsNotifying">DBObject.IsNotifying</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsNewObject">DBObject.IsNewObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsModifiedGraphics">DBObject.IsModifiedGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsModifiedXData">DBObject.IsModifiedXData</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsModified">DBObject.IsModified</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsNotifyEnabled">DBObject.IsNotifyEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsWriteEnabled">DBObject.IsWriteEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsReadEnabled">DBObject.IsReadEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsErased">DBObject.IsErased</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsEraseStatusToggled">DBObject.IsEraseStatusToggled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_XData">DBObject.XData</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_MergeStyle">DBObject.MergeStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ExtensionDictionary">DBObject.ExtensionDictionary</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Drawable">DBObject.Drawable</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Database">DBObject.Database</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Handle">DBObject.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_OwnerId">DBObject.OwnerId</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ObjectId">DBObject.ObjectId</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Id">DBObject.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsPersistent">DBObject.IsPersistent</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ObjectClosed">DBObject.ObjectClosed</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Reappended">DBObject.Reappended</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Unappended">DBObject.Unappended</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ModifiedXData">DBObject.ModifiedXData</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ModifyUndone">DBObject.ModifyUndone</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubObjectModified">DBObject.SubObjectModified</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Modified">DBObject.Modified</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_OpenedForModify">DBObject.OpenedForModify</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Goodbye">DBObject.Goodbye</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Erased">DBObject.Erased</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Copied">DBObject.Copied</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Cancelled">DBObject.Cancelled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_SetAttributes_Autodesk_AutoCAD_GraphicsInterface_DrawableTraits_">Drawable.SetAttributes(DrawableTraits)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_WorldDraw_Autodesk_AutoCAD_GraphicsInterface_WorldDraw_">Drawable.WorldDraw(WorldDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_ViewportDraw_Autodesk_AutoCAD_GraphicsInterface_ViewportDraw_">Drawable.ViewportDraw(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_ViewportDrawLogicalFlags_Autodesk_AutoCAD_GraphicsInterface_ViewportDraw_">Drawable.ViewportDrawLogicalFlags(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_DrawStream">Drawable.DrawStream</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_Bounds">Drawable.Bounds</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_DrawableType">Drawable.DrawableType</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_Create_System_IntPtr_System_Boolean_">RXObject.Create(IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_GetClass_System_Type_">RXObject.GetClass(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_X_Autodesk_AutoCAD_Runtime_RXClass_">RXObject.X(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_QueryX_Autodesk_AutoCAD_Runtime_RXClass_">RXObject.QueryX(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_GetRXClass">RXObject.GetRXClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_CompareTo_System_Object_">RXObject.CompareTo(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_Clone">RXObject.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_CopyFrom_Autodesk_AutoCAD_Runtime_RXObject_">RXObject.CopyFrom(RXObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Create_System_Type_System_IntPtr_System_Boolean_">DisposableWrapper.Create(Type, IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Equals_System_Object_">DisposableWrapper.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_GetHashCode">DisposableWrapper.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Dispose">DisposableWrapper.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_AutoDelete">DisposableWrapper.AutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_IsDisposed">DisposableWrapper.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_UnmanagedObject">DisposableWrapper.UnmanagedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone">MarshalByRefObject.MemberwiseClone(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref">MarshalByRefObject.CreateObjRef(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_ExtrudedSurface__ctor_" data-uid="Autodesk.AutoCAD.DatabaseServices.ExtrudedSurface.#ctor*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_ExtrudedSurface__ctor" data-uid="Autodesk.AutoCAD.DatabaseServices.ExtrudedSurface.#ctor">
+  ExtrudedSurface()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExtrudedSurface()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_ExtrudedSurface__ctor_" data-uid="Autodesk.AutoCAD.DatabaseServices.ExtrudedSurface.#ctor*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_ExtrudedSurface__ctor_System_IntPtr_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.ExtrudedSurface.#ctor(System.IntPtr,System.Boolean)">
+  ExtrudedSurface(IntPtr, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ExtrudedSurface(IntPtr unmanagedPointer, bool autoDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unmanagedPointer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_ExtrudedSurface_Height_" data-uid="Autodesk.AutoCAD.DatabaseServices.ExtrudedSurface.Height*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_ExtrudedSurface_Height" data-uid="Autodesk.AutoCAD.DatabaseServices.ExtrudedSurface.Height">
+  Height
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[UnitType(UnitType.Distance)]
+public double Height { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_ExtrudedSurface_SweepEntity_" data-uid="Autodesk.AutoCAD.DatabaseServices.ExtrudedSurface.SweepEntity*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_ExtrudedSurface_SweepEntity" data-uid="Autodesk.AutoCAD.DatabaseServices.ExtrudedSurface.SweepEntity">
+  SweepEntity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity SweepEntity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html">Entity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_ExtrudedSurface_SweepOptions_" data-uid="Autodesk.AutoCAD.DatabaseServices.ExtrudedSurface.SweepOptions*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_ExtrudedSurface_SweepOptions" data-uid="Autodesk.AutoCAD.DatabaseServices.ExtrudedSurface.SweepOptions">
+  SweepOptions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SweepOptions SweepOptions { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.SweepOptions.html">SweepOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_ExtrudedSurface_SweepProfile_" data-uid="Autodesk.AutoCAD.DatabaseServices.ExtrudedSurface.SweepProfile*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_ExtrudedSurface_SweepProfile" data-uid="Autodesk.AutoCAD.DatabaseServices.ExtrudedSurface.SweepProfile">
+  SweepProfile
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Profile3d SweepProfile { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Profile3d.html">Profile3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_ExtrudedSurface_SweepVec_" data-uid="Autodesk.AutoCAD.DatabaseServices.ExtrudedSurface.SweepVec*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_ExtrudedSurface_SweepVec" data-uid="Autodesk.AutoCAD.DatabaseServices.ExtrudedSurface.SweepVec">
+  SweepVec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3d SweepVec { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_ExtrudedSurface_TaperAngle_" data-uid="Autodesk.AutoCAD.DatabaseServices.ExtrudedSurface.TaperAngle*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_ExtrudedSurface_TaperAngle" data-uid="Autodesk.AutoCAD.DatabaseServices.ExtrudedSurface.TaperAngle">
+  TaperAngle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[UnitType(UnitType.AngleNotTransformed)]
+public double TaperAngle { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_ExtrudedSurface_CreateExtrudedSurface_" data-uid="Autodesk.AutoCAD.DatabaseServices.ExtrudedSurface.CreateExtrudedSurface*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_ExtrudedSurface_CreateExtrudedSurface_Autodesk_AutoCAD_DatabaseServices_Entity_Autodesk_AutoCAD_Geometry_Vector3d_Autodesk_AutoCAD_DatabaseServices_SweepOptions_" data-uid="Autodesk.AutoCAD.DatabaseServices.ExtrudedSurface.CreateExtrudedSurface(Autodesk.AutoCAD.DatabaseServices.Entity,Autodesk.AutoCAD.Geometry.Vector3d,Autodesk.AutoCAD.DatabaseServices.SweepOptions)">
+  CreateExtrudedSurface(Entity, Vector3d, SweepOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CreateExtrudedSurface(Entity sweepEnt, Vector3d directionVec, SweepOptions sweepOptions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sweepEnt</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Entity.html">Entity</a></dt>
+    <dd></dd>
+    <dt><code>directionVec</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+    <dt><code>sweepOptions</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.SweepOptions.html">SweepOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_ExtrudedSurface_SetExtrude_" data-uid="Autodesk.AutoCAD.DatabaseServices.ExtrudedSurface.SetExtrude*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_ExtrudedSurface_SetExtrude_Autodesk_AutoCAD_Geometry_Vector3d_Autodesk_AutoCAD_DatabaseServices_SweepOptions_" data-uid="Autodesk.AutoCAD.DatabaseServices.ExtrudedSurface.SetExtrude(Autodesk.AutoCAD.Geometry.Vector3d,Autodesk.AutoCAD.DatabaseServices.SweepOptions)">
+  SetExtrude(Vector3d, SweepOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetExtrude(Vector3d sweepVec, SweepOptions sweepOptions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sweepVec</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+    <dt><code>sweepOptions</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.SweepOptions.html">SweepOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

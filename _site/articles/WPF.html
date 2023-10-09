@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>WPF支持 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="WPF支持 ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="wpf支持">WPF支持</h1>
+
+<p>在项目文件里将<code>&lt;Project Sdk=&quot;Microsoft.NET.Sdk&quot;&gt;</code>替换为<code>&lt;Project Sdk=&quot;Microsoft.NET.Sdk.WindowsDesktop&quot;&gt;</code>。</p>
+<p>在<code>&lt;PropertyGroup&gt;&lt;/PropertyGroup&gt;</code>标签里的<code>&lt;TargetFrameworks&gt;NET45&lt;/TargetFrameworks&gt;</code>下面添加:</p>
+<pre><code class="lang-xml">&lt;UseWpf&gt;true&lt;/UseWpf&gt;
+&lt;UseWindowsForms&gt;true&lt;/UseWindowsForms&gt;
+</code></pre>
+<p>最后的项目文件如下：</p>
+<pre><code class="lang-xml">&lt;Project Sdk=&quot;Microsoft.NET.Sdk.WindowsDesktop&quot;&gt;
+	&lt;PropertyGroup&gt;
+		&lt;TargetFramework&gt;net47&lt;/TargetFramework&gt;
+		&lt;!-- 支持wpf --&gt;
+		&lt;UseWpf&gt;true&lt;/UseWpf&gt;
+		&lt;!-- 支持winform --&gt;
+		&lt;UseWindowsForms&gt;true&lt;/UseWindowsForms&gt;
+  &lt;/PropertyGroup&gt;
+  &lt;!--...其他代码--&gt;
+&lt;/Project&gt;
+</code></pre>
+<h1 id="mvvm模式支持">mvvm模式支持</h1>
+<h2 id="一简单mvvm的实现">一、简单mvvm的实现</h2>
+<p>使用WPF的最佳实践就是采用mvvm模式，为了支持在cad插件里使用mvvm，ifoxcad内裤定义了两个简单基类来完成属性通知和命令定义。当然这是一种及其简单的mvvm模式的支持，你还要自己手动来写大部分的代码来实现完整的mvvm模式。</p>
+<p>要实现mvvm模式，要新建一个XXXView文件，一个XXXViewModel文件。我们应该采用一种通用的命名约定，即所有的gui显示都有XXXView来完成，而所有的业务逻辑都由XXXViewModel来完成。下面以一个具体的示例来说明怎么在cad的插件里使用mvvm模式。</p>
+<ol>
+<li><p>将我们上一节建立的MyWindow1文件改名为MyWindowView，然后将涉及到的类名也全部更改为MyWindowView。</p>
+</li>
+<li><p>然后将MyWindowView.xaml文件的内容改为：</p>
+</li>
+</ol>
+<pre><code class="lang-xaml">&lt;Window x:Class=&quot;Test.MyWindowView&quot;
+        xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+        xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+        xmlns:d=&quot;http://schemas.microsoft.com/expression/blend/2008&quot;
+        xmlns:mc=&quot;http://schemas.openxmlformats.org/markup-compatibility/2006&quot;
+        xmlns:local=&quot;clr-namespace:Test&quot;
+        mc:Ignorable=&quot;d&quot;
+        Title=&quot;MyWindow1&quot; Height=&quot;450&quot; Width=&quot;800&quot;&gt;
+    &lt;Grid&gt;
+        &lt;StackPanel&gt;
+            &lt;TextBox&gt;&lt;/TextBox&gt;
+            &lt;Button&gt;click&lt;/Button&gt;
+        &lt;/StackPanel&gt;
+    &lt;/Grid&gt;
+&lt;/Window&gt;
+</code></pre>
+<p>就是添加了一个文本框，一个按钮。</p>
+<ol start="3">
+<li>新建MyWindowViewModel.cs文件，内容如下：</li>
+</ol>
+<pre><code class="lang-c#">using IFoxCad.WPF; // 这里引入IFoxCad.WPF命名空间，以便可以使用ViewModelBase和RelayCommand
+
+namespace Test
+{
+    class MyWindowViewModel : ViewModelBase
+    {
+    	// 定义一个属性用于在文本框里显示
+        private string _name;
+        public string Name
+        {
+            get { return _name; }
+            set
+            {
+                Set(ref _name, value);
+            }
+        }
+				
+		// 定义一个命令用于按钮的点击动作
+        private RelayCommand clickCommand;
+        public RelayCommand ClickCommand
+        {
+            get
+            {
+                if (clickCommand == null)
+                {
+                    clickCommand = new RelayCommand(
+                        execute =&gt; Name = &quot;hello &quot; + Name,  // 定义要执行的行为
+                        can =&gt; {return !string.IsNullOrEmpty(Name);}); // 定义命令是否可用
+                }
+                return clickCommand;
+            }
+        }
+		// 初始化Name属性为 World
+        public MyWindowViewModel()
+        {
+            Name = &quot;World&quot;;
+        }
+    }
+}
+
+</code></pre>
+<p>这里需要注意的是，定义的属性是为了将属性绑定到文本框的Text属性上，这个叫做数据绑定。然后wpf里对于我们winform里的事件其实采用的更高级一些的命令来完成。本示例，定义的命令也是一个属性，这个属性返回一个RelayCommand对象的实例，这是实例的初始化函数包括两个部分，一个是要执行的动作，第二个是确定什么条件下按钮是不可用的，这个是通过命令是否可用来完成，是要命令是不能执行的，wpf会自动将控件切换为不可用状态，使其不可点击。</p>
+<ol start="4">
+<li>现在回过头来对在xaml里将刚刚的viewmodel里定义的属性和命令绑定到控件上。</li>
+</ol>
+<pre><code class="lang-xaml">&lt;TextBox Text=&quot;{Binding Name,UpdateSourceTrigger=PropertyChanged}&quot;&gt;&lt;/TextBox&gt;
+&lt;Button Command=&quot;{Binding ClickCommand}&quot;&gt;click&lt;/Button&gt;
+</code></pre>
+<p>将这两行代码替换一下。然后在后台代码里(MyWindowView.xaml.cs)添加一行代码将viewmodel绑定到view上。</p>
+<pre><code class="lang-c#">public MyWindowView()
+{
+    InitializeComponent();
+    DataContext = new MyWindowViewModel(); //这里将一个viewmodel的实例绑定到view的DataContext属性上。
+}
+</code></pre>
+<ol start="5">
+<li>至此，一个简单的wpf的mvvm模式的代码就完成了，下面的代码演示了怎么在cad里显示这个wpf窗体。</li>
+</ol>
+<pre><code class="lang-c#">[CommandMethod(&quot;test&quot;)]
+public void Test()
+{
+   var test = new MyWindowView();
+   Application.ShowModalWindow(test);
+}
+</code></pre>
+<ol start="6">
+<li>最后，这个窗体的效果是，当你点击按钮时，文本框的文字前面会加上hello。当你将文本框的文字全部删除后，按钮会变成不可用状态。如果你在试验的时候没有这个效果，这是cad的延迟导致的。多删除几次试几次后就会如期运行。</li>
+</ol>
+<h2 id="二mvvm中的事件处理">二、mvvm中的事件处理</h2>
+<p>在WPF里，并不是所有的控件都提供了commad属性用于绑定命令，所以还是需要进行控件的事件处理的，比如窗口的Loaded事件，鼠标事件，键盘事件等。关于WPF的事件处理，IFoxCad内裤提供了两种方式进行处理，一种就是利用 <strong>Microsoft.Xaml.Behaviors.dll</strong> 这个类库，利用了 <strong>i:Interaction.Triggers</strong> 标签在xaml文件里将命令绑定到事件上，这种方式是网上比较常见的一种方式；第二种是自定义了一个xaml标签 <strong>eb:EventBinding</strong> ，利用这个标签将命令绑定到事件上。两种方式实现的效果是一样的，但是 <strong>eb:EventBinding</strong>  标签绑定的方式的代码量要小一些。</p>
+<p>下面就两种方式实现同一种事件处理的效果提供了两种方式的代码示例作为说明。由于两种方式的差异主要在xaml文件里，ViewModel的代码是一样的。因此主要讲述两种xaml的差异部分，ViewModel的代码直接贴在下面不做讲解。</p>
+<pre><code class="lang-c#">public class TestViewModel : ViewModelBase
+{
+
+        private bool _IsReceiveMouseMove = true;
+        public bool IsReceiveMouseMove
+        {
+            get { return _IsReceiveMouseMove; }
+            set
+            {
+                Set(ref _IsReceiveMouseMove, value);
+            }
+        }
+
+        private string _tipText;
+        public string TipText
+        {
+            get { return _tipText; }
+            set
+            {
+                Set(ref _tipText, value);
+            }
+        }
+
+
+
+        private RelayCommand loadedCommand;
+
+        public RelayCommand LoadedCommand
+        {
+            get 
+            {
+                if (loadedCommand == null)
+                {
+                    loadedCommand = new RelayCommand(execute =&gt; MessageBox.Show(&quot;程序加载完毕！&quot;));
+                    
+                }
+                return loadedCommand;
+            }
+            
+        }
+
+        private RelayCommand&lt;MouseEventArgs&gt; mouseMoveCommand;
+        public RelayCommand&lt;MouseEventArgs&gt; MouseMoveCommand
+        {
+            get
+            {
+                if (mouseMoveCommand == null)
+                {
+                    mouseMoveCommand = 
+                      new RelayCommand&lt;MouseEventArgs&gt;(
+                            e =&gt;
+                            {
+                                var point = e.GetPosition(e.Device.Target);
+                                var left = &quot;左键放开&quot;;
+                                var mid = &quot;中键放开&quot;;
+                                var right = &quot;右键放开&quot;;
+
+                                if (e.LeftButton == MouseButtonState.Pressed)
+                                {
+                                    left = &quot;左键放下&quot;;
+                                }
+                                if (e.MiddleButton == MouseButtonState.Pressed)
+                                {
+                                    mid = &quot;中键放下&quot;;
+                                }
+                                if (e.RightButton == MouseButtonState.Pressed)
+                                {
+                                    right = &quot;右键放下&quot;;
+                                }
+
+                                TipText = $&quot;当前鼠标位置 X:{point.X} Y:{point.Y} 当前鼠标状态：{left} {mid} {right}.&quot;;
+                            },
+                        o =&gt; IsReceiveMouseMove);
+                }
+                return mouseMoveCommand;
+            }
+        }
+}
+</code></pre>
+<h3 id="21-自定义标签的方式">2.1 自定义标签的方式</h3>
+<p>首先是在xaml里引入命名空间。</p>
+<p><code>xmlns:eb=&quot;clr-namespace:IFoxCAD.WPF;assembly=IFoxCAD.WPF&quot;</code></p>
+<p>然后</p>
+<p><code>Loaded=&quot;{eb:EventBinding Command=LoadedCommand}&quot;</code></p>
+<p><code>MouseMove=&quot;{eb:EventBinding Command=MouseMoveCommand,CommandParameter=$e}&quot;</code> 这里要注意的是显式的传入了鼠标移动事件的参数。</p>
+<p>注意命令参数部分，如果这个事件是带参数的，或者说这个命令是带参数的，要传入参数。</p>
+<p>关于命令及命令参数使用方式如下：</p>
+<ul>
+<li><p>Command</p>
+<ol>
+<li><code>{eb:EventBinding}</code>  利用简单的名字匹配来自动搜寻命令，也就是说不用指定命令名，不是很推荐。</li>
+<li><code>{eb:EventBinding Command=CommandName}</code> 指定命令名，建议总是使用这种方式</li>
+</ol>
+</li>
+<li><p>CommandParameter</p>
+<ol>
+<li><code>$e</code> (事件参数，这里特指的是事件本身带的参数，也就是你以前写事件的处理函数时候的XXXXEventArgs e这个参数)</li>
+<li><code>$this</code> or ​<code>$this.Property</code> (view本身或者属性)</li>
+<li><code>string</code> (要传入的字符串)</li>
+</ol>
+</li>
+</ul>
+<p>完整的xaml代码如下：</p>
+<pre><code class="lang-xaml">&lt;Window x:Class=&quot;Test.TestView&quot;
+        xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+        xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+        xmlns:d=&quot;http://schemas.microsoft.com/expression/blend/2008&quot;
+        xmlns:mc=&quot;http://schemas.openxmlformats.org/markup-compatibility/2006&quot;
+        xmlns:local=&quot;clr-namespace:Test&quot;
+        xmlns:eb=&quot;clr-namespace:IFoxCad.WPF;assembly=IFoxCad&quot;
+        mc:Ignorable=&quot;d&quot;
+        Title=&quot;TestView&quot; Height=&quot;450&quot; Width=&quot;800&quot;
+        Loaded=&quot;{eb:EventBinding Command=LoadedCommand}&quot;
+        MouseMove=&quot;{eb:EventBinding Command=MouseMoveCommand,CommandParameter=$e}&quot;&gt;
+    &lt;DockPanel&gt;
+        &lt;CheckBox Content=&quot;接收鼠标移动消息&quot; DockPanel.Dock=&quot;Top&quot; Margin=&quot;5&quot;
+                  VerticalAlignment=&quot;Center&quot; IsChecked=&quot;{Binding isReceiveMouseMove}&quot;/&gt;
+        &lt;Label Content=&quot;{Binding TipText}&quot; Margin=&quot;5&quot;/&gt;
+    &lt;/DockPanel&gt;
+&lt;/Window&gt;
+</code></pre>
+<h3 id="22-利用behaviors的方式">2.2 利用Behaviors的方式</h3>
+<p>首先nuget安装<strong>Microsoft.Xaml.Behaviors.Wpf</strong>包。</p>
+<p>然后在xaml文件里，引入命名空间。</p>
+<p><code>xmlns:eb=&quot;clr-namespace:IFoxCad.WPF;assembly=IFoxCad&quot;</code></p>
+<p><code>xmlns:i=&quot;http://schemas.microsoft.com/xaml/behaviors&quot;</code></p>
+<p>然后绑定命令到事件上：</p>
+<pre><code class="lang-xaml">&lt;i:Interaction.Triggers&gt;
+        &lt;i:EventTrigger EventName=&quot;Loaded&quot;&gt;
+            &lt;i:InvokeCommandAction Command=&quot;{Binding LoadedCommand}&quot;/&gt;
+        &lt;/i:EventTrigger&gt;
+        &lt;i:EventTrigger EventName=&quot;MouseMove&quot;&gt;
+            &lt;eb:EventCommand Command=&quot;{Binding MouseMoveCommand}&quot;/&gt;
+        &lt;/i:EventTrigger&gt;
+&lt;/i:Interaction.Triggers&gt;
+</code></pre>
+<p>细心的同学可能会发现绑定命令的地方标签是不一样的。</p>
+<p><strong>i:InvokeCommandAction</strong> 这个标签是由 <strong>Microsoft.Xaml.Behaviors.Wpf</strong> 包提供的。</p>
+<p><strong>eb:EventCommand</strong> 这个标签是由IFoxCad内裤提供的。</p>
+<p>两者的区别就是InvokeCommandAction 是不能传入事件的参数的，所以为了处理事件参数自定义了EventCommand。就如同上面的鼠标移动事件，是有时间参数要处理的，所以用了自定义的EventCommand，虽然xaml文件里没有显式的传入这个参数。</p>
+<p>虽然InvokeCommandAction这个标签的后面是可以带命令参数的，比如：</p>
+<pre><code class="lang-xaml">&lt;i:Interaction.Triggers&gt;
+              &lt;i:EventTrigger EventName=&quot;ValueChanged&quot;&gt;
+                    &lt;i:InvokeCommandAction Command=&quot;{Binding MyCommand}&quot; CommandParameter=&quot;{Binding Text, ElementName=textBox}&quot;/&gt;
+             &lt;/i:EventTrigger&gt;
+        &lt;/i:Interaction.Triggers&gt;
+</code></pre>
+<p>但是这个命令参数是不能处理事件自带的参数的 。</p>
+<p>最后是完整的xaml代码：</p>
+<pre><code class="lang-xaml">&lt;Window x:Class=&quot;Test.TestView&quot;
+        xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+        xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+        xmlns:d=&quot;http://schemas.microsoft.com/expression/blend/2008&quot;
+        xmlns:mc=&quot;http://schemas.openxmlformats.org/markup-compatibility/2006&quot;
+        xmlns:local=&quot;clr-namespace:Test&quot;
+        xmlns:eb=&quot;clr-namespace:IFoxCad.WPF;assembly=IFoxCad&quot;
+        xmlns:i=&quot;http://schemas.microsoft.com/xaml/behaviors&quot;
+        mc:Ignorable=&quot;d&quot;
+        Title=&quot;TestView&quot; Height=&quot;450&quot; Width=&quot;800&quot;&gt;
+    &lt;i:Interaction.Triggers&gt;
+        &lt;i:EventTrigger EventName=&quot;Loaded&quot;&gt;
+            &lt;i:InvokeCommandAction Command=&quot;{Binding LoadedCommand}&quot;/&gt;
+        &lt;/i:EventTrigger&gt;
+        &lt;i:EventTrigger EventName=&quot;MouseMove&quot;&gt;
+            &lt;eb:EventCommand Command=&quot;{Binding MouseMoveCommand}&quot;/&gt;
+        &lt;/i:EventTrigger&gt;
+    &lt;/i:Interaction.Triggers&gt;
+    
+    &lt;DockPanel&gt;
+        &lt;CheckBox Content=&quot;接收鼠标移动消息&quot; DockPanel.Dock=&quot;Top&quot; Margin=&quot;5&quot;
+                  VerticalAlignment=&quot;Center&quot; IsChecked=&quot;{Binding isReceiveMouseMove}&quot;/&gt;
+        &lt;Label Content=&quot;{Binding TipText}&quot; Margin=&quot;5&quot;/&gt;
+    &lt;/DockPanel&gt;
+&lt;/Window&gt;
+</code></pre>
+<h3 id="23-关于两种方式的选择">2.3 关于两种方式的选择</h3>
+<p>送给选择困难症的：如果可以选择自定义标签的方式，简单一些。遇到问题解决不了，就用behaviors的方式，网上的资源丰富一些，也许能找到你的答案。</p>
+<h2 id="三-关于mvvm模式的建议">三、 关于mvvm模式的建议</h2>
+<p>我们并不推荐严格的mvvm模式，主要原因是要引入比如message模式等方式处理类似窗口关闭，窗口间通信等问题。鉴于cad插件的界面复杂程度还没到后台事件满天飞，逻辑复杂的地步，因此后台写点事件处理，界面和后逻辑混在一起也未尝不可。</p>
+<p>仅仅是建议，你爱怎样就怎样。</p>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
