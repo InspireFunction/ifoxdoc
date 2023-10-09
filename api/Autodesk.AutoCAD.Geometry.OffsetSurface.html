@@ -1,0 +1,792 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class OffsetSurface
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class OffsetSurface
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface">
+
+
+
+  <h1 id="Autodesk_AutoCAD_Geometry_OffsetSurface" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface" class="text-break">
+    Class OffsetSurface
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Autodesk.html">Autodesk</a>.<a class="xref" href="Autodesk.AutoCAD.html">AutoCAD</a>.<a class="xref" href="Autodesk.AutoCAD.Geometry.html">Geometry</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Acdbmgd.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;AcGeOffsetSurface&quot;)]
+public sealed class OffsetSurface : Surface, IDisposable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html">DisposableWrapper</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.Geometry.Entity3d.html">Entity3d</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html">Surface</a></div>
+      <div><span class="xref">OffsetSurface</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html#Autodesk_AutoCAD_Geometry_Surface_GetClosestPointTo_Autodesk_AutoCAD_Geometry_Point3d_">Surface.GetClosestPointTo(Point3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html#Autodesk_AutoCAD_Geometry_Surface_GetClosestPointTo_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_Geometry_Tolerance_">Surface.GetClosestPointTo(Point3d, Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html#Autodesk_AutoCAD_Geometry_Surface_GetEnvelope">Surface.GetEnvelope()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html#Autodesk_AutoCAD_Geometry_Surface_ParameterOf_Autodesk_AutoCAD_Geometry_Point3d_">Surface.ParameterOf(Point3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html#Autodesk_AutoCAD_Geometry_Surface_ParameterOf_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_Geometry_Tolerance_">Surface.ParameterOf(Point3d, Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html#Autodesk_AutoCAD_Geometry_Surface_IsOn_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_Geometry_Point2d_">Surface.IsOn(Point3d, Point2d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html#Autodesk_AutoCAD_Geometry_Surface_IsOn_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_Geometry_Point2d_Autodesk_AutoCAD_Geometry_Tolerance_">Surface.IsOn(Point3d, Point2d, Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html#Autodesk_AutoCAD_Geometry_Surface_ClosestPointTo_Autodesk_AutoCAD_Geometry_Point3d_">Surface.ClosestPointTo(Point3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html#Autodesk_AutoCAD_Geometry_Surface_ClosestPointTo_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_Geometry_Tolerance_">Surface.ClosestPointTo(Point3d, Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html#Autodesk_AutoCAD_Geometry_Surface_DistanceTo_Autodesk_AutoCAD_Geometry_Point3d_">Surface.DistanceTo(Point3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html#Autodesk_AutoCAD_Geometry_Surface_DistanceTo_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_Geometry_Tolerance_">Surface.DistanceTo(Point3d, Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html#Autodesk_AutoCAD_Geometry_Surface_IsClosedInU">Surface.IsClosedInU()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html#Autodesk_AutoCAD_Geometry_Surface_IsClosedInU_Autodesk_AutoCAD_Geometry_Tolerance_">Surface.IsClosedInU(Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html#Autodesk_AutoCAD_Geometry_Surface_IsClosedInV">Surface.IsClosedInV()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html#Autodesk_AutoCAD_Geometry_Surface_IsClosedInV_Autodesk_AutoCAD_Geometry_Tolerance_">Surface.IsClosedInV(Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html#Autodesk_AutoCAD_Geometry_Surface_EvaluatePoint_Autodesk_AutoCAD_Geometry_Point2d_System_Int32_Autodesk_AutoCAD_Geometry_Vector3dCollection__Autodesk_AutoCAD_Geometry_Vector3d__">Surface.EvaluatePoint(Point2d, int, ref Vector3dCollection, ref Vector3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html#Autodesk_AutoCAD_Geometry_Surface_EvaluatePoint_Autodesk_AutoCAD_Geometry_Point2d_System_Int32_Autodesk_AutoCAD_Geometry_Vector3dCollection__">Surface.EvaluatePoint(Point2d, int, ref Vector3dCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html#Autodesk_AutoCAD_Geometry_Surface_EvaluatePoint_Autodesk_AutoCAD_Geometry_Point2d_">Surface.EvaluatePoint(Point2d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html#Autodesk_AutoCAD_Geometry_Surface_ReverseNormal">Surface.ReverseNormal</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html#Autodesk_AutoCAD_Geometry_Surface_IsNormalReversed">Surface.IsNormalReversed</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Entity3d.html#Autodesk_AutoCAD_Geometry_Entity3d_Clone">Entity3d.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Entity3d.html#Autodesk_AutoCAD_Geometry_Entity3d_IsEqualTo_Autodesk_AutoCAD_Geometry_Entity3d_">Entity3d.IsEqualTo(Entity3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Entity3d.html#Autodesk_AutoCAD_Geometry_Entity3d_IsEqualTo_Autodesk_AutoCAD_Geometry_Entity3d_Autodesk_AutoCAD_Geometry_Tolerance_">Entity3d.IsEqualTo(Entity3d, Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Entity3d.html#Autodesk_AutoCAD_Geometry_Entity3d_TransformBy_Autodesk_AutoCAD_Geometry_Matrix3d_">Entity3d.TransformBy(Matrix3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Entity3d.html#Autodesk_AutoCAD_Geometry_Entity3d_TranslateBy_Autodesk_AutoCAD_Geometry_Vector3d_">Entity3d.TranslateBy(Vector3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Entity3d.html#Autodesk_AutoCAD_Geometry_Entity3d_RotateBy_System_Double_Autodesk_AutoCAD_Geometry_Vector3d_Autodesk_AutoCAD_Geometry_Point3d_">Entity3d.RotateBy(double, Vector3d, Point3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Entity3d.html#Autodesk_AutoCAD_Geometry_Entity3d_Mirror_Autodesk_AutoCAD_Geometry_Plane_">Entity3d.Mirror(Plane)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Entity3d.html#Autodesk_AutoCAD_Geometry_Entity3d_ScaleBy_System_Double_Autodesk_AutoCAD_Geometry_Point3d_">Entity3d.ScaleBy(double, Point3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Entity3d.html#Autodesk_AutoCAD_Geometry_Entity3d_IsOn_Autodesk_AutoCAD_Geometry_Point3d_">Entity3d.IsOn(Point3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Geometry.Entity3d.html#Autodesk_AutoCAD_Geometry_Entity3d_IsOn_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_Geometry_Tolerance_">Entity3d.IsOn(Point3d, Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Create_System_Type_System_IntPtr_System_Boolean_">DisposableWrapper.Create(Type, IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Equals_System_Object_">DisposableWrapper.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_GetHashCode">DisposableWrapper.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Dispose">DisposableWrapper.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_AutoDelete">DisposableWrapper.AutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_IsDisposed">DisposableWrapper.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_UnmanagedObject">DisposableWrapper.UnmanagedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref">MarshalByRefObject.CreateObjRef(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_Geometry_OffsetSurface__ctor_" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.#ctor*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Geometry_OffsetSurface__ctor" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.#ctor">
+  OffsetSurface()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetSurface()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Geometry_OffsetSurface__ctor_" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.#ctor*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Geometry_OffsetSurface__ctor_Autodesk_AutoCAD_Geometry_Surface_System_Double_" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.#ctor(Autodesk.AutoCAD.Geometry.Surface,System.Double)">
+  OffsetSurface(Surface, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetSurface(Surface baseSurface, double offsetDistance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>baseSurface</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html">Surface</a></dt>
+    <dd></dd>
+    <dt><code>offsetDistance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_Geometry_OffsetSurface_ConstructionSurface_" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.ConstructionSurface*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Geometry_OffsetSurface_ConstructionSurface" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.ConstructionSurface">
+  ConstructionSurface
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Surface ConstructionSurface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html">Surface</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Geometry_OffsetSurface_IsBoundedPlane_" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.IsBoundedPlane*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Geometry_OffsetSurface_IsBoundedPlane" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.IsBoundedPlane">
+  IsBoundedPlane
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBoundedPlane { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Geometry_OffsetSurface_IsCone_" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.IsCone*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Geometry_OffsetSurface_IsCone" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.IsCone">
+  IsCone
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCone { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Geometry_OffsetSurface_IsCylinder_" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.IsCylinder*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Geometry_OffsetSurface_IsCylinder" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.IsCylinder">
+  IsCylinder
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCylinder { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Geometry_OffsetSurface_IsPlane_" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.IsPlane*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Geometry_OffsetSurface_IsPlane" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.IsPlane">
+  IsPlane
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlane { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Geometry_OffsetSurface_IsSphere_" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.IsSphere*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Geometry_OffsetSurface_IsSphere" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.IsSphere">
+  IsSphere
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSphere { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Geometry_OffsetSurface_IsTorus_" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.IsTorus*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Geometry_OffsetSurface_IsTorus" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.IsTorus">
+  IsTorus
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTorus { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Geometry_OffsetSurface_OffsetDist_" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.OffsetDist*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Geometry_OffsetSurface_OffsetDist" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.OffsetDist">
+  OffsetDist
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double OffsetDist { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Geometry_OffsetSurface_OriginalSurface_" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.OriginalSurface*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Geometry_OffsetSurface_OriginalSurface" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.OriginalSurface">
+  OriginalSurface
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Surface OriginalSurface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html">Surface</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_Geometry_OffsetSurface_Create_" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.Create*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Geometry_OffsetSurface_Create_System_IntPtr_System_Boolean_" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.Create(System.IntPtr,System.Boolean)">
+  Create(IntPtr, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OffsetSurface Create(IntPtr unmanagedPointer, bool autoDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unmanagedPointer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.OffsetSurface.html">OffsetSurface</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_Geometry_OffsetSurface_Set_" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.Set*"></a>
+
+  <h3 id="Autodesk_AutoCAD_Geometry_OffsetSurface_Set_Autodesk_AutoCAD_Geometry_Surface_System_Double_" data-uid="Autodesk.AutoCAD.Geometry.OffsetSurface.Set(Autodesk.AutoCAD.Geometry.Surface,System.Double)">
+  Set(Surface, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set(Surface surface, double offsetDistance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>surface</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Surface.html">Surface</a></dt>
+    <dd></dd>
+    <dt><code>offsetDistance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

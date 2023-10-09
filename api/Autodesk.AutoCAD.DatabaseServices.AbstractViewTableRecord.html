@@ -1,0 +1,1743 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AbstractViewTableRecord
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AbstractViewTableRecord
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord">
+
+
+
+  <h1 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord" class="text-break">
+    Class AbstractViewTableRecord
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Autodesk.html">Autodesk</a>.<a class="xref" href="Autodesk.AutoCAD.html">AutoCAD</a>.<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.html">DatabaseServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Acdbmgd.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;AcDbAbstractViewTableRecord&quot;)]
+public abstract class AbstractViewTableRecord : SymbolTableRecord, IDisposable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html">DisposableWrapper</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html">RXObject</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html">Drawable</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html">DBObject</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.SymbolTableRecord.html">SymbolTableRecord</a></div>
+      <div><span class="xref">AbstractViewTableRecord</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ViewTableRecord.html">ViewTableRecord</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ViewportTableRecord.html">ViewportTableRecord</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.SymbolTableRecord.html#Autodesk_AutoCAD_DatabaseServices_SymbolTableRecord_IsResolved">SymbolTableRecord.IsResolved</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.SymbolTableRecord.html#Autodesk_AutoCAD_DatabaseServices_SymbolTableRecord_IsDependent">SymbolTableRecord.IsDependent</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.SymbolTableRecord.html#Autodesk_AutoCAD_DatabaseServices_SymbolTableRecord_Name">SymbolTableRecord.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubSetAttributes_Autodesk_AutoCAD_GraphicsInterface_DrawableTraits_">DBObject.SubSetAttributes(DrawableTraits)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubWorldDraw_Autodesk_AutoCAD_GraphicsInterface_WorldDraw_">DBObject.SubWorldDraw(WorldDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubViewportDraw_Autodesk_AutoCAD_GraphicsInterface_ViewportDraw_">DBObject.SubViewportDraw(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubViewportDrawLogicalFlags_Autodesk_AutoCAD_GraphicsInterface_ViewportDraw_">DBObject.SubViewportDrawLogicalFlags(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DeleteUnmanagedObject">DBObject.DeleteUnmanagedObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DeepClone_Autodesk_AutoCAD_DatabaseServices_DBObject_Autodesk_AutoCAD_DatabaseServices_IdMapping_System_Boolean_">DBObject.DeepClone(DBObject, IdMapping, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_WblockClone_Autodesk_AutoCAD_Runtime_RXObject_Autodesk_AutoCAD_DatabaseServices_IdMapping_System_Boolean_">DBObject.WblockClone(RXObject, IdMapping, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DecomposeForSave_Autodesk_AutoCAD_DatabaseServices_DwgVersion_">DBObject.DecomposeForSave(DwgVersion)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_CreateExtensionDictionary">DBObject.CreateExtensionDictionary()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ReleaseExtensionDictionary">DBObject.ReleaseExtensionDictionary()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_UpgradeOpen">DBObject.UpgradeOpen()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_UpgradeFromNotify">DBObject.UpgradeFromNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DowngradeOpen">DBObject.DowngradeOpen()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DowngradeToNotify_System_Boolean_">DBObject.DowngradeToNotify(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Cancel">DBObject.Cancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Close">DBObject.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_CloseAndPage_System_Boolean_">DBObject.CloseAndPage(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Erase">DBObject.Erase()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Erase_System_Boolean_">DBObject.Erase(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HandOverTo_Autodesk_AutoCAD_DatabaseServices_DBObject_System_Boolean_System_Boolean_">DBObject.HandOverTo(DBObject, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SwapIdWith_Autodesk_AutoCAD_DatabaseServices_ObjectId_System_Boolean_System_Boolean_">DBObject.SwapIdWith(ObjectId, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SwapReferences_Autodesk_AutoCAD_DatabaseServices_IdMapping_">DBObject.SwapReferences(IdMapping)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Audit_Autodesk_AutoCAD_DatabaseServices_AuditInfo_">DBObject.Audit(AuditInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DwgIn_Autodesk_AutoCAD_DatabaseServices_DwgFiler_">DBObject.DwgIn(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DwgOut_Autodesk_AutoCAD_DatabaseServices_DwgFiler_">DBObject.DwgOut(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DxfIn_Autodesk_AutoCAD_DatabaseServices_DxfFiler_">DBObject.DxfIn(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DxfOut_Autodesk_AutoCAD_DatabaseServices_DxfFiler_">DBObject.DxfOut(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_XDataTransformBy_Autodesk_AutoCAD_Geometry_Matrix3d_">DBObject.XDataTransformBy(Matrix3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetXDataForApplication_System_String_">DBObject.GetXDataForApplication(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DisableUndoRecording_System_Boolean_">DBObject.DisableUndoRecording(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ApplyPartialUndo_Autodesk_AutoCAD_DatabaseServices_DwgFiler_Autodesk_AutoCAD_Runtime_RXClass_">DBObject.ApplyPartialUndo(DwgFiler, RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HasPersistentReactor_Autodesk_AutoCAD_DatabaseServices_ObjectId_">DBObject.HasPersistentReactor(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetReactors">DBObject.GetReactors()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetTransientReactors">DBObject.GetTransientReactors()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetPersistentReactorIds">DBObject.GetPersistentReactorIds()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetObjectIdsInFlux">DBObject.SetObjectIdsInFlux()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetObjectSaveVersion_Autodesk_AutoCAD_DatabaseServices_DxfFiler_">DBObject.GetObjectSaveVersion(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetObjectSaveVersion_Autodesk_AutoCAD_DatabaseServices_DwgFiler_">DBObject.GetObjectSaveVersion(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_FromAcadObject_System_Object_">DBObject.FromAcadObject(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsCustomObject_Autodesk_AutoCAD_DatabaseServices_ObjectId_">DBObject.IsCustomObject(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetField_System_String_">DBObject.GetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetField">DBObject.GetField()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetField_System_String_Autodesk_AutoCAD_DatabaseServices_Field_">DBObject.SetField(string, Field)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetField_Autodesk_AutoCAD_DatabaseServices_Field_">DBObject.SetField(Field)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_RemoveField_Autodesk_AutoCAD_DatabaseServices_ObjectId_">DBObject.RemoveField(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_RemoveField_System_String_">DBObject.RemoveField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_RemoveField">DBObject.RemoveField()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetFromStyle">DBObject.SetFromStyle()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ResetScaleDependentProperties">DBObject.ResetScaleDependentProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetPaperOrientation_System_Boolean_">DBObject.SetPaperOrientation(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ApplyPaperOrientationTransform_Autodesk_AutoCAD_DatabaseServices_Viewport_">DBObject.ApplyPaperOrientationTransform(Viewport)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SupportsCollection_System_String_">DBObject.SupportsCollection(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HasContext_Autodesk_AutoCAD_DatabaseServices_ObjectContext_">DBObject.HasContext(ObjectContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_AddContext_Autodesk_AutoCAD_DatabaseServices_ObjectContext_">DBObject.AddContext(ObjectContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_RemoveContext_Autodesk_AutoCAD_DatabaseServices_ObjectContext_">DBObject.RemoveContext(ObjectContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetEventExtender_System_Boolean_">DBObject.GetEventExtender(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetParameterInterface_System_String_System_Boolean_">DBObject.GetParameterInterface(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Dispose_System_Boolean_">DBObject.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_PaperOrientation">DBObject.PaperOrientation</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Annotative">DBObject.Annotative</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HasFields">DBObject.HasFields</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_AcadObject">DBObject.AcadObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ClassID">DBObject.ClassID</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ObjectBirthVersion">DBObject.ObjectBirthVersion</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HasSaveVersionOverride">DBObject.HasSaveVersionOverride</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsObjectIdsInFlux">DBObject.IsObjectIdsInFlux</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_UndoFiler">DBObject.UndoFiler</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsAProxy">DBObject.IsAProxy</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsTransactionResident">DBObject.IsTransactionResident</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsReallyClosing">DBObject.IsReallyClosing</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsCancelling">DBObject.IsCancelling</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsUndoing">DBObject.IsUndoing</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsNotifying">DBObject.IsNotifying</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsNewObject">DBObject.IsNewObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsModifiedGraphics">DBObject.IsModifiedGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsModifiedXData">DBObject.IsModifiedXData</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsModified">DBObject.IsModified</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsNotifyEnabled">DBObject.IsNotifyEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsWriteEnabled">DBObject.IsWriteEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsReadEnabled">DBObject.IsReadEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsErased">DBObject.IsErased</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsEraseStatusToggled">DBObject.IsEraseStatusToggled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_XData">DBObject.XData</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_MergeStyle">DBObject.MergeStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ExtensionDictionary">DBObject.ExtensionDictionary</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Drawable">DBObject.Drawable</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Database">DBObject.Database</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Handle">DBObject.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_OwnerId">DBObject.OwnerId</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ObjectId">DBObject.ObjectId</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Id">DBObject.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsPersistent">DBObject.IsPersistent</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ObjectClosed">DBObject.ObjectClosed</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Reappended">DBObject.Reappended</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Unappended">DBObject.Unappended</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ModifiedXData">DBObject.ModifiedXData</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ModifyUndone">DBObject.ModifyUndone</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubObjectModified">DBObject.SubObjectModified</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Modified">DBObject.Modified</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_OpenedForModify">DBObject.OpenedForModify</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Goodbye">DBObject.Goodbye</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Erased">DBObject.Erased</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Copied">DBObject.Copied</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Cancelled">DBObject.Cancelled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_SetAttributes_Autodesk_AutoCAD_GraphicsInterface_DrawableTraits_">Drawable.SetAttributes(DrawableTraits)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_WorldDraw_Autodesk_AutoCAD_GraphicsInterface_WorldDraw_">Drawable.WorldDraw(WorldDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_ViewportDraw_Autodesk_AutoCAD_GraphicsInterface_ViewportDraw_">Drawable.ViewportDraw(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_ViewportDrawLogicalFlags_Autodesk_AutoCAD_GraphicsInterface_ViewportDraw_">Drawable.ViewportDrawLogicalFlags(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_DrawStream">Drawable.DrawStream</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_Bounds">Drawable.Bounds</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_DrawableType">Drawable.DrawableType</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_Create_System_IntPtr_System_Boolean_">RXObject.Create(IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_GetClass_System_Type_">RXObject.GetClass(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_X_Autodesk_AutoCAD_Runtime_RXClass_">RXObject.X(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_QueryX_Autodesk_AutoCAD_Runtime_RXClass_">RXObject.QueryX(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_GetRXClass">RXObject.GetRXClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_CompareTo_System_Object_">RXObject.CompareTo(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_Clone">RXObject.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_CopyFrom_Autodesk_AutoCAD_Runtime_RXObject_">RXObject.CopyFrom(RXObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Create_System_Type_System_IntPtr_System_Boolean_">DisposableWrapper.Create(Type, IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Equals_System_Object_">DisposableWrapper.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_GetHashCode">DisposableWrapper.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Dispose">DisposableWrapper.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_AutoDelete">DisposableWrapper.AutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_IsDisposed">DisposableWrapper.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_UnmanagedObject">DisposableWrapper.UnmanagedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone">MarshalByRefObject.MemberwiseClone(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref">MarshalByRefObject.CreateObjRef(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord__ctor_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.#ctor*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord__ctor_System_IntPtr_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.#ctor(System.IntPtr,System.Boolean)">
+  AbstractViewTableRecord(IntPtr, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AbstractViewTableRecord(IntPtr obj, bool autoDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_AmbientLightColor_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.AmbientLightColor*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_AmbientLightColor" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.AmbientLightColor">
+  AmbientLightColor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color AmbientLightColor { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Colors.Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_BackClipDistance_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.BackClipDistance*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_BackClipDistance" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.BackClipDistance">
+  BackClipDistance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[UnitType(UnitType.Distance)]
+public double BackClipDistance { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_BackClipEnabled_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.BackClipEnabled*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_BackClipEnabled" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.BackClipEnabled">
+  BackClipEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BackClipEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_Background_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.Background*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_Background" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.Background">
+  Background
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId Background { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_Brightness_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.Brightness*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_Brightness" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.Brightness">
+  Brightness
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[UnitType(UnitType.Unitless)]
+public double Brightness { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_CenterPoint_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.CenterPoint*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_CenterPoint" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.CenterPoint">
+  CenterPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d CenterPoint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_Contrast_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.Contrast*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_Contrast" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.Contrast">
+  Contrast
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[UnitType(UnitType.Unitless)]
+public double Contrast { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_DefaultLightingOn_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.DefaultLightingOn*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_DefaultLightingOn" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.DefaultLightingOn">
+  DefaultLightingOn
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DefaultLightingOn { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_DefaultLightingType_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.DefaultLightingType*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_DefaultLightingType" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.DefaultLightingType">
+  DefaultLightingType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DefaultLightingType DefaultLightingType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DefaultLightingType.html">DefaultLightingType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_Elevation_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.Elevation*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_Elevation" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.Elevation">
+  Elevation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[UnitType(UnitType.Distance)]
+public double Elevation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_FrontClipAtEye_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.FrontClipAtEye*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_FrontClipAtEye" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.FrontClipAtEye">
+  FrontClipAtEye
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FrontClipAtEye { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_FrontClipDistance_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.FrontClipDistance*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_FrontClipDistance" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.FrontClipDistance">
+  FrontClipDistance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[UnitType(UnitType.Distance)]
+public double FrontClipDistance { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_FrontClipEnabled_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.FrontClipEnabled*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_FrontClipEnabled" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.FrontClipEnabled">
+  FrontClipEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FrontClipEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_Height_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.Height*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_Height" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.Height">
+  Height
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[UnitType(UnitType.Distance)]
+public double Height { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_LensLength_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.LensLength*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_LensLength" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.LensLength">
+  LensLength
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[UnitType(UnitType.Distance)]
+public double LensLength { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_PerspectiveEnabled_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.PerspectiveEnabled*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_PerspectiveEnabled" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.PerspectiveEnabled">
+  PerspectiveEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PerspectiveEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_SunId_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.SunId*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_SunId" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.SunId">
+  SunId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId SunId { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_Target_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.Target*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_Target" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.Target">
+  Target
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point3d Target { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_ToneOperatorParameters_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.ToneOperatorParameters*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_ToneOperatorParameters" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.ToneOperatorParameters">
+  ToneOperatorParameters
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ToneOperatorParameters ToneOperatorParameters { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.ToneOperatorParameters.html">ToneOperatorParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_Ucs_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.Ucs*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_Ucs" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.Ucs">
+  Ucs
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoordinateSystem3d Ucs { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.CoordinateSystem3d.html">CoordinateSystem3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_UcsName_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.UcsName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_UcsName" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.UcsName">
+  UcsName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId UcsName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_UcsOrthographic_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.UcsOrthographic*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_UcsOrthographic" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.UcsOrthographic">
+  UcsOrthographic
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OrthographicView UcsOrthographic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.OrthographicView.html">OrthographicView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_ViewDirection_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.ViewDirection*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_ViewDirection" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.ViewDirection">
+  ViewDirection
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3d ViewDirection { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_ViewOrthographic_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.ViewOrthographic*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_ViewOrthographic" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.ViewOrthographic">
+  ViewOrthographic
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OrthographicView ViewOrthographic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.OrthographicView.html">OrthographicView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_ViewTwist_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.ViewTwist*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_ViewTwist" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.ViewTwist">
+  ViewTwist
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[UnitType(UnitType.Angle)]
+public double ViewTwist { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_VisualStyleId_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.VisualStyleId*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_VisualStyleId" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.VisualStyleId">
+  VisualStyleId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId VisualStyleId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_Width_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.Width*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_Width" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.Width">
+  Width
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[UnitType(UnitType.Distance)]
+public double Width { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_SetSun_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.SetSun*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_SetSun_Autodesk_AutoCAD_DatabaseServices_DBObject_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.SetSun(Autodesk.AutoCAD.DatabaseServices.DBObject)">
+  SetSun(DBObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId SetSun(DBObject sun)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sun</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html">DBObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_SetUcs_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.SetUcs*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_SetUcs_Autodesk_AutoCAD_DatabaseServices_ObjectId_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.SetUcs(Autodesk.AutoCAD.DatabaseServices.ObjectId)">
+  SetUcs(ObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUcs(ObjectId id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_SetUcs_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.SetUcs*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_SetUcs_Autodesk_AutoCAD_DatabaseServices_OrthographicView_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.SetUcs(Autodesk.AutoCAD.DatabaseServices.OrthographicView)">
+  SetUcs(OrthographicView)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUcs(OrthographicView view)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>view</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.OrthographicView.html">OrthographicView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_SetUcs_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.SetUcs*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_SetUcs_Autodesk_AutoCAD_Geometry_Point3d_Autodesk_AutoCAD_Geometry_Vector3d_Autodesk_AutoCAD_Geometry_Vector3d_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.SetUcs(Autodesk.AutoCAD.Geometry.Point3d,Autodesk.AutoCAD.Geometry.Vector3d,Autodesk.AutoCAD.Geometry.Vector3d)">
+  SetUcs(Point3d, Vector3d, Vector3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUcs(Point3d origin, Vector3d x, Vector3d y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>origin</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_SetUcsToWorld_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.SetUcsToWorld*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_SetUcsToWorld" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.SetUcsToWorld">
+  SetUcsToWorld()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUcsToWorld()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_SetViewDirection_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.SetViewDirection*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_AbstractViewTableRecord_SetViewDirection_Autodesk_AutoCAD_DatabaseServices_OrthographicView_" data-uid="Autodesk.AutoCAD.DatabaseServices.AbstractViewTableRecord.SetViewDirection(Autodesk.AutoCAD.DatabaseServices.OrthographicView)">
+  SetViewDirection(OrthographicView)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetViewDirection(OrthographicView view)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>view</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.OrthographicView.html">OrthographicView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

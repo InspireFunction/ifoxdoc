@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>这是 首页. </title>
+      <title>IFoxCAD </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="这是 首页. ">
+      <meta name="title" content="IFoxCAD ">
       
       <link rel="icon" href="favicon.ico">
       <link rel="stylesheet" href="public/docfx.min.css">
@@ -12,10 +12,21 @@
       <meta name="docfx:navrel" content="toc.html">
       <meta name="docfx:tocrel" content="toc.html">
       
-      
+      <meta name="docfx:rel" content="">
       
       
       <meta name="docfx:docurl" content="https://github.com/InspireFunction/ifoxdoc/blob/master/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -43,6 +54,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navpanel">
             <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
             </div>
           </div>
         </div>
@@ -72,13 +87,11 @@
         </div>
 
         <article data-uid="">
-<h1 id="这是-首页">这是 <strong>首页</strong>.</h1>
+<h1 id="ifoxcad">IFoxCAD</h1>
 
-<p>修改根目录下的文件.</p>
-<h2 id="快速开始">快速开始:</h2>
-<ol>
-<li>添加图片到图片文件夹.</li>
-</ol>
+<p>欢迎使用 IFoxCAD，希望你能愉快的使用ifox进行编程。</p>
+<p>本文档包含了ifox的一些简单说明和api文档。</p>
+<p>欢迎在使用过程中发现问题并反馈。</p>
 </article>
 
         <div class="contribution d-print-none">
@@ -94,6 +107,7 @@
       </div>
     </main>
 
+    <div class="container-xxl search-results" id="search-results"></div>
 
     <footer class="border-top">
       <div class="container-xxl">

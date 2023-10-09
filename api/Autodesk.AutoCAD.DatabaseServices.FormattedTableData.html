@@ -1,0 +1,2158 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class FormattedTableData
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FormattedTableData
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData">
+
+
+
+  <h1 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData" class="text-break">
+    Class FormattedTableData
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Autodesk.html">Autodesk</a>.<a class="xref" href="Autodesk.AutoCAD.html">AutoCAD</a>.<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.html">DatabaseServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Acdbmgd.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;AcDbFormattedTableData&quot;)]
+public class FormattedTableData : LinkedTableData, IDisposable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html">DisposableWrapper</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html">RXObject</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html">Drawable</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html">DBObject</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedData.html">LinkedData</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html">LinkedTableData</a></div>
+      <div><span class="xref">FormattedTableData</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.TableContent.html">TableContent</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_GetEnumerator_Autodesk_AutoCAD_DatabaseServices_TableEnumeratorOption_">LinkedTableData.GetEnumerator(TableEnumeratorOption)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_GetEnumerator">LinkedTableData.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_SetSize_System_Int32_System_Int32_">LinkedTableData.SetSize(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_GetColumnName_System_Int32_">LinkedTableData.GetColumnName(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_SetColumnName_System_Int32_System_String_">LinkedTableData.SetColumnName(int, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_AppendColumn_System_Int32_">LinkedTableData.AppendColumn(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_InsertColumn_System_Int32_System_Int32_">LinkedTableData.InsertColumn(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_DeleteColumn_System_Int32_System_Int32_">LinkedTableData.DeleteColumn(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_AppendRow_System_Int32_">LinkedTableData.AppendRow(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_InsertRow_System_Int32_System_Int32_">LinkedTableData.InsertRow(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_DeleteRow_System_Int32_System_Int32_">LinkedTableData.DeleteRow(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_DeleteContent_System_Int32_System_Int32_">LinkedTableData.DeleteContent(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_GetContentTypes_System_Int32_System_Int32_">LinkedTableData.GetContentTypes(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_IsContentEditable_System_Int32_System_Int32_">LinkedTableData.IsContentEditable(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_GetCellState_System_Int32_System_Int32_">LinkedTableData.GetCellState(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_SetCellState_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_CellStates_">LinkedTableData.SetCellState(int, int, CellStates)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_DataType_System_Int32_System_Int32_">LinkedTableData.DataType(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_UnitType_System_Int32_System_Int32_">LinkedTableData.UnitType(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_SetDataType_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_DataType_Autodesk_AutoCAD_DatabaseServices_UnitType_">LinkedTableData.SetDataType(int, int, DataType, UnitType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_GetDataFormat_System_Int32_System_Int32_">LinkedTableData.GetDataFormat(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_SetDataFormat_System_Int32_System_Int32_System_String_">LinkedTableData.SetDataFormat(int, int, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_GetValue_System_Int32_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_FormatOption_">LinkedTableData.GetValue(int, int, int, FormatOption)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_GetValue_System_Int32_System_Int32_">LinkedTableData.GetValue(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_SetValue_System_Int32_System_Int32_System_Int32_System_Object_Autodesk_AutoCAD_DatabaseServices_ParseOption_">LinkedTableData.SetValue(int, int, int, object, ParseOption)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_SetValue_System_Int32_System_Int32_System_Object_">LinkedTableData.SetValue(int, int, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_GetFieldId_System_Int32_System_Int32_">LinkedTableData.GetFieldId(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_SetFieldId_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_ObjectId_">LinkedTableData.SetFieldId(int, int, ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_GetBlockTableRecordId_System_Int32_System_Int32_">LinkedTableData.GetBlockTableRecordId(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_SetBlockTableRecordId_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_ObjectId_">LinkedTableData.SetBlockTableRecordId(int, int, ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_GetBlockAttributeValue_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_ObjectId_">LinkedTableData.GetBlockAttributeValue(int, int, ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_SetBlockAttributeValue_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_ObjectId_System_String_">LinkedTableData.SetBlockAttributeValue(int, int, ObjectId, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_GetToolTip_System_Int32_System_Int32_">LinkedTableData.GetToolTip(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_SetToolTip_System_Int32_System_Int32_System_String_">LinkedTableData.SetToolTip(int, int, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_GetCustomData_System_Int32_System_Int32_System_String_">LinkedTableData.GetCustomData(int, int, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_SetCustomData_System_Int32_System_Int32_System_String_System_Object_">LinkedTableData.SetCustomData(int, int, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_IsLinked_System_Int32_System_Int32_">LinkedTableData.IsLinked(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_GetDataLink_Autodesk_AutoCAD_DatabaseServices_CellRange_">LinkedTableData.GetDataLink(CellRange)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_GetDataLink">LinkedTableData.GetDataLink()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_GetDataLink_System_Int32_System_Int32_">LinkedTableData.GetDataLink(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_SetDataLink_Autodesk_AutoCAD_DatabaseServices_CellRange_Autodesk_AutoCAD_DatabaseServices_ObjectId_System_Boolean_">LinkedTableData.SetDataLink(CellRange, ObjectId, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_SetDataLink_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_ObjectId_System_Boolean_">LinkedTableData.SetDataLink(int, int, ObjectId, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_UpdateDataLink_Autodesk_AutoCAD_DatabaseServices_UpdateDirection_Autodesk_AutoCAD_DatabaseServices_UpdateOption_">LinkedTableData.UpdateDataLink(UpdateDirection, UpdateOption)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_UpdateDataLink_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_UpdateDirection_Autodesk_AutoCAD_DatabaseServices_UpdateOption_">LinkedTableData.UpdateDataLink(int, int, UpdateDirection, UpdateOption)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_NumberOfRows">LinkedTableData.NumberOfRows</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedTableData.html#Autodesk_AutoCAD_DatabaseServices_LinkedTableData_NumberOfColumns">LinkedTableData.NumberOfColumns</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedData.html#Autodesk_AutoCAD_DatabaseServices_LinkedData_Clear">LinkedData.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedData.html#Autodesk_AutoCAD_DatabaseServices_LinkedData_Name">LinkedData.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LinkedData.html#Autodesk_AutoCAD_DatabaseServices_LinkedData_IsEmpty">LinkedData.IsEmpty</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubSetAttributes_Autodesk_AutoCAD_GraphicsInterface_DrawableTraits_">DBObject.SubSetAttributes(DrawableTraits)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubWorldDraw_Autodesk_AutoCAD_GraphicsInterface_WorldDraw_">DBObject.SubWorldDraw(WorldDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubViewportDraw_Autodesk_AutoCAD_GraphicsInterface_ViewportDraw_">DBObject.SubViewportDraw(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubViewportDrawLogicalFlags_Autodesk_AutoCAD_GraphicsInterface_ViewportDraw_">DBObject.SubViewportDrawLogicalFlags(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DeleteUnmanagedObject">DBObject.DeleteUnmanagedObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DeepClone_Autodesk_AutoCAD_DatabaseServices_DBObject_Autodesk_AutoCAD_DatabaseServices_IdMapping_System_Boolean_">DBObject.DeepClone(DBObject, IdMapping, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_WblockClone_Autodesk_AutoCAD_Runtime_RXObject_Autodesk_AutoCAD_DatabaseServices_IdMapping_System_Boolean_">DBObject.WblockClone(RXObject, IdMapping, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DecomposeForSave_Autodesk_AutoCAD_DatabaseServices_DwgVersion_">DBObject.DecomposeForSave(DwgVersion)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_CreateExtensionDictionary">DBObject.CreateExtensionDictionary()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ReleaseExtensionDictionary">DBObject.ReleaseExtensionDictionary()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_UpgradeOpen">DBObject.UpgradeOpen()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_UpgradeFromNotify">DBObject.UpgradeFromNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DowngradeOpen">DBObject.DowngradeOpen()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DowngradeToNotify_System_Boolean_">DBObject.DowngradeToNotify(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Cancel">DBObject.Cancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Close">DBObject.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_CloseAndPage_System_Boolean_">DBObject.CloseAndPage(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Erase">DBObject.Erase()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Erase_System_Boolean_">DBObject.Erase(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HandOverTo_Autodesk_AutoCAD_DatabaseServices_DBObject_System_Boolean_System_Boolean_">DBObject.HandOverTo(DBObject, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SwapIdWith_Autodesk_AutoCAD_DatabaseServices_ObjectId_System_Boolean_System_Boolean_">DBObject.SwapIdWith(ObjectId, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SwapReferences_Autodesk_AutoCAD_DatabaseServices_IdMapping_">DBObject.SwapReferences(IdMapping)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Audit_Autodesk_AutoCAD_DatabaseServices_AuditInfo_">DBObject.Audit(AuditInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DwgIn_Autodesk_AutoCAD_DatabaseServices_DwgFiler_">DBObject.DwgIn(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DwgOut_Autodesk_AutoCAD_DatabaseServices_DwgFiler_">DBObject.DwgOut(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DxfIn_Autodesk_AutoCAD_DatabaseServices_DxfFiler_">DBObject.DxfIn(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DxfOut_Autodesk_AutoCAD_DatabaseServices_DxfFiler_">DBObject.DxfOut(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_XDataTransformBy_Autodesk_AutoCAD_Geometry_Matrix3d_">DBObject.XDataTransformBy(Matrix3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetXDataForApplication_System_String_">DBObject.GetXDataForApplication(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_DisableUndoRecording_System_Boolean_">DBObject.DisableUndoRecording(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ApplyPartialUndo_Autodesk_AutoCAD_DatabaseServices_DwgFiler_Autodesk_AutoCAD_Runtime_RXClass_">DBObject.ApplyPartialUndo(DwgFiler, RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HasPersistentReactor_Autodesk_AutoCAD_DatabaseServices_ObjectId_">DBObject.HasPersistentReactor(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetReactors">DBObject.GetReactors()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetTransientReactors">DBObject.GetTransientReactors()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetPersistentReactorIds">DBObject.GetPersistentReactorIds()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetObjectIdsInFlux">DBObject.SetObjectIdsInFlux()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetObjectSaveVersion_Autodesk_AutoCAD_DatabaseServices_DxfFiler_">DBObject.GetObjectSaveVersion(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetObjectSaveVersion_Autodesk_AutoCAD_DatabaseServices_DwgFiler_">DBObject.GetObjectSaveVersion(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_FromAcadObject_System_Object_">DBObject.FromAcadObject(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsCustomObject_Autodesk_AutoCAD_DatabaseServices_ObjectId_">DBObject.IsCustomObject(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetField_System_String_">DBObject.GetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetField">DBObject.GetField()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetField_System_String_Autodesk_AutoCAD_DatabaseServices_Field_">DBObject.SetField(string, Field)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetField_Autodesk_AutoCAD_DatabaseServices_Field_">DBObject.SetField(Field)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_RemoveField_Autodesk_AutoCAD_DatabaseServices_ObjectId_">DBObject.RemoveField(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_RemoveField_System_String_">DBObject.RemoveField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_RemoveField">DBObject.RemoveField()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetFromStyle">DBObject.SetFromStyle()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ResetScaleDependentProperties">DBObject.ResetScaleDependentProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SetPaperOrientation_System_Boolean_">DBObject.SetPaperOrientation(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ApplyPaperOrientationTransform_Autodesk_AutoCAD_DatabaseServices_Viewport_">DBObject.ApplyPaperOrientationTransform(Viewport)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SupportsCollection_System_String_">DBObject.SupportsCollection(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HasContext_Autodesk_AutoCAD_DatabaseServices_ObjectContext_">DBObject.HasContext(ObjectContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_AddContext_Autodesk_AutoCAD_DatabaseServices_ObjectContext_">DBObject.AddContext(ObjectContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_RemoveContext_Autodesk_AutoCAD_DatabaseServices_ObjectContext_">DBObject.RemoveContext(ObjectContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetEventExtender_System_Boolean_">DBObject.GetEventExtender(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_GetParameterInterface_System_String_System_Boolean_">DBObject.GetParameterInterface(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Dispose_System_Boolean_">DBObject.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_PaperOrientation">DBObject.PaperOrientation</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Annotative">DBObject.Annotative</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HasFields">DBObject.HasFields</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_AcadObject">DBObject.AcadObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ClassID">DBObject.ClassID</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ObjectBirthVersion">DBObject.ObjectBirthVersion</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_HasSaveVersionOverride">DBObject.HasSaveVersionOverride</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsObjectIdsInFlux">DBObject.IsObjectIdsInFlux</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_UndoFiler">DBObject.UndoFiler</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsAProxy">DBObject.IsAProxy</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsTransactionResident">DBObject.IsTransactionResident</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsReallyClosing">DBObject.IsReallyClosing</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsCancelling">DBObject.IsCancelling</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsUndoing">DBObject.IsUndoing</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsNotifying">DBObject.IsNotifying</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsNewObject">DBObject.IsNewObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsModifiedGraphics">DBObject.IsModifiedGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsModifiedXData">DBObject.IsModifiedXData</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsModified">DBObject.IsModified</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsNotifyEnabled">DBObject.IsNotifyEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsWriteEnabled">DBObject.IsWriteEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsReadEnabled">DBObject.IsReadEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsErased">DBObject.IsErased</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsEraseStatusToggled">DBObject.IsEraseStatusToggled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_XData">DBObject.XData</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_MergeStyle">DBObject.MergeStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ExtensionDictionary">DBObject.ExtensionDictionary</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Drawable">DBObject.Drawable</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Database">DBObject.Database</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Handle">DBObject.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_OwnerId">DBObject.OwnerId</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ObjectId">DBObject.ObjectId</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Id">DBObject.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_IsPersistent">DBObject.IsPersistent</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ObjectClosed">DBObject.ObjectClosed</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Reappended">DBObject.Reappended</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Unappended">DBObject.Unappended</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ModifiedXData">DBObject.ModifiedXData</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_ModifyUndone">DBObject.ModifyUndone</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_SubObjectModified">DBObject.SubObjectModified</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Modified">DBObject.Modified</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_OpenedForModify">DBObject.OpenedForModify</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Goodbye">DBObject.Goodbye</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Erased">DBObject.Erased</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Copied">DBObject.Copied</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DBObject.html#Autodesk_AutoCAD_DatabaseServices_DBObject_Cancelled">DBObject.Cancelled</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_SetAttributes_Autodesk_AutoCAD_GraphicsInterface_DrawableTraits_">Drawable.SetAttributes(DrawableTraits)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_WorldDraw_Autodesk_AutoCAD_GraphicsInterface_WorldDraw_">Drawable.WorldDraw(WorldDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_ViewportDraw_Autodesk_AutoCAD_GraphicsInterface_ViewportDraw_">Drawable.ViewportDraw(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_ViewportDrawLogicalFlags_Autodesk_AutoCAD_GraphicsInterface_ViewportDraw_">Drawable.ViewportDrawLogicalFlags(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_DrawStream">Drawable.DrawStream</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_Bounds">Drawable.Bounds</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.GraphicsInterface.Drawable.html#Autodesk_AutoCAD_GraphicsInterface_Drawable_DrawableType">Drawable.DrawableType</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_GetClass_System_Type_">RXObject.GetClass(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_X_Autodesk_AutoCAD_Runtime_RXClass_">RXObject.X(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_QueryX_Autodesk_AutoCAD_Runtime_RXClass_">RXObject.QueryX(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_GetRXClass">RXObject.GetRXClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_CompareTo_System_Object_">RXObject.CompareTo(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_Clone">RXObject.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_CopyFrom_Autodesk_AutoCAD_Runtime_RXObject_">RXObject.CopyFrom(RXObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Create_System_Type_System_IntPtr_System_Boolean_">DisposableWrapper.Create(Type, IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Equals_System_Object_">DisposableWrapper.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_GetHashCode">DisposableWrapper.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Dispose">DisposableWrapper.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_AutoDelete">DisposableWrapper.AutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_IsDisposed">DisposableWrapper.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_UnmanagedObject">DisposableWrapper.UnmanagedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone">MarshalByRefObject.MemberwiseClone(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref">MarshalByRefObject.CreateObjRef(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData__ctor_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.#ctor*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData__ctor" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.#ctor">
+  FormattedTableData()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FormattedTableData()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData__ctor_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.#ctor*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData__ctor_System_IntPtr_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.#ctor(System.IntPtr,System.Boolean)">
+  FormattedTableData(IntPtr, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected FormattedTableData(IntPtr unmanagedObjPtr, bool autoDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unmanagedObjPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_Create_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.Create*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_Create_System_IntPtr_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.Create(System.IntPtr,System.Boolean)">
+  Create(IntPtr, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static FormattedTableData Create(IntPtr unmanagedPointer, bool autoDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unmanagedPointer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.html">FormattedTableData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetAlignment_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetAlignment*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetAlignment_System_Int32_System_Int32_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetAlignment(System.Int32,System.Int32)">
+  GetAlignment(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual CellAlignment GetAlignment(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.CellAlignment.html">CellAlignment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetBackgroundColor_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetBackgroundColor*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetBackgroundColor_System_Int32_System_Int32_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetBackgroundColor(System.Int32,System.Int32)">
+  GetBackgroundColor(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Color GetBackgroundColor(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Colors.Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetContentColor_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetContentColor*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetContentColor_System_Int32_System_Int32_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetContentColor(System.Int32,System.Int32)">
+  GetContentColor(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Color GetContentColor(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Colors.Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetGridColor_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetGridColor*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetGridColor_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_GridLineType_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetGridColor(System.Int32,System.Int32,Autodesk.AutoCAD.DatabaseServices.GridLineType)">
+  GetGridColor(int, int, GridLineType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Color GetGridColor(int row, int column, GridLineType gridLinetype)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>gridLinetype</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.GridLineType.html">GridLineType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.Colors.Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetGridLineWeight_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetGridLineWeight*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetGridLineWeight_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_GridLineType_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetGridLineWeight(System.Int32,System.Int32,Autodesk.AutoCAD.DatabaseServices.GridLineType)">
+  GetGridLineWeight(int, int, GridLineType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual LineWeight GetGridLineWeight(int row, int column, GridLineType gridLinetype)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>gridLinetype</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.GridLineType.html">GridLineType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LineWeight.html">LineWeight</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetGridLinetype_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetGridLinetype*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetGridLinetype_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_GridLineType_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetGridLinetype(System.Int32,System.Int32,Autodesk.AutoCAD.DatabaseServices.GridLineType)">
+  GetGridLinetype(int, int, GridLineType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ObjectId GetGridLinetype(int row, int column, GridLineType gridLinetype)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>gridLinetype</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.GridLineType.html">GridLineType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetGridVisibility_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetGridVisibility*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetGridVisibility_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_GridLineType_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetGridVisibility(System.Int32,System.Int32,Autodesk.AutoCAD.DatabaseServices.GridLineType)">
+  GetGridVisibility(int, int, GridLineType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Visibility GetGridVisibility(int row, int column, GridLineType gridLinetype)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>gridLinetype</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.GridLineType.html">GridLineType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Visibility.html">Visibility</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetMargin_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetMargin*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetMargin_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_CellMargins_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetMargin(System.Int32,System.Int32,Autodesk.AutoCAD.DatabaseServices.CellMargins)">
+  GetMargin(int, int, CellMargins)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double GetMargin(int row, int column, CellMargins margin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>margin</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.CellMargins.html">CellMargins</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetMergeRange_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetMergeRange*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetMergeRange_System_Int32_System_Int32_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetMergeRange(System.Int32,System.Int32)">
+  GetMergeRange(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual CellRange GetMergeRange(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.CellRange.html">CellRange</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetOverride_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetOverride*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetOverride_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_GridLineType_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetOverride(System.Int32,System.Int32,Autodesk.AutoCAD.DatabaseServices.GridLineType)">
+  GetOverride(int, int, GridLineType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual GridProperties GetOverride(int row, int column, GridLineType gridLinetype)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>gridLinetype</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.GridLineType.html">GridLineType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.GridProperties.html">GridProperties</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetOverride_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetOverride*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetOverride_System_Int32_System_Int32_System_Int32_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetOverride(System.Int32,System.Int32,System.Int32)">
+  GetOverride(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual CellProperties GetOverride(int row, int column, int content)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.CellProperties.html">CellProperties</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetRotation_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetRotation*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetRotation_System_Int32_System_Int32_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetRotation(System.Int32,System.Int32)">
+  GetRotation(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double GetRotation(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetScale_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetScale*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetScale_System_Int32_System_Int32_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetScale(System.Int32,System.Int32)">
+  GetScale(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double GetScale(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetTextHeight_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetTextHeight*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetTextHeight_System_Int32_System_Int32_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetTextHeight(System.Int32,System.Int32)">
+  GetTextHeight(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double GetTextHeight(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetTextStyle_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetTextStyle*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_GetTextStyle_System_Int32_System_Int32_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.GetTextStyle(System.Int32,System.Int32)">
+  GetTextStyle(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ObjectId GetTextStyle(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_IsFormatEditable_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.IsFormatEditable*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_IsFormatEditable_System_Int32_System_Int32_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.IsFormatEditable(System.Int32,System.Int32)">
+  IsFormatEditable(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsFormatEditable(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_IsMerged_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.IsMerged*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_IsMerged_System_Int32_System_Int32_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.IsMerged(System.Int32,System.Int32)">
+  IsMerged(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsMerged(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_Merge_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.Merge*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_Merge_Autodesk_AutoCAD_DatabaseServices_CellRange_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.Merge(Autodesk.AutoCAD.DatabaseServices.CellRange)">
+  Merge(CellRange)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Merge(CellRange range)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>range</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.CellRange.html">CellRange</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_RemoveAllOverrides_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.RemoveAllOverrides*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_RemoveAllOverrides_System_Int32_System_Int32_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.RemoveAllOverrides(System.Int32,System.Int32)">
+  RemoveAllOverrides(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RemoveAllOverrides(int row, int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetAlignment_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetAlignment*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetAlignment_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_CellAlignment_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetAlignment(System.Int32,System.Int32,Autodesk.AutoCAD.DatabaseServices.CellAlignment)">
+  SetAlignment(int, int, CellAlignment)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetAlignment(int row, int column, CellAlignment value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.CellAlignment.html">CellAlignment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetBackgroundColor_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetBackgroundColor*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetBackgroundColor_System_Int32_System_Int32_Autodesk_AutoCAD_Colors_Color_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetBackgroundColor(System.Int32,System.Int32,Autodesk.AutoCAD.Colors.Color)">
+  SetBackgroundColor(int, int, Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetBackgroundColor(int row, int column, Color value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Autodesk.AutoCAD.Colors.Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetContentColor_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetContentColor*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetContentColor_System_Int32_System_Int32_Autodesk_AutoCAD_Colors_Color_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetContentColor(System.Int32,System.Int32,Autodesk.AutoCAD.Colors.Color)">
+  SetContentColor(int, int, Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetContentColor(int row, int column, Color value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Autodesk.AutoCAD.Colors.Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetGridColor_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetGridColor*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetGridColor_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_GridLineType_Autodesk_AutoCAD_Colors_Color_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetGridColor(System.Int32,System.Int32,Autodesk.AutoCAD.DatabaseServices.GridLineType,Autodesk.AutoCAD.Colors.Color)">
+  SetGridColor(int, int, GridLineType, Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetGridColor(int row, int column, GridLineType gridLinetype, Color value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>gridLinetype</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.GridLineType.html">GridLineType</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Autodesk.AutoCAD.Colors.Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetGridLineWeight_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetGridLineWeight*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetGridLineWeight_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_GridLineType_Autodesk_AutoCAD_DatabaseServices_LineWeight_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetGridLineWeight(System.Int32,System.Int32,Autodesk.AutoCAD.DatabaseServices.GridLineType,Autodesk.AutoCAD.DatabaseServices.LineWeight)">
+  SetGridLineWeight(int, int, GridLineType, LineWeight)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetGridLineWeight(int row, int column, GridLineType gridLinetype, LineWeight value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>gridLinetype</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.GridLineType.html">GridLineType</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.LineWeight.html">LineWeight</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetGridLinetype_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetGridLinetype*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetGridLinetype_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_GridLineType_Autodesk_AutoCAD_DatabaseServices_ObjectId_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetGridLinetype(System.Int32,System.Int32,Autodesk.AutoCAD.DatabaseServices.GridLineType,Autodesk.AutoCAD.DatabaseServices.ObjectId)">
+  SetGridLinetype(int, int, GridLineType, ObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetGridLinetype(int row, int column, GridLineType gridLinetype, ObjectId value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>gridLinetype</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.GridLineType.html">GridLineType</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetGridVisibility_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetGridVisibility*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetGridVisibility_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_GridLineType_Autodesk_AutoCAD_DatabaseServices_Visibility_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetGridVisibility(System.Int32,System.Int32,Autodesk.AutoCAD.DatabaseServices.GridLineType,Autodesk.AutoCAD.DatabaseServices.Visibility)">
+  SetGridVisibility(int, int, GridLineType, Visibility)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetGridVisibility(int row, int column, GridLineType gridLinetype, Visibility value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>gridLinetype</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.GridLineType.html">GridLineType</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Visibility.html">Visibility</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetMargin_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetMargin*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetMargin_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_CellMargins_System_Double_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetMargin(System.Int32,System.Int32,Autodesk.AutoCAD.DatabaseServices.CellMargins,System.Double)">
+  SetMargin(int, int, CellMargins, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetMargin(int row, int column, CellMargins margin, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>margin</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.CellMargins.html">CellMargins</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetOverride_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetOverride*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetOverride_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_GridLineType_Autodesk_AutoCAD_DatabaseServices_GridProperties_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetOverride(System.Int32,System.Int32,Autodesk.AutoCAD.DatabaseServices.GridLineType,Autodesk.AutoCAD.DatabaseServices.GridProperties)">
+  SetOverride(int, int, GridLineType, GridProperties)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetOverride(int row, int column, GridLineType gridLinetype, GridProperties gridProperty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>gridLinetype</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.GridLineType.html">GridLineType</a></dt>
+    <dd></dd>
+    <dt><code>gridProperty</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.GridProperties.html">GridProperties</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetOverride_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetOverride*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetOverride_System_Int32_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_CellProperties_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetOverride(System.Int32,System.Int32,System.Int32,Autodesk.AutoCAD.DatabaseServices.CellProperties)">
+  SetOverride(int, int, int, CellProperties)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetOverride(int row, int column, int content, CellProperties cellProperty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>cellProperty</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.CellProperties.html">CellProperties</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetRotation_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetRotation*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetRotation_System_Int32_System_Int32_System_Double_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetRotation(System.Int32,System.Int32,System.Double)">
+  SetRotation(int, int, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetRotation(int row, int column, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetScale_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetScale*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetScale_System_Int32_System_Int32_System_Double_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetScale(System.Int32,System.Int32,System.Double)">
+  SetScale(int, int, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetScale(int row, int column, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetTextHeight_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetTextHeight*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetTextHeight_System_Int32_System_Int32_System_Double_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetTextHeight(System.Int32,System.Int32,System.Double)">
+  SetTextHeight(int, int, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetTextHeight(int row, int column, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetTextStyle_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetTextStyle*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_SetTextStyle_System_Int32_System_Int32_Autodesk_AutoCAD_DatabaseServices_ObjectId_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.SetTextStyle(System.Int32,System.Int32,Autodesk.AutoCAD.DatabaseServices.ObjectId)">
+  SetTextStyle(int, int, ObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetTextStyle(int row, int column, ObjectId value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_Unmerge_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.Unmerge*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_FormattedTableData_Unmerge_Autodesk_AutoCAD_DatabaseServices_CellRange_" data-uid="Autodesk.AutoCAD.DatabaseServices.FormattedTableData.Unmerge(Autodesk.AutoCAD.DatabaseServices.CellRange)">
+  Unmerge(CellRange)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Unmerge(CellRange range)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>range</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.CellRange.html">CellRange</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

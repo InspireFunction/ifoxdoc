@@ -1,0 +1,4142 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Editor
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Editor
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GrxCAD.EditorInput.Editor">
+
+
+
+  <h1 id="GrxCAD_EditorInput_Editor" data-uid="GrxCAD.EditorInput.Editor" class="text-break">
+    Class Editor
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GrxCAD.html">GrxCAD</a>.<a class="xref" href="GrxCAD.EditorInput.html">EditorInput</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>gmap.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;OdEditor&quot;)]
+public sealed class Editor : MarshalByRefObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><span class="xref">Editor</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref">MarshalByRefObject.CreateObjRef(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GrxCAD_EditorInput_Editor_ActiveViewportId_" data-uid="GrxCAD.EditorInput.Editor.ActiveViewportId*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_ActiveViewportId" data-uid="GrxCAD.EditorInput.Editor.ActiveViewportId">
+  ActiveViewportId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId ActiveViewportId { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_CurrentUserCoordinateSystem_" data-uid="GrxCAD.EditorInput.Editor.CurrentUserCoordinateSystem*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_CurrentUserCoordinateSystem" data-uid="GrxCAD.EditorInput.Editor.CurrentUserCoordinateSystem">
+  CurrentUserCoordinateSystem
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix3d CurrentUserCoordinateSystem { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_CurrentViewportObjectId_" data-uid="GrxCAD.EditorInput.Editor.CurrentViewportObjectId*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_CurrentViewportObjectId" data-uid="GrxCAD.EditorInput.Editor.CurrentViewportObjectId">
+  CurrentViewportObjectId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId CurrentViewportObjectId { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_Document_" data-uid="GrxCAD.EditorInput.Editor.Document*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_Document" data-uid="GrxCAD.EditorInput.Editor.Document">
+  Document
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Document Document { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.ApplicationServices.Document.html">Document</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_IsDragging_" data-uid="GrxCAD.EditorInput.Editor.IsDragging*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_IsDragging" data-uid="GrxCAD.EditorInput.Editor.IsDragging">
+  IsDragging
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDragging { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_IsQuiescent_" data-uid="GrxCAD.EditorInput.Editor.IsQuiescent*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_IsQuiescent" data-uid="GrxCAD.EditorInput.Editor.IsQuiescent">
+  IsQuiescent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsQuiescent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_IsQuiescentForTransparentCommand_" data-uid="GrxCAD.EditorInput.Editor.IsQuiescentForTransparentCommand*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_IsQuiescentForTransparentCommand" data-uid="GrxCAD.EditorInput.Editor.IsQuiescentForTransparentCommand">
+  IsQuiescentForTransparentCommand
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsQuiescentForTransparentCommand { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_MouseHasMoved_" data-uid="GrxCAD.EditorInput.Editor.MouseHasMoved*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_MouseHasMoved" data-uid="GrxCAD.EditorInput.Editor.MouseHasMoved">
+  MouseHasMoved
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MouseHasMoved { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_UseCommandLineInterface_" data-uid="GrxCAD.EditorInput.Editor.UseCommandLineInterface*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_UseCommandLineInterface" data-uid="GrxCAD.EditorInput.Editor.UseCommandLineInterface">
+  UseCommandLineInterface
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseCommandLineInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GrxCAD_EditorInput_Editor_Command_" data-uid="GrxCAD.EditorInput.Editor.Command*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_Command_System_Object___" data-uid="GrxCAD.EditorInput.Editor.Command(System.Object[])">
+  Command(params object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Command(params object[] parameter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_DoPrompt_" data-uid="GrxCAD.EditorInput.Editor.DoPrompt*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_DoPrompt_GrxCAD_EditorInput_PromptOptions_" data-uid="GrxCAD.EditorInput.Editor.DoPrompt(GrxCAD.EditorInput.PromptOptions)">
+  DoPrompt(PromptOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptResult DoPrompt(PromptOptions opt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opt</code> <a class="xref" href="GrxCAD.EditorInput.PromptOptions.html">PromptOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptResult.html">PromptResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_Drag_" data-uid="GrxCAD.EditorInput.Editor.Drag*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_Drag_GrxCAD_EditorInput_Jig_" data-uid="GrxCAD.EditorInput.Editor.Drag(GrxCAD.EditorInput.Jig)">
+  Drag(Jig)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptResult Drag(Jig jig)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jig</code> <a class="xref" href="GrxCAD.EditorInput.Jig.html">Jig</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptResult.html">PromptResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_Drag_" data-uid="GrxCAD.EditorInput.Editor.Drag*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_Drag_GrxCAD_EditorInput_PromptDragOptions_" data-uid="GrxCAD.EditorInput.Editor.Drag(GrxCAD.EditorInput.PromptDragOptions)">
+  Drag(PromptDragOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptPointResult Drag(PromptDragOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="GrxCAD.EditorInput.PromptDragOptions.html">PromptDragOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptPointResult.html">PromptPointResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_Drag_" data-uid="GrxCAD.EditorInput.Editor.Drag*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_Drag_GrxCAD_EditorInput_SelectionSet_System_String_GrxCAD_EditorInput_DragCallback_" data-uid="GrxCAD.EditorInput.Editor.Drag(GrxCAD.EditorInput.SelectionSet,System.String,GrxCAD.EditorInput.DragCallback)">
+  Drag(SelectionSet, string, DragCallback)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptPointResult Drag(SelectionSet selection, string message, DragCallback callback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selection</code> <a class="xref" href="GrxCAD.EditorInput.SelectionSet.html">SelectionSet</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>callback</code> <a class="xref" href="GrxCAD.EditorInput.DragCallback.html">DragCallback</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptPointResult.html">PromptPointResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_DrawVector_" data-uid="GrxCAD.EditorInput.Editor.DrawVector*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_DrawVector_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Point3d_System_Int32_System_Boolean_" data-uid="GrxCAD.EditorInput.Editor.DrawVector(GrxCAD.Geometry.Point3d,GrxCAD.Geometry.Point3d,System.Int32,System.Boolean)">
+  DrawVector(Point3d, Point3d, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawVector(Point3d from, Point3d to, int color, bool drawHighlighted)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>to</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>color</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>drawHighlighted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_DrawVectors_" data-uid="GrxCAD.EditorInput.Editor.DrawVectors*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_DrawVectors_GrxCAD_DatabaseServices_ResultBuffer_GrxCAD_Geometry_Matrix3d_" data-uid="GrxCAD.EditorInput.Editor.DrawVectors(GrxCAD.DatabaseServices.ResultBuffer,GrxCAD.Geometry.Matrix3d)">
+  DrawVectors(ResultBuffer, Matrix3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawVectors(ResultBuffer rb, Matrix3d transform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rb</code> <a class="xref" href="GrxCAD.DatabaseServices.ResultBuffer.html">ResultBuffer</a></dt>
+    <dd></dd>
+    <dt><code>transform</code> <a class="xref" href="GrxCAD.Geometry.Matrix3d.html">Matrix3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetAngle_" data-uid="GrxCAD.EditorInput.Editor.GetAngle*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetAngle_GrxCAD_EditorInput_PromptAngleOptions_" data-uid="GrxCAD.EditorInput.Editor.GetAngle(GrxCAD.EditorInput.PromptAngleOptions)">
+  GetAngle(PromptAngleOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptDoubleResult GetAngle(PromptAngleOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="GrxCAD.EditorInput.PromptAngleOptions.html">PromptAngleOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptDoubleResult.html">PromptDoubleResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetAngle_" data-uid="GrxCAD.EditorInput.Editor.GetAngle*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetAngle_System_String_" data-uid="GrxCAD.EditorInput.Editor.GetAngle(System.String)">
+  GetAngle(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptDoubleResult GetAngle(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptDoubleResult.html">PromptDoubleResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetCommandVersion_" data-uid="GrxCAD.EditorInput.Editor.GetCommandVersion*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetCommandVersion" data-uid="GrxCAD.EditorInput.Editor.GetCommandVersion">
+  GetCommandVersion()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCommandVersion()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetCorner_" data-uid="GrxCAD.EditorInput.Editor.GetCorner*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetCorner_GrxCAD_EditorInput_PromptCornerOptions_" data-uid="GrxCAD.EditorInput.Editor.GetCorner(GrxCAD.EditorInput.PromptCornerOptions)">
+  GetCorner(PromptCornerOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptPointResult GetCorner(PromptCornerOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="GrxCAD.EditorInput.PromptCornerOptions.html">PromptCornerOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptPointResult.html">PromptPointResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetCorner_" data-uid="GrxCAD.EditorInput.Editor.GetCorner*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetCorner_System_String_GrxCAD_Geometry_Point3d_" data-uid="GrxCAD.EditorInput.Editor.GetCorner(System.String,GrxCAD.Geometry.Point3d)">
+  GetCorner(string, Point3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptPointResult GetCorner(string message, Point3d basePoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>basePoint</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptPointResult.html">PromptPointResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetCurrentView_" data-uid="GrxCAD.EditorInput.Editor.GetCurrentView*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetCurrentView" data-uid="GrxCAD.EditorInput.Editor.GetCurrentView">
+  GetCurrentView()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ViewTableRecord GetCurrentView()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ViewTableRecord.html">ViewTableRecord</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetDistance_" data-uid="GrxCAD.EditorInput.Editor.GetDistance*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetDistance_GrxCAD_EditorInput_PromptDistanceOptions_" data-uid="GrxCAD.EditorInput.Editor.GetDistance(GrxCAD.EditorInput.PromptDistanceOptions)">
+  GetDistance(PromptDistanceOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptDoubleResult GetDistance(PromptDistanceOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="GrxCAD.EditorInput.PromptDistanceOptions.html">PromptDistanceOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptDoubleResult.html">PromptDoubleResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetDistance_" data-uid="GrxCAD.EditorInput.Editor.GetDistance*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetDistance_System_String_" data-uid="GrxCAD.EditorInput.Editor.GetDistance(System.String)">
+  GetDistance(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptDoubleResult GetDistance(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptDoubleResult.html">PromptDoubleResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetDouble_" data-uid="GrxCAD.EditorInput.Editor.GetDouble*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetDouble_GrxCAD_EditorInput_PromptDoubleOptions_" data-uid="GrxCAD.EditorInput.Editor.GetDouble(GrxCAD.EditorInput.PromptDoubleOptions)">
+  GetDouble(PromptDoubleOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptDoubleResult GetDouble(PromptDoubleOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="GrxCAD.EditorInput.PromptDoubleOptions.html">PromptDoubleOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptDoubleResult.html">PromptDoubleResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetDouble_" data-uid="GrxCAD.EditorInput.Editor.GetDouble*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetDouble_System_String_" data-uid="GrxCAD.EditorInput.Editor.GetDouble(System.String)">
+  GetDouble(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptDoubleResult GetDouble(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptDoubleResult.html">PromptDoubleResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetEntity_" data-uid="GrxCAD.EditorInput.Editor.GetEntity*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetEntity_GrxCAD_EditorInput_PromptEntityOptions_" data-uid="GrxCAD.EditorInput.Editor.GetEntity(GrxCAD.EditorInput.PromptEntityOptions)">
+  GetEntity(PromptEntityOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptEntityResult GetEntity(PromptEntityOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="GrxCAD.EditorInput.PromptEntityOptions.html">PromptEntityOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptEntityResult.html">PromptEntityResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetEntity_" data-uid="GrxCAD.EditorInput.Editor.GetEntity*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetEntity_System_String_" data-uid="GrxCAD.EditorInput.Editor.GetEntity(System.String)">
+  GetEntity(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptEntityResult GetEntity(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptEntityResult.html">PromptEntityResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetFileNameForOpen_" data-uid="GrxCAD.EditorInput.Editor.GetFileNameForOpen*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetFileNameForOpen_GrxCAD_EditorInput_PromptOpenFileOptions_" data-uid="GrxCAD.EditorInput.Editor.GetFileNameForOpen(GrxCAD.EditorInput.PromptOpenFileOptions)">
+  GetFileNameForOpen(PromptOpenFileOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptFileNameResult GetFileNameForOpen(PromptOpenFileOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="GrxCAD.EditorInput.PromptOpenFileOptions.html">PromptOpenFileOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptFileNameResult.html">PromptFileNameResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetFileNameForOpen_" data-uid="GrxCAD.EditorInput.Editor.GetFileNameForOpen*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetFileNameForOpen_System_String_" data-uid="GrxCAD.EditorInput.Editor.GetFileNameForOpen(System.String)">
+  GetFileNameForOpen(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptFileNameResult GetFileNameForOpen(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptFileNameResult.html">PromptFileNameResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetFileNameForSave_" data-uid="GrxCAD.EditorInput.Editor.GetFileNameForSave*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetFileNameForSave_GrxCAD_EditorInput_PromptSaveFileOptions_" data-uid="GrxCAD.EditorInput.Editor.GetFileNameForSave(GrxCAD.EditorInput.PromptSaveFileOptions)">
+  GetFileNameForSave(PromptSaveFileOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptFileNameResult GetFileNameForSave(PromptSaveFileOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="GrxCAD.EditorInput.PromptSaveFileOptions.html">PromptSaveFileOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptFileNameResult.html">PromptFileNameResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetFileNameForSave_" data-uid="GrxCAD.EditorInput.Editor.GetFileNameForSave*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetFileNameForSave_System_String_" data-uid="GrxCAD.EditorInput.Editor.GetFileNameForSave(System.String)">
+  GetFileNameForSave(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptFileNameResult GetFileNameForSave(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptFileNameResult.html">PromptFileNameResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetInteger_" data-uid="GrxCAD.EditorInput.Editor.GetInteger*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetInteger_GrxCAD_EditorInput_PromptIntegerOptions_" data-uid="GrxCAD.EditorInput.Editor.GetInteger(GrxCAD.EditorInput.PromptIntegerOptions)">
+  GetInteger(PromptIntegerOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptIntegerResult GetInteger(PromptIntegerOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="GrxCAD.EditorInput.PromptIntegerOptions.html">PromptIntegerOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptIntegerResult.html">PromptIntegerResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetInteger_" data-uid="GrxCAD.EditorInput.Editor.GetInteger*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetInteger_System_String_" data-uid="GrxCAD.EditorInput.Editor.GetInteger(System.String)">
+  GetInteger(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptIntegerResult GetInteger(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptIntegerResult.html">PromptIntegerResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetKeywords_" data-uid="GrxCAD.EditorInput.Editor.GetKeywords*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetKeywords_GrxCAD_EditorInput_PromptKeywordOptions_" data-uid="GrxCAD.EditorInput.Editor.GetKeywords(GrxCAD.EditorInput.PromptKeywordOptions)">
+  GetKeywords(PromptKeywordOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptResult GetKeywords(PromptKeywordOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="GrxCAD.EditorInput.PromptKeywordOptions.html">PromptKeywordOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptResult.html">PromptResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetKeywords_" data-uid="GrxCAD.EditorInput.Editor.GetKeywords*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetKeywords_System_String_System_String___" data-uid="GrxCAD.EditorInput.Editor.GetKeywords(System.String,System.String[])">
+  GetKeywords(string, params string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptResult GetKeywords(string message, params string[] globalKeywords)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>globalKeywords</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptResult.html">PromptResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetNestedEntity_" data-uid="GrxCAD.EditorInput.Editor.GetNestedEntity*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetNestedEntity_GrxCAD_EditorInput_PromptNestedEntityOptions_" data-uid="GrxCAD.EditorInput.Editor.GetNestedEntity(GrxCAD.EditorInput.PromptNestedEntityOptions)">
+  GetNestedEntity(PromptNestedEntityOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptNestedEntityResult GetNestedEntity(PromptNestedEntityOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="GrxCAD.EditorInput.PromptNestedEntityOptions.html">PromptNestedEntityOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptNestedEntityResult.html">PromptNestedEntityResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetNestedEntity_" data-uid="GrxCAD.EditorInput.Editor.GetNestedEntity*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetNestedEntity_System_String_" data-uid="GrxCAD.EditorInput.Editor.GetNestedEntity(System.String)">
+  GetNestedEntity(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptNestedEntityResult GetNestedEntity(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptNestedEntityResult.html">PromptNestedEntityResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetPoint_" data-uid="GrxCAD.EditorInput.Editor.GetPoint*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetPoint_GrxCAD_EditorInput_PromptPointOptions_" data-uid="GrxCAD.EditorInput.Editor.GetPoint(GrxCAD.EditorInput.PromptPointOptions)">
+  GetPoint(PromptPointOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptPointResult GetPoint(PromptPointOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="GrxCAD.EditorInput.PromptPointOptions.html">PromptPointOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptPointResult.html">PromptPointResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetPoint_" data-uid="GrxCAD.EditorInput.Editor.GetPoint*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetPoint_System_String_" data-uid="GrxCAD.EditorInput.Editor.GetPoint(System.String)">
+  GetPoint(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptPointResult GetPoint(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptPointResult.html">PromptPointResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetSelection_" data-uid="GrxCAD.EditorInput.Editor.GetSelection*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetSelection" data-uid="GrxCAD.EditorInput.Editor.GetSelection">
+  GetSelection()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptSelectionResult GetSelection()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptSelectionResult.html">PromptSelectionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetSelection_" data-uid="GrxCAD.EditorInput.Editor.GetSelection*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetSelection_GrxCAD_EditorInput_PromptSelectionOptions_" data-uid="GrxCAD.EditorInput.Editor.GetSelection(GrxCAD.EditorInput.PromptSelectionOptions)">
+  GetSelection(PromptSelectionOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptSelectionResult GetSelection(PromptSelectionOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="GrxCAD.EditorInput.PromptSelectionOptions.html">PromptSelectionOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptSelectionResult.html">PromptSelectionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetSelection_" data-uid="GrxCAD.EditorInput.Editor.GetSelection*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetSelection_GrxCAD_EditorInput_PromptSelectionOptions_GrxCAD_EditorInput_SelectionFilter_" data-uid="GrxCAD.EditorInput.Editor.GetSelection(GrxCAD.EditorInput.PromptSelectionOptions,GrxCAD.EditorInput.SelectionFilter)">
+  GetSelection(PromptSelectionOptions, SelectionFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptSelectionResult GetSelection(PromptSelectionOptions options, SelectionFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="GrxCAD.EditorInput.PromptSelectionOptions.html">PromptSelectionOptions</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="GrxCAD.EditorInput.SelectionFilter.html">SelectionFilter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptSelectionResult.html">PromptSelectionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetSelection_" data-uid="GrxCAD.EditorInput.Editor.GetSelection*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetSelection_GrxCAD_EditorInput_SelectionFilter_" data-uid="GrxCAD.EditorInput.Editor.GetSelection(GrxCAD.EditorInput.SelectionFilter)">
+  GetSelection(SelectionFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptSelectionResult GetSelection(SelectionFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filter</code> <a class="xref" href="GrxCAD.EditorInput.SelectionFilter.html">SelectionFilter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptSelectionResult.html">PromptSelectionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetString_" data-uid="GrxCAD.EditorInput.Editor.GetString*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetString_GrxCAD_EditorInput_PromptStringOptions_" data-uid="GrxCAD.EditorInput.Editor.GetString(GrxCAD.EditorInput.PromptStringOptions)">
+  GetString(PromptStringOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptResult GetString(PromptStringOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="GrxCAD.EditorInput.PromptStringOptions.html">PromptStringOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptResult.html">PromptResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetString_" data-uid="GrxCAD.EditorInput.Editor.GetString*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetString_System_String_" data-uid="GrxCAD.EditorInput.Editor.GetString(System.String)">
+  GetString(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptResult GetString(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptResult.html">PromptResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_GetViewportNumber_" data-uid="GrxCAD.EditorInput.Editor.GetViewportNumber*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_GetViewportNumber_System_Drawing_Point_" data-uid="GrxCAD.EditorInput.Editor.GetViewportNumber(System.Drawing.Point)">
+  GetViewportNumber(Point)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetViewportNumber(Point point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.point">Point</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_InitCommandVersion_" data-uid="GrxCAD.EditorInput.Editor.InitCommandVersion*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_InitCommandVersion_System_Int32_" data-uid="GrxCAD.EditorInput.Editor.InitCommandVersion(System.Int32)">
+  InitCommandVersion(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int InitCommandVersion(int nVersion)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nVersion</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_PointToScreen_" data-uid="GrxCAD.EditorInput.Editor.PointToScreen*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_PointToScreen_GrxCAD_Geometry_Point3d_System_Int32_" data-uid="GrxCAD.EditorInput.Editor.PointToScreen(GrxCAD.Geometry.Point3d,System.Int32)">
+  PointToScreen(Point3d, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point PointToScreen(Point3d pt, int viewportNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>viewportNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.point">Point</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_PointToWorld_" data-uid="GrxCAD.EditorInput.Editor.PointToWorld*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_PointToWorld_System_Drawing_Point_" data-uid="GrxCAD.EditorInput.Editor.PointToWorld(System.Drawing.Point)">
+  PointToWorld(Point)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point3d PointToWorld(Point pt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.point">Point</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_PointToWorld_" data-uid="GrxCAD.EditorInput.Editor.PointToWorld*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_PointToWorld_System_Drawing_Point_System_Int32_" data-uid="GrxCAD.EditorInput.Editor.PointToWorld(System.Drawing.Point,System.Int32)">
+  PointToWorld(Point, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point3d PointToWorld(Point pt, int viewportNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.point">Point</a></dt>
+    <dd></dd>
+    <dt><code>viewportNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_Regen_" data-uid="GrxCAD.EditorInput.Editor.Regen*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_Regen" data-uid="GrxCAD.EditorInput.Editor.Regen">
+  Regen()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Regen()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_SelectAll_" data-uid="GrxCAD.EditorInput.Editor.SelectAll*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_SelectAll" data-uid="GrxCAD.EditorInput.Editor.SelectAll">
+  SelectAll()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptSelectionResult SelectAll()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptSelectionResult.html">PromptSelectionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_SelectAll_" data-uid="GrxCAD.EditorInput.Editor.SelectAll*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_SelectAll_GrxCAD_EditorInput_SelectionFilter_" data-uid="GrxCAD.EditorInput.Editor.SelectAll(GrxCAD.EditorInput.SelectionFilter)">
+  SelectAll(SelectionFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptSelectionResult SelectAll(SelectionFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filter</code> <a class="xref" href="GrxCAD.EditorInput.SelectionFilter.html">SelectionFilter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptSelectionResult.html">PromptSelectionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_SelectCrossingPolygon_" data-uid="GrxCAD.EditorInput.Editor.SelectCrossingPolygon*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_SelectCrossingPolygon_GrxCAD_Geometry_Point3dCollection_" data-uid="GrxCAD.EditorInput.Editor.SelectCrossingPolygon(GrxCAD.Geometry.Point3dCollection)">
+  SelectCrossingPolygon(Point3dCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptSelectionResult SelectCrossingPolygon(Point3dCollection polygon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>polygon</code> <a class="xref" href="GrxCAD.Geometry.Point3dCollection.html">Point3dCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptSelectionResult.html">PromptSelectionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_SelectCrossingPolygon_" data-uid="GrxCAD.EditorInput.Editor.SelectCrossingPolygon*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_SelectCrossingPolygon_GrxCAD_Geometry_Point3dCollection_GrxCAD_EditorInput_SelectionFilter_" data-uid="GrxCAD.EditorInput.Editor.SelectCrossingPolygon(GrxCAD.Geometry.Point3dCollection,GrxCAD.EditorInput.SelectionFilter)">
+  SelectCrossingPolygon(Point3dCollection, SelectionFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptSelectionResult SelectCrossingPolygon(Point3dCollection polygon, SelectionFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>polygon</code> <a class="xref" href="GrxCAD.Geometry.Point3dCollection.html">Point3dCollection</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="GrxCAD.EditorInput.SelectionFilter.html">SelectionFilter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptSelectionResult.html">PromptSelectionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_SelectCrossingWindow_" data-uid="GrxCAD.EditorInput.Editor.SelectCrossingWindow*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_SelectCrossingWindow_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Point3d_" data-uid="GrxCAD.EditorInput.Editor.SelectCrossingWindow(GrxCAD.Geometry.Point3d,GrxCAD.Geometry.Point3d)">
+  SelectCrossingWindow(Point3d, Point3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptSelectionResult SelectCrossingWindow(Point3d pt1, Point3d pt2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt1</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>pt2</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptSelectionResult.html">PromptSelectionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_SelectCrossingWindow_" data-uid="GrxCAD.EditorInput.Editor.SelectCrossingWindow*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_SelectCrossingWindow_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Point3d_GrxCAD_EditorInput_SelectionFilter_" data-uid="GrxCAD.EditorInput.Editor.SelectCrossingWindow(GrxCAD.Geometry.Point3d,GrxCAD.Geometry.Point3d,GrxCAD.EditorInput.SelectionFilter)">
+  SelectCrossingWindow(Point3d, Point3d, SelectionFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptSelectionResult SelectCrossingWindow(Point3d pt1, Point3d pt2, SelectionFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt1</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>pt2</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="GrxCAD.EditorInput.SelectionFilter.html">SelectionFilter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptSelectionResult.html">PromptSelectionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_SelectCrossingWindow_" data-uid="GrxCAD.EditorInput.Editor.SelectCrossingWindow*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_SelectCrossingWindow_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Point3d_GrxCAD_EditorInput_SelectionFilter_System_Boolean_" data-uid="GrxCAD.EditorInput.Editor.SelectCrossingWindow(GrxCAD.Geometry.Point3d,GrxCAD.Geometry.Point3d,GrxCAD.EditorInput.SelectionFilter,System.Boolean)">
+  SelectCrossingWindow(Point3d, Point3d, SelectionFilter, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptSelectionResult SelectCrossingWindow(Point3d pt1, Point3d pt2, SelectionFilter filter, bool forceSubEntitySelection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt1</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>pt2</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="GrxCAD.EditorInput.SelectionFilter.html">SelectionFilter</a></dt>
+    <dd></dd>
+    <dt><code>forceSubEntitySelection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptSelectionResult.html">PromptSelectionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_SelectFence_" data-uid="GrxCAD.EditorInput.Editor.SelectFence*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_SelectFence_GrxCAD_Geometry_Point3dCollection_" data-uid="GrxCAD.EditorInput.Editor.SelectFence(GrxCAD.Geometry.Point3dCollection)">
+  SelectFence(Point3dCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptSelectionResult SelectFence(Point3dCollection fence)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fence</code> <a class="xref" href="GrxCAD.Geometry.Point3dCollection.html">Point3dCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptSelectionResult.html">PromptSelectionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_SelectFence_" data-uid="GrxCAD.EditorInput.Editor.SelectFence*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_SelectFence_GrxCAD_Geometry_Point3dCollection_GrxCAD_EditorInput_SelectionFilter_" data-uid="GrxCAD.EditorInput.Editor.SelectFence(GrxCAD.Geometry.Point3dCollection,GrxCAD.EditorInput.SelectionFilter)">
+  SelectFence(Point3dCollection, SelectionFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptSelectionResult SelectFence(Point3dCollection fence, SelectionFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fence</code> <a class="xref" href="GrxCAD.Geometry.Point3dCollection.html">Point3dCollection</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="GrxCAD.EditorInput.SelectionFilter.html">SelectionFilter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptSelectionResult.html">PromptSelectionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_SelectImplied_" data-uid="GrxCAD.EditorInput.Editor.SelectImplied*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_SelectImplied" data-uid="GrxCAD.EditorInput.Editor.SelectImplied">
+  SelectImplied()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptSelectionResult SelectImplied()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptSelectionResult.html">PromptSelectionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_SelectLast_" data-uid="GrxCAD.EditorInput.Editor.SelectLast*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_SelectLast" data-uid="GrxCAD.EditorInput.Editor.SelectLast">
+  SelectLast()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptSelectionResult SelectLast()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptSelectionResult.html">PromptSelectionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_SelectPrevious_" data-uid="GrxCAD.EditorInput.Editor.SelectPrevious*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_SelectPrevious" data-uid="GrxCAD.EditorInput.Editor.SelectPrevious">
+  SelectPrevious()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptSelectionResult SelectPrevious()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptSelectionResult.html">PromptSelectionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_SelectWindow_" data-uid="GrxCAD.EditorInput.Editor.SelectWindow*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_SelectWindow_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Point3d_" data-uid="GrxCAD.EditorInput.Editor.SelectWindow(GrxCAD.Geometry.Point3d,GrxCAD.Geometry.Point3d)">
+  SelectWindow(Point3d, Point3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptSelectionResult SelectWindow(Point3d pt1, Point3d pt2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt1</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>pt2</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptSelectionResult.html">PromptSelectionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_SelectWindow_" data-uid="GrxCAD.EditorInput.Editor.SelectWindow*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_SelectWindow_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Point3d_GrxCAD_EditorInput_SelectionFilter_" data-uid="GrxCAD.EditorInput.Editor.SelectWindow(GrxCAD.Geometry.Point3d,GrxCAD.Geometry.Point3d,GrxCAD.EditorInput.SelectionFilter)">
+  SelectWindow(Point3d, Point3d, SelectionFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptSelectionResult SelectWindow(Point3d pt1, Point3d pt2, SelectionFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt1</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>pt2</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="GrxCAD.EditorInput.SelectionFilter.html">SelectionFilter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptSelectionResult.html">PromptSelectionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_SelectWindowPolygon_" data-uid="GrxCAD.EditorInput.Editor.SelectWindowPolygon*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_SelectWindowPolygon_GrxCAD_Geometry_Point3dCollection_" data-uid="GrxCAD.EditorInput.Editor.SelectWindowPolygon(GrxCAD.Geometry.Point3dCollection)">
+  SelectWindowPolygon(Point3dCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptSelectionResult SelectWindowPolygon(Point3dCollection polygon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>polygon</code> <a class="xref" href="GrxCAD.Geometry.Point3dCollection.html">Point3dCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptSelectionResult.html">PromptSelectionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_SelectWindowPolygon_" data-uid="GrxCAD.EditorInput.Editor.SelectWindowPolygon*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_SelectWindowPolygon_GrxCAD_Geometry_Point3dCollection_GrxCAD_EditorInput_SelectionFilter_" data-uid="GrxCAD.EditorInput.Editor.SelectWindowPolygon(GrxCAD.Geometry.Point3dCollection,GrxCAD.EditorInput.SelectionFilter)">
+  SelectWindowPolygon(Point3dCollection, SelectionFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PromptSelectionResult SelectWindowPolygon(Point3dCollection polygon, SelectionFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>polygon</code> <a class="xref" href="GrxCAD.Geometry.Point3dCollection.html">Point3dCollection</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="GrxCAD.EditorInput.SelectionFilter.html">SelectionFilter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptSelectionResult.html">PromptSelectionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_SetCurrentView_" data-uid="GrxCAD.EditorInput.Editor.SetCurrentView*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_SetCurrentView_GrxCAD_DatabaseServices_ViewTableRecord_" data-uid="GrxCAD.EditorInput.Editor.SetCurrentView(GrxCAD.DatabaseServices.ViewTableRecord)">
+  SetCurrentView(ViewTableRecord)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCurrentView(ViewTableRecord value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="GrxCAD.DatabaseServices.ViewTableRecord.html">ViewTableRecord</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_SetImpliedSelection_" data-uid="GrxCAD.EditorInput.Editor.SetImpliedSelection*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_SetImpliedSelection_GrxCAD_DatabaseServices_ObjectId___" data-uid="GrxCAD.EditorInput.Editor.SetImpliedSelection(GrxCAD.DatabaseServices.ObjectId[])">
+  SetImpliedSelection(ObjectId[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetImpliedSelection(ObjectId[] selectedObjects)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selectedObjects</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_SetImpliedSelection_" data-uid="GrxCAD.EditorInput.Editor.SetImpliedSelection*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_SetImpliedSelection_GrxCAD_EditorInput_SelectionSet_" data-uid="GrxCAD.EditorInput.Editor.SetImpliedSelection(GrxCAD.EditorInput.SelectionSet)">
+  SetImpliedSelection(SelectionSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetImpliedSelection(SelectionSet selectionSet)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selectionSet</code> <a class="xref" href="GrxCAD.EditorInput.SelectionSet.html">SelectionSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_Snap_" data-uid="GrxCAD.EditorInput.Editor.Snap*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_Snap_System_String_GrxCAD_Geometry_Point3d_" data-uid="GrxCAD.EditorInput.Editor.Snap(System.String,GrxCAD.Geometry.Point3d)">
+  Snap(string, Point3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point3d Snap(string snapMode, Point3d input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>snapMode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>input</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_StartUserInteraction_" data-uid="GrxCAD.EditorInput.Editor.StartUserInteraction*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_StartUserInteraction_System_Windows_Forms_Control_" data-uid="GrxCAD.EditorInput.Editor.StartUserInteraction(System.Windows.Forms.Control)">
+  StartUserInteraction(Control)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EditorUserInteraction StartUserInteraction(Control modalForm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modalForm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control">Control</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.EditorUserInteraction.html">EditorUserInteraction</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_StartUserInteraction_" data-uid="GrxCAD.EditorInput.Editor.StartUserInteraction*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_StartUserInteraction_System_Windows_Window_" data-uid="GrxCAD.EditorInput.Editor.StartUserInteraction(System.Windows.Window)">
+  StartUserInteraction(Window)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EditorUserInteraction StartUserInteraction(Window window)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>window</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.window">Window</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.EditorUserInteraction.html">EditorUserInteraction</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_SwitchToModelSpace_" data-uid="GrxCAD.EditorInput.Editor.SwitchToModelSpace*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_SwitchToModelSpace" data-uid="GrxCAD.EditorInput.Editor.SwitchToModelSpace">
+  SwitchToModelSpace()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwitchToModelSpace()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_SwitchToPaperSpace_" data-uid="GrxCAD.EditorInput.Editor.SwitchToPaperSpace*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_SwitchToPaperSpace" data-uid="GrxCAD.EditorInput.Editor.SwitchToPaperSpace">
+  SwitchToPaperSpace()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwitchToPaperSpace()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_TurnForcedPickOff_" data-uid="GrxCAD.EditorInput.Editor.TurnForcedPickOff*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_TurnForcedPickOff" data-uid="GrxCAD.EditorInput.Editor.TurnForcedPickOff">
+  TurnForcedPickOff()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TurnForcedPickOff()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_TurnForcedPickOn_" data-uid="GrxCAD.EditorInput.Editor.TurnForcedPickOn*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_TurnForcedPickOn" data-uid="GrxCAD.EditorInput.Editor.TurnForcedPickOn">
+  TurnForcedPickOn()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TurnForcedPickOn()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_UpdateScreen_" data-uid="GrxCAD.EditorInput.Editor.UpdateScreen*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_UpdateScreen" data-uid="GrxCAD.EditorInput.Editor.UpdateScreen">
+  UpdateScreen()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateScreen()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_UpdateTiledViewportsFromDatabase_" data-uid="GrxCAD.EditorInput.Editor.UpdateTiledViewportsFromDatabase*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_UpdateTiledViewportsFromDatabase" data-uid="GrxCAD.EditorInput.Editor.UpdateTiledViewportsFromDatabase">
+  UpdateTiledViewportsFromDatabase()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateTiledViewportsFromDatabase()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_UpdateTiledViewportsInDatabase_" data-uid="GrxCAD.EditorInput.Editor.UpdateTiledViewportsInDatabase*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_UpdateTiledViewportsInDatabase" data-uid="GrxCAD.EditorInput.Editor.UpdateTiledViewportsInDatabase">
+  UpdateTiledViewportsInDatabase()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateTiledViewportsInDatabase()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_ViewportIdFromNumber_" data-uid="GrxCAD.EditorInput.Editor.ViewportIdFromNumber*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_ViewportIdFromNumber_System_Int32_" data-uid="GrxCAD.EditorInput.Editor.ViewportIdFromNumber(System.Int32)">
+  ViewportIdFromNumber(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId ViewportIdFromNumber(int viewportNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>viewportNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_WriteMessage_" data-uid="GrxCAD.EditorInput.Editor.WriteMessage*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_WriteMessage_System_String_" data-uid="GrxCAD.EditorInput.Editor.WriteMessage(System.String)">
+  WriteMessage(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteMessage(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_EditorInput_Editor_WriteMessage_" data-uid="GrxCAD.EditorInput.Editor.WriteMessage*"></a>
+
+  <h3 id="GrxCAD_EditorInput_Editor_WriteMessage_System_String_System_Object___" data-uid="GrxCAD.EditorInput.Editor.WriteMessage(System.String,System.Object[])">
+  WriteMessage(string, params object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteMessage(string message, params object[] parameter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_Dragging" data-uid="GrxCAD.EditorInput.Editor.Dragging">
+  Dragging
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event DraggingEventHandler Dragging</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.DraggingEventHandler.html">DraggingEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_DraggingEnded" data-uid="GrxCAD.EditorInput.Editor.DraggingEnded">
+  DraggingEnded
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event DraggingEndedEventHandler DraggingEnded</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.DraggingEndedEventHandler.html">DraggingEndedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_EnteringQuiescentState" data-uid="GrxCAD.EditorInput.Editor.EnteringQuiescentState">
+  EnteringQuiescentState
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler EnteringQuiescentState</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_LeavingQuiescentState" data-uid="GrxCAD.EditorInput.Editor.LeavingQuiescentState">
+  LeavingQuiescentState
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler LeavingQuiescentState</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PointFilter" data-uid="GrxCAD.EditorInput.Editor.PointFilter">
+  PointFilter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PointFilterEventHandler PointFilter</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PointFilterEventHandler.html">PointFilterEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PointMonitor" data-uid="GrxCAD.EditorInput.Editor.PointMonitor">
+  PointMonitor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PointMonitorEventHandler PointMonitor</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PointMonitorEventHandler.html">PointMonitorEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptForEntityEnding" data-uid="GrxCAD.EditorInput.Editor.PromptForEntityEnding">
+  PromptForEntityEnding
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptForEntityEndingEventHandler PromptForEntityEnding</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptForEntityEndingEventHandler.html">PromptForEntityEndingEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptForSelectionEnding" data-uid="GrxCAD.EditorInput.Editor.PromptForSelectionEnding">
+  PromptForSelectionEnding
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptForSelectionEndingEventHandler PromptForSelectionEnding</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptForSelectionEndingEventHandler.html">PromptForSelectionEndingEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptedForAngle" data-uid="GrxCAD.EditorInput.Editor.PromptedForAngle">
+  PromptedForAngle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptDoubleResultEventHandler PromptedForAngle</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptDoubleResultEventHandler.html">PromptDoubleResultEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptedForCorner" data-uid="GrxCAD.EditorInput.Editor.PromptedForCorner">
+  PromptedForCorner
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptPointResultEventHandler PromptedForCorner</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptPointResultEventHandler.html">PromptPointResultEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptedForDistance" data-uid="GrxCAD.EditorInput.Editor.PromptedForDistance">
+  PromptedForDistance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptDoubleResultEventHandler PromptedForDistance</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptDoubleResultEventHandler.html">PromptDoubleResultEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptedForDouble" data-uid="GrxCAD.EditorInput.Editor.PromptedForDouble">
+  PromptedForDouble
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptDoubleResultEventHandler PromptedForDouble</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptDoubleResultEventHandler.html">PromptDoubleResultEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptedForEntity" data-uid="GrxCAD.EditorInput.Editor.PromptedForEntity">
+  PromptedForEntity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptEntityResultEventHandler PromptedForEntity</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptEntityResultEventHandler.html">PromptEntityResultEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptedForInteger" data-uid="GrxCAD.EditorInput.Editor.PromptedForInteger">
+  PromptedForInteger
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptIntegerResultEventHandler PromptedForInteger</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptIntegerResultEventHandler.html">PromptIntegerResultEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptedForKeyword" data-uid="GrxCAD.EditorInput.Editor.PromptedForKeyword">
+  PromptedForKeyword
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptStringResultEventHandler PromptedForKeyword</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptStringResultEventHandler.html">PromptStringResultEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptedForNestedEntity" data-uid="GrxCAD.EditorInput.Editor.PromptedForNestedEntity">
+  PromptedForNestedEntity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptNestedEntityResultEventHandler PromptedForNestedEntity</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptNestedEntityResultEventHandler.html">PromptNestedEntityResultEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptedForPoint" data-uid="GrxCAD.EditorInput.Editor.PromptedForPoint">
+  PromptedForPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptPointResultEventHandler PromptedForPoint</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptPointResultEventHandler.html">PromptPointResultEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptedForSelection" data-uid="GrxCAD.EditorInput.Editor.PromptedForSelection">
+  PromptedForSelection
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptSelectionResultEventHandler PromptedForSelection</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptSelectionResultEventHandler.html">PromptSelectionResultEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptedForString" data-uid="GrxCAD.EditorInput.Editor.PromptedForString">
+  PromptedForString
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptStringResultEventHandler PromptedForString</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptStringResultEventHandler.html">PromptStringResultEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptingForAngle" data-uid="GrxCAD.EditorInput.Editor.PromptingForAngle">
+  PromptingForAngle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptAngleOptionsEventHandler PromptingForAngle</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptAngleOptionsEventHandler.html">PromptAngleOptionsEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptingForCorner" data-uid="GrxCAD.EditorInput.Editor.PromptingForCorner">
+  PromptingForCorner
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptPointOptionsEventHandler PromptingForCorner</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptPointOptionsEventHandler.html">PromptPointOptionsEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptingForDistance" data-uid="GrxCAD.EditorInput.Editor.PromptingForDistance">
+  PromptingForDistance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptDistanceOptionsEventHandler PromptingForDistance</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptDistanceOptionsEventHandler.html">PromptDistanceOptionsEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptingForDouble" data-uid="GrxCAD.EditorInput.Editor.PromptingForDouble">
+  PromptingForDouble
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptDoubleOptionsEventHandler PromptingForDouble</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptDoubleOptionsEventHandler.html">PromptDoubleOptionsEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptingForEntity" data-uid="GrxCAD.EditorInput.Editor.PromptingForEntity">
+  PromptingForEntity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptEntityOptionsEventHandler PromptingForEntity</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptEntityOptionsEventHandler.html">PromptEntityOptionsEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptingForInteger" data-uid="GrxCAD.EditorInput.Editor.PromptingForInteger">
+  PromptingForInteger
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptIntegerOptionsEventHandler PromptingForInteger</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptIntegerOptionsEventHandler.html">PromptIntegerOptionsEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptingForKeyword" data-uid="GrxCAD.EditorInput.Editor.PromptingForKeyword">
+  PromptingForKeyword
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptKeywordOptionsEventHandler PromptingForKeyword</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptKeywordOptionsEventHandler.html">PromptKeywordOptionsEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptingForNestedEntity" data-uid="GrxCAD.EditorInput.Editor.PromptingForNestedEntity">
+  PromptingForNestedEntity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptNestedEntityOptionsEventHandler PromptingForNestedEntity</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptNestedEntityOptionsEventHandler.html">PromptNestedEntityOptionsEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptingForPoint" data-uid="GrxCAD.EditorInput.Editor.PromptingForPoint">
+  PromptingForPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptPointOptionsEventHandler PromptingForPoint</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptPointOptionsEventHandler.html">PromptPointOptionsEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptingForSelection" data-uid="GrxCAD.EditorInput.Editor.PromptingForSelection">
+  PromptingForSelection
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptSelectionOptionsEventHandler PromptingForSelection</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptSelectionOptionsEventHandler.html">PromptSelectionOptionsEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_PromptingForString" data-uid="GrxCAD.EditorInput.Editor.PromptingForString">
+  PromptingForString
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PromptStringOptionsEventHandler PromptingForString</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.PromptStringOptionsEventHandler.html">PromptStringOptionsEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_Rollover" data-uid="GrxCAD.EditorInput.Editor.Rollover">
+  Rollover
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event RolloverEventHandler Rollover</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.RolloverEventHandler.html">RolloverEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_SelectionAdded" data-uid="GrxCAD.EditorInput.Editor.SelectionAdded">
+  SelectionAdded
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SelectionAddedEventHandler SelectionAdded</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.SelectionAddedEventHandler.html">SelectionAddedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GrxCAD_EditorInput_Editor_SelectionRemoved" data-uid="GrxCAD.EditorInput.Editor.SelectionRemoved">
+  SelectionRemoved
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SelectionRemovedEventHandler SelectionRemoved</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.EditorInput.SelectionRemovedEventHandler.html">SelectionRemovedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

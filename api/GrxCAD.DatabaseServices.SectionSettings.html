@@ -1,0 +1,2348 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SectionSettings
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SectionSettings
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GrxCAD.DatabaseServices.SectionSettings">
+
+
+
+  <h1 id="GrxCAD_DatabaseServices_SectionSettings" data-uid="GrxCAD.DatabaseServices.SectionSettings" class="text-break">
+    Class SectionSettings
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GrxCAD.html">GrxCAD</a>.<a class="xref" href="GrxCAD.DatabaseServices.html">DatabaseServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>gmdb.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;OdDbSectionSettings&quot;)]
+public class SectionSettings : DBObject, IDisposable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html">DisposableWrapper</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.RXObject.html">RXObject</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html">Drawable</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.DBObject.html">DBObject</a></div>
+      <div><span class="xref">SectionSettings</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_ApplyPaperOrientationTransform_GrxCAD_DatabaseServices_Viewport_">DBObject.ApplyPaperOrientationTransform(Viewport)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_ApplyPartialUndo_GrxCAD_DatabaseServices_DwgFiler_GrxCAD_Runtime_RXClass_">DBObject.ApplyPartialUndo(DwgFiler, RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Clone">DBObject.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_CopyFrom_GrxCAD_Runtime_RXObject_">DBObject.CopyFrom(RXObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_AssertNotifyEnabled">DBObject.AssertNotifyEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_AssertReadEnabled">DBObject.AssertReadEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_AssertWriteEnabled_System_Boolean_System_Boolean_">DBObject.AssertWriteEnabled(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Audit_GrxCAD_DatabaseServices_AuditInfo_">DBObject.Audit(AuditInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Cancel">DBObject.Cancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Close">DBObject.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_CloseAndPage_System_Boolean_">DBObject.CloseAndPage(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_CreateExtensionDictionary">DBObject.CreateExtensionDictionary()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DecomposeForSave_GrxCAD_DatabaseServices_DwgVersion_">DBObject.DecomposeForSave(DwgVersion)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DeepClone_GrxCAD_DatabaseServices_DBObject_GrxCAD_DatabaseServices_IdMapping_System_Boolean_">DBObject.DeepClone(DBObject, IdMapping, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DeleteUnmanagedObject">DBObject.DeleteUnmanagedObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DisableUndoRecording_System_Boolean_">DBObject.DisableUndoRecording(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DowngradeOpen">DBObject.DowngradeOpen()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DowngradeToNotify_System_Boolean_">DBObject.DowngradeToNotify(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DwgIn_GrxCAD_DatabaseServices_DwgFiler_">DBObject.DwgIn(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DwgOut_GrxCAD_DatabaseServices_DwgFiler_">DBObject.DwgOut(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DxfIn_GrxCAD_DatabaseServices_DxfFiler_">DBObject.DxfIn(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DxfOut_GrxCAD_DatabaseServices_DxfFiler_">DBObject.DxfOut(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DwgInFields_GrxCAD_DatabaseServices_DwgFiler_">DBObject.DwgInFields(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DwgOutFields_GrxCAD_DatabaseServices_DwgFiler_">DBObject.DwgOutFields(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DxfInFields_GrxCAD_DatabaseServices_DxfFiler_">DBObject.DxfInFields(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_DxfOutFields_GrxCAD_DatabaseServices_DxfFiler_">DBObject.DxfOutFields(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Erase_System_Boolean_">DBObject.Erase(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Erase">DBObject.Erase()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_FromAcadObject_System_Object_">DBObject.FromAcadObject(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_GetField_System_String_">DBObject.GetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_GetField">DBObject.GetField()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_GetObjectSaveVersion_GrxCAD_DatabaseServices_DxfFiler_">DBObject.GetObjectSaveVersion(DxfFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_GetObjectSaveVersion_GrxCAD_DatabaseServices_DwgFiler_">DBObject.GetObjectSaveVersion(DwgFiler)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_GetPersistentReactorIds">DBObject.GetPersistentReactorIds()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_AddPersistentReactor_GrxCAD_DatabaseServices_ObjectId_">DBObject.AddPersistentReactor(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_RemovePersistentReactor_GrxCAD_DatabaseServices_ObjectId_">DBObject.RemovePersistentReactor(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_GetReactors">DBObject.GetReactors()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_GetTransientReactors">DBObject.GetTransientReactors()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_GetXDataForApplication_System_String_">DBObject.GetXDataForApplication(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_HandOverTo_GrxCAD_DatabaseServices_DBObject_System_Boolean_System_Boolean_">DBObject.HandOverTo(DBObject, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_HasPersistentReactor_GrxCAD_DatabaseServices_ObjectId_">DBObject.HasPersistentReactor(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsCustomObject_GrxCAD_DatabaseServices_ObjectId_">DBObject.IsCustomObject(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_ReleaseExtensionDictionary">DBObject.ReleaseExtensionDictionary()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_AddContext_GrxCAD_DatabaseServices_ObjectContext_">DBObject.AddContext(ObjectContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_RemoveContext_GrxCAD_DatabaseServices_ObjectContext_">DBObject.RemoveContext(ObjectContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_HasContext_GrxCAD_DatabaseServices_ObjectContext_">DBObject.HasContext(ObjectContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_RemoveField_System_String_">DBObject.RemoveField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_RemoveField_GrxCAD_DatabaseServices_ObjectId_">DBObject.RemoveField(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_RemoveField">DBObject.RemoveField()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_ResetScaleDependentProperties">DBObject.ResetScaleDependentProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SetField_System_String_GrxCAD_DatabaseServices_Field_">DBObject.SetField(string, Field)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SetField_GrxCAD_DatabaseServices_Field_">DBObject.SetField(Field)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SetFromStyle">DBObject.SetFromStyle()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SetObjectIdsInFlux">DBObject.SetObjectIdsInFlux()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SetPaperOrientation_System_Boolean_">DBObject.SetPaperOrientation(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SupportsCollection_System_String_">DBObject.SupportsCollection(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SwapIdWith_GrxCAD_DatabaseServices_ObjectId_System_Boolean_System_Boolean_">DBObject.SwapIdWith(ObjectId, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SwapReferences_GrxCAD_DatabaseServices_IdMapping_">DBObject.SwapReferences(IdMapping)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_UpgradeFromNotify">DBObject.UpgradeFromNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_UpgradeOpen">DBObject.UpgradeOpen()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_WblockClone_GrxCAD_Runtime_RXObject_GrxCAD_DatabaseServices_IdMapping_System_Boolean_">DBObject.WblockClone(RXObject, IdMapping, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SubSetAttributes_GrxCAD_GraphicsInterface_DrawableTraits_">DBObject.SubSetAttributes(DrawableTraits)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SubViewportDraw_GrxCAD_GraphicsInterface_ViewportDraw_">DBObject.SubViewportDraw(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SubViewportDrawLogicalFlags_GrxCAD_GraphicsInterface_ViewportDraw_">DBObject.SubViewportDrawLogicalFlags(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SubWorldDraw_GrxCAD_GraphicsInterface_WorldDraw_">DBObject.SubWorldDraw(WorldDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_XDataTransformBy_GrxCAD_Geometry_Matrix3d_">DBObject.XDataTransformBy(Matrix3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_GetEventExtender_System_Boolean_">DBObject.GetEventExtender(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Dispose_System_Boolean_">DBObject.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_XData">DBObject.XData</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_UndoFiler">DBObject.UndoFiler</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_PaperOrientation">DBObject.PaperOrientation</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_ObjectBirthVersion">DBObject.ObjectBirthVersion</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_MergeStyle">DBObject.MergeStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsWriteEnabled">DBObject.IsWriteEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsUndoing">DBObject.IsUndoing</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsTransactionResident">DBObject.IsTransactionResident</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsReallyClosing">DBObject.IsReallyClosing</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsReadEnabled">DBObject.IsReadEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsPersistent">DBObject.IsPersistent</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsObjectIdsInFlux">DBObject.IsObjectIdsInFlux</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsNotifying">DBObject.IsNotifying</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsNotifyEnabled">DBObject.IsNotifyEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsNewObject">DBObject.IsNewObject</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsModifiedXData">DBObject.IsModifiedXData</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsModifiedGraphics">DBObject.IsModifiedGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsModified">DBObject.IsModified</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsEraseStatusToggled">DBObject.IsEraseStatusToggled</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsErased">DBObject.IsErased</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsCancelling">DBObject.IsCancelling</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_IsAProxy">DBObject.IsAProxy</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_OwnerId">DBObject.OwnerId</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_ObjectId">DBObject.ObjectId</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Id">DBObject.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_HasSaveVersionOverride">DBObject.HasSaveVersionOverride</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_HasFields">DBObject.HasFields</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Handle">DBObject.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_ExtensionDictionary">DBObject.ExtensionDictionary</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Drawable">DBObject.Drawable</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Database">DBObject.Database</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_ClassID">DBObject.ClassID</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Annotative">DBObject.Annotative</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_AcadObject">DBObject.AcadObject</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Unappended">DBObject.Unappended</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_SubObjectModified">DBObject.SubObjectModified</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Reappended">DBObject.Reappended</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_OpenedForModify">DBObject.OpenedForModify</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_ObjectClosed">DBObject.ObjectClosed</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_ModifyUndone">DBObject.ModifyUndone</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_ModifiedXData">DBObject.ModifiedXData</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Modified">DBObject.Modified</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Goodbye">DBObject.Goodbye</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Erased">DBObject.Erased</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Copied">DBObject.Copied</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.DatabaseServices.DBObject.html#GrxCAD_DatabaseServices_DBObject_Cancelled">DBObject.Cancelled</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html#GrxCAD_GraphicsInterface_Drawable_SetAttributes_GrxCAD_GraphicsInterface_DrawableTraits_">Drawable.SetAttributes(DrawableTraits)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html#GrxCAD_GraphicsInterface_Drawable_ViewportDraw_GrxCAD_GraphicsInterface_ViewportDraw_">Drawable.ViewportDraw(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html#GrxCAD_GraphicsInterface_Drawable_ViewportDrawLogicalFlags_GrxCAD_GraphicsInterface_ViewportDraw_">Drawable.ViewportDrawLogicalFlags(ViewportDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html#GrxCAD_GraphicsInterface_Drawable_WorldDraw_GrxCAD_GraphicsInterface_WorldDraw_">Drawable.WorldDraw(WorldDraw)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html#GrxCAD_GraphicsInterface_Drawable_drawableType">Drawable.drawableType</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html#GrxCAD_GraphicsInterface_Drawable_Bounds">Drawable.Bounds</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_Create_System_IntPtr_System_Boolean_">RXObject.Create(IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_GetRXClass">RXObject.GetRXClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_CompareTo_System_Object_">RXObject.CompareTo(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_GetClass_System_Type_">RXObject.GetClass(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_QueryX_GrxCAD_Runtime_RXClass_">RXObject.QueryX(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_X_GrxCAD_Runtime_RXClass_">RXObject.X(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_m_bAutoDelete">DisposableWrapper.m_bAutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_m_imp">DisposableWrapper.m_imp</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Detach">DisposableWrapper.Detach()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Create_System_Type_System_IntPtr_System_Boolean_">DisposableWrapper.Create(Type, IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Equals_System_Object_">DisposableWrapper.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_GetHashCode">DisposableWrapper.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Dispose">DisposableWrapper.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_UnmanagedObject">DisposableWrapper.UnmanagedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_IsDisposed">DisposableWrapper.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_AutoDelete">DisposableWrapper.AutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone">MarshalByRefObject.MemberwiseClone(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref">MarshalByRefObject.CreateObjRef(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings__ctor_" data-uid="GrxCAD.DatabaseServices.SectionSettings.#ctor*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings__ctor" data-uid="GrxCAD.DatabaseServices.SectionSettings.#ctor">
+  SectionSettings()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SectionSettings()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings__ctor_" data-uid="GrxCAD.DatabaseServices.SectionSettings.#ctor*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings__ctor_System_IntPtr_System_Boolean_" data-uid="GrxCAD.DatabaseServices.SectionSettings.#ctor(System.IntPtr,System.Boolean)">
+  SectionSettings(IntPtr, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SectionSettings(IntPtr unmanagedPointer, bool autoDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unmanagedPointer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_CurrentSectionType_" data-uid="GrxCAD.DatabaseServices.SectionSettings.CurrentSectionType*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_CurrentSectionType" data-uid="GrxCAD.DatabaseServices.SectionSettings.CurrentSectionType">
+  CurrentSectionType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SectionType CurrentSectionType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_Color_" data-uid="GrxCAD.DatabaseServices.SectionSettings.Color*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_Color_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_" data-uid="GrxCAD.DatabaseServices.SectionSettings.Color(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry)">
+  Color(SectionType, SectionGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color Color(SectionType nSecType, SectionGeometry nGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Colors.Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_DestinationBlock_" data-uid="GrxCAD.DatabaseServices.SectionSettings.DestinationBlock*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_DestinationBlock_GrxCAD_DatabaseServices_SectionType_" data-uid="GrxCAD.DatabaseServices.SectionSettings.DestinationBlock(GrxCAD.DatabaseServices.SectionType)">
+  DestinationBlock(SectionType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectId DestinationBlock(SectionType nSecType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_DestinationFile_" data-uid="GrxCAD.DatabaseServices.SectionSettings.DestinationFile*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_DestinationFile_GrxCAD_DatabaseServices_SectionType_" data-uid="GrxCAD.DatabaseServices.SectionSettings.DestinationFile(GrxCAD.DatabaseServices.SectionType)">
+  DestinationFile(SectionType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DestinationFile(SectionType nSecType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_DivisionLines_" data-uid="GrxCAD.DatabaseServices.SectionSettings.DivisionLines*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_DivisionLines_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_" data-uid="GrxCAD.DatabaseServices.SectionSettings.DivisionLines(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry)">
+  DivisionLines(SectionType, SectionGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DivisionLines(SectionType nSecType, SectionGeometry nGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_EdgeTransparency_" data-uid="GrxCAD.DatabaseServices.SectionSettings.EdgeTransparency*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_EdgeTransparency_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_" data-uid="GrxCAD.DatabaseServices.SectionSettings.EdgeTransparency(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry)">
+  EdgeTransparency(SectionType, SectionGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int EdgeTransparency(SectionType nSecType, SectionGeometry nGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_FaceTransparency_" data-uid="GrxCAD.DatabaseServices.SectionSettings.FaceTransparency*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_FaceTransparency_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_" data-uid="GrxCAD.DatabaseServices.SectionSettings.FaceTransparency(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry)">
+  FaceTransparency(SectionType, SectionGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FaceTransparency(SectionType nSecType, SectionGeometry nGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_GenerationOptions_" data-uid="GrxCAD.DatabaseServices.SectionSettings.GenerationOptions*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_GenerationOptions_GrxCAD_DatabaseServices_SectionType_" data-uid="GrxCAD.DatabaseServices.SectionSettings.GenerationOptions(GrxCAD.DatabaseServices.SectionType)">
+  GenerationOptions(SectionType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SectionGeneration GenerationOptions(SectionType nSecType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.SectionGeneration.html">SectionGeneration</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_GetHatchPatternName_" data-uid="GrxCAD.DatabaseServices.SectionSettings.GetHatchPatternName*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_GetHatchPatternName_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_" data-uid="GrxCAD.DatabaseServices.SectionSettings.GetHatchPatternName(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry)">
+  GetHatchPatternName(SectionType, SectionGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetHatchPatternName(SectionType nSecType, SectionGeometry nGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_GetHatchPatternType_" data-uid="GrxCAD.DatabaseServices.SectionSettings.GetHatchPatternType*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_GetHatchPatternType_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_" data-uid="GrxCAD.DatabaseServices.SectionSettings.GetHatchPatternType(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry)">
+  GetHatchPatternType(SectionType, SectionGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HatchPatternType GetHatchPatternType(SectionType nSecType, SectionGeometry nGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.HatchPatternType.html">HatchPatternType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_GetSourceObjects_" data-uid="GrxCAD.DatabaseServices.SectionSettings.GetSourceObjects*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_GetSourceObjects_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_ObjectIdCollection_" data-uid="GrxCAD.DatabaseServices.SectionSettings.GetSourceObjects(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.ObjectIdCollection)">
+  GetSourceObjects(SectionType, ObjectIdCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetSourceObjects(SectionType nSecType, ObjectIdCollection ids)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>ids</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectIdCollection.html">ObjectIdCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_HatchAngle_" data-uid="GrxCAD.DatabaseServices.SectionSettings.HatchAngle*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_HatchAngle_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_" data-uid="GrxCAD.DatabaseServices.SectionSettings.HatchAngle(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry)">
+  HatchAngle(SectionType, SectionGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double HatchAngle(SectionType nSecType, SectionGeometry nGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_HatchScale_" data-uid="GrxCAD.DatabaseServices.SectionSettings.HatchScale*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_HatchScale_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_" data-uid="GrxCAD.DatabaseServices.SectionSettings.HatchScale(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry)">
+  HatchScale(SectionType, SectionGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double HatchScale(SectionType nSecType, SectionGeometry nGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_HatchSpacing_" data-uid="GrxCAD.DatabaseServices.SectionSettings.HatchSpacing*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_HatchSpacing_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_" data-uid="GrxCAD.DatabaseServices.SectionSettings.HatchSpacing(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry)">
+  HatchSpacing(SectionType, SectionGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double HatchSpacing(SectionType nSecType, SectionGeometry nGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_HatchVisibility_" data-uid="GrxCAD.DatabaseServices.SectionSettings.HatchVisibility*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_HatchVisibility_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_" data-uid="GrxCAD.DatabaseServices.SectionSettings.HatchVisibility(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry)">
+  HatchVisibility(SectionType, SectionGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HatchVisibility(SectionType nSecType, SectionGeometry nGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_HiddenLine_" data-uid="GrxCAD.DatabaseServices.SectionSettings.HiddenLine*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_HiddenLine_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_" data-uid="GrxCAD.DatabaseServices.SectionSettings.HiddenLine(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry)">
+  HiddenLine(SectionType, SectionGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HiddenLine(SectionType nSecType, SectionGeometry nGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_Layer_" data-uid="GrxCAD.DatabaseServices.SectionSettings.Layer*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_Layer_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_" data-uid="GrxCAD.DatabaseServices.SectionSettings.Layer(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry)">
+  Layer(SectionType, SectionGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Layer(SectionType nSecType, SectionGeometry nGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_LineWeight_" data-uid="GrxCAD.DatabaseServices.SectionSettings.LineWeight*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_LineWeight_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_" data-uid="GrxCAD.DatabaseServices.SectionSettings.LineWeight(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry)">
+  LineWeight(SectionType, SectionGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LineWeight LineWeight(SectionType nSecType, SectionGeometry nGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.LineWeight.html">LineWeight</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_Linetype_" data-uid="GrxCAD.DatabaseServices.SectionSettings.Linetype*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_Linetype_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_" data-uid="GrxCAD.DatabaseServices.SectionSettings.Linetype(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry)">
+  Linetype(SectionType, SectionGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Linetype(SectionType nSecType, SectionGeometry nGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_LinetypeScale_" data-uid="GrxCAD.DatabaseServices.SectionSettings.LinetypeScale*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_LinetypeScale_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_" data-uid="GrxCAD.DatabaseServices.SectionSettings.LinetypeScale(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry)">
+  LinetypeScale(SectionType, SectionGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double LinetypeScale(SectionType nSecType, SectionGeometry nGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_PlotStyleName_" data-uid="GrxCAD.DatabaseServices.SectionSettings.PlotStyleName*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_PlotStyleName_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_" data-uid="GrxCAD.DatabaseServices.SectionSettings.PlotStyleName(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry)">
+  PlotStyleName(SectionType, SectionGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PlotStyleName(SectionType nSecType, SectionGeometry nGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_Reset_" data-uid="GrxCAD.DatabaseServices.SectionSettings.Reset*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_Reset" data-uid="GrxCAD.DatabaseServices.SectionSettings.Reset">
+  Reset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_Reset_" data-uid="GrxCAD.DatabaseServices.SectionSettings.Reset*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_Reset_GrxCAD_DatabaseServices_SectionType_" data-uid="GrxCAD.DatabaseServices.SectionSettings.Reset(GrxCAD.DatabaseServices.SectionType)">
+  Reset(SectionType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset(SectionType nSecType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_SetColor_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetColor*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_SetColor_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_GrxCAD_Colors_Color_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetColor(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry,GrxCAD.Colors.Color)">
+  SetColor(SectionType, SectionGeometry, Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColor(SectionType nSecType, SectionGeometry nGeometry, Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+    <dt><code>color</code> <a class="xref" href="GrxCAD.Colors.Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_SetDestinationBlock_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetDestinationBlock*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_SetDestinationBlock_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_ObjectId_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetDestinationBlock(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.ObjectId)">
+  SetDestinationBlock(SectionType, ObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDestinationBlock(SectionType nSecType, ObjectId id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>id</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_SetDestinationFile_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetDestinationFile*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_SetDestinationFile_GrxCAD_DatabaseServices_SectionType_System_String_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetDestinationFile(GrxCAD.DatabaseServices.SectionType,System.String)">
+  SetDestinationFile(SectionType, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDestinationFile(SectionType nSecType, string pszFileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>pszFileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_SetDivisionLines_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetDivisionLines*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_SetDivisionLines_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_System_Boolean_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetDivisionLines(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry,System.Boolean)">
+  SetDivisionLines(SectionType, SectionGeometry, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDivisionLines(SectionType nSecType, SectionGeometry nGeometry, bool bShow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+    <dt><code>bShow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_SetEdgeTransparency_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetEdgeTransparency*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_SetEdgeTransparency_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_System_Int32_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetEdgeTransparency(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry,System.Int32)">
+  SetEdgeTransparency(SectionType, SectionGeometry, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEdgeTransparency(SectionType nSecType, SectionGeometry nGeometry, int nTransparency)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+    <dt><code>nTransparency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_SetFaceTransparency_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetFaceTransparency*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_SetFaceTransparency_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_System_Int32_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetFaceTransparency(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry,System.Int32)">
+  SetFaceTransparency(SectionType, SectionGeometry, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFaceTransparency(SectionType nSecType, SectionGeometry nGeometry, int nTransparency)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+    <dt><code>nTransparency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_SetGenerationOptions_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetGenerationOptions*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_SetGenerationOptions_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeneration_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetGenerationOptions(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeneration)">
+  SetGenerationOptions(SectionType, SectionGeneration)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGenerationOptions(SectionType nSecType, SectionGeneration nOptions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nOptions</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeneration.html">SectionGeneration</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_SetHatchAngle_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetHatchAngle*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_SetHatchAngle_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_System_Double_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetHatchAngle(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry,System.Double)">
+  SetHatchAngle(SectionType, SectionGeometry, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHatchAngle(SectionType nSecType, SectionGeometry nGeometry, double fAngle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+    <dt><code>fAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_SetHatchPatternName_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetHatchPatternName*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_SetHatchPatternName_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_System_String_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetHatchPatternName(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry,System.String)">
+  SetHatchPatternName(SectionType, SectionGeometry, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHatchPatternName(SectionType nSecType, SectionGeometry nGeometry, string sNewName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+    <dt><code>sNewName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_SetHatchPatternType_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetHatchPatternType*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_SetHatchPatternType_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_GrxCAD_DatabaseServices_HatchPatternType_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetHatchPatternType(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry,GrxCAD.DatabaseServices.HatchPatternType)">
+  SetHatchPatternType(SectionType, SectionGeometry, HatchPatternType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHatchPatternType(SectionType nSecType, SectionGeometry nGeometry, HatchPatternType nPatternType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+    <dt><code>nPatternType</code> <a class="xref" href="GrxCAD.DatabaseServices.HatchPatternType.html">HatchPatternType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_SetHatchScale_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetHatchScale*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_SetHatchScale_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_System_Double_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetHatchScale(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry,System.Double)">
+  SetHatchScale(SectionType, SectionGeometry, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHatchScale(SectionType nSecType, SectionGeometry nGeometry, double fScale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+    <dt><code>fScale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_SetHatchSpacing_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetHatchSpacing*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_SetHatchSpacing_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_System_Double_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetHatchSpacing(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry,System.Double)">
+  SetHatchSpacing(SectionType, SectionGeometry, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHatchSpacing(SectionType nSecType, SectionGeometry nGeometry, double fSpacing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+    <dt><code>fSpacing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_SetHatchVisibility_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetHatchVisibility*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_SetHatchVisibility_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_System_Boolean_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetHatchVisibility(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry,System.Boolean)">
+  SetHatchVisibility(SectionType, SectionGeometry, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHatchVisibility(SectionType nSecType, SectionGeometry nGeometry, bool bVisible)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+    <dt><code>bVisible</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_SetHiddenLine_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetHiddenLine*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_SetHiddenLine_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_System_Boolean_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetHiddenLine(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry,System.Boolean)">
+  SetHiddenLine(SectionType, SectionGeometry, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHiddenLine(SectionType nSecType, SectionGeometry nGeometry, bool bHiddenLine)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+    <dt><code>bHiddenLine</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_SetLayer_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetLayer*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_SetLayer_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_System_String_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetLayer(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry,System.String)">
+  SetLayer(SectionType, SectionGeometry, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLayer(SectionType nSecType, SectionGeometry nGeometry, string pszLayer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+    <dt><code>pszLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_SetLineWeight_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetLineWeight*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_SetLineWeight_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_GrxCAD_DatabaseServices_LineWeight_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetLineWeight(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry,GrxCAD.DatabaseServices.LineWeight)">
+  SetLineWeight(SectionType, SectionGeometry, LineWeight)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLineWeight(SectionType nSecType, SectionGeometry nGeometry, LineWeight nLineWeight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+    <dt><code>nLineWeight</code> <a class="xref" href="GrxCAD.DatabaseServices.LineWeight.html">LineWeight</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_SetLinetype_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetLinetype*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_SetLinetype_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_System_String_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetLinetype(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry,System.String)">
+  SetLinetype(SectionType, SectionGeometry, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLinetype(SectionType nSecType, SectionGeometry nGeometry, string pszLinetype)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+    <dt><code>pszLinetype</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_SetLinetypeScale_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetLinetypeScale*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_SetLinetypeScale_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_System_Double_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetLinetypeScale(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry,System.Double)">
+  SetLinetypeScale(SectionType, SectionGeometry, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLinetypeScale(SectionType nSecType, SectionGeometry nGeometry, double fScale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+    <dt><code>fScale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_SetPlotStyleName_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetPlotStyleName*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_SetPlotStyleName_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_System_String_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetPlotStyleName(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry,System.String)">
+  SetPlotStyleName(SectionType, SectionGeometry, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPlotStyleName(SectionType nSecType, SectionGeometry nGeometry, string pszPlotStyleName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+    <dt><code>pszPlotStyleName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_SetSourceObjects_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetSourceObjects*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_SetSourceObjects_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_ObjectIdCollection_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetSourceObjects(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.ObjectIdCollection)">
+  SetSourceObjects(SectionType, ObjectIdCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSourceObjects(SectionType nSecType, ObjectIdCollection ids)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>ids</code> <a class="xref" href="GrxCAD.DatabaseServices.ObjectIdCollection.html">ObjectIdCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_SetVisibility_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetVisibility*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_SetVisibility_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_System_Boolean_" data-uid="GrxCAD.DatabaseServices.SectionSettings.SetVisibility(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry,System.Boolean)">
+  SetVisibility(SectionType, SectionGeometry, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVisibility(SectionType nSecType, SectionGeometry nGeometry, bool bVisible)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+    <dt><code>bVisible</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_DatabaseServices_SectionSettings_Visibility_" data-uid="GrxCAD.DatabaseServices.SectionSettings.Visibility*"></a>
+
+  <h3 id="GrxCAD_DatabaseServices_SectionSettings_Visibility_GrxCAD_DatabaseServices_SectionType_GrxCAD_DatabaseServices_SectionGeometry_" data-uid="GrxCAD.DatabaseServices.SectionSettings.Visibility(GrxCAD.DatabaseServices.SectionType,GrxCAD.DatabaseServices.SectionGeometry)">
+  Visibility(SectionType, SectionGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Visibility(SectionType nSecType, SectionGeometry nGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nSecType</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionType.html">SectionType</a></dt>
+    <dd></dd>
+    <dt><code>nGeometry</code> <a class="xref" href="GrxCAD.DatabaseServices.SectionGeometry.html">SectionGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

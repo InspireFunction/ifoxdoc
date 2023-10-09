@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>简介 </title>
+      <title>IFoxCAD 说明 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="简介 ">
+      <meta name="title" content="IFoxCAD 说明 ">
       
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -12,10 +12,21 @@
       <meta name="docfx:navrel" content="../toc.html">
       <meta name="docfx:tocrel" content="toc.html">
       
-      
+      <meta name="docfx:rel" content="../">
       
       
       <meta name="docfx:docurl" content="https://github.com/InspireFunction/ifoxdoc/blob/master/articles/intro.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -43,6 +54,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navpanel">
             <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
             </div>
           </div>
         </div>
@@ -72,9 +87,29 @@
         </div>
 
         <article data-uid="">
-<h1 id="简介">简介</h1>
+<h1 id="ifoxcad-说明">IFoxCAD 说明</h1>
 
-<p>这是一个关于ifox项目一些说明文件！</p>
+<p>基于.NET的Cad二次开发类库。</p>
+<h4 id="一项目来源">一、项目来源</h4>
+<p>起初 <strong>雪山飞狐（又狐哥）</strong> 在明经论坛发布了<a href="http://bbs.mjtd.com/thread-75701-1-1.html">开源库</a>，后来狐哥自己的项目进行了极大的丰富后形成NFox类库。然后 <strong>落魄山人</strong> 在征得 雪山飞狐的同意后，对NFox类库进行了整理，增加了注释等，重新发布了NFox类库。</p>
+<p>后来，经过一段时间的更新后，由于莫名其妙的原因NFox类库挂掉了。而这时山人同学已经基本吃透NFox类库，考虑到NFox的封装过于复杂，遂进行了重构。</p>
+<p>重构的类库命名为IFoxCAD， 寓意为：<strong>I(爱)Fox(狐哥)</strong>，本项目发布于<strong>Inspire Function（中文名：跃动方程）</strong> 组织下，感谢 <strong>小轩轩</strong> 给起的名字。</p>
+<p>可以加qq群交流：</p>
+<p>718996771</p>
+<p><strong>QQ群为丐群，所以也可以加入qq频道交流：</strong></p>
+<p><a href="https://pd.qq.com/s/2wmmkv4c2">点击链接加入QQ频道【CAD二次开发】</a></p>
+<h4 id="二-使用帮助">二、 使用帮助</h4>
+<p>IFoxCAD的项目文档请看 <strong><a href="https://www.kdocs.cn/l/cc6ZXSa0vMgD">IFoxCAD类库从入门到精通</a></strong>。</p>
+<h4 id="三ifoxcad-项目模版">三、IFoxCad 项目模版</h4>
+<p>目前由于IFoxCad的版本主要为0.7大版本，0.5、0.6、版本同时已不在更新，为老版本的用户可以继续使用，所以项目模版分为两个主要的版本：</p>
+<ul>
+<li>vs模版插件 （适用于0.5版本）</li>
+<li>net项目模版  （适用于0.6、0.7版本）</li>
+</ul>
+<p>建议使用net项目模版来创建项目，具体的区别可以去上面的文档里查看 <strong><a href="https://kdocs.cn/l/cc6ZXSa0vMgD?linkname=ulYcRm6f9a">4.4 IFoxCad 项目模版</a></strong></p>
+<h4 id="四使用ifoxcad的几种方式">四、使用IFoxCad的几种方式</h4>
+<p>目前IFoxCad的几种使用方式：
+<strong><a href="https://kdocs.cn/l/cc6ZXSa0vMgD?linkname=mhBJO1Vchu">4.5 使用IFoxCad的几种方式</a></strong></p>
 </article>
 
         <div class="contribution d-print-none">
@@ -90,6 +125,7 @@
       </div>
     </main>
 
+    <div class="container-xxl search-results" id="search-results"></div>
 
     <footer class="border-top">
       <div class="container-xxl">

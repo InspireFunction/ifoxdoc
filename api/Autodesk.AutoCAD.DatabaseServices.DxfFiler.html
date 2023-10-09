@@ -1,0 +1,1763 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DxfFiler
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DxfFiler
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler">
+
+
+
+  <h1 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler" class="text-break">
+    Class DxfFiler
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Autodesk.html">Autodesk</a>.<a class="xref" href="Autodesk.AutoCAD.html">AutoCAD</a>.<a class="xref" href="Autodesk.AutoCAD.DatabaseServices.html">DatabaseServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Acdbmgd.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;AcDbDxfFiler&quot;)]
+public abstract class DxfFiler : RXObject, IDisposable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html">DisposableWrapper</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html">RXObject</a></div>
+      <div><span class="xref">DxfFiler</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_Create_System_IntPtr_System_Boolean_">RXObject.Create(IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_GetClass_System_Type_">RXObject.GetClass(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_X_Autodesk_AutoCAD_Runtime_RXClass_">RXObject.X(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_QueryX_Autodesk_AutoCAD_Runtime_RXClass_">RXObject.QueryX(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_GetRXClass">RXObject.GetRXClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_CompareTo_System_Object_">RXObject.CompareTo(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_Clone">RXObject.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_CopyFrom_Autodesk_AutoCAD_Runtime_RXObject_">RXObject.CopyFrom(RXObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.RXObject.html#Autodesk_AutoCAD_Runtime_RXObject_DeleteUnmanagedObject">RXObject.DeleteUnmanagedObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Create_System_Type_System_IntPtr_System_Boolean_">DisposableWrapper.Create(Type, IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Equals_System_Object_">DisposableWrapper.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_GetHashCode">DisposableWrapper.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Dispose_System_Boolean_">DisposableWrapper.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Dispose">DisposableWrapper.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_AutoDelete">DisposableWrapper.AutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_IsDisposed">DisposableWrapper.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_UnmanagedObject">DisposableWrapper.UnmanagedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone">MarshalByRefObject.MemberwiseClone(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref">MarshalByRefObject.CreateObjRef(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler__ctor_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.#ctor*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler__ctor_System_IntPtr_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.#ctor(System.IntPtr,System.Boolean)">
+  DxfFiler(IntPtr, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DxfFiler(IntPtr unmanagedPointer, bool autoDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unmanagedPointer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_AtEmbeddedObjectStart_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.AtEmbeddedObjectStart*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_AtEmbeddedObjectStart" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.AtEmbeddedObjectStart">
+  AtEmbeddedObjectStart
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AtEmbeddedObjectStart { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_AtEndOfFile_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.AtEndOfFile*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_AtEndOfFile" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.AtEndOfFile">
+  AtEndOfFile
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AtEndOfFile { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_AtEndOfObject_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.AtEndOfObject*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_AtEndOfObject" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.AtEndOfObject">
+  AtEndOfObject
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AtEndOfObject { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_AtExtendedData_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.AtExtendedData*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_AtExtendedData" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.AtExtendedData">
+  AtExtendedData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AtExtendedData { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_Database_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.Database*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_Database" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.Database">
+  Database
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Database Database { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Database.html">Database</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_DwgVersion_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.DwgVersion*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_DwgVersion" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.DwgVersion">
+  DwgVersion
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FullDwgVersion DwgVersion { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.FullDwgVersion.html">FullDwgVersion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_Elevation_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.Elevation*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_Elevation" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.Elevation">
+  Elevation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[UnitType(UnitType.Distance)]
+public virtual double Elevation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_ErrorMessage_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.ErrorMessage*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_ErrorMessage" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.ErrorMessage">
+  ErrorMessage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ErrorMessage { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_FilerType_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.FilerType*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_FilerType" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.FilerType">
+  FilerType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FilerType FilerType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.FilerType.html">FilerType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_IncludesDefaultValues_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.IncludesDefaultValues*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_IncludesDefaultValues" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.IncludesDefaultValues">
+  IncludesDefaultValues
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IncludesDefaultValues { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_IsModifyingExistingObject_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.IsModifyingExistingObject*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_IsModifyingExistingObject" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.IsModifyingExistingObject">
+  IsModifyingExistingObject
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsModifyingExistingObject { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_Precision_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.Precision*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_Precision" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.Precision">
+  Precision
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Precision { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_Thickness_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.Thickness*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_Thickness" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.Thickness">
+  Thickness
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[UnitType(UnitType.Distance)]
+public virtual double Thickness { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_AtSubclassData_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.AtSubclassData*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_AtSubclassData_System_String_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.AtSubclassData(System.String)">
+  AtSubclassData(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AtSubclassData(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_FilerStatus_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.FilerStatus*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_FilerStatus" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.FilerStatus">
+  FilerStatus()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void FilerStatus()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_HaltAtClassBoundaries_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.HaltAtClassBoundaries*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_HaltAtClassBoundaries_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.HaltAtClassBoundaries(System.Boolean)">
+  HaltAtClassBoundaries(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void HaltAtClassBoundaries(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_PushBackItem_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.PushBackItem*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_PushBackItem" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.PushBackItem">
+  PushBackItem()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PushBackItem()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_ReadResultBuffer_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.ReadResultBuffer*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_ReadResultBuffer" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.ReadResultBuffer">
+  ReadResultBuffer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ResultBuffer ReadResultBuffer()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ResultBuffer.html">ResultBuffer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_ResetFilerStatus_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.ResetFilerStatus*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_ResetFilerStatus" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.ResetFilerStatus">
+  ResetFilerStatus()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ResetFilerStatus()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_RewindFiler_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.RewindFiler*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_RewindFiler" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.RewindFiler">
+  RewindFiler()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int RewindFiler()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_SetError_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.SetError*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_SetError_Autodesk_AutoCAD_Runtime_ErrorStatus_System_String_System_String___" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.SetError(Autodesk.AutoCAD.Runtime.ErrorStatus,System.String,System.String[])">
+  SetError(ErrorStatus, string, params string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetError(ErrorStatus value, string format, params string[] values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="Autodesk.AutoCAD.Runtime.ErrorStatus.html">ErrorStatus</a></dt>
+    <dd></dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_SetError_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.SetError*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_SetError_System_String_System_String___" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.SetError(System.String,System.String[])">
+  SetError(string, params string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetError(string format, params string[] values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteBool_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteBool*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteBool_Autodesk_AutoCAD_DatabaseServices_DxfCode_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteBool(Autodesk.AutoCAD.DatabaseServices.DxfCode,System.Boolean)">
+  WriteBool(DxfCode, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteBool(DxfCode opCode, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteBoolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteBoolean*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteBoolean_Autodesk_AutoCAD_DatabaseServices_DxfCode_System_Boolean_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteBoolean(Autodesk.AutoCAD.DatabaseServices.DxfCode,System.Boolean)">
+  WriteBoolean(DxfCode, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteBoolean(DxfCode opCode, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteByte_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteByte*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteByte_Autodesk_AutoCAD_DatabaseServices_DxfCode_System_Byte_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteByte(Autodesk.AutoCAD.DatabaseServices.DxfCode,System.Byte)">
+  WriteByte(DxfCode, byte)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteByte(DxfCode opCode, byte value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteBytes_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteBytes*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteBytes_Autodesk_AutoCAD_DatabaseServices_DxfCode_System_Byte___" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteBytes(Autodesk.AutoCAD.DatabaseServices.DxfCode,System.Byte[])">
+  WriteBytes(DxfCode, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteBytes(DxfCode opCode, byte[] chunk)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>chunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteDouble_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteDouble*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteDouble_Autodesk_AutoCAD_DatabaseServices_DxfCode_System_Double_System_Int32_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteDouble(Autodesk.AutoCAD.DatabaseServices.DxfCode,System.Double,System.Int32)">
+  WriteDouble(DxfCode, double, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteDouble(DxfCode opCode, double value, int precision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>precision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteEmbeddedObjectStart_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteEmbeddedObjectStart*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteEmbeddedObjectStart" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteEmbeddedObjectStart">
+  WriteEmbeddedObjectStart()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteEmbeddedObjectStart()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteHandle_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteHandle*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteHandle_Autodesk_AutoCAD_DatabaseServices_DxfCode_Autodesk_AutoCAD_DatabaseServices_Handle_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteHandle(Autodesk.AutoCAD.DatabaseServices.DxfCode,Autodesk.AutoCAD.DatabaseServices.Handle)">
+  WriteHandle(DxfCode, Handle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteHandle(DxfCode opCode, Handle value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.Handle.html">Handle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteInt16_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteInt16*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteInt16_Autodesk_AutoCAD_DatabaseServices_DxfCode_System_Int16_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteInt16(Autodesk.AutoCAD.DatabaseServices.DxfCode,System.Int16)">
+  WriteInt16(DxfCode, short)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteInt16(DxfCode opCode, short value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteInt32_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteInt32*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteInt32_Autodesk_AutoCAD_DatabaseServices_DxfCode_System_Int32_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteInt32(Autodesk.AutoCAD.DatabaseServices.DxfCode,System.Int32)">
+  WriteInt32(DxfCode, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteInt32(DxfCode opCode, int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteInt64_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteInt64*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteInt64_Autodesk_AutoCAD_DatabaseServices_DxfCode_System_Int64_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteInt64(Autodesk.AutoCAD.DatabaseServices.DxfCode,System.Int64)">
+  WriteInt64(DxfCode, long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteInt64(DxfCode opCode, long value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteObjectId_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteObjectId*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteObjectId_Autodesk_AutoCAD_DatabaseServices_DxfCode_Autodesk_AutoCAD_DatabaseServices_ObjectId_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteObjectId(Autodesk.AutoCAD.DatabaseServices.DxfCode,Autodesk.AutoCAD.DatabaseServices.ObjectId)">
+  WriteObjectId(DxfCode, ObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteObjectId(DxfCode opCode, ObjectId value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ObjectId.html">ObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WritePoint2d_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WritePoint2d*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WritePoint2d_Autodesk_AutoCAD_DatabaseServices_DxfCode_Autodesk_AutoCAD_Geometry_Point2d_System_Int32_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WritePoint2d(Autodesk.AutoCAD.DatabaseServices.DxfCode,Autodesk.AutoCAD.Geometry.Point2d,System.Int32)">
+  WritePoint2d(DxfCode, Point2d, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WritePoint2d(DxfCode opCode, Point2d value, int precision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+    <dt><code>precision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WritePoint3d_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WritePoint3d*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WritePoint3d_Autodesk_AutoCAD_DatabaseServices_DxfCode_Autodesk_AutoCAD_Geometry_Point3d_System_Int32_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WritePoint3d(Autodesk.AutoCAD.DatabaseServices.DxfCode,Autodesk.AutoCAD.Geometry.Point3d,System.Int32)">
+  WritePoint3d(DxfCode, Point3d, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WritePoint3d(DxfCode opCode, Point3d value, int precision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>precision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteResultBuffer_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteResultBuffer*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteResultBuffer_Autodesk_AutoCAD_DatabaseServices_ResultBuffer_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteResultBuffer(Autodesk.AutoCAD.DatabaseServices.ResultBuffer)">
+  WriteResultBuffer(ResultBuffer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteResultBuffer(ResultBuffer buffer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buffer</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.ResultBuffer.html">ResultBuffer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteScale3d_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteScale3d*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteScale3d_Autodesk_AutoCAD_DatabaseServices_DxfCode_Autodesk_AutoCAD_Geometry_Scale3d_System_Int32_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteScale3d(Autodesk.AutoCAD.DatabaseServices.DxfCode,Autodesk.AutoCAD.Geometry.Scale3d,System.Int32)">
+  WriteScale3d(DxfCode, Scale3d, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteScale3d(DxfCode opCode, Scale3d value, int precision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Scale3d.html">Scale3d</a></dt>
+    <dd></dd>
+    <dt><code>precision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteString_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteString*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteString_Autodesk_AutoCAD_DatabaseServices_DxfCode_System_String_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteString(Autodesk.AutoCAD.DatabaseServices.DxfCode,System.String)">
+  WriteString(DxfCode, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteString(DxfCode opCode, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteUInt16_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteUInt16*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteUInt16_Autodesk_AutoCAD_DatabaseServices_DxfCode_System_UInt16_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteUInt16(Autodesk.AutoCAD.DatabaseServices.DxfCode,System.UInt16)">
+  WriteUInt16(DxfCode, ushort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteUInt16(DxfCode opCode, ushort value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteUInt32_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteUInt32*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteUInt32_Autodesk_AutoCAD_DatabaseServices_DxfCode_System_UInt32_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteUInt32(Autodesk.AutoCAD.DatabaseServices.DxfCode,System.UInt32)">
+  WriteUInt32(DxfCode, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteUInt32(DxfCode opCode, uint value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteUInt64_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteUInt64*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteUInt64_Autodesk_AutoCAD_DatabaseServices_DxfCode_System_UInt64_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteUInt64(Autodesk.AutoCAD.DatabaseServices.DxfCode,System.UInt64)">
+  WriteUInt64(DxfCode, ulong)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteUInt64(DxfCode opCode, ulong value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteVector2d_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteVector2d*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteVector2d_Autodesk_AutoCAD_DatabaseServices_DxfCode_Autodesk_AutoCAD_Geometry_Vector2d_System_Int32_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteVector2d(Autodesk.AutoCAD.DatabaseServices.DxfCode,Autodesk.AutoCAD.Geometry.Vector2d,System.Int32)">
+  WriteVector2d(DxfCode, Vector2d, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteVector2d(DxfCode opCode, Vector2d value, int precision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+    <dt><code>precision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteVector3d_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteVector3d*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteVector3d_Autodesk_AutoCAD_DatabaseServices_DxfCode_Autodesk_AutoCAD_Geometry_Vector3d_System_Int32_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteVector3d(Autodesk.AutoCAD.DatabaseServices.DxfCode,Autodesk.AutoCAD.Geometry.Vector3d,System.Int32)">
+  WriteVector3d(DxfCode, Vector3d, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteVector3d(DxfCode opCode, Vector3d value, int precision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opCode</code> <a class="xref" href="Autodesk.AutoCAD.DatabaseServices.DxfCode.html">DxfCode</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Autodesk.AutoCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+    <dt><code>precision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteXDataStart_" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteXDataStart*"></a>
+
+  <h3 id="Autodesk_AutoCAD_DatabaseServices_DxfFiler_WriteXDataStart" data-uid="Autodesk.AutoCAD.DatabaseServices.DxfFiler.WriteXDataStart">
+  WriteXDataStart()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteXDataStart()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

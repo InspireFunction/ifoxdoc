@@ -1,0 +1,710 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RXObject
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RXObject
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GrxCAD.Runtime.RXObject">
+
+
+
+  <h1 id="GrxCAD_Runtime_RXObject" data-uid="GrxCAD.Runtime.RXObject" class="text-break">
+    Class RXObject
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GrxCAD.html">GrxCAD</a>.<a class="xref" href="GrxCAD.Runtime.html">Runtime</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>gmdb.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;OdRxObject&quot;)]
+public abstract class RXObject : DisposableWrapper, IDisposable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html">DisposableWrapper</a></div>
+      <div><span class="xref">RXObject</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.AbstractViewPE.html">AbstractViewPE</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.DataCell.html">DataCell</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.DataColumn.html">DataColumn</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.DataLinkManager.html">DataLinkManager</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.Database.html">Database</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.DbDictionaryEnumerator.html">DbDictionaryEnumerator</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.DwgFiler.html">DwgFiler</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.DxfFiler.html">DxfFiler</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.FieldEngine.html">FieldEngine</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.FieldEvaluator.html">FieldEvaluator</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.FieldEvaluatorLoader.html">FieldEvaluatorLoader</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.FieldResult.html">FieldResult</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.HostApplicationServices.html">HostApplicationServices</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.IdMapping.html">IdMapping</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.LayerStateManager.html">LayerStateManager</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.LayoutManager.html">LayoutManager</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.MatchProperties.html">MatchProperties</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.ObjectContext.html">ObjectContext</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.ObjectContextCollection.html">ObjectContextCollection</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.ObjectContextCollectionEnumerator.html">ObjectContextCollectionEnumerator</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.ObjectContextManager.html">ObjectContextManager</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.ObjectIterator.html">ObjectIterator</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.PointRef.html">PointRef</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.Transaction.html">Transaction</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.TransactionManager.html">TransactionManager</a></div>
+      <div><a class="xref" href="GrxCAD.DatabaseServices.UnderlayHost.html">UnderlayHost</a></div>
+      <div><a class="xref" href="GrxCAD.Export_Import.DWFImport.html">DWFImport</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.CommonDraw.html">CommonDraw</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.Context.html">Context</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.DisplayStyle.html">DisplayStyle</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.Drawable.html">Drawable</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.DrawableTraits.html">DrawableTraits</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.EdgeStyle.html">EdgeStyle</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.FaceStyle.html">FaceStyle</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.GIRasterImage.html">GIRasterImage</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.Geometry.html">Geometry</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.LightAttenuation.html">LightAttenuation</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.Mapper.html">Mapper</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.MaterialColor.html">MaterialColor</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.MaterialMap.html">MaterialMap</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.MaterialTexture.html">MaterialTexture</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.ShadowParameters.html">ShadowParameters</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.TextStyle.html">TextStyle</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.Variant.html">Variant</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.Viewport.html">Viewport</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.VisualStyle.html">VisualStyle</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsSystem.Device.html">Device</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsSystem.Model.html">Model</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsSystem.View.html">View</a></div>
+      <div><a class="xref" href="GrxCAD.LayerManager.LayerFilter.html">LayerFilter</a></div>
+      <div><a class="xref" href="GrxCAD.PlottingServices.DsdData.html">DsdData</a></div>
+      <div><a class="xref" href="GrxCAD.PlottingServices.DsdEntry.html">DsdEntry</a></div>
+      <div><a class="xref" href="GrxCAD.PlottingServices.PlotConfig.html">PlotConfig</a></div>
+      <div><a class="xref" href="GrxCAD.PlottingServices.PlotConfigInfo.html">PlotConfigInfo</a></div>
+      <div><a class="xref" href="GrxCAD.PlottingServices.PlotInfo.html">PlotInfo</a></div>
+      <div><a class="xref" href="GrxCAD.PlottingServices.PlotInfoValidator.html">PlotInfoValidator</a></div>
+      <div><a class="xref" href="GrxCAD.PlottingServices.PlotPageInfo.html">PlotPageInfo</a></div>
+      <div><a class="xref" href="GrxCAD.Publishing.Dwf3dNavigationTreeNode.html">Dwf3dNavigationTreeNode</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.Dictionary.html">Dictionary</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.DictionaryIterator.html">DictionaryIterator</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.DynamicLinker.html">DynamicLinker</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.Module.html">Module</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.Overrule.html">Overrule</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.RXClass.html">RXClass</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.RxVariant.html">RxVariant</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.StreamBuf.html">StreamBuf</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_m_bAutoDelete">DisposableWrapper.m_bAutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_m_imp">DisposableWrapper.m_imp</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Detach">DisposableWrapper.Detach()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Create_System_Type_System_IntPtr_System_Boolean_">DisposableWrapper.Create(Type, IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Equals_System_Object_">DisposableWrapper.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_GetHashCode">DisposableWrapper.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Dispose_System_Boolean_">DisposableWrapper.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Dispose">DisposableWrapper.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_UnmanagedObject">DisposableWrapper.UnmanagedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_IsDisposed">DisposableWrapper.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_AutoDelete">DisposableWrapper.AutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone">MarshalByRefObject.MemberwiseClone(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref">MarshalByRefObject.CreateObjRef(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GrxCAD_Runtime_RXObject__ctor_" data-uid="GrxCAD.Runtime.RXObject.#ctor*"></a>
+
+  <h3 id="GrxCAD_Runtime_RXObject__ctor_System_IntPtr_System_Boolean_" data-uid="GrxCAD.Runtime.RXObject.#ctor(System.IntPtr,System.Boolean)">
+  RXObject(IntPtr, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RXObject(IntPtr unmanagedPointer, bool autoDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unmanagedPointer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GrxCAD_Runtime_RXObject_Clone_" data-uid="GrxCAD.Runtime.RXObject.Clone*"></a>
+
+  <h3 id="GrxCAD_Runtime_RXObject_Clone" data-uid="GrxCAD.Runtime.RXObject.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_RXObject_CompareTo_" data-uid="GrxCAD.Runtime.RXObject.CompareTo*"></a>
+
+  <h3 id="GrxCAD_Runtime_RXObject_CompareTo_System_Object_" data-uid="GrxCAD.Runtime.RXObject.CompareTo(System.Object)">
+  CompareTo(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_RXObject_CopyFrom_" data-uid="GrxCAD.Runtime.RXObject.CopyFrom*"></a>
+
+  <h3 id="GrxCAD_Runtime_RXObject_CopyFrom_GrxCAD_Runtime_RXObject_" data-uid="GrxCAD.Runtime.RXObject.CopyFrom(GrxCAD.Runtime.RXObject)">
+  CopyFrom(RXObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CopyFrom(RXObject source)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="GrxCAD.Runtime.RXObject.html">RXObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_RXObject_Create_" data-uid="GrxCAD.Runtime.RXObject.Create*"></a>
+
+  <h3 id="GrxCAD_Runtime_RXObject_Create_System_IntPtr_System_Boolean_" data-uid="GrxCAD.Runtime.RXObject.Create(System.IntPtr,System.Boolean)">
+  Create(IntPtr, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RXObject Create(IntPtr unmanagedPointer, bool autoDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unmanagedPointer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Runtime.RXObject.html">RXObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_RXObject_DeleteUnmanagedObject_" data-uid="GrxCAD.Runtime.RXObject.DeleteUnmanagedObject*"></a>
+
+  <h3 id="GrxCAD_Runtime_RXObject_DeleteUnmanagedObject" data-uid="GrxCAD.Runtime.RXObject.DeleteUnmanagedObject">
+  DeleteUnmanagedObject()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DeleteUnmanagedObject()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_RXObject_GetClass_" data-uid="GrxCAD.Runtime.RXObject.GetClass*"></a>
+
+  <h3 id="GrxCAD_Runtime_RXObject_GetClass_System_Type_" data-uid="GrxCAD.Runtime.RXObject.GetClass(System.Type)">
+  GetClass(Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RXClass GetClass(Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Runtime.RXClass.html">RXClass</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_RXObject_GetRXClass_" data-uid="GrxCAD.Runtime.RXObject.GetRXClass*"></a>
+
+  <h3 id="GrxCAD_Runtime_RXObject_GetRXClass" data-uid="GrxCAD.Runtime.RXObject.GetRXClass">
+  GetRXClass()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RXClass GetRXClass()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Runtime.RXClass.html">RXClass</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_RXObject_QueryX_" data-uid="GrxCAD.Runtime.RXObject.QueryX*"></a>
+
+  <h3 id="GrxCAD_Runtime_RXObject_QueryX_GrxCAD_Runtime_RXClass_" data-uid="GrxCAD.Runtime.RXObject.QueryX(GrxCAD.Runtime.RXClass)">
+  QueryX(RXClass)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntPtr QueryX(RXClass protocolClass)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>protocolClass</code> <a class="xref" href="GrxCAD.Runtime.RXClass.html">RXClass</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_RXObject_X_" data-uid="GrxCAD.Runtime.RXObject.X*"></a>
+
+  <h3 id="GrxCAD_Runtime_RXObject_X_GrxCAD_Runtime_RXClass_" data-uid="GrxCAD.Runtime.RXObject.X(GrxCAD.Runtime.RXClass)">
+  X(RXClass)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntPtr X(RXClass protocolClass)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>protocolClass</code> <a class="xref" href="GrxCAD.Runtime.RXClass.html">RXClass</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

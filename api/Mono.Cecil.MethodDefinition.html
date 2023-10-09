@@ -1,0 +1,2270 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MethodDefinition
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MethodDefinition
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Mono.Cecil.MethodDefinition">
+
+
+
+  <h1 id="Mono_Cecil_MethodDefinition" data-uid="Mono.Cecil.MethodDefinition" class="text-break">
+    Class MethodDefinition
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Mono.html">Mono</a>.<a class="xref" href="Mono.Cecil.html">Cecil</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>NFox.Pycad.Runtime.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class MethodDefinition : MethodReference, IMethodSignature, IGenericParameterProvider, IMemberDefinition, ICustomAttributeProvider, ISecurityDeclarationProvider, ICustomDebugInformationProvider, IMetadataTokenProvider</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Mono.Cecil.MemberReference.html">MemberReference</a></div>
+      <div><a class="xref" href="Mono.Cecil.MethodReference.html">MethodReference</a></div>
+      <div><span class="xref">MethodDefinition</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Mono.Cecil.IMethodSignature.html">IMethodSignature</a></div>
+      <div><a class="xref" href="Mono.Cecil.IGenericParameterProvider.html">IGenericParameterProvider</a></div>
+      <div><a class="xref" href="Mono.Cecil.IMemberDefinition.html">IMemberDefinition</a></div>
+      <div><a class="xref" href="Mono.Cecil.ICustomAttributeProvider.html">ICustomAttributeProvider</a></div>
+      <div><a class="xref" href="Mono.Cecil.ISecurityDeclarationProvider.html">ISecurityDeclarationProvider</a></div>
+      <div><a class="xref" href="Mono.Cecil.Cil.ICustomDebugInformationProvider.html">ICustomDebugInformationProvider</a></div>
+      <div><a class="xref" href="Mono.Cecil.IMetadataTokenProvider.html">IMetadataTokenProvider</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Mono.Cecil.MethodReference.html#Mono_Cecil_MethodReference_GetElementMethod">MethodReference.GetElementMethod()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mono.Cecil.MethodReference.html#Mono_Cecil_MethodReference_HasThis">MethodReference.HasThis</a>
+    </div>
+    <div>
+      <a class="xref" href="Mono.Cecil.MethodReference.html#Mono_Cecil_MethodReference_ExplicitThis">MethodReference.ExplicitThis</a>
+    </div>
+    <div>
+      <a class="xref" href="Mono.Cecil.MethodReference.html#Mono_Cecil_MethodReference_CallingConvention">MethodReference.CallingConvention</a>
+    </div>
+    <div>
+      <a class="xref" href="Mono.Cecil.MethodReference.html#Mono_Cecil_MethodReference_HasParameters">MethodReference.HasParameters</a>
+    </div>
+    <div>
+      <a class="xref" href="Mono.Cecil.MethodReference.html#Mono_Cecil_MethodReference_Parameters">MethodReference.Parameters</a>
+    </div>
+    <div>
+      <a class="xref" href="Mono.Cecil.MethodReference.html#Mono_Cecil_MethodReference_ReturnType">MethodReference.ReturnType</a>
+    </div>
+    <div>
+      <a class="xref" href="Mono.Cecil.MethodReference.html#Mono_Cecil_MethodReference_MethodReturnType">MethodReference.MethodReturnType</a>
+    </div>
+    <div>
+      <a class="xref" href="Mono.Cecil.MethodReference.html#Mono_Cecil_MethodReference_FullName">MethodReference.FullName</a>
+    </div>
+    <div>
+      <a class="xref" href="Mono.Cecil.MethodReference.html#Mono_Cecil_MethodReference_IsGenericInstance">MethodReference.IsGenericInstance</a>
+    </div>
+    <div>
+      <a class="xref" href="Mono.Cecil.MethodReference.html#Mono_Cecil_MethodReference_ContainsGenericParameter">MethodReference.ContainsGenericParameter</a>
+    </div>
+    <div>
+      <a class="xref" href="Mono.Cecil.MemberReference.html#Mono_Cecil_MemberReference_ToString">MemberReference.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mono.Cecil.MemberReference.html#Mono_Cecil_MemberReference_MetadataToken">MemberReference.MetadataToken</a>
+    </div>
+    <div>
+      <a class="xref" href="Mono.Cecil.MemberReference.html#Mono_Cecil_MemberReference_IsWindowsRuntimeProjection">MemberReference.IsWindowsRuntimeProjection</a>
+    </div>
+    <div>
+      <a class="xref" href="Mono.Cecil.MemberReference.html#Mono_Cecil_MemberReference_Module">MemberReference.Module</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Mono_Cecil_MethodDefinition__ctor_" data-uid="Mono.Cecil.MethodDefinition.#ctor*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition__ctor_System_String_Mono_Cecil_MethodAttributes_Mono_Cecil_TypeReference_" data-uid="Mono.Cecil.MethodDefinition.#ctor(System.String,Mono.Cecil.MethodAttributes,Mono.Cecil.TypeReference)">
+  MethodDefinition(string, MethodAttributes, TypeReference)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MethodDefinition(string name, MethodAttributes attributes, TypeReference returnType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>attributes</code> <a class="xref" href="Mono.Cecil.MethodAttributes.html">MethodAttributes</a></dt>
+    <dd></dd>
+    <dt><code>returnType</code> <a class="xref" href="Mono.Cecil.TypeReference.html">TypeReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Mono_Cecil_MethodDefinition_AggressiveInlining_" data-uid="Mono.Cecil.MethodDefinition.AggressiveInlining*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_AggressiveInlining" data-uid="Mono.Cecil.MethodDefinition.AggressiveInlining">
+  AggressiveInlining
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AggressiveInlining { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_Attributes_" data-uid="Mono.Cecil.MethodDefinition.Attributes*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_Attributes" data-uid="Mono.Cecil.MethodDefinition.Attributes">
+  Attributes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MethodAttributes Attributes { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.MethodAttributes.html">MethodAttributes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_Body_" data-uid="Mono.Cecil.MethodDefinition.Body*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_Body" data-uid="Mono.Cecil.MethodDefinition.Body">
+  Body
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MethodBody Body { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.MethodBody.html">MethodBody</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_CustomAttributes_" data-uid="Mono.Cecil.MethodDefinition.CustomAttributes*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_CustomAttributes" data-uid="Mono.Cecil.MethodDefinition.CustomAttributes">
+  CustomAttributes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Collection&lt;CustomAttribute&gt; CustomAttributes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Collections.Generic.Collection-1.html">Collection</a>&lt;<a class="xref" href="Mono.Cecil.CustomAttribute.html">CustomAttribute</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_CustomDebugInformations_" data-uid="Mono.Cecil.MethodDefinition.CustomDebugInformations*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_CustomDebugInformations" data-uid="Mono.Cecil.MethodDefinition.CustomDebugInformations">
+  CustomDebugInformations
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Collection&lt;CustomDebugInformation&gt; CustomDebugInformations { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Collections.Generic.Collection-1.html">Collection</a>&lt;<a class="xref" href="Mono.Cecil.Cil.CustomDebugInformation.html">CustomDebugInformation</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_DebugInformation_" data-uid="Mono.Cecil.MethodDefinition.DebugInformation*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_DebugInformation" data-uid="Mono.Cecil.MethodDefinition.DebugInformation">
+  DebugInformation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MethodDebugInformation DebugInformation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.Cil.MethodDebugInformation.html">MethodDebugInformation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_DeclaringType_" data-uid="Mono.Cecil.MethodDefinition.DeclaringType*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_DeclaringType" data-uid="Mono.Cecil.MethodDefinition.DeclaringType">
+  DeclaringType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TypeDefinition DeclaringType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.TypeDefinition.html">TypeDefinition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_GenericParameters_" data-uid="Mono.Cecil.MethodDefinition.GenericParameters*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_GenericParameters" data-uid="Mono.Cecil.MethodDefinition.GenericParameters">
+  GenericParameters
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Collection&lt;GenericParameter&gt; GenericParameters { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Collections.Generic.Collection-1.html">Collection</a>&lt;<a class="xref" href="Mono.Cecil.GenericParameter.html">GenericParameter</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_HasBody_" data-uid="Mono.Cecil.MethodDefinition.HasBody*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_HasBody" data-uid="Mono.Cecil.MethodDefinition.HasBody">
+  HasBody
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasBody { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_HasCustomAttributes_" data-uid="Mono.Cecil.MethodDefinition.HasCustomAttributes*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_HasCustomAttributes" data-uid="Mono.Cecil.MethodDefinition.HasCustomAttributes">
+  HasCustomAttributes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasCustomAttributes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_HasCustomDebugInformations_" data-uid="Mono.Cecil.MethodDefinition.HasCustomDebugInformations*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_HasCustomDebugInformations" data-uid="Mono.Cecil.MethodDefinition.HasCustomDebugInformations">
+  HasCustomDebugInformations
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasCustomDebugInformations { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_HasGenericParameters_" data-uid="Mono.Cecil.MethodDefinition.HasGenericParameters*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_HasGenericParameters" data-uid="Mono.Cecil.MethodDefinition.HasGenericParameters">
+  HasGenericParameters
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasGenericParameters { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_HasOverrides_" data-uid="Mono.Cecil.MethodDefinition.HasOverrides*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_HasOverrides" data-uid="Mono.Cecil.MethodDefinition.HasOverrides">
+  HasOverrides
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasOverrides { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_HasPInvokeInfo_" data-uid="Mono.Cecil.MethodDefinition.HasPInvokeInfo*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_HasPInvokeInfo" data-uid="Mono.Cecil.MethodDefinition.HasPInvokeInfo">
+  HasPInvokeInfo
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasPInvokeInfo { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_HasSecurity_" data-uid="Mono.Cecil.MethodDefinition.HasSecurity*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_HasSecurity" data-uid="Mono.Cecil.MethodDefinition.HasSecurity">
+  HasSecurity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasSecurity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_HasSecurityDeclarations_" data-uid="Mono.Cecil.MethodDefinition.HasSecurityDeclarations*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_HasSecurityDeclarations" data-uid="Mono.Cecil.MethodDefinition.HasSecurityDeclarations">
+  HasSecurityDeclarations
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasSecurityDeclarations { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_ImplAttributes_" data-uid="Mono.Cecil.MethodDefinition.ImplAttributes*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_ImplAttributes" data-uid="Mono.Cecil.MethodDefinition.ImplAttributes">
+  ImplAttributes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MethodImplAttributes ImplAttributes { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.MethodImplAttributes.html">MethodImplAttributes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsAbstract_" data-uid="Mono.Cecil.MethodDefinition.IsAbstract*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsAbstract" data-uid="Mono.Cecil.MethodDefinition.IsAbstract">
+  IsAbstract
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAbstract { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsAddOn_" data-uid="Mono.Cecil.MethodDefinition.IsAddOn*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsAddOn" data-uid="Mono.Cecil.MethodDefinition.IsAddOn">
+  IsAddOn
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAddOn { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsAssembly_" data-uid="Mono.Cecil.MethodDefinition.IsAssembly*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsAssembly" data-uid="Mono.Cecil.MethodDefinition.IsAssembly">
+  IsAssembly
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAssembly { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsCheckAccessOnOverride_" data-uid="Mono.Cecil.MethodDefinition.IsCheckAccessOnOverride*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsCheckAccessOnOverride" data-uid="Mono.Cecil.MethodDefinition.IsCheckAccessOnOverride">
+  IsCheckAccessOnOverride
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCheckAccessOnOverride { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsCompilerControlled_" data-uid="Mono.Cecil.MethodDefinition.IsCompilerControlled*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsCompilerControlled" data-uid="Mono.Cecil.MethodDefinition.IsCompilerControlled">
+  IsCompilerControlled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCompilerControlled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsConstructor_" data-uid="Mono.Cecil.MethodDefinition.IsConstructor*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsConstructor" data-uid="Mono.Cecil.MethodDefinition.IsConstructor">
+  IsConstructor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsConstructor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsDefinition_" data-uid="Mono.Cecil.MethodDefinition.IsDefinition*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsDefinition" data-uid="Mono.Cecil.MethodDefinition.IsDefinition">
+  IsDefinition
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsDefinition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsFamily_" data-uid="Mono.Cecil.MethodDefinition.IsFamily*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsFamily" data-uid="Mono.Cecil.MethodDefinition.IsFamily">
+  IsFamily
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFamily { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsFamilyAndAssembly_" data-uid="Mono.Cecil.MethodDefinition.IsFamilyAndAssembly*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsFamilyAndAssembly" data-uid="Mono.Cecil.MethodDefinition.IsFamilyAndAssembly">
+  IsFamilyAndAssembly
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFamilyAndAssembly { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsFamilyOrAssembly_" data-uid="Mono.Cecil.MethodDefinition.IsFamilyOrAssembly*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsFamilyOrAssembly" data-uid="Mono.Cecil.MethodDefinition.IsFamilyOrAssembly">
+  IsFamilyOrAssembly
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFamilyOrAssembly { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsFinal_" data-uid="Mono.Cecil.MethodDefinition.IsFinal*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsFinal" data-uid="Mono.Cecil.MethodDefinition.IsFinal">
+  IsFinal
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFinal { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsFire_" data-uid="Mono.Cecil.MethodDefinition.IsFire*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsFire" data-uid="Mono.Cecil.MethodDefinition.IsFire">
+  IsFire
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFire { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsForwardRef_" data-uid="Mono.Cecil.MethodDefinition.IsForwardRef*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsForwardRef" data-uid="Mono.Cecil.MethodDefinition.IsForwardRef">
+  IsForwardRef
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsForwardRef { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsGetter_" data-uid="Mono.Cecil.MethodDefinition.IsGetter*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsGetter" data-uid="Mono.Cecil.MethodDefinition.IsGetter">
+  IsGetter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGetter { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsHideBySig_" data-uid="Mono.Cecil.MethodDefinition.IsHideBySig*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsHideBySig" data-uid="Mono.Cecil.MethodDefinition.IsHideBySig">
+  IsHideBySig
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsHideBySig { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsIL_" data-uid="Mono.Cecil.MethodDefinition.IsIL*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsIL" data-uid="Mono.Cecil.MethodDefinition.IsIL">
+  IsIL
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsIL { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsInternalCall_" data-uid="Mono.Cecil.MethodDefinition.IsInternalCall*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsInternalCall" data-uid="Mono.Cecil.MethodDefinition.IsInternalCall">
+  IsInternalCall
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInternalCall { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsManaged_" data-uid="Mono.Cecil.MethodDefinition.IsManaged*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsManaged" data-uid="Mono.Cecil.MethodDefinition.IsManaged">
+  IsManaged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsManaged { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsNative_" data-uid="Mono.Cecil.MethodDefinition.IsNative*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsNative" data-uid="Mono.Cecil.MethodDefinition.IsNative">
+  IsNative
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNative { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsNewSlot_" data-uid="Mono.Cecil.MethodDefinition.IsNewSlot*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsNewSlot" data-uid="Mono.Cecil.MethodDefinition.IsNewSlot">
+  IsNewSlot
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNewSlot { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsOther_" data-uid="Mono.Cecil.MethodDefinition.IsOther*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsOther" data-uid="Mono.Cecil.MethodDefinition.IsOther">
+  IsOther
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOther { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsPInvokeImpl_" data-uid="Mono.Cecil.MethodDefinition.IsPInvokeImpl*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsPInvokeImpl" data-uid="Mono.Cecil.MethodDefinition.IsPInvokeImpl">
+  IsPInvokeImpl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPInvokeImpl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsPreserveSig_" data-uid="Mono.Cecil.MethodDefinition.IsPreserveSig*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsPreserveSig" data-uid="Mono.Cecil.MethodDefinition.IsPreserveSig">
+  IsPreserveSig
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPreserveSig { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsPrivate_" data-uid="Mono.Cecil.MethodDefinition.IsPrivate*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsPrivate" data-uid="Mono.Cecil.MethodDefinition.IsPrivate">
+  IsPrivate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPrivate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsPublic_" data-uid="Mono.Cecil.MethodDefinition.IsPublic*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsPublic" data-uid="Mono.Cecil.MethodDefinition.IsPublic">
+  IsPublic
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPublic { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsRemoveOn_" data-uid="Mono.Cecil.MethodDefinition.IsRemoveOn*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsRemoveOn" data-uid="Mono.Cecil.MethodDefinition.IsRemoveOn">
+  IsRemoveOn
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRemoveOn { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsReuseSlot_" data-uid="Mono.Cecil.MethodDefinition.IsReuseSlot*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsReuseSlot" data-uid="Mono.Cecil.MethodDefinition.IsReuseSlot">
+  IsReuseSlot
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReuseSlot { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsRuntime_" data-uid="Mono.Cecil.MethodDefinition.IsRuntime*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsRuntime" data-uid="Mono.Cecil.MethodDefinition.IsRuntime">
+  IsRuntime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRuntime { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsRuntimeSpecialName_" data-uid="Mono.Cecil.MethodDefinition.IsRuntimeSpecialName*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsRuntimeSpecialName" data-uid="Mono.Cecil.MethodDefinition.IsRuntimeSpecialName">
+  IsRuntimeSpecialName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRuntimeSpecialName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsSetter_" data-uid="Mono.Cecil.MethodDefinition.IsSetter*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsSetter" data-uid="Mono.Cecil.MethodDefinition.IsSetter">
+  IsSetter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSetter { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsSpecialName_" data-uid="Mono.Cecil.MethodDefinition.IsSpecialName*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsSpecialName" data-uid="Mono.Cecil.MethodDefinition.IsSpecialName">
+  IsSpecialName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSpecialName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsStatic_" data-uid="Mono.Cecil.MethodDefinition.IsStatic*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsStatic" data-uid="Mono.Cecil.MethodDefinition.IsStatic">
+  IsStatic
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStatic { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsSynchronized_" data-uid="Mono.Cecil.MethodDefinition.IsSynchronized*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsSynchronized" data-uid="Mono.Cecil.MethodDefinition.IsSynchronized">
+  IsSynchronized
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSynchronized { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsUnmanaged_" data-uid="Mono.Cecil.MethodDefinition.IsUnmanaged*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsUnmanaged" data-uid="Mono.Cecil.MethodDefinition.IsUnmanaged">
+  IsUnmanaged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUnmanaged { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsUnmanagedExport_" data-uid="Mono.Cecil.MethodDefinition.IsUnmanagedExport*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsUnmanagedExport" data-uid="Mono.Cecil.MethodDefinition.IsUnmanagedExport">
+  IsUnmanagedExport
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUnmanagedExport { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_IsVirtual_" data-uid="Mono.Cecil.MethodDefinition.IsVirtual*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_IsVirtual" data-uid="Mono.Cecil.MethodDefinition.IsVirtual">
+  IsVirtual
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVirtual { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_Name_" data-uid="Mono.Cecil.MethodDefinition.Name*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_Name" data-uid="Mono.Cecil.MethodDefinition.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Name { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_NoInlining_" data-uid="Mono.Cecil.MethodDefinition.NoInlining*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_NoInlining" data-uid="Mono.Cecil.MethodDefinition.NoInlining">
+  NoInlining
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NoInlining { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_NoOptimization_" data-uid="Mono.Cecil.MethodDefinition.NoOptimization*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_NoOptimization" data-uid="Mono.Cecil.MethodDefinition.NoOptimization">
+  NoOptimization
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NoOptimization { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_Overrides_" data-uid="Mono.Cecil.MethodDefinition.Overrides*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_Overrides" data-uid="Mono.Cecil.MethodDefinition.Overrides">
+  Overrides
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Collection&lt;MethodReference&gt; Overrides { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Collections.Generic.Collection-1.html">Collection</a>&lt;<a class="xref" href="Mono.Cecil.MethodReference.html">MethodReference</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_PInvokeInfo_" data-uid="Mono.Cecil.MethodDefinition.PInvokeInfo*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_PInvokeInfo" data-uid="Mono.Cecil.MethodDefinition.PInvokeInfo">
+  PInvokeInfo
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PInvokeInfo PInvokeInfo { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.PInvokeInfo.html">PInvokeInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_RVA_" data-uid="Mono.Cecil.MethodDefinition.RVA*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_RVA" data-uid="Mono.Cecil.MethodDefinition.RVA">
+  RVA
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RVA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_SecurityDeclarations_" data-uid="Mono.Cecil.MethodDefinition.SecurityDeclarations*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_SecurityDeclarations" data-uid="Mono.Cecil.MethodDefinition.SecurityDeclarations">
+  SecurityDeclarations
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Collection&lt;SecurityDeclaration&gt; SecurityDeclarations { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Collections.Generic.Collection-1.html">Collection</a>&lt;<a class="xref" href="Mono.Cecil.SecurityDeclaration.html">SecurityDeclaration</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mono_Cecil_MethodDefinition_SemanticsAttributes_" data-uid="Mono.Cecil.MethodDefinition.SemanticsAttributes*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_SemanticsAttributes" data-uid="Mono.Cecil.MethodDefinition.SemanticsAttributes">
+  SemanticsAttributes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MethodSemanticsAttributes SemanticsAttributes { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.MethodSemanticsAttributes.html">MethodSemanticsAttributes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Mono_Cecil_MethodDefinition_Resolve_" data-uid="Mono.Cecil.MethodDefinition.Resolve*"></a>
+
+  <h3 id="Mono_Cecil_MethodDefinition_Resolve" data-uid="Mono.Cecil.MethodDefinition.Resolve">
+  Resolve()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override MethodDefinition Resolve()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Mono.Cecil.MethodDefinition.html">MethodDefinition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

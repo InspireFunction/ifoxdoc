@@ -1,0 +1,2155 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Curve2d
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Curve2d
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GrxCAD.Geometry.Curve2d">
+
+
+
+  <h1 id="GrxCAD_Geometry_Curve2d" data-uid="GrxCAD.Geometry.Curve2d" class="text-break">
+    Class Curve2d
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GrxCAD.html">GrxCAD</a>.<a class="xref" href="GrxCAD.Geometry.html">Geometry</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>gmdb.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;OdGeCurve2d&quot;)]
+public abstract class Curve2d : Entity2d, IDisposable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html">DisposableWrapper</a></div>
+      <div><a class="xref" href="GrxCAD.Geometry.Entity2d.html">Entity2d</a></div>
+      <div><span class="xref">Curve2d</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="GrxCAD.Geometry.CircularArc2d.html">CircularArc2d</a></div>
+      <div><a class="xref" href="GrxCAD.Geometry.CompositeCurve2d.html">CompositeCurve2d</a></div>
+      <div><a class="xref" href="GrxCAD.Geometry.EllipticalArc2d.html">EllipticalArc2d</a></div>
+      <div><a class="xref" href="GrxCAD.Geometry.ExternalCurve2d.html">ExternalCurve2d</a></div>
+      <div><a class="xref" href="GrxCAD.Geometry.LinearEntity2d.html">LinearEntity2d</a></div>
+      <div><a class="xref" href="GrxCAD.Geometry.OffsetCurve2d.html">OffsetCurve2d</a></div>
+      <div><a class="xref" href="GrxCAD.Geometry.SplineEntity2d.html">SplineEntity2d</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Entity2d.html#GrxCAD_Geometry_Entity2d_Clone">Entity2d.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Entity2d.html#GrxCAD_Geometry_Entity2d_IsEqualTo_GrxCAD_Geometry_Entity2d_GrxCAD_Geometry_Tolerance_">Entity2d.IsEqualTo(Entity2d, Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Entity2d.html#GrxCAD_Geometry_Entity2d_IsEqualTo_GrxCAD_Geometry_Entity2d_">Entity2d.IsEqualTo(Entity2d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Entity2d.html#GrxCAD_Geometry_Entity2d_Mirror_GrxCAD_Geometry_Line2d_">Entity2d.Mirror(Line2d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Entity2d.html#GrxCAD_Geometry_Entity2d_RotateBy_System_Double_GrxCAD_Geometry_Point2d_">Entity2d.RotateBy(double, Point2d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Entity2d.html#GrxCAD_Geometry_Entity2d_ScaleBy_System_Double_GrxCAD_Geometry_Point2d_">Entity2d.ScaleBy(double, Point2d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Entity2d.html#GrxCAD_Geometry_Entity2d_TransformBy_GrxCAD_Geometry_Matrix2d_">Entity2d.TransformBy(Matrix2d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Entity2d.html#GrxCAD_Geometry_Entity2d_TranslateBy_GrxCAD_Geometry_Vector2d_">Entity2d.TranslateBy(Vector2d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Entity2d.html#GrxCAD_Geometry_Entity2d_DeleteUnmanagedObject">Entity2d.DeleteUnmanagedObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_m_bAutoDelete">DisposableWrapper.m_bAutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_m_imp">DisposableWrapper.m_imp</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Detach">DisposableWrapper.Detach()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Create_System_Type_System_IntPtr_System_Boolean_">DisposableWrapper.Create(Type, IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Equals_System_Object_">DisposableWrapper.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_GetHashCode">DisposableWrapper.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Dispose_System_Boolean_">DisposableWrapper.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Dispose">DisposableWrapper.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_UnmanagedObject">DisposableWrapper.UnmanagedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_IsDisposed">DisposableWrapper.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_AutoDelete">DisposableWrapper.AutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone">MarshalByRefObject.MemberwiseClone(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref">MarshalByRefObject.CreateObjRef(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GrxCAD_Geometry_Curve2d_BoundBlock_" data-uid="GrxCAD.Geometry.Curve2d.BoundBlock*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_BoundBlock" data-uid="GrxCAD.Geometry.Curve2d.BoundBlock">
+  BoundBlock
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BoundBlock2d BoundBlock { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.BoundBlock2d.html">BoundBlock2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_EndPoint_" data-uid="GrxCAD.Geometry.Curve2d.EndPoint*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_EndPoint" data-uid="GrxCAD.Geometry.Curve2d.EndPoint">
+  EndPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d EndPoint { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_HasEndPoint_" data-uid="GrxCAD.Geometry.Curve2d.HasEndPoint*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_HasEndPoint" data-uid="GrxCAD.Geometry.Curve2d.HasEndPoint">
+  HasEndPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasEndPoint { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_HasStartPoint_" data-uid="GrxCAD.Geometry.Curve2d.HasStartPoint*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_HasStartPoint" data-uid="GrxCAD.Geometry.Curve2d.HasStartPoint">
+  HasStartPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasStartPoint { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_OrthoBoundBlock_" data-uid="GrxCAD.Geometry.Curve2d.OrthoBoundBlock*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_OrthoBoundBlock" data-uid="GrxCAD.Geometry.Curve2d.OrthoBoundBlock">
+  OrthoBoundBlock
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BoundBlock2d OrthoBoundBlock { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.BoundBlock2d.html">BoundBlock2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_StartPoint_" data-uid="GrxCAD.Geometry.Curve2d.StartPoint*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_StartPoint" data-uid="GrxCAD.Geometry.Curve2d.StartPoint">
+  StartPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d StartPoint { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GrxCAD_Geometry_Curve2d_Create_" data-uid="GrxCAD.Geometry.Curve2d.Create*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_Create_System_IntPtr_System_Boolean_" data-uid="GrxCAD.Geometry.Curve2d.Create(System.IntPtr,System.Boolean)">
+  Create(IntPtr, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Curve2d Create(IntPtr unmanagedPointer, bool autoDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unmanagedPointer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Curve2d.html">Curve2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_EvaluatePoint_" data-uid="GrxCAD.Geometry.Curve2d.EvaluatePoint*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_EvaluatePoint_System_Double_" data-uid="GrxCAD.Geometry.Curve2d.EvaluatePoint(System.Double)">
+  EvaluatePoint(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d EvaluatePoint(double parameter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_Explode_" data-uid="GrxCAD.Geometry.Curve2d.Explode*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_Explode_GrxCAD_Geometry_Interval_" data-uid="GrxCAD.Geometry.Curve2d.Explode(GrxCAD.Geometry.Interval)">
+  Explode(Interval)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Curve2d[] Explode(Interval interval)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>interval</code> <a class="xref" href="GrxCAD.Geometry.Interval.html">Interval</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Curve2d.html">Curve2d</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetArea_" data-uid="GrxCAD.Geometry.Curve2d.GetArea*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetArea_System_Double_System_Double_" data-uid="GrxCAD.Geometry.Curve2d.GetArea(System.Double,System.Double)">
+  GetArea(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetArea(double startParameter, double endParameter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startParameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>endParameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetArea_" data-uid="GrxCAD.Geometry.Curve2d.GetArea*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetArea_System_Double_System_Double_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Curve2d.GetArea(System.Double,System.Double,GrxCAD.Geometry.Tolerance)">
+  GetArea(double, double, Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetArea(double startParameter, double endParameter, Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startParameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>endParameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetBoundBlockOf_" data-uid="GrxCAD.Geometry.Curve2d.GetBoundBlockOf*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetBoundBlockOf_GrxCAD_Geometry_Interval_" data-uid="GrxCAD.Geometry.Curve2d.GetBoundBlockOf(GrxCAD.Geometry.Interval)">
+  GetBoundBlockOf(Interval)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BoundBlock2d GetBoundBlockOf(Interval range)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>range</code> <a class="xref" href="GrxCAD.Geometry.Interval.html">Interval</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.BoundBlock2d.html">BoundBlock2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetClosestPointTo_" data-uid="GrxCAD.Geometry.Curve2d.GetClosestPointTo*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetClosestPointTo_GrxCAD_Geometry_Curve2d_" data-uid="GrxCAD.Geometry.Curve2d.GetClosestPointTo(GrxCAD.Geometry.Curve2d)">
+  GetClosestPointTo(Curve2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointOnCurve2d[] GetClosestPointTo(Curve2d curve)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>curve</code> <a class="xref" href="GrxCAD.Geometry.Curve2d.html">Curve2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.PointOnCurve2d.html">PointOnCurve2d</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetClosestPointTo_" data-uid="GrxCAD.Geometry.Curve2d.GetClosestPointTo*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetClosestPointTo_GrxCAD_Geometry_Curve2d_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Curve2d.GetClosestPointTo(GrxCAD.Geometry.Curve2d,GrxCAD.Geometry.Tolerance)">
+  GetClosestPointTo(Curve2d, Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointOnCurve2d[] GetClosestPointTo(Curve2d curve, Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>curve</code> <a class="xref" href="GrxCAD.Geometry.Curve2d.html">Curve2d</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.PointOnCurve2d.html">PointOnCurve2d</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetClosestPointTo_" data-uid="GrxCAD.Geometry.Curve2d.GetClosestPointTo*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetClosestPointTo_GrxCAD_Geometry_Point2d_" data-uid="GrxCAD.Geometry.Curve2d.GetClosestPointTo(GrxCAD.Geometry.Point2d)">
+  GetClosestPointTo(Point2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointOnCurve2d GetClosestPointTo(Point2d point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.PointOnCurve2d.html">PointOnCurve2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetClosestPointTo_" data-uid="GrxCAD.Geometry.Curve2d.GetClosestPointTo*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetClosestPointTo_GrxCAD_Geometry_Point2d_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Curve2d.GetClosestPointTo(GrxCAD.Geometry.Point2d,GrxCAD.Geometry.Tolerance)">
+  GetClosestPointTo(Point2d, Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointOnCurve2d GetClosestPointTo(Point2d point, Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.PointOnCurve2d.html">PointOnCurve2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetDistanceTo_" data-uid="GrxCAD.Geometry.Curve2d.GetDistanceTo*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetDistanceTo_GrxCAD_Geometry_Curve2d_" data-uid="GrxCAD.Geometry.Curve2d.GetDistanceTo(GrxCAD.Geometry.Curve2d)">
+  GetDistanceTo(Curve2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetDistanceTo(Curve2d curve)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>curve</code> <a class="xref" href="GrxCAD.Geometry.Curve2d.html">Curve2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetDistanceTo_" data-uid="GrxCAD.Geometry.Curve2d.GetDistanceTo*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetDistanceTo_GrxCAD_Geometry_Curve2d_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Curve2d.GetDistanceTo(GrxCAD.Geometry.Curve2d,GrxCAD.Geometry.Tolerance)">
+  GetDistanceTo(Curve2d, Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetDistanceTo(Curve2d curve, Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>curve</code> <a class="xref" href="GrxCAD.Geometry.Curve2d.html">Curve2d</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetDistanceTo_" data-uid="GrxCAD.Geometry.Curve2d.GetDistanceTo*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetDistanceTo_GrxCAD_Geometry_Point2d_" data-uid="GrxCAD.Geometry.Curve2d.GetDistanceTo(GrxCAD.Geometry.Point2d)">
+  GetDistanceTo(Point2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetDistanceTo(Point2d point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetDistanceTo_" data-uid="GrxCAD.Geometry.Curve2d.GetDistanceTo*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetDistanceTo_GrxCAD_Geometry_Point2d_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Curve2d.GetDistanceTo(GrxCAD.Geometry.Point2d,GrxCAD.Geometry.Tolerance)">
+  GetDistanceTo(Point2d, Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetDistanceTo(Point2d point, Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetInterval_" data-uid="GrxCAD.Geometry.Curve2d.GetInterval*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetInterval" data-uid="GrxCAD.Geometry.Curve2d.GetInterval">
+  GetInterval()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Interval GetInterval()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Interval.html">Interval</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetLength_" data-uid="GrxCAD.Geometry.Curve2d.GetLength*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetLength_System_Double_System_Double_" data-uid="GrxCAD.Geometry.Curve2d.GetLength(System.Double,System.Double)">
+  GetLength(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetLength(double fromParameter, double toParameter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fromParameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>toParameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetLength_" data-uid="GrxCAD.Geometry.Curve2d.GetLength*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetLength_System_Double_System_Double_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Curve2d.GetLength(System.Double,System.Double,GrxCAD.Geometry.Tolerance)">
+  GetLength(double, double, Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetLength(double fromParameter, double toParameter, Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fromParameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>toParameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetNormalPoint_" data-uid="GrxCAD.Geometry.Curve2d.GetNormalPoint*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetNormalPoint_GrxCAD_Geometry_Point2d_" data-uid="GrxCAD.Geometry.Curve2d.GetNormalPoint(GrxCAD.Geometry.Point2d)">
+  GetNormalPoint(Point2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointOnCurve2d GetNormalPoint(Point2d point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.PointOnCurve2d.html">PointOnCurve2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetNormalPoint_" data-uid="GrxCAD.Geometry.Curve2d.GetNormalPoint*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetNormalPoint_GrxCAD_Geometry_Point2d_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Curve2d.GetNormalPoint(GrxCAD.Geometry.Point2d,GrxCAD.Geometry.Tolerance)">
+  GetNormalPoint(Point2d, Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointOnCurve2d GetNormalPoint(Point2d point, Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.PointOnCurve2d.html">PointOnCurve2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetOrthoBoundBlockOf_" data-uid="GrxCAD.Geometry.Curve2d.GetOrthoBoundBlockOf*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetOrthoBoundBlockOf_GrxCAD_Geometry_Interval_" data-uid="GrxCAD.Geometry.Curve2d.GetOrthoBoundBlockOf(GrxCAD.Geometry.Interval)">
+  GetOrthoBoundBlockOf(Interval)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BoundBlock2d GetOrthoBoundBlockOf(Interval range)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>range</code> <a class="xref" href="GrxCAD.Geometry.Interval.html">Interval</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.BoundBlock2d.html">BoundBlock2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetParameterAtLength_" data-uid="GrxCAD.Geometry.Curve2d.GetParameterAtLength*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetParameterAtLength_System_Double_System_Double_System_Boolean_" data-uid="GrxCAD.Geometry.Curve2d.GetParameterAtLength(System.Double,System.Double,System.Boolean)">
+  GetParameterAtLength(double, double, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetParameterAtLength(double datumParameter, double length, bool parameterDirection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>datumParameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>parameterDirection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetParameterAtLength_" data-uid="GrxCAD.Geometry.Curve2d.GetParameterAtLength*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetParameterAtLength_System_Double_System_Double_System_Boolean_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Curve2d.GetParameterAtLength(System.Double,System.Double,System.Boolean,GrxCAD.Geometry.Tolerance)">
+  GetParameterAtLength(double, double, bool, Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetParameterAtLength(double datumParameter, double length, bool parameterDirection, Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>datumParameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>parameterDirection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetParameterOf_" data-uid="GrxCAD.Geometry.Curve2d.GetParameterOf*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetParameterOf_GrxCAD_Geometry_Point2d_" data-uid="GrxCAD.Geometry.Curve2d.GetParameterOf(GrxCAD.Geometry.Point2d)">
+  GetParameterOf(Point2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetParameterOf(Point2d point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetParameterOf_" data-uid="GrxCAD.Geometry.Curve2d.GetParameterOf*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetParameterOf_GrxCAD_Geometry_Point2d_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Curve2d.GetParameterOf(GrxCAD.Geometry.Point2d,GrxCAD.Geometry.Tolerance)">
+  GetParameterOf(Point2d, Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetParameterOf(Point2d point, Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetReverseParameterCurve_" data-uid="GrxCAD.Geometry.Curve2d.GetReverseParameterCurve*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetReverseParameterCurve" data-uid="GrxCAD.Geometry.Curve2d.GetReverseParameterCurve">
+  GetReverseParameterCurve()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Curve2d GetReverseParameterCurve()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Curve2d.html">Curve2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetSamplePoints_" data-uid="GrxCAD.Geometry.Curve2d.GetSamplePoints*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetSamplePoints_System_Double_System_Double_System_Double_" data-uid="GrxCAD.Geometry.Curve2d.GetSamplePoints(System.Double,System.Double,System.Double)">
+  GetSamplePoints(double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointOnCurve2d[] GetSamplePoints(double fromParameter, double toParameter, double approxEps)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fromParameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>toParameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>approxEps</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.PointOnCurve2d.html">PointOnCurve2d</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetSamplePoints_" data-uid="GrxCAD.Geometry.Curve2d.GetSamplePoints*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetSamplePoints_System_Int32_" data-uid="GrxCAD.Geometry.Curve2d.GetSamplePoints(System.Int32)">
+  GetSamplePoints(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d[] GetSamplePoints(int numSample)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>numSample</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetSplitCurves_" data-uid="GrxCAD.Geometry.Curve2d.GetSplitCurves*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetSplitCurves_System_Double_" data-uid="GrxCAD.Geometry.Curve2d.GetSplitCurves(System.Double)">
+  GetSplitCurves(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Curve2d[] GetSplitCurves(double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Curve2d.html">Curve2d</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetTrimmedOffset_" data-uid="GrxCAD.Geometry.Curve2d.GetTrimmedOffset*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetTrimmedOffset_System_Double_GrxCAD_Geometry_OffsetCurveExtensionType_" data-uid="GrxCAD.Geometry.Curve2d.GetTrimmedOffset(System.Double,GrxCAD.Geometry.OffsetCurveExtensionType)">
+  GetTrimmedOffset(double, OffsetCurveExtensionType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Curve2d[] GetTrimmedOffset(double distance, OffsetCurveExtensionType extensionType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>distance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>extensionType</code> <a class="xref" href="GrxCAD.Geometry.OffsetCurveExtensionType.html">OffsetCurveExtensionType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Curve2d.html">Curve2d</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_GetTrimmedOffset_" data-uid="GrxCAD.Geometry.Curve2d.GetTrimmedOffset*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_GetTrimmedOffset_System_Double_GrxCAD_Geometry_OffsetCurveExtensionType_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Curve2d.GetTrimmedOffset(System.Double,GrxCAD.Geometry.OffsetCurveExtensionType,GrxCAD.Geometry.Tolerance)">
+  GetTrimmedOffset(double, OffsetCurveExtensionType, Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Curve2d[] GetTrimmedOffset(double distance, OffsetCurveExtensionType extensionType, Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>distance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>extensionType</code> <a class="xref" href="GrxCAD.Geometry.OffsetCurveExtensionType.html">OffsetCurveExtensionType</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Curve2d.html">Curve2d</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_IsClosed_" data-uid="GrxCAD.Geometry.Curve2d.IsClosed*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_IsClosed" data-uid="GrxCAD.Geometry.Curve2d.IsClosed">
+  IsClosed()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsClosed()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_IsClosed_" data-uid="GrxCAD.Geometry.Curve2d.IsClosed*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_IsClosed_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Curve2d.IsClosed(GrxCAD.Geometry.Tolerance)">
+  IsClosed(Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsClosed(Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_IsDegenerate_" data-uid="GrxCAD.Geometry.Curve2d.IsDegenerate*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_IsDegenerate_GrxCAD_Geometry_Entity2d__" data-uid="GrxCAD.Geometry.Curve2d.IsDegenerate(GrxCAD.Geometry.Entity2d@)">
+  IsDegenerate(out Entity2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDegenerate(out Entity2d result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="GrxCAD.Geometry.Entity2d.html">Entity2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_IsDegenerate_" data-uid="GrxCAD.Geometry.Curve2d.IsDegenerate*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_IsDegenerate_GrxCAD_Geometry_Entity2d__GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Curve2d.IsDegenerate(GrxCAD.Geometry.Entity2d@,GrxCAD.Geometry.Tolerance)">
+  IsDegenerate(out Entity2d, Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDegenerate(out Entity2d result, Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="GrxCAD.Geometry.Entity2d.html">Entity2d</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_IsLinear_" data-uid="GrxCAD.Geometry.Curve2d.IsLinear*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_IsLinear_GrxCAD_Geometry_Line2d__" data-uid="GrxCAD.Geometry.Curve2d.IsLinear(GrxCAD.Geometry.Line2d@)">
+  IsLinear(out Line2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLinear(out Line2d line)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>line</code> <a class="xref" href="GrxCAD.Geometry.Line2d.html">Line2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_IsLinear_" data-uid="GrxCAD.Geometry.Curve2d.IsLinear*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_IsLinear_GrxCAD_Geometry_Line2d__GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Curve2d.IsLinear(GrxCAD.Geometry.Line2d@,GrxCAD.Geometry.Tolerance)">
+  IsLinear(out Line2d, Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLinear(out Line2d line, Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>line</code> <a class="xref" href="GrxCAD.Geometry.Line2d.html">Line2d</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_IsOn_" data-uid="GrxCAD.Geometry.Curve2d.IsOn*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_IsOn_GrxCAD_Geometry_Point2d_" data-uid="GrxCAD.Geometry.Curve2d.IsOn(GrxCAD.Geometry.Point2d)">
+  IsOn(Point2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOn(Point2d point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_IsOn_" data-uid="GrxCAD.Geometry.Curve2d.IsOn*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_IsOn_GrxCAD_Geometry_Point2d_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Curve2d.IsOn(GrxCAD.Geometry.Point2d,GrxCAD.Geometry.Tolerance)">
+  IsOn(Point2d, Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOn(Point2d point, Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_IsOn_" data-uid="GrxCAD.Geometry.Curve2d.IsOn*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_IsOn_GrxCAD_Geometry_Point2d_System_Double__" data-uid="GrxCAD.Geometry.Curve2d.IsOn(GrxCAD.Geometry.Point2d,System.Double@)">
+  IsOn(Point2d, out double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOn(Point2d point, out double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_IsOn_" data-uid="GrxCAD.Geometry.Curve2d.IsOn*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_IsOn_GrxCAD_Geometry_Point2d_System_Double__GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Curve2d.IsOn(GrxCAD.Geometry.Point2d,System.Double@,GrxCAD.Geometry.Tolerance)">
+  IsOn(Point2d, out double, Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOn(Point2d point, out double value, Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_IsOn_" data-uid="GrxCAD.Geometry.Curve2d.IsOn*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_IsOn_System_Double_" data-uid="GrxCAD.Geometry.Curve2d.IsOn(System.Double)">
+  IsOn(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOn(double parameter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_IsOn_" data-uid="GrxCAD.Geometry.Curve2d.IsOn*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_IsOn_System_Double_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Curve2d.IsOn(System.Double,GrxCAD.Geometry.Tolerance)">
+  IsOn(double, Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOn(double parameter, Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_IsPeriodic_" data-uid="GrxCAD.Geometry.Curve2d.IsPeriodic*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_IsPeriodic_System_Double__" data-uid="GrxCAD.Geometry.Curve2d.IsPeriodic(System.Double@)">
+  IsPeriodic(out double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPeriodic(out double period)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>period</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Curve2d_SetInterval_" data-uid="GrxCAD.Geometry.Curve2d.SetInterval*"></a>
+
+  <h3 id="GrxCAD_Geometry_Curve2d_SetInterval_GrxCAD_Geometry_Interval_" data-uid="GrxCAD.Geometry.Curve2d.SetInterval(GrxCAD.Geometry.Interval)">
+  SetInterval(Interval)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInterval(Interval value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="GrxCAD.Geometry.Interval.html">Interval</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

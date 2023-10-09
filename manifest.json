@@ -1,8 +1,15 @@
 {
-  "homepages": [],
   "source_base_path": "/home/runner/work/ifoxdoc/ifoxdoc",
   "xrefmap": "xrefmap.yml",
   "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
     {
       "type": "Conceptual",
       "source_relative_path": "README.md",
@@ -2046,7 +2053,6 @@
       "version": ""
     }
   ],
-  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"

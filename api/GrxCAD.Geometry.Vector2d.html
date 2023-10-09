@@ -1,0 +1,1929 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct Vector2d
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct Vector2d
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GrxCAD.Geometry.Vector2d">
+
+
+
+  <h1 id="GrxCAD_Geometry_Vector2d" data-uid="GrxCAD.Geometry.Vector2d" class="text-break">
+    Struct Vector2d
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GrxCAD.html">GrxCAD</a>.<a class="xref" href="GrxCAD.Geometry.html">Geometry</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>gmdb.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;OdGeVector2d&quot;)]
+public struct Vector2d : IFormattable</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformattable">IFormattable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GrxCAD_Geometry_Vector2d__ctor_" data-uid="GrxCAD.Geometry.Vector2d.#ctor*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d__ctor_System_Double_System_Double_" data-uid="GrxCAD.Geometry.Vector2d.#ctor(System.Double,System.Double)">
+  Vector2d(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2d(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d__ctor_" data-uid="GrxCAD.Geometry.Vector2d.#ctor*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d__ctor_System_Double___" data-uid="GrxCAD.Geometry.Vector2d.#ctor(System.Double[])">
+  Vector2d(double[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2d(double[] xy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>xy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GrxCAD_Geometry_Vector2d_Angle_" data-uid="GrxCAD.Geometry.Vector2d.Angle*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_Angle" data-uid="GrxCAD.Geometry.Vector2d.Angle">
+  Angle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Angle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_Coordinate_" data-uid="GrxCAD.Geometry.Vector2d.Coordinate*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_Coordinate_System_Int32_" data-uid="GrxCAD.Geometry.Vector2d.Coordinate(System.Int32)">
+  this[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double this[int index] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_Length_" data-uid="GrxCAD.Geometry.Vector2d.Length*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_Length" data-uid="GrxCAD.Geometry.Vector2d.Length">
+  Length
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Length { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_LengthSqrd_" data-uid="GrxCAD.Geometry.Vector2d.LengthSqrd*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_LengthSqrd" data-uid="GrxCAD.Geometry.Vector2d.LengthSqrd">
+  LengthSqrd
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double LengthSqrd { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_X_" data-uid="GrxCAD.Geometry.Vector2d.X*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_X" data-uid="GrxCAD.Geometry.Vector2d.X">
+  X
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double X { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_XAxis_" data-uid="GrxCAD.Geometry.Vector2d.XAxis*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_XAxis" data-uid="GrxCAD.Geometry.Vector2d.XAxis">
+  XAxis
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2d XAxis { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_Y_" data-uid="GrxCAD.Geometry.Vector2d.Y*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_Y" data-uid="GrxCAD.Geometry.Vector2d.Y">
+  Y
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Y { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_YAxis_" data-uid="GrxCAD.Geometry.Vector2d.YAxis*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_YAxis" data-uid="GrxCAD.Geometry.Vector2d.YAxis">
+  YAxis
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2d YAxis { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GrxCAD_Geometry_Vector2d_Add_" data-uid="GrxCAD.Geometry.Vector2d.Add*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_Add_GrxCAD_Geometry_Vector2d_" data-uid="GrxCAD.Geometry.Vector2d.Add(GrxCAD.Geometry.Vector2d)">
+  Add(Vector2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2d Add(Vector2d v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_DivideBy_" data-uid="GrxCAD.Geometry.Vector2d.DivideBy*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_DivideBy_System_Double_" data-uid="GrxCAD.Geometry.Vector2d.DivideBy(System.Double)">
+  DivideBy(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2d DivideBy(double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_DotProduct_" data-uid="GrxCAD.Geometry.Vector2d.DotProduct*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_DotProduct_GrxCAD_Geometry_Vector2d_" data-uid="GrxCAD.Geometry.Vector2d.DotProduct(GrxCAD.Geometry.Vector2d)">
+  DotProduct(Vector2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double DotProduct(Vector2d v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_Equals_" data-uid="GrxCAD.Geometry.Vector2d.Equals*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_Equals_System_Object_" data-uid="GrxCAD.Geometry.Vector2d.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_GetAngleTo_" data-uid="GrxCAD.Geometry.Vector2d.GetAngleTo*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_GetAngleTo_GrxCAD_Geometry_Vector2d_" data-uid="GrxCAD.Geometry.Vector2d.GetAngleTo(GrxCAD.Geometry.Vector2d)">
+  GetAngleTo(Vector2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetAngleTo(Vector2d vector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_GetHashCode_" data-uid="GrxCAD.Geometry.Vector2d.GetHashCode*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_GetHashCode" data-uid="GrxCAD.Geometry.Vector2d.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_GetNormal_" data-uid="GrxCAD.Geometry.Vector2d.GetNormal*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_GetNormal" data-uid="GrxCAD.Geometry.Vector2d.GetNormal">
+  GetNormal()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2d GetNormal()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_GetNormal_" data-uid="GrxCAD.Geometry.Vector2d.GetNormal*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_GetNormal_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Vector2d.GetNormal(GrxCAD.Geometry.Tolerance)">
+  GetNormal(Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2d GetNormal(Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_GetPerpendicularVector_" data-uid="GrxCAD.Geometry.Vector2d.GetPerpendicularVector*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_GetPerpendicularVector" data-uid="GrxCAD.Geometry.Vector2d.GetPerpendicularVector">
+  GetPerpendicularVector()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2d GetPerpendicularVector()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_IsCodirectionalTo_" data-uid="GrxCAD.Geometry.Vector2d.IsCodirectionalTo*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_IsCodirectionalTo_GrxCAD_Geometry_Vector2d_" data-uid="GrxCAD.Geometry.Vector2d.IsCodirectionalTo(GrxCAD.Geometry.Vector2d)">
+  IsCodirectionalTo(Vector2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCodirectionalTo(Vector2d vector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_IsCodirectionalTo_" data-uid="GrxCAD.Geometry.Vector2d.IsCodirectionalTo*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_IsCodirectionalTo_GrxCAD_Geometry_Vector2d_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Vector2d.IsCodirectionalTo(GrxCAD.Geometry.Vector2d,GrxCAD.Geometry.Tolerance)">
+  IsCodirectionalTo(Vector2d, Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCodirectionalTo(Vector2d vector, Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_IsEqualTo_" data-uid="GrxCAD.Geometry.Vector2d.IsEqualTo*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_IsEqualTo_GrxCAD_Geometry_Vector2d_" data-uid="GrxCAD.Geometry.Vector2d.IsEqualTo(GrxCAD.Geometry.Vector2d)">
+  IsEqualTo(Vector2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEqualTo(Vector2d vector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_IsEqualTo_" data-uid="GrxCAD.Geometry.Vector2d.IsEqualTo*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_IsEqualTo_GrxCAD_Geometry_Vector2d_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Vector2d.IsEqualTo(GrxCAD.Geometry.Vector2d,GrxCAD.Geometry.Tolerance)">
+  IsEqualTo(Vector2d, Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEqualTo(Vector2d vector, Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_IsParallelTo_" data-uid="GrxCAD.Geometry.Vector2d.IsParallelTo*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_IsParallelTo_GrxCAD_Geometry_Vector2d_" data-uid="GrxCAD.Geometry.Vector2d.IsParallelTo(GrxCAD.Geometry.Vector2d)">
+  IsParallelTo(Vector2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsParallelTo(Vector2d vector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_IsParallelTo_" data-uid="GrxCAD.Geometry.Vector2d.IsParallelTo*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_IsParallelTo_GrxCAD_Geometry_Vector2d_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Vector2d.IsParallelTo(GrxCAD.Geometry.Vector2d,GrxCAD.Geometry.Tolerance)">
+  IsParallelTo(Vector2d, Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsParallelTo(Vector2d vector, Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_IsPerpendicularTo_" data-uid="GrxCAD.Geometry.Vector2d.IsPerpendicularTo*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_IsPerpendicularTo_GrxCAD_Geometry_Vector2d_" data-uid="GrxCAD.Geometry.Vector2d.IsPerpendicularTo(GrxCAD.Geometry.Vector2d)">
+  IsPerpendicularTo(Vector2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPerpendicularTo(Vector2d vector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_IsPerpendicularTo_" data-uid="GrxCAD.Geometry.Vector2d.IsPerpendicularTo*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_IsPerpendicularTo_GrxCAD_Geometry_Vector2d_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Vector2d.IsPerpendicularTo(GrxCAD.Geometry.Vector2d,GrxCAD.Geometry.Tolerance)">
+  IsPerpendicularTo(Vector2d, Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPerpendicularTo(Vector2d vector, Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_IsUnitLength_" data-uid="GrxCAD.Geometry.Vector2d.IsUnitLength*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_IsUnitLength" data-uid="GrxCAD.Geometry.Vector2d.IsUnitLength">
+  IsUnitLength()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUnitLength()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_IsUnitLength_" data-uid="GrxCAD.Geometry.Vector2d.IsUnitLength*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_IsUnitLength_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Vector2d.IsUnitLength(GrxCAD.Geometry.Tolerance)">
+  IsUnitLength(Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUnitLength(Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_IsZeroLength_" data-uid="GrxCAD.Geometry.Vector2d.IsZeroLength*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_IsZeroLength" data-uid="GrxCAD.Geometry.Vector2d.IsZeroLength">
+  IsZeroLength()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsZeroLength()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_IsZeroLength_" data-uid="GrxCAD.Geometry.Vector2d.IsZeroLength*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_IsZeroLength_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Vector2d.IsZeroLength(GrxCAD.Geometry.Tolerance)">
+  IsZeroLength(Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsZeroLength(Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_Mirror_" data-uid="GrxCAD.Geometry.Vector2d.Mirror*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_Mirror_GrxCAD_Geometry_Vector2d_" data-uid="GrxCAD.Geometry.Vector2d.Mirror(GrxCAD.Geometry.Vector2d)">
+  Mirror(Vector2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2d Mirror(Vector2d line)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>line</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_MultiplyBy_" data-uid="GrxCAD.Geometry.Vector2d.MultiplyBy*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_MultiplyBy_System_Double_" data-uid="GrxCAD.Geometry.Vector2d.MultiplyBy(System.Double)">
+  MultiplyBy(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2d MultiplyBy(double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_Negate_" data-uid="GrxCAD.Geometry.Vector2d.Negate*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_Negate" data-uid="GrxCAD.Geometry.Vector2d.Negate">
+  Negate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2d Negate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_RotateBy_" data-uid="GrxCAD.Geometry.Vector2d.RotateBy*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_RotateBy_System_Double_" data-uid="GrxCAD.Geometry.Vector2d.RotateBy(System.Double)">
+  RotateBy(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2d RotateBy(double angle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>angle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_Subtract_" data-uid="GrxCAD.Geometry.Vector2d.Subtract*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_Subtract_GrxCAD_Geometry_Vector2d_" data-uid="GrxCAD.Geometry.Vector2d.Subtract(GrxCAD.Geometry.Vector2d)">
+  Subtract(Vector2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2d Subtract(Vector2d v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_ToArray_" data-uid="GrxCAD.Geometry.Vector2d.ToArray*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_ToArray" data-uid="GrxCAD.Geometry.Vector2d.ToArray">
+  ToArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double[] ToArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_ToString_" data-uid="GrxCAD.Geometry.Vector2d.ToString*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_ToString" data-uid="GrxCAD.Geometry.Vector2d.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_ToString_" data-uid="GrxCAD.Geometry.Vector2d.ToString*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_ToString_System_IFormatProvider_" data-uid="GrxCAD.Geometry.Vector2d.ToString(System.IFormatProvider)">
+  ToString(IFormatProvider)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(IFormatProvider provider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_ToString_" data-uid="GrxCAD.Geometry.Vector2d.ToString*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_ToString_System_String_System_IFormatProvider_" data-uid="GrxCAD.Geometry.Vector2d.ToString(System.String,System.IFormatProvider)">
+  ToString(string, IFormatProvider)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(string format, IFormatProvider provider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_TransformBy_" data-uid="GrxCAD.Geometry.Vector2d.TransformBy*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_TransformBy_GrxCAD_Geometry_Matrix2d_" data-uid="GrxCAD.Geometry.Vector2d.TransformBy(GrxCAD.Geometry.Matrix2d)">
+  TransformBy(Matrix2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2d TransformBy(Matrix2d leftSide)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>leftSide</code> <a class="xref" href="GrxCAD.Geometry.Matrix2d.html">Matrix2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="GrxCAD_Geometry_Vector2d_op_Addition_" data-uid="GrxCAD.Geometry.Vector2d.op_Addition*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_op_Addition_GrxCAD_Geometry_Vector2d_GrxCAD_Geometry_Vector2d_" data-uid="GrxCAD.Geometry.Vector2d.op_Addition(GrxCAD.Geometry.Vector2d,GrxCAD.Geometry.Vector2d)">
+  operator +(Vector2d, Vector2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2d operator +(Vector2d a, Vector2d b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_op_Division_" data-uid="GrxCAD.Geometry.Vector2d.op_Division*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_op_Division_GrxCAD_Geometry_Vector2d_System_Double_" data-uid="GrxCAD.Geometry.Vector2d.op_Division(GrxCAD.Geometry.Vector2d,System.Double)">
+  operator /(Vector2d, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2d operator /(Vector2d a, double factor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+    <dt><code>factor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_op_Equality_" data-uid="GrxCAD.Geometry.Vector2d.op_Equality*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_op_Equality_GrxCAD_Geometry_Vector2d_GrxCAD_Geometry_Vector2d_" data-uid="GrxCAD.Geometry.Vector2d.op_Equality(GrxCAD.Geometry.Vector2d,GrxCAD.Geometry.Vector2d)">
+  operator ==(Vector2d, Vector2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Vector2d a, Vector2d b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_op_Inequality_" data-uid="GrxCAD.Geometry.Vector2d.op_Inequality*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_op_Inequality_GrxCAD_Geometry_Vector2d_GrxCAD_Geometry_Vector2d_" data-uid="GrxCAD.Geometry.Vector2d.op_Inequality(GrxCAD.Geometry.Vector2d,GrxCAD.Geometry.Vector2d)">
+  operator !=(Vector2d, Vector2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Vector2d a, Vector2d b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_op_Multiply_" data-uid="GrxCAD.Geometry.Vector2d.op_Multiply*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_op_Multiply_GrxCAD_Geometry_Matrix2d_GrxCAD_Geometry_Vector2d_" data-uid="GrxCAD.Geometry.Vector2d.op_Multiply(GrxCAD.Geometry.Matrix2d,GrxCAD.Geometry.Vector2d)">
+  operator *(Matrix2d, Vector2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2d operator *(Matrix2d a, Vector2d b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="GrxCAD.Geometry.Matrix2d.html">Matrix2d</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_op_Multiply_" data-uid="GrxCAD.Geometry.Vector2d.op_Multiply*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_op_Multiply_GrxCAD_Geometry_Vector2d_System_Double_" data-uid="GrxCAD.Geometry.Vector2d.op_Multiply(GrxCAD.Geometry.Vector2d,System.Double)">
+  operator *(Vector2d, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2d operator *(Vector2d a, double factor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+    <dt><code>factor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_op_Multiply_" data-uid="GrxCAD.Geometry.Vector2d.op_Multiply*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_op_Multiply_System_Double_GrxCAD_Geometry_Vector2d_" data-uid="GrxCAD.Geometry.Vector2d.op_Multiply(System.Double,GrxCAD.Geometry.Vector2d)">
+  operator *(double, Vector2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2d operator *(double factor, Vector2d a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>factor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>a</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_op_Subtraction_" data-uid="GrxCAD.Geometry.Vector2d.op_Subtraction*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_op_Subtraction_GrxCAD_Geometry_Vector2d_GrxCAD_Geometry_Vector2d_" data-uid="GrxCAD.Geometry.Vector2d.op_Subtraction(GrxCAD.Geometry.Vector2d,GrxCAD.Geometry.Vector2d)">
+  operator -(Vector2d, Vector2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2d operator -(Vector2d a, Vector2d b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Vector2d_op_UnaryNegation_" data-uid="GrxCAD.Geometry.Vector2d.op_UnaryNegation*"></a>
+
+  <h3 id="GrxCAD_Geometry_Vector2d_op_UnaryNegation_GrxCAD_Geometry_Vector2d_" data-uid="GrxCAD.Geometry.Vector2d.op_UnaryNegation(GrxCAD.Geometry.Vector2d)">
+  operator -(Vector2d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2d operator -(Vector2d a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

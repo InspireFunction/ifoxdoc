@@ -1,0 +1,996 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Plane
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Plane
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GrxCAD.Geometry.Plane">
+
+
+
+  <h1 id="GrxCAD_Geometry_Plane" data-uid="GrxCAD.Geometry.Plane" class="text-break">
+    Class Plane
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GrxCAD.html">GrxCAD</a>.<a class="xref" href="GrxCAD.Geometry.html">Geometry</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>gmdb.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;OdGePlane&quot;)]
+public sealed class Plane : PlanarEntity, IDisposable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html">DisposableWrapper</a></div>
+      <div><a class="xref" href="GrxCAD.Geometry.Entity3d.html">Entity3d</a></div>
+      <div><a class="xref" href="GrxCAD.Geometry.Surface.html">Surface</a></div>
+      <div><a class="xref" href="GrxCAD.Geometry.PlanarEntity.html">PlanarEntity</a></div>
+      <div><span class="xref">Plane</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.PlanarEntity.html#GrxCAD_Geometry_PlanarEntity_ClosestPointToLinearEntity_GrxCAD_Geometry_LinearEntity3d_GrxCAD_Geometry_Tolerance_">PlanarEntity.ClosestPointToLinearEntity(LinearEntity3d, Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.PlanarEntity.html#GrxCAD_Geometry_PlanarEntity_ClosestPointToLinearEntity_GrxCAD_Geometry_LinearEntity3d_">PlanarEntity.ClosestPointToLinearEntity(LinearEntity3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.PlanarEntity.html#GrxCAD_Geometry_PlanarEntity_ClosestPointToPlanarEntity_GrxCAD_Geometry_PlanarEntity_GrxCAD_Geometry_Tolerance_">PlanarEntity.ClosestPointToPlanarEntity(PlanarEntity, Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.PlanarEntity.html#GrxCAD_Geometry_PlanarEntity_ClosestPointToPlanarEntity_GrxCAD_Geometry_PlanarEntity_">PlanarEntity.ClosestPointToPlanarEntity(PlanarEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.PlanarEntity.html#GrxCAD_Geometry_PlanarEntity_GetCoordinateSystem">PlanarEntity.GetCoordinateSystem()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.PlanarEntity.html#GrxCAD_Geometry_PlanarEntity_IntersectWith_GrxCAD_Geometry_LinearEntity3d_GrxCAD_Geometry_Tolerance_">PlanarEntity.IntersectWith(LinearEntity3d, Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.PlanarEntity.html#GrxCAD_Geometry_PlanarEntity_IntersectWith_GrxCAD_Geometry_LinearEntity3d_">PlanarEntity.IntersectWith(LinearEntity3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.PlanarEntity.html#GrxCAD_Geometry_PlanarEntity_IsCoplanarTo_GrxCAD_Geometry_PlanarEntity_GrxCAD_Geometry_Tolerance_">PlanarEntity.IsCoplanarTo(PlanarEntity, Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.PlanarEntity.html#GrxCAD_Geometry_PlanarEntity_IsCoplanarTo_GrxCAD_Geometry_PlanarEntity_">PlanarEntity.IsCoplanarTo(PlanarEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.PlanarEntity.html#GrxCAD_Geometry_PlanarEntity_IsParallelTo_GrxCAD_Geometry_PlanarEntity_GrxCAD_Geometry_Tolerance_">PlanarEntity.IsParallelTo(PlanarEntity, Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.PlanarEntity.html#GrxCAD_Geometry_PlanarEntity_IsParallelTo_GrxCAD_Geometry_LinearEntity3d_GrxCAD_Geometry_Tolerance_">PlanarEntity.IsParallelTo(LinearEntity3d, Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.PlanarEntity.html#GrxCAD_Geometry_PlanarEntity_IsParallelTo_GrxCAD_Geometry_PlanarEntity_">PlanarEntity.IsParallelTo(PlanarEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.PlanarEntity.html#GrxCAD_Geometry_PlanarEntity_IsParallelTo_GrxCAD_Geometry_LinearEntity3d_">PlanarEntity.IsParallelTo(LinearEntity3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.PlanarEntity.html#GrxCAD_Geometry_PlanarEntity_IsPerpendicularTo_GrxCAD_Geometry_PlanarEntity_GrxCAD_Geometry_Tolerance_">PlanarEntity.IsPerpendicularTo(PlanarEntity, Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.PlanarEntity.html#GrxCAD_Geometry_PlanarEntity_IsPerpendicularTo_GrxCAD_Geometry_LinearEntity3d_GrxCAD_Geometry_Tolerance_">PlanarEntity.IsPerpendicularTo(LinearEntity3d, Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.PlanarEntity.html#GrxCAD_Geometry_PlanarEntity_IsPerpendicularTo_GrxCAD_Geometry_PlanarEntity_">PlanarEntity.IsPerpendicularTo(PlanarEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.PlanarEntity.html#GrxCAD_Geometry_PlanarEntity_IsPerpendicularTo_GrxCAD_Geometry_LinearEntity3d_">PlanarEntity.IsPerpendicularTo(LinearEntity3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.PlanarEntity.html#GrxCAD_Geometry_PlanarEntity_PointOnPlane">PlanarEntity.PointOnPlane</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.PlanarEntity.html#GrxCAD_Geometry_PlanarEntity_Normal">PlanarEntity.Normal</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.PlanarEntity.html#GrxCAD_Geometry_PlanarEntity_Coefficients">PlanarEntity.Coefficients</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Surface.html#GrxCAD_Geometry_Surface_ClosestPointTo_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Tolerance_">Surface.ClosestPointTo(Point3d, Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Surface.html#GrxCAD_Geometry_Surface_ClosestPointTo_GrxCAD_Geometry_Point3d_">Surface.ClosestPointTo(Point3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Surface.html#GrxCAD_Geometry_Surface_DistanceTo_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Tolerance_">Surface.DistanceTo(Point3d, Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Surface.html#GrxCAD_Geometry_Surface_DistanceTo_GrxCAD_Geometry_Point3d_">Surface.DistanceTo(Point3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Surface.html#GrxCAD_Geometry_Surface_EvaluatePoint_GrxCAD_Geometry_Point2d_">Surface.EvaluatePoint(Point2d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Surface.html#GrxCAD_Geometry_Surface_GetClosestPointTo_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Tolerance_">Surface.GetClosestPointTo(Point3d, Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Surface.html#GrxCAD_Geometry_Surface_GetClosestPointTo_GrxCAD_Geometry_Point3d_">Surface.GetClosestPointTo(Point3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Surface.html#GrxCAD_Geometry_Surface_GetEnvelope">Surface.GetEnvelope()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Surface.html#GrxCAD_Geometry_Surface_IsClosedInU_GrxCAD_Geometry_Tolerance_">Surface.IsClosedInU(Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Surface.html#GrxCAD_Geometry_Surface_IsClosedInU">Surface.IsClosedInU()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Surface.html#GrxCAD_Geometry_Surface_IsClosedInV_GrxCAD_Geometry_Tolerance_">Surface.IsClosedInV(Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Surface.html#GrxCAD_Geometry_Surface_IsClosedInV">Surface.IsClosedInV()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Surface.html#GrxCAD_Geometry_Surface_IsOn_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Point2d_GrxCAD_Geometry_Tolerance_">Surface.IsOn(Point3d, Point2d, Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Surface.html#GrxCAD_Geometry_Surface_IsOn_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Point2d_">Surface.IsOn(Point3d, Point2d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Surface.html#GrxCAD_Geometry_Surface_ParameterOf_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Tolerance_">Surface.ParameterOf(Point3d, Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Surface.html#GrxCAD_Geometry_Surface_ParameterOf_GrxCAD_Geometry_Point3d_">Surface.ParameterOf(Point3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Surface.html#GrxCAD_Geometry_Surface_ReverseNormal">Surface.ReverseNormal</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Surface.html#GrxCAD_Geometry_Surface_IsNormalReversed">Surface.IsNormalReversed</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Entity3d.html#GrxCAD_Geometry_Entity3d_Clone">Entity3d.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Entity3d.html#GrxCAD_Geometry_Entity3d_IsEqualTo_GrxCAD_Geometry_Entity3d_GrxCAD_Geometry_Tolerance_">Entity3d.IsEqualTo(Entity3d, Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Entity3d.html#GrxCAD_Geometry_Entity3d_IsEqualTo_GrxCAD_Geometry_Entity3d_">Entity3d.IsEqualTo(Entity3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Entity3d.html#GrxCAD_Geometry_Entity3d_IsOn_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Tolerance_">Entity3d.IsOn(Point3d, Tolerance)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Entity3d.html#GrxCAD_Geometry_Entity3d_IsOn_GrxCAD_Geometry_Point3d_">Entity3d.IsOn(Point3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Entity3d.html#GrxCAD_Geometry_Entity3d_Mirror_GrxCAD_Geometry_Plane_">Entity3d.Mirror(Plane)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Entity3d.html#GrxCAD_Geometry_Entity3d_RotateBy_System_Double_GrxCAD_Geometry_Vector3d_GrxCAD_Geometry_Point3d_">Entity3d.RotateBy(double, Vector3d, Point3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Entity3d.html#GrxCAD_Geometry_Entity3d_ScaleBy_System_Double_GrxCAD_Geometry_Point3d_">Entity3d.ScaleBy(double, Point3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Entity3d.html#GrxCAD_Geometry_Entity3d_TransformBy_GrxCAD_Geometry_Matrix3d_">Entity3d.TransformBy(Matrix3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Geometry.Entity3d.html#GrxCAD_Geometry_Entity3d_TranslateBy_GrxCAD_Geometry_Vector3d_">Entity3d.TranslateBy(Vector3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Detach">DisposableWrapper.Detach()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Create_System_Type_System_IntPtr_System_Boolean_">DisposableWrapper.Create(Type, IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Equals_System_Object_">DisposableWrapper.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_GetHashCode">DisposableWrapper.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Dispose">DisposableWrapper.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_UnmanagedObject">DisposableWrapper.UnmanagedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_IsDisposed">DisposableWrapper.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_AutoDelete">DisposableWrapper.AutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref">MarshalByRefObject.CreateObjRef(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GrxCAD_Geometry_Plane__ctor_" data-uid="GrxCAD.Geometry.Plane.#ctor*"></a>
+
+  <h3 id="GrxCAD_Geometry_Plane__ctor" data-uid="GrxCAD.Geometry.Plane.#ctor">
+  Plane()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Plane()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Plane__ctor_" data-uid="GrxCAD.Geometry.Plane.#ctor*"></a>
+
+  <h3 id="GrxCAD_Geometry_Plane__ctor_GrxCAD_Geometry_Plane_" data-uid="GrxCAD.Geometry.Plane.#ctor(GrxCAD.Geometry.Plane)">
+  Plane(Plane)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Plane(Plane source)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="GrxCAD.Geometry.Plane.html">Plane</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Plane__ctor_" data-uid="GrxCAD.Geometry.Plane.#ctor*"></a>
+
+  <h3 id="GrxCAD_Geometry_Plane__ctor_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Point3d_" data-uid="GrxCAD.Geometry.Plane.#ctor(GrxCAD.Geometry.Point3d,GrxCAD.Geometry.Point3d,GrxCAD.Geometry.Point3d)">
+  Plane(Point3d, Point3d, Point3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Plane(Point3d u, Point3d origin, Point3d v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>u</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>origin</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Plane__ctor_" data-uid="GrxCAD.Geometry.Plane.#ctor*"></a>
+
+  <h3 id="GrxCAD_Geometry_Plane__ctor_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Vector3d_" data-uid="GrxCAD.Geometry.Plane.#ctor(GrxCAD.Geometry.Point3d,GrxCAD.Geometry.Vector3d)">
+  Plane(Point3d, Vector3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Plane(Point3d origin, Vector3d normal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>origin</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>normal</code> <a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Plane__ctor_" data-uid="GrxCAD.Geometry.Plane.#ctor*"></a>
+
+  <h3 id="GrxCAD_Geometry_Plane__ctor_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Vector3d_GrxCAD_Geometry_Vector3d_" data-uid="GrxCAD.Geometry.Plane.#ctor(GrxCAD.Geometry.Point3d,GrxCAD.Geometry.Vector3d,GrxCAD.Geometry.Vector3d)">
+  Plane(Point3d, Vector3d, Vector3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Plane(Point3d origin, Vector3d u, Vector3d v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>origin</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>u</code> <a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Plane__ctor_" data-uid="GrxCAD.Geometry.Plane.#ctor*"></a>
+
+  <h3 id="GrxCAD_Geometry_Plane__ctor_System_Double_System_Double_System_Double_System_Double_" data-uid="GrxCAD.Geometry.Plane.#ctor(System.Double,System.Double,System.Double,System.Double)">
+  Plane(double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Plane(double a, double b, double c, double d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GrxCAD_Geometry_Plane_Create_" data-uid="GrxCAD.Geometry.Plane.Create*"></a>
+
+  <h3 id="GrxCAD_Geometry_Plane_Create_System_IntPtr_System_Boolean_" data-uid="GrxCAD.Geometry.Plane.Create(System.IntPtr,System.Boolean)">
+  Create(IntPtr, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Plane Create(IntPtr unmanagedPointer, bool autoDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unmanagedPointer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Plane.html">Plane</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Plane_GetSignedDistanceTo_" data-uid="GrxCAD.Geometry.Plane.GetSignedDistanceTo*"></a>
+
+  <h3 id="GrxCAD_Geometry_Plane_GetSignedDistanceTo_GrxCAD_Geometry_Point3d_" data-uid="GrxCAD.Geometry.Plane.GetSignedDistanceTo(GrxCAD.Geometry.Point3d)">
+  GetSignedDistanceTo(Point3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetSignedDistanceTo(Point3d pointValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pointValue</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Plane_IntersectWith_" data-uid="GrxCAD.Geometry.Plane.IntersectWith*"></a>
+
+  <h3 id="GrxCAD_Geometry_Plane_IntersectWith_GrxCAD_Geometry_BoundedPlane_" data-uid="GrxCAD.Geometry.Plane.IntersectWith(GrxCAD.Geometry.BoundedPlane)">
+  IntersectWith(BoundedPlane)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LineSegment3d IntersectWith(BoundedPlane boundPlane)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>boundPlane</code> <a class="xref" href="GrxCAD.Geometry.BoundedPlane.html">BoundedPlane</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.LineSegment3d.html">LineSegment3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Plane_IntersectWith_" data-uid="GrxCAD.Geometry.Plane.IntersectWith*"></a>
+
+  <h3 id="GrxCAD_Geometry_Plane_IntersectWith_GrxCAD_Geometry_BoundedPlane_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Plane.IntersectWith(GrxCAD.Geometry.BoundedPlane,GrxCAD.Geometry.Tolerance)">
+  IntersectWith(BoundedPlane, Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LineSegment3d IntersectWith(BoundedPlane boundPlane, Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>boundPlane</code> <a class="xref" href="GrxCAD.Geometry.BoundedPlane.html">BoundedPlane</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.LineSegment3d.html">LineSegment3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Plane_IntersectWith_" data-uid="GrxCAD.Geometry.Plane.IntersectWith*"></a>
+
+  <h3 id="GrxCAD_Geometry_Plane_IntersectWith_GrxCAD_Geometry_Plane_" data-uid="GrxCAD.Geometry.Plane.IntersectWith(GrxCAD.Geometry.Plane)">
+  IntersectWith(Plane)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Line3d IntersectWith(Plane otherPlane)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherPlane</code> <a class="xref" href="GrxCAD.Geometry.Plane.html">Plane</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Line3d.html">Line3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Plane_IntersectWith_" data-uid="GrxCAD.Geometry.Plane.IntersectWith*"></a>
+
+  <h3 id="GrxCAD_Geometry_Plane_IntersectWith_GrxCAD_Geometry_Plane_GrxCAD_Geometry_Tolerance_" data-uid="GrxCAD.Geometry.Plane.IntersectWith(GrxCAD.Geometry.Plane,GrxCAD.Geometry.Tolerance)">
+  IntersectWith(Plane, Tolerance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Line3d IntersectWith(Plane otherPlane, Tolerance tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherPlane</code> <a class="xref" href="GrxCAD.Geometry.Plane.html">Plane</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="GrxCAD.Geometry.Tolerance.html">Tolerance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Line3d.html">Line3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Plane_Set_" data-uid="GrxCAD.Geometry.Plane.Set*"></a>
+
+  <h3 id="GrxCAD_Geometry_Plane_Set_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Point3d_" data-uid="GrxCAD.Geometry.Plane.Set(GrxCAD.Geometry.Point3d,GrxCAD.Geometry.Point3d,GrxCAD.Geometry.Point3d)">
+  Set(Point3d, Point3d, Point3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set(Point3d u, Point3d origin, Point3d v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>u</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>origin</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Plane_Set_" data-uid="GrxCAD.Geometry.Plane.Set*"></a>
+
+  <h3 id="GrxCAD_Geometry_Plane_Set_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Vector3d_" data-uid="GrxCAD.Geometry.Plane.Set(GrxCAD.Geometry.Point3d,GrxCAD.Geometry.Vector3d)">
+  Set(Point3d, Vector3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set(Point3d pointValue, Vector3d normal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pointValue</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>normal</code> <a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Plane_Set_" data-uid="GrxCAD.Geometry.Plane.Set*"></a>
+
+  <h3 id="GrxCAD_Geometry_Plane_Set_GrxCAD_Geometry_Point3d_GrxCAD_Geometry_Vector3d_GrxCAD_Geometry_Vector3d_" data-uid="GrxCAD.Geometry.Plane.Set(GrxCAD.Geometry.Point3d,GrxCAD.Geometry.Vector3d,GrxCAD.Geometry.Vector3d)">
+  Set(Point3d, Vector3d, Vector3d)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set(Point3d origin, Vector3d u, Vector3d v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>origin</code> <a class="xref" href="GrxCAD.Geometry.Point3d.html">Point3d</a></dt>
+    <dd></dd>
+    <dt><code>u</code> <a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Geometry_Plane_Set_" data-uid="GrxCAD.Geometry.Plane.Set*"></a>
+
+  <h3 id="GrxCAD_Geometry_Plane_Set_System_Double_System_Double_System_Double_System_Double_" data-uid="GrxCAD.Geometry.Plane.Set(System.Double,System.Double,System.Double,System.Double)">
+  Set(double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set(double a, double b, double c, double d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

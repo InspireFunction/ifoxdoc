@@ -1,0 +1,1646 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Configuration
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Configuration
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration">
+
+
+
+  <h1 id="Autodesk_AutoCAD_GraphicsSystem_Configuration" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration" class="text-break">
+    Class Configuration
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Autodesk.html">Autodesk</a>.<a class="xref" href="Autodesk.AutoCAD.html">AutoCAD</a>.<a class="xref" href="Autodesk.AutoCAD.GraphicsSystem.html">GraphicsSystem</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Acdbmgd.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;AcGsConfig&quot;)]
+public class Configuration : DisposableWrapper, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html">DisposableWrapper</a></div>
+      <div><span class="xref">Configuration</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Create_System_Type_System_IntPtr_System_Boolean_">DisposableWrapper.Create(Type, IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Equals_System_Object_">DisposableWrapper.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_GetHashCode">DisposableWrapper.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Dispose_System_Boolean_">DisposableWrapper.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_Dispose">DisposableWrapper.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_AutoDelete">DisposableWrapper.AutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_IsDisposed">DisposableWrapper.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="Autodesk.AutoCAD.Runtime.DisposableWrapper.html#Autodesk_AutoCAD_Runtime_DisposableWrapper_UnmanagedObject">DisposableWrapper.UnmanagedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone">MarshalByRefObject.MemberwiseClone(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref">MarshalByRefObject.CreateObjRef(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration__ctor_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.#ctor*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration__ctor" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.#ctor">
+  Configuration()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Configuration()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration__ctor_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.#ctor*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration__ctor_System_IntPtr_System_Boolean_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.#ctor(System.IntPtr,System.Boolean)">
+  Configuration(IntPtr, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Configuration(IntPtr unmanagedPointer, bool autoDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unmanagedPointer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_AdaptiveDegradation_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.AdaptiveDegradation*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_AdaptiveDegradation" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.AdaptiveDegradation">
+  AdaptiveDegradation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AdaptiveDegradation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_CurrentDisplayDriver_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.CurrentDisplayDriver*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_CurrentDisplayDriver" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.CurrentDisplayDriver">
+  CurrentDisplayDriver
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DriverInfo CurrentDisplayDriver { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.GraphicsSystem.DriverInfo.html">DriverInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_CurveTessellationTolerance_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.CurveTessellationTolerance*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_CurveTessellationTolerance" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.CurveTessellationTolerance">
+  CurveTessellationTolerance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CurveTessellationTolerance { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_DefaultHardwareAcceleratedDriver_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.DefaultHardwareAcceleratedDriver*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_DefaultHardwareAcceleratedDriver" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.DefaultHardwareAcceleratedDriver">
+  DefaultHardwareAcceleratedDriver
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DriverInfo DefaultHardwareAcceleratedDriver { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.GraphicsSystem.DriverInfo.html">DriverInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_DiscardBackFaces_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.DiscardBackFaces*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_DiscardBackFaces" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.DiscardBackFaces">
+  DiscardBackFaces
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DiscardBackFaces { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_DriverName_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.DriverName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_DriverName" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.DriverName">
+  DriverName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DriverName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_DriverRevision_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.DriverRevision*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_DriverRevision" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.DriverRevision">
+  DriverRevision
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DriverRevision { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_DriverSearchPath_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.DriverSearchPath*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_DriverSearchPath" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.DriverSearchPath">
+  DriverSearchPath
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DriverSearchPath { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_DriverVersion_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.DriverVersion*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_DriverVersion" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.DriverVersion">
+  DriverVersion
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DriverVersion { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_DynamicTessellation_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.DynamicTessellation*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_DynamicTessellation" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.DynamicTessellation">
+  DynamicTessellation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DynamicTessellation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_FrameRate_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.FrameRate*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_FrameRate" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.FrameRate">
+  FrameRate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FrameRate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_GenerateVertexNormals_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.GenerateVertexNormals*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_GenerateVertexNormals" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.GenerateVertexNormals">
+  GenerateVertexNormals
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GenerateVertexNormals { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_Handedness_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.Handedness*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_Handedness" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.Handedness">
+  Handedness
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Handedness Handedness { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.GraphicsSystem.Handedness.html">Handedness</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_HardwareAcceleratedDriver_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.HardwareAcceleratedDriver*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_HardwareAcceleratedDriver" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.HardwareAcceleratedDriver">
+  HardwareAcceleratedDriver
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DriverInfo HardwareAcceleratedDriver { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.GraphicsSystem.DriverInfo.html">DriverInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_MaxLODs_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.MaxLODs*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_MaxLODs" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.MaxLODs">
+  MaxLODs
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxLODs { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_RedrawOnWindowExpose_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.RedrawOnWindowExpose*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_RedrawOnWindowExpose" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.RedrawOnWindowExpose">
+  RedrawOnWindowExpose
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RedrawOnWindowExpose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_SurfaceTessellationTolerance_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.SurfaceTessellationTolerance*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_SurfaceTessellationTolerance" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.SurfaceTessellationTolerance">
+  SurfaceTessellationTolerance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SurfaceTessellationTolerance { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_Transparency_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.Transparency*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_Transparency" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.Transparency">
+  Transparency
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quality Transparency { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.GraphicsSystem.Quality.html">Quality</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_Configure_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.Configure*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_Configure" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.Configure">
+  Configure()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Configure()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_Create_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.Create*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_Create_System_IntPtr_System_Boolean_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.Create(System.IntPtr,System.Boolean)">
+  Create(IntPtr, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Configuration Create(IntPtr unmanagedPointer, bool autoDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unmanagedPointer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.GraphicsSystem.Configuration.html">Configuration</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_DegradationChainPosition_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.DegradationChainPosition*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_DegradationChainPosition_Autodesk_AutoCAD_GraphicsSystem_DegradationChannel_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.DegradationChainPosition(Autodesk.AutoCAD.GraphicsSystem.DegradationChannel)">
+  DegradationChainPosition(DegradationChannel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DegradationChainPosition(DegradationChannel channel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>channel</code> <a class="xref" href="Autodesk.AutoCAD.GraphicsSystem.DegradationChannel.html">DegradationChannel</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_DegradationChannelAt_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.DegradationChannelAt*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_DegradationChannelAt_System_Int32_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.DegradationChannelAt(System.Int32)">
+  DegradationChannelAt(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DegradationChannel DegradationChannelAt(int order)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>order</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.GraphicsSystem.DegradationChannel.html">DegradationChannel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_DeleteUnmanagedObject_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.DeleteUnmanagedObject*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_DeleteUnmanagedObject" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.DeleteUnmanagedObject">
+  DeleteUnmanagedObject()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DeleteUnmanagedObject()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_GetCanDegradeChannel_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.GetCanDegradeChannel*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_GetCanDegradeChannel_Autodesk_AutoCAD_GraphicsSystem_DegradationChannel_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.GetCanDegradeChannel(Autodesk.AutoCAD.GraphicsSystem.DegradationChannel)">
+  GetCanDegradeChannel(DegradationChannel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetCanDegradeChannel(DegradationChannel channel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>channel</code> <a class="xref" href="Autodesk.AutoCAD.GraphicsSystem.DegradationChannel.html">DegradationChannel</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_GetCertificationData_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.GetCertificationData*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_GetCertificationData" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.GetCertificationData">
+  GetCertificationData()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificationData GetCertificationData()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.GraphicsSystem.CertificationData.html">CertificationData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_GetEffectList_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.GetEffectList*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_GetEffectList_Autodesk_AutoCAD_GraphicsSystem_EffectListType_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.GetEffectList(Autodesk.AutoCAD.GraphicsSystem.EffectListType)">
+  GetEffectList(EffectListType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;EffectStatus&gt; GetEffectList(EffectListType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="Autodesk.AutoCAD.GraphicsSystem.EffectListType.html">EffectListType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Autodesk.AutoCAD.GraphicsSystem.EffectStatus.html">EffectStatus</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_GetHardwareAcceleratedDrivers_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.GetHardwareAcceleratedDrivers*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_GetHardwareAcceleratedDrivers" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.GetHardwareAcceleratedDrivers">
+  GetHardwareAcceleratedDrivers()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DriverInfo[] GetHardwareAcceleratedDrivers()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Autodesk.AutoCAD.GraphicsSystem.DriverInfo.html">DriverInfo</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_GetVirtualDeviceName_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.GetVirtualDeviceName*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_GetVirtualDeviceName" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.GetVirtualDeviceName">
+  GetVirtualDeviceName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetVirtualDeviceName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_IsFeatureAvailable_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.IsFeatureAvailable*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_IsFeatureAvailable_Autodesk_AutoCAD_UniqueString_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.IsFeatureAvailable(Autodesk.AutoCAD.UniqueString)">
+  IsFeatureAvailable(UniqueString)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFeatureAvailable(UniqueString feature)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>feature</code> <a class="xref" href="Autodesk.AutoCAD.UniqueString.html">UniqueString</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_IsFeatureEnabled_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.IsFeatureEnabled*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_IsFeatureEnabled_Autodesk_AutoCAD_UniqueString_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.IsFeatureEnabled(Autodesk.AutoCAD.UniqueString)">
+  IsFeatureEnabled(UniqueString)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFeatureEnabled(UniqueString feature)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>feature</code> <a class="xref" href="Autodesk.AutoCAD.UniqueString.html">UniqueString</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_IsFeatureRecommended_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.IsFeatureRecommended*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_IsFeatureRecommended_Autodesk_AutoCAD_UniqueString_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.IsFeatureRecommended(Autodesk.AutoCAD.UniqueString)">
+  IsFeatureRecommended(UniqueString)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFeatureRecommended(UniqueString feature)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>feature</code> <a class="xref" href="Autodesk.AutoCAD.UniqueString.html">UniqueString</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_IsHardwareAccelerationAvailable_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.IsHardwareAccelerationAvailable*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_IsHardwareAccelerationAvailable" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.IsHardwareAccelerationAvailable">
+  IsHardwareAccelerationAvailable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsHardwareAccelerationAvailable()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_IsHardwareAccelerationEnabled_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.IsHardwareAccelerationEnabled*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_IsHardwareAccelerationEnabled" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.IsHardwareAccelerationEnabled">
+  IsHardwareAccelerationEnabled()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsHardwareAccelerationEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_IsHardwareAccelerationRecommended_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.IsHardwareAccelerationRecommended*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_IsHardwareAccelerationRecommended" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.IsHardwareAccelerationRecommended">
+  IsHardwareAccelerationRecommended()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsHardwareAccelerationRecommended()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_IsNoHardwareOverrideEnabled_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.IsNoHardwareOverrideEnabled*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_IsNoHardwareOverrideEnabled" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.IsNoHardwareOverrideEnabled">
+  IsNoHardwareOverrideEnabled()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNoHardwareOverrideEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_SetCanDegradeChannel_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.SetCanDegradeChannel*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_SetCanDegradeChannel_Autodesk_AutoCAD_GraphicsSystem_DegradationChannel_System_Boolean_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.SetCanDegradeChannel(Autodesk.AutoCAD.GraphicsSystem.DegradationChannel,System.Boolean)">
+  SetCanDegradeChannel(DegradationChannel, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCanDegradeChannel(DegradationChannel channel, bool degrade)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>channel</code> <a class="xref" href="Autodesk.AutoCAD.GraphicsSystem.DegradationChannel.html">DegradationChannel</a></dt>
+    <dd></dd>
+    <dt><code>degrade</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_SetFeatureEnabled_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.SetFeatureEnabled*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_SetFeatureEnabled_Autodesk_AutoCAD_UniqueString_System_Boolean_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.SetFeatureEnabled(Autodesk.AutoCAD.UniqueString,System.Boolean)">
+  SetFeatureEnabled(UniqueString, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFeatureEnabled(UniqueString feature, bool enable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>feature</code> <a class="xref" href="Autodesk.AutoCAD.UniqueString.html">UniqueString</a></dt>
+    <dd></dd>
+    <dt><code>enable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_ShiftDegradationChainPosition_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.ShiftDegradationChainPosition*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_ShiftDegradationChainPosition_Autodesk_AutoCAD_GraphicsSystem_DegradationChannel_System_Boolean_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.ShiftDegradationChainPosition(Autodesk.AutoCAD.GraphicsSystem.DegradationChannel,System.Boolean)">
+  ShiftDegradationChainPosition(DegradationChannel, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShiftDegradationChainPosition(DegradationChannel channel, bool shiftDown)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>channel</code> <a class="xref" href="Autodesk.AutoCAD.GraphicsSystem.DegradationChannel.html">DegradationChannel</a></dt>
+    <dd></dd>
+    <dt><code>shiftDown</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_ShowConfigDialog_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.ShowConfigDialog*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_ShowConfigDialog_System_String_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.ShowConfigDialog(System.String)">
+  ShowConfigDialog(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowConfigDialog(string dlgType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dlgType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Autodesk_AutoCAD_GraphicsSystem_Configuration_setHardwareAcceleration_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.setHardwareAcceleration*"></a>
+
+  <h3 id="Autodesk_AutoCAD_GraphicsSystem_Configuration_setHardwareAcceleration_System_Boolean_" data-uid="Autodesk.AutoCAD.GraphicsSystem.Configuration.setHardwareAcceleration(System.Boolean)">
+  setHardwareAcceleration(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setHardwareAcceleration(bool bEnable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bEnable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1356 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MentalRayRenderSettingsTraits
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MentalRayRenderSettingsTraits
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits">
+
+
+
+  <h1 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits" class="text-break">
+    Class MentalRayRenderSettingsTraits
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GrxCAD.html">GrxCAD</a>.<a class="xref" href="GrxCAD.GraphicsInterface.html">GraphicsInterface</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>gmdb.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Wrapper(&quot;OdGiMentalRayRenderSettingsTraits&quot;)]
+public abstract class MentalRayRenderSettingsTraits : RenderSettingsTraits, IDisposable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html">DisposableWrapper</a></div>
+      <div><a class="xref" href="GrxCAD.Runtime.RXObject.html">RXObject</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.DrawableTraits.html">DrawableTraits</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.SubEntityTraits.html">SubEntityTraits</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.NonEntityTraits.html">NonEntityTraits</a></div>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.RenderSettingsTraits.html">RenderSettingsTraits</a></div>
+      <div><span class="xref">MentalRayRenderSettingsTraits</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits2.html">MentalRayRenderSettingsTraits2</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.RenderSettingsTraits.html#GrxCAD_GraphicsInterface_RenderSettingsTraits_ModelScaleFactor">RenderSettingsTraits.ModelScaleFactor</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.RenderSettingsTraits.html#GrxCAD_GraphicsInterface_RenderSettingsTraits_TextureSampling">RenderSettingsTraits.TextureSampling</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.RenderSettingsTraits.html#GrxCAD_GraphicsInterface_RenderSettingsTraits_ShadowsEnabled">RenderSettingsTraits.ShadowsEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.RenderSettingsTraits.html#GrxCAD_GraphicsInterface_RenderSettingsTraits_MaterialEnabled">RenderSettingsTraits.MaterialEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.RenderSettingsTraits.html#GrxCAD_GraphicsInterface_RenderSettingsTraits_DiagnosticBackgroundEnabled">RenderSettingsTraits.DiagnosticBackgroundEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.RenderSettingsTraits.html#GrxCAD_GraphicsInterface_RenderSettingsTraits_BackFacesEnabled">RenderSettingsTraits.BackFacesEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.NonEntityTraits.html#GrxCAD_GraphicsInterface_NonEntityTraits_AddLight_GrxCAD_DatabaseServices_ObjectId_">NonEntityTraits.AddLight(ObjectId)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.NonEntityTraits.html#GrxCAD_GraphicsInterface_NonEntityTraits_SetSelectionMarker_System_IntPtr_">NonEntityTraits.SetSelectionMarker(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.NonEntityTraits.html#GrxCAD_GraphicsInterface_NonEntityTraits_SetupForEntity_GrxCAD_DatabaseServices_Entity_">NonEntityTraits.SetupForEntity(Entity)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.NonEntityTraits.html#GrxCAD_GraphicsInterface_NonEntityTraits_SetLayerFlags_GrxCAD_GraphicsInterface_DrawableTraits_LayerFlags_">NonEntityTraits.SetLayerFlags(DrawableTraits.LayerFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.NonEntityTraits.html#GrxCAD_GraphicsInterface_NonEntityTraits_VisualStyle">NonEntityTraits.VisualStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.NonEntityTraits.html#GrxCAD_GraphicsInterface_NonEntityTraits_Transparency">NonEntityTraits.Transparency</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.NonEntityTraits.html#GrxCAD_GraphicsInterface_NonEntityTraits_TrueColor">NonEntityTraits.TrueColor</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.NonEntityTraits.html#GrxCAD_GraphicsInterface_NonEntityTraits_Thickness">NonEntityTraits.Thickness</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.NonEntityTraits.html#GrxCAD_GraphicsInterface_NonEntityTraits_ShadowFlags">NonEntityTraits.ShadowFlags</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.NonEntityTraits.html#GrxCAD_GraphicsInterface_NonEntityTraits_SelectionOnlyGeometry">NonEntityTraits.SelectionOnlyGeometry</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.NonEntityTraits.html#GrxCAD_GraphicsInterface_NonEntityTraits_Sectionable">NonEntityTraits.Sectionable</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.NonEntityTraits.html#GrxCAD_GraphicsInterface_NonEntityTraits_PlotStyleDescriptor">NonEntityTraits.PlotStyleDescriptor</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.NonEntityTraits.html#GrxCAD_GraphicsInterface_NonEntityTraits_Material">NonEntityTraits.Material</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.NonEntityTraits.html#GrxCAD_GraphicsInterface_NonEntityTraits_Mapper">NonEntityTraits.Mapper</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.NonEntityTraits.html#GrxCAD_GraphicsInterface_NonEntityTraits_LineWeight">NonEntityTraits.LineWeight</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.NonEntityTraits.html#GrxCAD_GraphicsInterface_NonEntityTraits_LineTypeScale">NonEntityTraits.LineTypeScale</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.NonEntityTraits.html#GrxCAD_GraphicsInterface_NonEntityTraits_LineType">NonEntityTraits.LineType</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.NonEntityTraits.html#GrxCAD_GraphicsInterface_NonEntityTraits_Layer">NonEntityTraits.Layer</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.NonEntityTraits.html#GrxCAD_GraphicsInterface_NonEntityTraits_FillType">NonEntityTraits.FillType</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.NonEntityTraits.html#GrxCAD_GraphicsInterface_NonEntityTraits_DrawFlags">NonEntityTraits.DrawFlags</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.GraphicsInterface.NonEntityTraits.html#GrxCAD_GraphicsInterface_NonEntityTraits_Color">NonEntityTraits.Color</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_Create_System_IntPtr_System_Boolean_">RXObject.Create(IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_GetRXClass">RXObject.GetRXClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_DeleteUnmanagedObject">RXObject.DeleteUnmanagedObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_Clone">RXObject.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_CompareTo_System_Object_">RXObject.CompareTo(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_CopyFrom_GrxCAD_Runtime_RXObject_">RXObject.CopyFrom(RXObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_GetClass_System_Type_">RXObject.GetClass(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_QueryX_GrxCAD_Runtime_RXClass_">RXObject.QueryX(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.RXObject.html#GrxCAD_Runtime_RXObject_X_GrxCAD_Runtime_RXClass_">RXObject.X(RXClass)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_m_bAutoDelete">DisposableWrapper.m_bAutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_m_imp">DisposableWrapper.m_imp</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Detach">DisposableWrapper.Detach()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Create_System_Type_System_IntPtr_System_Boolean_">DisposableWrapper.Create(Type, IntPtr, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Equals_System_Object_">DisposableWrapper.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_GetHashCode">DisposableWrapper.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Dispose_System_Boolean_">DisposableWrapper.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_Dispose">DisposableWrapper.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_UnmanagedObject">DisposableWrapper.UnmanagedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_IsDisposed">DisposableWrapper.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="GrxCAD.Runtime.DisposableWrapper.html#GrxCAD_Runtime_DisposableWrapper_AutoDelete">DisposableWrapper.AutoDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone">MarshalByRefObject.MemberwiseClone(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.createobjref">MarshalByRefObject.CreateObjRef(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD.Basal.ArgumentNullEx.NotNull``1(``0,System.String)">ArgumentNullEx.NotNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.ArgumentNullEx.html#IFoxCAD_Basal_ArgumentNullEx_NotNull_System_Object_System_String_">ArgumentNullEx.NotNull(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_GetProperty_System_Object_System_String_System_Object___">LateBinding.GetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_Invoke_System_Object_System_String_System_Object___">LateBinding.Invoke(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_ReleaseInstance_System_Object_">LateBinding.ReleaseInstance(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Basal.LateBinding.html#IFoxCAD_Basal_LateBinding_SetProperty_System_Object_System_String_System_Object___">LateBinding.SetProperty(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_Print_System_Object_">ObjEx.Print(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="IFoxCAD.Cad.ObjEx.html#IFoxCAD_Cad_ObjEx_PrintLine_System_Object_">ObjEx.PrintLine(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits__ctor_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.#ctor*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits__ctor_System_IntPtr_System_Boolean_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.#ctor(System.IntPtr,System.Boolean)">
+  MentalRayRenderSettingsTraits(IntPtr, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MentalRayRenderSettingsTraits(IntPtr unmanagedPointer, bool autoDelete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unmanagedPointer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>autoDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_DiagnosticBSPMode_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.DiagnosticBSPMode*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_DiagnosticBSPMode" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.DiagnosticBSPMode">
+  DiagnosticBSPMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract DiagnosticBSPMode DiagnosticBSPMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.DiagnosticBSPMode.html">DiagnosticBSPMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_DiagnosticGridMode_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.DiagnosticGridMode*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_DiagnosticGridMode" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.DiagnosticGridMode">
+  DiagnosticGridMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract MentalRayRenderSettingsTraitsDiagnosticGridModeParameter DiagnosticGridMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraitsDiagnosticGridModeParameter.html">MentalRayRenderSettingsTraitsDiagnosticGridModeParameter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_DiagnosticMode_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.DiagnosticMode*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_DiagnosticMode" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.DiagnosticMode">
+  DiagnosticMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract DiagnosticMode DiagnosticMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.DiagnosticMode.html">DiagnosticMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_DiagnosticPhotonMode_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.DiagnosticPhotonMode*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_DiagnosticPhotonMode" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.DiagnosticPhotonMode">
+  DiagnosticPhotonMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract DiagnosticPhotonMode DiagnosticPhotonMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.DiagnosticPhotonMode.html">DiagnosticPhotonMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_EnergyMultiplier_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.EnergyMultiplier*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_EnergyMultiplier" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.EnergyMultiplier">
+  EnergyMultiplier
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract float EnergyMultiplier { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_ExportMIEnabled_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.ExportMIEnabled*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_ExportMIEnabled" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.ExportMIEnabled">
+  ExportMIEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool ExportMIEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_ExportMIFileName_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.ExportMIFileName*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_ExportMIFileName" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.ExportMIFileName">
+  ExportMIFileName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract string ExportMIFileName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_FGRayCount_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.FGRayCount*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_FGRayCount" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.FGRayCount">
+  FGRayCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int FGRayCount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_FGSampleRadius_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.FGSampleRadius*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_FGSampleRadius" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.FGSampleRadius">
+  FGSampleRadius
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract MentalRayRenderSettingsTraitsDoubleRangeParameter FGSampleRadius { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraitsDoubleRangeParameter.html">MentalRayRenderSettingsTraitsDoubleRangeParameter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_FGSampleRadiusState_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.FGSampleRadiusState*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_FGSampleRadiusState" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.FGSampleRadiusState">
+  FGSampleRadiusState
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract MentalRayRenderSettingsTraitsBoolParameter FGSampleRadiusState { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraitsBoolParameter.html">MentalRayRenderSettingsTraitsBoolParameter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_FinalGatheringEnabled_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.FinalGatheringEnabled*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_FinalGatheringEnabled" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.FinalGatheringEnabled">
+  FinalGatheringEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool FinalGatheringEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_GIPhotonsPerLight_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.GIPhotonsPerLight*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_GIPhotonsPerLight" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.GIPhotonsPerLight">
+  GIPhotonsPerLight
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int GIPhotonsPerLight { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_GISampleCount_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.GISampleCount*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_GISampleCount" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.GISampleCount">
+  GISampleCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int GISampleCount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_GISampleRadius_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.GISampleRadius*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_GISampleRadius" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.GISampleRadius">
+  GISampleRadius
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract double GISampleRadius { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_GISampleRadiusEnabled_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.GISampleRadiusEnabled*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_GISampleRadiusEnabled" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.GISampleRadiusEnabled">
+  GISampleRadiusEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool GISampleRadiusEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_GlobalIlluminationEnabled_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.GlobalIlluminationEnabled*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_GlobalIlluminationEnabled" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.GlobalIlluminationEnabled">
+  GlobalIlluminationEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool GlobalIlluminationEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_LightLuminanceScale_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.LightLuminanceScale*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_LightLuminanceScale" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.LightLuminanceScale">
+  LightLuminanceScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract double LightLuminanceScale { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_MemoryLimit_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.MemoryLimit*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_MemoryLimit" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.MemoryLimit">
+  MemoryLimit
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int MemoryLimit { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_PhotonTraceDepth_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.PhotonTraceDepth*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_PhotonTraceDepth" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.PhotonTraceDepth">
+  PhotonTraceDepth
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract MentalRayRenderSettingsTraitsTraceParameter PhotonTraceDepth { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraitsTraceParameter.html">MentalRayRenderSettingsTraitsTraceParameter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_ProgressMonitor_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.ProgressMonitor*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_ProgressMonitor" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.ProgressMonitor">
+  ProgressMonitor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract IntPtr ProgressMonitor { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_RayTraceDepth_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.RayTraceDepth*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_RayTraceDepth" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.RayTraceDepth">
+  RayTraceDepth
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract MentalRayRenderSettingsTraitsTraceParameter RayTraceDepth { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraitsTraceParameter.html">MentalRayRenderSettingsTraitsTraceParameter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_RayTraceEnabled_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.RayTraceEnabled*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_RayTraceEnabled" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.RayTraceEnabled">
+  RayTraceEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool RayTraceEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_Sampling_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.Sampling*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_Sampling" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.Sampling">
+  Sampling
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract MentalRayRenderSettingsTraitsIntegerRangeParameter Sampling { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraitsIntegerRangeParameter.html">MentalRayRenderSettingsTraitsIntegerRangeParameter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_SamplingContrastColor_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.SamplingContrastColor*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_SamplingContrastColor" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.SamplingContrastColor">
+  SamplingContrastColor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract MentalRayRenderSettingsTraitsFloatParameter SamplingContrastColor { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraitsFloatParameter.html">MentalRayRenderSettingsTraitsFloatParameter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_SamplingFilter_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.SamplingFilter*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_SamplingFilter" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.SamplingFilter">
+  SamplingFilter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract MentalRayRenderSettingsTraitsSamplingParameter SamplingFilter { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraitsSamplingParameter.html">MentalRayRenderSettingsTraitsSamplingParameter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_ShadowMapEnabled_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.ShadowMapEnabled*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_ShadowMapEnabled" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.ShadowMapEnabled">
+  ShadowMapEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool ShadowMapEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_ShadowMode_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.ShadowMode*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_ShadowMode" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.ShadowMode">
+  ShadowMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ShadowMode ShadowMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.ShadowMode.html">ShadowMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_TileOrder_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.TileOrder*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_TileOrder" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.TileOrder">
+  TileOrder
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract TileOrder TileOrder { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.GraphicsInterface.TileOrder.html">TileOrder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_TileSize_" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.TileSize*"></a>
+
+  <h3 id="GrxCAD_GraphicsInterface_MentalRayRenderSettingsTraits_TileSize" data-uid="GrxCAD.GraphicsInterface.MentalRayRenderSettingsTraits.TileSize">
+  TileSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int TileSize { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

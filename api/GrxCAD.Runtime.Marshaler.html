@@ -1,0 +1,915 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Marshaler
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Marshaler
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GrxCAD.Runtime.Marshaler">
+
+
+
+  <h1 id="GrxCAD_Runtime_Marshaler" data-uid="GrxCAD.Runtime.Marshaler" class="text-break">
+    Class Marshaler
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GrxCAD.html">GrxCAD</a>.<a class="xref" href="GrxCAD.Runtime.html">Runtime</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>gmdb.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Marshaler</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Marshaler</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GrxCAD_Runtime_Marshaler_AcValueToObject_" data-uid="GrxCAD.Runtime.Marshaler.AcValueToObject*"></a>
+
+  <h3 id="GrxCAD_Runtime_Marshaler_AcValueToObject_System_IntPtr_" data-uid="GrxCAD.Runtime.Marshaler.AcValueToObject(System.IntPtr)">
+  AcValueToObject(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object AcValueToObject(IntPtr acValueObj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>acValueObj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_Marshaler_BitmapInfoToBitmap_" data-uid="GrxCAD.Runtime.Marshaler.BitmapInfoToBitmap*"></a>
+
+  <h3 id="GrxCAD_Runtime_Marshaler_BitmapInfoToBitmap_System_IntPtr_" data-uid="GrxCAD.Runtime.Marshaler.BitmapInfoToBitmap(System.IntPtr)">
+  BitmapInfoToBitmap(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Bitmap BitmapInfoToBitmap(IntPtr bitmapInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bitmapInfo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.bitmap">Bitmap</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_Marshaler_BitmapToBitmapInfo_" data-uid="GrxCAD.Runtime.Marshaler.BitmapToBitmapInfo*"></a>
+
+  <h3 id="GrxCAD_Runtime_Marshaler_BitmapToBitmapInfo_System_Drawing_Bitmap_" data-uid="GrxCAD.Runtime.Marshaler.BitmapToBitmapInfo(System.Drawing.Bitmap)">
+  BitmapToBitmapInfo(Bitmap)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr BitmapToBitmapInfo(Bitmap bitmap)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bitmap</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.bitmap">Bitmap</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_Marshaler_CopyToManagedFullSubentityPath_" data-uid="GrxCAD.Runtime.Marshaler.CopyToManagedFullSubentityPath*"></a>
+
+  <h3 id="GrxCAD_Runtime_Marshaler_CopyToManagedFullSubentityPath_System_IntPtr_" data-uid="GrxCAD.Runtime.Marshaler.CopyToManagedFullSubentityPath(System.IntPtr)">
+  CopyToManagedFullSubentityPath(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FullSubentityPath CopyToManagedFullSubentityPath(IntPtr path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.FullSubentityPath.html">FullSubentityPath</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_Marshaler_CopyToUnmanagedFullSubentityPath_" data-uid="GrxCAD.Runtime.Marshaler.CopyToUnmanagedFullSubentityPath*"></a>
+
+  <h3 id="GrxCAD_Runtime_Marshaler_CopyToUnmanagedFullSubentityPath_GrxCAD_DatabaseServices_FullSubentityPath_System_IntPtr_" data-uid="GrxCAD.Runtime.Marshaler.CopyToUnmanagedFullSubentityPath(GrxCAD.DatabaseServices.FullSubentityPath,System.IntPtr)">
+  CopyToUnmanagedFullSubentityPath(FullSubentityPath, IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CopyToUnmanagedFullSubentityPath(FullSubentityPath path, IntPtr newPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="GrxCAD.DatabaseServices.FullSubentityPath.html">FullSubentityPath</a></dt>
+    <dd></dd>
+    <dt><code>newPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_Marshaler_GdsResbufToObject_" data-uid="GrxCAD.Runtime.Marshaler.GdsResbufToObject*"></a>
+
+  <h3 id="GrxCAD_Runtime_Marshaler_GdsResbufToObject_System_IntPtr_" data-uid="GrxCAD.Runtime.Marshaler.GdsResbufToObject(System.IntPtr)">
+  GdsResbufToObject(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object GdsResbufToObject(IntPtr rb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_Marshaler_GdsResbufToTypedValues_" data-uid="GrxCAD.Runtime.Marshaler.GdsResbufToTypedValues*"></a>
+
+  <h3 id="GrxCAD_Runtime_Marshaler_GdsResbufToTypedValues_System_IntPtr_" data-uid="GrxCAD.Runtime.Marshaler.GdsResbufToTypedValues(System.IntPtr)">
+  GdsResbufToTypedValues(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TypedValue[] GdsResbufToTypedValues(IntPtr resbuf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resbuf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.DatabaseServices.TypedValue.html">TypedValue</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_Marshaler_GetInternalArray_" data-uid="GrxCAD.Runtime.Marshaler.GetInternalArray*"></a>
+
+  <h3 id="GrxCAD_Runtime_Marshaler_GetInternalArray_GrxCAD_Geometry_DoubleCollection_" data-uid="GrxCAD.Runtime.Marshaler.GetInternalArray(GrxCAD.Geometry.DoubleCollection)">
+  GetInternalArray(DoubleCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double[] GetInternalArray(DoubleCollection col)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <a class="xref" href="GrxCAD.Geometry.DoubleCollection.html">DoubleCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_Marshaler_GetInternalArray_" data-uid="GrxCAD.Runtime.Marshaler.GetInternalArray*"></a>
+
+  <h3 id="GrxCAD_Runtime_Marshaler_GetInternalArray_GrxCAD_Geometry_IntegerCollection_" data-uid="GrxCAD.Runtime.Marshaler.GetInternalArray(GrxCAD.Geometry.IntegerCollection)">
+  GetInternalArray(IntegerCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int[] GetInternalArray(IntegerCollection col)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <a class="xref" href="GrxCAD.Geometry.IntegerCollection.html">IntegerCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_Marshaler_GetInternalArray_" data-uid="GrxCAD.Runtime.Marshaler.GetInternalArray*"></a>
+
+  <h3 id="GrxCAD_Runtime_Marshaler_GetInternalArray_GrxCAD_Geometry_Point2dCollection_" data-uid="GrxCAD.Runtime.Marshaler.GetInternalArray(GrxCAD.Geometry.Point2dCollection)">
+  GetInternalArray(Point2dCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Point2d[] GetInternalArray(Point2dCollection col)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <a class="xref" href="GrxCAD.Geometry.Point2dCollection.html">Point2dCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_Marshaler_GetInternalArray_" data-uid="GrxCAD.Runtime.Marshaler.GetInternalArray*"></a>
+
+  <h3 id="GrxCAD_Runtime_Marshaler_GetInternalArray_GrxCAD_Geometry_Vector2dCollection_" data-uid="GrxCAD.Runtime.Marshaler.GetInternalArray(GrxCAD.Geometry.Vector2dCollection)">
+  GetInternalArray(Vector2dCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2d[] GetInternalArray(Vector2dCollection col)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <a class="xref" href="GrxCAD.Geometry.Vector2dCollection.html">Vector2dCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_Marshaler_GetInternalArray_" data-uid="GrxCAD.Runtime.Marshaler.GetInternalArray*"></a>
+
+  <h3 id="GrxCAD_Runtime_Marshaler_GetInternalArray_GrxCAD_Geometry_Vector3dCollection_" data-uid="GrxCAD.Runtime.Marshaler.GetInternalArray(GrxCAD.Geometry.Vector3dCollection)">
+  GetInternalArray(Vector3dCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3d[] GetInternalArray(Vector3dCollection col)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <a class="xref" href="GrxCAD.Geometry.Vector3dCollection.html">Vector3dCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_Marshaler_ObjectToAcValue_" data-uid="GrxCAD.Runtime.Marshaler.ObjectToAcValue*"></a>
+
+  <h3 id="GrxCAD_Runtime_Marshaler_ObjectToAcValue_System_Object_System_IntPtr_" data-uid="GrxCAD.Runtime.Marshaler.ObjectToAcValue(System.Object,System.IntPtr)">
+  ObjectToAcValue(object, IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ObjectToAcValue(object obj, IntPtr acValueObj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>acValueObj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_Marshaler_ObjectToGdsResbuf_" data-uid="GrxCAD.Runtime.Marshaler.ObjectToGdsResbuf*"></a>
+
+  <h3 id="GrxCAD_Runtime_Marshaler_ObjectToGdsResbuf_System_Object_" data-uid="GrxCAD.Runtime.Marshaler.ObjectToGdsResbuf(System.Object)">
+  ObjectToGdsResbuf(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr ObjectToGdsResbuf(object o)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_Marshaler_ObjectToGdsResbuf_" data-uid="GrxCAD.Runtime.Marshaler.ObjectToGdsResbuf*"></a>
+
+  <h3 id="GrxCAD_Runtime_Marshaler_ObjectToGdsResbuf_System_Object_System_IntPtr_" data-uid="GrxCAD.Runtime.Marshaler.ObjectToGdsResbuf(System.Object,System.IntPtr)">
+  ObjectToGdsResbuf(object, IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ObjectToGdsResbuf(object o, IntPtr rb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>rb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_Marshaler_SetInternalArray_" data-uid="GrxCAD.Runtime.Marshaler.SetInternalArray*"></a>
+
+  <h3 id="GrxCAD_Runtime_Marshaler_SetInternalArray_GrxCAD_Geometry_DoubleCollection_System_Double___System_Int32_" data-uid="GrxCAD.Runtime.Marshaler.SetInternalArray(GrxCAD.Geometry.DoubleCollection,System.Double[],System.Int32)">
+  SetInternalArray(DoubleCollection, double[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetInternalArray(DoubleCollection col, double[] newArray, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <a class="xref" href="GrxCAD.Geometry.DoubleCollection.html">DoubleCollection</a></dt>
+    <dd></dd>
+    <dt><code>newArray</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_Marshaler_SetInternalArray_" data-uid="GrxCAD.Runtime.Marshaler.SetInternalArray*"></a>
+
+  <h3 id="GrxCAD_Runtime_Marshaler_SetInternalArray_GrxCAD_Geometry_IntegerCollection_System_Int32___System_Int32_" data-uid="GrxCAD.Runtime.Marshaler.SetInternalArray(GrxCAD.Geometry.IntegerCollection,System.Int32[],System.Int32)">
+  SetInternalArray(IntegerCollection, int[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetInternalArray(IntegerCollection col, int[] newArray, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <a class="xref" href="GrxCAD.Geometry.IntegerCollection.html">IntegerCollection</a></dt>
+    <dd></dd>
+    <dt><code>newArray</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_Marshaler_SetInternalArray_" data-uid="GrxCAD.Runtime.Marshaler.SetInternalArray*"></a>
+
+  <h3 id="GrxCAD_Runtime_Marshaler_SetInternalArray_GrxCAD_Geometry_Point2dCollection_GrxCAD_Geometry_Point2d___System_Int32_" data-uid="GrxCAD.Runtime.Marshaler.SetInternalArray(GrxCAD.Geometry.Point2dCollection,GrxCAD.Geometry.Point2d[],System.Int32)">
+  SetInternalArray(Point2dCollection, Point2d[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetInternalArray(Point2dCollection col, Point2d[] newArray, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <a class="xref" href="GrxCAD.Geometry.Point2dCollection.html">Point2dCollection</a></dt>
+    <dd></dd>
+    <dt><code>newArray</code> <a class="xref" href="GrxCAD.Geometry.Point2d.html">Point2d</a>[]</dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_Marshaler_SetInternalArray_" data-uid="GrxCAD.Runtime.Marshaler.SetInternalArray*"></a>
+
+  <h3 id="GrxCAD_Runtime_Marshaler_SetInternalArray_GrxCAD_Geometry_Vector2dCollection_GrxCAD_Geometry_Vector2d___System_Int32_" data-uid="GrxCAD.Runtime.Marshaler.SetInternalArray(GrxCAD.Geometry.Vector2dCollection,GrxCAD.Geometry.Vector2d[],System.Int32)">
+  SetInternalArray(Vector2dCollection, Vector2d[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetInternalArray(Vector2dCollection col, Vector2d[] newArray, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <a class="xref" href="GrxCAD.Geometry.Vector2dCollection.html">Vector2dCollection</a></dt>
+    <dd></dd>
+    <dt><code>newArray</code> <a class="xref" href="GrxCAD.Geometry.Vector2d.html">Vector2d</a>[]</dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_Marshaler_SetInternalArray_" data-uid="GrxCAD.Runtime.Marshaler.SetInternalArray*"></a>
+
+  <h3 id="GrxCAD_Runtime_Marshaler_SetInternalArray_GrxCAD_Geometry_Vector3dCollection_GrxCAD_Geometry_Vector3d___System_Int32_" data-uid="GrxCAD.Runtime.Marshaler.SetInternalArray(GrxCAD.Geometry.Vector3dCollection,GrxCAD.Geometry.Vector3d[],System.Int32)">
+  SetInternalArray(Vector3dCollection, Vector3d[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetInternalArray(Vector3dCollection col, Vector3d[] newArray, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <a class="xref" href="GrxCAD.Geometry.Vector3dCollection.html">Vector3dCollection</a></dt>
+    <dd></dd>
+    <dt><code>newArray</code> <a class="xref" href="GrxCAD.Geometry.Vector3d.html">Vector3d</a>[]</dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GrxCAD_Runtime_Marshaler_TypedValuesToGdsResbuf_" data-uid="GrxCAD.Runtime.Marshaler.TypedValuesToGdsResbuf*"></a>
+
+  <h3 id="GrxCAD_Runtime_Marshaler_TypedValuesToGdsResbuf_GrxCAD_DatabaseServices_TypedValue___" data-uid="GrxCAD.Runtime.Marshaler.TypedValuesToGdsResbuf(GrxCAD.DatabaseServices.TypedValue[])">
+  TypedValuesToGdsResbuf(params TypedValue[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr TypedValuesToGdsResbuf(params TypedValue[] values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>values</code> <a class="xref" href="GrxCAD.DatabaseServices.TypedValue.html">TypedValue</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
