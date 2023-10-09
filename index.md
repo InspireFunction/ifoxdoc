@@ -5,3 +5,7 @@
 
 欢迎在使用过程中发现问题并反馈。
 
+请访问 [ifoxcad主仓库](https://gitee.com/inspirefunction/ifoxcad)
+
+
+
