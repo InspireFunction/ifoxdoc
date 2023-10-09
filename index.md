@@ -5,7 +5,8 @@
 
 欢迎在使用过程中发现问题并反馈。
 
-请访问 [ifoxcad主仓库](https://gitee.com/inspirefunction/ifoxcad)
+请访问 [ifoxcad主仓库](https://gitee.com/inspirefunction/ifoxcad) 阅读源码。
+请访问 [ifoxcad入门文档](https://www.kdocs.cn/l/cc6ZXSa0vMgD) 了解ifox的入门知识。
 
 
 
