@@ -24913,6 +24913,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/IFoxCAD.Cad.IFoxUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IFoxCAD.Cad.IFoxUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/IFoxCAD.Cad.IGraph.yml",
       "output": {
         ".html": {
@@ -25392,6 +25402,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/IFoxCAD.Cad.Rect.yml",
       "output": {

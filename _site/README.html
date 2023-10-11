@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>ifoxdoc </title>
+      <title>ifoxdoc 开发文档 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="ifoxdoc ">
+      <meta name="title" content="ifoxdoc 开发文档 ">
       
       <link rel="icon" href="favicon.ico">
       <link rel="stylesheet" href="public/docfx.min.css">
@@ -15,7 +15,7 @@
       <meta name="docfx:rel" content="">
       
       
-      
+      <meta name="docfx:docurl" content="https://github.com/InspireFunction/ifoxdoc/blob/master/README.md/#L1">
   </head>
 
   <script type="module">
@@ -76,11 +76,63 @@
         </div>
 
         <article data-uid="">
-<h1 id="ifoxdoc">ifoxdoc</h1>
+<h1 id="ifoxdoc-开发文档">ifoxdoc 开发文档</h1>
 
+<h2 id="克隆本项目">克隆本项目</h2>
+<p>git clone <a href="https://github.com/InspireFunction/ifoxdoc.git">https://github.com/InspireFunction/ifoxdoc.git</a></p>
+<p>现在github推荐用ssh的方式进行操作，具体的可以看下github的文档，现在都是中文的</p>
+<h2 id="修改">修改</h2>
+<ol>
+<li>修改说明文件</li>
+</ol>
+<ul>
+<li>打开项目主目录下的 articles 文件夹</li>
+<li>将要添加的说明做成md格式的文件保存到 articles 文件夹</li>
+<li>编辑 toc.yml 文件，用编辑器打开进行编辑</li>
+<li>在文件的末尾添加 格式如下：
+<pre><code>- name: 你的文件名
+  href: 你的文件名.md
+</code></pre>
+</li>
+<li>保存</li>
+</ul>
+<p>toc.yml 文件内容的顺序可以调整，也可以删除，插入等，只要保证每个文件都是一个 name和一个href就可以。</p>
+<ol start="2">
+<li>修改api文档</li>
+</ol>
+<ul>
+<li>打开项目主目录下的 src 文件夹</li>
+<li>将下面四个文件复制到文件夹里，直接替换就可以
+<pre><code class="lang-htm">IFox.Basal.dll
+IFox.Basal.xml
+IFox.CAD.ACAD.dll
+IFox.CAD.ACAD.xml
+</code></pre>
+</li>
+</ul>
+<ol start="3">
+<li>修改主页说明</li>
+</ol>
+<ul>
+<li>打开本项目主目录下的 index.md 文件</li>
+<li>编辑后保存即可</li>
+</ul>
+<ol start="4">
+<li>修改主页顶部的便签</li>
+</ol>
+<ul>
+<li>打开本项目主目录下的 toc.yml 文件</li>
+<li>进行修改，举例来说如果要增加一个标签的话，就需要在主目录里新建个文件夹，文件夹的内容就是你要在这个标签下显示的，以articles文件夹为例：
+在 toc.yml 文件里 添加：
+<pre><code>- name: IFoxCAD说明
+  href: articles/
+</code></pre>
+就说明可以在标签里显示 <strong>IFoxCAD说明</strong> 的内容，然后这个顺序是可以调整的，只要保证name和href一成对的就可以</li>
+</ul>
 </article>
 
         <div class="contribution d-print-none">
+          <a href="https://github.com/InspireFunction/ifoxdoc/blob/master/README.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
